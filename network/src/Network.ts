@@ -169,23 +169,6 @@ export function createContract<C extends Contract>(
 }
 
 /**
- * Creates a new {@link JsonRpcProvider}, and makes sure that it's connected to xDai if we're in
- * production.
- */
-export function makeProvider(rpcUrl: string): providers.JsonRpcProvider {
-  let provider;
-
-  if (rpcUrl.startsWith('wss://')) {
-    provider = new providers.WebSocketProvider(rpcUrl);
-  } else {
-    provider = new providers.StaticJsonRpcProvider(rpcUrl);
-    provider.pollingInterval = 8000;
-  }
-
-  return provider;
-}
-
-/**
  * Ensures that the given message was properly signed.
  */
 export function assertProperlySigned(message: SignedMessage<unknown>): void {
