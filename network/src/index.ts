@@ -23,7 +23,7 @@
  */
 
 export * from "./ContractCaller";
-export * from "./EthConnection";
+export * from "./ConnectionManager";
 export * from "./Network";
 export * from "./ThrottledConcurrentQueue";
 export * from "./TransactionCollection";

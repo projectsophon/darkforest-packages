@@ -11,8 +11,8 @@ import { Mutex } from 'async-mutex';
 import { providers } from 'ethers';
 import deferred from 'p-defer';
 import timeout from 'p-timeout';
-import { EthConnection } from './EthConnection';
-import { gweiToWei, waitForTransaction } from './Network';
+import { ConnectionManager } from './ConnectionManager';
+import { waitForTransaction } from './Network';
 import { ConcurrentQueueConfiguration, ThrottledConcurrentQueue } from './ThrottledConcurrentQueue';
 
 /**
@@ -55,7 +55,7 @@ export class TxExecutor {
   /**
    * Our interface to the blockchain.
    */
-  private readonly ethConnection: EthConnection;
+  private readonly ethConnection: ConnectionManager;
 
   /**
    * Communicates to the {@link TxExecutor} the gas price we should be paying for each transaction,
@@ -139,7 +139,7 @@ export class TxExecutor {
   private static readonly NONCE_STALE_AFTER_MS = 5_000;
 
   constructor(
-    ethConnection: EthConnection,
+    ethConnection: ConnectionManager,
     gasSettingProvider: GasPriceSettingProvider,
     beforeQueued?: BeforeQueued,
     beforeTransaction?: BeforeTransaction,
@@ -195,7 +195,7 @@ export class TxExecutor {
       onTransactionReceipt: txReceipt,
     };
 
-    waitForTransaction(this.ethConnection.getProvider(), ser.hash)
+    waitForTransaction(this.ethConnection.provider, ser.hash)
       .then((receipt) => {
         tx.onTransactionReceipt(receipt);
       })
@@ -255,16 +255,6 @@ export class TxExecutor {
     const autoGasPriceSetting = this.gasSettingProvider(tx);
     tx.autoGasPriceSetting = autoGasPriceSetting;
 
-    if (tx.overrides?.gasPrice === undefined) {
-      tx.overrides = tx.overrides ?? {};
-      tx.overrides.gasPrice = gweiToWei(
-        this.ethConnection.getAutoGasPriceGwei(
-          this.ethConnection.getAutoGasPrices(),
-          autoGasPriceSetting
-        )
-      );
-    }
-
     this.queue.add(() => {
       this.diagnosticsUpdater?.updateDiagnostics((d) => {
         d.transactionsInQueue--;
@@ -302,7 +292,11 @@ export class TxExecutor {
         Date.now() - this.lastTransactionTimestamp > TxExecutor.NONCE_STALE_AFTER_MS);
 
     if (shouldRefreshNonce) {
-      const chainNonce = await this.ethConnection.getNonce();
+      // const chainNonce = await this.ethConnection.getNonce();
+      // TODO: Retry?
+      const chainNonce = await this.ethConnection.provider.getTransactionCount(
+        this.ethConnection.account as string
+      );
       const localNonce = this.nonce || 0;
 
       this.nonce = Math.max(chainNonce, localNonce);
@@ -381,7 +375,10 @@ export class TxExecutor {
       this.lastTransactionTimestamp = time_submitted;
       tx.onTransactionResponse(submitted);
 
-      const confirmed = await this.ethConnection.waitForTransaction(submitted.hash);
+      const confirmed = await waitForTransaction(
+        this.ethConnection.provider,
+        submitted.hash
+      );
       if (confirmed.status !== 1) {
         time_errored = Date.now();
         tx.lastUpdatedAt = time_errored;
@@ -446,8 +443,8 @@ export class TxExecutor {
       } catch (e) {}
     }
 
-    logEvent.rpc_endpoint = this.ethConnection.getRpcEndpoint();
-    logEvent.user_address = this.ethConnection.getAddress();
+    logEvent.rpc_endpoint = this.ethConnection.rpcUrl;
+    logEvent.user_address = this.ethConnection.account;
 
     this.afterTransaction && this.afterTransaction(tx, logEvent);
   };

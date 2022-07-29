@@ -1,6 +1,6 @@
 import { Monomitter, monomitter } from "@darkforest_eth/events";
 import { Contract, providers, Wallet } from "ethers";
-import { ConnectionManager } from "./EthConnection";
+import { ConnectionManager } from "./ConnectionManager";
 
 export type ContractLoader<C extends Contract> = (
   address: string,
