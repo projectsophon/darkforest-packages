@@ -1,41 +1,38 @@
 // Typed single pub / sub pattern, inspired by:
 // https://github.com/loilo/monomitter/blob/master/monomitter.mjs
 
-export type Callback<T> = (data: T) => void;
+export type Callback<T> = (data: T) => Promise<void> | void;
 
 export type Subscription = {
   unsubscribe: () => void;
 };
 
 export type Monomitter<T> = {
-  publish: (data: T) => void;
+  publish: (data: T) => Promise<void>;
   subscribe: (cb: Callback<T>) => Subscription;
   clear: () => void;
 };
 
 /**
  * Constructs a new event emitter, whose purpose is to emit values of the given type.
- *
- * @param emitLatestOnSubscribe - if this is true, upon subscription immediately emit
- *                                the most recently set value, if there is one
  */
-export function monomitter<T>(emitLatestOnSubscribe = false): Monomitter<T> {
+export function monomitter<T>(): Monomitter<T> {
   const callbacks = new Set<Callback<T>>();
-  let valueBeenSet = false;
-  let latestValue: T | undefined = undefined;
 
-  function publish(value: T) {
-    valueBeenSet = true;
-    latestValue = value;
-    callbacks.forEach((callback) => callback(value));
+  async function publish(value: T) {
+    const staticCallbacks = Array.from(callbacks);
+    await Promise.all(
+      staticCallbacks.map((cb) => {
+        // Since these are async, `unsubscribe` might have been called before this runs
+        if (callbacks.has(cb)) {
+          return cb(value);
+        }
+      })
+    );
   }
 
   function subscribe(callback: Callback<T>) {
     callbacks.add(callback);
-
-    if (emitLatestOnSubscribe && valueBeenSet) {
-      callback(latestValue as T);
-    }
 
     return {
       unsubscribe() {
