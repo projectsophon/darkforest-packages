@@ -3,13 +3,9 @@
 
 export type Callback<T> = (data: T) => Promise<void> | void;
 
-export type Subscription = {
-  unsubscribe: () => void;
-};
-
 export type Monomitter<T> = {
   publish: (data: T) => Promise<void>;
-  subscribe: (cb: Callback<T>) => Subscription;
+  subscribe: (cb: Callback<T>) => { unsubscribe: () => void };
   clear: () => void;
 };
 
