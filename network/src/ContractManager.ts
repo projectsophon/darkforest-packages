@@ -1,12 +1,12 @@
 import { Store } from "@darkforest_eth/events";
-import { Contract, providers, Wallet } from "ethers";
+import { BaseContract, providers, Wallet } from "ethers";
 import { ConnectionManager } from "./ConnectionManager";
 
-export type ContractLoader<C extends Contract> = (
+export type ContractLoader<C extends BaseContract> = (
   address: string,
   provider: providers.JsonRpcProvider,
   signer: Wallet | undefined
-) => Promise<C> | C;
+) => Promise<C>;
 
 export class ContractManager extends Store {
   /**
@@ -15,7 +15,7 @@ export class ContractManager extends Store {
    *
    * Keyed by the contract address.
    */
-  #contracts: Map<string, Contract>;
+  #contracts: Map<string, BaseContract>;
 
   /**
    * A private reference to all the contract loaders this {@link ContractManager} has loaded
@@ -23,7 +23,7 @@ export class ContractManager extends Store {
    *
    * Keyed by the contract address.
    */
-  #loaders: Map<string, ContractLoader<Contract>>;
+  #loaders: Map<string, ContractLoader<BaseContract>>;
 
   /**
    * A private reference to the {@link ConnectionManager} used by this {@link ContractManager}.
@@ -70,7 +70,7 @@ export class ContractManager extends Store {
    * @param address The contract address to register the contract against.
    * @param loader The loader used to load (or reload) the contract.
    */
-  async loadContract<C extends Contract>(
+  async loadContract<C extends BaseContract>(
     address: string,
     loader?: ContractLoader<C>
   ): Promise<C> {
