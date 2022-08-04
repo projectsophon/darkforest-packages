@@ -1,4 +1,4 @@
-import { Monomitter, monomitter } from "@darkforest_eth/events";
+import { Store } from "@darkforest_eth/events";
 import { Contract, providers, Wallet } from "ethers";
 import { ConnectionManager } from "./ConnectionManager";
 
@@ -8,7 +8,7 @@ export type ContractLoader<C extends Contract> = (
   signer: Wallet | undefined
 ) => Promise<C> | C;
 
-export class ContractManager {
+export class ContractManager extends Store {
   /**
    * A private reference to all the contracts this {@link ContractManager} has loaded
    * so that they can be reloaded if the RPC url changes.
@@ -30,41 +30,36 @@ export class ContractManager {
    **/
   #connection: ConnectionManager;
 
-  events: {
-    /**
-     * Whenever a contract is reloaded, we also publish an event here.
-     */
-    contractReloaded$: Monomitter<[string, Contract]>;
-  };
-
   constructor(connection: ConnectionManager) {
+    super();
+
     this.#connection = connection;
     this.#contracts = new Map();
     this.#loaders = new Map();
 
-    this.events = {
-      contractReloaded$: monomitter(),
-    };
-
-    this.#connection.events.providerChanged$.subscribe(() => {
-      this.#reloadContracts();
-    });
-
-    this.#connection.events.signerChanged$.subscribe(() => {
+    this.#connection.subscribe(() => {
       this.#reloadContracts();
     });
   }
 
   async #reloadContracts() {
+    let needsNotify = false;
+
     for (const [address, loader] of this.#loaders) {
-      // Was going to dedupe this with `this.loadContract` but there is no reason to set the loader again.
+      // If we reload any contracts, we need to notify
+      needsNotify = true;
+
+      // Was going to dedupe this with `loadContract` but there is no reason to set the loader again.
       const contract = await loader(
         address,
         this.#connection.provider,
         this.#connection.signer
       );
       this.#contracts.set(address, contract);
-      await this.events.contractReloaded$.publish([address, contract]);
+    }
+
+    if (needsNotify) {
+      this.notify();
     }
   }
 

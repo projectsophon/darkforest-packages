@@ -1,4 +1,4 @@
-import { Monomitter, monomitter } from "@darkforest_eth/events";
+import { Store } from "@darkforest_eth/events";
 import { address } from "@darkforest_eth/serde";
 import { EthAddress } from "@darkforest_eth/types";
 import { providers, Wallet } from "ethers";
@@ -23,7 +23,16 @@ function makeProvider(rpcUrl: string): providers.JsonRpcProvider {
 /**
  * Responsible for managing the RPC Provider and Signer's Wallet
  */
-export class ConnectionManager {
+export class ConnectionManager extends Store {
+  #signer: Wallet | undefined;
+  #provider: providers.JsonRpcProvider;
+
+  constructor(rpcUrl: string) {
+    super();
+
+    this.#provider = makeProvider(rpcUrl);
+  }
+
   /**
    * The wallet, which represents the account that this {@link ConnectionManager} sends
    * transactions on behalf of.
@@ -31,7 +40,9 @@ export class ConnectionManager {
    * It is possible to instantiate an ConnectionManager without a signer, in which case it is still able
    * to connect to the blockchain, without the ability to send transactions.
    */
-  signer: Wallet | undefined;
+  get signer() {
+    return this.#signer;
+  }
 
   /**
    * The provider this {@link ConnectionManager} is currently using. The provider is the lowest level
@@ -39,30 +50,12 @@ export class ConnectionManager {
    *
    * Don't store a reference to this, as the provider can change!
    */
-  provider: providers.JsonRpcProvider;
-
-  events: {
-    /**
-     * Whenever a provider change occurs, we also publish an event here.
-     */
-    providerChanged$: Monomitter<providers.JsonRpcProvider>;
-    /**
-     * Whenever a signer change occurs, we also publish an event here.
-     */
-    signerChanged$: Monomitter<Wallet | undefined>;
-  };
-
-  constructor(rpcUrl: string) {
-    this.provider = makeProvider(rpcUrl);
-    this.events = {
-      providerChanged$: monomitter(),
-      signerChanged$: monomitter(),
-    };
-    this.events.providerChanged$.publish(this.provider);
+  get provider() {
+    return this.#provider;
   }
 
   get rpcUrl() {
-    return this.provider.connection.url;
+    return this.#provider.connection.url;
   }
 
   /**
@@ -76,8 +69,8 @@ export class ConnectionManager {
       throw new Error("RPC url must not be empty");
     }
 
-    this.provider = makeProvider(url);
-    this.events.providerChanged$.publish(this.provider);
+    this.#provider = makeProvider(url);
+    this.notify();
   }
 
   /**
@@ -85,32 +78,32 @@ export class ConnectionManager {
    */
   set privateKey(skey: string | undefined) {
     if (skey) {
-      this.signer = new Wallet(skey, this.provider);
+      this.#signer = new Wallet(skey, this.provider);
     } else {
-      this.signer = undefined;
+      this.#signer = undefined;
     }
-    this.events.signerChanged$.publish(this.signer);
+    this.notify();
   }
 
   /**
    * Returns the private key of the signer, if one was set.
    */
   get privateKey(): string | undefined {
-    if (this.signer) {
-      return this.signer.privateKey;
+    if (this.#signer) {
+      return this.#signer.privateKey;
     }
   }
 
   hasSigner(): boolean {
-    return !!this.signer;
+    return !!this.#signer;
   }
 
   /**
    * Returns the address of the signer, if one was set.
    */
   get account(): EthAddress | undefined {
-    if (this.signer) {
-      return address(this.signer.address);
+    if (this.#signer) {
+      return address(this.#signer.address);
     }
   }
 }
