@@ -32,10 +32,10 @@
     "@types/color": "^3.0.2",
     "del-cli": "^4.0.1",
     "eslint": "^7.30.0",
-    "prettier": "^2.3.0",
-    "typedoc": "^0.22.8",
-    "typedoc-plugin-markdown": "3.11.x",
-    "typescript": "4.5.x"
+    "prettier": "^2.7.0",
+    "typedoc": "^0.23.10",
+    "typedoc-plugin-markdown": "3.13.x",
+    "typescript": "4.7.x"
   },
   "publishConfig": {
     "access": "public"
