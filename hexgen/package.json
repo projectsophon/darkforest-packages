@@ -1,6 +1,6 @@
 {
   "name": "@projectsophon/hexgen",
-  "version": "6.7.29",
+  "version": "0.0.0",
   "license": "MIT",
   "author": "0xPARC <ivan@0xPARC.org>",
   "engines": {
@@ -21,7 +21,7 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@projectsophon/types": "6.7.29",
+    "@projectsophon/types": "0.0.0",
     "big-integer": "^1.6.48"
   },
   "devDependencies": {

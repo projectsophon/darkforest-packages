@@ -1,6 +1,6 @@
 {
   "name": "@projectsophon/network",
-  "version": "6.7.29",
+  "version": "0.0.0",
   "license": "MIT",
   "author": "0xPARC <ivan@0xPARC.org>",
   "engines": {
@@ -21,11 +21,11 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@projectsophon/constants": "6.7.29",
-    "@projectsophon/contracts": "6.7.29",
-    "@projectsophon/events": "6.7.29",
-    "@projectsophon/serde": "6.7.29",
-    "@projectsophon/types": "6.7.29",
+    "@projectsophon/constants": "0.0.0",
+    "@projectsophon/contracts": "0.0.0",
+    "@projectsophon/events": "0.0.0",
+    "@projectsophon/serde": "0.0.0",
+    "@projectsophon/types": "0.0.0",
     "async-mutex": "^0.3.2",
     "ethers": "^5.5.1",
     "just-debounce": "^1.1.0",

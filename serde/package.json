@@ -1,6 +1,6 @@
 {
   "name": "@projectsophon/serde",
-  "version": "6.7.29",
+  "version": "0.0.0",
   "license": "MIT",
   "author": "0xPARC <ivan@0xPARC.org>",
   "engines": {
@@ -21,10 +21,10 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@projectsophon/constants": "6.7.29",
-    "@projectsophon/contracts": "6.7.29",
-    "@projectsophon/hexgen": "6.7.29",
-    "@projectsophon/types": "6.7.29",
+    "@projectsophon/constants": "0.0.0",
+    "@projectsophon/contracts": "0.0.0",
+    "@projectsophon/hexgen": "0.0.0",
+    "@projectsophon/types": "0.0.0",
     "big-integer": "^1.6.48",
     "ethers": "^5.5.1"
   },
