@@ -22,8 +22,7 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@projectsophon/types": "0.0.0",
-    "big-integer": "^1.6.48"
+    "@projectsophon/types": "0.0.0"
   },
   "devDependencies": {
     "del-cli": "^4.0.1",

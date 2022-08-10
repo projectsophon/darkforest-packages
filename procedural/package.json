@@ -26,8 +26,7 @@
     "@projectsophon/gamelogic": "0.0.0",
     "@projectsophon/hashing": "0.0.0",
     "@projectsophon/serde": "0.0.0",
-    "@projectsophon/types": "0.0.0",
-    "big-integer": "^1.6.48"
+    "@projectsophon/types": "0.0.0"
   },
   "devDependencies": {
     "del-cli": "^4.0.1",
