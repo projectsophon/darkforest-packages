@@ -1,5 +1,5 @@
-import { RendererType } from "@darkforest_eth/types";
-import type { BeltRendererType, CanvasCoords, Planet, RGBVec, WorldCoords } from "@darkforest_eth/types";
+import { RendererType } from "@projectsophon/types";
+import type { BeltRendererType, CanvasCoords, Planet, RGBVec, WorldCoords } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import { type BeltProps, BELT_PROGRAM_DEFINITION, propsFromIdx } from "../Programs/BeltProgram";
 import type { GameGLManager } from "../WebGL/GameGLManager";

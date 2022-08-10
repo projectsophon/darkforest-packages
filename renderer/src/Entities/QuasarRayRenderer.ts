@@ -1,6 +1,6 @@
-import { getPlanetCosmetic } from "@darkforest_eth/procedural";
-import { RendererType } from "@darkforest_eth/types";
-import type { CanvasCoords, Planet, QuasarRayRendererType, WorldCoords } from "@darkforest_eth/types";
+import { getPlanetCosmetic } from "@projectsophon/procedural";
+import { RendererType } from "@projectsophon/types";
+import type { CanvasCoords, Planet, QuasarRayRendererType, WorldCoords } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import { QUASARRAY_PROGRAM_DEFINITION } from "../Programs/QuasarRayProgram";
 import type { GameGLManager } from "../WebGL/GameGLManager";

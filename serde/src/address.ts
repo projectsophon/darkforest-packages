@@ -1,4 +1,4 @@
-import type { EthAddress } from "@darkforest_eth/types";
+import type { EthAddress } from "@projectsophon/types";
 
 /**
  * Converts a string to an `EthAddress`: a 0x-prefixed all lowercase hex string

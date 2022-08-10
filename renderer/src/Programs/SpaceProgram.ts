@@ -1,53 +1,53 @@
-import { MAX_PERLIN_VALUE } from '@darkforest_eth/hashing';
-import { AttribType, UniformType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
-import { ShaderMixins } from '../WebGL/ShaderMixins';
+import { MAX_PERLIN_VALUE } from "@projectsophon/hashing";
+import { AttribType, UniformType } from "@projectsophon/types";
+import { glsl } from "../EngineUtils";
+import { ShaderMixins } from "../WebGL/ShaderMixins";
 
 const a = {
-  position: 'a_position',
+  position: "a_position",
 
-  p0topGrad: 'a_p0topGrad',
-  p0botGrad: 'a_p0botGrad',
+  p0topGrad: "a_p0topGrad",
+  p0botGrad: "a_p0botGrad",
 
-  p1topGrad: 'a_p1topGrad',
-  p1botGrad: 'a_p1botGrad',
+  p1topGrad: "a_p1topGrad",
+  p1botGrad: "a_p1botGrad",
 
-  p2topGrad: 'a_p2topGrad',
-  p2botGrad: 'a_p2botGrad',
+  p2topGrad: "a_p2topGrad",
+  p2botGrad: "a_p2botGrad",
 
-  worldCoords: 'a_worldCoords', // 0 to 1
+  worldCoords: "a_worldCoords", // 0 to 1
 };
 const u = {
-  matrix: 'u_matrix', // matrix to convert from world coords to clipspace
-  thresholds: 'u_thresholds',
-  lengthScale: 'u_lengthScale',
-  viewportZoom: 'u_viewportZoom',
-  time: 'u_time',
+  matrix: "u_matrix", // matrix to convert from world coords to clipspace
+  thresholds: "u_thresholds",
+  lengthScale: "u_lengthScale",
+  viewportZoom: "u_viewportZoom",
+  time: "u_time",
 
-  innerNebulaColor: 'u_innerNebulaColor',
-  nebulaColor: 'u_nebulaColor',
-  spaceColor: 'u_spaceColor',
-  deepSpaceColor: 'u_deepSpaceColor',
-  deadSpaceColor: 'u_deadSpaceColor',
+  innerNebulaColor: "u_innerNebulaColor",
+  nebulaColor: "u_nebulaColor",
+  spaceColor: "u_spaceColor",
+  deepSpaceColor: "u_deepSpaceColor",
+  deadSpaceColor: "u_deadSpaceColor",
 };
 const v = {
-  p0topLeftGrad: 'v_p0topLeftGrad',
-  p0topRightGrad: 'v_p0topRightGrad',
-  p0botLeftGrad: 'v_p0botLeftGrad',
-  p0botRightGrad: 'v_p0botRightGrad',
+  p0topLeftGrad: "v_p0topLeftGrad",
+  p0topRightGrad: "v_p0topRightGrad",
+  p0botLeftGrad: "v_p0botLeftGrad",
+  p0botRightGrad: "v_p0botRightGrad",
 
-  p1topLeftGrad: 'v_p1topLeftGrad',
-  p1topRightGrad: 'v_p1topRightGrad',
-  p1botLeftGrad: 'v_p1botLeftGrad',
-  p1botRightGrad: 'v_p1botRightGrad',
+  p1topLeftGrad: "v_p1topLeftGrad",
+  p1topRightGrad: "v_p1topRightGrad",
+  p1botLeftGrad: "v_p1botLeftGrad",
+  p1botRightGrad: "v_p1botRightGrad",
 
-  p2topLeftGrad: 'v_p2topLeftGrad',
-  p2topRightGrad: 'v_p2topRightGrad',
-  p2botLeftGrad: 'v_p2botLeftGrad',
-  p2botRightGrad: 'v_p2botRightGrad',
+  p2topLeftGrad: "v_p2topLeftGrad",
+  p2topRightGrad: "v_p2topRightGrad",
+  p2botLeftGrad: "v_p2botLeftGrad",
+  p2botRightGrad: "v_p2botRightGrad",
 
-  worldCoords: 'v_worldCoords', // 0 to 1
-  position: 'v_position',
+  worldCoords: "v_worldCoords", // 0 to 1
+  position: "v_position",
 };
 
 const gradProps = {
@@ -211,7 +211,7 @@ export const SPACE_PROGRAM_DEFINITION = {
       float py = (y - gridY) / scale;
 
       // 0 to 1 within each chunk
-      vec2 pos = vec2(px, py); 
+      vec2 pos = vec2(px, py);
 
       vec2 botLeftDiff = pos - vec2(0., 0.);
       vec2 botRightDiff = pos - vec2(1., 0.);
@@ -228,9 +228,9 @@ export const SPACE_PROGRAM_DEFINITION = {
       float topLeftW = pos.x * (1. - pos.y);
       float topRightW = (1. - pos.x) * (1. - pos.y);
 
-      float res = botLeft * topRightW + 
-                  botRight * topLeftW + 
-                  topLeft * botRightW + 
+      float res = botLeft * topRightW +
+                  botRight * topLeftW +
+                  topLeft * botRightW +
                   topRight * botLeftW;
 
       return res;
@@ -307,7 +307,7 @@ export const SPACE_PROGRAM_DEFINITION = {
         float pa, a=pa=0.;
 
         // alter how many layers of stars depending on space type
-        for (int i=0; i < iterations - int(spaceTypeF / 2.); i++) { 
+        for (int i=0; i < iterations - int(spaceTypeF / 2.); i++) {
           p = abs(p) / dot(p, p) - q; // the magic formula
           a += abs(length(p) - pa); // absolute sum of average change
           pa = length(p);
@@ -343,7 +343,7 @@ export const SPACE_PROGRAM_DEFINITION = {
       }
 
       v = mix(vec3(length(v)), v, saturation); //color adjust
-      return vec4(v * boost, 1.);	 
+      return vec4(v * boost, 1.);
     }
 
     // blends a colour (c1) with a smooth gradient between it and a second color (c2)
@@ -430,12 +430,12 @@ export const SPACE_PROGRAM_DEFINITION = {
       if (enableSmoothTransitions) {
         c = p < t1 ? easeTransition(c0, c1, 0., t1, p)
                    : p < t2 ? easeTransition(c1, c2, t1, t2, p)
-                            : p < t3 ? easeTransition(c2, c3, t2, t3, p) 
+                            : p < t3 ? easeTransition(c2, c3, t2, t3, p)
                                      : easeTransition(c3, c4, t2, t3, p);
       } else {
         c = p < t1 ? easeTransition2(c0, c1, 0., t1, p)
                    : p < t2 ? easeTransition2(c1, c2, t1, t2, p)
-                            : p < t3 ? easeTransition2(c2, c3, t2, t3, p) 
+                            : p < t3 ? easeTransition2(c2, c3, t2, t3, p)
                                      : easeTransition2(c3, c4, t2, t3, p);
       }
 
@@ -454,7 +454,7 @@ export const SPACE_PROGRAM_DEFINITION = {
         float cloudsAmount = pow(cnoise(vec3(cloudPos / cloudRegionScale, 0.)), 3.);
         float clouds = mix(0., 0.75, cloudsAmount) * abs(cnoise(vec3(cloudPos / cloudScale, cloudSpeed * ${u.time})));
 
-        stars += clouds * c0; 
+        stars += clouds * c0;
       } else {
         // if clouds are disabled we need to "use" the time uniform
         // otherwise it will be optimized out and we can't write to it
@@ -463,17 +463,17 @@ export const SPACE_PROGRAM_DEFINITION = {
         stars += vec4(.0 * ${u.time});
       }
 
- 
+
       // normalize zoom into 0 -> 1 interval
       float viewportZoom = clamp((${u.viewportZoom} + zoomOffset) / zoomAttenuation, 0., 1.);
 
       // control star visibility from zoom level, uses a sin wave to create peak visibility at midpoint
       // and zero visibility at 0 and PI
-      float zoomInfluence = mix(minStarVisibility, 1., sin(viewportZoom * PI)); 
+      float zoomInfluence = mix(minStarVisibility, 1., sin(viewportZoom * PI));
 
       // blend stars with black based on zoom level
       // then blend in "c" to ensure the background colour is not lost
-      outColor = mix(mix(stars, vec4(vec3(0.),1.), 1.-zoomInfluence), c, 0.28); 
+      outColor = mix(mix(stars, vec4(vec3(0.),1.), 1.-zoomInfluence), c, 0.28);
       outColor += c / 4.5; // controls the balance between color vs stars
     }
 

@@ -1,4 +1,4 @@
-import { Store } from "@darkforest_eth/events";
+import { Store } from "@projectsophon/events";
 import type { BaseContract, providers, Wallet } from "ethers";
 import type { ConnectionManager } from "./ConnectionManager";
 

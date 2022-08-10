@@ -1,8 +1,8 @@
-import { EMPTY_ADDRESS, HAT_SIZES, MAX_PLANET_LEVEL, MIN_PLANET_LEVEL } from "@darkforest_eth/constants";
-import { getPlanetRank, isLocatable } from "@darkforest_eth/gamelogic";
-import { seededRandom } from "@darkforest_eth/hashing";
-import { hashToInt } from "@darkforest_eth/serde";
-import { Biome, HatType, UpgradeBranchName } from "@darkforest_eth/types";
+import { EMPTY_ADDRESS, HAT_SIZES, MAX_PLANET_LEVEL, MIN_PLANET_LEVEL } from "@projectsophon/constants";
+import { getPlanetRank, isLocatable } from "@projectsophon/gamelogic";
+import { seededRandom } from "@projectsophon/hashing";
+import { hashToInt } from "@projectsophon/serde";
+import { Biome, HatType, UpgradeBranchName } from "@projectsophon/types";
 import type {
   ArtifactId,
   EthAddress,
@@ -13,7 +13,7 @@ import type {
   RGBAVec,
   RGBVec,
   RuinsInfo,
-} from "@darkforest_eth/types";
+} from "@projectsophon/types";
 import Noise from "./Noise";
 import { blurb2grammar, blurbGrammar, planetNameWords, planetTagAdj, planetTagNoun } from "./ProcgenConsts";
 import tracery from "./tracery";

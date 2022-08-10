@@ -1,5 +1,5 @@
 {
-  "name": "@darkforest_eth/hashing",
+  "name": "@projectsophon/hashing",
   "version": "6.7.29",
   "license": "MIT",
   "author": "0xPARC <ivan@0xPARC.org>",
@@ -18,7 +18,7 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@darkforest_eth/types": "6.7.29",
+    "@projectsophon/types": "6.7.29",
     "big-integer": "^1.6.48"
   },
   "devDependencies": {

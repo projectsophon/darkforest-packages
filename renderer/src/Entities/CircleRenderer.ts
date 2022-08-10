@@ -1,5 +1,5 @@
-import { RendererType } from "@darkforest_eth/types";
-import type { CanvasCoords, CircleRendererType, GameViewport, RGBAVec, WorldCoords } from "@darkforest_eth/types";
+import { RendererType } from "@projectsophon/types";
+import type { CanvasCoords, CircleRendererType, GameViewport, RGBAVec, WorldCoords } from "@projectsophon/types";
 import { engineConsts } from "../EngineConsts";
 import { EngineUtils } from "../EngineUtils";
 import { CIRCLE_PROGRAM_DEFINITION } from "../Programs/CircleProgram";

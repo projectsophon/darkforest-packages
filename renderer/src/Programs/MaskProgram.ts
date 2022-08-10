@@ -1,16 +1,16 @@
-import { AttribType, UniformType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
+import { AttribType, UniformType } from "@projectsophon/types";
+import { glsl } from "../EngineUtils";
 
 // mask shader - takes in world coords and spits out red rects
 const a = {
-  position: 'a_position', // will be a list of quads
+  position: "a_position", // will be a list of quads
   // color: 'a_color',
 };
 const u = {
-  matrix: 'u_matrix', // matrix to convert from world coords to clipspace
+  matrix: "u_matrix", // matrix to convert from world coords to clipspace
 };
 const v = {
-  color: 'v_color',
+  color: "v_color",
 };
 
 export const MASK_PROGRAM_DEFINITION = {

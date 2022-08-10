@@ -1,7 +1,7 @@
-import { isLocatable } from "@darkforest_eth/gamelogic";
-import { isUnconfirmedMoveTx } from "@darkforest_eth/serde";
-import { RendererType, RenderZIndex } from "@darkforest_eth/types";
-import type { Planet, RGBVec, UIRendererType, WorldCoords } from "@darkforest_eth/types";
+import { isLocatable } from "@projectsophon/gamelogic";
+import { isUnconfirmedMoveTx } from "@projectsophon/serde";
+import { RendererType, RenderZIndex } from "@projectsophon/types";
+import type { Planet, RGBVec, UIRendererType, WorldCoords } from "@projectsophon/types";
 import { engineConsts } from "./EngineConsts";
 import type { Renderer } from "./Renderer";
 import type { GameGLManager } from "./WebGL/GameGLManager";

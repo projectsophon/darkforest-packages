@@ -1,18 +1,18 @@
-import { AttribType, UniformType } from '@darkforest_eth/types';
-import { engineConsts } from '../EngineConsts';
-import { glsl } from '../EngineUtils';
+import { AttribType, UniformType } from "@projectsophon/types";
+import { engineConsts } from "../EngineConsts";
+import { glsl } from "../EngineUtils";
 
 const a = {
-  position: 'a_position',
-  color: 'a_color',
-  dist: 'a_dist', // cumulative dist so far
+  position: "a_position",
+  color: "a_color",
+  dist: "a_dist", // cumulative dist so far
 };
 const u = {
-  matrix: 'u_matrix', // matrix to convert from world coords to clipspace
+  matrix: "u_matrix", // matrix to convert from world coords to clipspace
 };
 const v = {
-  color: 'v_color',
-  dist: 'v_dist',
+  color: "v_color",
+  dist: "v_dist",
 };
 
 export const LINE_PROGRAM_DEFINITION = {

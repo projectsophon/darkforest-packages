@@ -1,5 +1,5 @@
-import { LOCATION_ID_UB } from "@darkforest_eth/constants";
-import type { LocationId } from "@darkforest_eth/types";
+import { LOCATION_ID_UB } from "@projectsophon/constants";
+import type { LocationId } from "@projectsophon/types";
 import type { BigNumber as EthersBN } from "ethers";
 
 /**

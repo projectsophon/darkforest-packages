@@ -1,5 +1,5 @@
-import { isEmojiFlagMessage } from "@darkforest_eth/gamelogic";
-import { HatType, TextAlign } from "@darkforest_eth/types";
+import { isEmojiFlagMessage } from "@projectsophon/gamelogic";
+import { HatType, TextAlign } from "@projectsophon/types";
 import type {
   Artifact,
   CanvasCoords,
@@ -8,7 +8,7 @@ import type {
   PlanetMessage,
   PlanetRenderInfo,
   WorldCoords,
-} from "@darkforest_eth/types";
+} from "@projectsophon/types";
 import { engineConsts } from "./EngineConsts";
 import { hatFromType } from "./Hats";
 import type { Renderer } from "./Renderer";

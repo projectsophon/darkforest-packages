@@ -1,5 +1,5 @@
-import { DEFAULT_GAS_PRICES, GAS_PRICE_API, MAX_AUTO_GAS_PRICE_GWEI } from "@darkforest_eth/constants";
-import type { GasPrices } from "@darkforest_eth/types";
+import { DEFAULT_GAS_PRICES, GAS_PRICE_API, MAX_AUTO_GAS_PRICE_GWEI } from "@projectsophon/constants";
+import type { GasPrices } from "@projectsophon/types";
 
 /**
  * Gets the current gas prices from xDai's price oracle. If the oracle is broken, return some sane

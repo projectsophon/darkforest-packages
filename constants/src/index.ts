@@ -8,22 +8,22 @@
  * [`yarn`](https://classic.yarnpkg.com/lang/en/) by running:
  *
  * ```bash
- * npm install --save @darkforest_eth/constants
+ * npm install --save @projectsophon/constants
  * ```
  * ```bash
- * yarn add @darkforest_eth/constants
+ * yarn add @projectsophon/constants
  * ```
  *
  * When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
  *
  * ```js
- * import * as constants from 'http://cdn.skypack.dev/@darkforest_eth/constants'
+ * import * as constants from 'http://cdn.skypack.dev/@projectsophon/constants'
  * ```
  *
  * @packageDocumentation
  */
-import { ArtifactRarity, ArtifactType, Biome, PlanetLevel } from "@darkforest_eth/types";
-import type { ArtifactId, EthAddress, GasPrices, LocationId } from "@darkforest_eth/types";
+import { ArtifactRarity, ArtifactType, Biome, PlanetLevel } from "@projectsophon/types";
+import type { ArtifactId, EthAddress, GasPrices, LocationId } from "@projectsophon/types";
 
 /**
  * The precision of Energy & Silver stored in the Dark Forest smart contracts.

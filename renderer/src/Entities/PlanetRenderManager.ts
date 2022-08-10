@@ -1,7 +1,7 @@
-import { EMPTY_ADDRESS } from "@darkforest_eth/constants";
-import { formatNumber, getRange, hasOwner, isLocatable, isSpaceShip } from "@darkforest_eth/gamelogic";
-import { getOwnerColorVec, getPlanetCosmetic } from "@darkforest_eth/procedural";
-import { isUnconfirmedMoveTx } from "@darkforest_eth/serde";
+import { EMPTY_ADDRESS } from "@projectsophon/constants";
+import { formatNumber, getRange, hasOwner, isLocatable, isSpaceShip } from "@projectsophon/gamelogic";
+import { getOwnerColorVec, getPlanetCosmetic } from "@projectsophon/procedural";
+import { isUnconfirmedMoveTx } from "@projectsophon/serde";
 import type {
   Artifact,
   LocatablePlanet,
@@ -10,8 +10,8 @@ import type {
   PlanetRenderInfo,
   PlanetRenderManagerType,
   WorldCoords,
-} from "@darkforest_eth/types";
-import { HatType, PlanetType, RendererType, TextAlign, TextAnchor } from "@darkforest_eth/types";
+} from "@projectsophon/types";
+import { HatType, PlanetType, RendererType, TextAlign, TextAnchor } from "@projectsophon/types";
 import { engineConsts } from "../EngineConsts";
 import type { Renderer } from "../Renderer";
 import type { GameGLManager } from "../WebGL/GameGLManager";

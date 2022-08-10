@@ -1,25 +1,25 @@
-import { AttribType, UniformType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
-import { ShaderMixins } from '../WebGL/ShaderMixins';
+import { AttribType, UniformType } from "@projectsophon/types";
+import { glsl } from "../EngineUtils";
+import { ShaderMixins } from "../WebGL/ShaderMixins";
 
 const a = {
-  position: 'a_position',
-  color: 'a_color',
-  rectPos: 'a_rectPos',
-  props: 'a_props',
+  position: "a_position",
+  color: "a_color",
+  rectPos: "a_rectPos",
+  props: "a_props",
 };
 const u = {
-  matrix: 'u_matrix', // matrix to convert from screen coords to clipspace
-  now: 'u_now',
+  matrix: "u_matrix", // matrix to convert from screen coords to clipspace
+  now: "u_now",
 };
 const v = {
-  color: 'v_color',
-  rectPos: 'v_rectPos',
-  astRad: 'v_astRad',
-  num: 'v_num',
-  xRad: 'v_xRad',
-  yRad: 'v_yRad',
-  perturb: 'v_perturb',
+  color: "v_color",
+  rectPos: "v_rectPos",
+  astRad: "v_astRad",
+  num: "v_num",
+  xRad: "v_xRad",
+  yRad: "v_yRad",
+  perturb: "v_perturb",
 };
 
 export const BELT_PROGRAM_DEFINITION = {
@@ -139,9 +139,9 @@ export const BELT_PROGRAM_DEFINITION = {
 
       if (
         !isIn &&
-        pow(rX / (xRad - eps), 2.0) + 
+        pow(rX / (xRad - eps), 2.0) +
         pow(rY / (yRad - eps), 2.0) > 1. &&
-        pow(rX / (xRad + eps), 2.0) + 
+        pow(rX / (xRad + eps), 2.0) +
         pow(rY / (yRad + eps), 2.0) < 1.
       ) {
         /* this code /should/ let you add a gradient, it's broken because theta1 - theta2
@@ -170,9 +170,4 @@ export const BELT_PROGRAM_DEFINITION = {
 export type BeltProps = [number, number, number, number];
 
 // num, xRad, yRad,
-export const propsFromIdx = (idx: number): BeltProps => [
-  50 + 10 * idx,
-  1.7 + 0.7 * idx,
-  0.3 + 0.25 * idx,
-  0.05,
-];
+export const propsFromIdx = (idx: number): BeltProps => [50 + 10 * idx, 1.7 + 0.7 * idx, 0.3 + 0.25 * idx, 0.05];

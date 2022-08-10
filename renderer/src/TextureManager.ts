@@ -1,7 +1,7 @@
-import { MAX_ARTIFACT_TYPE, MAX_BIOME, MIN_ARTIFACT_TYPE } from "@darkforest_eth/constants";
-import { isAncient, isBasic, isRelic, isSpaceShip } from "@darkforest_eth/gamelogic";
-import { ArtifactRarity, ArtifactType, Biome } from "@darkforest_eth/types";
-import type { ArtifactId, RenderedArtifact } from "@darkforest_eth/types";
+import { MAX_ARTIFACT_TYPE, MAX_BIOME, MIN_ARTIFACT_TYPE } from "@projectsophon/constants";
+import { isAncient, isBasic, isRelic, isSpaceShip } from "@projectsophon/gamelogic";
+import { ArtifactRarity, ArtifactType, Biome } from "@projectsophon/types";
+import type { ArtifactId, RenderedArtifact } from "@projectsophon/types";
 
 export const ARTIFACTS_URL = "/public/sprites/artifacts.png";
 export const ARTIFACTS_THUMBS_URL = "/public/sprites/artifactthumbs.png";

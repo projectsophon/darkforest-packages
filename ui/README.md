@@ -1,4 +1,4 @@
-# @darkforest_eth/ui
+# @projectsophon/ui
 
 ## Table of contents
 

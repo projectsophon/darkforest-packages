@@ -1,4 +1,4 @@
-import { AttribType } from "@darkforest_eth/types";
+import { AttribType } from "@projectsophon/types";
 
 const getAttribTypeSize = (type: AttribType): number => {
   if (type === AttribType.Float) return 4;

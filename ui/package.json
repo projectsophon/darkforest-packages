@@ -1,5 +1,5 @@
 {
-  "name": "@darkforest_eth/ui",
+  "name": "@projectsophon/ui",
   "version": "6.7.29",
   "license": "MIT",
   "author": "0xPARC <ivan@0xPARC.org>",
@@ -21,8 +21,8 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@darkforest_eth/constants": "6.7.29",
-    "@darkforest_eth/types": "6.7.29",
+    "@projectsophon/constants": "6.7.29",
+    "@projectsophon/types": "6.7.29",
     "@spectrum-web-components/slider": "^0.12.3",
     "@spectrum-web-components/theme": "^0.9.3",
     "color": "^4.2.3",

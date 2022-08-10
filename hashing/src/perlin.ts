@@ -1,4 +1,4 @@
-import type { PerlinConfig } from "@darkforest_eth/types";
+import type { PerlinConfig } from "@projectsophon/types";
 import { Fraction, type IFraction } from "./fractions/bigFraction";
 import { perlinRandHash } from "./mimc";
 import { lcm } from "./bigint";

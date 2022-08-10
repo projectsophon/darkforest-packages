@@ -1,5 +1,5 @@
-import type { AttribProps, UniformProps, Vec3 } from "@darkforest_eth/types";
-import { DrawMode, UniformType } from "@darkforest_eth/types";
+import type { AttribProps, UniformProps, Vec3 } from "@projectsophon/types";
+import { DrawMode, UniformType } from "@projectsophon/types";
 import type { mat3, mat4 } from "gl-matrix";
 import { AttribManager } from "./AttribManager";
 import { ProgramUtils } from "./ProgramUtils";

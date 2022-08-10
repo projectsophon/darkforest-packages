@@ -1,6 +1,6 @@
-import { getPlanetCosmetic } from "@darkforest_eth/procedural";
-import { DrawMode, RendererType } from "@darkforest_eth/types";
-import type { AsteroidRendererType, CanvasCoords, GameViewport, Planet, RGBVec } from "@darkforest_eth/types";
+import { getPlanetCosmetic } from "@projectsophon/procedural";
+import { DrawMode, RendererType } from "@projectsophon/types";
+import type { AsteroidRendererType, CanvasCoords, GameViewport, Planet, RGBVec } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import { ASTEROID_PROGRAM_DEFINITION } from "../Programs/AsteroidProgram";
 import type { GameGLManager } from "../WebGL/GameGLManager";

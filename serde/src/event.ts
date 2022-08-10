@@ -1,4 +1,4 @@
-import { AutoGasSetting, type NetworkEvent } from "@darkforest_eth/types";
+import { AutoGasSetting, type NetworkEvent } from "@projectsophon/types";
 
 /**
  * Returns whether or not the given event is an instance of {@link NetworkEvent}. Not super

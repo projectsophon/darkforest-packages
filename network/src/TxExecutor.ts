@@ -6,7 +6,7 @@ import type {
   Transaction,
   TransactionId,
   TxIntent,
-} from "@darkforest_eth/types";
+} from "@projectsophon/types";
 import { Mutex } from "async-mutex";
 import type { providers } from "ethers";
 import deferred from "p-defer";

@@ -1,5 +1,5 @@
-import { RendererType } from "@darkforest_eth/types";
-import type { Planet, QuasarRendererType, WorldCoords } from "@darkforest_eth/types";
+import { RendererType } from "@projectsophon/types";
+import type { Planet, QuasarRendererType, WorldCoords } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import type { Renderer } from "../Renderer";
 import type { GameGLManager } from "../WebGL/GameGLManager";

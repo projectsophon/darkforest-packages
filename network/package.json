@@ -1,5 +1,5 @@
 {
-  "name": "@darkforest_eth/network",
+  "name": "@projectsophon/network",
   "version": "6.7.29",
   "license": "MIT",
   "author": "0xPARC <ivan@0xPARC.org>",
@@ -21,11 +21,11 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@darkforest_eth/constants": "6.7.29",
-    "@darkforest_eth/contracts": "6.7.29",
-    "@darkforest_eth/events": "6.7.29",
-    "@darkforest_eth/serde": "6.7.29",
-    "@darkforest_eth/types": "6.7.29",
+    "@projectsophon/constants": "6.7.29",
+    "@projectsophon/contracts": "6.7.29",
+    "@projectsophon/events": "6.7.29",
+    "@projectsophon/serde": "6.7.29",
+    "@projectsophon/types": "6.7.29",
     "async-mutex": "^0.3.2",
     "ethers": "^5.5.1",
     "just-debounce": "^1.1.0",

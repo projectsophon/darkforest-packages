@@ -1,5 +1,5 @@
-import { RendererType, RenderZIndex } from "@darkforest_eth/types";
-import type { CanvasCoords, Chunk, RectRendererType, RGBVec, WorldCoords } from "@darkforest_eth/types";
+import { RendererType, RenderZIndex } from "@projectsophon/types";
+import type { CanvasCoords, Chunk, RectRendererType, RGBVec, WorldCoords } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import { RECT_PROGRAM_DEFINITION } from "../Programs/RectProgram";
 import type { GameGLManager } from "../WebGL/GameGLManager";

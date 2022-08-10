@@ -1,5 +1,5 @@
-import type { Planet, RGBVec } from "@darkforest_eth/types";
-import { RenderZIndex } from "@darkforest_eth/types";
+import type { Planet, RGBVec } from "@projectsophon/types";
+import { RenderZIndex } from "@projectsophon/types";
 
 /* generic template string which, combined with a vscode package, let us get syntax highlighting. */
 

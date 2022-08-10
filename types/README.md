@@ -1,4 +1,4 @@
-# @darkforest_eth/types
+# @projectsophon/types
 
 This package contains commonly-used data types in the Dark Forest webclient,
 also accessible in node.js server environments.
@@ -9,17 +9,17 @@ You can install this package using [`npm`](https://www.npmjs.com) or
 [`yarn`](https://classic.yarnpkg.com/lang/en/) by running:
 
 ```bash
-npm install --save @darkforest_eth/types
+npm install --save @projectsophon/types
 ```
 
 ```bash
-yarn add @darkforest_eth/types
+yarn add @projectsophon/types
 ```
 
 When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
 
 ```js
-import * as types from 'http://cdn.skypack.dev/@darkforest_eth/types';
+import * as types from "http://cdn.skypack.dev/@projectsophon/types";
 ```
 
 ## Table of contents

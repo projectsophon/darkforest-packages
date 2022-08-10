@@ -1,4 +1,4 @@
-# @darkforest_eth/gamelogic
+# @projectsophon/gamelogic
 
 ## Table of contents
 

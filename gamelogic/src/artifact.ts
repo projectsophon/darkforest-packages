@@ -1,5 +1,5 @@
-import { EMPTY_ADDRESS, MAX_SPACESHIP_TYPE, MIN_SPACESHIP_TYPE } from "@darkforest_eth/constants";
-import { hashToInt } from "@darkforest_eth/serde";
+import { EMPTY_ADDRESS, MAX_SPACESHIP_TYPE, MIN_SPACESHIP_TYPE } from "@projectsophon/constants";
+import { hashToInt } from "@projectsophon/serde";
 import {
   ArtifactRarity,
   ArtifactRarityNames,
@@ -9,8 +9,8 @@ import {
   BiomeNames,
   PlanetLevel,
   PlanetType,
-} from "@darkforest_eth/types";
-import type { Abstract, Artifact, ArtifactId, EthAddress, Planet, RenderedArtifact } from "@darkforest_eth/types";
+} from "@projectsophon/types";
+import type { Abstract, Artifact, ArtifactId, EthAddress, Planet, RenderedArtifact } from "@projectsophon/types";
 
 export const RelicsList: ArtifactType[] = [
   ArtifactType.Wormhole,

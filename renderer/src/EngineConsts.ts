@@ -1,5 +1,5 @@
-import { hslToRgb } from "@darkforest_eth/procedural";
-import type { RGBAVec, RGBVec } from "@darkforest_eth/types";
+import { hslToRgb } from "@projectsophon/procedural";
+import type { RGBAVec, RGBVec } from "@projectsophon/types";
 
 export const engineConsts = {
   fontStyle: "64px monospace",

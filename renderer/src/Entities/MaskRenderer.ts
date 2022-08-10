@@ -1,4 +1,4 @@
-import type { Chunk } from "@darkforest_eth/types";
+import type { Chunk } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import { MASK_PROGRAM_DEFINITION } from "../Programs/MaskProgram";
 import type { GameGLManager } from "../WebGL/GameGLManager";

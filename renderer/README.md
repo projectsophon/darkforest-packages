@@ -1,4 +1,4 @@
-# @darkforest_eth/renderer
+# @projectsophon/renderer
 
 ## Table of contents
 

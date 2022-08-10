@@ -8,16 +8,16 @@
  * [`yarn`](https://classic.yarnpkg.com/lang/en/) by running:
  *
  * ```bash
- * npm install --save @darkforest_eth/events
+ * npm install --save @projectsophon/events
  * ```
  * ```bash
- * yarn add @darkforest_eth/events
+ * yarn add @projectsophon/events
  * ```
  *
  * When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
  *
  * ```js
- * import * as events from 'http://cdn.skypack.dev/@darkforest_eth/events'
+ * import * as events from 'http://cdn.skypack.dev/@projectsophon/events'
  * ```
  *
  * @packageDocumentation

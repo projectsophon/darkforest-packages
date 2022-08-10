@@ -1,4 +1,4 @@
-import { type AttribProps, AttribType } from "@darkforest_eth/types";
+import { type AttribProps, AttribType } from "@projectsophon/types";
 import { glsl } from "../EngineUtils";
 import { ProgramUtils } from "../WebGL/ProgramUtils";
 

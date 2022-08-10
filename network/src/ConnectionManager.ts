@@ -1,6 +1,6 @@
-import { Store } from "@darkforest_eth/events";
-import { address } from "@darkforest_eth/serde";
-import type { EthAddress } from "@darkforest_eth/types";
+import { Store } from "@projectsophon/events";
+import { address } from "@projectsophon/serde";
+import type { EthAddress } from "@projectsophon/types";
 import { providers, Wallet } from "ethers";
 
 /**

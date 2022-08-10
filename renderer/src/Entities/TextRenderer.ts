@@ -1,5 +1,5 @@
-import type { CanvasCoords, RGBAVec, TextRendererType, WorldCoords } from "@darkforest_eth/types";
-import { RendererType, RenderZIndex, TextAlign, TextAnchor } from "@darkforest_eth/types";
+import type { CanvasCoords, RGBAVec, TextRendererType, WorldCoords } from "@projectsophon/types";
+import { RendererType, RenderZIndex, TextAlign, TextAnchor } from "@projectsophon/types";
 import { engineConsts } from "../EngineConsts";
 import { EngineUtils } from "../EngineUtils";
 import { TEXT_PROGRAM_DEFINITION } from "../Programs/TextProgram";

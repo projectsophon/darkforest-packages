@@ -1,6 +1,6 @@
-import { getPlanetCosmetic, hslToRgb } from "@darkforest_eth/procedural";
-import type { CanvasCoords, MineBodyRendererType, Planet, RGBVec, WorldCoords } from "@darkforest_eth/types";
-import { DrawMode, RendererType } from "@darkforest_eth/types";
+import { getPlanetCosmetic, hslToRgb } from "@projectsophon/procedural";
+import type { CanvasCoords, MineBodyRendererType, Planet, RGBVec, WorldCoords } from "@projectsophon/types";
+import { DrawMode, RendererType } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import { MINE_PROGRAM_DEFINITION } from "../Programs/MineProgram";
 import type { GameGLManager } from "../WebGL/GameGLManager";

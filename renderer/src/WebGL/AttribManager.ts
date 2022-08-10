@@ -1,4 +1,4 @@
-import type { AttribProps } from "@darkforest_eth/types";
+import type { AttribProps } from "@projectsophon/types";
 import { AttribArray } from "./AttribArray";
 
 /**

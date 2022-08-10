@@ -1,4 +1,4 @@
-# @darkforest_eth/serde
+# @projectsophon/serde
 
 This package contains serializers and deserializers for converting between
 various representations of Dark Forest data, for example between raw data
@@ -11,17 +11,17 @@ You can install this package using [`npm`](https://www.npmjs.com) or
 [`yarn`](https://classic.yarnpkg.com/lang/en/) by running:
 
 ```bash
-npm install --save @darkforest_eth/serde
+npm install --save @projectsophon/serde
 ```
 
 ```bash
-yarn add @darkforest_eth/serde
+yarn add @projectsophon/serde
 ```
 
 When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
 
 ```js
-import * as serde from 'http://cdn.skypack.dev/@darkforest_eth/serde';
+import * as serde from "http://cdn.skypack.dev/@projectsophon/serde";
 ```
 
 ## Table of contents
@@ -268,7 +268,7 @@ can be used if you need to pass an artifact ID into a web3 call.
 ▸ **decodeArrival**(`rawArrival`): `QueuedArrival`
 
 Converts the raw typechain result of `ArrivalTypes.ArrivalData` struct to
-to a `QueuedArrival` typescript typed object (see @darkforest_eth/types)
+to a `QueuedArrival` typescript typed object (see @projectsophon/types)
 
 #### Parameters
 
@@ -287,7 +287,7 @@ to a `QueuedArrival` typescript typed object (see @darkforest_eth/types)
 ▸ **decodeArtifact**(`rawArtifactWithMetadata`): `Artifact`
 
 Converts the raw typechain result of `ArtifactTypes.ArtifactWithMetadata`
-struct to an `Artifact` typescript typed object (see @darkforest_eth/types).
+struct to an `Artifact` typescript typed object (see @projectsophon/types).
 
 #### Parameters
 
@@ -307,7 +307,7 @@ struct to an `Artifact` typescript typed object (see @darkforest_eth/types).
 
 Converts the raw typechain result of a call to
 `DarkForest.getArtifactPointValues` to an `ArtifactPointValues`
-typescript typed object (see @darkforest_eth/types).
+typescript typed object (see @projectsophon/types).
 
 #### Parameters
 
@@ -326,7 +326,7 @@ typescript typed object (see @darkforest_eth/types).
 ▸ **decodePlanet**(`rawLocationId`, `rawPlanet`, `rawPlanetExtendedInfo`, `rawPlanetExtendedInfo2`): `Planet`
 
 Converts data obtained from a contract call (typed with Typechain) into a
-`Planet` that can be used by the client (see @darkforest_eth/types). Note
+`Planet` that can be used by the client (see @projectsophon/types). Note
 that some `Planet` fields (1) store client data that the blockchain is not
 aware of, such as `unconfirmedDepartures`, (2) store derived data that is
 calculated later by the client, such as `silverSpent` and `bonus`, or (3)
@@ -356,7 +356,7 @@ provided Dark Forest web client.
 
 Converts the raw typechain result of a call which fetches a
 `PlanetTypes.PlanetDefaultStats[]` array of structs, and converts it into
-an object with type `PlanetDefaults` (see @darkforest_eth/types).
+an object with type `PlanetDefaults` (see @projectsophon/types).
 
 #### Parameters
 
@@ -376,7 +376,7 @@ an object with type `PlanetDefaults` (see @darkforest_eth/types).
 
 Converts the raw typechain result of a call which fetches a
 `PlayerTypes.Player` struct, and converts it into an object
-with type `Player` (see @darkforest_eth/types) that can be used by a client.
+with type `Player` (see @projectsophon/types) that can be used by a client.
 
 #### Parameters
 

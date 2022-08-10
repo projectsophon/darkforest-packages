@@ -1,5 +1,5 @@
-import { RendererType } from "@darkforest_eth/types";
-import type { BlackDomainRendererType, CanvasCoords, GameViewport, Planet, WorldCoords } from "@darkforest_eth/types";
+import { RendererType } from "@projectsophon/types";
+import type { BlackDomainRendererType, CanvasCoords, GameViewport, Planet, WorldCoords } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import { BLACKDOMAIN_PROGRAM_DEFINITION } from "../Programs/BlackDomainProgram";
 import type { GameGLManager } from "../WebGL/GameGLManager";

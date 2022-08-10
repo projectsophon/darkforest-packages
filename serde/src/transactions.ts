@@ -17,7 +17,7 @@ import type {
   UnconfirmedUpgrade,
   UnconfirmedWithdrawArtifact,
   UnconfirmedWithdrawSilver,
-} from "@darkforest_eth/types";
+} from "@projectsophon/types";
 
 // @todo:
 // - these `isUnconfirmedX` should be named something that matches the naming convention of the

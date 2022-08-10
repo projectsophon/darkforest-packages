@@ -1,6 +1,6 @@
-import { MAX_PLANET_LEVEL } from "@darkforest_eth/constants";
-import { RendererType } from "@darkforest_eth/types";
-import type { CanvasCoords, MineRendererType, Planet, WorldCoords } from "@darkforest_eth/types";
+import { MAX_PLANET_LEVEL } from "@projectsophon/constants";
+import { RendererType } from "@projectsophon/types";
+import type { CanvasCoords, MineRendererType, Planet, WorldCoords } from "@projectsophon/types";
 import { engineConsts } from "../EngineConsts";
 import { EngineUtils } from "../EngineUtils";
 import type { Renderer } from "../Renderer";

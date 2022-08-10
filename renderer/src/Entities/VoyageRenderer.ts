@@ -1,8 +1,8 @@
-import { EMPTY_ADDRESS } from "@darkforest_eth/constants";
-import { formatNumber, hasOwner } from "@darkforest_eth/gamelogic";
-import { getOwnerColorVec } from "@darkforest_eth/procedural";
-import { RendererType, RenderZIndex, TextAlign, TextAnchor } from "@darkforest_eth/types";
-import type { LocationId, Planet, Player, QueuedArrival, VoyageRendererType } from "@darkforest_eth/types";
+import { EMPTY_ADDRESS } from "@projectsophon/constants";
+import { formatNumber, hasOwner } from "@projectsophon/gamelogic";
+import { getOwnerColorVec } from "@projectsophon/procedural";
+import { RendererType, RenderZIndex, TextAlign, TextAnchor } from "@projectsophon/types";
+import type { LocationId, Planet, Player, QueuedArrival, VoyageRendererType } from "@projectsophon/types";
 import { engineConsts } from "../EngineConsts";
 import type { Renderer } from "../Renderer";
 import type { GameGLManager } from "../WebGL/GameGLManager";

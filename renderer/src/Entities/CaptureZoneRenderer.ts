@@ -1,4 +1,4 @@
-import { type CaptureZoneRendererType, RendererType } from "@darkforest_eth/types";
+import { type CaptureZoneRendererType, RendererType } from "@projectsophon/types";
 import type { Renderer, RendererGameContext } from "../Renderer";
 import type { GameGLManager } from "../WebGL/GameGLManager";
 

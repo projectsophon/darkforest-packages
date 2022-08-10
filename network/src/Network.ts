@@ -1,6 +1,6 @@
-import { DEFAULT_MAX_CALL_RETRIES } from "@darkforest_eth/constants";
-import { address } from "@darkforest_eth/serde";
-import { AutoGasSetting, type EthAddress, type GasPrices, type SignedMessage } from "@darkforest_eth/types";
+import { DEFAULT_MAX_CALL_RETRIES } from "@projectsophon/constants";
+import { address } from "@projectsophon/serde";
+import { AutoGasSetting, type EthAddress, type GasPrices, type SignedMessage } from "@projectsophon/types";
 import { BigNumber, Contract, type ContractInterface, providers, utils, Wallet } from "ethers";
 import retry from "p-retry";
 import timeout from "p-timeout";

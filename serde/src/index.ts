@@ -10,16 +10,16 @@
  * [`yarn`](https://classic.yarnpkg.com/lang/en/) by running:
  *
  * ```bash
- * npm install --save @darkforest_eth/serde
+ * npm install --save @projectsophon/serde
  * ```
  * ```bash
- * yarn add @darkforest_eth/serde
+ * yarn add @projectsophon/serde
  * ```
  *
  * When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
  *
  * ```js
- * import * as serde from 'http://cdn.skypack.dev/@darkforest_eth/serde'
+ * import * as serde from 'http://cdn.skypack.dev/@projectsophon/serde'
  * ```
  *
  * @packageDocumentation

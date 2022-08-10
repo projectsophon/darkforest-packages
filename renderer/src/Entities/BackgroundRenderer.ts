@@ -1,5 +1,5 @@
-import { RendererType, SpaceType } from "@darkforest_eth/types";
-import type { BackgroundRendererType, Chunk, RGBVec } from "@darkforest_eth/types";
+import { RendererType, SpaceType } from "@projectsophon/types";
+import type { BackgroundRendererType, Chunk, RGBVec } from "@projectsophon/types";
 import type { Renderer } from "../Renderer";
 import type { GameGLManager } from "../WebGL/GameGLManager";
 import { RectRenderer } from "./RectRenderer";

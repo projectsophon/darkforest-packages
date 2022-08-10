@@ -1,5 +1,5 @@
-import { RendererType } from "@darkforest_eth/types";
-import type { Chunk, PerlinConfig, PerlinRendererType, Rectangle, Vec3 } from "@darkforest_eth/types";
+import { RendererType } from "@projectsophon/types";
+import type { Chunk, PerlinConfig, PerlinRendererType, Rectangle, Vec3 } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import { PERLIN_PROGRAM_DEFINITION } from "../Programs/PerlinProgram";
 import type { AttribManager } from "../WebGL/AttribManager";

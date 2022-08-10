@@ -1,19 +1,19 @@
-import { AttribType, UniformType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
-import { ShaderMixins } from '../WebGL/ShaderMixins';
+import { AttribType, UniformType } from "@projectsophon/types";
+import { glsl } from "../EngineUtils";
+import { ShaderMixins } from "../WebGL/ShaderMixins";
 
 const a = {
-  position: 'a_position',
-  rectPos: 'a_rectPos', // note that this is [+x, +y] to the upper-right
-  color: 'a_color',
+  position: "a_position",
+  rectPos: "a_rectPos", // note that this is [+x, +y] to the upper-right
+  color: "a_color",
 };
 const u = {
-  matrix: 'u_matrix', // matrix to convert from world coords to clipspace
-  time: 'u_time',
+  matrix: "u_matrix", // matrix to convert from world coords to clipspace
+  time: "u_time",
 };
 const v = {
-  color: 'v_color',
-  rectPos: 'v_rectPos',
+  color: "v_color",
+  rectPos: "v_rectPos",
 };
 
 export const QUASARBODY_PROGRAM_DEFINITION = {

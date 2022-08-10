@@ -1,5 +1,5 @@
-import { RendererType } from "@darkforest_eth/types";
-import type { CanvasCoords, GameViewport, Planet, RGBVec, RingRendererType, WorldCoords } from "@darkforest_eth/types";
+import { RendererType } from "@projectsophon/types";
+import type { CanvasCoords, GameViewport, Planet, RGBVec, RingRendererType, WorldCoords } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import { propsFromIdx, type RingProps, RING_PROGRAM_DEFINITION } from "../Programs/RingProgram";
 import type { GameGLManager } from "../WebGL/GameGLManager";

@@ -1,4 +1,4 @@
-import { PlanetLevel, RendererType, Setting } from "@darkforest_eth/types";
+import { PlanetLevel, RendererType, Setting } from "@projectsophon/types";
 import type {
   Artifact,
   ArtifactId,
@@ -49,7 +49,7 @@ import type {
   WorldLocation,
   Wormhole,
   WormholeRendererType,
-} from "@darkforest_eth/types";
+} from "@projectsophon/types";
 import { AsteroidRenderer } from "./Entities/AsteroidRenderer";
 import { BackgroundRenderer } from "./Entities/BackgroundRenderer";
 import { BeltRenderer } from "./Entities/BeltRenderer";

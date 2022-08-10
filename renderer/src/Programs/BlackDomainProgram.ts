@@ -1,17 +1,17 @@
-import { AttribType, UniformType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
-import { ShaderMixins } from '../WebGL/ShaderMixins';
+import { AttribType, UniformType } from "@projectsophon/types";
+import { glsl } from "../EngineUtils";
+import { ShaderMixins } from "../WebGL/ShaderMixins";
 
 const a = {
-  position: 'a_position',
-  rectPos: 'a_rectPos',
+  position: "a_position",
+  rectPos: "a_rectPos",
 };
 const u = {
-  matrix: 'u_matrix', // matrix to convert from world coords to clipspace
-  now: 'u_now',
+  matrix: "u_matrix", // matrix to convert from world coords to clipspace
+  now: "u_now",
 };
 const v = {
-  rectPos: 'v_rectPos',
+  rectPos: "v_rectPos",
 };
 
 export const BLACKDOMAIN_PROGRAM_DEFINITION = {

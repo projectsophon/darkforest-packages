@@ -1,6 +1,6 @@
-import { EMPTY_ADDRESS, EMPTY_LOCATION_ID } from "@darkforest_eth/constants";
-import { artifactNameFromArtifact, ArtifactRarity, ArtifactType, Biome } from "@darkforest_eth/types";
-import type { Artifact, ArtifactId } from "@darkforest_eth/types";
+import { EMPTY_ADDRESS, EMPTY_LOCATION_ID } from "@projectsophon/constants";
+import { artifactNameFromArtifact, ArtifactRarity, ArtifactType, Biome } from "@projectsophon/types";
+import type { Artifact, ArtifactId } from "@projectsophon/types";
 
 const namesById = new Map<ArtifactId, string>();
 export const artifactName = (artifact: Artifact | undefined): string => {

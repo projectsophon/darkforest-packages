@@ -1,4 +1,4 @@
-# @darkforest_eth/procedural
+# @projectsophon/procedural
 
 ## Table of contents
 

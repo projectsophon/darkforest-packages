@@ -1,4 +1,4 @@
-# @darkforest_eth/hexgen
+# @projectsophon/hexgen
 
 This package contains functions for determining various properties of Dark Forest objects based on their ID in hex. You could think of this package like procedural generation for Ethereum addresses.
 
@@ -10,17 +10,17 @@ You can install this package using [`npm`](https://www.npmjs.com) or
 [`yarn`](https://classic.yarnpkg.com/lang/en/) by running:
 
 ```bash
-npm install --save @darkforest_eth/hexgen
+npm install --save @projectsophon/hexgen
 ```
 
 ```bash
-yarn add @darkforest_eth/hexgen
+yarn add @projectsophon/hexgen
 ```
 
 When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
 
 ```js
-import * as hexgen from 'http://cdn.skypack.dev/@darkforest_eth/hexgen';
+import * as hexgen from "http://cdn.skypack.dev/@projectsophon/hexgen";
 ```
 
 ## Table of contents

@@ -1,5 +1,5 @@
-import { RendererType, RenderZIndex } from "@darkforest_eth/types";
-import type { LocationId, WormholeRendererType } from "@darkforest_eth/types";
+import { RendererType, RenderZIndex } from "@projectsophon/types";
+import type { LocationId, WormholeRendererType } from "@projectsophon/types";
 import { engineConsts } from "../EngineConsts";
 import type { Renderer } from "../Renderer";
 import type { GameGLManager } from "../WebGL/GameGLManager";

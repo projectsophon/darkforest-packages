@@ -1,5 +1,5 @@
 {
-  "name": "@darkforest_eth/serde",
+  "name": "@projectsophon/serde",
   "version": "6.7.29",
   "license": "MIT",
   "author": "0xPARC <ivan@0xPARC.org>",
@@ -21,10 +21,10 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@darkforest_eth/constants": "6.7.29",
-    "@darkforest_eth/contracts": "6.7.29",
-    "@darkforest_eth/hexgen": "6.7.29",
-    "@darkforest_eth/types": "6.7.29",
+    "@projectsophon/constants": "6.7.29",
+    "@projectsophon/contracts": "6.7.29",
+    "@projectsophon/hexgen": "6.7.29",
+    "@projectsophon/types": "6.7.29",
     "big-integer": "^1.6.48",
     "ethers": "^5.5.1"
   },

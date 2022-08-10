@@ -1,6 +1,6 @@
-import { getPlanetCosmetic } from "@darkforest_eth/procedural";
-import { RendererType } from "@darkforest_eth/types";
-import type { Planet, PlanetRendererType, WorldCoords } from "@darkforest_eth/types";
+import { getPlanetCosmetic } from "@projectsophon/procedural";
+import { RendererType } from "@projectsophon/types";
+import type { Planet, PlanetRendererType, WorldCoords } from "@projectsophon/types";
 import { mat4 } from "gl-matrix";
 import { engineConsts } from "../EngineConsts";
 import { EngineUtils } from "../EngineUtils";

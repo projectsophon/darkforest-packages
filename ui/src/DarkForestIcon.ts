@@ -1,4 +1,4 @@
-import type { Abstract } from "@darkforest_eth/types";
+import type { Abstract } from "@projectsophon/types";
 import { css, LitElement, nothing, svg, unsafeCSS } from "lit";
 import * as dfstyles from "./styles";
 

@@ -1,4 +1,4 @@
-import type { RGBAVec } from "@darkforest_eth/types";
+import type { RGBAVec } from "@projectsophon/types";
 import { mat4 } from "gl-matrix";
 
 export class WebGLManager {

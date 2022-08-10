@@ -1,5 +1,5 @@
-import { DEFAULT_MAX_CALL_RETRIES } from "@darkforest_eth/constants";
-import type { DiagnosticUpdater } from "@darkforest_eth/types";
+import { DEFAULT_MAX_CALL_RETRIES } from "@projectsophon/constants";
+import type { DiagnosticUpdater } from "@projectsophon/types";
 import type { ContractFunction } from "ethers";
 import retry, { AbortError } from "p-retry";
 import { type Queue, ThrottledConcurrentQueue } from "./ThrottledConcurrentQueue";

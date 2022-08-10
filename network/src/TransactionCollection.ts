@@ -1,4 +1,4 @@
-import type { Transaction, TransactionCollection, TxIntent } from "@darkforest_eth/types";
+import type { Transaction, TransactionCollection, TxIntent } from "@projectsophon/types";
 
 /**
  * Default implementation of a transaction collection - provides a simple api for adding, removing,

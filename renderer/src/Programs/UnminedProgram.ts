@@ -1,20 +1,20 @@
-import { AttribType, UniformType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
-import { ShaderMixins } from '../WebGL/ShaderMixins';
+import { AttribType, UniformType } from "@projectsophon/types";
+import { glsl } from "../EngineUtils";
+import { ShaderMixins } from "../WebGL/ShaderMixins";
 
 const a = {
-  position: 'a_position',
-  color: 'a_color',
-  rectPos: 'a_rectPos',
+  position: "a_position",
+  color: "a_color",
+  rectPos: "a_rectPos",
 };
 const u = {
-  matrix: 'u_matrix', // matrix to convert from world coords to clipspace
-  viewportCenter: 'u_viewportCenter',
-  time: 'u_time',
+  matrix: "u_matrix", // matrix to convert from world coords to clipspace
+  viewportCenter: "u_viewportCenter",
+  time: "u_time",
 };
 const v = {
-  color: 'v_color',
-  rectPos: 'v_rectPos',
+  color: "v_color",
+  rectPos: "v_rectPos",
 };
 
 export const UNMINED_PROGRAM_DEFINITION = {
@@ -70,7 +70,7 @@ export const UNMINED_PROGRAM_DEFINITION = {
 
     in vec4 ${v.color};
     in vec2 ${v.rectPos};
-    
+
     uniform vec3 ${u.viewportCenter};
     uniform float ${u.time};
 

@@ -26,8 +26,8 @@ import type {
   UnminedRendererType,
   VoyageRendererType,
   WormholeRendererType,
-} from "@darkforest_eth/types";
-import { RendererType } from "@darkforest_eth/types";
+} from "@projectsophon/types";
+import { RendererType } from "@projectsophon/types";
 
 export function isPlanetRenderer(renderer: BaseRenderer): renderer is PlanetRendererType {
   return renderer.rendererType === RendererType.Planet;

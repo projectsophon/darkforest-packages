@@ -1,5 +1,5 @@
-import { DrawMode, RendererType, RenderZIndex } from "@darkforest_eth/types";
-import type { CanvasCoords, LineRendererType, RGBAVec, WorldCoords } from "@darkforest_eth/types";
+import { DrawMode, RendererType, RenderZIndex } from "@projectsophon/types";
+import type { CanvasCoords, LineRendererType, RGBAVec, WorldCoords } from "@projectsophon/types";
 import { LINE_PROGRAM_DEFINITION } from "../Programs/LineProgram";
 import type { GameGLManager } from "../WebGL/GameGLManager";
 import { GenericRenderer } from "../WebGL/GenericRenderer";

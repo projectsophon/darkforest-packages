@@ -1,27 +1,27 @@
-import { AttribType, UniformType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
-import { ShaderMixins } from '../WebGL/ShaderMixins';
+import { AttribType, UniformType } from "@projectsophon/types";
+import { glsl } from "../EngineUtils";
+import { ShaderMixins } from "../WebGL/ShaderMixins";
 
 const a = {
-  position: 'a_position',
-  texcoord: 'a_texcoord',
-  rectPos: 'a_rectPos',
-  color: 'a_color',
-  shine: 'a_shine', // -0.5 to 0.5
-  invert: 'a_invert',
-  mythic: 'a_mythic',
+  position: "a_position",
+  texcoord: "a_texcoord",
+  rectPos: "a_rectPos",
+  color: "a_color",
+  shine: "a_shine", // -0.5 to 0.5
+  invert: "a_invert",
+  mythic: "a_mythic",
 };
 const u = {
-  matrix: 'u_matrix', // matrix to convert from screen coords to clipspace
-  texture: 'u_texture',
+  matrix: "u_matrix", // matrix to convert from screen coords to clipspace
+  texture: "u_texture",
 };
 const v = {
-  texcoord: 'v_texcoord',
-  color: 'v_color',
-  shine: 'v_shine',
-  invert: 'v_invert',
-  mythic: 'v_mythic',
-  rectPos: 'v_rectPos',
+  texcoord: "v_texcoord",
+  color: "v_color",
+  shine: "v_shine",
+  invert: "v_invert",
+  mythic: "v_mythic",
+  rectPos: "v_rectPos",
 };
 
 export const SPRITE_PROGRAM_DEFINITION = {
@@ -143,8 +143,8 @@ export const SPRITE_PROGRAM_DEFINITION = {
         bool isBlack = texel.r < 0.05 && texel.g < 0.05 && texel.b < 0.05;
         bool isWhite = texel.r > 0.95 && texel.g > 0.95 && texel.b > 0.95;
 
-        if (isBlack) { } 
-        else if (isWhite) { } 
+        if (isBlack) { }
+        else if (isWhite) { }
         else {
           texel.rgb = ((texel.rgb - 0.35) * max(3., 0.)) + 0.35;
           texel.rgb *= 0.5 * rand + 0.6;

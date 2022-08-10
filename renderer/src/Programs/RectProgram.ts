@@ -1,21 +1,21 @@
-import { AttribType, UniformType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
+import { AttribType, UniformType } from "@projectsophon/types";
+import { glsl } from "../EngineUtils";
 
 const a = {
-  position: 'a_position',
-  color: 'a_color',
-  rectPos: 'a_rectPos',
-  strokeX: 'a_strokeX',
-  strokeY: 'a_strokeY',
+  position: "a_position",
+  color: "a_color",
+  rectPos: "a_rectPos",
+  strokeX: "a_strokeX",
+  strokeY: "a_strokeY",
 };
 const u = {
-  matrix: 'u_matrix', // matrix to convert from world coords to clipspace
+  matrix: "u_matrix", // matrix to convert from world coords to clipspace
 };
 const v = {
-  color: 'v_color',
-  rectPos: 'v_rectPos',
-  strokeX: 'v_strokeX',
-  strokeY: 'v_strokeY',
+  color: "v_color",
+  rectPos: "v_rectPos",
+  strokeX: "v_strokeX",
+  strokeY: "v_strokeY",
 };
 
 export const RECT_PROGRAM_DEFINITION = {

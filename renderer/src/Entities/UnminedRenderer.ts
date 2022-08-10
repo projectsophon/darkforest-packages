@@ -1,5 +1,5 @@
-import { RendererType, RenderZIndex } from "@darkforest_eth/types";
-import type { CanvasCoords, RGBVec, UnminedRendererType } from "@darkforest_eth/types";
+import { RendererType, RenderZIndex } from "@projectsophon/types";
+import type { CanvasCoords, RGBVec, UnminedRendererType } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
 import { UNMINED_PROGRAM_DEFINITION } from "../Programs/UnminedProgram";
 import type { GameGLManager } from "../WebGL/GameGLManager";

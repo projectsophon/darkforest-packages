@@ -1,5 +1,5 @@
-import { Fraction, getRandomGradientAt, rand } from "@darkforest_eth/hashing";
-import type { Abstract, PerlinConfig, Rectangle, WorldCoords } from "@darkforest_eth/types";
+import { Fraction, getRandomGradientAt, rand } from "@projectsophon/hashing";
+import type { Abstract, PerlinConfig, Rectangle, WorldCoords } from "@projectsophon/types";
 
 /* types */
 type Vector = { x: number; y: number };

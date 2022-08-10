@@ -1,4 +1,4 @@
-# @darkforest_eth/hashing
+# @projectsophon/hashing
 
 This package contains MiMC hashing utilities for use with Dark Forest.
 The MiMC algorithm is used for both finding planet hashes and calculating
@@ -11,17 +11,17 @@ You can install this package using [`npm`](https://www.npmjs.com) or
 [`yarn`](https://classic.yarnpkg.com/lang/en/) by running:
 
 ```bash
-npm install --save @darkforest_eth/hashing
+npm install --save @projectsophon/hashing
 ```
 
 ```bash
-yarn add @darkforest_eth/hashing
+yarn add @projectsophon/hashing
 ```
 
 When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
 
 ```js
-import * as hashing from 'http://cdn.skypack.dev/@darkforest_eth/hashing';
+import * as hashing from "http://cdn.skypack.dev/@projectsophon/hashing";
 ```
 
 ## Table of contents

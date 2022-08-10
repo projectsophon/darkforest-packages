@@ -1,5 +1,5 @@
-import { isUnconfirmedMoveTx } from "@darkforest_eth/serde";
-import { ArtifactRarity, RendererType } from "@darkforest_eth/types";
+import { isUnconfirmedMoveTx } from "@projectsophon/serde";
+import { ArtifactRarity, RendererType } from "@projectsophon/types";
 import type {
   Artifact,
   CanvasCoords,
@@ -9,7 +9,7 @@ import type {
   RGBVec,
   SpriteRendererType,
   WorldCoords,
-} from "@darkforest_eth/types";
+} from "@projectsophon/types";
 import { engineConsts } from "../EngineConsts";
 import { EngineUtils } from "../EngineUtils";
 import { SPRITE_PROGRAM_DEFINITION } from "../Programs/SpriteProgram";

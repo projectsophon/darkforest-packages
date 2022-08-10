@@ -1,18 +1,18 @@
-import { AttribType, UniformType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
+import { AttribType, UniformType } from "@projectsophon/types";
+import { glsl } from "../EngineUtils";
 
 const a = {
-  position: 'a_position',
-  color: 'a_color',
-  texcoord: 'a_texcoord',
+  position: "a_position",
+  color: "a_color",
+  texcoord: "a_texcoord",
 };
 const u = {
-  matrix: 'u_matrix',
-  texture: 'u_texture',
+  matrix: "u_matrix",
+  texture: "u_texture",
 };
 const v = {
-  color: 'v_color',
-  texcoord: 'v_texcoord',
+  color: "v_color",
+  texcoord: "v_texcoord",
 };
 
 export const TEXT_PROGRAM_DEFINITION = {
