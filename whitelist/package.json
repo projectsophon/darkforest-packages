@@ -23,11 +23,11 @@
   },
   "dependencies": {
     "@projectsophon/hashing": "0.0.0",
-    "@types/lodash": "^4.14.160",
     "ethers": "^5.5.1",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.160",
     "del-cli": "^4.0.1",
     "eslint": "^7.30.0",
     "prettier": "^2.7.0",
