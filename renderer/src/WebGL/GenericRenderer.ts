@@ -24,7 +24,6 @@ export interface EngineProgramDefinition {
   fragmentShader: string;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type UniformSetter = (el: any) => void;
 
 export type UniformSetters<T extends EngineProgramDefinition> = {

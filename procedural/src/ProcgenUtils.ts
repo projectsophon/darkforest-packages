@@ -486,7 +486,7 @@ export function getPlanetBlurb(planet: Planet | undefined): string {
         `The #air# is #descair#. ` +
         `#myflora.capitalize# #bloom# #colors#. ` +
         `#many.capitalize# species of #species# #populate# the #habitat#. ` +
-        `#funfact.capitalize#\.`,
+        `#funfact.capitalize#.`,
     ],
     origin: ["#[myflora:#flora#]story#"],
   };
@@ -510,7 +510,7 @@ export function getPlanetBlurb2(planet: Planet | undefined): string {
   const tagline = getPlanetTagline(planet);
   const myGrammar = {
     story: [
-      `The people of ${name} have #learned# to #live# in a ${tagline}. ${name}'s #mysun# #sends# an #flock# of #bads# #sometimes#. Over the #years#, they've #removed# the #mysun# by #throwing# #warbears#. In doing so, they've learned that #lesson#\.`,
+      `The people of ${name} have #learned# to #live# in a ${tagline}. ${name}'s #mysun# #sends# an #flock# of #bads# #sometimes#. Over the #years#, they've #removed# the #mysun# by #throwing# #warbears#. In doing so, they've learned that #lesson#.`,
     ],
     origin: [`#[mysun:#sun#]story#`],
   };

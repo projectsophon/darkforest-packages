@@ -91,6 +91,8 @@ export class ConnectionManager extends Store {
   get privateKey(): string | undefined {
     if (this.#signer) {
       return this.#signer.privateKey;
+    } else {
+      return undefined;
     }
   }
 
@@ -104,6 +106,8 @@ export class ConnectionManager extends Store {
   get account(): EthAddress | undefined {
     if (this.#signer) {
       return address(this.#signer.address);
+    } else {
+      return undefined;
     }
   }
 }

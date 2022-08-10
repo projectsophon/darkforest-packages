@@ -32,11 +32,7 @@
   },
   "devDependencies": {
     "@monorepo-utils/workspaces-to-typescript-project-references": "^2.7.4",
-    "@projectsophon/prettier-config": "^0.0.0",
-    "@projectsophon/tsconfig": "^0.1.1",
     "@types/node": "^18.6.1",
-    "prettier": "^2.7.0",
     "typescript": "4.7.x"
-  },
-  "prettier": "@projectsophon/prettier-config"
+  }
 }

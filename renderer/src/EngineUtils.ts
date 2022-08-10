@@ -3,9 +3,7 @@ import { RenderZIndex } from "@projectsophon/types";
 
 /* generic template string which, combined with a vscode package, let us get syntax highlighting. */
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const toStrSafe = (x: any) => (x ? x.toString() : "");
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const glsl = (arr: TemplateStringsArray, ...args: any[]): string =>
   "#version 300 es\n" +
   arr.reduce((acc, curr, idx) => {

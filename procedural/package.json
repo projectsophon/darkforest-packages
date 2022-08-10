@@ -16,7 +16,7 @@
     "prepublishOnly": "npm run build && npm run docs",
     "build": "tsc -p .",
     "test": "exit 0",
-    "lint": "eslint .",
+    "lint": "eslint  --ext .ts .",
     "format": "prettier --write .",
     "docs": "typedoc && npm run format",
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
@@ -29,8 +29,11 @@
     "@projectsophon/types": "0.0.0"
   },
   "devDependencies": {
+    "@projectsophon/eslint-config": "^0.2.1",
+    "@projectsophon/prettier-config": "^0.0.0",
+    "@projectsophon/tsconfig": "^0.1.1",
     "del-cli": "^4.0.1",
-    "eslint": "^7.30.0",
+    "eslint": "^8.21.0",
     "prettier": "^2.7.0",
     "typedoc": "^0.23.10",
     "typedoc-plugin-markdown": "3.13.x",
@@ -39,5 +42,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "7be5c147fe7c92b409ae3e7608713590f5b66c63"
+  "prettier": "@projectsophon/prettier-config",
+  "eslintConfig": {
+    "extends": "@projectsophon/eslint-config"
+  }
 }

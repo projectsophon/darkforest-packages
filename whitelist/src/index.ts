@@ -50,6 +50,6 @@ export const generateKeys = (count: number) => {
   return keys;
 };
 
-export const bigIntFromKey = (key: string) => BigInt(`0x${replace(key, /\-/g, "")}`);
+export const bigIntFromKey = (key: string) => BigInt(`0x${replace(key, /-/g, "")}`);
 
 export const keyHash = (key: string) => mimcSponge([bigIntFromKey(key)], 1, 220, 0)[0].toString();

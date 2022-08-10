@@ -239,7 +239,7 @@ export function canActivateArtifact(artifact: Artifact, planet: Planet | undefin
     const anyArtifactActive = artifactsOnPlanet.some((a) => isActivated(a));
     const waitUntilAvailable = available - now;
     const availableToActivate =
-      waitUntilAvailable <= -0 &&
+      waitUntilAvailable <= 0 &&
       !anyArtifactActive &&
       planet?.locationId === artifact.onPlanetId &&
       !!artifact.onPlanetId;

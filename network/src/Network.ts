@@ -13,9 +13,7 @@ export type RetryErrorHandler = (i: number, e: Error) => void;
  * @todo Get rid of this, and make use of {@link ContractCaller}.
  */
 export const callWithRetry = async <T>(
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   fn: (...args: any[]) => Promise<T>,
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   args: any[] = [],
   onError?: RetryErrorHandler,
   maxRetries = DEFAULT_MAX_CALL_RETRIES,
@@ -93,7 +91,7 @@ export const aggregateBulkGetter = async <T>(
     const end = Math.min((page + 1) * querySize + offset, total);
     const loadedThisBatch = end - start;
     promises.push(
-      new Promise<T[]>(async (resolve) => {
+      (async () => {
         let res: T[] = [];
         while (res.length === 0) {
           res = await getterFn(start, end);
@@ -101,8 +99,8 @@ export const aggregateBulkGetter = async <T>(
           onProgress && onProgress(loadedSoFar / total);
         }
 
-        resolve(res);
-      })
+        return res;
+      })()
     );
   }
 
