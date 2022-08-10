@@ -1,19 +1,19 @@
-import { css, html, LitElement, nothing, PropertyValues, unsafeCSS } from 'lit';
-import { classMap } from 'lit/directives/class-map.js';
-import { styleMap } from 'lit/directives/style-map.js';
-import * as dfstyles from './styles';
+import { css, html, LitElement, nothing, type PropertyValues, unsafeCSS } from "lit";
+import { classMap } from "lit/directives/class-map.js";
+import { styleMap } from "lit/directives/style-map.js";
+import * as dfstyles from "./styles";
 
 type Coords = { x: number; y: number };
-type Contain = 'left' | 'right' | 'top' | 'bottom' | 'horizontal' | 'vertical';
+type Contain = "left" | "right" | "top" | "bottom" | "horizontal" | "vertical";
 
 function clipX(x: number, width: number, contain: Contain[]): number {
   let newX = x;
-  if (contain.includes('right') || contain.includes('horizontal')) {
+  if (contain.includes("right") || contain.includes("horizontal")) {
     if (newX + width > window.innerWidth) {
       newX = window.innerWidth - width;
     }
   }
-  if (contain.includes('left') || contain.includes('horizontal')) {
+  if (contain.includes("left") || contain.includes("horizontal")) {
     if (newX < 0) {
       newX = 0;
     }
@@ -23,12 +23,12 @@ function clipX(x: number, width: number, contain: Contain[]): number {
 
 const clipY = (y: number, height: number, contain: Contain[]): number => {
   let newY = y;
-  if (contain.includes('bottom') || contain.includes('vertical')) {
+  if (contain.includes("bottom") || contain.includes("vertical")) {
     if (newY + height > window.innerHeight) {
       newY = window.innerHeight - height;
     }
   }
-  if (contain.includes('top') || contain.includes('vertical')) {
+  if (contain.includes("top") || contain.includes("vertical")) {
     if (newY < 0) {
       newY = 0;
     }
@@ -40,7 +40,7 @@ export class PositionChangedEvent extends Event {
   public coords: Coords;
 
   constructor(x: number, y: number) {
-    super('position-changed', { bubbles: true, cancelable: true, composed: true });
+    super("position-changed", { bubbles: true, cancelable: true, composed: true });
     this.coords = {
       x,
       y,
@@ -50,7 +50,7 @@ export class PositionChangedEvent extends Event {
 
 export class DarkForestModal extends LitElement {
   // Not part of LitElement but let's tack on the tagName for easier registration
-  static tagName = 'df-modal';
+  static tagName = "df-modal";
 
   // Defining element styles without a decorator
   // These are injected into the shadowRoot so they aren't applied globally
@@ -140,7 +140,7 @@ export class DarkForestModal extends LitElement {
   initialY?: number;
   index?: number;
   width?: string;
-  contain: Contain[] = ['horizontal', 'vertical'];
+  contain: Contain[] = ["horizontal", "vertical"];
   private _dragging = false;
   private _mousedownCoords?: Coords;
   private _delCoords?: Coords;
@@ -166,7 +166,7 @@ export class DarkForestModal extends LitElement {
     super.updated(changedProperties);
 
     // Adjust the zIndex if it changed
-    if (changedProperties.has('index')) {
+    if (changedProperties.has("index")) {
       let zIndex = dfstyles.zIndex.Modal;
       if (this.index) {
         zIndex += this.index;
@@ -279,17 +279,17 @@ export class DarkForestModal extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-    window.addEventListener('mousemove', this._handleMouseMove);
-    window.addEventListener('mouseleave', this._handleMoveEnd);
-    window.addEventListener('mouseup', this._handleMoveEnd);
-    window.addEventListener('resize', this._handleResize);
+    window.addEventListener("mousemove", this._handleMouseMove);
+    window.addEventListener("mouseleave", this._handleMoveEnd);
+    window.addEventListener("mouseup", this._handleMoveEnd);
+    window.addEventListener("resize", this._handleResize);
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
-    window.removeEventListener('mousemove', this._handleMouseMove);
-    window.removeEventListener('mouseleave', this._handleMoveEnd);
-    window.removeEventListener('mouseup', this._handleMoveEnd);
-    window.removeEventListener('resize', this._handleResize);
+    window.removeEventListener("mousemove", this._handleMouseMove);
+    window.removeEventListener("mouseleave", this._handleMoveEnd);
+    window.removeEventListener("mouseup", this._handleMoveEnd);
+    window.removeEventListener("resize", this._handleResize);
   }
 }

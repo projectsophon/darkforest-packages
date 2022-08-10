@@ -1,17 +1,10 @@
-import { getPlanetCosmetic } from '@darkforest_eth/procedural';
-import {
-  CanvasCoords,
-  Planet,
-  PlanetLevel,
-  RendererType,
-  RGBVec,
-  RuinsRendererType,
-  WorldCoords,
-} from '@darkforest_eth/types';
-import { EngineUtils } from '../EngineUtils';
-import { RUINS_PROGRAM_DEFINITION } from '../Programs/RuinsProgram';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { getPlanetCosmetic } from "@darkforest_eth/procedural";
+import { PlanetLevel, RendererType } from "@darkforest_eth/types";
+import type { CanvasCoords, Planet, RGBVec, RuinsRendererType, WorldCoords } from "@darkforest_eth/types";
+import { EngineUtils } from "../EngineUtils";
+import { RUINS_PROGRAM_DEFINITION } from "../Programs/RuinsProgram";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 
 export class RuinsRenderer
   extends GenericRenderer<typeof RUINS_PROGRAM_DEFINITION, GameGLManager>
@@ -64,13 +57,7 @@ export class RuinsRenderer
     weights: [number, number, number, number],
     props: [number, number, number, number]
   ) {
-    const {
-      position,
-      color: colorA,
-      rectPos,
-      weights: weightsA,
-      props: propsA,
-    } = this.attribManagers;
+    const { position, color: colorA, rectPos, weights: weightsA, props: propsA } = this.attribManagers;
 
     const r = radius * 1.0;
 

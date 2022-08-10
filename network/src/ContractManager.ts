@@ -1,6 +1,6 @@
 import { Store } from "@darkforest_eth/events";
-import { BaseContract, providers, Wallet } from "ethers";
-import { ConnectionManager } from "./ConnectionManager";
+import type { BaseContract, providers, Wallet } from "ethers";
+import type { ConnectionManager } from "./ConnectionManager";
 
 export type ContractLoader<C extends BaseContract> = (
   address: string,
@@ -50,11 +50,7 @@ export class ContractManager extends Store {
       needsNotify = true;
 
       // Was going to dedupe this with `loadContract` but there is no reason to set the loader again.
-      const contract = await loader(
-        address,
-        this.#connection.provider,
-        this.#connection.signer
-      );
+      const contract = await loader(address, this.#connection.provider, this.#connection.signer);
       this.#contracts.set(address, contract);
     }
 
@@ -70,10 +66,7 @@ export class ContractManager extends Store {
    * @param address The contract address to register the contract against.
    * @param loader The loader used to load (or reload) the contract.
    */
-  async loadContract<C extends BaseContract>(
-    address: string,
-    loader?: ContractLoader<C>
-  ): Promise<C> {
+  async loadContract<C extends BaseContract>(address: string, loader?: ContractLoader<C>): Promise<C> {
     if (!loader) {
       const contract = this.#contracts.get(address);
       if (!contract) {
@@ -82,11 +75,7 @@ export class ContractManager extends Store {
       return contract as C;
     } else {
       this.#loaders.set(address, loader);
-      const contract = await loader(
-        address,
-        this.#connection.provider,
-        this.#connection.signer
-      );
+      const contract = await loader(address, this.#connection.provider, this.#connection.signer);
       this.#contracts.set(address, contract);
       return contract;
     }

@@ -1,17 +1,17 @@
-import { AttribProps, AttribType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
-import { ProgramUtils } from '../WebGL/ProgramUtils';
+import { type AttribProps, AttribType } from "@darkforest_eth/types";
+import { glsl } from "../EngineUtils";
+import { ProgramUtils } from "../WebGL/ProgramUtils";
 
 const a = {
-  position: 'a_position',
-  texcoord: 'a_texcoord',
+  position: "a_position",
+  texcoord: "a_texcoord",
 };
 const u = {
-  matrix: 'u_matrix', // matrix to convert from screen coords to clipspace
-  texture: 'u_texture',
+  matrix: "u_matrix", // matrix to convert from screen coords to clipspace
+  texture: "u_texture",
 };
 const v = {
-  texcoord: 'v_texcoord',
+  texcoord: "v_texcoord",
 };
 
 export const glassPosProps: AttribProps = {
@@ -54,7 +54,7 @@ const frag = glsl`
 
     if (texel.a < 0.5) discard;
     texel = vec4(1.);
- 
+
     outColor = texel;
   }
 `;
@@ -69,11 +69,9 @@ export type GlassProgramWithUniforms = {
   uniforms: GlassUniforms;
 };
 
-export const getGlassProgramAndUniforms = (
-  gl: WebGL2RenderingContext
-): GlassProgramWithUniforms => {
+export const getGlassProgramAndUniforms = (gl: WebGL2RenderingContext): GlassProgramWithUniforms => {
   const program = ProgramUtils.programFromSources(gl, vert, frag);
-  if (program === null) throw 'error compiling planet program';
+  if (program === null) throw "error compiling planet program";
 
   gl.useProgram(program); // may be superfluous;
   const uniforms = {

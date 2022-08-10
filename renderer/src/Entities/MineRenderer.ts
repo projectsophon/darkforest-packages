@@ -1,15 +1,10 @@
-import { MAX_PLANET_LEVEL } from '@darkforest_eth/constants';
-import {
-  CanvasCoords,
-  MineRendererType,
-  Planet,
-  RendererType,
-  WorldCoords,
-} from '@darkforest_eth/types';
-import { engineConsts } from '../EngineConsts';
-import { EngineUtils } from '../EngineUtils';
-import { Renderer } from '../Renderer';
-import { GameGLManager } from '../WebGL/GameGLManager';
+import { MAX_PLANET_LEVEL } from "@darkforest_eth/constants";
+import { RendererType } from "@darkforest_eth/types";
+import type { CanvasCoords, MineRendererType, Planet, WorldCoords } from "@darkforest_eth/types";
+import { engineConsts } from "../EngineConsts";
+import { EngineUtils } from "../EngineUtils";
+import type { Renderer } from "../Renderer";
+import type { GameGLManager } from "../WebGL/GameGLManager";
 
 export class MineRenderer implements MineRendererType {
   manager: GameGLManager;

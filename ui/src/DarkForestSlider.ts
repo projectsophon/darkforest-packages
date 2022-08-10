@@ -1,10 +1,10 @@
-import { HandleController, Slider, SliderHandle } from '@spectrum-web-components/slider';
-import { css, CSSResultArray, unsafeCSS } from 'lit';
-import * as dfstyles from './styles';
+import { HandleController, Slider, SliderHandle } from "@spectrum-web-components/slider";
+import { css, type CSSResultArray, unsafeCSS } from "lit";
+import * as dfstyles from "./styles";
 
 export class DarkForestSlider extends Slider {
   // Not part of LitElement but let's tack on the tagName for easier registration
-  static tagName = 'df-slider';
+  static tagName = "df-slider";
 
   public static get styles(): CSSResultArray {
     const customStyles = css`
@@ -32,13 +32,13 @@ export class DarkForestSlider extends Slider {
 
   connectedCallback() {
     super.connectedCallback();
-    this.renderRoot.addEventListener('keyup', this._handleKeyUp);
-    this.renderRoot.addEventListener('keydown', this._handleKeyDown);
+    this.renderRoot.addEventListener("keyup", this._handleKeyUp);
+    this.renderRoot.addEventListener("keydown", this._handleKeyDown);
   }
 
   disconnectedCallback() {
-    this.renderRoot.removeEventListener('keyup', this._handleKeyUp);
-    this.renderRoot.removeEventListener('keydown', this._handleKeyDown);
+    this.renderRoot.removeEventListener("keyup", this._handleKeyUp);
+    this.renderRoot.removeEventListener("keydown", this._handleKeyDown);
     super.disconnectedCallback();
   }
 
@@ -76,7 +76,7 @@ export class DarkForestSlider extends Slider {
 
 export class DarkForestSliderHandle extends SliderHandle {
   // Not part of LitElement but let's tack on the tagName for easier registration
-  static tagName = 'df-slider-handle';
+  static tagName = "df-slider-handle";
 
   private _handleChange(_evt: Event) {
     const controller = this.handleController as HandleController;
@@ -87,7 +87,7 @@ export class DarkForestSliderHandle extends SliderHandle {
     const step = this.step || 1;
 
     // We want to treat these as exclusive, not inclusive
-    if (this.min === 'previous') {
+    if (this.min === "previous") {
       const prevIdx = idx - 1;
       const handleName = handleNamesInOrder[prevIdx];
       if (value === controller.values[handleName]) {
@@ -96,7 +96,7 @@ export class DarkForestSliderHandle extends SliderHandle {
     }
 
     // We want to treat these as exclusive, not inclusive
-    if (this.max === 'next') {
+    if (this.max === "next") {
       const nextIdx = idx + 1;
       const handleName = handleNamesInOrder[nextIdx];
       if (value === controller.values[handleName]) {
@@ -107,11 +107,11 @@ export class DarkForestSliderHandle extends SliderHandle {
 
   connectedCallback() {
     super.connectedCallback();
-    this.addEventListener('change', this._handleChange);
+    this.addEventListener("change", this._handleChange);
   }
 
   disconnectedCallback() {
-    this.removeEventListener('change', this._handleChange);
+    this.removeEventListener("change", this._handleChange);
     super.disconnectedCallback();
   }
 }

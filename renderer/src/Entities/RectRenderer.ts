@@ -1,16 +1,9 @@
-import {
-  CanvasCoords,
-  Chunk,
-  RectRendererType,
-  RendererType,
-  RenderZIndex,
-  RGBVec,
-  WorldCoords,
-} from '@darkforest_eth/types';
-import { EngineUtils } from '../EngineUtils';
-import { RECT_PROGRAM_DEFINITION } from '../Programs/RectProgram';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { RendererType, RenderZIndex } from "@darkforest_eth/types";
+import type { CanvasCoords, Chunk, RectRendererType, RGBVec, WorldCoords } from "@darkforest_eth/types";
+import { EngineUtils } from "../EngineUtils";
+import { RECT_PROGRAM_DEFINITION } from "../Programs/RectProgram";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 
 export class RectRenderer
   extends GenericRenderer<typeof RECT_PROGRAM_DEFINITION, GameGLManager>
@@ -95,13 +88,7 @@ export class RectRenderer
       chunkFootprint: { bottomLeft, sideLength },
     } = chunk;
 
-    this.queueRectWorld(
-      { x: bottomLeft.x, y: bottomLeft.y + sideLength },
-      sideLength,
-      sideLength,
-      [255, 0, 0],
-      1
-    );
+    this.queueRectWorld({ x: bottomLeft.x, y: bottomLeft.y + sideLength }, sideLength, sideLength, [255, 0, 0], 1);
   }
 
   public queueChunkBorderWithPadding(chunk: Chunk, padding: number): void {

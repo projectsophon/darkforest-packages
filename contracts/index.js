@@ -1,4 +1,3 @@
-"use strict";
 /**
  * This package contains deployed contract addresses, ABIs, and Typechain types
  * for the Dark Forest game.
@@ -31,26 +30,24 @@
  *
  * @packageDocumentation
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.INIT_ADDRESS = exports.CONTRACT_ADDRESS = exports.START_BLOCK = exports.NETWORK_ID = exports.NETWORK = void 0;
 /**
  * The name of the network where these contracts are deployed.
  */
-exports.NETWORK = 'xdai';
+export const NETWORK = 'xdai';
 /**
  * The id of the network where these contracts are deployed.
  */
-exports.NETWORK_ID = 100;
+export const NETWORK_ID = 100;
 /**
  * The block in which the DarkForest contract was initialized.
  */
-exports.START_BLOCK = 20713468;
+export const START_BLOCK = 20713468;
 /**
  * The address for the DarkForest contract.
  */
-exports.CONTRACT_ADDRESS = '0x5da117b8aB8b739346F5EdC166789E5aFb1a7145';
+export const CONTRACT_ADDRESS = '0x5da117b8aB8b739346F5EdC166789E5aFb1a7145';
 /**
  * The address for the initalizer contract. Useful for lobbies.
  */
-exports.INIT_ADDRESS = '0x162564a30C73204A0b404D23A033bFBA377ADdc2';
+export const INIT_ADDRESS = '0x162564a30C73204A0b404D23A033bFBA377ADdc2';
 //# sourceMappingURL=index.js.map

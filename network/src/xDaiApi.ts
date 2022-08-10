@@ -1,9 +1,5 @@
-import {
-  DEFAULT_GAS_PRICES,
-  GAS_PRICE_API,
-  MAX_AUTO_GAS_PRICE_GWEI,
-} from '@darkforest_eth/constants';
-import { GasPrices } from '@darkforest_eth/types';
+import { DEFAULT_GAS_PRICES, GAS_PRICE_API, MAX_AUTO_GAS_PRICE_GWEI } from "@darkforest_eth/constants";
+import type { GasPrices } from "@darkforest_eth/types";
 
 /**
  * Gets the current gas prices from xDai's price oracle. If the oracle is broken, return some sane
@@ -12,7 +8,7 @@ import { GasPrices } from '@darkforest_eth/types';
 export async function getAutoGasPrices(): Promise<GasPrices> {
   try {
     const res = await fetch(GAS_PRICE_API, {
-      method: 'GET',
+      method: "GET",
     });
 
     const prices = (await res.json()) as GasPrices;
@@ -27,15 +23,15 @@ export async function getAutoGasPrices(): Promise<GasPrices> {
  * In case xDai gives us a malformed response, clean it up with some default gas prices.
  */
 function cleanGasPrices(gasPrices: GasPrices): void {
-  if (typeof gasPrices.fast !== 'number') {
+  if (typeof gasPrices.fast !== "number") {
     gasPrices.fast = DEFAULT_GAS_PRICES.fast;
   }
 
-  if (typeof gasPrices.average !== 'number') {
+  if (typeof gasPrices.average !== "number") {
     gasPrices.average = DEFAULT_GAS_PRICES.average;
   }
 
-  if (typeof gasPrices.slow !== 'number') {
+  if (typeof gasPrices.slow !== "number") {
     gasPrices.slow = DEFAULT_GAS_PRICES.slow;
   }
 

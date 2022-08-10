@@ -1,20 +1,11 @@
-import { EMPTY_ADDRESS } from '@darkforest_eth/constants';
-import { formatNumber, hasOwner } from '@darkforest_eth/gamelogic';
-import { getOwnerColorVec } from '@darkforest_eth/procedural';
-import {
-  LocationId,
-  Planet,
-  Player,
-  QueuedArrival,
-  RendererType,
-  RenderZIndex,
-  TextAlign,
-  TextAnchor,
-  VoyageRendererType,
-} from '@darkforest_eth/types';
-import { engineConsts } from '../EngineConsts';
-import { Renderer } from '../Renderer';
-import { GameGLManager } from '../WebGL/GameGLManager';
+import { EMPTY_ADDRESS } from "@darkforest_eth/constants";
+import { formatNumber, hasOwner } from "@darkforest_eth/gamelogic";
+import { getOwnerColorVec } from "@darkforest_eth/procedural";
+import { RendererType, RenderZIndex, TextAlign, TextAnchor } from "@darkforest_eth/types";
+import type { LocationId, Planet, Player, QueuedArrival, VoyageRendererType } from "@darkforest_eth/types";
+import { engineConsts } from "../EngineConsts";
+import type { Renderer } from "../Renderer";
+import type { GameGLManager } from "../WebGL/GameGLManager";
 
 const { white, gold } = engineConsts.colors;
 const { enemyA, mineA, shipA } = engineConsts.colors.voyage;
@@ -45,12 +36,7 @@ export class VoyageRenderer implements VoyageRendererType {
     this.renderer = gl.renderer;
   }
 
-  drawFleet(
-    voyage: QueuedArrival,
-    _player: Player | undefined,
-    isMyVoyage: boolean,
-    isShipVoyage: boolean
-  ) {
+  drawFleet(voyage: QueuedArrival, _player: Player | undefined, isMyVoyage: boolean, isShipVoyage: boolean) {
     const {
       now: nowMs,
       context: gameUIManager,
@@ -75,7 +61,7 @@ export class VoyageRenderer implements VoyageRendererType {
       const radius = (timeLeft * fromPlanet.speed) / 100;
       const color = getVoyageColor(fromPlanet, toPlanet, myMove, shipMove);
 
-      const text = shipMove ? 'Ship' : `${Math.floor(voyage.energyArriving)}`;
+      const text = shipMove ? "Ship" : `${Math.floor(voyage.energyArriving)}`;
 
       cR.queueCircleWorld(toLoc.coords, radius, color, 0.7, 1, true);
       tR.queueTextWorld(
@@ -177,8 +163,7 @@ export class VoyageRenderer implements VoyageRendererType {
       if (nowS < voyage.arrivalTime) {
         const isMyVoyage =
           voyage.player === gameUIManager.getAccount() ||
-          gameUIManager.getArtifactWithId(voyage.artifactId)?.controller ===
-            gameUIManager.getPlayer()?.address;
+          gameUIManager.getArtifactWithId(voyage.artifactId)?.controller === gameUIManager.getPlayer()?.address;
         const isShipVoyage = voyage.player === EMPTY_ADDRESS;
         const sender = gameUIManager.getPlayer(voyage.player);
         this.drawVoyagePath(voyage.fromPlanet, voyage.toPlanet, true, isMyVoyage, isShipVoyage);

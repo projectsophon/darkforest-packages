@@ -1,11 +1,10 @@
-import { AttribType } from '@darkforest_eth/types';
-import autoBind from 'auto-bind';
+import { AttribType } from "@darkforest_eth/types";
 
 const getAttribTypeSize = (type: AttribType): number => {
   if (type === AttribType.Float) return 4;
   else if (type === AttribType.UByte) return 1;
   else {
-    console.error('unrecognized attrib type');
+    console.error("unrecognized attrib type");
     return 0;
   }
 };
@@ -14,7 +13,7 @@ const getConstructor = (type: AttribType): GLArrayConstructor => {
   if (type === AttribType.Float) return Float32Array;
   else if (type === AttribType.UByte) return Uint8Array;
   else {
-    console.error('unrecognized attrib type');
+    console.error("unrecognized attrib type");
     return Float32Array;
   }
 };
@@ -31,7 +30,7 @@ export class AttribArray {
   /**
    * A typed array, representing the data in this array.
    */
-  public array: GLArray;
+  public array!: GLArray;
 
   /**
    * The number of bytes per data entry in this array.
@@ -48,28 +47,28 @@ export class AttribArray {
     this.size = startSize;
 
     this.createArray();
-
-    autoBind(this);
   }
+
+  // TODO: Check these binds
 
   /**
    * Initialize a new blank array of size this.size.
    */
-  private createArray(): void {
+  private createArray = () => {
     const typeSize = getAttribTypeSize(this.type);
     const buffer = new ArrayBuffer(typeSize * this.size);
     this.array = new (getConstructor(this.type))(buffer);
-  }
+  };
 
   /**
    * Initialize a new array of 2x the length, and copy in the old data.
    */
-  private doubleLen(): void {
+  private doubleLen = () => {
     this.size *= 2;
     const oldArr = this.array;
     this.createArray();
     this.array.set(oldArr, 0);
-  }
+  };
 
   /**
    * Copy in an array of data starting at an index. Writing past the maximum
@@ -78,8 +77,8 @@ export class AttribArray {
    * @param els - The array of data to copy.
    * @param idx - The array index to start at.
    */
-  public set(els: ArrayLike<number>, idx: number): void {
+  public set = (els: ArrayLike<number>, idx: number) => {
     while (idx + els.length > this.size) this.doubleLen();
     this.array.set(els, idx);
-  }
+  };
 }

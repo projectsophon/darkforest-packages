@@ -1,8 +1,9 @@
-import { AttribProps, DrawMode, UniformProps, UniformType, Vec3 } from '@darkforest_eth/types';
-import { mat3, mat4 } from 'gl-matrix';
-import { AttribManager } from './AttribManager';
-import { ProgramUtils } from './ProgramUtils';
-import { WebGLManager } from './WebGLManager';
+import type { AttribProps, UniformProps, Vec3 } from "@darkforest_eth/types";
+import { DrawMode, UniformType } from "@darkforest_eth/types";
+import type { mat3, mat4 } from "gl-matrix";
+import { AttribManager } from "./AttribManager";
+import { ProgramUtils } from "./ProgramUtils";
+import type { WebGLManager } from "./WebGLManager";
 
 export type UniformData = {
   [key: string]: UniformProps;
@@ -27,15 +28,15 @@ export interface EngineProgramDefinition {
 export type UniformSetter = (el: any) => void;
 
 export type UniformSetters<T extends EngineProgramDefinition> = {
-  [k in keyof T['uniforms']]: UniformSetter;
+  [k in keyof T["uniforms"]]: UniformSetter;
 };
 
 export type UniformLocs<T extends EngineProgramDefinition> = {
-  [k in keyof T['uniforms']]: WebGLUniformLocation;
+  [k in keyof T["uniforms"]]: WebGLUniformLocation;
 };
 
 export type AttribManagers<T extends EngineProgramDefinition> = {
-  [k in keyof T['attribs']]: AttribManager;
+  [k in keyof T["attribs"]]: AttribManager;
 };
 
 /**
@@ -88,10 +89,7 @@ export function getUniformSetter(
  * - uniform setters
  * - skeleton code for rendering in our engine via `flush()`
  */
-export class GenericRenderer<
-  T extends EngineProgramDefinition,
-  U extends WebGLManager = WebGLManager
-> {
+export class GenericRenderer<T extends EngineProgramDefinition, U extends WebGLManager = WebGLManager> {
   /** The program corresponding to this renderer. */
   public program: WebGLProgram;
 
@@ -138,7 +136,7 @@ export class GenericRenderer<
     const { vertexShader: vert, fragmentShader: frag, uniforms, attribs } = programData;
 
     const program = ProgramUtils.programFromSources(gl, vert, frag);
-    if (program === null) throw 'error compiling program';
+    if (program === null) throw "error compiling program";
     this.program = program;
 
     this.uniformData = uniforms;
@@ -151,7 +149,7 @@ export class GenericRenderer<
     const uniformSetters: Partial<UniformSetters<T>> = {};
     for (const [key, props] of Object.entries(uniforms)) {
       const { name } = props;
-      const k = key as keyof T['uniforms'];
+      const k = key as keyof T["uniforms"];
       const loc = gl.getUniformLocation(program, name);
       if (!loc) throw `uniform ${name} doesn't exist!`;
 
@@ -164,7 +162,7 @@ export class GenericRenderer<
     // construct attrib managers
     const attribManagers: Partial<AttribManagers<T>> = {};
     for (const [key, props] of Object.entries(attribs)) {
-      const k = key as keyof T['attribs'];
+      const k = key as keyof T["attribs"];
       attribManagers[k] = new AttribManager(gl, program, props);
     }
     this.attribManagers = attribManagers as AttribManagers<T>;
@@ -175,7 +173,7 @@ export class GenericRenderer<
    * should always override this.
    */
   public setUniforms() {
-    if (Object.keys(this.uniformData).length !== 0) console.error('did not override setUniforms!');
+    if (Object.keys(this.uniformData).length !== 0) console.error("did not override setUniforms!");
     return;
   }
 

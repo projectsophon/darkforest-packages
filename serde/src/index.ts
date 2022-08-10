@@ -25,13 +25,7 @@
  * @packageDocumentation
  */
 
-export * from './address';
-export * from './arrival';
-export * from './artifact';
-export * from './event';
-export * from './location';
-export * from './planet';
-export * from './player';
-export * from './reveal';
-export * from './transactions';
-export * from './upgrade';
+export * from "./address";
+export * from "./event";
+export * from "./location";
+export * from "./transactions";

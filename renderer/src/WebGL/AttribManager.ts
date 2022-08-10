@@ -1,5 +1,5 @@
-import { AttribProps } from '@darkforest_eth/types';
-import { AttribArray } from './AttribArray';
+import type { AttribProps } from "@darkforest_eth/types";
+import { AttribArray } from "./AttribArray";
 
 /**
  * Responsible for queuing data about a webgl attribute and then writing to it.
@@ -40,12 +40,7 @@ export class AttribManager {
    * @param props - An AttribProps object, containing the attrib name and other info.
    * @param enable - Should we call gl.enableVertexAttribArray? (default true)
    */
-  constructor(
-    gl: WebGL2RenderingContext,
-    program: WebGLProgram,
-    props: AttribProps,
-    enable = true
-  ) {
+  constructor(gl: WebGL2RenderingContext, program: WebGLProgram, props: AttribProps, enable = true) {
     this.gl = gl;
     this.props = props;
 
@@ -53,7 +48,7 @@ export class AttribManager {
 
     const loc = gl.getAttribLocation(program, props.name);
     const buffer = gl.createBuffer();
-    if (!buffer) throw 'Error creating buffer for attrib: ' + props.name;
+    if (!buffer) throw "Error creating buffer for attrib: " + props.name;
 
     if (enable) gl.enableVertexAttribArray(loc);
 

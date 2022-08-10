@@ -1,15 +1,12 @@
-import { getPlanetCosmetic } from '@darkforest_eth/procedural';
-import { Planet, PlanetRendererType, RendererType, WorldCoords } from '@darkforest_eth/types';
-import { mat4 } from 'gl-matrix';
-import { engineConsts } from '../EngineConsts';
-import { EngineUtils } from '../EngineUtils';
-import {
-  distortFromPlanet,
-  PLANET_PROGRAM_DEFINITION,
-  propsFromPlanet,
-} from '../Programs/PlanetProgram';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { getPlanetCosmetic } from "@darkforest_eth/procedural";
+import { RendererType } from "@darkforest_eth/types";
+import type { Planet, PlanetRendererType, WorldCoords } from "@darkforest_eth/types";
+import { mat4 } from "gl-matrix";
+import { engineConsts } from "../EngineConsts";
+import { EngineUtils } from "../EngineUtils";
+import { distortFromPlanet, PLANET_PROGRAM_DEFINITION, propsFromPlanet } from "../Programs/PlanetProgram";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 
 const { maxRadius } = engineConsts.planet;
 
@@ -43,14 +40,7 @@ export class PlanetRenderer
     this.uniformSetters.time(time / 6);
   }
 
-  public queuePlanetBodyScreen(
-    planet: Planet,
-    radius: number,
-    x1: number,
-    y1: number,
-    x2: number,
-    y2: number
-  ) {
+  public queuePlanetBodyScreen(planet: Planet, radius: number, x1: number, y1: number, x2: number, y2: number) {
     const { position, rectPos, color, color2, color3, props, props2 } = this.attribManagers;
     const cosmetic = getPlanetCosmetic(planet);
 

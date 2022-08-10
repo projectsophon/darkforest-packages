@@ -1,12 +1,8 @@
-import {
-  LocationId,
-  RendererType,
-  RenderZIndex,
-  WormholeRendererType,
-} from '@darkforest_eth/types';
-import { engineConsts } from '../EngineConsts';
-import { Renderer } from '../Renderer';
-import { GameGLManager } from '../WebGL/GameGLManager';
+import { RendererType, RenderZIndex } from "@darkforest_eth/types";
+import type { LocationId, WormholeRendererType } from "@darkforest_eth/types";
+import { engineConsts } from "../EngineConsts";
+import type { Renderer } from "../Renderer";
+import type { GameGLManager } from "../WebGL/GameGLManager";
 const { purpleA } = engineConsts.colors;
 
 export class WormholeRenderer implements WormholeRendererType {
@@ -23,11 +19,7 @@ export class WormholeRenderer implements WormholeRendererType {
 
     for (const unconfirmedWormhole of gameUIManager.getUnconfirmedWormholeActivations()) {
       if (unconfirmedWormhole.intent.wormholeTo)
-        this.drawVoyagePath(
-          unconfirmedWormhole.intent.locationId,
-          unconfirmedWormhole.intent.wormholeTo,
-          false
-        );
+        this.drawVoyagePath(unconfirmedWormhole.intent.locationId, unconfirmedWormhole.intent.wormholeTo, false);
     }
 
     for (const wormhole of gameUIManager.getWormholes()) {

@@ -1,37 +1,37 @@
-import { isLocatable } from '@darkforest_eth/gamelogic';
-import { AttribType, Biome, Planet, UniformType } from '@darkforest_eth/types';
-import { glsl } from '../EngineUtils';
-import { ShaderMixins } from '../WebGL/ShaderMixins';
+import { isLocatable } from "@darkforest_eth/gamelogic";
+import { AttribType, Biome, type Planet, UniformType } from "@darkforest_eth/types";
+import { glsl } from "../EngineUtils";
+import { ShaderMixins } from "../WebGL/ShaderMixins";
 
 const a = {
-  position: 'a_position',
-  color: 'a_color',
-  color2: 'a_color2',
-  color3: 'a_color3',
-  rectPos: 'a_rectPos',
-  props2: 'a_props2',
-  props: 'a_props',
+  position: "a_position",
+  color: "a_color",
+  color2: "a_color2",
+  color3: "a_color3",
+  rectPos: "a_rectPos",
+  props2: "a_props2",
+  props: "a_props",
 };
 const u = {
-  matrix: 'u_matrix',
-  timeMatrix: 'u_timeMatrix', // TODO generate this in the shader
-  time: 'u_time',
+  matrix: "u_matrix",
+  timeMatrix: "u_timeMatrix", // TODO generate this in the shader
+  time: "u_time",
 };
 const v = {
-  position: 'v_position',
-  color: 'v_color',
-  color2: 'v_color2',
-  color3: 'v_color3',
-  rectPos: 'v_rectPos',
-  seed: 'v_seed',
-  eps: 'v_eps', // epsilon; clipspace of one pixel
-  alpha: 'v_alpha',
-  distort: 'v_distort',
+  position: "v_position",
+  color: "v_color",
+  color2: "v_color2",
+  color3: "v_color3",
+  rectPos: "v_rectPos",
+  seed: "v_seed",
+  eps: "v_eps", // epsilon; clipspace of one pixel
+  alpha: "v_alpha",
+  distort: "v_distort",
   // props
-  morphSpeed: 'v_morphSpeed',
-  numClouds: 'v_numClouds',
-  octaves: 'v_octaves',
-  showBeach: 'v_showBeach',
+  morphSpeed: "v_morphSpeed",
+  numClouds: "v_numClouds",
+  octaves: "v_octaves",
+  showBeach: "v_showBeach",
 };
 
 export const PLANET_PROGRAM_DEFINITION = {

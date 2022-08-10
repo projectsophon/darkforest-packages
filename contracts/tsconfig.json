@@ -1,4 +1,13 @@
 {
-  "extends": "./tsconfig.base.json",
-  "include": ["index.ts", "typechain/**/*.ts", "typechain/**/*.d.ts"]
+  "extends": "@projectsophon/tsconfig",
+  "include": ["index.ts"],
+  "typedocOptions": {
+    "entryPoints": ["index.ts"],
+    "out": ".",
+    "hideBreadcrumbs": true,
+    "readme": "none",
+    "disableSources": true,
+    "cleanOutputDir": false,
+    "githubPages": false
+  }
 }

@@ -1,5 +1,8 @@
 {
   "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true
+  },
   "references": [
     {
       "path": "../constants/tsconfig.ref.json"
@@ -7,9 +10,5 @@
     {
       "path": "../types/tsconfig.ref.json"
     }
-  ],
-  "compilerOptions": {
-    "composite": true,
-    "declarationMap": true
-  }
+  ]
 }

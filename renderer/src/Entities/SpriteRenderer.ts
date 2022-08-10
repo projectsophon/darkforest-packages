@@ -1,38 +1,30 @@
-import { isUnconfirmedMoveTx } from '@darkforest_eth/serde';
-import {
+import { isUnconfirmedMoveTx } from "@darkforest_eth/serde";
+import { ArtifactRarity, RendererType } from "@darkforest_eth/types";
+import type {
   Artifact,
-  ArtifactRarity,
   CanvasCoords,
   GameViewport,
   RenderedArtifact,
-  RendererType,
   RGBAVec,
   RGBVec,
   SpriteRendererType,
   WorldCoords,
-} from '@darkforest_eth/types';
-import { engineConsts } from '../EngineConsts';
-import { EngineUtils } from '../EngineUtils';
-import { SPRITE_PROGRAM_DEFINITION } from '../Programs/SpriteProgram';
-import {
-  loadArtifactAtlas,
-  loadArtifactThumbAtlas,
-  spriteFromArtifact,
-  SpriteRectangle,
-} from '../TextureManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
-import { WebGLManager } from '../WebGL/WebGLManager';
-export class SpriteRenderer
-  extends GenericRenderer<typeof SPRITE_PROGRAM_DEFINITION>
-  implements SpriteRendererType
-{
+} from "@darkforest_eth/types";
+import { engineConsts } from "../EngineConsts";
+import { EngineUtils } from "../EngineUtils";
+import { SPRITE_PROGRAM_DEFINITION } from "../Programs/SpriteProgram";
+import { loadArtifactAtlas, loadArtifactThumbAtlas, spriteFromArtifact, type SpriteRectangle } from "../TextureManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
+import type { WebGLManager } from "../WebGL/WebGLManager";
+
+export class SpriteRenderer extends GenericRenderer<typeof SPRITE_PROGRAM_DEFINITION> implements SpriteRendererType {
   private posBuffer: number[];
   private texBuffer: number[];
   private rectposBuffer: number[];
 
   private loaded: boolean;
   private thumb: boolean;
-  private texIdx: number;
+  private texIdx?: number;
   private flip: boolean;
 
   rendererType = RendererType.Sprite;
@@ -232,13 +224,7 @@ export class SpriteRenderer
     }
   }
 
-  queueIconWorld(
-    artifact: Artifact,
-    topLeft: WorldCoords,
-    widthW: number,
-    maxWidth = 32,
-    viewport: GameViewport
-  ) {
+  queueIconWorld(artifact: Artifact, topLeft: WorldCoords, widthW: number, maxWidth = 32, viewport: GameViewport) {
     const width = viewport.worldToCanvasDist(widthW);
     const loc = viewport.worldToCanvasCoords(topLeft);
     const dim = Math.min(maxWidth, width);
@@ -256,7 +242,7 @@ export class SpriteRenderer
   }
 
   flush() {
-    if (!this.loaded || this.verts === 0) return;
+    if (!this.loaded || this.verts === 0 || this.texIdx == null) return;
 
     const { gl } = this.manager;
     gl.activeTexture(gl.TEXTURE0 + this.texIdx);

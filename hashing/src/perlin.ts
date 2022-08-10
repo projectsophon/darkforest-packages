@@ -1,7 +1,7 @@
-import { PerlinConfig } from '@darkforest_eth/types';
-import BigInt, { BigInteger } from 'big-integer';
-import { Fraction, IFraction } from './fractions/bigFraction';
-import { perlinRandHash } from './mimc';
+import type { PerlinConfig } from "@darkforest_eth/types";
+import { Fraction, type IFraction } from "./fractions/bigFraction";
+import { perlinRandHash } from "./mimc";
+import { lcm } from "./bigint";
 
 const TRACK_LCM = false;
 
@@ -28,9 +28,7 @@ type HashFn = (...inputs: number[]) => number;
 export const rand =
   (key: number) =>
   (...args: number[]) => {
-    return perlinRandHash(key)(...args)
-      .remainder(16)
-      .toJSNumber();
+    return Number(perlinRandHash(key)(...args) % 16n);
   };
 
 /*
@@ -75,7 +73,7 @@ try {
     [923, -383],
   ].map(([x, y]) => ({ x: new Fraction(x, 1000), y: new Fraction(y, 1000) }));
 } catch (err) {
-  console.error('Browser does not support BigInt.', err);
+  console.error("Browser does not support BigInt.", err);
 }
 
 export const getRandomGradientAt = (point: Vector, scale: IFraction, randFn: HashFn): Vector => {
@@ -120,10 +118,9 @@ const perlinValue: (
   for (const corner of corners) {
     const distVec = minus(p, corner.coords);
     ret = ret.add(
-      getWeight(
-        scalarMultiply(scale.inverse(), corner.coords),
-        scalarMultiply(scale.inverse(), p)
-      ).mul(dot(scalarMultiply(scale.inverse(), distVec), corner.gradient))
+      getWeight(scalarMultiply(scale.inverse(), corner.coords), scalarMultiply(scale.inverse(), p)).mul(
+        dot(scalarMultiply(scale.inverse(), distVec), corner.gradient)
+      )
     );
   }
   return ret;
@@ -131,14 +128,14 @@ const perlinValue: (
 
 let runningLCM = BigInt(1);
 
-const updateLCM = (oldLCM: BigInteger, newValue: BigInteger): BigInteger => {
+const updateLCM = (oldLCM: bigint, newValue: bigint): bigint => {
   if (!TRACK_LCM) {
     return oldLCM;
   }
 
-  const newLCM = BigInt.lcm(oldLCM, newValue);
+  const newLCM = lcm(oldLCM, newValue);
   if (newLCM !== oldLCM) {
-    console.log('LCM updated to ', newLCM);
+    console.log("LCM updated to ", newLCM);
   }
 
   return newLCM;
@@ -148,7 +145,7 @@ const updateLCM = (oldLCM: BigInteger, newValue: BigInteger): BigInteger => {
 const realMod = (dividend: IFraction, divisor: IFraction): IFraction => {
   const temp = dividend.mod(divisor);
   // temp.s is sign
-  if (temp.s.toString() === '-1') {
+  if (temp.s.toString() === "-1") {
     return temp.add(divisor);
   }
   return temp;

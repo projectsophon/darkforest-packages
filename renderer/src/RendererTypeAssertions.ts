@@ -1,4 +1,4 @@
-import {
+import type {
   AsteroidRendererType,
   BackgroundRendererType,
   BaseRenderer,
@@ -16,7 +16,6 @@ import {
   QuasarRayRendererType,
   QuasarRendererType,
   RectRendererType,
-  RendererType,
   RingRendererType,
   RuinsRendererType,
   SpaceRendererType,
@@ -27,7 +26,8 @@ import {
   UnminedRendererType,
   VoyageRendererType,
   WormholeRendererType,
-} from '@darkforest_eth/types';
+} from "@darkforest_eth/types";
+import { RendererType } from "@darkforest_eth/types";
 
 export function isPlanetRenderer(renderer: BaseRenderer): renderer is PlanetRendererType {
   return renderer.rendererType === RendererType.Planet;
@@ -37,9 +37,7 @@ export function isMineRenderer(renderer: BaseRenderer): renderer is MineRenderer
   return renderer.rendererType === RendererType.Mine;
 }
 
-export function isSpacetimeRipRenderer(
-  renderer: BaseRenderer
-): renderer is SpacetimeRipRendererType {
+export function isSpacetimeRipRenderer(renderer: BaseRenderer): renderer is SpacetimeRipRendererType {
   return renderer.rendererType === RendererType.SpacetimeRip;
 }
 
@@ -119,9 +117,7 @@ export function isUIRendererManager(renderer: BaseRenderer): renderer is UIRende
   return renderer.rendererType === RendererType.UI;
 }
 
-export function isPlanetRendererManager(
-  renderer: BaseRenderer
-): renderer is PlanetRenderManagerType {
+export function isPlanetRendererManager(renderer: BaseRenderer): renderer is PlanetRenderManagerType {
   return renderer.rendererType === RendererType.PlanetManager;
 }
 

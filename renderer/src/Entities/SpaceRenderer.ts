@@ -1,16 +1,10 @@
-import {
-  Chunk,
-  PerlinConfig,
-  Rectangle,
-  RendererType,
-  SpaceRendererType,
-  Vec3,
-} from '@darkforest_eth/types';
-import { EngineUtils } from '../EngineUtils';
-import { SPACE_PROGRAM_DEFINITION } from '../Programs/SpaceProgram';
-import { AttribManager } from '../WebGL/AttribManager';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { RendererType } from "@darkforest_eth/types";
+import type { Chunk, PerlinConfig, Rectangle, SpaceRendererType, Vec3 } from "@darkforest_eth/types";
+import { EngineUtils } from "../EngineUtils";
+import { SPACE_PROGRAM_DEFINITION } from "../Programs/SpaceProgram";
+import type { AttribManager } from "../WebGL/AttribManager";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 import {
   getCachedGradient,
   getGridPoint,
@@ -20,7 +14,7 @@ import {
   right,
   up,
   valueOf,
-} from './PerlinUtils';
+} from "./PerlinUtils";
 
 export type SpaceColorUniforms = {
   innerNebulaColor: Vec3;
@@ -31,7 +25,7 @@ export type SpaceColorUniforms = {
 };
 
 function hexToRgb(hex: string): Vec3 {
-  const bigint = parseInt(hex.replace('#', ''), 16);
+  const bigint = parseInt(hex.replace("#", ""), 16);
   const r = (bigint >> 16) & 255;
   const g = (bigint >> 8) & 255;
   const b = bigint & 255;
@@ -39,13 +33,11 @@ function hexToRgb(hex: string): Vec3 {
   return [r / 255.0, g / 255.0, b / 255.0];
 }
 
-const fallbackColor = '#000000';
+const fallbackColor = "#000000";
 
-export class SpaceRenderer
-  extends GenericRenderer<typeof SPACE_PROGRAM_DEFINITION>
-  implements SpaceRendererType
-{
-  manager: GameGLManager;
+export class SpaceRenderer extends GenericRenderer<typeof SPACE_PROGRAM_DEFINITION> implements SpaceRendererType {
+  declare manager: GameGLManager;
+
   config: PerlinConfig;
 
   posBuffer: number[];
@@ -76,12 +68,7 @@ export class SpaceRenderer
     };
   }
 
-  private bufferGradients(
-    rect: Rectangle,
-    octave: PerlinOctave,
-    topGrad: AttribManager,
-    botGrad: AttribManager
-  ) {
+  private bufferGradients(rect: Rectangle, octave: PerlinOctave, topGrad: AttribManager, botGrad: AttribManager) {
     const { scale } = this.config;
     const { bottomLeft } = rect;
     const octaveScale = scale * 2 ** octave;
@@ -135,13 +122,7 @@ export class SpaceRenderer
       worldCoords: worldCoordsA,
     } = this.attribManagers;
 
-    EngineUtils.makeQuadVec2Buffered(
-      this.posBuffer,
-      Math.round(x1),
-      Math.round(y1),
-      Math.round(x2),
-      Math.round(y2)
-    );
+    EngineUtils.makeQuadVec2Buffered(this.posBuffer, Math.round(x1), Math.round(y1), Math.round(x2), Math.round(y2));
     posA.setVertex(this.posBuffer, this.verts);
 
     EngineUtils.makeQuadVec2Buffered(this.coordsBuffer, xW, yW + sideLength, xW + sideLength, yW);

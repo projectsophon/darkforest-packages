@@ -1,21 +1,12 @@
-import {
-  CanvasCoords,
-  CircleRendererType,
-  GameViewport,
-  RendererType,
-  RGBAVec,
-  WorldCoords,
-} from '@darkforest_eth/types';
-import { engineConsts } from '../EngineConsts';
-import { EngineUtils } from '../EngineUtils';
-import { CIRCLE_PROGRAM_DEFINITION } from '../Programs/CircleProgram';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { RendererType } from "@darkforest_eth/types";
+import type { CanvasCoords, CircleRendererType, GameViewport, RGBAVec, WorldCoords } from "@darkforest_eth/types";
+import { engineConsts } from "../EngineConsts";
+import { EngineUtils } from "../EngineUtils";
+import { CIRCLE_PROGRAM_DEFINITION } from "../Programs/CircleProgram";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 
-export class CircleRenderer
-  extends GenericRenderer<typeof CIRCLE_PROGRAM_DEFINITION>
-  implements CircleRendererType
-{
+export class CircleRenderer extends GenericRenderer<typeof CIRCLE_PROGRAM_DEFINITION> implements CircleRendererType {
   quadBuffer: number[];
 
   viewport: GameViewport;

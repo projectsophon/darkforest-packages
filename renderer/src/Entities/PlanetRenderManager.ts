@@ -1,30 +1,20 @@
-import { EMPTY_ADDRESS } from '@darkforest_eth/constants';
-import {
-  formatNumber,
-  getRange,
-  hasOwner,
-  isLocatable,
-  isSpaceShip,
-} from '@darkforest_eth/gamelogic';
-import { getOwnerColorVec, getPlanetCosmetic } from '@darkforest_eth/procedural';
-import { isUnconfirmedMoveTx } from '@darkforest_eth/serde';
-import {
+import { EMPTY_ADDRESS } from "@darkforest_eth/constants";
+import { formatNumber, getRange, hasOwner, isLocatable, isSpaceShip } from "@darkforest_eth/gamelogic";
+import { getOwnerColorVec, getPlanetCosmetic } from "@darkforest_eth/procedural";
+import { isUnconfirmedMoveTx } from "@darkforest_eth/serde";
+import type {
   Artifact,
-  HatType,
   LocatablePlanet,
   LocationId,
   Planet,
   PlanetRenderInfo,
   PlanetRenderManagerType,
-  PlanetType,
-  RendererType,
-  TextAlign,
-  TextAnchor,
   WorldCoords,
-} from '@darkforest_eth/types';
-import { engineConsts } from '../EngineConsts';
-import { Renderer } from '../Renderer';
-import { GameGLManager } from '../WebGL/GameGLManager';
+} from "@darkforest_eth/types";
+import { HatType, PlanetType, RendererType, TextAlign, TextAnchor } from "@darkforest_eth/types";
+import { engineConsts } from "../EngineConsts";
+import type { Renderer } from "../Renderer";
+import type { GameGLManager } from "../WebGL/GameGLManager";
 const { whiteA, barbsA, gold } = engineConsts.colors;
 const { maxRadius } = engineConsts.planet;
 
@@ -59,9 +49,7 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
       textAlpha *= renderInfo.radii.radiusPixels / (2 * maxRadius);
     }
 
-    const artifacts = uiManager
-      .getArtifactsWithIds(planet.heldArtifactIds)
-      .filter((a) => !!a) as Artifact[];
+    const artifacts = uiManager.getArtifactsWithIds(planet.heldArtifactIds).filter((a) => !!a) as Artifact[];
     const color = uiManager.isOwnedByMe(planet) ? whiteA : getOwnerColorVec(planet);
 
     // draw planet body
@@ -95,13 +83,7 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
       cR.queueCircleWorld(planet.location.coords, renderInfo.radii.radiusWorld * 1.1, color, 0.5);
       const pct = planet.energy / planet.energyCap;
       color[3] = cA * 255;
-      cR.queueCircleWorld(
-        planet.location.coords,
-        renderInfo.radii.radiusWorld * 1.1,
-        color,
-        2,
-        pct
-      );
+      cR.queueCircleWorld(planet.location.coords, renderInfo.radii.radiusWorld * 1.1, color, 2, pct);
     }
 
     if (!disableHats) {
@@ -110,19 +92,9 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
 
     /* draw text */
     if (!renderAtReducedQuality) {
-      this.queuePlanetEnergyText(
-        planet,
-        planet.location.coords,
-        renderInfo.radii.radiusWorld,
-        textAlpha
-      );
+      this.queuePlanetEnergyText(planet, planet.location.coords, renderInfo.radii.radiusWorld, textAlpha);
 
-      this.queuePlanetSilverText(
-        planet,
-        planet.location.coords,
-        renderInfo.radii.radiusWorld,
-        textAlpha
-      );
+      this.queuePlanetSilverText(planet, planet.location.coords, renderInfo.radii.radiusWorld, textAlpha);
 
       this.queueArtifactIcon(planet, planet.location.coords, renderInfo.radii.radiusWorld);
 
@@ -160,12 +132,8 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
     const distanceFromCenterOfPlanet = radiusW * distanceRadiusScale + artifactSize;
 
     for (let i = 0; i < artifacts.length; i++) {
-      const x =
-        Math.cos(anglePerArtifact * i + startingAngle + nowAngle) * distanceFromCenterOfPlanet +
-        centerW.x;
-      const y =
-        Math.sin(anglePerArtifact * i + startingAngle + nowAngle) * distanceFromCenterOfPlanet +
-        centerW.y;
+      const x = Math.cos(anglePerArtifact * i + startingAngle + nowAngle) * distanceFromCenterOfPlanet + centerW.x;
+      const y = Math.sin(anglePerArtifact * i + startingAngle + nowAngle) * distanceFromCenterOfPlanet + centerW.y;
 
       this.renderer.spriteRenderer.queueArtifactWorld(
         artifacts[i],
@@ -180,12 +148,7 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
     }
   }
 
-  private drawPlanetMessages(
-    renderInfo: PlanetRenderInfo,
-    coords: WorldCoords,
-    radiusW: number,
-    textAlpha: number
-  ) {
+  private drawPlanetMessages(renderInfo: PlanetRenderInfo, coords: WorldCoords, radiusW: number, textAlpha: number) {
     if (!renderInfo.planet.messages) return;
     const { overlay2dRenderer: cM } = this.renderer;
     cM.drawPlanetMessages(coords, radiusW, renderInfo, textAlpha);
@@ -207,12 +170,7 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
     }
   }
 
-  private queuePlanetSilverText(
-    planet: Planet,
-    center: WorldCoords,
-    radius: number,
-    alpha: number
-  ) {
+  private queuePlanetSilverText(planet: Planet, center: WorldCoords, radius: number, alpha: number) {
     const { textRenderer: tR } = this.renderer;
     const silver = planet ? Math.ceil(planet.silver) : 0;
     if (planet.silverGrowth > 0 || planet.silver > 0) {
@@ -247,8 +205,7 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
     if (!fromPlanet || !toPlanet) return undefined;
 
     let effectiveEnergy = fromPlanet.energy;
-    for (const unconfirmedMove of fromPlanet.transactions?.getTransactions(isUnconfirmedMoveTx) ??
-      []) {
+    for (const unconfirmedMove of fromPlanet.transactions?.getTransactions(isUnconfirmedMoveTx) ?? []) {
       effectiveEnergy -= unconfirmedMove.intent.forces;
     }
     const shipsMoved = (context.getForcesSending(fromPlanet.locationId) / 100) * effectiveEnergy;
@@ -348,8 +305,8 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
       let bg = cosmetic.bgStr;
       let base = cosmetic.baseStr;
       if (cosmetic.hatType === HatType.SantaHat) {
-        bg = 'red';
-        base = 'white';
+        bg = "red";
+        base = "white";
       }
 
       const hatScale = 1.65 ** (hatLevel - 1);
@@ -370,18 +327,13 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
     }
   }
 
-  private queuePlanetEnergyText(
-    planet: Planet,
-    center: WorldCoords,
-    radius: number,
-    alpha: number
-  ) {
+  private queuePlanetEnergyText(planet: Planet, center: WorldCoords, radius: number, alpha: number) {
     const { context: uiManager, textRenderer: tR } = this.renderer;
     const energy = planet ? Math.ceil(planet.energy) : 0;
     const lockedEnergy = this.getLockedEnergy(planet);
 
     // construct base energy string
-    let energyString = energy <= 0 ? '' : formatNumber(energy);
+    let energyString = energy <= 0 ? "" : formatNumber(energy);
     if (lockedEnergy > 0) energyString += ` (-${formatNumber(lockedEnergy)})`;
 
     const playerColor = hasOwner(planet) ? getOwnerColorVec(planet) : barbsA;
@@ -408,7 +360,7 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
       !uiManager.getIsChoosingTargetPlanet();
 
     if (moveHereInProgress && myAtk && toPlanet) {
-      let atkString = '';
+      let atkString = "";
       if (uiManager.isOwnedByMe(planet) || planet.energy === 0) {
         atkString += ` (+${formatNumber(myAtk)})`;
       } else {
@@ -418,12 +370,7 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
       tR.queueTextWorld(atkString, textLoc, color, 1);
       if (planet.spaceJunk !== 0) {
         const spaceJunkString = `(+${planet.spaceJunk} junk)`;
-        tR.queueTextWorld(
-          spaceJunkString,
-          { x: center.x, y: center.y - 1.1 * radius - 0.75 },
-          color,
-          2
-        );
+        tR.queueTextWorld(spaceJunkString, { x: center.x, y: center.y - 1.1 * radius - 0.75 }, color, 2);
       }
     }
   }
@@ -439,11 +386,7 @@ export class PlanetRenderManager implements PlanetRenderManagerType {
       range: { dash },
     } = engineConsts.colors;
     cR.queueCircleWorld(planet.location.coords, range, [...dash, 255], 1, 1, true);
-    tR.queueTextWorld(
-      `${pct}%`,
-      { x: planet.location.coords.x, y: planet.location.coords.y + range },
-      [...dash, 255]
-    );
+    tR.queueTextWorld(`${pct}%`, { x: planet.location.coords.x, y: planet.location.coords.y + range }, [...dash, 255]);
   }
 
   /**

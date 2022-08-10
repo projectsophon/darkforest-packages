@@ -1,13 +1,8 @@
-import {
-  BackgroundRendererType,
-  Chunk,
-  RendererType,
-  RGBVec,
-  SpaceType,
-} from '@darkforest_eth/types';
-import { Renderer } from '../Renderer';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { RectRenderer } from './RectRenderer';
+import { RendererType, SpaceType } from "@darkforest_eth/types";
+import type { BackgroundRendererType, Chunk, RGBVec } from "@darkforest_eth/types";
+import type { Renderer } from "../Renderer";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { RectRenderer } from "./RectRenderer";
 
 export class BackgroundRenderer implements BackgroundRendererType {
   manager: GameGLManager;
@@ -54,21 +49,9 @@ export class BackgroundRenderer implements BackgroundRendererType {
     const viewport = this.manager.renderer.getViewport();
 
     // draw large background rect underneath everything
-    unminedRenderer.queueRect(
-      { x: 0, y: 0 },
-      viewport.viewportWidth,
-      viewport.viewportHeight,
-      [0, 0, 0],
-      4
-    );
+    unminedRenderer.queueRect({ x: 0, y: 0 }, viewport.viewportWidth, viewport.viewportHeight, [0, 0, 0], 4);
     if (innerNebulaColor && nebulaColor && spaceColor && deepSpaceColor && deadSpaceColor) {
-      spaceRenderer.setColorConfiguration(
-        innerNebulaColor,
-        nebulaColor,
-        spaceColor,
-        deepSpaceColor,
-        deadSpaceColor
-      );
+      spaceRenderer.setColorConfiguration(innerNebulaColor, nebulaColor, spaceColor, deepSpaceColor, deadSpaceColor);
     }
 
     for (const exploredChunk of exploredChunks) {
@@ -76,10 +59,7 @@ export class BackgroundRenderer implements BackgroundRendererType {
         // add this chunk to the verts array
         if (this.highQuality) {
           spaceRenderer.queueChunk(exploredChunk);
-          this.chunkShadowRenderer.queueChunkBorderWithPadding(
-            exploredChunk,
-            1 + 1 * viewport.scale
-          );
+          this.chunkShadowRenderer.queueChunkBorderWithPadding(exploredChunk, 1 + 1 * viewport.scale);
         } else {
           perlinRenderer.queueChunk(exploredChunk);
         }

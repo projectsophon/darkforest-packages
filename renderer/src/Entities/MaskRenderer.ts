@@ -1,12 +1,13 @@
-import { Chunk } from '@darkforest_eth/types';
-import { EngineUtils } from '../EngineUtils';
-import { MASK_PROGRAM_DEFINITION } from '../Programs/MaskProgram';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import type { Chunk } from "@darkforest_eth/types";
+import { EngineUtils } from "../EngineUtils";
+import { MASK_PROGRAM_DEFINITION } from "../Programs/MaskProgram";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 
 export class MaskRenderer extends GenericRenderer<typeof MASK_PROGRAM_DEFINITION> {
-  manager: GameGLManager;
-  bgCanvas: HTMLCanvasElement;
+  declare manager: GameGLManager;
+
+  bgCanvas!: HTMLCanvasElement;
   quadBuffer: number[];
   perlinThresholds: number[];
 

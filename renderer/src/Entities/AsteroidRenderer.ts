@@ -1,17 +1,10 @@
-import { getPlanetCosmetic } from '@darkforest_eth/procedural';
-import {
-  AsteroidRendererType,
-  CanvasCoords,
-  DrawMode,
-  GameViewport,
-  Planet,
-  RendererType,
-  RGBVec,
-} from '@darkforest_eth/types';
-import { EngineUtils } from '../EngineUtils';
-import { ASTEROID_PROGRAM_DEFINITION } from '../Programs/AsteroidProgram';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { getPlanetCosmetic } from "@darkforest_eth/procedural";
+import { DrawMode, RendererType } from "@darkforest_eth/types";
+import type { AsteroidRendererType, CanvasCoords, GameViewport, Planet, RGBVec } from "@darkforest_eth/types";
+import { EngineUtils } from "../EngineUtils";
+import { ASTEROID_PROGRAM_DEFINITION } from "../Programs/AsteroidProgram";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 
 export class AsteroidRenderer
   extends GenericRenderer<typeof ASTEROID_PROGRAM_DEFINITION>
@@ -27,13 +20,7 @@ export class AsteroidRenderer
   }
 
   public queueAsteroid(planet: Planet, centerW: CanvasCoords, radiusW: number, color: RGBVec) {
-    const {
-      position: posA,
-      color: colorA,
-      radius: radiusA,
-      theta: thetaA,
-      seed: seedA,
-    } = this.attribManagers;
+    const { position: posA, color: colorA, radius: radiusA, theta: thetaA, seed: seedA } = this.attribManagers;
 
     const center = this.viewport.worldToCanvasCoords(centerW);
     const radius = this.viewport.worldToCanvasDist(radiusW);

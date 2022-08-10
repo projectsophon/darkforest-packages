@@ -23,8 +23,7 @@
  *
  * @packageDocumentation
  */
-import type { LocationId, Planet, PlanetBonus } from '@darkforest_eth/types';
-import bigInt from 'big-integer';
+import type { LocationId, Planet, PlanetBonus } from "@darkforest_eth/types";
 
 /**
  * The core method for extracting planet details from a LocationID.
@@ -35,7 +34,7 @@ import bigInt from 'big-integer';
  */
 export function getBytesFromHex(hexStr: string, startByte: number, endByte: number) {
   const byteString = hexStr.substring(2 * startByte, 2 * endByte);
-  return bigInt(`0x${byteString}`);
+  return BigInt(`0x${byteString}`);
 }
 
 // This is a cache of bonuses by LocationID to avoid an expensive recalc
@@ -53,7 +52,7 @@ export function bonusFromHex(hex: LocationId): PlanetBonus {
   const newBonus = Array(6).fill(false) as PlanetBonus;
 
   for (let i = 0; i < newBonus.length; i++) {
-    newBonus[i] = getBytesFromHex(hex, 9 + i, 10 + i).lesser(16);
+    newBonus[i] = getBytesFromHex(hex, 9 + i, 10 + i) < 16;
   }
 
   bonusById.set(hex, newBonus);

@@ -1,17 +1,11 @@
-import {
-  EMPTY_ADDRESS,
-  HAT_SIZES,
-  MAX_PLANET_LEVEL,
-  MIN_PLANET_LEVEL,
-} from '@darkforest_eth/constants';
-import { getPlanetRank, isLocatable } from '@darkforest_eth/gamelogic';
-import { seededRandom } from '@darkforest_eth/hashing';
-import { hashToInt } from '@darkforest_eth/serde';
-import {
+import { EMPTY_ADDRESS, HAT_SIZES, MAX_PLANET_LEVEL, MIN_PLANET_LEVEL } from "@darkforest_eth/constants";
+import { getPlanetRank, isLocatable } from "@darkforest_eth/gamelogic";
+import { seededRandom } from "@darkforest_eth/hashing";
+import { hashToInt } from "@darkforest_eth/serde";
+import { Biome, HatType, UpgradeBranchName } from "@darkforest_eth/types";
+import type {
   ArtifactId,
-  Biome,
   EthAddress,
-  HatType,
   HSLVec,
   LocationId,
   Planet,
@@ -19,18 +13,11 @@ import {
   RGBAVec,
   RGBVec,
   RuinsInfo,
-  UpgradeBranchName,
-} from '@darkforest_eth/types';
-import Noise from './Noise';
-import {
-  blurb2grammar,
-  blurbGrammar,
-  planetNameWords,
-  planetTagAdj,
-  planetTagNoun,
-} from './ProcgenConsts';
-import tracery from './tracery';
-import { baseEngModifiers } from './tracery-modifiers';
+} from "@darkforest_eth/types";
+import Noise from "./Noise";
+import { blurb2grammar, blurbGrammar, planetNameWords, planetTagAdj, planetTagNoun } from "./ProcgenConsts";
+import tracery from "./tracery";
+import { baseEngModifiers } from "./tracery-modifiers";
 
 export type PixelCoords = {
   x: number;
@@ -47,10 +34,10 @@ export const titleCase = (title: string): string =>
     .split(/ /g)
     .map((word, i) => {
       // don't capitalize articles unless it's the first word
-      if (i !== 0 && ['of', 'the'].includes(word)) return word;
+      if (i !== 0 && ["of", "the"].includes(word)) return word;
       return `${word.substring(0, 1).toUpperCase()}${word.substring(1)}`;
     })
-    .join(' ');
+    .join(" ");
 
 const blurbsById = new Map<LocationId, string>();
 const blurbs2ById = new Map<LocationId, string>();
@@ -84,7 +71,7 @@ const oceanByBiome: { readonly [Biome: number]: HSLVec } = {
 
 const strByBiome = new Map<Biome, string>();
 export function getBiomeRgbStr(biome: Biome): string {
-  if (biome === Biome.WASTELAND) return '#888';
+  if (biome === Biome.WASTELAND) return "#888";
 
   const s = strByBiome.get(biome);
   if (s) return s;
@@ -97,8 +84,8 @@ export function getBiomeRgbStr(biome: Biome): string {
 
 export const grayColors: PlanetCosmeticInfo = {
   baseHue: 0,
-  baseStr: '#888',
-  bgStr: '#888',
+  baseStr: "#888",
+  bgStr: "#888",
   baseColor: [120, 120, 120],
   baseColor2: [120, 120, 120],
   baseColor3: [120, 120, 120],
@@ -242,7 +229,7 @@ export function getOwnerColorVec(planet: Planet): RGBAVec {
 }
 
 export function getOwnerColor(planet: Planet): string {
-  if (planet.owner === EMPTY_ADDRESS) return '#996666';
+  if (planet.owner === EMPTY_ADDRESS) return "#996666";
   return getPlayerColor(planet.owner);
 }
 
@@ -265,7 +252,7 @@ export function planetPerlin(loc: LocationId) {
   const realHash = loc.substring(4, loc.length);
 
   const noise = Noise.getInstance();
-  const offset = parseInt('0x' + realHash.substring(0, 10));
+  const offset = parseInt("0x" + realHash.substring(0, 10));
   const t = (num: number): number => num / 100 + offset;
 
   return (coords: PixelCoords) => {
@@ -281,7 +268,7 @@ export function planetRandom(loc: LocationId) {
   const realHash = loc.substring(4, loc.length);
 
   let count = 0;
-  const countOffset = parseInt('0x' + realHash.substring(0, 10));
+  const countOffset = parseInt("0x" + realHash.substring(0, 10));
 
   return () => {
     count++;
@@ -300,7 +287,7 @@ export function artifactRandom(loc: ArtifactId) {
   const realHash = loc.substring(4, loc.length);
 
   let count = 0;
-  const countOffset = parseInt('0x' + realHash.substring(0, 10));
+  const countOffset = parseInt("0x" + realHash.substring(0, 10));
 
   return () => {
     count++;
@@ -352,7 +339,7 @@ export function getPlanetCosmetic(planet: Planet | undefined): PlanetCosmeticInf
   const oceanColor = isLocatable(planet) ? oceanByBiome[planet.biome] : ([0, 0, 20] as HSLVec);
 
   const baseHue = hashToHue(planet.locationId);
-  const seed = parseInt('0x' + planet.locationId.substring(0, 9));
+  const seed = parseInt("0x" + planet.locationId.substring(0, 9));
 
   const bL = Math.min(baseColor[2] + 20, 92);
   const baseColor2 = [baseColor[0], baseColor[1], bL - 10] as HSLVec;
@@ -364,15 +351,9 @@ export function getPlanetCosmetic(planet: Planet | undefined): PlanetCosmeticInf
   const secondaryColor2 = [baseColor[0], sS, sL + 10] as HSLVec;
   const secondaryColor3 = [baseColor[0], sS, sL + 20] as HSLVec;
 
-  const beachColor = [
-    baseColor[0] + 10,
-    baseColor[1] - 30,
-    Math.min(baseColor[2] + 23, 100),
-  ] as HSLVec;
+  const beachColor = [baseColor[0] + 10, baseColor[1] - 30, Math.min(baseColor[2] + 23, 100)] as HSLVec;
 
-  const asteroidHsl = (
-    isLocatable(planet) && planet.biome === Biome.WASTELAND ? [0, 0, 40] : baseColor
-  ) as HSLVec;
+  const asteroidHsl = (isLocatable(planet) && planet.biome === Biome.WASTELAND ? [0, 0, 40] : baseColor) as HSLVec;
 
   /* calculate spacetime rip colors */
   const spacetime1: HSLVec = [baseHue, 75, 70];
@@ -416,29 +397,29 @@ export function getPlanetCosmetic(planet: Planet | undefined): PlanetCosmeticInf
 }
 
 export function getPlanetTitle(planet: Planet | undefined) {
-  if (!planet) return 'Unknown';
+  if (!planet) return "Unknown";
 
   const myRank = getPlanetRank(planet);
 
-  let ret = 'Planet';
+  let ret = "Planet";
 
   if (myRank === 1) {
-    ret = 'Settlement';
+    ret = "Settlement";
   } else if (myRank === 2) {
-    ret = 'Colony';
+    ret = "Colony";
   } else if (myRank === 3) {
-    ret = 'Spaceport';
+    ret = "Spaceport";
   } else if (myRank === 4) {
-    ret = 'Stronghold';
+    ret = "Stronghold";
   } else if (myRank === 5) {
-    ret = 'Galactic Stronghold';
+    ret = "Galactic Stronghold";
   }
 
   return ret;
 }
 
 export function getPlanetName(planet: Planet | undefined): string {
-  if (!planet) return 'Unknown';
+  if (!planet) return "Unknown";
   return getPlanetNameHash(planet.locationId);
 }
 
@@ -446,11 +427,11 @@ export function getPlanetNameHash(locId: LocationId): string {
   const name = namesById.get(locId);
   if (name) return name;
 
-  let planetName = '';
+  let planetName = "";
 
   const randInt = planetRandomInt(locId);
   if (randInt() % 1024 === 0) {
-    planetName = 'Clown Town';
+    planetName = "Clown Town";
   } else {
     const word1 = planetNameWords[randInt() % planetNameWords.length];
     const word2 = planetNameWords[randInt() % planetNameWords.length];
@@ -463,14 +444,14 @@ export function getPlanetNameHash(locId: LocationId): string {
 }
 
 export function getPlanetTagline(planet: Planet | undefined): string {
-  if (!planet) return 'The empty unknown';
+  if (!planet) return "The empty unknown";
 
   const tagline = taglinesById.get(planet.locationId);
   if (tagline) return tagline;
 
-  let myTagline = '';
+  let myTagline = "";
 
-  if (getPlanetName(planet) === 'Clown Town') {
+  if (getPlanetName(planet) === "Clown Town") {
     myTagline = `A town of clowns`;
   } else {
     const randInt = planetRandomInt(planet.locationId);
@@ -487,13 +468,13 @@ export function getPlanetTagline(planet: Planet | undefined): string {
 // this one doesn't mention the name
 export function getPlanetBlurb(planet: Planet | undefined): string {
   if (!planet)
-    return 'The vast, empty unknown of space contains worlds of infinite possibilities. Select a planet to learn more...';
+    return "The vast, empty unknown of space contains worlds of infinite possibilities. Select a planet to learn more...";
 
   const myBlurb = blurbsById.get(planet.locationId);
   if (myBlurb) return myBlurb;
 
-  let append = '';
-  if (getPlanetName(planet) === 'Clown Town') {
+  let append = "";
+  if (getPlanetName(planet) === "Clown Town") {
     append = `Founded in 1998 by Brian Gu, who remains the CEO of Clown Town to this day. `;
   }
 
@@ -507,20 +488,20 @@ export function getPlanetBlurb(planet: Planet | undefined): string {
         `#many.capitalize# species of #species# #populate# the #habitat#. ` +
         `#funfact.capitalize#\.`,
     ],
-    origin: ['#[myflora:#flora#]story#'],
+    origin: ["#[myflora:#flora#]story#"],
   };
   const grammar = tracery.createGrammar({ ...blurbGrammar, ...myGrammar });
 
   grammar.addModifiers(baseEngModifiers);
 
-  const blurb = append + grammar.flatten('#origin#');
+  const blurb = append + grammar.flatten("#origin#");
   blurbsById.set(planet.locationId, blurb);
   return blurb;
 }
 
 // this one mentions the name
 export function getPlanetBlurb2(planet: Planet | undefined): string {
-  if (!planet) return '';
+  if (!planet) return "";
 
   const myBlurb = blurbs2ById.get(planet.locationId);
   if (myBlurb) return myBlurb;
@@ -537,7 +518,7 @@ export function getPlanetBlurb2(planet: Planet | undefined): string {
   const grammar = tracery.createGrammar({ ...blurb2grammar, ...myGrammar });
 
   grammar.addModifiers(baseEngModifiers);
-  const blurb = grammar.flatten('#origin#');
+  const blurb = grammar.flatten("#origin#");
 
   blurbs2ById.set(planet.locationId, blurb);
   return blurb;
@@ -548,5 +529,5 @@ export function getHatSizeName(planet: Planet) {
   const lv = planet.hatLevel;
 
   if (lv < maxHat) return HAT_SIZES[lv];
-  else return 'H' + 'A'.repeat(4 * 2 ** (lv - maxHat + 1)) + 'T';
+  else return "H" + "A".repeat(4 * 2 ** (lv - maxHat + 1)) + "T";
 }

@@ -1,4 +1,5 @@
-import {
+import { PlanetLevel, RendererType, Setting } from "@darkforest_eth/types";
+import type {
   Artifact,
   ArtifactId,
   AsteroidRendererType,
@@ -22,7 +23,6 @@ import {
   PerlinConfig,
   PerlinRendererType,
   Planet,
-  PlanetLevel,
   PlanetRendererType,
   PlanetRenderInfo,
   PlanetRenderManagerType,
@@ -32,10 +32,8 @@ import {
   QuasarRendererType,
   QueuedArrival,
   RectRendererType,
-  RendererType,
   RingRendererType,
   RuinsRendererType,
-  Setting,
   SpaceRendererType,
   SpacetimeRipRendererType,
   SpaceType,
@@ -51,34 +49,33 @@ import {
   WorldLocation,
   Wormhole,
   WormholeRendererType,
-} from '@darkforest_eth/types';
-import autoBind from 'auto-bind';
-import { AsteroidRenderer } from './Entities/AsteroidRenderer';
-import { BackgroundRenderer } from './Entities/BackgroundRenderer';
-import { BeltRenderer } from './Entities/BeltRenderer';
-import { BlackDomainRenderer } from './Entities/BlackDomainRenderer';
-import { CaptureZoneRenderer } from './Entities/CaptureZoneRenderer';
-import { CircleRenderer } from './Entities/CircleRenderer';
-import { LineRenderer } from './Entities/LineRenderer';
-import { MineBodyRenderer } from './Entities/MineBodyRenderer';
-import { MineRenderer } from './Entities/MineRenderer';
-import { PerlinRenderer } from './Entities/PerlinRenderer';
-import { PlanetRenderer } from './Entities/PlanetRenderer';
-import { PlanetRenderManager } from './Entities/PlanetRenderManager';
-import { QuasarBodyRenderer } from './Entities/QuasarBodyRenderer';
-import { QuasarRayRenderer } from './Entities/QuasarRayRenderer';
-import { QuasarRenderer } from './Entities/QuasarRenderer';
-import { RectRenderer } from './Entities/RectRenderer';
-import { RingRenderer } from './Entities/RingRenderer';
-import { RuinsRenderer } from './Entities/RuinsRenderer';
-import { SpaceRenderer } from './Entities/SpaceRenderer';
-import { SpacetimeRipRenderer } from './Entities/SpacetimeRipRenderer';
-import { SpriteRenderer } from './Entities/SpriteRenderer';
-import { TextRenderer } from './Entities/TextRenderer';
-import { UnminedRenderer } from './Entities/UnminedRenderer';
-import { VoyageRenderer } from './Entities/VoyageRenderer';
-import { WormholeRenderer } from './Entities/WormholeRenderer';
-import { Overlay2DRenderer } from './Overlay2DRenderer';
+} from "@darkforest_eth/types";
+import { AsteroidRenderer } from "./Entities/AsteroidRenderer";
+import { BackgroundRenderer } from "./Entities/BackgroundRenderer";
+import { BeltRenderer } from "./Entities/BeltRenderer";
+import { BlackDomainRenderer } from "./Entities/BlackDomainRenderer";
+import { CaptureZoneRenderer } from "./Entities/CaptureZoneRenderer";
+import { CircleRenderer } from "./Entities/CircleRenderer";
+import { LineRenderer } from "./Entities/LineRenderer";
+import { MineBodyRenderer } from "./Entities/MineBodyRenderer";
+import { MineRenderer } from "./Entities/MineRenderer";
+import { PerlinRenderer } from "./Entities/PerlinRenderer";
+import { PlanetRenderer } from "./Entities/PlanetRenderer";
+import { PlanetRenderManager } from "./Entities/PlanetRenderManager";
+import { QuasarBodyRenderer } from "./Entities/QuasarBodyRenderer";
+import { QuasarRayRenderer } from "./Entities/QuasarRayRenderer";
+import { QuasarRenderer } from "./Entities/QuasarRenderer";
+import { RectRenderer } from "./Entities/RectRenderer";
+import { RingRenderer } from "./Entities/RingRenderer";
+import { RuinsRenderer } from "./Entities/RuinsRenderer";
+import { SpaceRenderer } from "./Entities/SpaceRenderer";
+import { SpacetimeRipRenderer } from "./Entities/SpacetimeRipRenderer";
+import { SpriteRenderer } from "./Entities/SpriteRenderer";
+import { TextRenderer } from "./Entities/TextRenderer";
+import { UnminedRenderer } from "./Entities/UnminedRenderer";
+import { VoyageRenderer } from "./Entities/VoyageRenderer";
+import { WormholeRenderer } from "./Entities/WormholeRenderer";
+import { Overlay2DRenderer } from "./Overlay2DRenderer";
 import {
   isAsteroidRenderer,
   isBackgroundRenderer,
@@ -106,9 +103,9 @@ import {
   isUnminedRenderer,
   isVoyageRenderer,
   isWormholeRenderer,
-} from './RendererTypeAssertions';
-import { UIRenderer } from './UIRenderer';
-import { GameGLManager } from './WebGL/GameGLManager';
+} from "./RendererTypeAssertions";
+import { UIRenderer } from "./UIRenderer";
+import { GameGLManager } from "./WebGL/GameGLManager";
 
 export interface RendererGameContext extends DiagnosticUpdater {
   getStringSetting(setting: Setting): string | undefined;
@@ -167,7 +164,7 @@ export class Renderer {
 
   bufferCanvas: HTMLCanvasElement;
 
-  frameRequestId: number;
+  declare frameRequestId: number;
   context: RendererGameContext;
 
   frameCount: number;
@@ -178,43 +175,43 @@ export class Renderer {
   overlay2dRenderer: Overlay2DRenderer;
 
   // primitives
-  lineRenderer: LineRendererType;
-  circleRenderer: CircleRendererType;
-  textRenderer: TextRendererType;
-  rectRenderer: RectRendererType;
+  declare lineRenderer: LineRendererType;
+  declare circleRenderer: CircleRendererType;
+  declare textRenderer: TextRendererType;
+  declare rectRenderer: RectRendererType;
 
   // game background
-  bgRenderer: BackgroundRendererType;
-  spaceRenderer: SpaceRendererType;
-  perlinRenderer: PerlinRendererType;
-  unminedRenderer: UnminedRendererType;
+  declare bgRenderer: BackgroundRendererType;
+  declare spaceRenderer: SpaceRendererType;
+  declare perlinRenderer: PerlinRendererType;
+  declare unminedRenderer: UnminedRendererType;
 
   //non planet entities
-  asteroidRenderer: AsteroidRendererType;
-  ringRenderer: RingRendererType;
-  spriteRenderer: SpriteRendererType;
-  blackDomainRenderer: BlackDomainRendererType;
-  captureZoneRenderer: CaptureZoneRendererType;
+  declare asteroidRenderer: AsteroidRendererType;
+  declare ringRenderer: RingRendererType;
+  declare spriteRenderer: SpriteRendererType;
+  declare blackDomainRenderer: BlackDomainRendererType;
+  declare captureZoneRenderer: CaptureZoneRendererType;
 
   //planet entities
-  planetRenderer: PlanetRendererType;
-  mineRenderer: MineRendererType;
-  mineBodyRenderer: MineBodyRendererType;
-  beltRenderer: BeltRendererType;
-  quasarRenderer: QuasarRendererType;
-  quasarBodyRenderer: QuasarBodyRendererType;
-  quasarRayRenderer: QuasarRayRendererType;
-  spacetimeRipRenderer: SpacetimeRipRendererType;
-  ruinsRenderer: RuinsRendererType;
+  declare planetRenderer: PlanetRendererType;
+  declare mineRenderer: MineRendererType;
+  declare mineBodyRenderer: MineBodyRendererType;
+  declare beltRenderer: BeltRendererType;
+  declare quasarRenderer: QuasarRendererType;
+  declare quasarBodyRenderer: QuasarBodyRendererType;
+  declare quasarRayRenderer: QuasarRayRendererType;
+  declare spacetimeRipRenderer: SpacetimeRipRendererType;
+  declare ruinsRenderer: RuinsRendererType;
 
   // render managers
-  uiRenderManager: UIRendererType;
-  planetRenderManager: PlanetRenderManagerType;
-  voyageRenderManager: VoyageRendererType;
-  wormholeRenderManager: WormholeRendererType;
+  declare uiRenderManager: UIRendererType;
+  declare planetRenderManager: PlanetRenderManagerType;
+  declare voyageRenderManager: VoyageRendererType;
+  declare wormholeRenderManager: WormholeRendererType;
 
   private previousRenderTimestamp: number;
-  rendererStack: BaseRenderer[];
+  declare rendererStack: BaseRenderer[];
   config: IRendererConfig;
 
   private constructor(
@@ -239,11 +236,12 @@ export class Renderer {
     this.frameCount = 0;
     this.now = Date.now();
     this.config = config;
-    autoBind(this);
 
     // do async stuff here e.g.: loadTextures(() => this.setup());
     this.setup();
   }
+
+  // TODO: Check these binds
 
   private setup() {
     this.rendererStack = [
@@ -385,13 +383,7 @@ export class Renderer {
     this.wormholeRenderManager.queueWormholes();
 
     // queue planets
-    this.planetRenderManager.queuePlanets(
-      cachedPlanets,
-      this.now,
-      isHighPerfMode,
-      disableEmojis,
-      disableHats
-    );
+    this.planetRenderManager.queuePlanets(cachedPlanets, this.now, isHighPerfMode, disableEmojis, disableHats);
 
     // flush all - ordering matters! (they get drawn bottom-up)
 
@@ -424,7 +416,7 @@ export class Renderer {
           this.planetRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Planet Renderer');
+        console.log("Renderer is not a Planet Renderer");
         return false;
 
       case RendererType.Mine:
@@ -432,7 +424,7 @@ export class Renderer {
           this.mineRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Mine Renderer');
+        console.log("Renderer is not a Mine Renderer");
         return false;
 
       case RendererType.SpacetimeRip:
@@ -440,7 +432,7 @@ export class Renderer {
           this.spacetimeRipRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Spacetime Rip Renderer');
+        console.log("Renderer is not a Spacetime Rip Renderer");
         return false;
 
       case RendererType.Quasar:
@@ -448,7 +440,7 @@ export class Renderer {
           this.quasarRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Quasar renderer');
+        console.log("Renderer is not a Quasar renderer");
         return false;
 
       case RendererType.Ruins:
@@ -456,7 +448,7 @@ export class Renderer {
           this.ruinsRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Ruins Renderer');
+        console.log("Renderer is not a Ruins Renderer");
         return false;
 
       case RendererType.Asteroid:
@@ -464,7 +456,7 @@ export class Renderer {
           this.asteroidRenderer = renderer;
           break;
         }
-        console.log('Renderer is not an Asteroid renderer');
+        console.log("Renderer is not an Asteroid renderer");
         return false;
 
       case RendererType.Ring:
@@ -472,7 +464,7 @@ export class Renderer {
           this.ringRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Ring Renderer');
+        console.log("Renderer is not a Ring Renderer");
         return false;
 
       case RendererType.Sprite:
@@ -480,7 +472,7 @@ export class Renderer {
           this.spriteRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Sprite Renderer');
+        console.log("Renderer is not a Sprite Renderer");
         return false;
 
       case RendererType.BlackDomain:
@@ -488,7 +480,7 @@ export class Renderer {
           this.blackDomainRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Black Domain Renderer');
+        console.log("Renderer is not a Black Domain Renderer");
         return false;
 
       case RendererType.Text:
@@ -496,7 +488,7 @@ export class Renderer {
           this.textRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Text Renderer');
+        console.log("Renderer is not a Text Renderer");
         return false;
 
       case RendererType.Voyager:
@@ -504,7 +496,7 @@ export class Renderer {
           this.voyageRenderManager = renderer;
           break;
         }
-        console.log('Renderer is not a Voywage Renderer');
+        console.log("Renderer is not a Voywage Renderer");
         return false;
 
       case RendererType.Wormhole:
@@ -512,7 +504,7 @@ export class Renderer {
           this.wormholeRenderManager = renderer;
           break;
         }
-        console.log('Renderer is not a Wormhole renderer');
+        console.log("Renderer is not a Wormhole renderer");
         return false;
 
       case RendererType.MineBody:
@@ -520,7 +512,7 @@ export class Renderer {
           this.mineBodyRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Mine Body Renderer');
+        console.log("Renderer is not a Mine Body Renderer");
         return false;
 
       case RendererType.Belt:
@@ -528,7 +520,7 @@ export class Renderer {
           this.beltRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Belt Renderer');
+        console.log("Renderer is not a Belt Renderer");
         return false;
 
       case RendererType.Background:
@@ -536,7 +528,7 @@ export class Renderer {
           this.bgRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Background Renderer');
+        console.log("Renderer is not a Background Renderer");
         return false;
 
       case RendererType.Space:
@@ -544,7 +536,7 @@ export class Renderer {
           this.spaceRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Space Renderer');
+        console.log("Renderer is not a Space Renderer");
         return false;
 
       case RendererType.Unmined:
@@ -552,7 +544,7 @@ export class Renderer {
           this.unminedRenderer = renderer;
           break;
         }
-        console.log('Renderer is not an Unmined Renderer');
+        console.log("Renderer is not an Unmined Renderer");
         return false;
 
       case RendererType.Perlin:
@@ -560,7 +552,7 @@ export class Renderer {
           this.perlinRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Perlin Renderer');
+        console.log("Renderer is not a Perlin Renderer");
         return false;
 
       case RendererType.Line:
@@ -568,7 +560,7 @@ export class Renderer {
           this.lineRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Line Renderer');
+        console.log("Renderer is not a Line Renderer");
         return false;
 
       case RendererType.Rect:
@@ -576,7 +568,7 @@ export class Renderer {
           this.rectRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Rect Renderer');
+        console.log("Renderer is not a Rect Renderer");
         return false;
 
       case RendererType.Circle:
@@ -584,7 +576,7 @@ export class Renderer {
           this.circleRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a Circle Renderer');
+        console.log("Renderer is not a Circle Renderer");
         return false;
 
       case RendererType.UI:
@@ -592,7 +584,7 @@ export class Renderer {
           this.uiRenderManager = renderer;
           break;
         }
-        console.log('Renderer is not a UIRenderer');
+        console.log("Renderer is not a UIRenderer");
         return false;
 
       case RendererType.PlanetManager:
@@ -600,7 +592,7 @@ export class Renderer {
           this.planetRenderManager = renderer;
           break;
         }
-        console.log('Renderer is not a PlanetRenderManager');
+        console.log("Renderer is not a PlanetRenderManager");
         return false;
 
       case RendererType.QuasarBody:
@@ -608,7 +600,7 @@ export class Renderer {
           this.quasarBodyRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a QuasarBodyRenderer');
+        console.log("Renderer is not a QuasarBodyRenderer");
         return false;
 
       case RendererType.QuasarRay:
@@ -616,7 +608,7 @@ export class Renderer {
           this.quasarRayRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a QuasarRayRenderer');
+        console.log("Renderer is not a QuasarRayRenderer");
         return false;
 
       case RendererType.CaptureZone:
@@ -624,13 +616,13 @@ export class Renderer {
           this.captureZoneRenderer = renderer;
           break;
         }
-        console.log('Renderer is not a CaptureZoneRenderer');
+        console.log("Renderer is not a CaptureZoneRenderer");
         return false;
 
       default:
         console.log(renderer.rendererType);
         console.log(typeof renderer.rendererType);
-        console.log('Not a valid RendererType');
+        console.log("Not a valid RendererType");
         return false;
     }
     return true;
@@ -644,35 +636,35 @@ export class Renderer {
    * The most recently added renderers to the stack will be the ones to be used.
    * @param renderer
    */
-  public addCustomRenderer(renderer: BaseRenderer) {
+  public addCustomRenderer = (renderer: BaseRenderer) => {
     if (this.setRenderer(renderer)) {
       this.rendererStack.push(renderer);
       return;
     }
-    console.log('Unable to add custom renderer');
-  }
+    console.log("Unable to add custom renderer");
+  };
 
   /**
    * Called by GameUIManager to remove the passed in renderers from the game.
    * @param renderer - passed in renderer
    */
-  public removeCustomRenderer(renderer: BaseRenderer) {
+  public removeCustomRenderer = (renderer: BaseRenderer) => {
     const index = this.rendererStack.indexOf(renderer);
     if (index > -1) {
       this.rendererStack.splice(index, 1);
     } else {
-      console.log('Renderer not found');
+      console.log("Renderer not found");
     }
     for (const index in this.rendererStack) {
       this.setRenderer(this.rendererStack[index]);
     }
-  }
+  };
 
-  public get2DRenderer() {
+  public get2DRenderer = () => {
     return this.overlay2dRenderer.ctx;
-  }
+  };
 
-  public getViewport(): GameViewport {
+  public getViewport = () => {
     return this.viewport;
-  }
+  };
 }

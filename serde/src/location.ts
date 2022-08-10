@@ -1,7 +1,6 @@
-import { LOCATION_ID_UB } from '@darkforest_eth/constants';
-import type { LocationId } from '@darkforest_eth/types';
-import bigInt, { BigInteger } from 'big-integer';
-import type { BigNumber as EthersBN } from 'ethers';
+import { LOCATION_ID_UB } from "@darkforest_eth/constants";
+import type { LocationId } from "@darkforest_eth/types";
+import type { BigNumber as EthersBN } from "ethers";
 
 /**
  * Converts a possibly 0x-prefixed string of hex digits to a `LocationId`: a
@@ -14,10 +13,13 @@ import type { BigNumber as EthersBN } from 'ethers';
  * location ID.
  */
 export function locationIdFromHexStr(location: string) {
-  const locationBI = bigInt(location, 16);
-  if (locationBI.geq(LOCATION_ID_UB)) throw new Error('not a valid location');
+  if (location.slice(0, 2) === "0x") {
+    location = location.slice(2);
+  }
+  const locationBI = BigInt(`0x${location}`);
+  if (locationBI >= LOCATION_ID_UB) throw new Error("not a valid location");
   let ret = locationBI.toString(16);
-  while (ret.length < 64) ret = '0' + ret;
+  while (ret.length < 64) ret = "0" + ret;
   return ret as LocationId;
 }
 
@@ -32,10 +34,10 @@ export function locationIdFromHexStr(location: string) {
  * location ID.
  */
 export function locationIdFromDecStr(location: string) {
-  const locationBI = bigInt(location);
-  if (locationBI.geq(LOCATION_ID_UB)) throw new Error('not a valid location');
+  const locationBI = BigInt(location);
+  if (locationBI >= LOCATION_ID_UB) throw new Error("not a valid location");
   let ret = locationBI.toString(16);
-  while (ret.length < 64) ret = '0' + ret;
+  while (ret.length < 64) ret = "0" + ret;
   return ret as LocationId;
 }
 
@@ -48,11 +50,11 @@ export function locationIdFromDecStr(location: string) {
  *
  * @param location `BigInteger` representation of a location ID.
  */
-export function locationIdFromBigInt(location: BigInteger): LocationId {
-  const locationBI = bigInt(location);
-  if (locationBI.geq(LOCATION_ID_UB)) throw new Error('not a valid location');
+export function locationIdFromBigInt(location: bigint): LocationId {
+  const locationBI = BigInt(location);
+  if (locationBI >= LOCATION_ID_UB) throw new Error("not a valid location");
   let ret = locationBI.toString(16);
-  while (ret.length < 64) ret = '0' + ret;
+  while (ret.length < 64) ret = "0" + ret;
   return ret as LocationId;
 }
 
@@ -76,5 +78,9 @@ export function locationIdFromEthersBN(location: EthersBN): LocationId {
  * @param locationId LocationID to convert into a `string` of decimal digits
  */
 export function locationIdToDecStr(locationId: LocationId): string {
-  return bigInt(locationId, 16).toString(10);
+  let id: string = locationId;
+  if (locationId.slice(0, 2) === "0x") {
+    id = locationId.slice(2);
+  }
+  return BigInt(`0x${id}`).toString(10);
 }

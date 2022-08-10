@@ -1,5 +1,5 @@
-import { Fraction, getRandomGradientAt, rand } from '@darkforest_eth/hashing';
-import { Abstract, PerlinConfig, Rectangle, WorldCoords } from '@darkforest_eth/types';
+import { Fraction, getRandomGradientAt, rand } from "@darkforest_eth/hashing";
+import type { Abstract, PerlinConfig, Rectangle, WorldCoords } from "@darkforest_eth/types";
 
 /* types */
 type Vector = { x: number; y: number };
@@ -9,7 +9,7 @@ export type PerlinRand = ReturnType<typeof rand>;
 
 export type GridPoint = WorldCoords & { __value: never };
 
-export type PerlinOctave = Abstract<number, 'PerlinOctave'>;
+export type PerlinOctave = Abstract<number, "PerlinOctave">;
 
 export const PerlinOctave = {
   _0: 0 as PerlinOctave,
@@ -28,7 +28,7 @@ export function up(topLeft: GridPoint, scale: number): GridPoint {
 
 export function isGridPoint(coords: WorldCoords, scale: number): coords is GridPoint {
   const isGrid = coords.x % scale === 0 && coords.y % scale === 0;
-  if (!isGrid) throw 'tried to get gradient of a non-grid point!';
+  if (!isGrid) throw "tried to get gradient of a non-grid point!";
 
   return isGrid;
 }
@@ -43,7 +43,7 @@ export function getGridPoint(bottomLeft: WorldCoords, scale: number): GridPoint 
 
 export function getPerlinChunks(footprint: Rectangle, lengthScale: number): Iterable<Rectangle> {
   const { bottomLeft, sideLength } = footprint;
-  if (sideLength <= lengthScale) throw 'getPerlinChunks called on a small chunk';
+  if (sideLength <= lengthScale) throw "getPerlinChunks called on a small chunk";
 
   const perlinChunks: Set<Rectangle> = new Set();
 
@@ -59,12 +59,7 @@ export function getPerlinChunks(footprint: Rectangle, lengthScale: number): Iter
 }
 
 /* gradient caching */
-function gradientKey(
-  quadrant: Quadrant,
-  coords: GridPoint,
-  config: PerlinConfig,
-  pow: PerlinOctave
-): string {
+function gradientKey(quadrant: Quadrant, coords: GridPoint, config: PerlinConfig, pow: PerlinOctave): string {
   return `${config.key}-${config.scale}-${pow}-${coords.x}-${coords.y}-${quadrant}`;
 }
 
@@ -72,13 +67,13 @@ const gradientCache: Map<string, Vector> = new Map();
 
 const randFns: { [k: number]: PerlinRand } = {};
 
-export type Quadrant = Abstract<string, 'Quadrant'>;
+export type Quadrant = Abstract<string, "Quadrant">;
 
 export const Quadrant = {
-  TopRight: 'TopRight' as Quadrant,
-  TopLeft: 'TopLeft' as Quadrant,
-  BottomLeft: 'BottomLeft' as Quadrant,
-  BottomRight: 'BottomRight' as Quadrant,
+  TopRight: "TopRight" as Quadrant,
+  TopLeft: "TopLeft" as Quadrant,
+  BottomLeft: "BottomLeft" as Quadrant,
+  BottomRight: "BottomRight" as Quadrant,
 };
 
 export function getQuadrant(bottomLeft: GridPoint): Quadrant {

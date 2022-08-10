@@ -229,10 +229,7 @@ export interface SnarkJSProofAndSignals {
  * @param publicSignals the circuit's public signals (i.e. output signals and
  * public input signals)
  */
-export function buildContractCallArgs(
-  snarkProof: SnarkJSProof,
-  publicSignals: string[]
-): ContractCallArgs {
+export function buildContractCallArgs(snarkProof: SnarkJSProof, publicSignals: string[]): ContractCallArgs {
   // the object returned by genZKSnarkProof needs to be massaged into a set of parameters the verifying contract
   // will accept
   return [
@@ -251,13 +248,13 @@ export function buildContractCallArgs(
 export function fakeProof(publicSignals: string[] = []): SnarkJSProofAndSignals {
   return {
     proof: {
-      pi_a: ['0', '0', '0'],
+      pi_a: ["0", "0", "0"],
       pi_b: [
-        ['0', '0'],
-        ['0', '0'],
-        ['0', '0'],
+        ["0", "0"],
+        ["0", "0"],
+        ["0", "0"],
       ],
-      pi_c: ['0', '0', '0'],
+      pi_c: ["0", "0", "0"],
     },
     publicSignals: publicSignals,
   };
@@ -267,49 +264,49 @@ export function fakeProof(publicSignals: string[] = []): SnarkJSProofAndSignals 
 /**
  * @hidden
  */
-export const revealSnarkWasmPath = require.resolve('./reveal.wasm');
+export const revealSnarkWasmPath = require.resolve("./reveal.wasm");
 
 /**
  * @hidden
  */
-export const revealSnarkZkeyPath = require.resolve('./reveal.zkey');
+export const revealSnarkZkeyPath = require.resolve("./reveal.zkey");
 
 /**
  * @hidden
  */
-export const initSnarkWasmPath = require.resolve('./init.wasm');
+export const initSnarkWasmPath = require.resolve("./init.wasm");
 
 /**
  * @hidden
  */
-export const initSnarkZkeyPath = require.resolve('./init.zkey');
+export const initSnarkZkeyPath = require.resolve("./init.zkey");
 
 /**
  * @hidden
  */
-export const moveSnarkWasmPath = require.resolve('./move.wasm');
+export const moveSnarkWasmPath = require.resolve("./move.wasm");
 
 /**
  * @hidden
  */
-export const moveSnarkZkeyPath = require.resolve('./move.zkey');
+export const moveSnarkZkeyPath = require.resolve("./move.zkey");
 
 /**
  * @hidden
  */
-export const biomebaseSnarkWasmPath = require.resolve('./biomebase.wasm');
+export const biomebaseSnarkWasmPath = require.resolve("./biomebase.wasm");
 
 /**
  * @hidden
  */
-export const biomebaseSnarkZkeyPath = require.resolve('./biomebase.zkey');
+export const biomebaseSnarkZkeyPath = require.resolve("./biomebase.zkey");
 
 /**
  * @hidden
  */
-export const whitelistSnarkWasmPath = require.resolve('./whitelist.wasm');
+export const whitelistSnarkWasmPath = require.resolve("./whitelist.wasm");
 
 /**
  * @hidden
  */
-export const whitelistSnarkZkeyPath = require.resolve('./whitelist.zkey');
+export const whitelistSnarkZkeyPath = require.resolve("./whitelist.zkey");

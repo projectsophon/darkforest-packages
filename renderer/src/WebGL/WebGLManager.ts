@@ -1,6 +1,5 @@
-import { RGBAVec } from '@darkforest_eth/types';
-import autoBind from 'auto-bind';
-import { mat4 } from 'gl-matrix';
+import type { RGBAVec } from "@darkforest_eth/types";
+import { mat4 } from "gl-matrix";
 
 export class WebGLManager {
   public gl: WebGL2RenderingContext;
@@ -9,13 +8,10 @@ export class WebGLManager {
   private texIdx = 0;
 
   constructor(canvas: HTMLCanvasElement, attr?: WebGLContextAttributes) {
-    autoBind(this);
-
     this.canvas = canvas;
-    const gl = this.canvas.getContext('webgl2', attr);
+    const gl = this.canvas.getContext("webgl2", attr);
     if (!gl) {
-      console.error('error getting webgl2 context');
-      return;
+      throw new Error("error getting webgl2 context");
     }
     this.gl = gl;
 
@@ -23,7 +19,9 @@ export class WebGLManager {
     this.setProjectionMatrix();
   }
 
-  public setProjectionMatrix(): void {
+  // TODO: Check these binds
+
+  public setProjectionMatrix = () => {
     const height = this.canvas.height;
     const width = this.canvas.width;
     const depth = 100; // arbitrary # which represents max zidx
@@ -31,7 +29,7 @@ export class WebGLManager {
     // projects xy onto clip space and also compresses z
 
     // prettier-ignore
-    mat4.set(this.projectionMatrix, 
+    mat4.set(this.projectionMatrix,
       2 / width, 0, 0, 0,
       0, -2 / height, 0, 0,
       0, 0, 1 / depth, 0, // TODO make it so that positive is in front
@@ -39,9 +37,9 @@ export class WebGLManager {
     );
 
     // the reason we don't put -1/depth is because it breaks RHR; we need to reverse all of our triangles
-  }
+  };
 
-  public clear(bits?: number, color?: RGBAVec) {
+  public clear = (bits?: number, color?: RGBAVec) => {
     const { gl, canvas } = this;
     gl.viewport(0, 0, canvas.width, canvas.height);
 
@@ -49,9 +47,9 @@ export class WebGLManager {
     else gl.clearColor(0, 0, 0, 0);
 
     gl.clear(bits || gl.COLOR_BUFFER_BIT);
-  }
+  };
 
-  public getTexIdx(): number {
+  public getTexIdx = () => {
     return this.texIdx++;
-  }
+  };
 }

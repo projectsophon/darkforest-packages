@@ -39,8 +39,6 @@
  *
  */
 
-import { BigInteger } from 'big-integer';
-
 export interface NumeratorDenominator {
   n: number;
   d: number;
@@ -61,9 +59,9 @@ export interface IFraction {
   new (numbers: (number | string)[]);
   new (fraction: NumeratorDenominator);
 
-  s: BigInteger;
-  n: BigInteger;
-  d: BigInteger;
+  s: bigint;
+  n: bigint;
+  d: bigint;
 
   abs(): IFraction;
   neg(): IFraction;

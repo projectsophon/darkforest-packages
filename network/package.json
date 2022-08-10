@@ -28,13 +28,12 @@
     "@darkforest_eth/types": "6.7.29",
     "async-mutex": "^0.3.2",
     "ethers": "^5.5.1",
-    "json-stable-stringify": "^1.0.1",
     "just-debounce": "^1.1.0",
     "lodash": "^4.17.15",
     "mnemonist": "^0.38.1",
-    "p-defer": "^3.0.0",
-    "p-retry": "^4.6.1",
-    "p-timeout": "^4.0.0",
+    "p-defer": "^4.0.0",
+    "p-retry": "^5.1.1",
+    "p-timeout": "^6.0.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import {
+import type {
   AutoGasSetting,
   DiagnosticUpdater,
   NetworkEvent,
@@ -6,14 +6,14 @@ import {
   Transaction,
   TransactionId,
   TxIntent,
-} from '@darkforest_eth/types';
-import { Mutex } from 'async-mutex';
-import { providers } from 'ethers';
-import deferred from 'p-defer';
-import timeout from 'p-timeout';
-import { ConnectionManager } from './ConnectionManager';
-import { waitForTransaction } from './Network';
-import { ConcurrentQueueConfiguration, ThrottledConcurrentQueue } from './ThrottledConcurrentQueue';
+} from "@darkforest_eth/types";
+import { Mutex } from "async-mutex";
+import type { providers } from "ethers";
+import deferred from "p-defer";
+import timeout from "p-timeout";
+import type { ConnectionManager } from "./ConnectionManager";
+import { waitForTransaction } from "./Network";
+import { type ConcurrentQueueConfiguration, ThrottledConcurrentQueue } from "./ThrottledConcurrentQueue";
 
 /**
  * Returns either a string that represents the gas price we should use by default for transactions,
@@ -40,10 +40,7 @@ export type BeforeTransaction = (transactionRequest: Transaction) => Promise<voi
 /**
  * {@link TxExecutor} calls this after executing a transaction.
  */
-export type AfterTransaction = (
-  transactionRequest: Transaction,
-  performanceMetrics: unknown
-) => Promise<void>;
+export type AfterTransaction = (transactionRequest: Transaction, performanceMetrics: unknown) => Promise<void>;
 
 export class TxExecutor {
   /**
@@ -185,7 +182,7 @@ export class TxExecutor {
     const tx: Transaction<T> = {
       id: this.nextId(),
       lastUpdatedAt: Date.now(),
-      state: 'Init',
+      state: "Init",
       intent: ser.intent,
       submittedPromise,
       confirmedPromise,
@@ -241,7 +238,7 @@ export class TxExecutor {
     const tx: Transaction<T> = {
       id,
       lastUpdatedAt: Date.now(),
-      state: 'Init',
+      state: "Init",
       intent,
       submittedPromise,
       confirmedPromise,
@@ -268,12 +265,12 @@ export class TxExecutor {
 
   public dequeueTransction(tx: Transaction) {
     this.queue.remove((queuedTx) => queuedTx?.id === tx.id);
-    tx.state = 'Cancel';
+    tx.state = "Cancel";
   }
 
   public prioritizeTransaction(tx: Transaction) {
     this.queue.prioritize((queuedTx) => queuedTx?.id === tx.id);
-    tx.state = 'Prioritized';
+    tx.state = "Prioritized";
   }
 
   /**
@@ -288,15 +285,12 @@ export class TxExecutor {
     const releaseMutex = await this.nonceMutex.acquire();
     const shouldRefreshNonce =
       this.nonce === undefined ||
-      (this.supportMultipleWallets &&
-        Date.now() - this.lastTransactionTimestamp > TxExecutor.NONCE_STALE_AFTER_MS);
+      (this.supportMultipleWallets && Date.now() - this.lastTransactionTimestamp > TxExecutor.NONCE_STALE_AFTER_MS);
 
     if (shouldRefreshNonce) {
       // const chainNonce = await this.ethConnection.getNonce();
       // TODO: Retry?
-      const chainNonce = await this.ethConnection.provider.getTransactionCount(
-        this.ethConnection.account as string
-      );
+      const chainNonce = await this.ethConnection.provider.getTransactionCount(this.ethConnection.account as string);
       const localNonce = this.nonce || 0;
 
       this.nonce = Math.max(chainNonce, localNonce);
@@ -341,7 +335,7 @@ export class TxExecutor {
     const time_exec_called = Date.now();
 
     try {
-      tx.state = 'Processing';
+      tx.state = "Processing";
 
       if (this.beforeTransaction) {
         await this.beforeTransaction(tx);
@@ -349,10 +343,7 @@ export class TxExecutor {
 
       const nonce = await this.getNonce();
 
-      const requestWithDefaults = Object.assign(
-        JSON.parse(JSON.stringify(this.defaultTxOptions)),
-        tx.overrides
-      );
+      const requestWithDefaults = Object.assign(JSON.parse(JSON.stringify(this.defaultTxOptions)), tx.overrides);
 
       time_called = Date.now();
 
@@ -362,11 +353,13 @@ export class TxExecutor {
           ...requestWithDefaults,
           nonce,
         }),
-        TxExecutor.TX_SUBMIT_TIMEOUT,
-        `tx request ${tx.id} failed to submit: timed out}`
+        {
+          milliseconds: TxExecutor.TX_SUBMIT_TIMEOUT,
+          message: `tx request ${tx.id} failed to submit: timed out}`,
+        }
       );
 
-      tx.state = 'Submit';
+      tx.state = "Submit";
       tx.hash = submitted.hash;
 
       time_submitted = Date.now();
@@ -375,25 +368,22 @@ export class TxExecutor {
       this.lastTransactionTimestamp = time_submitted;
       tx.onTransactionResponse(submitted);
 
-      const confirmed = await waitForTransaction(
-        this.ethConnection.provider,
-        submitted.hash
-      );
+      const confirmed = await waitForTransaction(this.ethConnection.provider, submitted.hash);
       if (confirmed.status !== 1) {
         time_errored = Date.now();
         tx.lastUpdatedAt = time_errored;
-        tx.state = 'Fail';
+        tx.state = "Fail";
         await this.resetNonce();
-        throw new Error('transaction reverted');
+        throw new Error("transaction reverted");
       } else {
-        tx.state = 'Confirm';
+        tx.state = "Confirm";
         time_confirmed = Date.now();
         tx.lastUpdatedAt = time_confirmed;
         tx.onTransactionReceipt(confirmed);
       }
     } catch (e) {
       console.error(e);
-      tx.state = 'Fail';
+      tx.state = "Fail";
       error = e as Error;
 
       if (!time_submitted) {

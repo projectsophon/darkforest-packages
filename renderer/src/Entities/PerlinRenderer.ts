@@ -1,16 +1,10 @@
-import {
-  Chunk,
-  PerlinConfig,
-  PerlinRendererType,
-  Rectangle,
-  RendererType,
-  Vec3,
-} from '@darkforest_eth/types';
-import { EngineUtils } from '../EngineUtils';
-import { PERLIN_PROGRAM_DEFINITION } from '../Programs/PerlinProgram';
-import { AttribManager } from '../WebGL/AttribManager';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { RendererType } from "@darkforest_eth/types";
+import type { Chunk, PerlinConfig, PerlinRendererType, Rectangle, Vec3 } from "@darkforest_eth/types";
+import { EngineUtils } from "../EngineUtils";
+import { PERLIN_PROGRAM_DEFINITION } from "../Programs/PerlinProgram";
+import type { AttribManager } from "../WebGL/AttribManager";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 import {
   getCachedGradient,
   getGridPoint,
@@ -20,13 +14,11 @@ import {
   right,
   up,
   valueOf,
-} from './PerlinUtils';
+} from "./PerlinUtils";
 
-export class PerlinRenderer
-  extends GenericRenderer<typeof PERLIN_PROGRAM_DEFINITION>
-  implements PerlinRendererType
-{
-  manager: GameGLManager;
+export class PerlinRenderer extends GenericRenderer<typeof PERLIN_PROGRAM_DEFINITION> implements PerlinRendererType {
+  declare manager: GameGLManager;
+
   config: PerlinConfig;
 
   posBuffer: number[];
@@ -43,12 +35,7 @@ export class PerlinRenderer
     this.thresholds = manager.renderer.context.getPerlinThresholds();
   }
 
-  private bufferGradients(
-    rect: Rectangle,
-    octave: PerlinOctave,
-    topGrad: AttribManager,
-    botGrad: AttribManager
-  ) {
+  private bufferGradients(rect: Rectangle, octave: PerlinOctave, topGrad: AttribManager, botGrad: AttribManager) {
     const { scale } = this.config;
     const { bottomLeft } = rect;
     const octaveScale = scale * 2 ** octave;
@@ -101,13 +88,7 @@ export class PerlinRenderer
       worldCoords: worldCoordsA,
     } = this.attribManagers;
 
-    EngineUtils.makeQuadVec2Buffered(
-      this.posBuffer,
-      Math.round(x1),
-      Math.round(y1),
-      Math.round(x2),
-      Math.round(y2)
-    );
+    EngineUtils.makeQuadVec2Buffered(this.posBuffer, Math.round(x1), Math.round(y1), Math.round(x2), Math.round(y2));
     posA.setVertex(this.posBuffer, this.verts);
 
     EngineUtils.makeQuadVec2Buffered(this.coordsBuffer, xW, yW + sideLength, xW + sideLength, yW);

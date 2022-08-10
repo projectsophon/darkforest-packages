@@ -1,16 +1,9 @@
-import {
-  BeltRendererType,
-  CanvasCoords,
-  Planet,
-  RendererType,
-  RGBVec,
-  WorldCoords,
-} from '@darkforest_eth/types';
-import autoBind from 'auto-bind';
-import { EngineUtils } from '../EngineUtils';
-import { BeltProps, BELT_PROGRAM_DEFINITION, propsFromIdx } from '../Programs/BeltProgram';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { RendererType } from "@darkforest_eth/types";
+import type { BeltRendererType, CanvasCoords, Planet, RGBVec, WorldCoords } from "@darkforest_eth/types";
+import { EngineUtils } from "../EngineUtils";
+import { type BeltProps, BELT_PROGRAM_DEFINITION, propsFromIdx } from "../Programs/BeltProgram";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 
 export class BeltRenderer
   extends GenericRenderer<typeof BELT_PROGRAM_DEFINITION, GameGLManager>
@@ -27,11 +20,10 @@ export class BeltRenderer
     this.topRectPosBuffer = EngineUtils.makeEmptyQuadVec2();
     this.botRectPosBuffer = EngineUtils.makeEmptyQuadVec2();
     this.posBuffer = EngineUtils.makeEmptyQuad();
-
-    autoBind(this);
   }
 
-  queueBeltWorld(
+  // TODO: Check these binds
+  queueBeltWorld = (
     centerW: CanvasCoords,
     radiusW: number, // screen coords
     color: RGBVec,
@@ -40,14 +32,14 @@ export class BeltRenderer
     delZ = 0,
     props: BeltProps = [10, 1, 1, 0.05],
     angle = 0
-  ) {
+  ) => {
     const center = this.manager.renderer.getViewport().worldToCanvasCoords(centerW);
     const radius = this.manager.renderer.getViewport().worldToCanvasDist(radiusW);
 
     this.queueBelt(center, radius, color, l, z, delZ, props, angle);
-  }
+  };
 
-  queueBelt(
+  queueBelt = (
     center: CanvasCoords,
     radius: number, // screen coords
     color: RGBVec,
@@ -56,7 +48,7 @@ export class BeltRenderer
     delZ = 0,
     props: BeltProps = [10, 1, 1, 0.05],
     angle = 0
-  ) {
+  ) => {
     const { position: posA, rectPos: rectPosA, color: colorA, props: propsA } = this.attribManagers;
 
     EngineUtils.makeQuadVec2Buffered(this.topRectPosBuffer, -l, l, l, 0);
@@ -98,9 +90,9 @@ export class BeltRenderer
     }
 
     this.verts += 6;
-  }
+  };
 
-  queueBeltAtIdx(
+  queueBeltAtIdx = (
     planet: Planet,
     center: WorldCoords | CanvasCoords,
     radius: number,
@@ -108,7 +100,7 @@ export class BeltRenderer
     beltIdx: number,
     angle = 0,
     screen = false
-  ) {
+  ) => {
     const delZ = 0.01 * (beltIdx + 1);
 
     const props = propsFromIdx(beltIdx);
@@ -117,10 +109,10 @@ export class BeltRenderer
 
     const queue = screen ? this.queueBelt : this.queueBeltWorld;
     queue(center, radius, color, l, z, delZ, props, angle);
-  }
+  };
 
-  public setUniforms() {
+  public setUniforms = () => {
     this.uniformSetters.matrix(this.manager.projectionMatrix);
     this.uniformSetters.now(EngineUtils.getNow() / 2);
-  }
+  };
 }

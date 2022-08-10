@@ -1,16 +1,10 @@
-import { isLocatable } from '@darkforest_eth/gamelogic';
-import { isUnconfirmedMoveTx } from '@darkforest_eth/serde';
-import {
-  Planet,
-  RendererType,
-  RenderZIndex,
-  RGBVec,
-  UIRendererType,
-  WorldCoords,
-} from '@darkforest_eth/types';
-import { engineConsts } from './EngineConsts';
-import { Renderer } from './Renderer';
-import { GameGLManager } from './WebGL/GameGLManager';
+import { isLocatable } from "@darkforest_eth/gamelogic";
+import { isUnconfirmedMoveTx } from "@darkforest_eth/serde";
+import { RendererType, RenderZIndex } from "@darkforest_eth/types";
+import type { Planet, RGBVec, UIRendererType, WorldCoords } from "@darkforest_eth/types";
+import { engineConsts } from "./EngineConsts";
+import type { Renderer } from "./Renderer";
+import type { GameGLManager } from "./WebGL/GameGLManager";
 
 const { orangeA, red, redA, white, whiteA, purpleA } = engineConsts.colors;
 
@@ -33,9 +27,7 @@ export class UIRenderer implements UIRendererType {
   queueMousePath() {
     const { context: uiManager, lineRenderer: lR, textRenderer: tR } = this.renderer;
     const mouseDownPlanet = uiManager.getMouseDownPlanet();
-    const loc = mouseDownPlanet
-      ? uiManager.getLocationOfPlanet(mouseDownPlanet.locationId)
-      : undefined;
+    const loc = mouseDownPlanet ? uiManager.getLocationOfPlanet(mouseDownPlanet.locationId) : undefined;
 
     const to: WorldCoords | undefined = uiManager.getHoveringOverCoords();
     const from: WorldCoords | undefined = loc?.coords;
@@ -48,19 +40,11 @@ export class UIRenderer implements UIRendererType {
       } else {
         const myPlanet = uiManager.getPlanetWithCoords(from);
         if (myPlanet && isLocatable(myPlanet) && to !== from) {
-          lR.queueLineWorld(
-            from,
-            to,
-            uiManager.isAbandoning() ? orangeA : whiteA,
-            2,
-            RenderZIndex.Voyages
-          );
+          lR.queueLineWorld(from, to, uiManager.isAbandoning() ? orangeA : whiteA, 2, RenderZIndex.Voyages);
 
           let effectiveEnergy = myPlanet.energy;
 
-          for (const unconfirmedMove of myPlanet.transactions?.getTransactions(
-            isUnconfirmedMoveTx
-          ) ?? []) {
+          for (const unconfirmedMove of myPlanet.transactions?.getTransactions(isUnconfirmedMoveTx) ?? []) {
             effectiveEnergy -= unconfirmedMove.intent.forces;
           }
 

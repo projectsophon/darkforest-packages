@@ -1,10 +1,9 @@
-import { DEFAULT_MAX_CALL_RETRIES } from '@darkforest_eth/constants';
-import { address } from '@darkforest_eth/serde';
-import { AutoGasSetting, EthAddress, GasPrices, SignedMessage } from '@darkforest_eth/types';
-import { BigNumber, Contract, ContractInterface, providers, utils, Wallet } from 'ethers';
-import stringify from 'json-stable-stringify';
-import retry from 'p-retry';
-import timeout from 'p-timeout';
+import { DEFAULT_MAX_CALL_RETRIES } from "@darkforest_eth/constants";
+import { address } from "@darkforest_eth/serde";
+import { AutoGasSetting, type EthAddress, type GasPrices, type SignedMessage } from "@darkforest_eth/types";
+import { BigNumber, Contract, type ContractInterface, providers, utils, Wallet } from "ethers";
+import retry from "p-retry";
+import timeout from "p-timeout";
 
 export type RetryErrorHandler = (i: number, e: Error) => void;
 
@@ -45,10 +44,7 @@ export const callWithRetry = async <T>(
  * Given the user's auto gas setting, and the current set of gas prices on the network, returns the
  * preferred gas price. If an invalid {@link AutoGasSetting} is provided, then returns undefined.
  */
-export function getGasSettingGwei(
-  setting: AutoGasSetting,
-  gasPrices: GasPrices
-): number | undefined {
+export function getGasSettingGwei(setting: AutoGasSetting, gasPrices: GasPrices): number | undefined {
   switch (setting) {
     case AutoGasSetting.Slow:
       return gasPrices.slow;
@@ -129,7 +125,7 @@ export function waitForTransaction(
       console.log(`[wait-tx] WAITING ON tx hash: ${txHash} tries ${tries}`);
 
       try {
-        const receipt = await timeout(provider.getTransactionReceipt(txHash), 30 * 1000);
+        const receipt = await timeout(provider.getTransactionReceipt(txHash), { milliseconds: 30 * 1000 });
 
         if (receipt) {
           console.log(`[wait-tx] FINISHED tx hash: ${txHash} tries ${tries}`);
@@ -172,7 +168,8 @@ export function createContract<C extends Contract>(
  * Ensures that the given message was properly signed.
  */
 export function assertProperlySigned(message: SignedMessage<unknown>): void {
-  const preSigned = stringify(message.message);
+  // TODO: rip this out
+  const preSigned = JSON.stringify(message.message);
 
   if (!verifySignature(preSigned, message.signature as string, message.sender)) {
     throw new Error(`failed to verify: ${message}`);
@@ -182,11 +179,7 @@ export function assertProperlySigned(message: SignedMessage<unknown>): void {
 /**
  * Returns whether or not the given message was signed by the given address.
  */
-export function verifySignature(
-  message: string,
-  signature: string,
-  addr: EthAddress | undefined
-): boolean {
+export function verifySignature(message: string, signature: string, addr: EthAddress | undefined): boolean {
   if (!addr) {
     return false;
   }
@@ -197,14 +190,14 @@ export function verifySignature(
  * Returns the given amount of gwei in wei as a big integer.
  */
 export function gweiToWei(gwei: number): BigNumber {
-  return utils.parseUnits(gwei + '', 'gwei');
+  return utils.parseUnits(gwei + "", "gwei");
 }
 
 /**
  * Returns the given amount of wei in gwei as a number.
  */
 export function weiToGwei(wei: BigNumber): number {
-  return parseFloat(utils.formatUnits(wei, 'gwei'));
+  return parseFloat(utils.formatUnits(wei, "gwei"));
 }
 
 /**
@@ -218,7 +211,7 @@ export function weiToEth(wei: BigNumber): number {
  * Returns the given amount of eth in wei as a big integer.
  */
 export function ethToWei(eth: number): BigNumber {
-  return utils.parseEther(eth + '');
+  return utils.parseEther(eth + "");
 }
 
 /**

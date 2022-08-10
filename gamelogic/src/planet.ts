@@ -1,11 +1,6 @@
-import { EMPTY_ADDRESS } from '@darkforest_eth/constants';
-import {
-  EmojiFlagBody,
-  LocatablePlanet,
-  Planet,
-  PlanetMessage,
-  PlanetMessageType,
-} from '@darkforest_eth/types';
+import { EMPTY_ADDRESS } from "@darkforest_eth/constants";
+import { PlanetMessageType } from "@darkforest_eth/types";
+import type { EmojiFlagBody, LocatablePlanet, Planet, PlanetMessage } from "@darkforest_eth/types";
 
 export const getPlanetRank = (planet: Planet | undefined): number => {
   if (!planet) return 0;

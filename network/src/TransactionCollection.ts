@@ -1,4 +1,4 @@
-import { Transaction, TransactionCollection, TxIntent } from '@darkforest_eth/types';
+import type { Transaction, TransactionCollection, TxIntent } from "@darkforest_eth/types";
 
 /**
  * Default implementation of a transaction collection - provides a simple api for adding, removing,
@@ -37,9 +37,7 @@ export class TxCollection implements TransactionCollection {
    * Returns whether or not there is at least one transaction which is filtered to by the given
    * predicate.
    */
-  public hasTransaction<T extends TxIntent>(
-    transactionPredicate: (u: Transaction) => u is Transaction<T>
-  ): boolean {
+  public hasTransaction<T extends TxIntent>(transactionPredicate: (u: Transaction) => u is Transaction<T>): boolean {
     return this.transactions.filter(transactionPredicate).length !== 0;
   }
 }

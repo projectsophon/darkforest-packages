@@ -1,17 +1,10 @@
-import { getPlanetCosmetic, hslToRgb } from '@darkforest_eth/procedural';
-import {
-  CanvasCoords,
-  DrawMode,
-  MineBodyRendererType,
-  Planet,
-  RendererType,
-  RGBVec,
-  WorldCoords,
-} from '@darkforest_eth/types';
-import { EngineUtils } from '../EngineUtils';
-import { MINE_PROGRAM_DEFINITION } from '../Programs/MineProgram';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { getPlanetCosmetic, hslToRgb } from "@darkforest_eth/procedural";
+import type { CanvasCoords, MineBodyRendererType, Planet, RGBVec, WorldCoords } from "@darkforest_eth/types";
+import { DrawMode, RendererType } from "@darkforest_eth/types";
+import { EngineUtils } from "../EngineUtils";
+import { MINE_PROGRAM_DEFINITION } from "../Programs/MineProgram";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 
 /** Renderers asteroids at the center of silver mines  */
 export class MineBodyRenderer
@@ -31,13 +24,7 @@ export class MineBodyRenderer
     seed: number,
     offset: number
   ) {
-    const {
-      position: posA,
-      radius: radiusA,
-      color: colorA,
-      seed: seedA,
-      offset: offsetA,
-    } = this.attribManagers;
+    const { position: posA, radius: radiusA, color: colorA, seed: seedA, offset: offsetA } = this.attribManagers;
 
     posA.setVertex([x, y, z], this.verts);
     radiusA.setVertex([radius], this.verts);

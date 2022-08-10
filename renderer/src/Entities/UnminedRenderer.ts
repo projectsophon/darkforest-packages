@@ -1,14 +1,9 @@
-import {
-  CanvasCoords,
-  RendererType,
-  RenderZIndex,
-  RGBVec,
-  UnminedRendererType,
-} from '@darkforest_eth/types';
-import { EngineUtils } from '../EngineUtils';
-import { UNMINED_PROGRAM_DEFINITION } from '../Programs/UnminedProgram';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { RendererType, RenderZIndex } from "@darkforest_eth/types";
+import type { CanvasCoords, RGBVec, UnminedRendererType } from "@darkforest_eth/types";
+import { EngineUtils } from "../EngineUtils";
+import { UNMINED_PROGRAM_DEFINITION } from "../Programs/UnminedProgram";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 
 export class UnminedRenderer
   extends GenericRenderer<typeof UNMINED_PROGRAM_DEFINITION, GameGLManager>

@@ -1,8 +1,8 @@
-import { DEFAULT_MAX_CALL_RETRIES } from '@darkforest_eth/constants';
-import { DiagnosticUpdater } from '@darkforest_eth/types';
-import { ContractFunction } from 'ethers';
-import retry, { AbortError } from 'p-retry';
-import { Queue, ThrottledConcurrentQueue } from './ThrottledConcurrentQueue';
+import { DEFAULT_MAX_CALL_RETRIES } from "@darkforest_eth/constants";
+import type { DiagnosticUpdater } from "@darkforest_eth/types";
+import type { ContractFunction } from "ethers";
+import retry, { AbortError } from "p-retry";
+import { type Queue, ThrottledConcurrentQueue } from "./ThrottledConcurrentQueue";
 
 /**
  * Instead of allowing the game to call `view` functions on the blockchain directly, all contract
@@ -40,10 +40,7 @@ export class ContractCaller {
    * {@link ContractCaller.DEFAULT_MAX_CALL_RETRIES} times. Returns a promise that resolves if the call was
    * successful, and rejects if it failed even after all the retries.
    */
-  public async makeCall<T>(
-    contractViewFunction: ContractFunction<T>,
-    args: unknown[] = []
-  ): Promise<T> {
+  public async makeCall<T>(contractViewFunction: ContractFunction<T>, args: unknown[] = []): Promise<T> {
     const result = retry(
       async () => {
         const callPromise = this.queue.add(() => {
@@ -65,10 +62,10 @@ export class ContractCaller {
 
           return callResult;
         } catch (err) {
-          if ((<Error & { code?: string }>err).code === 'CALL_EXCEPTION') {
-            throw new AbortError('Could not call function on given contract');
+          if ((<Error & { code?: string }>err).code === "CALL_EXCEPTION") {
+            throw new AbortError("Could not call function on given contract");
           } else {
-            console.warn('retrying after err:', err);
+            console.warn("retrying after err:", err);
             throw err;
           }
         }

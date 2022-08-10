@@ -1,12 +1,13 @@
-import { Planet, RenderZIndex, RGBVec } from '@darkforest_eth/types';
+import type { Planet, RGBVec } from "@darkforest_eth/types";
+import { RenderZIndex } from "@darkforest_eth/types";
 
 /* generic template string which, combined with a vscode package, let us get syntax highlighting. */
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const toStrSafe = (x: any) => (x ? x.toString() : '');
+const toStrSafe = (x: any) => (x ? x.toString() : "");
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const glsl = (arr: TemplateStringsArray, ...args: any[]): string =>
-  '#version 300 es\n' +
+  "#version 300 es\n" +
   arr.reduce((acc, curr, idx) => {
     return toStrSafe(acc) + toStrSafe(args[idx - 1]) + toStrSafe(curr);
   });
@@ -25,7 +26,7 @@ export class EngineUtils {
 
   public static rgbVecToHex(rgb: RGBVec): string {
     const [r, g, b] = rgb;
-    const hex = (x: number): string => x.toString(16).padStart(2, '0');
+    const hex = (x: number): string => x.toString(16).padStart(2, "0");
     return `#${hex(r)}${hex(g)}${hex(b)}`;
   }
 
@@ -57,12 +58,7 @@ export class EngineUtils {
     EngineUtils.rotateIndices(b, 10, 11, angle);
   }
 
-  private static translateIndices(
-    b: number[],
-    i: number,
-    j: number,
-    [tx, ty]: [number, number]
-  ): void {
+  private static translateIndices(b: number[], i: number, j: number, [tx, ty]: [number, number]): void {
     b[i] += tx;
     b[j] += ty;
   }
@@ -179,6 +175,5 @@ export class EngineUtils {
     b[20] = ax2; b[21] = ay2; b[22] = bx2; b[23] = by2;
   }
 
-  public static getPlanetZIndex = (planet: Planet): number =>
-    RenderZIndex.Planets + planet.planetLevel;
+  public static getPlanetZIndex = (planet: Planet): number => RenderZIndex.Planets + planet.planetLevel;
 }

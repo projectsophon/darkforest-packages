@@ -1,16 +1,9 @@
-import {
-  CanvasCoords,
-  GameViewport,
-  Planet,
-  RendererType,
-  RGBVec,
-  RingRendererType,
-  WorldCoords,
-} from '@darkforest_eth/types';
-import { EngineUtils } from '../EngineUtils';
-import { propsFromIdx, RingProps, RING_PROGRAM_DEFINITION } from '../Programs/RingProgram';
-import { GameGLManager } from '../WebGL/GameGLManager';
-import { GenericRenderer } from '../WebGL/GenericRenderer';
+import { RendererType } from "@darkforest_eth/types";
+import type { CanvasCoords, GameViewport, Planet, RGBVec, RingRendererType, WorldCoords } from "@darkforest_eth/types";
+import { EngineUtils } from "../EngineUtils";
+import { propsFromIdx, type RingProps, RING_PROGRAM_DEFINITION } from "../Programs/RingProgram";
+import type { GameGLManager } from "../WebGL/GameGLManager";
+import { GenericRenderer } from "../WebGL/GenericRenderer";
 
 export class RingRenderer
   extends GenericRenderer<typeof RING_PROGRAM_DEFINITION, GameGLManager>
@@ -103,14 +96,7 @@ export class RingRenderer
     this.verts += 6;
   }
 
-  queueRingAtIdx(
-    planet: Planet,
-    centerW: WorldCoords,
-    radiusW: number,
-    color: RGBVec,
-    beltIdx: number,
-    angle = 0
-  ) {
+  queueRingAtIdx(planet: Planet, centerW: WorldCoords, radiusW: number, color: RGBVec, beltIdx: number, angle = 0) {
     const delZ = 0.01 * (beltIdx + 1);
 
     const props = propsFromIdx(beltIdx);

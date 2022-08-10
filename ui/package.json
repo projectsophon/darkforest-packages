@@ -25,11 +25,11 @@
     "@darkforest_eth/types": "6.7.29",
     "@spectrum-web-components/slider": "^0.12.3",
     "@spectrum-web-components/theme": "^0.9.3",
-    "color": "^3.0.2",
+    "color": "^4.2.3",
     "lit": "^2.1.2"
   },
   "devDependencies": {
-    "@types/color": "^3.0.2",
+    "@types/color": "^3.0.3",
     "del-cli": "^4.0.1",
     "eslint": "^7.30.0",
     "prettier": "^2.7.0",

@@ -1,5 +1,3 @@
-import bigInt from 'big-integer';
-
 /**
  * Generate a random number based on some seed. Useful for procedural generation.
  *
@@ -82,5 +80,6 @@ export const fakeHash = (planetRarity: number) => (x: number, y: number) => {
     }
     hash += append;
   }
-  return bigInt(hash, 16);
+  // TODO: Verify this
+  return BigInt(`0x${hash}`);
 };
