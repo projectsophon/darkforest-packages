@@ -1,6 +1,12 @@
 {
   "name": "@projectsophon/packages",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
+  "engines": {
+    "node": ">=16"
+  },
   "workspaces": [
     "constants",
     "contracts",
