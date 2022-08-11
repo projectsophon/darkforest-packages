@@ -1,0 +1,43 @@
+name: Automatic tools
+
+on: [push]
+
+jobs:
+  auto:
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [16.x]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Format project
+        run: npm run format
+
+      - name: Generate docs
+        run: npm run docs
+
+      - name: Commit updates
+        uses: phated/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: Formatting & Docs"
