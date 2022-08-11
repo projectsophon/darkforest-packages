@@ -11,7 +11,6 @@
   "engineStrict": true,
   "workspaces": [
     "constants",
-    "contracts",
     "events",
     "gamelogic",
     "hashing",
