@@ -5,3 +5,4 @@ index.d.ts.map
 *.wasm
 *.zkey
 tsconfig.ref.tsbuildinfo
+*.md
