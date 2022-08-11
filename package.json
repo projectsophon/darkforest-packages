@@ -28,7 +28,9 @@
     "prepare": "workspaces-to-typescript-project-references --includesRoot --tsconfigPath tsconfig.ref.json",
     "clean": "tsc -b tsconfig.ref.json --clean",
     "build": "tsc -b tsconfig.ref.json",
-    "watch": "tsc -b tsconfig.ref.json -w"
+    "watch": "tsc -b tsconfig.ref.json -w",
+    "lint": "npm run --workspaces lint",
+    "test": "npm run --workspaces test"
   },
   "devDependencies": {
     "@monorepo-utils/workspaces-to-typescript-project-references": "^2.7.4",
