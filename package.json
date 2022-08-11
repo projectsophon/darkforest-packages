@@ -28,6 +28,7 @@
   "scripts": {
     "prepare": "workspaces-to-typescript-project-references --includesRoot --tsconfigPath tsconfig.ref.json",
     "clean": "tsc -b tsconfig.ref.json --clean",
+    "postclean": "npm run --workspaces clean",
     "build": "tsc -b tsconfig.ref.json",
     "watch": "tsc -b tsconfig.ref.json -w",
     "lint": "npm run --workspaces lint",
