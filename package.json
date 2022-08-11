@@ -5,8 +5,10 @@
   "type": "module",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
   "engines": {
-    "node": ">=16"
+    "node": ">=16",
+    "npm": ">=8"
   },
+  "engineStrict": true,
   "workspaces": [
     "constants",
     "contracts",
