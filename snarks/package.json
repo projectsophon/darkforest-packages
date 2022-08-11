@@ -20,12 +20,12 @@
     "interfaces/"
   ],
   "scripts": {
-    "prepublishOnly": "npm run build && npm run docs",
+    "prepublishOnly": "npm run build",
     "build": "tsc -p .",
     "test": "exit 0",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "docs": "typedoc && npm run format",
+    "docs": "typedoc",
     "clean": "del-cli node_modules index.js index.js.map index.d.ts index.d.ts.map tsconfig.ref.tsbuildinfo"
   },
   "peerDependencies": {

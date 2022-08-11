@@ -10,12 +10,12 @@
     "interfaces/"
   ],
   "scripts": {
-    "prepublishOnly": "npm run build && npm run docs",
+    "prepublishOnly": "npm run build",
     "build": "tsc -p .",
     "test": "exit 0",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "docs": "typedoc && npm run format",
+    "docs": "typedoc",
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
