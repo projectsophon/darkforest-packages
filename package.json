@@ -32,7 +32,8 @@
     "build": "tsc -b tsconfig.ref.json",
     "watch": "tsc -b tsconfig.ref.json -w",
     "lint": "npm run --workspaces lint",
-    "test": "npm run --workspaces test"
+    "test": "npm run --workspaces test",
+    "format": "npm run --workspaces format"
   },
   "devDependencies": {
     "@monorepo-utils/workspaces-to-typescript-project-references": "^2.7.4",
