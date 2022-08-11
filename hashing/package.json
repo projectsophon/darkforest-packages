@@ -13,7 +13,7 @@
     "prepublishOnly": "npm run build && npm run docs",
     "build": "tsc -p .",
     "test": "exit 0",
-    "lint": "eslint  --ext .ts .",
+    "lint": "eslint .",
     "format": "prettier --write .",
     "docs": "typedoc && npm run format",
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
@@ -22,7 +22,7 @@
     "@projectsophon/types": "0.0.0"
   },
   "devDependencies": {
-    "@projectsophon/eslint-config": "^0.2.1",
+    "@projectsophon/eslint-config": "^0.2.2",
     "@projectsophon/prettier-config": "^0.0.0",
     "@projectsophon/tsconfig": "^0.1.1",
     "del-cli": "^4.0.1",
