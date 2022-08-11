@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@projectsophon/eslint-config": "^0.2.2",
-    "@projectsophon/prettier-config": "^0.0.0",
+    "@projectsophon/prettier-config": "^0.1.1",
     "@projectsophon/tsconfig": "^0.1.1",
     "del-cli": "^4.0.1",
     "eslint": "^8.21.0",

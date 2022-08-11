@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@projectsophon/eslint-config": "^0.2.2",
-    "@projectsophon/prettier-config": "^0.0.0",
+    "@projectsophon/prettier-config": "^0.1.1",
     "@projectsophon/tsconfig": "^0.1.1",
     "@types/json-stable-stringify": "^1.0.32",
     "@types/uuid": "^8.3.0",
