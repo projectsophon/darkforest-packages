@@ -29,10 +29,10 @@ and to gracefully handle errors and retries
 
 #### Parameters
 
-| Name          | Type                              |
-| :------------ | :-------------------------------- |
-| `queue?`      | [`Queue`](../interfaces/Queue.md) |
-| `maxRetries?` | `number`                          |
+| Name | Type |
+| :------ | :------ |
+| `queue?` | [`Queue`](../interfaces/Queue.md) |
+| `maxRetries?` | `number` |
 
 ## Properties
 
@@ -42,7 +42,7 @@ and to gracefully handle errors and retries
 
 Allows us to update the data that might be displayed in the UI.
 
----
+___
 
 ### maxRetries
 
@@ -51,7 +51,7 @@ Allows us to update the data that might be displayed in the UI.
 The maximum amount of times that we want the game to retry any individual call. Retries are
 appended to the end of the queue, meaning they respect the throttling settings of this class.
 
----
+___
 
 ### queue
 
@@ -66,27 +66,27 @@ Queue which stores future contract calls.
 ▸ **makeCall**<`T`\>(`contractViewFunction`, `args?`): `Promise`<`T`\>
 
 Submits a call to the call queue. Each call is retried a maximum of
-{@link ContractCaller.DEFAULT_MAX_CALL_RETRIES} times. Returns a promise that resolves if the call was
+ContractCaller.DEFAULT_MAX_CALL_RETRIES times. Returns a promise that resolves if the call was
 successful, and rejects if it failed even after all the retries.
 
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name                   | Type                     | Default value |
-| :--------------------- | :----------------------- | :------------ |
-| `contractViewFunction` | `ContractFunction`<`T`\> | `undefined`   |
-| `args`                 | `unknown`[]              | `[]`          |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `contractViewFunction` | `ContractFunction`<`T`\> | `undefined` |
+| `args` | `unknown`[] | `[]` |
 
 #### Returns
 
 `Promise`<`T`\>
 
----
+___
 
 ### setDiagnosticUpdater
 
@@ -97,8 +97,8 @@ from diagnostics continues to function.
 
 #### Parameters
 
-| Name                 | Type                |
-| :------------------- | :------------------ |
+| Name | Type |
+| :------ | :------ |
 | `diagnosticUpdater?` | `DiagnosticUpdater` |
 
 #### Returns

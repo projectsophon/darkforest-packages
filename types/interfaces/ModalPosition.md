@@ -19,19 +19,19 @@ plugin id.
 
 • **modalId**: [`ModalId`](../README.md#modalid)
 
----
+___
 
 ### state
 
-• **state**: `"open"` \| `"closed"` \| `"minimized"`
+• **state**: ``"open"`` \| ``"closed"`` \| ``"minimized"``
 
----
+___
 
 ### x
 
 • `Optional` **x**: `number`
 
----
+___
 
 ### y
 

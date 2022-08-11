@@ -69,14 +69,14 @@ export const fakeHash = (planetRarity: number) => (x: number, y: number) => {
   const [xPrime, yPrime] = sigma(...cyc(mPrime, nPrime)(...sigma(r, s)));
   const validPlanet = xPrime * 256 + yPrime < (256 * 256) / planetRarity;
   // first four bytes
-  let hash = validPlanet ? '00000000' : '1eadbeef';
+  let hash = validPlanet ? "00000000" : "1eadbeef";
   // next 28 bytes, generated 4 at a time. deterministically generated from x, y
   const seed = 8 * (10000000 * x + y);
   for (let i = 0; i < 7; i += 1) {
     const rand = Math.floor(seededRandom(seed + i) * 2 ** 32);
     let append = rand.toString(16);
     while (append.length < 8) {
-      append = '0' + append;
+      append = "0" + append;
     }
     hash += append;
   }

@@ -32,121 +32,121 @@
 
 • **asteroidHsl**: [`HSLVec`](../README.md#hslvec)
 
----
+___
 
 ### backgroundColor
 
 • **backgroundColor**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### baseColor
 
 • **baseColor**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### baseColor2
 
 • **baseColor2**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### baseColor3
 
 • **baseColor3**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### baseHue
 
 • **baseHue**: `number`
 
----
+___
 
 ### baseStr
 
 • **baseStr**: `string`
 
----
+___
 
 ### beachRgb
 
 • **beachRgb**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### bgStr
 
 • **bgStr**: `string`
 
----
+___
 
 ### hatType
 
-• **hatType**: [`HatType`](../README.md#hattype)
+• **hatType**: [`HatType`](../README.md#hattype-1)
 
----
+___
 
 ### landRgb
 
 • **landRgb**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### mtnColor
 
 • **mtnColor**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### mtnColor2
 
 • **mtnColor2**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### mtnColor3
 
 • **mtnColor3**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### oceanRgb
 
 • **oceanRgb**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### previewColor
 
 • **previewColor**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### ruins
 
 • `Optional` **ruins**: [`RuinsInfo`](../README.md#ruinsinfo)
 
----
+___
 
 ### seed
 
 • **seed**: `number`
 
----
+___
 
 ### spacetime1
 
 • **spacetime1**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### spacetime2
 
 • **spacetime2**: [`RGBVec`](../README.md#rgbvec)
 
----
+___
 
 ### spacetime3
 

@@ -71,14 +71,14 @@
 
 #### Parameters
 
-| Name           | Type                                                          |
-| :------------- | :------------------------------------------------------------ |
-| `canvas`       | `HTMLCanvasElement`                                           |
-| `glCanvas`     | `HTMLCanvasElement`                                           |
-| `bufferCanvas` | `HTMLCanvasElement`                                           |
-| `viewport`     | `GameViewport`                                                |
-| `context`      | [`RendererGameContext`](../interfaces/RendererGameContext.md) |
-| `config`       | `IRendererConfig`                                             |
+| Name | Type |
+| :------ | :------ |
+| `canvas` | `HTMLCanvasElement` |
+| `glCanvas` | `HTMLCanvasElement` |
+| `bufferCanvas` | `HTMLCanvasElement` |
+| `viewport` | `GameViewport` |
+| `context` | [`RendererGameContext`](../interfaces/RendererGameContext.md) |
+| `config` | `IRendererConfig` |
 
 ## Properties
 
@@ -86,239 +86,239 @@
 
 • **asteroidRenderer**: `AsteroidRendererType`
 
----
+___
 
 ### beltRenderer
 
 • **beltRenderer**: `BeltRendererType`
 
----
+___
 
 ### bgRenderer
 
 • **bgRenderer**: `BackgroundRendererType`
 
----
+___
 
 ### blackDomainRenderer
 
 • **blackDomainRenderer**: `BlackDomainRendererType`
 
----
+___
 
 ### bufferCanvas
 
 • **bufferCanvas**: `HTMLCanvasElement`
 
----
+___
 
 ### canvas
 
 • **canvas**: `HTMLCanvasElement`
 
----
+___
 
 ### captureZoneRenderer
 
 • **captureZoneRenderer**: `CaptureZoneRendererType`
 
----
+___
 
 ### circleRenderer
 
 • **circleRenderer**: `CircleRendererType`
 
----
+___
 
 ### config
 
 • **config**: `IRendererConfig`
 
----
+___
 
 ### context
 
 • **context**: [`RendererGameContext`](../interfaces/RendererGameContext.md)
 
----
+___
 
 ### frameCount
 
 • **frameCount**: `number`
 
----
+___
 
 ### frameRequestId
 
 • **frameRequestId**: `number`
 
----
+___
 
 ### glCanvas
 
 • **glCanvas**: `HTMLCanvasElement`
 
----
+___
 
 ### glManager
 
 • **glManager**: [`GameGLManager`](GameGLManager.md)
 
----
+___
 
 ### lineRenderer
 
 • **lineRenderer**: `LineRendererType`
 
----
+___
 
 ### mineBodyRenderer
 
 • **mineBodyRenderer**: `MineBodyRendererType`
 
----
+___
 
 ### mineRenderer
 
 • **mineRenderer**: `MineRendererType`
 
----
+___
 
 ### now
 
 • **now**: `number`
 
----
+___
 
 ### overlay2dRenderer
 
 • **overlay2dRenderer**: `Overlay2DRenderer`
 
----
+___
 
 ### perlinRenderer
 
 • **perlinRenderer**: `PerlinRendererType`
 
----
+___
 
 ### planetRenderManager
 
 • **planetRenderManager**: `PlanetRenderManagerType`
 
----
+___
 
 ### planetRenderer
 
 • **planetRenderer**: `PlanetRendererType`
 
----
+___
 
 ### previousRenderTimestamp
 
 • `Private` **previousRenderTimestamp**: `number`
 
----
+___
 
 ### quasarBodyRenderer
 
 • **quasarBodyRenderer**: `QuasarBodyRendererType`
 
----
+___
 
 ### quasarRayRenderer
 
 • **quasarRayRenderer**: `QuasarRayRendererType`
 
----
+___
 
 ### quasarRenderer
 
 • **quasarRenderer**: `QuasarRendererType`
 
----
+___
 
 ### rectRenderer
 
 • **rectRenderer**: `RectRendererType`
 
----
+___
 
 ### rendererStack
 
 • **rendererStack**: `BaseRenderer`[]
 
----
+___
 
 ### ringRenderer
 
 • **ringRenderer**: `RingRendererType`
 
----
+___
 
 ### ruinsRenderer
 
 • **ruinsRenderer**: `RuinsRendererType`
 
----
+___
 
 ### spaceRenderer
 
 • **spaceRenderer**: `SpaceRendererType`
 
----
+___
 
 ### spacetimeRipRenderer
 
 • **spacetimeRipRenderer**: `SpacetimeRipRendererType`
 
----
+___
 
 ### spriteRenderer
 
 • **spriteRenderer**: `SpriteRendererType`
 
----
+___
 
 ### textRenderer
 
 • **textRenderer**: `TextRendererType`
 
----
+___
 
 ### uiRenderManager
 
 • **uiRenderManager**: `UIRendererType`
 
----
+___
 
 ### unminedRenderer
 
 • **unminedRenderer**: `UnminedRendererType`
 
----
+___
 
 ### viewport
 
 • `Private` **viewport**: `GameViewport`
 
----
+___
 
 ### voyageRenderManager
 
 • **voyageRenderManager**: `VoyageRendererType`
 
----
+___
 
 ### wormholeRenderManager
 
 • **wormholeRenderManager**: `WormholeRendererType`
 
----
+___
 
 ### instance
 
-▪ `Static` **instance**: `null` \| [`Renderer`](Renderer.md)
+▪ `Static` **instance**: ``null`` \| [`Renderer`](Renderer.md)
 
 ## Methods
 
@@ -334,15 +334,15 @@ The most recently added renderers to the stack will be the ones to be used.
 
 #### Parameters
 
-| Name       | Type           |
-| :--------- | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `renderer` | `BaseRenderer` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### draw
 
@@ -352,7 +352,7 @@ The most recently added renderers to the stack will be the ones to be used.
 
 `void`
 
----
+___
 
 ### get2DRenderer
 
@@ -362,7 +362,7 @@ The most recently added renderers to the stack will be the ones to be used.
 
 `CanvasRenderingContext2D`
 
----
+___
 
 ### getViewport
 
@@ -372,7 +372,7 @@ The most recently added renderers to the stack will be the ones to be used.
 
 `GameViewport`
 
----
+___
 
 ### loop
 
@@ -382,7 +382,7 @@ The most recently added renderers to the stack will be the ones to be used.
 
 `void`
 
----
+___
 
 ### recordRender
 
@@ -390,15 +390,15 @@ The most recently added renderers to the stack will be the ones to be used.
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `now` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### removeCustomRenderer
 
@@ -408,15 +408,15 @@ Called by GameUIManager to remove the passed in renderers from the game.
 
 #### Parameters
 
-| Name       | Type           | Description        |
-| :--------- | :------------- | :----------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `renderer` | `BaseRenderer` | passed in renderer |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setRenderer
 
@@ -429,15 +429,15 @@ types it will print a message into the console
 
 #### Parameters
 
-| Name       | Type           | Description         |
-| :--------- | :------------- | :------------------ |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `renderer` | `BaseRenderer` | an unknown renderer |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### setup
 
@@ -447,7 +447,7 @@ types it will print a message into the console
 
 `void`
 
----
+___
 
 ### destroy
 
@@ -457,7 +457,7 @@ types it will print a message into the console
 
 `void`
 
----
+___
 
 ### initialize
 
@@ -465,14 +465,14 @@ types it will print a message into the console
 
 #### Parameters
 
-| Name           | Type                                                          |
-| :------------- | :------------------------------------------------------------ |
-| `canvas`       | `HTMLCanvasElement`                                           |
-| `glCanvas`     | `HTMLCanvasElement`                                           |
-| `bufferCanvas` | `HTMLCanvasElement`                                           |
-| `viewport`     | `GameViewport`                                                |
-| `context`      | [`RendererGameContext`](../interfaces/RendererGameContext.md) |
-| `config`       | `IRendererConfig`                                             |
+| Name | Type |
+| :------ | :------ |
+| `canvas` | `HTMLCanvasElement` |
+| `glCanvas` | `HTMLCanvasElement` |
+| `bufferCanvas` | `HTMLCanvasElement` |
+| `viewport` | `GameViewport` |
+| `context` | [`RendererGameContext`](../interfaces/RendererGameContext.md) |
+| `config` | `IRendererConfig` |
 
 #### Returns
 

@@ -4,9 +4,9 @@ Asks the webserver to post an emoji to a particular planet.
 
 ## Type parameters
 
-| Name | Type                                                          |
-| :--- | :------------------------------------------------------------ |
-| `T`  | extends [`PlanetMessageBody`](../README.md#planetmessagebody) |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`PlanetMessageBody`](../README.md#planetmessagebody) |
 
 ## Table of contents
 
@@ -22,14 +22,14 @@ Asks the webserver to post an emoji to a particular planet.
 
 • **body**: `T`
 
----
+___
 
 ### locationId
 
 • **locationId**: [`LocationId`](../README.md#locationid)
 
----
+___
 
 ### type
 
-• **type**: [`PlanetMessageType`](../README.md#planetmessagetype)
+• **type**: [`PlanetMessageType`](../README.md#planetmessagetype-1)

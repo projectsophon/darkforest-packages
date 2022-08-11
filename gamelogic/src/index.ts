@@ -1,3 +1,3 @@
-export * from './artifact';
-export * from './number';
-export * from './planet';
+export * from "./artifact";
+export * from "./number";
+export * from "./planet";

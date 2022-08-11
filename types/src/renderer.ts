@@ -1,10 +1,10 @@
-import type { mat3, mat4 } from 'gl-matrix';
-import type { RenderedArtifact } from './artifact';
-import type { HatType } from './hat';
-import type { LocationId } from './identifier';
-import type { LocatablePlanet, Planet } from './planet';
-import type { Abstract } from './utility';
-import type { Chunk, WorldCoords } from './world';
+import type { mat3, mat4 } from "gl-matrix";
+import type { RenderedArtifact } from "./artifact";
+import type { HatType } from "./hat";
+import type { LocationId } from "./identifier";
+import type { LocatablePlanet, Planet } from "./planet";
+import type { Abstract } from "./utility";
+import type { Chunk, WorldCoords } from "./world";
 
 export interface PlanetRenderInfo {
   planet: LocatablePlanet;
@@ -32,13 +32,13 @@ export interface GameViewport {
   intersectsViewport(chunk: Chunk): boolean;
 }
 
-export type AttribType = Abstract<number, 'AttribType'>;
+export type AttribType = Abstract<number, "AttribType">;
 export const AttribType = {
   Float: 5126 as AttribType, // window.WebGL2RenderingContext && WebGL2RenderingContext['FLOAT'],
   UByte: 5121 as AttribType, // window.WebGL2RenderingContext && WebGL2RenderingContext['UNSIGNED_BYTE'],
 };
 
-export type DrawMode = Abstract<number, 'DrawMode'>;
+export type DrawMode = Abstract<number, "DrawMode">;
 export const DrawMode = {
   Triangles: 4 as DrawMode, // window.WebGL2RenderingContext && WebGL2RenderingContext['TRIANGLES'],
   Lines: 1 as DrawMode, // window.WebGL2RenderingContext && WebGL2RenderingContext['LINES'],
@@ -52,7 +52,7 @@ export type AttribProps = {
   name: string;
 };
 
-export type UniformType = Abstract<number, 'UniformType'>;
+export type UniformType = Abstract<number, "UniformType">;
 export const UniformType = {
   Mat4: 0 as UniformType,
   Mat3: 1 as UniformType,
@@ -86,21 +86,21 @@ export type Scaling = {
 };
 export type HSLVec = readonly [number, number, number];
 
-export type TextAlign = Abstract<number, 'TextAlign'>;
+export type TextAlign = Abstract<number, "TextAlign">;
 export const TextAlign = {
   Left: 0 as TextAlign,
   Center: 0.5 as TextAlign,
   Right: 1 as TextAlign,
 };
 
-export type TextAnchor = Abstract<number, 'TextAnchor'>;
+export type TextAnchor = Abstract<number, "TextAnchor">;
 export const TextAnchor = {
   Top: 0 as TextAnchor,
   Middle: 0.5 as TextAnchor,
   Bottom: 1 as TextAnchor,
 };
 
-export type RenderZIndex = Abstract<number, 'RenderZIndex'>;
+export type RenderZIndex = Abstract<number, "RenderZIndex">;
 export const RenderZIndex = {
   Background: 0 as RenderZIndex,
   Voyages: -1 as RenderZIndex,
@@ -170,7 +170,7 @@ export interface IRendererConfig {
  * Each renderer should contain a variable called 'rendererType'
  * 'rendererType' should be a enum that corresponds with the type of renderer it is
  */
-export type RendererType = Abstract<number, 'RendererType'>;
+export type RendererType = Abstract<number, "RendererType">;
 export const RendererType = {
   Planet: 0 as RendererType,
   Mine: 1 as RendererType,
@@ -623,13 +623,7 @@ export interface UnminedRendererType {
    * @param color - optional the color of the chunk
    * @param zIdx - Z axis
    */
-  queueRect(
-    { x, y }: CanvasCoords,
-    width: number,
-    height: number,
-    color?: RGBVec,
-    zIdx?: number
-  ): void;
+  queueRect({ x, y }: CanvasCoords, width: number, height: number, color?: RGBVec, zIdx?: number): void;
 
   /**
    * Draws all undiscovered space
@@ -875,13 +869,7 @@ export interface QuasarBodyRendererType {
    * @param z - z axis
    * @param angle - the angle the body should be titled
    */
-  queueQuasarBody(
-    planet: Planet,
-    centerW: WorldCoords,
-    radiusW: number,
-    z?: number,
-    angle?: number
-  ): void;
+  queueQuasarBody(planet: Planet, centerW: WorldCoords, radiusW: number, z?: number, angle?: number): void;
 
   /**
    * Draw all queued Quasar Bodies

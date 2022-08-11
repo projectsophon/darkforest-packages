@@ -16,7 +16,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -30,7 +30,7 @@ Draws all queued asteroid field belts.
 
 `void`
 
----
+___
 
 ### queueBeltAtIdx
 
@@ -43,21 +43,21 @@ Draw the Rings around the Mine/Asteroid Field
 
 #### Parameters
 
-| Name       | Type                                                                           | Description                                                                                            |
-| :--------- | :----------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| `planet`   | [`Planet`](../README.md#planet)                                                | an object that contains info about the Mine/Asteroid Field                                             |
-| `center`   | [`WorldCoords`](../README.md#worldcoords) \| [`CanvasCoords`](CanvasCoords.md) | The location of the center of the planet. The coordinate system is determined by the screen arguement. |
-| `radius?`  | `number`                                                                       | The radius of the planet relative to game world                                                        |
-| `color?`   | [`RGBVec`](../README.md#rgbvec)                                                |                                                                                                        |
-| `beltIdx?` | `number`                                                                       | the index of the belt, the belt with the higher idx is the one rendered on top                         |
-| `angle?`   | `number`                                                                       | The angle the belt should be tilted                                                                    |
-| `screen?`  | `boolean`                                                                      | True: coordinates is relative to the canvas False: coordinates are relative to the game world          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `planet` | [`Planet`](../README.md#planet) | an object that contains info about the Mine/Asteroid Field |
+| `center` | [`WorldCoords`](../README.md#worldcoords) \| [`CanvasCoords`](CanvasCoords.md) | The location of the center of the planet. The coordinate system is determined by the screen arguement. |
+| `radius?` | `number` | The radius of the planet relative to game world |
+| `color?` | [`RGBVec`](../README.md#rgbvec) |  |
+| `beltIdx?` | `number` | the index of the belt, the belt with the higher idx is the one rendered on top |
+| `angle?` | `number` | The angle the belt should be tilted |
+| `screen?` | `boolean` | True: coordinates is relative to the canvas False: coordinates are relative to the game world |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setUniforms
 

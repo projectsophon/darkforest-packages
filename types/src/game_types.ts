@@ -1,9 +1,9 @@
-import type { Abstract } from './utility';
+import type { Abstract } from "./utility";
 
 /**
  * Abstract type representing a type of space.
  */
-export type SpaceType = Abstract<number, 'SpaceType'>;
+export type SpaceType = Abstract<number, "SpaceType">;
 
 /**
  * Enumeration of the types of space in the game. NEBULA = 0, DEAD_SPACE = 3
@@ -19,16 +19,16 @@ export const SpaceType = {
  * Mapping from SpaceType to pretty-printed names.
  */
 export const SpaceTypeNames = {
-  [SpaceType.NEBULA]: 'Nebula',
-  [SpaceType.SPACE]: 'Space',
-  [SpaceType.DEEP_SPACE]: 'Deep Space',
-  [SpaceType.DEAD_SPACE]: 'Dead Space',
+  [SpaceType.NEBULA]: "Nebula",
+  [SpaceType.SPACE]: "Space",
+  [SpaceType.DEEP_SPACE]: "Deep Space",
+  [SpaceType.DEAD_SPACE]: "Dead Space",
 } as const;
 
 /**
  * Abstract type representing a biome.
  */
-export type Biome = Abstract<number, 'Biome'>;
+export type Biome = Abstract<number, "Biome">;
 
 /**
  * Enumeration of the biomes in the game. OCEAN = 1, CORRUPTED = 10
@@ -52,15 +52,15 @@ export const Biome = {
  * Mapping from Biome to pretty-printed names.
  */
 export const BiomeNames = {
-  [Biome.UNKNOWN]: 'Unknown',
-  [Biome.OCEAN]: 'Ocean',
-  [Biome.FOREST]: 'Forest',
-  [Biome.GRASSLAND]: 'Grassland',
-  [Biome.TUNDRA]: 'Tundra',
-  [Biome.SWAMP]: 'Swamp',
-  [Biome.DESERT]: 'Desert',
-  [Biome.ICE]: 'Ice',
-  [Biome.WASTELAND]: 'Wasteland',
-  [Biome.LAVA]: 'Lava',
-  [Biome.CORRUPTED]: 'Corrupted',
+  [Biome.UNKNOWN]: "Unknown",
+  [Biome.OCEAN]: "Ocean",
+  [Biome.FOREST]: "Forest",
+  [Biome.GRASSLAND]: "Grassland",
+  [Biome.TUNDRA]: "Tundra",
+  [Biome.SWAMP]: "Swamp",
+  [Biome.DESERT]: "Desert",
+  [Biome.ICE]: "Ice",
+  [Biome.WASTELAND]: "Wasteland",
+  [Biome.LAVA]: "Lava",
+  [Biome.CORRUPTED]: "Corrupted",
 } as const;

@@ -3,8 +3,8 @@
 ## Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 ## Hierarchy
 
@@ -37,14 +37,14 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name     | Type           |
-| :------- | :------------- |
-| `state`  | `T`            |
+| Name | Type |
+| :------ | :------ |
+| `state` | `T` |
 | `update` | () => `number` |
 
 #### Overrides
@@ -67,7 +67,7 @@
 
 `T`
 
----
+___
 
 ### update
 
@@ -81,7 +81,7 @@
 
 [DFAnimation](DFAnimation.md).[update](DFAnimation.md#update)
 
----
+___
 
 ### value
 

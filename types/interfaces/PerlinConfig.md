@@ -22,9 +22,11 @@ or else your transactions **will** be reverted.
 
 If the resulting perlin should be "floored".
 
-**`default`** false
+**`Default`**
 
----
+false
+
+___
 
 ### key
 
@@ -32,7 +34,7 @@ If the resulting perlin should be "floored".
 
 The key being used for the perlin calculation. Will be `SPACETYPE_KEY` or `BIOMEBASE_KEY`.
 
----
+___
 
 ### mirrorX
 
@@ -40,9 +42,11 @@ The key being used for the perlin calculation. Will be `SPACETYPE_KEY` or `BIOME
 
 Whether the X coordinate is being mirrored in the perlin calculation.
 
-**`default`** false
+**`Default`**
 
----
+false
+
+___
 
 ### mirrorY
 
@@ -50,9 +54,11 @@ Whether the X coordinate is being mirrored in the perlin calculation.
 
 Whether the Y coordinate is being mirrored in the perlin calculation.
 
-**`default`** false
+**`Default`**
 
----
+false
+
+___
 
 ### scale
 

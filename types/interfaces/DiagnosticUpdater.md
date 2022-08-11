@@ -8,24 +8,28 @@ bugs, etc.
 
 ## Table of contents
 
-### Methods
+### Properties
 
 - [updateDiagnostics](DiagnosticUpdater.md#updatediagnostics)
 
-## Methods
+## Properties
 
 ### updateDiagnostics
 
-▸ **updateDiagnostics**(`updateFn`): `void`
+• **updateDiagnostics**: (`updateFn`: (`d`: [`Diagnostics`](Diagnostics.md)) => `void`) => `void`
+
+#### Type declaration
+
+▸ (`updateFn`): `void`
 
 Updates the diagnostics using the provided updater function.
 
-#### Parameters
+##### Parameters
 
-| Name       | Type                                             |
-| :--------- | :----------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `updateFn` | (`d`: [`Diagnostics`](Diagnostics.md)) => `void` |
 
-#### Returns
+##### Returns
 
 `void`

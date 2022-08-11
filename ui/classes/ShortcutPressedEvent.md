@@ -14,9 +14,9 @@
 
 ### Properties
 
-- [AT_TARGET](ShortcutPressedEvent.md#at_target)
-- [BUBBLING_PHASE](ShortcutPressedEvent.md#bubbling_phase)
-- [CAPTURING_PHASE](ShortcutPressedEvent.md#capturing_phase)
+- [AT\_TARGET](ShortcutPressedEvent.md#at_target)
+- [BUBBLING\_PHASE](ShortcutPressedEvent.md#bubbling_phase)
+- [CAPTURING\_PHASE](ShortcutPressedEvent.md#capturing_phase)
 - [NONE](ShortcutPressedEvent.md#none)
 - [bubbles](ShortcutPressedEvent.md#bubbles)
 - [cancelBubble](ShortcutPressedEvent.md#cancelbubble)
@@ -31,10 +31,10 @@
 - [target](ShortcutPressedEvent.md#target)
 - [timeStamp](ShortcutPressedEvent.md#timestamp)
 - [type](ShortcutPressedEvent.md#type)
-- [AT_TARGET](ShortcutPressedEvent.md#at_target)
-- [BUBBLING_PHASE](ShortcutPressedEvent.md#bubbling_phase)
-- [CAPTURING_PHASE](ShortcutPressedEvent.md#capturing_phase)
-- [NONE](ShortcutPressedEvent.md#none)
+- [AT\_TARGET](ShortcutPressedEvent.md#at_target-1)
+- [BUBBLING\_PHASE](ShortcutPressedEvent.md#bubbling_phase-1)
+- [CAPTURING\_PHASE](ShortcutPressedEvent.md#capturing_phase-1)
+- [NONE](ShortcutPressedEvent.md#none-1)
 
 ### Methods
 
@@ -56,35 +56,35 @@ Event.constructor
 
 ## Properties
 
-### AT_TARGET
+### AT\_TARGET
 
-• `Readonly` **AT_TARGET**: `number`
-
-#### Inherited from
-
-Event.AT_TARGET
-
----
-
-### BUBBLING_PHASE
-
-• `Readonly` **BUBBLING_PHASE**: `number`
+• `Readonly` **AT\_TARGET**: `number`
 
 #### Inherited from
 
-Event.BUBBLING_PHASE
+Event.AT\_TARGET
 
----
+___
 
-### CAPTURING_PHASE
+### BUBBLING\_PHASE
 
-• `Readonly` **CAPTURING_PHASE**: `number`
+• `Readonly` **BUBBLING\_PHASE**: `number`
 
 #### Inherited from
 
-Event.CAPTURING_PHASE
+Event.BUBBLING\_PHASE
 
----
+___
+
+### CAPTURING\_PHASE
+
+• `Readonly` **CAPTURING\_PHASE**: `number`
+
+#### Inherited from
+
+Event.CAPTURING\_PHASE
+
+___
 
 ### NONE
 
@@ -94,7 +94,7 @@ Event.CAPTURING_PHASE
 
 Event.NONE
 
----
+___
 
 ### bubbles
 
@@ -106,7 +106,7 @@ Returns true or false depending on how event was initialized. True if event goes
 
 Event.bubbles
 
----
+___
 
 ### cancelBubble
 
@@ -116,7 +116,7 @@ Event.bubbles
 
 Event.cancelBubble
 
----
+___
 
 ### cancelable
 
@@ -128,7 +128,7 @@ Returns true or false depending on how event was initialized. Its return value d
 
 Event.cancelable
 
----
+___
 
 ### composed
 
@@ -140,11 +140,11 @@ Returns true or false depending on how event was initialized. True if event invo
 
 Event.composed
 
----
+___
 
 ### currentTarget
 
-• `Readonly` **currentTarget**: `null` \| `EventTarget`
+• `Readonly` **currentTarget**: ``null`` \| `EventTarget`
 
 Returns the object whose event listener's callback is currently being invoked.
 
@@ -152,7 +152,7 @@ Returns the object whose event listener's callback is currently being invoked.
 
 Event.currentTarget
 
----
+___
 
 ### defaultPrevented
 
@@ -164,7 +164,7 @@ Returns true if preventDefault() was invoked successfully to indicate cancelatio
 
 Event.defaultPrevented
 
----
+___
 
 ### eventPhase
 
@@ -176,7 +176,7 @@ Returns the event's phase, which is one of NONE, CAPTURING_PHASE, AT_TARGET, and
 
 Event.eventPhase
 
----
+___
 
 ### isTrusted
 
@@ -188,35 +188,35 @@ Returns true if event was dispatched by the user agent, and false otherwise.
 
 Event.isTrusted
 
----
+___
 
 ### returnValue
 
 • **returnValue**: `boolean`
 
-**`deprecated`**
+**`Deprecated`**
 
 #### Inherited from
 
 Event.returnValue
 
----
+___
 
 ### srcElement
 
-• `Readonly` **srcElement**: `null` \| `EventTarget`
+• `Readonly` **srcElement**: ``null`` \| `EventTarget`
 
-**`deprecated`**
+**`Deprecated`**
 
 #### Inherited from
 
 Event.srcElement
 
----
+___
 
 ### target
 
-• `Readonly` **target**: `null` \| `EventTarget`
+• `Readonly` **target**: ``null`` \| `EventTarget`
 
 Returns the object to which event is dispatched (its target).
 
@@ -224,7 +224,7 @@ Returns the object to which event is dispatched (its target).
 
 Event.target
 
----
+___
 
 ### timeStamp
 
@@ -236,7 +236,7 @@ Returns the event's timestamp as the number of milliseconds measured relative to
 
 Event.timeStamp
 
----
+___
 
 ### type
 
@@ -248,37 +248,37 @@ Returns the type of event, e.g. "click", "hashchange", or "submit".
 
 Event.type
 
----
+___
 
-### AT_TARGET
+### AT\_TARGET
 
-▪ `Static` `Readonly` **AT_TARGET**: `number`
-
-#### Inherited from
-
-Event.AT_TARGET
-
----
-
-### BUBBLING_PHASE
-
-▪ `Static` `Readonly` **BUBBLING_PHASE**: `number`
+▪ `Static` `Readonly` **AT\_TARGET**: `number`
 
 #### Inherited from
 
-Event.BUBBLING_PHASE
+Event.AT\_TARGET
 
----
+___
 
-### CAPTURING_PHASE
+### BUBBLING\_PHASE
 
-▪ `Static` `Readonly` **CAPTURING_PHASE**: `number`
+▪ `Static` `Readonly` **BUBBLING\_PHASE**: `number`
 
 #### Inherited from
 
-Event.CAPTURING_PHASE
+Event.BUBBLING\_PHASE
 
----
+___
+
+### CAPTURING\_PHASE
+
+▪ `Static` `Readonly` **CAPTURING\_PHASE**: `number`
+
+#### Inherited from
+
+Event.CAPTURING\_PHASE
+
+___
 
 ### NONE
 
@@ -304,20 +304,20 @@ Returns the invocation target objects of event's path (objects on which listener
 
 Event.composedPath
 
----
+___
 
 ### initEvent
 
 ▸ **initEvent**(`type`, `bubbles?`, `cancelable?`): `void`
 
-**`deprecated`**
+**`Deprecated`**
 
 #### Parameters
 
-| Name          | Type      |
-| :------------ | :-------- |
-| `type`        | `string`  |
-| `bubbles?`    | `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `type` | `string` |
+| `bubbles?` | `boolean` |
 | `cancelable?` | `boolean` |
 
 #### Returns
@@ -328,7 +328,7 @@ Event.composedPath
 
 Event.initEvent
 
----
+___
 
 ### preventDefault
 
@@ -344,7 +344,7 @@ If invoked when the cancelable attribute value is true, and while executing a li
 
 Event.preventDefault
 
----
+___
 
 ### stopImmediatePropagation
 
@@ -360,7 +360,7 @@ Invoking this method prevents event from reaching any registered event listeners
 
 Event.stopImmediatePropagation
 
----
+___
 
 ### stopPropagation
 

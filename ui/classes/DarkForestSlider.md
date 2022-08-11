@@ -14,24 +14,24 @@
 
 ### Other Properties
 
-- [ATTRIBUTE_NODE](DarkForestSlider.md#attribute_node)
-- [CDATA_SECTION_NODE](DarkForestSlider.md#cdata_section_node)
-- [COMMENT_NODE](DarkForestSlider.md#comment_node)
-- [DOCUMENT_FRAGMENT_NODE](DarkForestSlider.md#document_fragment_node)
-- [DOCUMENT_NODE](DarkForestSlider.md#document_node)
-- [DOCUMENT_POSITION_CONTAINED_BY](DarkForestSlider.md#document_position_contained_by)
-- [DOCUMENT_POSITION_CONTAINS](DarkForestSlider.md#document_position_contains)
-- [DOCUMENT_POSITION_DISCONNECTED](DarkForestSlider.md#document_position_disconnected)
-- [DOCUMENT_POSITION_FOLLOWING](DarkForestSlider.md#document_position_following)
-- [DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC](DarkForestSlider.md#document_position_implementation_specific)
-- [DOCUMENT_POSITION_PRECEDING](DarkForestSlider.md#document_position_preceding)
-- [DOCUMENT_TYPE_NODE](DarkForestSlider.md#document_type_node)
-- [ELEMENT_NODE](DarkForestSlider.md#element_node)
-- [ENTITY_NODE](DarkForestSlider.md#entity_node)
-- [ENTITY_REFERENCE_NODE](DarkForestSlider.md#entity_reference_node)
-- [NOTATION_NODE](DarkForestSlider.md#notation_node)
-- [PROCESSING_INSTRUCTION_NODE](DarkForestSlider.md#processing_instruction_node)
-- [TEXT_NODE](DarkForestSlider.md#text_node)
+- [ATTRIBUTE\_NODE](DarkForestSlider.md#attribute_node)
+- [CDATA\_SECTION\_NODE](DarkForestSlider.md#cdata_section_node)
+- [COMMENT\_NODE](DarkForestSlider.md#comment_node)
+- [DOCUMENT\_FRAGMENT\_NODE](DarkForestSlider.md#document_fragment_node)
+- [DOCUMENT\_NODE](DarkForestSlider.md#document_node)
+- [DOCUMENT\_POSITION\_CONTAINED\_BY](DarkForestSlider.md#document_position_contained_by)
+- [DOCUMENT\_POSITION\_CONTAINS](DarkForestSlider.md#document_position_contains)
+- [DOCUMENT\_POSITION\_DISCONNECTED](DarkForestSlider.md#document_position_disconnected)
+- [DOCUMENT\_POSITION\_FOLLOWING](DarkForestSlider.md#document_position_following)
+- [DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC](DarkForestSlider.md#document_position_implementation_specific)
+- [DOCUMENT\_POSITION\_PRECEDING](DarkForestSlider.md#document_position_preceding)
+- [DOCUMENT\_TYPE\_NODE](DarkForestSlider.md#document_type_node)
+- [ELEMENT\_NODE](DarkForestSlider.md#element_node)
+- [ENTITY\_NODE](DarkForestSlider.md#entity_node)
+- [ENTITY\_REFERENCE\_NODE](DarkForestSlider.md#entity_reference_node)
+- [NOTATION\_NODE](DarkForestSlider.md#notation_node)
+- [PROCESSING\_INSTRUCTION\_NODE](DarkForestSlider.md#processing_instruction_node)
+- [TEXT\_NODE](DarkForestSlider.md#text_node)
 - [\_forcedUnit](DarkForestSlider.md#_forcedunit)
 - [\_numberFormatCache](DarkForestSlider.md#_numberformatcache)
 - [accessKey](DarkForestSlider.md#accesskey)
@@ -199,11 +199,13 @@
 - [onreset](DarkForestSlider.md#onreset)
 - [onresize](DarkForestSlider.md#onresize)
 - [onscroll](DarkForestSlider.md#onscroll)
+- [onsecuritypolicyviolation](DarkForestSlider.md#onsecuritypolicyviolation)
 - [onseeked](DarkForestSlider.md#onseeked)
 - [onseeking](DarkForestSlider.md#onseeking)
 - [onselect](DarkForestSlider.md#onselect)
 - [onselectionchange](DarkForestSlider.md#onselectionchange)
 - [onselectstart](DarkForestSlider.md#onselectstart)
+- [onslotchange](DarkForestSlider.md#onslotchange)
 - [onstalled](DarkForestSlider.md#onstalled)
 - [onsubmit](DarkForestSlider.md#onsubmit)
 - [onsuspend](DarkForestSlider.md#onsuspend)
@@ -255,7 +257,7 @@
 - [\_$litElement$](DarkForestSlider.md#_$litelement$)
 - [\_initializers](DarkForestSlider.md#_initializers)
 - [finalized](DarkForestSlider.md#finalized)
-- [tagName](DarkForestSlider.md#tagname)
+- [tagName](DarkForestSlider.md#tagname-1)
 
 ### dev-mode Properties
 
@@ -440,211 +442,211 @@ Slider.constructor
 
 ## Other Properties
 
-### ATTRIBUTE_NODE
+### ATTRIBUTE\_NODE
 
-• `Readonly` **ATTRIBUTE_NODE**: `number`
+• `Readonly` **ATTRIBUTE\_NODE**: `number`
 
 #### Inherited from
 
-Slider.ATTRIBUTE_NODE
+Slider.ATTRIBUTE\_NODE
 
----
+___
 
-### CDATA_SECTION_NODE
+### CDATA\_SECTION\_NODE
 
-• `Readonly` **CDATA_SECTION_NODE**: `number`
+• `Readonly` **CDATA\_SECTION\_NODE**: `number`
 
 node is a CDATASection node.
 
 #### Inherited from
 
-Slider.CDATA_SECTION_NODE
+Slider.CDATA\_SECTION\_NODE
 
----
+___
 
-### COMMENT_NODE
+### COMMENT\_NODE
 
-• `Readonly` **COMMENT_NODE**: `number`
+• `Readonly` **COMMENT\_NODE**: `number`
 
 node is a Comment node.
 
 #### Inherited from
 
-Slider.COMMENT_NODE
+Slider.COMMENT\_NODE
 
----
+___
 
-### DOCUMENT_FRAGMENT_NODE
+### DOCUMENT\_FRAGMENT\_NODE
 
-• `Readonly` **DOCUMENT_FRAGMENT_NODE**: `number`
+• `Readonly` **DOCUMENT\_FRAGMENT\_NODE**: `number`
 
 node is a DocumentFragment node.
 
 #### Inherited from
 
-Slider.DOCUMENT_FRAGMENT_NODE
+Slider.DOCUMENT\_FRAGMENT\_NODE
 
----
+___
 
-### DOCUMENT_NODE
+### DOCUMENT\_NODE
 
-• `Readonly` **DOCUMENT_NODE**: `number`
+• `Readonly` **DOCUMENT\_NODE**: `number`
 
 node is a document.
 
 #### Inherited from
 
-Slider.DOCUMENT_NODE
+Slider.DOCUMENT\_NODE
 
----
+___
 
-### DOCUMENT_POSITION_CONTAINED_BY
+### DOCUMENT\_POSITION\_CONTAINED\_BY
 
-• `Readonly` **DOCUMENT_POSITION_CONTAINED_BY**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_CONTAINED\_BY**: `number`
 
 Set when other is a descendant of node.
 
 #### Inherited from
 
-Slider.DOCUMENT_POSITION_CONTAINED_BY
+Slider.DOCUMENT\_POSITION\_CONTAINED\_BY
 
----
+___
 
-### DOCUMENT_POSITION_CONTAINS
+### DOCUMENT\_POSITION\_CONTAINS
 
-• `Readonly` **DOCUMENT_POSITION_CONTAINS**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_CONTAINS**: `number`
 
 Set when other is an ancestor of node.
 
 #### Inherited from
 
-Slider.DOCUMENT_POSITION_CONTAINS
+Slider.DOCUMENT\_POSITION\_CONTAINS
 
----
+___
 
-### DOCUMENT_POSITION_DISCONNECTED
+### DOCUMENT\_POSITION\_DISCONNECTED
 
-• `Readonly` **DOCUMENT_POSITION_DISCONNECTED**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_DISCONNECTED**: `number`
 
 Set when node and other are not in the same tree.
 
 #### Inherited from
 
-Slider.DOCUMENT_POSITION_DISCONNECTED
+Slider.DOCUMENT\_POSITION\_DISCONNECTED
 
----
+___
 
-### DOCUMENT_POSITION_FOLLOWING
+### DOCUMENT\_POSITION\_FOLLOWING
 
-• `Readonly` **DOCUMENT_POSITION_FOLLOWING**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_FOLLOWING**: `number`
 
 Set when other is following node.
 
 #### Inherited from
 
-Slider.DOCUMENT_POSITION_FOLLOWING
+Slider.DOCUMENT\_POSITION\_FOLLOWING
 
----
+___
 
-### DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC
+### DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC
 
-• `Readonly` **DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC**: `number`
 
 #### Inherited from
 
-Slider.DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC
+Slider.DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC
 
----
+___
 
-### DOCUMENT_POSITION_PRECEDING
+### DOCUMENT\_POSITION\_PRECEDING
 
-• `Readonly` **DOCUMENT_POSITION_PRECEDING**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_PRECEDING**: `number`
 
 Set when other is preceding node.
 
 #### Inherited from
 
-Slider.DOCUMENT_POSITION_PRECEDING
+Slider.DOCUMENT\_POSITION\_PRECEDING
 
----
+___
 
-### DOCUMENT_TYPE_NODE
+### DOCUMENT\_TYPE\_NODE
 
-• `Readonly` **DOCUMENT_TYPE_NODE**: `number`
+• `Readonly` **DOCUMENT\_TYPE\_NODE**: `number`
 
 node is a doctype.
 
 #### Inherited from
 
-Slider.DOCUMENT_TYPE_NODE
+Slider.DOCUMENT\_TYPE\_NODE
 
----
+___
 
-### ELEMENT_NODE
+### ELEMENT\_NODE
 
-• `Readonly` **ELEMENT_NODE**: `number`
+• `Readonly` **ELEMENT\_NODE**: `number`
 
 node is an element.
 
 #### Inherited from
 
-Slider.ELEMENT_NODE
+Slider.ELEMENT\_NODE
 
----
+___
 
-### ENTITY_NODE
+### ENTITY\_NODE
 
-• `Readonly` **ENTITY_NODE**: `number`
-
-#### Inherited from
-
-Slider.ENTITY_NODE
-
----
-
-### ENTITY_REFERENCE_NODE
-
-• `Readonly` **ENTITY_REFERENCE_NODE**: `number`
+• `Readonly` **ENTITY\_NODE**: `number`
 
 #### Inherited from
 
-Slider.ENTITY_REFERENCE_NODE
+Slider.ENTITY\_NODE
 
----
+___
 
-### NOTATION_NODE
+### ENTITY\_REFERENCE\_NODE
 
-• `Readonly` **NOTATION_NODE**: `number`
+• `Readonly` **ENTITY\_REFERENCE\_NODE**: `number`
 
 #### Inherited from
 
-Slider.NOTATION_NODE
+Slider.ENTITY\_REFERENCE\_NODE
 
----
+___
 
-### PROCESSING_INSTRUCTION_NODE
+### NOTATION\_NODE
 
-• `Readonly` **PROCESSING_INSTRUCTION_NODE**: `number`
+• `Readonly` **NOTATION\_NODE**: `number`
+
+#### Inherited from
+
+Slider.NOTATION\_NODE
+
+___
+
+### PROCESSING\_INSTRUCTION\_NODE
+
+• `Readonly` **PROCESSING\_INSTRUCTION\_NODE**: `number`
 
 node is a ProcessingInstruction node.
 
 #### Inherited from
 
-Slider.PROCESSING_INSTRUCTION_NODE
+Slider.PROCESSING\_INSTRUCTION\_NODE
 
----
+___
 
-### TEXT_NODE
+### TEXT\_NODE
 
-• `Readonly` **TEXT_NODE**: `number`
+• `Readonly` **TEXT\_NODE**: `number`
 
 node is a Text node.
 
 #### Inherited from
 
-Slider.TEXT_NODE
+Slider.TEXT\_NODE
 
----
+___
 
 ### \_forcedUnit
 
@@ -654,17 +656,17 @@ Slider.TEXT_NODE
 
 Slider.\_forcedUnit
 
----
+___
 
 ### \_numberFormatCache
 
-• `Protected` **\_numberFormatCache**: `undefined` \| { `language`: `string` ; `numberFormat`: `NumberFormatter` }
+• `Protected` **\_numberFormatCache**: `undefined` \| { `language`: `string` ; `numberFormat`: `NumberFormatter`  }
 
 #### Inherited from
 
 Slider.\_numberFormatCache
 
----
+___
 
 ### accessKey
 
@@ -674,7 +676,7 @@ Slider.\_numberFormatCache
 
 Slider.accessKey
 
----
+___
 
 ### accessKeyLabel
 
@@ -684,367 +686,367 @@ Slider.accessKey
 
 Slider.accessKeyLabel
 
----
+___
 
 ### ariaAtomic
 
-• **ariaAtomic**: `string`
+• **ariaAtomic**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaAtomic
 
----
+___
 
 ### ariaAutoComplete
 
-• **ariaAutoComplete**: `string`
+• **ariaAutoComplete**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaAutoComplete
 
----
+___
 
 ### ariaBusy
 
-• **ariaBusy**: `string`
+• **ariaBusy**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaBusy
 
----
+___
 
 ### ariaChecked
 
-• **ariaChecked**: `string`
+• **ariaChecked**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaChecked
 
----
+___
 
 ### ariaColCount
 
-• **ariaColCount**: `string`
+• **ariaColCount**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaColCount
 
----
+___
 
 ### ariaColIndex
 
-• **ariaColIndex**: `string`
+• **ariaColIndex**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaColIndex
 
----
+___
 
 ### ariaColSpan
 
-• **ariaColSpan**: `string`
+• **ariaColSpan**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaColSpan
 
----
+___
 
 ### ariaCurrent
 
-• **ariaCurrent**: `string`
+• **ariaCurrent**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaCurrent
 
----
+___
 
 ### ariaDisabled
 
-• **ariaDisabled**: `string`
+• **ariaDisabled**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaDisabled
 
----
+___
 
 ### ariaExpanded
 
-• **ariaExpanded**: `string`
+• **ariaExpanded**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaExpanded
 
----
+___
 
 ### ariaHasPopup
 
-• **ariaHasPopup**: `string`
+• **ariaHasPopup**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaHasPopup
 
----
+___
 
 ### ariaHidden
 
-• **ariaHidden**: `string`
+• **ariaHidden**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaHidden
 
----
+___
 
 ### ariaKeyShortcuts
 
-• **ariaKeyShortcuts**: `string`
+• **ariaKeyShortcuts**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaKeyShortcuts
 
----
+___
 
 ### ariaLabel
 
-• **ariaLabel**: `string`
+• **ariaLabel**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaLabel
 
----
+___
 
 ### ariaLevel
 
-• **ariaLevel**: `string`
+• **ariaLevel**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaLevel
 
----
+___
 
 ### ariaLive
 
-• **ariaLive**: `string`
+• **ariaLive**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaLive
 
----
+___
 
 ### ariaModal
 
-• **ariaModal**: `string`
+• **ariaModal**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaModal
 
----
+___
 
 ### ariaMultiLine
 
-• **ariaMultiLine**: `string`
+• **ariaMultiLine**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaMultiLine
 
----
+___
 
 ### ariaMultiSelectable
 
-• **ariaMultiSelectable**: `string`
+• **ariaMultiSelectable**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaMultiSelectable
 
----
+___
 
 ### ariaOrientation
 
-• **ariaOrientation**: `string`
+• **ariaOrientation**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaOrientation
 
----
+___
 
 ### ariaPlaceholder
 
-• **ariaPlaceholder**: `string`
+• **ariaPlaceholder**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaPlaceholder
 
----
+___
 
 ### ariaPosInSet
 
-• **ariaPosInSet**: `string`
+• **ariaPosInSet**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaPosInSet
 
----
+___
 
 ### ariaPressed
 
-• **ariaPressed**: `string`
+• **ariaPressed**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaPressed
 
----
+___
 
 ### ariaReadOnly
 
-• **ariaReadOnly**: `string`
+• **ariaReadOnly**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaReadOnly
 
----
+___
 
 ### ariaRequired
 
-• **ariaRequired**: `string`
+• **ariaRequired**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaRequired
 
----
+___
 
 ### ariaRoleDescription
 
-• **ariaRoleDescription**: `string`
+• **ariaRoleDescription**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaRoleDescription
 
----
+___
 
 ### ariaRowCount
 
-• **ariaRowCount**: `string`
+• **ariaRowCount**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaRowCount
 
----
+___
 
 ### ariaRowIndex
 
-• **ariaRowIndex**: `string`
+• **ariaRowIndex**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaRowIndex
 
----
+___
 
 ### ariaRowSpan
 
-• **ariaRowSpan**: `string`
+• **ariaRowSpan**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaRowSpan
 
----
+___
 
 ### ariaSelected
 
-• **ariaSelected**: `string`
+• **ariaSelected**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaSelected
 
----
+___
 
 ### ariaSetSize
 
-• **ariaSetSize**: `string`
+• **ariaSetSize**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaSetSize
 
----
+___
 
 ### ariaSort
 
-• **ariaSort**: `string`
+• **ariaSort**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaSort
 
----
+___
 
 ### ariaValueMax
 
-• **ariaValueMax**: `string`
+• **ariaValueMax**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaValueMax
 
----
+___
 
 ### ariaValueMin
 
-• **ariaValueMin**: `string`
+• **ariaValueMin**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaValueMin
 
----
+___
 
 ### ariaValueNow
 
-• **ariaValueNow**: `string`
+• **ariaValueNow**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.ariaValueNow
 
----
+___
 
 ### assignedSlot
 
-• `Readonly` **assignedSlot**: `null` \| `HTMLSlotElement`
+• `Readonly` **assignedSlot**: ``null`` \| `HTMLSlotElement`
 
 #### Inherited from
 
 Slider.assignedSlot
 
----
+___
 
 ### attributes
 
@@ -1054,7 +1056,7 @@ Slider.assignedSlot
 
 Slider.attributes
 
----
+___
 
 ### autocapitalize
 
@@ -1064,7 +1066,7 @@ Slider.attributes
 
 Slider.autocapitalize
 
----
+___
 
 ### autofocus
 
@@ -1076,7 +1078,7 @@ When this control is rendered, focus it automatically
 
 Slider.autofocus
 
----
+___
 
 ### baseURI
 
@@ -1088,7 +1090,7 @@ Returns node's node document's document base URL.
 
 Slider.baseURI
 
----
+___
 
 ### childElementCount
 
@@ -1098,7 +1100,7 @@ Slider.baseURI
 
 Slider.childElementCount
 
----
+___
 
 ### childNodes
 
@@ -1110,7 +1112,7 @@ Returns the children.
 
 Slider.childNodes
 
----
+___
 
 ### children
 
@@ -1122,7 +1124,7 @@ Returns the child elements.
 
 Slider.children
 
----
+___
 
 ### classList
 
@@ -1134,7 +1136,7 @@ Allows for manipulation of element's class content attribute as a set of whitesp
 
 Slider.classList
 
----
+___
 
 ### className
 
@@ -1146,7 +1148,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 Slider.className
 
----
+___
 
 ### clientHeight
 
@@ -1156,7 +1158,7 @@ Slider.className
 
 Slider.clientHeight
 
----
+___
 
 ### clientLeft
 
@@ -1166,7 +1168,7 @@ Slider.clientHeight
 
 Slider.clientLeft
 
----
+___
 
 ### clientTop
 
@@ -1176,7 +1178,7 @@ Slider.clientLeft
 
 Slider.clientTop
 
----
+___
 
 ### clientWidth
 
@@ -1186,7 +1188,7 @@ Slider.clientTop
 
 Slider.clientWidth
 
----
+___
 
 ### contentEditable
 
@@ -1196,7 +1198,7 @@ Slider.clientWidth
 
 Slider.contentEditable
 
----
+___
 
 ### dataset
 
@@ -1206,17 +1208,17 @@ Slider.contentEditable
 
 Slider.dataset
 
----
+___
 
 ### dir
 
-• **dir**: `"ltr"` \| `"rtl"`
+• **dir**: ``"ltr"`` \| ``"rtl"``
 
 #### Inherited from
 
 Slider.dir
 
----
+___
 
 ### disabled
 
@@ -1226,7 +1228,7 @@ Slider.dir
 
 Slider.disabled
 
----
+___
 
 ### draggable
 
@@ -1236,7 +1238,7 @@ Slider.disabled
 
 Slider.draggable
 
----
+___
 
 ### dragging
 
@@ -1246,7 +1248,7 @@ Slider.draggable
 
 Slider.dragging
 
----
+___
 
 ### enterKeyHint
 
@@ -1256,11 +1258,11 @@ Slider.dragging
 
 Slider.enterKeyHint
 
----
+___
 
 ### firstChild
 
-• `Readonly` **firstChild**: `null` \| `ChildNode`
+• `Readonly` **firstChild**: ``null`` \| `ChildNode`
 
 Returns the first child.
 
@@ -1268,11 +1270,11 @@ Returns the first child.
 
 Slider.firstChild
 
----
+___
 
 ### firstElementChild
 
-• `Readonly` **firstElementChild**: `null` \| `Element`
+• `Readonly` **firstElementChild**: ``null`` \| `Element`
 
 Returns the first child that is an element, and null otherwise.
 
@@ -1280,7 +1282,7 @@ Returns the first child that is an element, and null otherwise.
 
 Slider.firstElementChild
 
----
+___
 
 ### formatOptions
 
@@ -1290,7 +1292,7 @@ Slider.firstElementChild
 
 Slider.formatOptions
 
----
+___
 
 ### getAriaHandleText
 
@@ -1302,9 +1304,9 @@ Slider.formatOptions
 
 ##### Parameters
 
-| Name           | Type              |
-| :------------- | :---------------- |
-| `value`        | `number`          |
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
 | `numberFormat` | `NumberFormatter` |
 
 ##### Returns
@@ -1315,7 +1317,7 @@ Slider.formatOptions
 
 Slider.getAriaHandleText
 
----
+___
 
 ### getAriaValueText
 
@@ -1327,8 +1329,8 @@ Slider.getAriaHandleText
 
 ##### Parameters
 
-| Name     | Type                       |
-| :------- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `values` | `Map`<`string`, `string`\> |
 
 ##### Returns
@@ -1339,7 +1341,7 @@ Slider.getAriaHandleText
 
 Slider.getAriaValueText
 
----
+___
 
 ### handleController
 
@@ -1349,7 +1351,7 @@ Slider.getAriaValueText
 
 Slider.handleController
 
----
+___
 
 ### hidden
 
@@ -1359,7 +1361,7 @@ Slider.handleController
 
 Slider.hidden
 
----
+___
 
 ### hideStepper
 
@@ -1371,7 +1373,7 @@ Whether the stepper UI of the Number Field is hidden or not
 
 Slider.hideStepper
 
----
+___
 
 ### highlight
 
@@ -1381,7 +1383,7 @@ Slider.hideStepper
 
 Slider.highlight
 
----
+___
 
 ### id
 
@@ -1393,7 +1395,7 @@ Returns the value of element's id content attribute. Can be set to change it.
 
 Slider.id
 
----
+___
 
 ### innerHTML
 
@@ -1403,7 +1405,7 @@ Slider.id
 
 Slider.innerHTML
 
----
+___
 
 ### innerText
 
@@ -1413,7 +1415,7 @@ Slider.innerHTML
 
 Slider.innerText
 
----
+___
 
 ### inputMode
 
@@ -1423,7 +1425,7 @@ Slider.innerText
 
 Slider.inputMode
 
----
+___
 
 ### isConnected
 
@@ -1435,7 +1437,7 @@ Returns true if node is connected and false otherwise.
 
 Slider.isConnected
 
----
+___
 
 ### isContentEditable
 
@@ -1445,7 +1447,7 @@ Slider.isConnected
 
 Slider.isContentEditable
 
----
+___
 
 ### isLTR
 
@@ -1455,7 +1457,7 @@ Slider.isContentEditable
 
 Slider.isLTR
 
----
+___
 
 ### label
 
@@ -1465,7 +1467,7 @@ Slider.isLTR
 
 Slider.label
 
----
+___
 
 ### labelEl
 
@@ -1475,17 +1477,17 @@ Slider.label
 
 Slider.labelEl
 
----
+___
 
 ### labelVisibility
 
-• `Optional` **labelVisibility**: `"text"` \| `"value"` \| `"none"`
+• `Optional` **labelVisibility**: ``"value"`` \| ``"text"`` \| ``"none"``
 
 #### Inherited from
 
 Slider.labelVisibility
 
----
+___
 
 ### lang
 
@@ -1495,11 +1497,11 @@ Slider.labelVisibility
 
 Slider.lang
 
----
+___
 
 ### lastChild
 
-• `Readonly` **lastChild**: `null` \| `ChildNode`
+• `Readonly` **lastChild**: ``null`` \| `ChildNode`
 
 Returns the last child.
 
@@ -1507,11 +1509,11 @@ Returns the last child.
 
 Slider.lastChild
 
----
+___
 
 ### lastElementChild
 
-• `Readonly` **lastElementChild**: `null` \| `Element`
+• `Readonly` **lastElementChild**: ``null`` \| `Element`
 
 Returns the last child that is an element, and null otherwise.
 
@@ -1519,7 +1521,7 @@ Returns the last child that is an element, and null otherwise.
 
 Slider.lastElementChild
 
----
+___
 
 ### localName
 
@@ -1531,7 +1533,7 @@ Returns the local name.
 
 Slider.localName
 
----
+___
 
 ### max
 
@@ -1541,7 +1543,7 @@ Slider.localName
 
 Slider.max
 
----
+___
 
 ### min
 
@@ -1551,7 +1553,7 @@ Slider.max
 
 Slider.min
 
----
+___
 
 ### name
 
@@ -1561,11 +1563,11 @@ Slider.min
 
 Slider.name
 
----
+___
 
 ### namespaceURI
 
-• `Readonly` **namespaceURI**: `null` \| `string`
+• `Readonly` **namespaceURI**: ``null`` \| `string`
 
 Returns the namespace.
 
@@ -1573,11 +1575,11 @@ Returns the namespace.
 
 Slider.namespaceURI
 
----
+___
 
 ### nextElementSibling
 
-• `Readonly` **nextElementSibling**: `null` \| `Element`
+• `Readonly` **nextElementSibling**: ``null`` \| `Element`
 
 Returns the first following sibling that is an element, and null otherwise.
 
@@ -1585,11 +1587,11 @@ Returns the first following sibling that is an element, and null otherwise.
 
 Slider.nextElementSibling
 
----
+___
 
 ### nextSibling
 
-• `Readonly` **nextSibling**: `null` \| `ChildNode`
+• `Readonly` **nextSibling**: ``null`` \| `ChildNode`
 
 Returns the next sibling.
 
@@ -1597,7 +1599,7 @@ Returns the next sibling.
 
 Slider.nextSibling
 
----
+___
 
 ### nodeName
 
@@ -1609,7 +1611,7 @@ Returns a string appropriate for the type of node.
 
 Slider.nodeName
 
----
+___
 
 ### nodeType
 
@@ -1621,17 +1623,17 @@ Returns the type of node.
 
 Slider.nodeType
 
----
+___
 
 ### nodeValue
 
-• **nodeValue**: `null` \| `string`
+• **nodeValue**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.nodeValue
 
----
+___
 
 ### nonce
 
@@ -1641,7 +1643,7 @@ Slider.nodeValue
 
 Slider.nonce
 
----
+___
 
 ### normalization
 
@@ -1651,7 +1653,7 @@ Slider.nonce
 
 Slider.normalization
 
----
+___
 
 ### numberField
 
@@ -1661,7 +1663,7 @@ Slider.normalization
 
 Slider.numberField
 
----
+___
 
 ### offsetHeight
 
@@ -1671,7 +1673,7 @@ Slider.numberField
 
 Slider.offsetHeight
 
----
+___
 
 ### offsetLeft
 
@@ -1681,17 +1683,17 @@ Slider.offsetHeight
 
 Slider.offsetLeft
 
----
+___
 
 ### offsetParent
 
-• `Readonly` **offsetParent**: `null` \| `Element`
+• `Readonly` **offsetParent**: ``null`` \| `Element`
 
 #### Inherited from
 
 Slider.offsetParent
 
----
+___
 
 ### offsetTop
 
@@ -1701,7 +1703,7 @@ Slider.offsetParent
 
 Slider.offsetTop
 
----
+___
 
 ### offsetWidth
 
@@ -1711,341 +1713,373 @@ Slider.offsetTop
 
 Slider.offsetWidth
 
----
+___
 
 ### onabort
 
-• **onabort**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
+• **onabort**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
 
 Fires when the user aborts the download.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onabort
 
----
+___
 
 ### onanimationcancel
 
-• **onanimationcancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationcancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 Slider.onanimationcancel
 
----
+___
 
 ### onanimationend
 
-• **onanimationend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 Slider.onanimationend
 
----
+___
 
 ### onanimationiteration
 
-• **onanimationiteration**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationiteration**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 Slider.onanimationiteration
 
----
+___
 
 ### onanimationstart
 
-• **onanimationstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 Slider.onanimationstart
 
----
+___
 
 ### onauxclick
 
-• **onauxclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onauxclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 Slider.onauxclick
 
----
+___
 
 ### onblur
 
-• **onblur**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
+• **onblur**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
 
 Fires when the object loses the input focus.
 
-**`param`** The focus event.
+**`Param`**
+
+The focus event.
 
 #### Inherited from
 
 Slider.onblur
 
----
+___
 
 ### oncanplay
 
-• **oncanplay**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncanplay**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback is possible, but would require further buffering.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.oncanplay
 
----
+___
 
 ### oncanplaythrough
 
-• **oncanplaythrough**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncanplaythrough**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Slider.oncanplaythrough
 
----
+___
 
 ### onchange
 
-• **onchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the contents of the object or selection have changed.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onchange
 
----
+___
 
 ### onclick
 
-• **onclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the left mouse button on the object
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Slider.onclick
 
----
+___
 
 ### onclose
 
-• **onclose**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onclose**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Slider.onclose
 
----
+___
 
 ### oncontextmenu
 
-• **oncontextmenu**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **oncontextmenu**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the right mouse button in the client area, opening the context menu.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Slider.oncontextmenu
 
----
+___
 
 ### oncopy
 
-• **oncopy**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **oncopy**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 Slider.oncopy
 
----
+___
 
 ### oncuechange
 
-• **oncuechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncuechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Slider.oncuechange
 
----
+___
 
 ### oncut
 
-• **oncut**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **oncut**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 Slider.oncut
 
----
+___
 
 ### ondblclick
 
-• **ondblclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **ondblclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user double-clicks the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Slider.ondblclick
 
----
+___
 
 ### ondrag
 
-• **ondrag**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondrag**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object continuously during a drag operation.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.ondrag
 
----
+___
 
 ### ondragend
 
-• **ondragend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object when the user releases the mouse at the close of a drag operation.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.ondragend
 
----
+___
 
 ### ondragenter
 
-• **ondragenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target element when the user drags the object to a valid drop target.
 
-**`param`** The drag event.
+**`Param`**
+
+The drag event.
 
 #### Inherited from
 
 Slider.ondragenter
 
----
+___
 
 ### ondragleave
 
-• **ondragleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
 
-**`param`** The drag event.
+**`Param`**
+
+The drag event.
 
 #### Inherited from
 
 Slider.ondragleave
 
----
+___
 
 ### ondragover
 
-• **ondragover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target element continuously while the user drags the object over a valid drop target.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.ondragover
 
----
+___
 
 ### ondragstart
 
-• **ondragstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object when the user starts to drag a text selection or selected object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.ondragstart
 
----
+___
 
 ### ondrop
 
-• **ondrop**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondrop**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 #### Inherited from
 
 Slider.ondrop
 
----
+___
 
 ### ondurationchange
 
-• **ondurationchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ondurationchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the duration attribute is updated.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.ondurationchange
 
----
+___
 
 ### onemptied
 
-• **onemptied**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onemptied**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the media element is reset to its initial state.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onemptied
 
----
+___
 
 ### onended
 
-• **onended**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onended**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the end of playback is reached.
 
-**`param`** The event
+**`Param`**
+
+The event
 
 #### Inherited from
 
 Slider.onended
 
----
+___
 
 ### onerror
 
@@ -2053,775 +2087,861 @@ Slider.onended
 
 Fires when an error occurs during object loading.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onerror
 
----
+___
 
 ### onfocus
 
-• **onfocus**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
+• **onfocus**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
 
 Fires when the object receives focus.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onfocus
 
----
+___
 
 ### onformdata
 
-• **onformdata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FormDataEvent`) => `any`
+• **onformdata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FormDataEvent`) => `any`
 
 #### Inherited from
 
 Slider.onformdata
 
----
+___
 
 ### onfullscreenchange
 
-• **onfullscreenchange**: `null` \| (`this`: `Element`, `ev`: `Event`) => `any`
+• **onfullscreenchange**: ``null`` \| (`this`: `Element`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Slider.onfullscreenchange
 
----
+___
 
 ### onfullscreenerror
 
-• **onfullscreenerror**: `null` \| (`this`: `Element`, `ev`: `Event`) => `any`
+• **onfullscreenerror**: ``null`` \| (`this`: `Element`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Slider.onfullscreenerror
 
----
+___
 
 ### ongotpointercapture
 
-• **ongotpointercapture**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **ongotpointercapture**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Slider.ongotpointercapture
 
----
+___
 
 ### oninput
 
-• **oninput**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oninput**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Slider.oninput
 
----
+___
 
 ### oninvalid
 
-• **oninvalid**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oninvalid**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Slider.oninvalid
 
----
+___
 
 ### onkeydown
 
-• **onkeydown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeydown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user presses a key.
 
-**`param`** The keyboard event
+**`Param`**
+
+The keyboard event
 
 #### Inherited from
 
 Slider.onkeydown
 
----
+___
 
 ### onkeypress
 
-• **onkeypress**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeypress**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user presses an alphanumeric key.
 
-**`param`** The event.
+**`Param`**
 
-**`deprecated`**
+The event.
+
+**`Deprecated`**
 
 #### Inherited from
 
 Slider.onkeypress
 
----
+___
 
 ### onkeyup
 
-• **onkeyup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeyup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user releases a key.
 
-**`param`** The keyboard event
+**`Param`**
+
+The keyboard event
 
 #### Inherited from
 
 Slider.onkeyup
 
----
+___
 
 ### onload
 
-• **onload**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onload**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires immediately after the browser loads the object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onload
 
----
+___
 
 ### onloadeddata
 
-• **onloadeddata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadeddata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when media data is loaded at the current playback position.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onloadeddata
 
----
+___
 
 ### onloadedmetadata
 
-• **onloadedmetadata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadedmetadata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the duration and dimensions of the media have been determined.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onloadedmetadata
 
----
+___
 
 ### onloadstart
 
-• **onloadstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when Internet Explorer begins looking for media data.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onloadstart
 
----
+___
 
 ### onlostpointercapture
 
-• **onlostpointercapture**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onlostpointercapture**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Slider.onlostpointercapture
 
----
+___
 
 ### onmousedown
 
-• **onmousedown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmousedown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the object with either mouse button.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Slider.onmousedown
 
----
+___
 
 ### onmouseenter
 
-• **onmouseenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 Slider.onmouseenter
 
----
+___
 
 ### onmouseleave
 
-• **onmouseleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 Slider.onmouseleave
 
----
+___
 
 ### onmousemove
 
-• **onmousemove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmousemove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse over the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Slider.onmousemove
 
----
+___
 
 ### onmouseout
 
-• **onmouseout**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseout**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse pointer outside the boundaries of the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Slider.onmouseout
 
----
+___
 
 ### onmouseover
 
-• **onmouseover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse pointer into the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Slider.onmouseover
 
----
+___
 
 ### onmouseup
 
-• **onmouseup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user releases a mouse button while the mouse is over the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Slider.onmouseup
 
----
+___
 
 ### onpaste
 
-• **onpaste**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **onpaste**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 Slider.onpaste
 
----
+___
 
 ### onpause
 
-• **onpause**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onpause**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback is paused.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onpause
 
----
+___
 
 ### onplay
 
-• **onplay**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onplay**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the play method is requested.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onplay
 
----
+___
 
 ### onplaying
 
-• **onplaying**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onplaying**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the audio or video has started playing.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onplaying
 
----
+___
 
 ### onpointercancel
 
-• **onpointercancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointercancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Slider.onpointercancel
 
----
+___
 
 ### onpointerdown
 
-• **onpointerdown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerdown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Slider.onpointerdown
 
----
+___
 
 ### onpointerenter
 
-• **onpointerenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Slider.onpointerenter
 
----
+___
 
 ### onpointerleave
 
-• **onpointerleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Slider.onpointerleave
 
----
+___
 
 ### onpointermove
 
-• **onpointermove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointermove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Slider.onpointermove
 
----
+___
 
 ### onpointerout
 
-• **onpointerout**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerout**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Slider.onpointerout
 
----
+___
 
 ### onpointerover
 
-• **onpointerover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Slider.onpointerover
 
----
+___
 
 ### onpointerup
 
-• **onpointerup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Slider.onpointerup
 
----
+___
 
 ### onprogress
 
-• **onprogress**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `ProgressEvent`<`EventTarget`\>) => `any`
+• **onprogress**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `ProgressEvent`<`EventTarget`\>) => `any`
 
 Occurs to indicate progress while downloading media data.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onprogress
 
----
+___
 
 ### onratechange
 
-• **onratechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onratechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the playback rate is increased or decreased.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onratechange
 
----
+___
 
 ### onreset
 
-• **onreset**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onreset**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the user resets a form.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onreset
 
----
+___
 
 ### onresize
 
-• **onresize**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
+• **onresize**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
 
 #### Inherited from
 
 Slider.onresize
 
----
+___
 
 ### onscroll
 
-• **onscroll**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onscroll**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the user repositions the scroll box in the scroll bar on the object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onscroll
 
----
+___
+
+### onsecuritypolicyviolation
+
+• **onsecuritypolicyviolation**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `SecurityPolicyViolationEvent`) => `any`
+
+#### Inherited from
+
+Slider.onsecuritypolicyviolation
+
+___
 
 ### onseeked
 
-• **onseeked**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onseeked**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the seek operation ends.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onseeked
 
----
+___
 
 ### onseeking
 
-• **onseeking**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onseeking**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the current playback position is moved.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onseeking
 
----
+___
 
 ### onselect
 
-• **onselect**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselect**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the current selection changes.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onselect
 
----
+___
 
 ### onselectionchange
 
-• **onselectionchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselectionchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Slider.onselectionchange
 
----
+___
 
 ### onselectstart
 
-• **onselectstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselectstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Slider.onselectstart
 
----
+___
+
+### onslotchange
+
+• **onslotchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+
+#### Inherited from
+
+Slider.onslotchange
+
+___
 
 ### onstalled
 
-• **onstalled**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onstalled**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the download has stopped.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onstalled
 
----
+___
 
 ### onsubmit
 
-• **onsubmit**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `SubmitEvent`) => `any`
+• **onsubmit**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `SubmitEvent`) => `any`
 
 #### Inherited from
 
 Slider.onsubmit
 
----
+___
 
 ### onsuspend
 
-• **onsuspend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onsuspend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs if the load operation has been intentionally halted.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onsuspend
 
----
+___
 
 ### ontimeupdate
 
-• **ontimeupdate**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ontimeupdate**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs to indicate the current playback position.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.ontimeupdate
 
----
+___
 
 ### ontoggle
 
-• **ontoggle**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ontoggle**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Slider.ontoggle
 
----
+___
 
 ### ontouchcancel
 
-• `Optional` **ontouchcancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchcancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 Slider.ontouchcancel
 
----
+___
 
 ### ontouchend
 
-• `Optional` **ontouchend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 Slider.ontouchend
 
----
+___
 
 ### ontouchmove
 
-• `Optional` **ontouchmove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchmove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 Slider.ontouchmove
 
----
+___
 
 ### ontouchstart
 
-• `Optional` **ontouchstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 Slider.ontouchstart
 
----
+___
 
 ### ontransitioncancel
 
-• **ontransitioncancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitioncancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 Slider.ontransitioncancel
 
----
+___
 
 ### ontransitionend
 
-• **ontransitionend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 Slider.ontransitionend
 
----
+___
 
 ### ontransitionrun
 
-• **ontransitionrun**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionrun**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 Slider.ontransitionrun
 
----
+___
 
 ### ontransitionstart
 
-• **ontransitionstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 Slider.ontransitionstart
 
----
+___
 
 ### onvolumechange
 
-• **onvolumechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onvolumechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the volume is changed, or playback is muted or unmuted.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onvolumechange
 
----
+___
 
 ### onwaiting
 
-• **onwaiting**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwaiting**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback stops because the next frame of a video resource is not available.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Slider.onwaiting
 
----
+___
 
 ### onwebkitanimationend
 
-• **onwebkitanimationend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationend`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationend`.
 
 #### Inherited from
 
 Slider.onwebkitanimationend
 
----
+___
 
 ### onwebkitanimationiteration
 
-• **onwebkitanimationiteration**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationiteration**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationiteration`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationiteration`.
 
 #### Inherited from
 
 Slider.onwebkitanimationiteration
 
----
+___
 
 ### onwebkitanimationstart
 
-• **onwebkitanimationstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationstart`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationstart`.
 
 #### Inherited from
 
 Slider.onwebkitanimationstart
 
----
+___
 
 ### onwebkittransitionend
 
-• **onwebkittransitionend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkittransitionend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `ontransitionend`.
+**`Deprecated`**
+
+This is a legacy alias of `ontransitionend`.
 
 #### Inherited from
 
 Slider.onwebkittransitionend
 
----
+___
 
 ### onwheel
 
-• **onwheel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `WheelEvent`) => `any`
+• **onwheel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `WheelEvent`) => `any`
 
 #### Inherited from
 
 Slider.onwheel
 
----
+___
 
 ### outerHTML
 
@@ -2831,7 +2951,7 @@ Slider.onwheel
 
 Slider.outerHTML
 
----
+___
 
 ### outerText
 
@@ -2841,7 +2961,7 @@ Slider.outerHTML
 
 Slider.outerText
 
----
+___
 
 ### ownerDocument
 
@@ -2851,11 +2971,11 @@ Slider.outerText
 
 Slider.ownerDocument
 
----
+___
 
 ### parentElement
 
-• `Readonly` **parentElement**: `null` \| `HTMLElement`
+• `Readonly` **parentElement**: ``null`` \| `HTMLElement`
 
 Returns the parent element.
 
@@ -2863,11 +2983,11 @@ Returns the parent element.
 
 Slider.parentElement
 
----
+___
 
 ### parentNode
 
-• `Readonly` **parentNode**: `null` \| `ParentNode`
+• `Readonly` **parentNode**: ``null`` \| `ParentNode`
 
 Returns the parent.
 
@@ -2875,7 +2995,7 @@ Returns the parent.
 
 Slider.parentNode
 
----
+___
 
 ### part
 
@@ -2885,11 +3005,11 @@ Slider.parentNode
 
 Slider.part
 
----
+___
 
 ### prefix
 
-• `Readonly` **prefix**: `null` \| `string`
+• `Readonly` **prefix**: ``null`` \| `string`
 
 Returns the namespace prefix.
 
@@ -2897,11 +3017,11 @@ Returns the namespace prefix.
 
 Slider.prefix
 
----
+___
 
 ### previousElementSibling
 
-• `Readonly` **previousElementSibling**: `null` \| `Element`
+• `Readonly` **previousElementSibling**: ``null`` \| `Element`
 
 Returns the first preceding sibling that is an element, and null otherwise.
 
@@ -2909,11 +3029,11 @@ Returns the first preceding sibling that is an element, and null otherwise.
 
 Slider.previousElementSibling
 
----
+___
 
 ### previousSibling
 
-• `Readonly` **previousSibling**: `null` \| `ChildNode`
+• `Readonly` **previousSibling**: ``null`` \| `ChildNode`
 
 Returns the previous sibling.
 
@@ -2921,7 +3041,7 @@ Returns the previous sibling.
 
 Slider.previousSibling
 
----
+___
 
 ### scrollHeight
 
@@ -2931,7 +3051,7 @@ Slider.previousSibling
 
 Slider.scrollHeight
 
----
+___
 
 ### scrollLeft
 
@@ -2941,7 +3061,7 @@ Slider.scrollHeight
 
 Slider.scrollLeft
 
----
+___
 
 ### scrollTop
 
@@ -2951,7 +3071,7 @@ Slider.scrollLeft
 
 Slider.scrollTop
 
----
+___
 
 ### scrollWidth
 
@@ -2961,7 +3081,7 @@ Slider.scrollTop
 
 Slider.scrollWidth
 
----
+___
 
 ### shadowRoot
 
@@ -2973,7 +3093,7 @@ Returns element's shadow root, if any, and if shadow root's mode is "open", and 
 
 Slider.shadowRoot
 
----
+___
 
 ### slot
 
@@ -2985,7 +3105,7 @@ Returns the value of element's slot content attribute. Can be set to change it.
 
 Slider.slot
 
----
+___
 
 ### slotHasContent
 
@@ -2995,7 +3115,7 @@ Slider.slot
 
 Slider.slotHasContent
 
----
+___
 
 ### spellcheck
 
@@ -3005,7 +3125,7 @@ Slider.slotHasContent
 
 Slider.spellcheck
 
----
+___
 
 ### step
 
@@ -3015,7 +3135,7 @@ Slider.spellcheck
 
 Slider.step
 
----
+___
 
 ### style
 
@@ -3025,7 +3145,7 @@ Slider.step
 
 Slider.style
 
----
+___
 
 ### tagName
 
@@ -3037,17 +3157,17 @@ Returns the HTML-uppercased qualified name.
 
 Slider.tagName
 
----
+___
 
 ### textContent
 
-• **textContent**: `null` \| `string`
+• **textContent**: ``null`` \| `string`
 
 #### Inherited from
 
 Slider.textContent
 
----
+___
 
 ### tickLabels
 
@@ -3057,7 +3177,7 @@ Slider.textContent
 
 Slider.tickLabels
 
----
+___
 
 ### tickStep
 
@@ -3067,7 +3187,7 @@ Slider.tickLabels
 
 Slider.tickStep
 
----
+___
 
 ### title
 
@@ -3077,7 +3197,7 @@ Slider.tickStep
 
 Slider.title
 
----
+___
 
 ### track
 
@@ -3087,7 +3207,7 @@ Slider.title
 
 Slider.track
 
----
+___
 
 ### translate
 
@@ -3097,7 +3217,7 @@ Slider.track
 
 Slider.translate
 
----
+___
 
 ### type
 
@@ -3107,7 +3227,7 @@ Slider.translate
 
 Slider.type
 
----
+___
 
 ### value
 
@@ -3117,7 +3237,7 @@ Slider.type
 
 Slider.value
 
----
+___
 
 ### \_$litElement$
 
@@ -3127,7 +3247,7 @@ Slider.value
 
 Slider.\_$litElement$
 
----
+___
 
 ### \_initializers
 
@@ -3137,7 +3257,7 @@ Slider.\_$litElement$
 
 Slider.\_initializers
 
----
+___
 
 ### finalized
 
@@ -3153,13 +3273,13 @@ optimizations. See @lit/reactive-element for more information.
 
 Slider.finalized
 
----
+___
 
 ### tagName
 
-▪ `Static` **tagName**: `string` = `'df-slider'`
+▪ `Static` **tagName**: `string` = `"df-slider"`
 
----
+___
 
 ## dev-mode Properties
 
@@ -3184,12 +3304,12 @@ ReactiveElement.disableWarning.?('migration');
 MyElement.disableWarning.?('migration');
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 ##### Parameters
 
-| Name          | Type          |
-| :------------ | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `warningKind` | `WarningKind` |
 
 ##### Returns
@@ -3200,7 +3320,7 @@ MyElement.disableWarning.?('migration');
 
 Slider.disableWarning
 
----
+___
 
 ### enableWarning
 
@@ -3223,12 +3343,12 @@ ReactiveElement.enableWarning.?('migration');
 MyElement.enableWarning.?('migration');
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 ##### Parameters
 
-| Name          | Type          |
-| :------------ | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `warningKind` | `WarningKind` |
 
 ##### Returns
@@ -3239,7 +3359,7 @@ MyElement.enableWarning.?('migration');
 
 Slider.enableWarning
 
----
+___
 
 ### enabledWarnings
 
@@ -3249,13 +3369,13 @@ Read or set all the enabled warning categories for this class.
 
 This property is only used in development builds.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 Slider.enabledWarnings
 
----
+___
 
 ## properties Properties
 
@@ -3266,13 +3386,13 @@ Slider.enabledWarnings
 Memoized list of all element properties, including any superclass properties.
 Created lazily on user subclasses when finalizing the class.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 Slider.elementProperties
 
----
+___
 
 ### properties
 
@@ -3300,13 +3420,13 @@ private property set with the `state: true` option should be used. When
 needed, state properties can be initialized via public properties to
 facilitate complex interactions.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 Slider.properties
 
----
+___
 
 ## rendering Properties
 
@@ -3318,7 +3438,7 @@ Slider.properties
 
 Slider.renderOptions
 
----
+___
 
 ### renderRoot
 
@@ -3331,7 +3451,7 @@ to an open shadowRoot.
 
 Slider.renderRoot
 
----
+___
 
 ### shadowRootOptions
 
@@ -3344,13 +3464,13 @@ shadowRoot: `{mode: 'closed'}`.
 Note, these options are used in `createRenderRoot`. If this method
 is customized, options should be respected if possible.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 Slider.shadowRootOptions
 
----
+___
 
 ## styles Properties
 
@@ -3361,13 +3481,13 @@ Slider.shadowRootOptions
 Memoized list of all element styles.
 Created lazily on user subclasses when finalizing the class.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 Slider.elementStyles
 
----
+___
 
 ## updates Properties
 
@@ -3382,7 +3502,7 @@ that `renderRoot` exists before the element `hasUpdated`.
 
 Slider.hasUpdated
 
----
+___
 
 ### isUpdatePending
 
@@ -3409,7 +3529,7 @@ Slider.isUpdatePending
 
 Slider.ariaValueText
 
----
+___
 
 ### editable
 
@@ -3427,12 +3547,10 @@ Slider.editable
 
 • `set` **editable**(`editable`): `void`
 
-Whether to display a Number Field along side the slider UI
-
 #### Parameters
 
-| Name       | Type      |
-| :--------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `editable` | `boolean` |
 
 #### Returns
@@ -3443,7 +3561,7 @@ Whether to display a Number Field along side the slider UI
 
 Slider.editable
 
----
+___
 
 ### focusElement
 
@@ -3457,7 +3575,7 @@ Slider.editable
 
 Slider.focusElement
 
----
+___
 
 ### handleName
 
@@ -3471,7 +3589,7 @@ Slider.focusElement
 
 Slider.handleName
 
----
+___
 
 ### numberFormat
 
@@ -3485,11 +3603,11 @@ Slider.handleName
 
 Slider.numberFormat
 
----
+___
 
 ### tabIndex
 
-• `Private` `get` **tabIndex**(): `number`
+• `get` **tabIndex**(): `number`
 
 The tab index to apply to this control. See general documentation about
 the tabindex HTML property
@@ -3502,15 +3620,12 @@ the tabindex HTML property
 
 Slider.tabIndex
 
-• `Private` `set` **tabIndex**(`tabIndex`): `void`
-
-The tab index to apply to this control. See general documentation about
-the tabindex HTML property
+• `set` **tabIndex**(`tabIndex`): `void`
 
 #### Parameters
 
-| Name       | Type     |
-| :--------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `tabIndex` | `number` |
 
 #### Returns
@@ -3521,7 +3636,7 @@ the tabindex HTML property
 
 Slider.tabIndex
 
----
+___
 
 ### values
 
@@ -3535,7 +3650,7 @@ Slider.tabIndex
 
 Slider.values
 
----
+___
 
 ### variant
 
@@ -3553,8 +3668,8 @@ Slider.variant
 
 #### Parameters
 
-| Name      | Type     |
-| :-------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `variant` | `string` |
 
 #### Returns
@@ -3565,7 +3680,7 @@ Slider.variant
 
 Slider.variant
 
----
+___
 
 ### styles
 
@@ -3579,7 +3694,7 @@ Slider.variant
 
 Slider.styles
 
----
+___
 
 ## attributes Accessors
 
@@ -3589,9 +3704,7 @@ Slider.styles
 
 Returns a list of attributes corresponding to the registered properties.
 
-**`nocollapse`**
-
-**`category`** attributes
+**`Nocollapse`**
 
 #### Returns
 
@@ -3601,7 +3714,7 @@ Returns a list of attributes corresponding to the registered properties.
 
 Slider.observedAttributes
 
----
+___
 
 ## updates Accessors
 
@@ -3620,14 +3733,12 @@ method. For example, it is sometimes useful to await a rendered element
 before fulfilling this Promise. To do this, first await
 `super.getUpdateComplete()`, then any subsequent state.
 
-**`category`** updates
-
 #### Returns
 
 `Promise`<`boolean`\>
 
 A promise of a boolean that resolves to true if the update completed
-without triggering another update.
+    without triggering another update.
 
 #### Inherited from
 
@@ -3637,35 +3748,35 @@ Slider.updateComplete
 
 ### \_handleKeyDown
 
-▸ `Private` **\_handleKeyDown**(`evt`): `void`
+▸ `Private` **_handleKeyDown**(`evt`): `void`
 
 #### Parameters
 
-| Name  | Type    |
-| :---- | :------ |
+| Name | Type |
+| :------ | :------ |
 | `evt` | `Event` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### \_handleKeyUp
 
-▸ `Private` **\_handleKeyUp**(`evt`): `void`
+▸ `Private` **_handleKeyUp**(`evt`): `void`
 
 #### Parameters
 
-| Name  | Type    |
-| :---- | :------ |
+| Name | Type |
+| :------ | :------ |
 | `evt` | `Event` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### addEventListener
 
@@ -3673,17 +3784,17 @@ Slider.updateComplete
 
 #### Type parameters
 
-| Name | Type                                |
-| :--- | :---------------------------------- |
-| `K`  | extends keyof `HTMLElementEventMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementEventMap` |
 
 #### Parameters
 
-| Name       | Type                                                               |
-| :--------- | :----------------------------------------------------------------- |
-| `type`     | `K`                                                                |
+| Name | Type |
+| :------ | :------ |
+| `type` | `K` |
 | `listener` | (`this`: `HTMLElement`, `ev`: `HTMLElementEventMap`[`K`]) => `any` |
-| `options?` | `boolean` \| `AddEventListenerOptions`                             |
+| `options?` | `boolean` \| `AddEventListenerOptions` |
 
 #### Returns
 
@@ -3697,10 +3808,10 @@ Slider.addEventListener
 
 #### Parameters
 
-| Name       | Type                                   |
-| :--------- | :------------------------------------- |
-| `type`     | `string`                               |
-| `listener` | `EventListenerOrEventListenerObject`   |
+| Name | Type |
+| :------ | :------ |
+| `type` | `string` |
+| `listener` | `EventListenerOrEventListenerObject` |
 | `options?` | `boolean` \| `AddEventListenerOptions` |
 
 #### Returns
@@ -3711,7 +3822,7 @@ Slider.addEventListener
 
 Slider.addEventListener
 
----
+___
 
 ### after
 
@@ -3723,8 +3834,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3735,7 +3846,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Slider.after
 
----
+___
 
 ### animate
 
@@ -3743,10 +3854,10 @@ Slider.after
 
 #### Parameters
 
-| Name        | Type                                                 |
-| :---------- | :--------------------------------------------------- |
-| `keyframes` | `null` \| `Keyframe`[] \| `PropertyIndexedKeyframes` |
-| `options?`  | `number` \| `KeyframeAnimationOptions`               |
+| Name | Type |
+| :------ | :------ |
+| `keyframes` | ``null`` \| `Keyframe`[] \| `PropertyIndexedKeyframes` |
+| `options?` | `number` \| `KeyframeAnimationOptions` |
 
 #### Returns
 
@@ -3756,7 +3867,7 @@ Slider.after
 
 Slider.animate
 
----
+___
 
 ### append
 
@@ -3768,8 +3879,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3780,7 +3891,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Slider.append
 
----
+___
 
 ### appendChild
 
@@ -3788,15 +3899,15 @@ Slider.append
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name   | Type |
-| :----- | :--- |
-| `node` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `node` | `T` |
 
 #### Returns
 
@@ -3806,7 +3917,7 @@ Slider.append
 
 Slider.appendChild
 
----
+___
 
 ### attachInternals
 
@@ -3820,7 +3931,7 @@ Slider.appendChild
 
 Slider.attachInternals
 
----
+___
 
 ### attachShadow
 
@@ -3830,8 +3941,8 @@ Creates a shadow root for element and returns it.
 
 #### Parameters
 
-| Name   | Type             |
-| :----- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `init` | `ShadowRootInit` |
 
 #### Returns
@@ -3842,7 +3953,7 @@ Creates a shadow root for element and returns it.
 
 Slider.attachShadow
 
----
+___
 
 ### before
 
@@ -3854,8 +3965,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3866,7 +3977,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Slider.before
 
----
+___
 
 ### blur
 
@@ -3880,7 +3991,7 @@ Slider.before
 
 Slider.blur
 
----
+___
 
 ### click
 
@@ -3894,7 +4005,7 @@ Slider.blur
 
 Slider.click
 
----
+___
 
 ### cloneNode
 
@@ -3904,8 +4015,8 @@ Returns a copy of node. If deep is true, the copy also includes the node's desce
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `deep?` | `boolean` |
 
 #### Returns
@@ -3916,79 +4027,79 @@ Returns a copy of node. If deep is true, the copy also includes the node's desce
 
 Slider.cloneNode
 
----
+___
 
 ### closest
 
-▸ **closest**<`K`\>(`selector`): `null` \| `HTMLElementTagNameMap`[`K`]
+▸ **closest**<`K`\>(`selector`): ``null`` \| `HTMLElementTagNameMap`[`K`]
 
 Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `selector` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selector` | `K` |
 
 #### Returns
 
-`null` \| `HTMLElementTagNameMap`[`K`]
+``null`` \| `HTMLElementTagNameMap`[`K`]
 
 #### Inherited from
 
 Slider.closest
 
-▸ **closest**<`K`\>(`selector`): `null` \| `SVGElementTagNameMap`[`K`]
+▸ **closest**<`K`\>(`selector`): ``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `selector` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selector` | `K` |
 
 #### Returns
 
-`null` \| `SVGElementTagNameMap`[`K`]
+``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Inherited from
 
 Slider.closest
 
-▸ **closest**<`E`\>(`selectors`): `null` \| `E`
+▸ **closest**<`E`\>(`selectors`): ``null`` \| `E`
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
 
-`null` \| `E`
+``null`` \| `E`
 
 #### Inherited from
 
 Slider.closest
 
----
+___
 
 ### compareDocumentPosition
 
@@ -3998,8 +4109,8 @@ Returns a bitmask indicating the position of other relative to node.
 
 #### Parameters
 
-| Name    | Type   |
-| :------ | :----- |
+| Name | Type |
+| :------ | :------ |
 | `other` | `Node` |
 
 #### Returns
@@ -4010,7 +4121,7 @@ Returns a bitmask indicating the position of other relative to node.
 
 Slider.compareDocumentPosition
 
----
+___
 
 ### connectedCallback
 
@@ -4024,7 +4135,7 @@ Slider.compareDocumentPosition
 
 Slider.connectedCallback
 
----
+___
 
 ### contains
 
@@ -4034,9 +4145,9 @@ Returns true if other is an inclusive descendant of node, and false otherwise.
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
-| `other` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `other` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -4046,7 +4157,7 @@ Returns true if other is an inclusive descendant of node, and false otherwise.
 
 Slider.contains
 
----
+___
 
 ### disconnectedCallback
 
@@ -4060,7 +4171,7 @@ Slider.contains
 
 Slider.disconnectedCallback
 
----
+___
 
 ### dispatchEvent
 
@@ -4070,7 +4181,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 #### Parameters
 
-| Name    | Type    |
+| Name | Type |
 | :------ | :------ |
 | `event` | `Event` |
 
@@ -4082,7 +4193,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 Slider.dispatchEvent
 
----
+___
 
 ### dispatchInputEvent
 
@@ -4096,7 +4207,7 @@ Slider.dispatchEvent
 
 Slider.dispatchInputEvent
 
----
+___
 
 ### firstUpdated
 
@@ -4104,8 +4215,8 @@ Slider.dispatchInputEvent
 
 #### Parameters
 
-| Name                | Type                                                               |
-| :------------------ | :----------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `changedProperties` | `Map`<keyof [`DarkForestSlider`](DarkForestSlider.md), `unknown`\> |
 
 #### Returns
@@ -4116,7 +4227,7 @@ Slider.dispatchInputEvent
 
 Slider.firstUpdated
 
----
+___
 
 ### focus
 
@@ -4124,8 +4235,8 @@ Slider.firstUpdated
 
 #### Parameters
 
-| Name       | Type           |
-| :--------- | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `FocusOptions` |
 
 #### Returns
@@ -4136,7 +4247,7 @@ Slider.firstUpdated
 
 Slider.focus
 
----
+___
 
 ### getAnimations
 
@@ -4144,8 +4255,8 @@ Slider.focus
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `GetAnimationsOptions` |
 
 #### Returns
@@ -4156,52 +4267,52 @@ Slider.focus
 
 Slider.getAnimations
 
----
+___
 
 ### getAttribute
 
-▸ **getAttribute**(`qualifiedName`): `null` \| `string`
+▸ **getAttribute**(`qualifiedName`): ``null`` \| `string`
 
 Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 Slider.getAttribute
 
----
+___
 
 ### getAttributeNS
 
-▸ **getAttributeNS**(`namespace`, `localName`): `null` \| `string`
+▸ **getAttributeNS**(`namespace`, `localName`): ``null`` \| `string`
 
 Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 Slider.getAttributeNS
 
----
+___
 
 ### getAttributeNames
 
@@ -4217,48 +4328,48 @@ Returns the qualified names of all element's attributes. Can contain duplicates.
 
 Slider.getAttributeNames
 
----
+___
 
 ### getAttributeNode
 
-▸ **getAttributeNode**(`qualifiedName`): `null` \| `Attr`
+▸ **getAttributeNode**(`qualifiedName`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 Slider.getAttributeNode
 
----
+___
 
 ### getAttributeNodeNS
 
-▸ **getAttributeNodeNS**(`namespace`, `localName`): `null` \| `Attr`
+▸ **getAttributeNodeNS**(`namespace`, `localName`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 Slider.getAttributeNodeNS
 
----
+___
 
 ### getBoundingClientRect
 
@@ -4272,7 +4383,7 @@ Slider.getAttributeNodeNS
 
 Slider.getBoundingClientRect
 
----
+___
 
 ### getClientRects
 
@@ -4286,7 +4397,7 @@ Slider.getBoundingClientRect
 
 Slider.getClientRects
 
----
+___
 
 ### getElementsByClassName
 
@@ -4296,8 +4407,8 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `classNames` | `string` |
 
 #### Returns
@@ -4308,7 +4419,7 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 Slider.getElementsByClassName
 
----
+___
 
 ### getElementsByTagName
 
@@ -4316,15 +4427,15 @@ Slider.getElementsByClassName
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name            | Type |
-| :-------------- | :--- |
-| `qualifiedName` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `K` |
 
 #### Returns
 
@@ -4338,15 +4449,15 @@ Slider.getElementsByTagName
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name            | Type |
-| :-------------- | :--- |
-| `qualifiedName` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `K` |
 
 #### Returns
 
@@ -4360,8 +4471,8 @@ Slider.getElementsByTagName
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -4372,7 +4483,7 @@ Slider.getElementsByTagName
 
 Slider.getElementsByTagName
 
----
+___
 
 ### getElementsByTagNameNS
 
@@ -4380,10 +4491,10 @@ Slider.getElementsByTagName
 
 #### Parameters
 
-| Name           | Type                             |
-| :------------- | :------------------------------- |
-| `namespaceURI` | `"http://www.w3.org/1999/xhtml"` |
-| `localName`    | `string`                         |
+| Name | Type |
+| :------ | :------ |
+| `namespaceURI` | ``"http://www.w3.org/1999/xhtml"`` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4397,10 +4508,10 @@ Slider.getElementsByTagNameNS
 
 #### Parameters
 
-| Name           | Type                           |
-| :------------- | :----------------------------- |
-| `namespaceURI` | `"http://www.w3.org/2000/svg"` |
-| `localName`    | `string`                       |
+| Name | Type |
+| :------ | :------ |
+| `namespaceURI` | ``"http://www.w3.org/2000/svg"`` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4414,10 +4525,10 @@ Slider.getElementsByTagNameNS
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4427,7 +4538,7 @@ Slider.getElementsByTagNameNS
 
 Slider.getElementsByTagNameNS
 
----
+___
 
 ### getNumberFormat
 
@@ -4441,7 +4552,7 @@ Slider.getElementsByTagNameNS
 
 Slider.getNumberFormat
 
----
+___
 
 ### getRootNode
 
@@ -4451,8 +4562,8 @@ Returns node's root.
 
 #### Parameters
 
-| Name       | Type                 |
-| :--------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `GetRootNodeOptions` |
 
 #### Returns
@@ -4463,7 +4574,7 @@ Returns node's root.
 
 Slider.getRootNode
 
----
+___
 
 ### getUpdateComplete
 
@@ -4477,7 +4588,7 @@ Slider.getRootNode
 
 Slider.getUpdateComplete
 
----
+___
 
 ### handleLabelClick
 
@@ -4485,7 +4596,7 @@ Slider.getUpdateComplete
 
 #### Parameters
 
-| Name    | Type    |
+| Name | Type |
 | :------ | :------ |
 | `event` | `Event` |
 
@@ -4497,7 +4608,7 @@ Slider.getUpdateComplete
 
 Slider.handleLabelClick
 
----
+___
 
 ### handlePointerdown
 
@@ -4505,8 +4616,8 @@ Slider.handleLabelClick
 
 #### Parameters
 
-| Name    | Type           |
-| :------ | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `event` | `PointerEvent` |
 
 #### Returns
@@ -4517,7 +4628,7 @@ Slider.handleLabelClick
 
 Slider.handlePointerdown
 
----
+___
 
 ### handlePointermove
 
@@ -4525,8 +4636,8 @@ Slider.handlePointerdown
 
 #### Parameters
 
-| Name    | Type           |
-| :------ | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `event` | `PointerEvent` |
 
 #### Returns
@@ -4537,7 +4648,7 @@ Slider.handlePointerdown
 
 Slider.handlePointermove
 
----
+___
 
 ### handlePointerup
 
@@ -4545,8 +4656,8 @@ Slider.handlePointermove
 
 #### Parameters
 
-| Name    | Type           |
-| :------ | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `event` | `PointerEvent` |
 
 #### Returns
@@ -4557,7 +4668,7 @@ Slider.handlePointermove
 
 Slider.handlePointerup
 
----
+___
 
 ### hasAttribute
 
@@ -4567,8 +4678,8 @@ Returns true if element has an attribute whose qualified name is qualifiedName, 
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -4579,7 +4690,7 @@ Returns true if element has an attribute whose qualified name is qualifiedName, 
 
 Slider.hasAttribute
 
----
+___
 
 ### hasAttributeNS
 
@@ -4589,10 +4700,10 @@ Returns true if element has an attribute whose namespace is namespace and local 
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4602,7 +4713,7 @@ Returns true if element has an attribute whose namespace is namespace and local 
 
 Slider.hasAttributeNS
 
----
+___
 
 ### hasAttributes
 
@@ -4618,7 +4729,7 @@ Returns true if element has attributes, and false otherwise.
 
 Slider.hasAttributes
 
----
+___
 
 ### hasChildNodes
 
@@ -4634,7 +4745,7 @@ Returns whether node has children.
 
 Slider.hasChildNodes
 
----
+___
 
 ### hasPointerCapture
 
@@ -4642,8 +4753,8 @@ Slider.hasChildNodes
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -4654,7 +4765,7 @@ Slider.hasChildNodes
 
 Slider.hasPointerCapture
 
----
+___
 
 ### hasVisibleFocusInTree
 
@@ -4668,28 +4779,28 @@ Slider.hasPointerCapture
 
 Slider.hasVisibleFocusInTree
 
----
+___
 
 ### insertAdjacentElement
 
-▸ **insertAdjacentElement**(`where`, `element`): `null` \| `Element`
+▸ **insertAdjacentElement**(`where`, `element`): ``null`` \| `Element`
 
 #### Parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
-| `where`   | `InsertPosition` |
-| `element` | `Element`        |
+| Name | Type |
+| :------ | :------ |
+| `where` | `InsertPosition` |
+| `element` | `Element` |
 
 #### Returns
 
-`null` \| `Element`
+``null`` \| `Element`
 
 #### Inherited from
 
 Slider.insertAdjacentElement
 
----
+___
 
 ### insertAdjacentHTML
 
@@ -4697,10 +4808,10 @@ Slider.insertAdjacentElement
 
 #### Parameters
 
-| Name       | Type             |
-| :--------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `position` | `InsertPosition` |
-| `text`     | `string`         |
+| `text` | `string` |
 
 #### Returns
 
@@ -4710,7 +4821,7 @@ Slider.insertAdjacentElement
 
 Slider.insertAdjacentHTML
 
----
+___
 
 ### insertAdjacentText
 
@@ -4718,10 +4829,10 @@ Slider.insertAdjacentHTML
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `where` | `InsertPosition` |
-| `data`  | `string`         |
+| `data` | `string` |
 
 #### Returns
 
@@ -4731,7 +4842,7 @@ Slider.insertAdjacentHTML
 
 Slider.insertAdjacentText
 
----
+___
 
 ### insertBefore
 
@@ -4739,16 +4850,16 @@ Slider.insertAdjacentText
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
-| `node`  | `T`              |
-| `child` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `node` | `T` |
+| `child` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -4758,7 +4869,7 @@ Slider.insertAdjacentText
 
 Slider.insertBefore
 
----
+___
 
 ### isDefaultNamespace
 
@@ -4766,9 +4877,9 @@ Slider.insertBefore
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
 
 #### Returns
 
@@ -4778,7 +4889,7 @@ Slider.insertBefore
 
 Slider.isDefaultNamespace
 
----
+___
 
 ### isEqualNode
 
@@ -4788,9 +4899,9 @@ Returns whether node and otherNode have the same properties.
 
 #### Parameters
 
-| Name        | Type             |
-| :---------- | :--------------- |
-| `otherNode` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `otherNode` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -4800,7 +4911,7 @@ Returns whether node and otherNode have the same properties.
 
 Slider.isEqualNode
 
----
+___
 
 ### isSameNode
 
@@ -4808,9 +4919,9 @@ Slider.isEqualNode
 
 #### Parameters
 
-| Name        | Type             |
-| :---------- | :--------------- |
-| `otherNode` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `otherNode` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -4820,47 +4931,47 @@ Slider.isEqualNode
 
 Slider.isSameNode
 
----
+___
 
 ### lookupNamespaceURI
 
-▸ **lookupNamespaceURI**(`prefix`): `null` \| `string`
+▸ **lookupNamespaceURI**(`prefix`): ``null`` \| `string`
 
 #### Parameters
 
-| Name     | Type               |
-| :------- | :----------------- |
-| `prefix` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `prefix` | ``null`` \| `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 Slider.lookupNamespaceURI
 
----
+___
 
 ### lookupPrefix
 
-▸ **lookupPrefix**(`namespace`): `null` \| `string`
+▸ **lookupPrefix**(`namespace`): ``null`` \| `string`
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 Slider.lookupPrefix
 
----
+___
 
 ### manageAutoFocus
 
@@ -4874,7 +4985,7 @@ Slider.lookupPrefix
 
 Slider.manageAutoFocus
 
----
+___
 
 ### manageTextObservedSlot
 
@@ -4888,7 +4999,7 @@ Slider.manageAutoFocus
 
 Slider.manageTextObservedSlot
 
----
+___
 
 ### matches
 
@@ -4898,8 +5009,8 @@ Returns true if matching selectors against element's root yields element, and fa
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -4910,7 +5021,7 @@ Returns true if matching selectors against element's root yields element, and fa
 
 Slider.matches
 
----
+___
 
 ### normalize
 
@@ -4926,7 +5037,7 @@ Removes empty exclusive Text nodes and concatenates the data of remaining contig
 
 Slider.normalize
 
----
+___
 
 ### prepend
 
@@ -4938,8 +5049,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -4950,79 +5061,79 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Slider.prepend
 
----
+___
 
 ### querySelector
 
-▸ **querySelector**<`K`\>(`selectors`): `null` \| `HTMLElementTagNameMap`[`K`]
+▸ **querySelector**<`K`\>(`selectors`): ``null`` \| `HTMLElementTagNameMap`[`K`]
 
 Returns the first element that is a descendant of node that matches selectors.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
-`null` \| `HTMLElementTagNameMap`[`K`]
+``null`` \| `HTMLElementTagNameMap`[`K`]
 
 #### Inherited from
 
 Slider.querySelector
 
-▸ **querySelector**<`K`\>(`selectors`): `null` \| `SVGElementTagNameMap`[`K`]
+▸ **querySelector**<`K`\>(`selectors`): ``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
-`null` \| `SVGElementTagNameMap`[`K`]
+``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Inherited from
 
 Slider.querySelector
 
-▸ **querySelector**<`E`\>(`selectors`): `null` \| `E`
+▸ **querySelector**<`E`\>(`selectors`): ``null`` \| `E`
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
 
-`null` \| `E`
+``null`` \| `E`
 
 #### Inherited from
 
 Slider.querySelector
 
----
+___
 
 ### querySelectorAll
 
@@ -5032,15 +5143,15 @@ Returns all element descendants of node that match selectors.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
@@ -5054,15 +5165,15 @@ Slider.querySelectorAll
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
@@ -5076,14 +5187,14 @@ Slider.querySelectorAll
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -5094,7 +5205,7 @@ Slider.querySelectorAll
 
 Slider.querySelectorAll
 
----
+___
 
 ### releasePointerCapture
 
@@ -5102,8 +5213,8 @@ Slider.querySelectorAll
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -5114,7 +5225,7 @@ Slider.querySelectorAll
 
 Slider.releasePointerCapture
 
----
+___
 
 ### remove
 
@@ -5130,7 +5241,7 @@ Removes node.
 
 Slider.remove
 
----
+___
 
 ### removeAttribute
 
@@ -5140,8 +5251,8 @@ Removes element's first attribute whose qualified name is qualifiedName.
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -5152,7 +5263,7 @@ Removes element's first attribute whose qualified name is qualifiedName.
 
 Slider.removeAttribute
 
----
+___
 
 ### removeAttributeNS
 
@@ -5162,10 +5273,10 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -5175,7 +5286,7 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 Slider.removeAttributeNS
 
----
+___
 
 ### removeAttributeNode
 
@@ -5183,8 +5294,8 @@ Slider.removeAttributeNS
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
@@ -5195,7 +5306,7 @@ Slider.removeAttributeNS
 
 Slider.removeAttributeNode
 
----
+___
 
 ### removeChild
 
@@ -5203,15 +5314,15 @@ Slider.removeAttributeNode
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type |
-| :------ | :--- |
-| `child` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `child` | `T` |
 
 #### Returns
 
@@ -5221,7 +5332,7 @@ Slider.removeAttributeNode
 
 Slider.removeChild
 
----
+___
 
 ### removeEventListener
 
@@ -5229,17 +5340,17 @@ Slider.removeChild
 
 #### Type parameters
 
-| Name | Type                                |
-| :--- | :---------------------------------- |
-| `K`  | extends keyof `HTMLElementEventMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementEventMap` |
 
 #### Parameters
 
-| Name       | Type                                                               |
-| :--------- | :----------------------------------------------------------------- |
-| `type`     | `K`                                                                |
+| Name | Type |
+| :------ | :------ |
+| `type` | `K` |
 | `listener` | (`this`: `HTMLElement`, `ev`: `HTMLElementEventMap`[`K`]) => `any` |
-| `options?` | `boolean` \| `EventListenerOptions`                                |
+| `options?` | `boolean` \| `EventListenerOptions` |
 
 #### Returns
 
@@ -5253,11 +5364,11 @@ Slider.removeEventListener
 
 #### Parameters
 
-| Name       | Type                                 |
-| :--------- | :----------------------------------- |
-| `type`     | `string`                             |
+| Name | Type |
+| :------ | :------ |
+| `type` | `string` |
 | `listener` | `EventListenerOrEventListenerObject` |
-| `options?` | `boolean` \| `EventListenerOptions`  |
+| `options?` | `boolean` \| `EventListenerOptions` |
 
 #### Returns
 
@@ -5267,7 +5378,7 @@ Slider.removeEventListener
 
 Slider.removeEventListener
 
----
+___
 
 ### render
 
@@ -5281,7 +5392,7 @@ Slider.removeEventListener
 
 Slider.render
 
----
+___
 
 ### replaceChild
 
@@ -5289,16 +5400,16 @@ Slider.render
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type   |
-| :------ | :----- |
-| `node`  | `Node` |
-| `child` | `T`    |
+| Name | Type |
+| :------ | :------ |
+| `node` | `Node` |
+| `child` | `T` |
 
 #### Returns
 
@@ -5308,7 +5419,7 @@ Slider.render
 
 Slider.replaceChild
 
----
+___
 
 ### replaceChildren
 
@@ -5320,8 +5431,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -5332,7 +5443,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Slider.replaceChildren
 
----
+___
 
 ### replaceWith
 
@@ -5344,8 +5455,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -5356,7 +5467,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Slider.replaceWith
 
----
+___
 
 ### requestFullscreen
 
@@ -5368,8 +5479,8 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name       | Type                |
-| :--------- | :------------------ |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `FullscreenOptions` |
 
 #### Returns
@@ -5380,7 +5491,7 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 Slider.requestFullscreen
 
----
+___
 
 ### requestPointerLock
 
@@ -5394,7 +5505,7 @@ Slider.requestFullscreen
 
 Slider.requestPointerLock
 
----
+___
 
 ### scroll
 
@@ -5402,8 +5513,8 @@ Slider.requestPointerLock
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -5418,10 +5529,10 @@ Slider.scroll
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -5431,7 +5542,7 @@ Slider.scroll
 
 Slider.scroll
 
----
+___
 
 ### scrollBy
 
@@ -5439,8 +5550,8 @@ Slider.scroll
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -5455,10 +5566,10 @@ Slider.scrollBy
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -5468,7 +5579,7 @@ Slider.scrollBy
 
 Slider.scrollBy
 
----
+___
 
 ### scrollIntoView
 
@@ -5476,8 +5587,8 @@ Slider.scrollBy
 
 #### Parameters
 
-| Name   | Type                                 |
-| :----- | :----------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `arg?` | `boolean` \| `ScrollIntoViewOptions` |
 
 #### Returns
@@ -5488,7 +5599,7 @@ Slider.scrollBy
 
 Slider.scrollIntoView
 
----
+___
 
 ### scrollTo
 
@@ -5496,8 +5607,8 @@ Slider.scrollIntoView
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -5512,10 +5623,10 @@ Slider.scrollTo
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -5525,7 +5636,7 @@ Slider.scrollTo
 
 Slider.scrollTo
 
----
+___
 
 ### setAttribute
 
@@ -5535,10 +5646,10 @@ Sets the value of element's first attribute whose qualified name is qualifiedNam
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
-| `value`         | `string` |
+| `value` | `string` |
 
 #### Returns
 
@@ -5548,7 +5659,7 @@ Sets the value of element's first attribute whose qualified name is qualifiedNam
 
 Slider.setAttribute
 
----
+___
 
 ### setAttributeNS
 
@@ -5558,11 +5669,11 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 #### Parameters
 
-| Name            | Type               |
-| :-------------- | :----------------- |
-| `namespace`     | `null` \| `string` |
-| `qualifiedName` | `string`           |
-| `value`         | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `qualifiedName` | `string` |
+| `value` | `string` |
 
 #### Returns
 
@@ -5572,47 +5683,47 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 Slider.setAttributeNS
 
----
+___
 
 ### setAttributeNode
 
-▸ **setAttributeNode**(`attr`): `null` \| `Attr`
+▸ **setAttributeNode**(`attr`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 Slider.setAttributeNode
 
----
+___
 
 ### setAttributeNodeNS
 
-▸ **setAttributeNodeNS**(`attr`): `null` \| `Attr`
+▸ **setAttributeNodeNS**(`attr`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 Slider.setAttributeNodeNS
 
----
+___
 
 ### setPointerCapture
 
@@ -5620,8 +5731,8 @@ Slider.setAttributeNodeNS
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -5632,7 +5743,7 @@ Slider.setAttributeNodeNS
 
 Slider.setPointerCapture
 
----
+___
 
 ### toggleAttribute
 
@@ -5644,10 +5755,10 @@ Returns true if qualifiedName is now present, and false otherwise.
 
 #### Parameters
 
-| Name            | Type      |
-| :-------------- | :-------- |
-| `qualifiedName` | `string`  |
-| `force?`        | `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `string` |
+| `force?` | `boolean` |
 
 #### Returns
 
@@ -5657,7 +5768,7 @@ Returns true if qualifiedName is now present, and false otherwise.
 
 Slider.toggleAttribute
 
----
+___
 
 ### update
 
@@ -5665,8 +5776,8 @@ Slider.toggleAttribute
 
 #### Parameters
 
-| Name                | Type                        |
-| :------------------ | :-------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `changedProperties` | `Map`<`string`, `boolean`\> |
 
 #### Returns
@@ -5677,7 +5788,7 @@ Slider.toggleAttribute
 
 Slider.update
 
----
+___
 
 ### updated
 
@@ -5685,8 +5796,8 @@ Slider.update
 
 #### Parameters
 
-| Name                | Type                                                               |
-| :------------------ | :----------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `changedProperties` | `Map`<keyof [`DarkForestSlider`](DarkForestSlider.md), `unknown`\> |
 
 #### Returns
@@ -5697,18 +5808,20 @@ Slider.update
 
 Slider.updated
 
----
+___
 
 ### webkitMatchesSelector
 
 ▸ **webkitMatchesSelector**(`selectors`): `boolean`
 
-**`deprecated`** This is a legacy alias of `matches`.
+**`Deprecated`**
+
+This is a legacy alias of `matches`.
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -5719,7 +5832,7 @@ Slider.updated
 
 Slider.webkitMatchesSelector
 
----
+___
 
 ### addInitializer
 
@@ -5738,7 +5851,7 @@ const myDecorator = (target: typeof ReactiveElement, key: string) => {
     // This is run during construction of the element
     new MyController(instance);
   });
-};
+}
 ```
 
 Decorating a field will then cause each instance to run an initializer
@@ -5755,12 +5868,12 @@ subclass does not add it to a superclass. Since initializers are run in
 constructors, initializers will run in order of the class hierarchy,
 starting with superclasses and progressing to the instance's class.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name          | Type          |
-| :------------ | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `initializer` | `Initializer` |
 
 #### Returns
@@ -5771,7 +5884,7 @@ starting with superclasses and progressing to the instance's class.
 
 Slider.addInitializer
 
----
+___
 
 ### finalize
 
@@ -5781,7 +5894,7 @@ Creates property accessors for registered properties, sets up element
 styling, and ensures any superclasses are also finalized. Returns true if
 the element was finalized.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Returns
 
@@ -5791,7 +5904,7 @@ the element was finalized.
 
 Slider.finalize
 
----
+___
 
 ## attributes Methods
 
@@ -5803,11 +5916,11 @@ Synchronizes property values when attributes change.
 
 #### Parameters
 
-| Name    | Type               |
-| :------ | :----------------- |
-| `name`  | `string`           |
-| `_old`  | `null` \| `string` |
-| `value` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `name` | `string` |
+| `_old` | ``null`` \| `string` |
+| `value` | ``null`` \| `string` |
 
 #### Returns
 
@@ -5817,7 +5930,7 @@ Synchronizes property values when attributes change.
 
 Slider.attributeChangedCallback
 
----
+___
 
 ## controllers Methods
 
@@ -5834,8 +5947,8 @@ controller's `hostConnected()` callback will be immediately called.
 
 #### Parameters
 
-| Name         | Type                 |
-| :----------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `controller` | `ReactiveController` |
 
 #### Returns
@@ -5846,7 +5959,7 @@ controller's `hostConnected()` callback will be immediately called.
 
 Slider.addController
 
----
+___
 
 ### removeController
 
@@ -5856,8 +5969,8 @@ Removes a `ReactiveController` from the element.
 
 #### Parameters
 
-| Name         | Type                 |
-| :----------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `controller` | `ReactiveController` |
 
 #### Returns
@@ -5868,7 +5981,7 @@ Removes a `ReactiveController` from the element.
 
 Slider.removeController
 
----
+___
 
 ## properties Methods
 
@@ -5877,7 +5990,7 @@ Slider.removeController
 ▸ `Static` **createProperty**(`name`, `options?`): `void`
 
 Creates a property accessor on the element prototype if one does not exist
-and stores a {@linkcode PropertyDeclaration} for the property with the
+and stores a PropertyDeclaration for the property with the
 given options. The property setter calls the property's `hasChanged`
 property option or uses a strict identity check to determine whether or not
 to request an update.
@@ -5897,13 +6010,13 @@ static createProperty(name, options) {
 }
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name       | Type                                         |
-| :--------- | :------------------------------------------- |
-| `name`     | `PropertyKey`                                |
+| Name | Type |
+| :------ | :------ |
+| `name` | `PropertyKey` |
 | `options?` | `PropertyDeclaration`<`unknown`, `unknown`\> |
 
 #### Returns
@@ -5914,7 +6027,7 @@ static createProperty(name, options) {
 
 Slider.createProperty
 
----
+___
 
 ### getPropertyDescriptor
 
@@ -5927,7 +6040,8 @@ For example,
 ```ts
 class MyElement extends LitElement {
   static getPropertyDescriptor(name, key, options) {
-    const defaultDescriptor = super.getPropertyDescriptor(name, key, options);
+    const defaultDescriptor =
+        super.getPropertyDescriptor(name, key, options);
     const setter = defaultDescriptor.set;
     return {
       get: defaultDescriptor.get,
@@ -5936,20 +6050,20 @@ class MyElement extends LitElement {
         // custom action.
       },
       configurable: true,
-      enumerable: true,
-    };
+      enumerable: true
+    }
   }
 }
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name      | Type                                         |
-| :-------- | :------------------------------------------- |
-| `name`    | `PropertyKey`                                |
-| `key`     | `string` \| `symbol`                         |
+| Name | Type |
+| :------ | :------ |
+| `name` | `PropertyKey` |
+| `key` | `string` \| `symbol` |
 | `options` | `PropertyDeclaration`<`unknown`, `unknown`\> |
 
 #### Returns
@@ -5960,7 +6074,7 @@ class MyElement extends LitElement {
 
 Slider.getPropertyDescriptor
 
----
+___
 
 ### getPropertyOptions
 
@@ -5975,14 +6089,14 @@ Note, this method should be considered "final" and not overridden. To
 customize the options for a given property, override
 [`createProperty`](DarkForestSlider.md#createproperty).
 
-**`nocollapse`**
+**`Nocollapse`**
 
-**`final`**
+**`Final`**
 
 #### Parameters
 
-| Name   | Type          |
-| :----- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `name` | `PropertyKey` |
 
 #### Returns
@@ -5993,7 +6107,7 @@ customize the options for a given property, override
 
 Slider.getPropertyOptions
 
----
+___
 
 ## rendering Methods
 
@@ -6009,7 +6123,7 @@ Slider.getPropertyOptions
 
 Slider.createRenderRoot
 
----
+___
 
 ## styles Methods
 
@@ -6027,12 +6141,12 @@ especially when composing via subclassing. The last item is kept to try
 to preserve the cascade order with the assumption that it's most important
 that last added styles override previous styles.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `styles?` | `CSSResultGroup` |
 
 #### Returns
@@ -6043,7 +6157,7 @@ that last added styles override previous styles.
 
 Slider.finalizeStyles
 
----
+___
 
 ## updates Methods
 
@@ -6057,8 +6171,8 @@ update.
 
 #### Parameters
 
-| Name               | Type      |
-| :----------------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `_requestedUpdate` | `boolean` |
 
 #### Returns
@@ -6069,7 +6183,7 @@ update.
 
 Slider.enableUpdating
 
----
+___
 
 ### performUpdate
 
@@ -6097,7 +6211,7 @@ also calling `performUpdate()` to synchronously process updates difficult.
 
 Slider.performUpdate
 
----
+___
 
 ### requestUpdate
 
@@ -6112,11 +6226,11 @@ options are honored.
 
 #### Parameters
 
-| Name        | Type                                         | Description                                                          |
-| :---------- | :------------------------------------------- | :------------------------------------------------------------------- |
-| `name?`     | `PropertyKey`                                | name of requesting property                                          |
-| `oldValue?` | `unknown`                                    | old value of requesting property                                     |
-| `options?`  | `PropertyDeclaration`<`unknown`, `unknown`\> | property options to use instead of the previously configured options |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name?` | `PropertyKey` | name of requesting property |
+| `oldValue?` | `unknown` | old value of requesting property |
+| `options?` | `PropertyDeclaration`<`unknown`, `unknown`\> | property options to use instead of the previously     configured options |
 
 #### Returns
 
@@ -6126,7 +6240,7 @@ options are honored.
 
 Slider.requestUpdate
 
----
+___
 
 ### scheduleUpdate
 
@@ -6155,7 +6269,7 @@ override protected async scheduleUpdate(): Promise<unknown> {
 
 Slider.scheduleUpdate
 
----
+___
 
 ### shouldUpdate
 
@@ -6167,8 +6281,8 @@ customized to control when to update.
 
 #### Parameters
 
-| Name                 | Type                                                | Description                               |
-| :------------------- | :-------------------------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `_changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> | Map of changed properties with old values |
 
 #### Returns
@@ -6179,7 +6293,7 @@ customized to control when to update.
 
 Slider.shouldUpdate
 
----
+___
 
 ### willUpdate
 
@@ -6187,8 +6301,8 @@ Slider.shouldUpdate
 
 #### Parameters
 
-| Name                 | Type                                                |
-| :------------------- | :-------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> |
 
 #### Returns

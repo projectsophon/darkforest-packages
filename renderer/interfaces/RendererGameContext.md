@@ -8,6 +8,10 @@
 
 ## Table of contents
 
+### Properties
+
+- [updateDiagnostics](RendererGameContext.md#updatediagnostics)
+
 ### Methods
 
 - [drawAllRunningPlugins](RendererGameContext.md#drawallrunningplugins)
@@ -49,7 +53,32 @@
 - [isOwnedByMe](RendererGameContext.md#isownedbyme)
 - [isSendingShip](RendererGameContext.md#issendingship)
 - [spaceTypeFromPerlin](RendererGameContext.md#spacetypefromperlin)
-- [updateDiagnostics](RendererGameContext.md#updatediagnostics)
+
+## Properties
+
+### updateDiagnostics
+
+• **updateDiagnostics**: (`updateFn`: (`d`: `Diagnostics`) => `void`) => `void`
+
+#### Type declaration
+
+▸ (`updateFn`): `void`
+
+Updates the diagnostics using the provided updater function.
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `updateFn` | (`d`: `Diagnostics`) => `void` |
+
+##### Returns
+
+`void`
+
+#### Inherited from
+
+DiagnosticUpdater.updateDiagnostics
 
 ## Methods
 
@@ -59,15 +88,15 @@
 
 #### Parameters
 
-| Name  | Type                       |
-| :---- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### getAbandonRangeChangePercent
 
@@ -77,7 +106,7 @@
 
 `number`
 
----
+___
 
 ### getAccount
 
@@ -87,7 +116,7 @@
 
 `undefined` \| `EthAddress`
 
----
+___
 
 ### getAllMinerLocations
 
@@ -97,7 +126,7 @@
 
 `WorldCoords`[]
 
----
+___
 
 ### getAllVoyages
 
@@ -107,7 +136,7 @@
 
 `QueuedArrival`[]
 
----
+___
 
 ### getArtifactSending
 
@@ -115,15 +144,15 @@
 
 #### Parameters
 
-| Name       | Type         |
-| :--------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `planetId` | `LocationId` |
 
 #### Returns
 
 `undefined` \| `Artifact`
 
----
+___
 
 ### getArtifactWithId
 
@@ -131,15 +160,15 @@
 
 #### Parameters
 
-| Name         | Type                        |
-| :----------- | :-------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `artifactId` | `undefined` \| `ArtifactId` |
 
 #### Returns
 
 `undefined` \| `Artifact`
 
----
+___
 
 ### getArtifactsWithIds
 
@@ -147,15 +176,15 @@
 
 #### Parameters
 
-| Name          | Type           |
-| :------------ | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `artifactIds` | `ArtifactId`[] |
 
 #### Returns
 
 (`undefined` \| `Artifact`)[]
 
----
+___
 
 ### getBooleanSetting
 
@@ -163,15 +192,15 @@
 
 #### Parameters
 
-| Name      | Type      |
-| :-------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `setting` | `Setting` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### getCaptureZones
 
@@ -181,7 +210,7 @@
 
 `Iterable`<`CaptureZone`\>
 
----
+___
 
 ### getDistCoords
 
@@ -189,16 +218,16 @@
 
 #### Parameters
 
-| Name   | Type          |
-| :----- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `from` | `WorldCoords` |
-| `to`   | `WorldCoords` |
+| `to` | `WorldCoords` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### getEnergyArrivingForMove
 
@@ -206,18 +235,18 @@
 
 #### Parameters
 
-| Name     | Type                        |
-| :------- | :-------------------------- |
-| `from`   | `LocationId`                |
-| `to`     | `undefined` \| `LocationId` |
-| `dist`   | `undefined` \| `number`     |
-| `energy` | `number`                    |
+| Name | Type |
+| :------ | :------ |
+| `from` | `LocationId` |
+| `to` | `undefined` \| `LocationId` |
+| `dist` | `undefined` \| `number` |
+| `energy` | `number` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### getForcesSending
 
@@ -225,15 +254,15 @@
 
 #### Parameters
 
-| Name       | Type         |
-| :--------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `planetId` | `LocationId` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### getHoveringOverCoords
 
@@ -243,7 +272,7 @@
 
 `undefined` \| `WorldCoords`
 
----
+___
 
 ### getHoveringOverPlanet
 
@@ -253,7 +282,7 @@
 
 `undefined` \| `Planet`
 
----
+___
 
 ### getIsChoosingTargetPlanet
 
@@ -263,7 +292,7 @@
 
 `boolean`
 
----
+___
 
 ### getIsHighPerfMode
 
@@ -273,7 +302,7 @@
 
 `boolean`
 
----
+___
 
 ### getLocationOfPlanet
 
@@ -281,15 +310,15 @@
 
 #### Parameters
 
-| Name       | Type         |
-| :--------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `planetId` | `LocationId` |
 
 #### Returns
 
 `undefined` \| `WorldLocation`
 
----
+___
 
 ### getLocationsAndChunks
 
@@ -299,12 +328,12 @@
 
 `Object`
 
-| Name            | Type                                     |
-| :-------------- | :--------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `cachedPlanets` | `Map`<`LocationId`, `PlanetRenderInfo`\> |
-| `chunks`        | `Set`<`Chunk`\>                          |
+| `chunks` | `Set`<`Chunk`\> |
 
----
+___
 
 ### getMouseDownPlanet
 
@@ -314,7 +343,7 @@
 
 `undefined` \| `LocatablePlanet`
 
----
+___
 
 ### getPerlinConfig
 
@@ -322,15 +351,15 @@
 
 #### Parameters
 
-| Name      | Type      |
-| :-------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `isBiome` | `boolean` |
 
 #### Returns
 
 `PerlinConfig`
 
----
+___
 
 ### getPerlinThresholds
 
@@ -340,7 +369,7 @@
 
 [`number`, `number`, `number`]
 
----
+___
 
 ### getPlanetWithCoords
 
@@ -348,15 +377,15 @@
 
 #### Parameters
 
-| Name     | Type                         |
-| :------- | :--------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `coords` | `undefined` \| `WorldCoords` |
 
 #### Returns
 
 `undefined` \| `Planet`
 
----
+___
 
 ### getPlanetWithId
 
@@ -364,15 +393,15 @@
 
 #### Parameters
 
-| Name       | Type                        |
-| :--------- | :-------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `planetId` | `undefined` \| `LocationId` |
 
 #### Returns
 
 `undefined` \| `Planet`
 
----
+___
 
 ### getPlayer
 
@@ -380,15 +409,15 @@
 
 #### Parameters
 
-| Name       | Type         |
-| :--------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `address?` | `EthAddress` |
 
 #### Returns
 
 `undefined` \| `Player`
 
----
+___
 
 ### getRadiusOfPlanetLevel
 
@@ -396,15 +425,15 @@
 
 #### Parameters
 
-| Name           | Type          |
-| :------------- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `planetRarity` | `PlanetLevel` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### getSelectedCoords
 
@@ -414,7 +443,7 @@
 
 `undefined` \| `WorldCoords`
 
----
+___
 
 ### getSelectedPlanet
 
@@ -424,7 +453,7 @@
 
 `undefined` \| `LocatablePlanet`
 
----
+___
 
 ### getSpaceTypePerlin
 
@@ -432,16 +461,16 @@
 
 #### Parameters
 
-| Name     | Type          |
-| :------- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `coords` | `WorldCoords` |
-| `floor`  | `boolean`     |
+| `floor` | `boolean` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### getStringSetting
 
@@ -449,15 +478,15 @@
 
 #### Parameters
 
-| Name      | Type      |
-| :-------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `setting` | `Setting` |
 
 #### Returns
 
 `undefined` \| `string`
 
----
+___
 
 ### getUnconfirmedMoves
 
@@ -467,7 +496,7 @@
 
 `Transaction`<`UnconfirmedMove`\>[]
 
----
+___
 
 ### getUnconfirmedWormholeActivations
 
@@ -477,7 +506,7 @@
 
 `Transaction`<`UnconfirmedActivateArtifact`\>[]
 
----
+___
 
 ### getWorldRadius
 
@@ -487,7 +516,7 @@
 
 `number`
 
----
+___
 
 ### getWormholes
 
@@ -497,7 +526,7 @@
 
 `Iterable`<`Wormhole`\>
 
----
+___
 
 ### isAbandoning
 
@@ -507,7 +536,7 @@
 
 `boolean`
 
----
+___
 
 ### isOverOwnPlanet
 
@@ -515,15 +544,15 @@
 
 #### Parameters
 
-| Name     | Type          |
-| :------- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `coords` | `WorldCoords` |
 
 #### Returns
 
 `undefined` \| `Planet`
 
----
+___
 
 ### isOwnedByMe
 
@@ -531,15 +560,15 @@
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `Planet` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### isSendingShip
 
@@ -547,15 +576,15 @@
 
 #### Parameters
 
-| Name       | Type         |
-| :--------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `planetId` | `LocationId` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### spaceTypeFromPerlin
 
@@ -563,32 +592,10 @@
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `perlin` | `number` |
 
 #### Returns
 
 `SpaceType`
-
----
-
-### updateDiagnostics
-
-▸ **updateDiagnostics**(`updateFn`): `void`
-
-Updates the diagnostics using the provided updater function.
-
-#### Parameters
-
-| Name       | Type                           |
-| :--------- | :----------------------------- |
-| `updateFn` | (`d`: `Diagnostics`) => `void` |
-
-#### Returns
-
-`void`
-
-#### Inherited from
-
-DiagnosticUpdater.updateDiagnostics

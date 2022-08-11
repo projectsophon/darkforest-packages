@@ -1,6 +1,6 @@
-import { findIndex } from 'lodash';
-import CircularBuffer from 'mnemonist/circular-buffer';
-import deferred from 'p-defer';
+import { findIndex } from "lodash";
+import CircularBuffer from "mnemonist/circular-buffer";
+import deferred from "p-defer";
 
 /**
  * Represents a task that has been queued for later execution.
@@ -88,15 +88,15 @@ export class ThrottledConcurrentQueue<U = unknown> implements Queue {
     this.executionTimestamps = new CircularBuffer(Array, config.maxInvocationsPerIntervalMs);
 
     if (config.maxInvocationsPerIntervalMs <= 0) {
-      throw new Error('must allow at least one invocation per interval');
+      throw new Error("must allow at least one invocation per interval");
     }
 
     if (this.invocationIntervalMs <= 0) {
-      throw new Error('invocation interval must be positive');
+      throw new Error("invocation interval must be positive");
     }
 
     if (this.maxConcurrency <= 0) {
-      throw new Error('max concurrency must be positive');
+      throw new Error("max concurrency must be positive");
     }
   }
 
@@ -132,9 +132,7 @@ export class ThrottledConcurrentQueue<U = unknown> implements Queue {
    * @param predicate Should return true for the task you would like removed.
    */
   public remove(predicate: (metadata: U | undefined) => boolean): QueuedTask<unknown, U> {
-    const foundIndex = findIndex(this.taskQueue, (task: QueuedTask<unknown, U>) =>
-      predicate(task.metadata)
-    );
+    const foundIndex = findIndex(this.taskQueue, (task: QueuedTask<unknown, U>) => predicate(task.metadata));
 
     if (foundIndex === -1) throw new Error(`specified task was not found`);
 
@@ -152,9 +150,7 @@ export class ThrottledConcurrentQueue<U = unknown> implements Queue {
    * @param predicate Should return true for the task you would like prioritized.
    */
   public prioritize(predicate: (metadata: U | undefined) => boolean): QueuedTask<unknown, U> {
-    const foundIndex = findIndex(this.taskQueue, (task: QueuedTask<unknown, U>) =>
-      predicate(task.metadata)
-    );
+    const foundIndex = findIndex(this.taskQueue, (task: QueuedTask<unknown, U>) => predicate(task.metadata));
 
     if (foundIndex === -1) throw new Error(`specified task was not found`);
 

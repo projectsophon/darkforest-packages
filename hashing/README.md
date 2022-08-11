@@ -13,7 +13,6 @@ You can install this package using [`npm`](https://www.npmjs.com) or
 ```bash
 npm install --save @projectsophon/hashing
 ```
-
 ```bash
 yarn add @projectsophon/hashing
 ```
@@ -21,7 +20,7 @@ yarn add @projectsophon/hashing
 When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
 
 ```js
-import * as hashing from "http://cdn.skypack.dev/@projectsophon/hashing";
+import * as hashing from 'http://cdn.skypack.dev/@projectsophon/hashing'
 ```
 
 ## Table of contents
@@ -33,7 +32,7 @@ import * as hashing from "http://cdn.skypack.dev/@projectsophon/hashing";
 ### Variables
 
 - [Fraction](README.md#fraction)
-- [MAX_PERLIN_VALUE](README.md#max_perlin_value)
+- [MAX\_PERLIN\_VALUE](README.md#max_perlin_value)
 
 ### Functions
 
@@ -52,11 +51,11 @@ import * as hashing from "http://cdn.skypack.dev/@projectsophon/hashing";
 
 • **Fraction**: `IFraction`
 
----
+___
 
-### MAX_PERLIN_VALUE
+### MAX\_PERLIN\_VALUE
 
-• `Const` **MAX_PERLIN_VALUE**: `32`
+• `Const` **MAX\_PERLIN\_VALUE**: ``32``
 
 ## Functions
 
@@ -66,104 +65,104 @@ import * as hashing from "http://cdn.skypack.dev/@projectsophon/hashing";
 
 #### Parameters
 
-| Name     | Type        |
-| :------- | :---------- |
-| `point`  | `Vector`    |
-| `scale`  | `IFraction` |
-| `randFn` | `HashFn`    |
+| Name | Type |
+| :------ | :------ |
+| `point` | `Vector` |
+| `scale` | `IFraction` |
+| `randFn` | `HashFn` |
 
 #### Returns
 
 `Vector`
 
----
+___
 
 ### mimcHash
 
-▸ **mimcHash**(`key`): (...`inputs`: `number`[]) => `BigInteger`
+▸ **mimcHash**(`key`): (...`inputs`: `number`[]) => `bigint`
 
 The primary function used to build any MiMC hashing algorithm for Dark Forest.
 
 #### Parameters
 
-| Name  | Type     | Description                                                                                      |
-| :---- | :------- | :----------------------------------------------------------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `key` | `number` | The key for the MiMC algorithm. Will usually be PLANETHASH_KEY, SPACETYPE_KEY, or BIOMEBASE_KEY. |
 
 #### Returns
 
 `fn`
 
-▸ (...`inputs`): `BigInteger`
+▸ (...`inputs`): `bigint`
 
 ##### Parameters
 
-| Name        | Type       |
-| :---------- | :--------- |
+| Name | Type |
+| :------ | :------ |
 | `...inputs` | `number`[] |
 
 ##### Returns
 
-`BigInteger`
+`bigint`
 
----
+___
 
 ### mimcSponge
 
-▸ **mimcSponge**(`inputs`, `nOutputs`, `rounds`, `key`): `BigInteger`[]
+▸ **mimcSponge**(`inputs`, `nOutputs`, `rounds`, `key`): `bigint`[]
 
 #### Parameters
 
-| Name       | Type           |
-| :--------- | :------------- |
-| `inputs`   | `BigInteger`[] |
-| `nOutputs` | `number`       |
-| `rounds`   | `number`       |
-| `key`      | `number`       |
+| Name | Type |
+| :------ | :------ |
+| `inputs` | `bigint`[] |
+| `nOutputs` | `number` |
+| `rounds` | `number` |
+| `key` | `number` |
 
 #### Returns
 
-`BigInteger`[]
+`bigint`[]
 
----
+___
 
 ### modPBigInt
 
-▸ **modPBigInt**(`x`): `BigInteger`
+▸ **modPBigInt**(`x`): `bigint`
 
 Modulo a number with the LOCATION_ID_UB constant.
 If the result is < 0, the LOCATION_ID_UB will then be added.
 
 #### Parameters
 
-| Name | Type     | Description                                 |
-| :--- | :------- | :------------------------------------------ |
-| `x`  | `number` | The number to modulo against LOCATION_ID_UB |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x` | `number` | The number to modulo against LOCATION_ID_UB |
 
 #### Returns
 
-`BigInteger`
+`bigint`
 
----
+___
 
 ### modPBigIntNative
 
-▸ **modPBigIntNative**(`x`): `BigInteger`
+▸ **modPBigIntNative**(`x`): `bigint`
 
 Modulo a BigInt with the LOCATION_ID_UB constant.
 If the result is < 0, the LOCATION_ID_UB will then be added.
 
 #### Parameters
 
-| Name | Type         | Description                                 |
-| :--- | :----------- | :------------------------------------------ |
-| `x`  | `BigInteger` | The number to modulo against LOCATION_ID_UB |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x` | `bigint` | The number to modulo against LOCATION_ID_UB |
 
 #### Returns
 
-`BigInteger`
+`bigint`
 
----
+___
 
 ### perlin
 
@@ -173,16 +172,16 @@ Calculates the perlin for a location, given the x,y pair and the PerlinConfig fo
 
 #### Parameters
 
-| Name      | Type                                           | Description                                                            |
-| :-------- | :--------------------------------------------- | :--------------------------------------------------------------------- |
-| `coords`  | [`IntegerVector`](interfaces/IntegerVector.md) | An object of the x,y coordinates for which perlin is being calculated. |
-| `options` | `PerlinConfig`                                 | An object containing the configuration for the perlin algorithm.       |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `coords` | [`IntegerVector`](interfaces/IntegerVector.md) | An object of the x,y coordinates for which perlin is being calculated. |
+| `options` | `PerlinConfig` | An object containing the configuration for the perlin algorithm. |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### rand
 
@@ -190,8 +189,8 @@ Calculates the perlin for a location, given the x,y pair and the PerlinConfig fo
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `key` | `number` |
 
 #### Returns
@@ -202,15 +201,15 @@ Calculates the perlin for a location, given the x,y pair and the PerlinConfig fo
 
 ##### Parameters
 
-| Name      | Type       |
-| :-------- | :--------- |
+| Name | Type |
+| :------ | :------ |
 | `...args` | `number`[] |
 
 ##### Returns
 
 `number`
 
----
+___
 
 ### seededRandom
 
@@ -220,8 +219,8 @@ Generate a random number based on some seed. Useful for procedural generation.
 
 #### Parameters
 
-| Name   | Type     | Description                    |
-| :----- | :------- | :----------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `seed` | `number` | The seed of the random number. |
 
 #### Returns

@@ -16,7 +16,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -30,7 +30,7 @@ Draws all queued circles
 
 `void`
 
----
+___
 
 ### queueCircleWorld
 
@@ -47,20 +47,20 @@ Used for drawing capture zones
 
 #### Parameters
 
-| Name      | Type                              | Description                                         |
-| :-------- | :-------------------------------- | :-------------------------------------------------- |
-| `center`  | [`CanvasCoords`](CanvasCoords.md) | Center of the circle relative to the canvas         |
-| `radius`  | `number`                          | Radius relative to the canvas                       |
-| `color?`  | [`RGBAVec`](../README.md#rgbavec) |                                                     |
-| `stroke?` | `number`                          | How thick the stroke of the circle should be        |
-| `angle?`  | `number`                          | The angle/arc of the cirlce to draw                 |
-| `dashed?` | `boolean`                         | If the circumference of the circle should be dashed |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `center` | [`CanvasCoords`](CanvasCoords.md) | Center of the circle relative to the canvas |
+| `radius` | `number` | Radius relative to the canvas |
+| `color?` | [`RGBAVec`](../README.md#rgbavec) |  |
+| `stroke?` | `number` | How thick the stroke of the circle should be |
+| `angle?` | `number` | The angle/arc of the cirlce to draw |
+| `dashed?` | `boolean` | If the circumference of the circle should be dashed |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### queueCircleWorldCenterOnly
 
@@ -73,11 +73,11 @@ Used for drawing the voyager (circle)
 
 #### Parameters
 
-| Name     | Type                                      | Description                                     |
-| :------- | :---------------------------------------- | :---------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `center` | [`WorldCoords`](../README.md#worldcoords) | center of the circle relative to the game world |
-| `radius` | `number`                                  | size of the circle relative to the game world   |
-| `color?` | [`RGBAVec`](../README.md#rgbavec)         |                                                 |
+| `radius` | `number` | size of the circle relative to the game world |
+| `color?` | [`RGBAVec`](../README.md#rgbavec) |  |
 
 #### Returns
 

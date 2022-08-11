@@ -209,8 +209,7 @@ export class DarkForestModal extends LitElement {
       class=${classMap(classes)}
       @mousedown=${this._setDragging}
       @mouseup=${this._unsetDragging}
-      name="title"
-    ></slot>`;
+      name="title"></slot>`;
   }
 
   private renderContent() {

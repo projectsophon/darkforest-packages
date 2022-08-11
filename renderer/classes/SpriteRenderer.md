@@ -1,5 +1,11 @@
 # Class: SpriteRenderer
 
+Takes in a gl context, program sources (frag and vert shader),
+and data about attribs / uniforms and provides:
+- attrib managers
+- uniform setters
+- skeleton code for rendering in our engine via `flush()`
+
 ## Hierarchy
 
 - [`GenericRenderer`](GenericRenderer.md)<typeof `SPRITE_PROGRAM_DEFINITION`\>
@@ -53,15 +59,13 @@
 
 • **new SpriteRenderer**(`manager`, `thumb?`, `flip?`)
 
-Create a renderer from a GameGLManager and program data.
-
 #### Parameters
 
-| Name      | Type                              | Default value |
-| :-------- | :-------------------------------- | :------------ |
-| `manager` | [`WebGLManager`](WebGLManager.md) | `undefined`   |
-| `thumb`   | `boolean`                         | `true`        |
-| `flip`    | `boolean`                         | `true`        |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `manager` | [`WebGLManager`](WebGLManager.md) | `undefined` |
+| `thumb` | `boolean` | `true` |
+| `flip` | `boolean` | `true` |
 
 #### Overrides
 
@@ -80,11 +84,11 @@ Kept for use in inherited classes.
 
 [GenericRenderer](GenericRenderer.md).[attribData](GenericRenderer.md#attribdata)
 
----
+___
 
 ### attribManagers
 
-• **attribManagers**: [`AttribManagers`](../README.md#attribmanagers)<{ `attribs`: { `color`: { `dim`: `number` = 4; `name`: `string` = a.color; `normalize`: `boolean` = true; `type`: `AttribType` = AttribType.UByte } ; `invert`: { `dim`: `number` = 1; `name`: `string` = a.invert; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `mythic`: { `dim`: `number` = 1; `name`: `string` = a.mythic; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `position`: { `dim`: `number` = 2; `name`: `string` = a.position; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `rectPos`: { `dim`: `number` = 2; `name`: `string` = a.rectPos; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `shine`: { `dim`: `number` = 1; `name`: `string` = a.shine; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `texcoord`: { `dim`: `number` = 2; `name`: `string` = a.texcoord; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } } ; `fragmentShader`: `string` ; `uniforms`: { `matrix`: { `name`: `string` = u.matrix; `type`: `UniformType` = UniformType.Mat4 } ; `texture`: { `name`: `string` = u.texture; `type`: `UniformType` = UniformType.Texture } } ; `vertexShader`: `string` }\>
+• **attribManagers**: [`AttribManagers`](../README.md#attribmanagers)<{ `attribs`: { `color`: { `dim`: `number` = 4; `name`: `string` = a.color; `normalize`: `boolean` = true; `type`: `AttribType` = AttribType.UByte } ; `invert`: { `dim`: `number` = 1; `name`: `string` = a.invert; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `mythic`: { `dim`: `number` = 1; `name`: `string` = a.mythic; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `position`: { `dim`: `number` = 2; `name`: `string` = a.position; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `rectPos`: { `dim`: `number` = 2; `name`: `string` = a.rectPos; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `shine`: { `dim`: `number` = 1; `name`: `string` = a.shine; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `texcoord`: { `dim`: `number` = 2; `name`: `string` = a.texcoord; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float }  } ; `fragmentShader`: `string` ; `uniforms`: { `matrix`: { `name`: `string` = u.matrix; `type`: `UniformType` = UniformType.Mat4 } ; `texture`: { `name`: `string` = u.texture; `type`: `UniformType` = UniformType.Texture }  } ; `vertexShader`: `string`  }\>
 
 A dictionary of attrib managers, keyed by attrib name.
 
@@ -92,19 +96,19 @@ A dictionary of attrib managers, keyed by attrib name.
 
 [GenericRenderer](GenericRenderer.md).[attribManagers](GenericRenderer.md#attribmanagers)
 
----
+___
 
 ### flip
 
 • `Private` **flip**: `boolean`
 
----
+___
 
 ### loaded
 
 • `Private` **loaded**: `boolean`
 
----
+___
 
 ### manager
 
@@ -116,13 +120,13 @@ GameGLManager corresponding to this program.
 
 [GenericRenderer](GenericRenderer.md).[manager](GenericRenderer.md#manager)
 
----
+___
 
 ### posBuffer
 
 • `Private` **posBuffer**: `number`[]
 
----
+___
 
 ### program
 
@@ -134,13 +138,13 @@ The program corresponding to this renderer.
 
 [GenericRenderer](GenericRenderer.md).[program](GenericRenderer.md#program)
 
----
+___
 
 ### rectposBuffer
 
 • `Private` **rectposBuffer**: `number`[]
 
----
+___
 
 ### rendererType
 
@@ -150,25 +154,25 @@ The program corresponding to this renderer.
 
 SpriteRendererType.rendererType
 
----
+___
 
 ### texBuffer
 
 • `Private` **texBuffer**: `number`[]
 
----
+___
 
 ### texIdx
 
-• `Private` **texIdx**: `number`
+• `Private` `Optional` **texIdx**: `number`
 
----
+___
 
 ### thumb
 
 • `Private` **thumb**: `boolean`
 
----
+___
 
 ### uniformData
 
@@ -181,11 +185,11 @@ Kept for use in inherited classes.
 
 [GenericRenderer](GenericRenderer.md).[uniformData](GenericRenderer.md#uniformdata)
 
----
+___
 
 ### uniformLocs
 
-• **uniformLocs**: [`UniformLocs`](../README.md#uniformlocs)<{ `attribs`: { `color`: { `dim`: `number` = 4; `name`: `string` = a.color; `normalize`: `boolean` = true; `type`: `AttribType` = AttribType.UByte } ; `invert`: { `dim`: `number` = 1; `name`: `string` = a.invert; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `mythic`: { `dim`: `number` = 1; `name`: `string` = a.mythic; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `position`: { `dim`: `number` = 2; `name`: `string` = a.position; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `rectPos`: { `dim`: `number` = 2; `name`: `string` = a.rectPos; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `shine`: { `dim`: `number` = 1; `name`: `string` = a.shine; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `texcoord`: { `dim`: `number` = 2; `name`: `string` = a.texcoord; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } } ; `fragmentShader`: `string` ; `uniforms`: { `matrix`: { `name`: `string` = u.matrix; `type`: `UniformType` = UniformType.Mat4 } ; `texture`: { `name`: `string` = u.texture; `type`: `UniformType` = UniformType.Texture } } ; `vertexShader`: `string` }\>
+• **uniformLocs**: [`UniformLocs`](../README.md#uniformlocs)<{ `attribs`: { `color`: { `dim`: `number` = 4; `name`: `string` = a.color; `normalize`: `boolean` = true; `type`: `AttribType` = AttribType.UByte } ; `invert`: { `dim`: `number` = 1; `name`: `string` = a.invert; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `mythic`: { `dim`: `number` = 1; `name`: `string` = a.mythic; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `position`: { `dim`: `number` = 2; `name`: `string` = a.position; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `rectPos`: { `dim`: `number` = 2; `name`: `string` = a.rectPos; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `shine`: { `dim`: `number` = 1; `name`: `string` = a.shine; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `texcoord`: { `dim`: `number` = 2; `name`: `string` = a.texcoord; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float }  } ; `fragmentShader`: `string` ; `uniforms`: { `matrix`: { `name`: `string` = u.matrix; `type`: `UniformType` = UniformType.Mat4 } ; `texture`: { `name`: `string` = u.texture; `type`: `UniformType` = UniformType.Texture }  } ; `vertexShader`: `string`  }\>
 
 Uniform locs for this program. Typically not referenced directly,
 but rather through generated uniformSetters. Kept for use in inherited classes.
@@ -194,11 +198,11 @@ but rather through generated uniformSetters. Kept for use in inherited classes.
 
 [GenericRenderer](GenericRenderer.md).[uniformLocs](GenericRenderer.md#uniformlocs)
 
----
+___
 
 ### uniformSetters
 
-• **uniformSetters**: [`UniformSetters`](../README.md#uniformsetters)<{ `attribs`: { `color`: { `dim`: `number` = 4; `name`: `string` = a.color; `normalize`: `boolean` = true; `type`: `AttribType` = AttribType.UByte } ; `invert`: { `dim`: `number` = 1; `name`: `string` = a.invert; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `mythic`: { `dim`: `number` = 1; `name`: `string` = a.mythic; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `position`: { `dim`: `number` = 2; `name`: `string` = a.position; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `rectPos`: { `dim`: `number` = 2; `name`: `string` = a.rectPos; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `shine`: { `dim`: `number` = 1; `name`: `string` = a.shine; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `texcoord`: { `dim`: `number` = 2; `name`: `string` = a.texcoord; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } } ; `fragmentShader`: `string` ; `uniforms`: { `matrix`: { `name`: `string` = u.matrix; `type`: `UniformType` = UniformType.Mat4 } ; `texture`: { `name`: `string` = u.texture; `type`: `UniformType` = UniformType.Texture } } ; `vertexShader`: `string` }\>
+• **uniformSetters**: [`UniformSetters`](../README.md#uniformsetters)<{ `attribs`: { `color`: { `dim`: `number` = 4; `name`: `string` = a.color; `normalize`: `boolean` = true; `type`: `AttribType` = AttribType.UByte } ; `invert`: { `dim`: `number` = 1; `name`: `string` = a.invert; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `mythic`: { `dim`: `number` = 1; `name`: `string` = a.mythic; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `position`: { `dim`: `number` = 2; `name`: `string` = a.position; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `rectPos`: { `dim`: `number` = 2; `name`: `string` = a.rectPos; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `shine`: { `dim`: `number` = 1; `name`: `string` = a.shine; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float } ; `texcoord`: { `dim`: `number` = 2; `name`: `string` = a.texcoord; `normalize`: `boolean` = false; `type`: `AttribType` = AttribType.Float }  } ; `fragmentShader`: `string` ; `uniforms`: { `matrix`: { `name`: `string` = u.matrix; `type`: `UniformType` = UniformType.Mat4 } ; `texture`: { `name`: `string` = u.texture; `type`: `UniformType` = UniformType.Texture }  } ; `vertexShader`: `string`  }\>
 
 A dictionary of uniform setters, keyed by uniform name.
 
@@ -206,7 +210,7 @@ A dictionary of uniform setters, keyed by uniform name.
 
 [GenericRenderer](GenericRenderer.md).[uniformSetters](GenericRenderer.md#uniformsetters)
 
----
+___
 
 ### verts
 
@@ -238,7 +242,7 @@ SpriteRendererType.flush
 
 [GenericRenderer](GenericRenderer.md).[flush](GenericRenderer.md#flush)
 
----
+___
 
 ### loadAtlas
 
@@ -246,15 +250,15 @@ SpriteRendererType.flush
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `thumb` | `boolean` |
 
 #### Returns
 
 `Promise`<`void`\>
 
----
+___
 
 ### loadTexture
 
@@ -262,16 +266,16 @@ SpriteRendererType.flush
 
 #### Parameters
 
-| Name     | Type               |
-| :------- | :----------------- |
-| `img`    | `HTMLImageElement` |
-| `texIdx` | `number`           |
+| Name | Type |
+| :------ | :------ |
+| `img` | `HTMLImageElement` |
+| `texIdx` | `number` |
 
 #### Returns
 
 `Promise`<`void`\>
 
----
+___
 
 ### queueArtifact
 
@@ -279,15 +283,15 @@ SpriteRendererType.flush
 
 #### Parameters
 
-| Name       | Type                    | Default value |
-| :--------- | :---------------------- | :------------ |
-| `artifact` | `RenderedArtifact`      | `undefined`   |
-| `pos`      | `CanvasCoords`          | `undefined`   |
-| `width`    | `number`                | `128`         |
-| `alpha`    | `number`                | `255`         |
-| `atFrame`  | `undefined` \| `number` | `undefined`   |
-| `color`    | `undefined` \| `RGBVec` | `undefined`   |
-| `theta`    | `undefined` \| `number` | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `artifact` | `RenderedArtifact` | `undefined` |
+| `pos` | `CanvasCoords` | `undefined` |
+| `width` | `number` | `128` |
+| `alpha` | `number` | `255` |
+| `atFrame` | `undefined` \| `number` | `undefined` |
+| `color` | `undefined` \| `RGBVec` | `undefined` |
+| `theta` | `undefined` \| `number` | `undefined` |
 
 #### Returns
 
@@ -297,7 +301,7 @@ SpriteRendererType.flush
 
 SpriteRendererType.queueArtifact
 
----
+___
 
 ### queueArtifactWorld
 
@@ -307,16 +311,16 @@ Queue artifact to worldcoords, centered
 
 #### Parameters
 
-| Name       | Type                    | Default value |
-| :--------- | :---------------------- | :------------ |
-| `artifact` | `RenderedArtifact`      | `undefined`   |
-| `posW`     | `CanvasCoords`          | `undefined`   |
-| `widthW`   | `number`                | `undefined`   |
-| `alpha`    | `number`                | `255`         |
-| `atFrame`  | `undefined` \| `number` | `undefined`   |
-| `color`    | `undefined` \| `RGBVec` | `undefined`   |
-| `theta`    | `undefined` \| `number` | `undefined`   |
-| `viewport` | `GameViewport`          | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `artifact` | `RenderedArtifact` | `undefined` |
+| `posW` | `CanvasCoords` | `undefined` |
+| `widthW` | `number` | `undefined` |
+| `alpha` | `number` | `255` |
+| `atFrame` | `undefined` \| `number` | `undefined` |
+| `color` | `undefined` \| `RGBVec` | `undefined` |
+| `theta` | `undefined` \| `number` | `undefined` |
+| `viewport` | `GameViewport` | `undefined` |
 
 #### Returns
 
@@ -326,7 +330,7 @@ Queue artifact to worldcoords, centered
 
 SpriteRendererType.queueArtifactWorld
 
----
+___
 
 ### queueIconWorld
 
@@ -334,19 +338,19 @@ SpriteRendererType.queueArtifactWorld
 
 #### Parameters
 
-| Name       | Type           | Default value |
-| :--------- | :------------- | :------------ |
-| `artifact` | `Artifact`     | `undefined`   |
-| `topLeft`  | `WorldCoords`  | `undefined`   |
-| `widthW`   | `number`       | `undefined`   |
-| `maxWidth` | `number`       | `32`          |
-| `viewport` | `GameViewport` | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `artifact` | `Artifact` | `undefined` |
+| `topLeft` | `WorldCoords` | `undefined` |
+| `widthW` | `number` | `undefined` |
+| `maxWidth` | `number` | `32` |
+| `viewport` | `GameViewport` | `undefined` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### queueOutline
 
@@ -354,20 +358,20 @@ SpriteRendererType.queueArtifactWorld
 
 #### Parameters
 
-| Name                | Type                    | Default value                        |
-| :------------------ | :---------------------- | :----------------------------------- |
-| `artifact`          | `RenderedArtifact`      | `undefined`                          |
-| `__namedParameters` | `CanvasCoords`          | `undefined`                          |
-| `width`             | `number`                | `undefined`                          |
-| `alpha`             | `number`                | `undefined`                          |
-| `theta`             | `undefined` \| `number` | `undefined`                          |
-| `color`             | `RGBVec`                | `engineConsts.colors.artifacts.trim` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `artifact` | `RenderedArtifact` | `undefined` |
+| `__namedParameters` | `CanvasCoords` | `undefined` |
+| `width` | `number` | `undefined` |
+| `alpha` | `number` | `undefined` |
+| `theta` | `undefined` \| `number` | `undefined` |
+| `color` | `RGBVec` | `engineConsts.colors.artifacts.trim` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### queueSprite
 
@@ -375,21 +379,21 @@ SpriteRendererType.queueArtifactWorld
 
 #### Parameters
 
-| Name       | Type                    | Default value |
-| :--------- | :---------------------- | :------------ |
-| `artifact` | `RenderedArtifact`      | `undefined`   |
-| `topLeft`  | `CanvasCoords`          | `undefined`   |
-| `width`    | `number`                | `undefined`   |
-| `alpha`    | `number`                | `undefined`   |
-| `color`    | `undefined` \| `RGBVec` | `undefined`   |
-| `atFrame`  | `undefined` \| `number` | `undefined`   |
-| `theta`    | `undefined` \| `number` | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `artifact` | `RenderedArtifact` | `undefined` |
+| `topLeft` | `CanvasCoords` | `undefined` |
+| `width` | `number` | `undefined` |
+| `alpha` | `number` | `undefined` |
+| `color` | `undefined` \| `RGBVec` | `undefined` |
+| `atFrame` | `undefined` \| `number` | `undefined` |
+| `theta` | `undefined` \| `number` | `undefined` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setUniforms
 

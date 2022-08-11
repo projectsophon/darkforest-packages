@@ -15,7 +15,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Draws all text in game.
 
 `void`
 
----
+___
 
 ### queueTextWorld
 
@@ -42,15 +42,15 @@ Queue text to be drawn at world Cooridnates
 
 #### Parameters
 
-| Name      | Type                                      | Description                                                                                  |
-| :-------- | :---------------------------------------- | :------------------------------------------------------------------------------------------- |
-| `text`    | `string`                                  | The text                                                                                     |
-| `coords`  | [`WorldCoords`](../README.md#worldcoords) | The coordinates on relative to the game world                                                |
-| `color?`  | [`RGBAVec`](../README.md#rgbavec)         | color of the text                                                                            |
-| `offY?`   | `number`                                  | measured in text units - constant screen-coord offset that it useful for drawing nice things |
-| `align?`  | [`TextAlign`](../README.md#textalign)     | how the text should be aligned                                                               |
-| `anchor?` | [`TextAnchor`](../README.md#textanchor)   | How the text should be anchored                                                              |
-| `zIdx?`   | `number`                                  | The z axis index of the text                                                                 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `text` | `string` | The text |
+| `coords` | [`WorldCoords`](../README.md#worldcoords) | The coordinates on relative to the game world |
+| `color?` | [`RGBAVec`](../README.md#rgbavec) | color of the text |
+| `offY?` | `number` | measured in text units - constant screen-coord offset that it useful for drawing nice things |
+| `align?` | [`TextAlign`](../README.md#textalign-1) | how the text should be aligned |
+| `anchor?` | [`TextAnchor`](../README.md#textanchor-1) | How the text should be anchored |
+| `zIdx?` | `number` | The z axis index of the text |
 
 #### Returns
 

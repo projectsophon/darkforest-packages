@@ -13,7 +13,7 @@
 
 • **radiusPixels**: `number`
 
----
+___
 
 ### radiusWorld
 

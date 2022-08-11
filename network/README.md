@@ -10,7 +10,6 @@ You can install this package using [`npm`](https://www.npmjs.com) or
 ```bash
 npm install --save @projectsophon/network
 ```
-
 ```bash
 yarn add @projectsophon/network
 ```
@@ -18,15 +17,15 @@ yarn add @projectsophon/network
 When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
 
 ```js
-import * as network from "http://cdn.skypack.dev/@projectsophon/network";
+import * as network from 'http://cdn.skypack.dev/@projectsophon/network'
 ```
 
 ## Table of contents
 
 ### Classes
 
+- [ConnectionManager](classes/ConnectionManager.md)
 - [ContractCaller](classes/ContractCaller.md)
-- [EthConnection](classes/EthConnection.md)
 - [ThrottledConcurrentQueue](classes/ThrottledConcurrentQueue.md)
 - [TxCollection](classes/TxCollection.md)
 - [TxExecutor](classes/TxExecutor.md)
@@ -36,12 +35,11 @@ import * as network from "http://cdn.skypack.dev/@projectsophon/network";
 - [ConcurrentQueueConfiguration](interfaces/ConcurrentQueueConfiguration.md)
 - [Queue](interfaces/Queue.md)
 
-### Type aliases
+### Type Aliases
 
 - [AfterTransaction](README.md#aftertransaction)
 - [BeforeQueued](README.md#beforequeued)
 - [BeforeTransaction](README.md#beforetransaction)
-- [ContractLoader](README.md#contractloader)
 - [GasPriceSettingProvider](README.md#gaspricesettingprovider)
 - [RetryErrorHandler](README.md#retryerrorhandler)
 
@@ -51,20 +49,18 @@ import * as network from "http://cdn.skypack.dev/@projectsophon/network";
 - [assertProperlySigned](README.md#assertproperlysigned)
 - [callWithRetry](README.md#callwithretry)
 - [createContract](README.md#createcontract)
-- [createEthConnection](README.md#createethconnection)
 - [ethToWei](README.md#ethtowei)
 - [getAutoGasPrices](README.md#getautogasprices)
 - [getGasSettingGwei](README.md#getgassettinggwei)
 - [gweiToWei](README.md#gweitowei)
 - [isPurchase](README.md#ispurchase)
-- [makeProvider](README.md#makeprovider)
 - [neverResolves](README.md#neverresolves)
 - [verifySignature](README.md#verifysignature)
 - [waitForTransaction](README.md#waitfortransaction)
 - [weiToEth](README.md#weitoeth)
 - [weiToGwei](README.md#weitogwei)
 
-## Type aliases
+## Type Aliases
 
 ### AfterTransaction
 
@@ -78,16 +74,16 @@ import * as network from "http://cdn.skypack.dev/@projectsophon/network";
 
 ##### Parameters
 
-| Name                 | Type          |
-| :------------------- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `transactionRequest` | `Transaction` |
-| `performanceMetrics` | `unknown`     |
+| `performanceMetrics` | `unknown` |
 
 ##### Returns
 
 `Promise`<`void`\>
 
----
+___
 
 ### BeforeQueued
 
@@ -102,17 +98,17 @@ function should be queued. If this function rejects, a transaction is not queued
 
 ##### Parameters
 
-| Name         | Type                           |
-| :----------- | :----------------------------- |
-| `id`         | `TransactionId`                |
-| `intent`     | `TxIntent`                     |
+| Name | Type |
+| :------ | :------ |
+| `id` | `TransactionId` |
+| `intent` | `TxIntent` |
 | `overrides?` | `providers.TransactionRequest` |
 
 ##### Returns
 
 `Promise`<`void`\>
 
----
+___
 
 ### BeforeTransaction
 
@@ -127,43 +123,15 @@ function should execute. If this function rejects, the transaction is cancelled.
 
 ##### Parameters
 
-| Name                 | Type          |
-| :------------------- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `transactionRequest` | `Transaction` |
 
 ##### Returns
 
 `Promise`<`void`\>
 
----
-
-### ContractLoader
-
-Ƭ **ContractLoader**<`T`\>: (`address`: `string`, `provider`: `providers.JsonRpcProvider`, `signer?`: `Wallet`) => `Promise`<`T`\>
-
-#### Type parameters
-
-| Name | Type               |
-| :--- | :----------------- |
-| `T`  | extends `Contract` |
-
-#### Type declaration
-
-▸ (`address`, `provider`, `signer?`): `Promise`<`T`\>
-
-##### Parameters
-
-| Name       | Type                        |
-| :--------- | :-------------------------- |
-| `address`  | `string`                    |
-| `provider` | `providers.JsonRpcProvider` |
-| `signer?`  | `Wallet`                    |
-
-##### Returns
-
-`Promise`<`T`\>
-
----
+___
 
 ### GasPriceSettingProvider
 
@@ -178,15 +146,15 @@ or a string that represents the fact that we should be using one of the automati
 
 ##### Parameters
 
-| Name                 | Type          |
-| :------------------- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `transactionRequest` | `Transaction` |
 
 ##### Returns
 
 `AutoGasSetting` \| `string`
 
----
+___
 
 ### RetryErrorHandler
 
@@ -198,10 +166,10 @@ or a string that represents the fact that we should be using one of the automati
 
 ##### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `i`  | `number` |
-| `e`  | `Error`  |
+| Name | Type |
+| :------ | :------ |
+| `i` | `number` |
+| `e` | `Error` |
 
 ##### Returns
 
@@ -219,18 +187,18 @@ A useful utility function that breaks up the proverbial number line (defined by 
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name          | Type                                                            | Default value | Description                                                                                                             |
-| :------------ | :-------------------------------------------------------------- | :------------ | :---------------------------------------------------------------------------------------------------------------------- |
-| `total`       | `number`                                                        | `undefined`   | the total amount of of items to get                                                                                     |
-| `querySize`   | `number`                                                        | `undefined`   | the chunk size                                                                                                          |
-| `getterFn`    | (`startIdx`: `number`, `endIdx`: `number`) => `Promise`<`T`[]\> | `undefined`   | a function that fetches something, given a start index and end index                                                    |
-| `onProgress?` | (`fractionCompleted`: `number`) => `void`                       | `undefined`   | whenever a chunk is loaded, this function is called with the fraction of individual items that have been loaded so far. |
-| `offset`      | `number`                                                        | `0`           | the index to start fetching, can be used to skip previously fetched elements.                                           |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `total` | `number` | `undefined` | the total amount of of items to get |
+| `querySize` | `number` | `undefined` | the chunk size |
+| `getterFn` | (`startIdx`: `number`, `endIdx`: `number`) => `Promise`<`T`[]\> | `undefined` | a function that fetches something, given a start index and end index |
+| `onProgress?` | (`fractionCompleted`: `number`) => `void` | `undefined` | whenever a chunk is loaded, this function is called with the fraction of individual items that have been loaded so far. |
+| `offset` | `number` | `0` | the index to start fetching, can be used to skip previously fetched elements. |
 
 #### Returns
 
@@ -238,7 +206,7 @@ A useful utility function that breaks up the proverbial number line (defined by 
 
 a list of each of the individual items that were loaded.
 
----
+___
 
 ### assertProperlySigned
 
@@ -248,15 +216,15 @@ Ensures that the given message was properly signed.
 
 #### Parameters
 
-| Name      | Type                        |
-| :-------- | :-------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `message` | `SignedMessage`<`unknown`\> |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### callWithRetry
 
@@ -264,29 +232,31 @@ Ensures that the given message was properly signed.
 
 Calls the given function, retrying it if there is an error.
 
-**`todo`** Get rid of this, and make use of [ContractCaller](classes/ContractCaller.md).
+**`Todo`**
+
+Get rid of this, and make use of [ContractCaller](classes/ContractCaller.md).
 
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name            | Type                                               | Default value              |
-| :-------------- | :------------------------------------------------- | :------------------------- |
-| `fn`            | (...`args`: `any`[]) => `Promise`<`T`\>            | `undefined`                |
-| `args`          | `any`[]                                            | `[]`                       |
-| `onError?`      | [`RetryErrorHandler`](README.md#retryerrorhandler) | `undefined`                |
-| `maxRetries`    | `12`                                               | `DEFAULT_MAX_CALL_RETRIES` |
-| `retryInterval` | `number`                                           | `1000`                     |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `fn` | (...`args`: `any`[]) => `Promise`<`T`\> | `undefined` |
+| `args` | `any`[] | `[]` |
+| `onError?` | [`RetryErrorHandler`](README.md#retryerrorhandler) | `undefined` |
+| `maxRetries` | ``12`` | `DEFAULT_MAX_CALL_RETRIES` |
+| `retryInterval` | `number` | `1000` |
 
 #### Returns
 
 `Promise`<`T`\>
 
----
+___
 
 ### createContract
 
@@ -294,40 +264,24 @@ Calls the given function, retrying it if there is an error.
 
 #### Type parameters
 
-| Name | Type                     |
-| :--- | :----------------------- |
-| `C`  | extends `Contract`<`C`\> |
+| Name | Type |
+| :------ | :------ |
+| `C` | extends `Contract`<`C`\> |
 
 #### Parameters
 
-| Name              | Type                | Description                                        |
-| :---------------- | :------------------ | :------------------------------------------------- |
-| `contractAddress` | `string`            | the address of the contract you want to connect to |
-| `contractABI`     | `ContractInterface` | a javacript object representing the ABI            |
-| `provider`        | `JsonRpcProvider`   | -                                                  |
-| `signer?`         | `Wallet`            | -                                                  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `contractAddress` | `string` | the address of the contract you want to connect to |
+| `contractABI` | `ContractInterface` | a javacript object representing the ABI |
+| `provider` | `JsonRpcProvider` | - |
+| `signer?` | `Wallet` | - |
 
 #### Returns
 
 `C`
 
----
-
-### createEthConnection
-
-▸ **createEthConnection**(`rpcUrl`): `Promise`<[`EthConnection`](classes/EthConnection.md)\>
-
-#### Parameters
-
-| Name     | Type     |
-| :------- | :------- |
-| `rpcUrl` | `string` |
-
-#### Returns
-
-`Promise`<[`EthConnection`](classes/EthConnection.md)\>
-
----
+___
 
 ### ethToWei
 
@@ -337,15 +291,15 @@ Returns the given amount of eth in wei as a big integer.
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `eth` | `number` |
 
 #### Returns
 
 `BigNumber`
 
----
+___
 
 ### getAutoGasPrices
 
@@ -358,27 +312,27 @@ defaults.
 
 `Promise`<`GasPrices`\>
 
----
+___
 
 ### getGasSettingGwei
 
 ▸ **getGasSettingGwei**(`setting`, `gasPrices`): `number` \| `undefined`
 
 Given the user's auto gas setting, and the current set of gas prices on the network, returns the
-preferred gas price. If an invalid {@link AutoGasSetting} is provided, then returns undefined.
+preferred gas price. If an invalid AutoGasSetting is provided, then returns undefined.
 
 #### Parameters
 
-| Name        | Type             |
-| :---------- | :--------------- |
-| `setting`   | `AutoGasSetting` |
-| `gasPrices` | `GasPrices`      |
+| Name | Type |
+| :------ | :------ |
+| `setting` | `AutoGasSetting` |
+| `gasPrices` | `GasPrices` |
 
 #### Returns
 
 `number` \| `undefined`
 
----
+___
 
 ### gweiToWei
 
@@ -388,15 +342,15 @@ Returns the given amount of gwei in wei as a big integer.
 
 #### Parameters
 
-| Name   | Type     |
-| :----- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `gwei` | `number` |
 
 #### Returns
 
 `BigNumber`
 
----
+___
 
 ### isPurchase
 
@@ -406,34 +360,15 @@ Whether or not some value is being transferred in this transaction.
 
 #### Parameters
 
-| Name  | Type                 |
-| :---- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `tx?` | `TransactionRequest` |
 
 #### Returns
 
 `boolean`
 
----
-
-### makeProvider
-
-▸ **makeProvider**(`rpcUrl`): `providers.JsonRpcProvider`
-
-Creates a new {@link JsonRpcProvider}, and makes sure that it's connected to xDai if we're in
-production.
-
-#### Parameters
-
-| Name     | Type     |
-| :------- | :------- |
-| `rpcUrl` | `string` |
-
-#### Returns
-
-`providers.JsonRpcProvider`
-
----
+___
 
 ### neverResolves
 
@@ -445,7 +380,7 @@ A function that just never resolves.s
 
 `Promise`<`void`\>
 
----
+___
 
 ### verifySignature
 
@@ -455,17 +390,17 @@ Returns whether or not the given message was signed by the given address.
 
 #### Parameters
 
-| Name        | Type                        |
-| :---------- | :-------------------------- |
-| `message`   | `string`                    |
-| `signature` | `string`                    |
-| `addr`      | `undefined` \| `EthAddress` |
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` |
+| `signature` | `string` |
+| `addr` | `undefined` \| `EthAddress` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### waitForTransaction
 
@@ -475,16 +410,16 @@ Given a transaction hash and a JsonRpcProvider, waits for the given transaction 
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `provider` | `JsonRpcProvider` |
-| `txHash`   | `string`          |
+| `txHash` | `string` |
 
 #### Returns
 
 `Promise`<`providers.TransactionReceipt`\>
 
----
+___
 
 ### weiToEth
 
@@ -494,15 +429,15 @@ Returns the given amount of wei in gwei as a number.
 
 #### Parameters
 
-| Name  | Type        |
-| :---- | :---------- |
+| Name | Type |
+| :------ | :------ |
 | `wei` | `BigNumber` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### weiToGwei
 
@@ -512,8 +447,8 @@ Returns the given amount of wei in gwei as a number.
 
 #### Parameters
 
-| Name  | Type        |
-| :---- | :---------- |
+| Name | Type |
+| :------ | :------ |
 | `wei` | `BigNumber` |
 
 #### Returns

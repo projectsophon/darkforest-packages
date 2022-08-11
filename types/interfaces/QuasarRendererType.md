@@ -15,7 +15,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Draws all queued Quasars.
 
 `void`
 
----
+___
 
 ### queueQuasar
 
@@ -41,11 +41,11 @@ The implementing renderer should contains its own back buffer.
 
 #### Parameters
 
-| Name      | Type                                      | Description                                                                  |
-| :-------- | :---------------------------------------- | :--------------------------------------------------------------------------- |
-| `planet`  | [`Planet`](../README.md#planet)           | an object that contains info about the current Quasar planet                 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `planet` | [`Planet`](../README.md#planet) | an object that contains info about the current Quasar planet |
 | `centerW` | [`WorldCoords`](../README.md#worldcoords) | represents the coordinates of the current Quasar relative to the game world. |
-| `radiusW` | `number`                                  | represents the radius of the Quasar relative to the size of the game world.  |
+| `radiusW` | `number` | represents the radius of the Quasar relative to the size of the game world. |
 
 #### Returns
 

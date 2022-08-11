@@ -2,13 +2,13 @@
 
 ## Table of contents
 
-### Type aliases
+### Type Aliases
 
 - [ArtifactFileColor](README.md#artifactfilecolor)
 
 ### Variables
 
-- [ArtifactFileColor](README.md#artifactfilecolor)
+- [ArtifactFileColor](README.md#artifactfilecolor-1)
 - [RelicsList](README.md#relicslist)
 
 ### Functions
@@ -45,11 +45,11 @@
 - [setForceAncient](README.md#setforceancient)
 - [timeUntilNextBroadcastAvailable](README.md#timeuntilnextbroadcastavailable)
 
-## Type aliases
+## Type Aliases
 
 ### ArtifactFileColor
 
-Ƭ **ArtifactFileColor**: `Abstract`<`number`, `"ArtifactFileColor"`\>
+Ƭ **ArtifactFileColor**: `Abstract`<`number`, ``"ArtifactFileColor"``\>
 
 ## Variables
 
@@ -59,12 +59,12 @@
 
 #### Type declaration
 
-| Name             | Type                                               |
-| :--------------- | :------------------------------------------------- |
-| `APP_BACKGROUND` | [`ArtifactFileColor`](README.md#artifactfilecolor) |
-| `BLUE`           | [`ArtifactFileColor`](README.md#artifactfilecolor) |
+| Name | Type |
+| :------ | :------ |
+| `APP_BACKGROUND` | [`ArtifactFileColor`](README.md#artifactfilecolor-1) |
+| `BLUE` | [`ArtifactFileColor`](README.md#artifactfilecolor-1) |
 
----
+___
 
 ### RelicsList
 
@@ -78,15 +78,15 @@
 
 #### Parameters
 
-| Name       | Type       |
-| :--------- | :--------- |
+| Name | Type |
+| :------ | :------ |
 | `artifact` | `Artifact` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### artifactBiomeName
 
@@ -94,15 +94,15 @@
 
 #### Parameters
 
-| Name       | Type       |
-| :--------- | :--------- |
+| Name | Type |
+| :------ | :------ |
 | `artifact` | `Artifact` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### artifactFileName
 
@@ -110,19 +110,19 @@
 
 #### Parameters
 
-| Name         | Type                                                                    | Default value |
-| :----------- | :---------------------------------------------------------------------- | :------------ |
-| `videoMode`  | `boolean`                                                               | `undefined`   |
-| `thumb`      | `boolean`                                                               | `undefined`   |
-| `artifact`   | `RenderedArtifact`                                                      | `undefined`   |
-| `color`      | [`ArtifactFileColor`](README.md#artifactfilecolor)                      | `undefined`   |
-| `debugProps` | `undefined` \| { `forceAncient`: `boolean` ; `skipCaching`: `boolean` } | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `videoMode` | `boolean` | `undefined` |
+| `thumb` | `boolean` | `undefined` |
+| `artifact` | `RenderedArtifact` | `undefined` |
+| `color` | [`ArtifactFileColor`](README.md#artifactfilecolor-1) | `undefined` |
+| `debugProps` | `undefined` \| { `forceAncient`: `boolean` ; `skipCaching`: `boolean`  } | `undefined` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### artifactRoll
 
@@ -130,15 +130,15 @@
 
 #### Parameters
 
-| Name | Type         |
-| :--- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `id` | `ArtifactId` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### biomeName
 
@@ -146,7 +146,7 @@
 
 #### Parameters
 
-| Name    | Type    |
+| Name | Type |
 | :------ | :------ |
 | `biome` | `Biome` |
 
@@ -154,7 +154,7 @@
 
 `string`
 
----
+___
 
 ### canActivateArtifact
 
@@ -162,17 +162,17 @@
 
 #### Parameters
 
-| Name                | Type                    |
-| :------------------ | :---------------------- |
-| `artifact`          | `Artifact`              |
-| `planet`            | `undefined` \| `Planet` |
-| `artifactsOnPlanet` | `Artifact`[]            |
+| Name | Type |
+| :------ | :------ |
+| `artifact` | `Artifact` |
+| `planet` | `undefined` \| `Planet` |
+| `artifactsOnPlanet` | `Artifact`[] |
 
 #### Returns
 
 `undefined` \| `boolean`
 
----
+___
 
 ### canDepositArtifact
 
@@ -180,17 +180,17 @@
 
 #### Parameters
 
-| Name       | Type         |
-| :--------- | :----------- |
-| `account`  | `EthAddress` |
-| `artifact` | `Artifact`   |
-| `planet?`  | `Planet`     |
+| Name | Type |
+| :------ | :------ |
+| `account` | `EthAddress` |
+| `artifact` | `Artifact` |
+| `planet?` | `Planet` |
 
 #### Returns
 
 `undefined` \| `boolean`
 
----
+___
 
 ### canWithdrawArtifact
 
@@ -198,17 +198,17 @@
 
 #### Parameters
 
-| Name       | Type         |
-| :--------- | :----------- |
-| `account`  | `EthAddress` |
-| `artifact` | `Artifact`   |
-| `planet?`  | `Planet`     |
+| Name | Type |
+| :------ | :------ |
+| `account` | `EthAddress` |
+| `artifact` | `Artifact` |
+| `planet?` | `Planet` |
 
 #### Returns
 
 `undefined` \| `boolean`
 
----
+___
 
 ### dateMintedAt
 
@@ -216,15 +216,15 @@
 
 #### Parameters
 
-| Name       | Type                      |
-| :--------- | :------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `artifact` | `undefined` \| `Artifact` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### durationUntilArtifactAvailable
 
@@ -232,15 +232,15 @@
 
 #### Parameters
 
-| Name       | Type       |
-| :--------- | :--------- |
+| Name | Type |
+| :------ | :------ |
 | `artifact` | `Artifact` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### formatNumber
 
@@ -248,16 +248,16 @@
 
 #### Parameters
 
-| Name       | Type     | Default value |
-| :--------- | :------- | :------------ |
-| `num`      | `number` | `undefined`   |
-| `smallDec` | `number` | `0`           |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `num` | `number` | `undefined` |
+| `smallDec` | `number` | `0` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getActivatedArtifact
 
@@ -265,15 +265,15 @@
 
 #### Parameters
 
-| Name        | Type         |
-| :---------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `artifacts` | `Artifact`[] |
 
 #### Returns
 
 `Artifact` \| `undefined`
 
----
+___
 
 ### getActiveBlackDomain
 
@@ -281,15 +281,15 @@
 
 #### Parameters
 
-| Name        | Type         |
-| :---------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `artifacts` | `Artifact`[] |
 
 #### Returns
 
 `Artifact` \| `undefined`
 
----
+___
 
 ### getArtifactDebugName
 
@@ -297,15 +297,15 @@
 
 #### Parameters
 
-| Name | Type       |
-| :--- | :--------- |
+| Name | Type |
+| :------ | :------ |
 | `a?` | `Artifact` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getPlanetRank
 
@@ -313,15 +313,15 @@
 
 #### Parameters
 
-| Name     | Type                    |
-| :------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `undefined` \| `Planet` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### getPlayerControlledSpaceships
 
@@ -329,36 +329,38 @@
 
 #### Parameters
 
-| Name        | Type                                         |
-| :---------- | :------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `artifacts` | `undefined` \| (`undefined` \| `Artifact`)[] |
-| `owner`     | `undefined` \| `EthAddress`                  |
+| `owner` | `undefined` \| `EthAddress` |
 
 #### Returns
 
 (`undefined` \| `Artifact`)[]
 
----
+___
 
 ### getRange
 
 ▸ **getRange**(`planet`, `percentEnergySending?`, `rangeBoost?`): `number`
 
-**`todo`** - planet class
+**`Todo`**
+
+- planet class
 
 #### Parameters
 
-| Name                   | Type     | Default value | Description                                                                                                                  |
-| :--------------------- | :------- | :------------ | :--------------------------------------------------------------------------------------------------------------------------- |
-| `planet`               | `Planet` | `undefined`   | -                                                                                                                            |
-| `percentEnergySending` | `number` | `100`         | -                                                                                                                            |
-| `rangeBoost`           | `number` | `1`           | A multiplier to be applied to the resulting range. Currently used for calculating boost associated with abandoning a planet. |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `planet` | `Planet` | `undefined` | - |
+| `percentEnergySending` | `number` | `100` | - |
+| `rangeBoost` | `number` | `1` | A multiplier to be applied to the resulting range. Currently used for calculating boost associated with abandoning a planet. |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### hasOwner
 
@@ -366,15 +368,15 @@
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `Planet` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### hasStatBoost
 
@@ -382,15 +384,15 @@
 
 #### Parameters
 
-| Name   | Type                          |
-| :----- | :---------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `type` | `undefined` \| `ArtifactType` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### isActivated
 
@@ -398,15 +400,15 @@
 
 #### Parameters
 
-| Name       | Type                      |
-| :--------- | :------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `artifact` | `undefined` \| `Artifact` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### isAncient
 
@@ -414,15 +416,15 @@
 
 #### Parameters
 
-| Name       | Type               |
-| :--------- | :----------------- |
+| Name | Type |
+| :------ | :------ |
 | `artifact` | `RenderedArtifact` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### isBasic
 
@@ -430,15 +432,15 @@
 
 #### Parameters
 
-| Name   | Type           |
-| :----- | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `type` | `ArtifactType` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### isEmojiFlagMessage
 
@@ -446,15 +448,15 @@
 
 #### Parameters
 
-| Name            | Type                        |
-| :-------------- | :-------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `planetMessage` | `PlanetMessage`<`unknown`\> |
 
 #### Returns
 
 planetMessage is PlanetMessage<EmojiFlagBody\>
 
----
+___
 
 ### isLocatable
 
@@ -462,15 +464,15 @@ planetMessage is PlanetMessage<EmojiFlagBody\>
 
 #### Parameters
 
-| Name      | Type     |
-| :-------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `planet?` | `Planet` |
 
 #### Returns
 
 planet is LocatablePlanet
 
----
+___
 
 ### isRelic
 
@@ -478,15 +480,15 @@ planet is LocatablePlanet
 
 #### Parameters
 
-| Name   | Type           |
-| :----- | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `type` | `ArtifactType` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### isSpaceShip
 
@@ -494,15 +496,15 @@ planet is LocatablePlanet
 
 #### Parameters
 
-| Name   | Type                          |
-| :----- | :---------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `type` | `undefined` \| `ArtifactType` |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### levelFromRarity
 
@@ -510,15 +512,15 @@ planet is LocatablePlanet
 
 #### Parameters
 
-| Name     | Type             |
-| :------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `rarity` | `ArtifactRarity` |
 
 #### Returns
 
 `PlanetLevel`
 
----
+___
 
 ### rarityName
 
@@ -526,15 +528,15 @@ planet is LocatablePlanet
 
 #### Parameters
 
-| Name     | Type             |
-| :------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `rarity` | `ArtifactRarity` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### rarityNameFromArtifact
 
@@ -542,15 +544,15 @@ planet is LocatablePlanet
 
 #### Parameters
 
-| Name | Type       |
-| :--- | :--------- |
-| `a`  | `Artifact` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `Artifact` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### setForceAncient
 
@@ -558,15 +560,15 @@ planet is LocatablePlanet
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `force` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### timeUntilNextBroadcastAvailable
 
@@ -576,10 +578,10 @@ Gets the time (ms) until we can broadcast the coordinates of a planet.
 
 #### Parameters
 
-| Name                     | Type                    |
-| :----------------------- | :---------------------- |
-| `lastRevealTimestamp`    | `undefined` \| `number` |
-| `locationRevealCooldown` | `number`                |
+| Name | Type |
+| :------ | :------ |
+| `lastRevealTimestamp` | `undefined` \| `number` |
+| `locationRevealCooldown` | `number` |
 
 #### Returns
 

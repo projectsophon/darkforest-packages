@@ -15,7 +15,7 @@ A object containing a pair of x,y coordinates.
 
 • **x**: `number`
 
----
+___
 
 ### y
 

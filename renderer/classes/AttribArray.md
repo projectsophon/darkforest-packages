@@ -29,10 +29,10 @@ typed JS Arrays so that we can efficiently write our WebGL data without converti
 
 #### Parameters
 
-| Name        | Type         | Default value |
-| :---------- | :----------- | :------------ |
-| `type`      | `AttribType` | `undefined`   |
-| `startSize` | `number`     | `4`           |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `type` | `AttribType` | `undefined` |
+| `startSize` | `number` | `4` |
 
 ## Properties
 
@@ -42,7 +42,7 @@ typed JS Arrays so that we can efficiently write our WebGL data without converti
 
 A typed array, representing the data in this array.
 
----
+___
 
 ### size
 
@@ -50,7 +50,7 @@ A typed array, representing the data in this array.
 
 The number of bytes per data entry in this array.
 
----
+___
 
 ### type
 
@@ -70,7 +70,7 @@ Initialize a new blank array of size this.size.
 
 `void`
 
----
+___
 
 ### doubleLen
 
@@ -82,7 +82,7 @@ Initialize a new array of 2x the length, and copy in the old data.
 
 `void`
 
----
+___
 
 ### set
 
@@ -93,10 +93,10 @@ array length will trigger doubleLen().
 
 #### Parameters
 
-| Name  | Type                   | Description                  |
-| :---- | :--------------------- | :--------------------------- |
-| `els` | `ArrayLike`<`number`\> | The array of data to copy.   |
-| `idx` | `number`               | The array index to start at. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `els` | `ArrayLike`<`number`\> | The array of data to copy. |
+| `idx` | `number` | The array index to start at. |
 
 #### Returns
 

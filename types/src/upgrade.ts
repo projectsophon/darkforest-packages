@@ -1,4 +1,4 @@
-import type { Abstract } from './utility';
+import type { Abstract } from "./utility";
 
 /**
  * The effects of an upgrade on the stats of a planet. Both upgrades purchased
@@ -33,7 +33,7 @@ export type UpgradeState = [number, number, number];
 /**
  * Abstract type representing an upgrade branch.
  */
-export type UpgradeBranchName = Abstract<number, 'UpgradeBranchName'>;
+export type UpgradeBranchName = Abstract<number, "UpgradeBranchName">;
 
 /**
  * Enumeration of the three upgrade branches.

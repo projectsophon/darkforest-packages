@@ -33,10 +33,10 @@
 
 #### Parameters
 
-| Name     | Type                     |
-| :------- | :----------------------- |
-| `canvas` | `HTMLCanvasElement`      |
-| `attr?`  | `WebGLContextAttributes` |
+| Name | Type |
+| :------ | :------ |
+| `canvas` | `HTMLCanvasElement` |
+| `attr?` | `WebGLContextAttributes` |
 
 ## Properties
 
@@ -44,19 +44,19 @@
 
 • **canvas**: `HTMLCanvasElement`
 
----
+___
 
 ### gl
 
 • **gl**: `WebGL2RenderingContext`
 
----
+___
 
 ### projectionMatrix
 
 • **projectionMatrix**: `mat4`
 
----
+___
 
 ### texIdx
 
@@ -70,16 +70,16 @@
 
 #### Parameters
 
-| Name     | Type      |
-| :------- | :-------- |
-| `bits?`  | `number`  |
+| Name | Type |
+| :------ | :------ |
+| `bits?` | `number` |
 | `color?` | `RGBAVec` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### getTexIdx
 
@@ -89,7 +89,7 @@
 
 `number`
 
----
+___
 
 ### setProjectionMatrix
 

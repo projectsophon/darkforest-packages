@@ -34,10 +34,10 @@
 
 #### Parameters
 
-| Name       | Type                      |
-| :--------- | :------------------------ |
-| `engine`   | [`Renderer`](Renderer.md) |
-| `glCanvas` | `HTMLCanvasElement`       |
+| Name | Type |
+| :------ | :------ |
+| `engine` | [`Renderer`](Renderer.md) |
+| `glCanvas` | `HTMLCanvasElement` |
 
 #### Overrides
 
@@ -53,7 +53,7 @@
 
 [WebGLManager](WebGLManager.md).[canvas](WebGLManager.md#canvas)
 
----
+___
 
 ### gl
 
@@ -63,13 +63,13 @@
 
 [WebGLManager](WebGLManager.md).[gl](WebGLManager.md#gl)
 
----
+___
 
 ### isHighPerf
 
-• **isHighPerf**: `boolean`
+• **isHighPerf**: `boolean` = `false`
 
----
+___
 
 ### projectionMatrix
 
@@ -79,7 +79,7 @@
 
 [WebGLManager](WebGLManager.md).[projectionMatrix](WebGLManager.md#projectionmatrix)
 
----
+___
 
 ### renderer
 
@@ -99,7 +99,7 @@
 
 [WebGLManager](WebGLManager.md).[clear](WebGLManager.md#clear)
 
----
+___
 
 ### getTexIdx
 
@@ -113,7 +113,7 @@
 
 [WebGLManager](WebGLManager.md).[getTexIdx](WebGLManager.md#gettexidx)
 
----
+___
 
 ### setProjectionMatrix
 

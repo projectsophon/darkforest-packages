@@ -11,7 +11,6 @@ You can install this package using [`npm`](https://www.npmjs.com) or
 ```bash
 npm install --save @projectsophon/constants
 ```
-
 ```bash
 yarn add @projectsophon/constants
 ```
@@ -19,53 +18,53 @@ yarn add @projectsophon/constants
 When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
 
 ```js
-import * as constants from "http://cdn.skypack.dev/@projectsophon/constants";
+import * as constants from 'http://cdn.skypack.dev/@projectsophon/constants'
 ```
 
 ## Table of contents
 
 ### Variables
 
-- [BLOCK_EXPLORER_URL](README.md#block_explorer_url)
-- [CONTRACT_PRECISION](README.md#contract_precision)
-- [DEFAULT_GAS_PRICES](README.md#default_gas_prices)
-- [DEFAULT_MAX_CALL_RETRIES](README.md#default_max_call_retries)
-- [EMPTY_ADDRESS](README.md#empty_address)
-- [EMPTY_ARTIFACT_ID](README.md#empty_artifact_id)
-- [EMPTY_LOCATION_ID](README.md#empty_location_id)
-- [GAS_PRICES_INTERVAL_MS](README.md#gas_prices_interval_ms)
-- [GAS_PRICE_API](README.md#gas_price_api)
-- [HAT_SIZES](README.md#hat_sizes)
-- [LOCATION_ID_UB](README.md#location_id_ub)
-- [MAX_ARTIFACT_RARITY](README.md#max_artifact_rarity)
-- [MAX_ARTIFACT_TYPE](README.md#max_artifact_type)
-- [MAX_AUTO_GAS_PRICE_GWEI](README.md#max_auto_gas_price_gwei)
-- [MAX_BIOME](README.md#max_biome)
-- [MAX_PLANET_LEVEL](README.md#max_planet_level)
-- [MAX_SPACESHIP_TYPE](README.md#max_spaceship_type)
-- [MIN_ARTIFACT_RARITY](README.md#min_artifact_rarity)
-- [MIN_ARTIFACT_TYPE](README.md#min_artifact_type)
-- [MIN_BIOME](README.md#min_biome)
-- [MIN_PLANET_LEVEL](README.md#min_planet_level)
-- [MIN_SPACESHIP_TYPE](README.md#min_spaceship_type)
-- [PLANET_CLAIM_MIN_LEVEL](README.md#planet_claim_min_level)
-- [RECOMMENDED_MODAL_WIDTH](README.md#recommended_modal_width)
+- [BLOCK\_EXPLORER\_URL](README.md#block_explorer_url)
+- [CONTRACT\_PRECISION](README.md#contract_precision)
+- [DEFAULT\_GAS\_PRICES](README.md#default_gas_prices)
+- [DEFAULT\_MAX\_CALL\_RETRIES](README.md#default_max_call_retries)
+- [EMPTY\_ADDRESS](README.md#empty_address)
+- [EMPTY\_ARTIFACT\_ID](README.md#empty_artifact_id)
+- [EMPTY\_LOCATION\_ID](README.md#empty_location_id)
+- [GAS\_PRICES\_INTERVAL\_MS](README.md#gas_prices_interval_ms)
+- [GAS\_PRICE\_API](README.md#gas_price_api)
+- [HAT\_SIZES](README.md#hat_sizes)
+- [LOCATION\_ID\_UB](README.md#location_id_ub)
+- [MAX\_ARTIFACT\_RARITY](README.md#max_artifact_rarity)
+- [MAX\_ARTIFACT\_TYPE](README.md#max_artifact_type)
+- [MAX\_AUTO\_GAS\_PRICE\_GWEI](README.md#max_auto_gas_price_gwei)
+- [MAX\_BIOME](README.md#max_biome)
+- [MAX\_PLANET\_LEVEL](README.md#max_planet_level)
+- [MAX\_SPACESHIP\_TYPE](README.md#max_spaceship_type)
+- [MIN\_ARTIFACT\_RARITY](README.md#min_artifact_rarity)
+- [MIN\_ARTIFACT\_TYPE](README.md#min_artifact_type)
+- [MIN\_BIOME](README.md#min_biome)
+- [MIN\_PLANET\_LEVEL](README.md#min_planet_level)
+- [MIN\_SPACESHIP\_TYPE](README.md#min_spaceship_type)
+- [PLANET\_CLAIM\_MIN\_LEVEL](README.md#planet_claim_min_level)
+- [RECOMMENDED\_MODAL\_WIDTH](README.md#recommended_modal_width)
 - [SpecialKey](README.md#specialkey)
-- [THEGRAPH_API_URL](README.md#thegraph_api_url)
+- [THEGRAPH\_API\_URL](README.md#thegraph_api_url)
 
 ## Variables
 
-### BLOCK_EXPLORER_URL
+### BLOCK\_EXPLORER\_URL
 
-• `Const` **BLOCK_EXPLORER_URL**: `"https://dashboard.tenderly.co/tx/xdai"`
+• `Const` **BLOCK\_EXPLORER\_URL**: ``"https://dashboard.tenderly.co/tx/xdai"``
 
 The URL to the block explorer for the chain being used. Prepended to transaction links, etc
 
----
+___
 
-### CONTRACT_PRECISION
+### CONTRACT\_PRECISION
 
-• `Const` **CONTRACT_PRECISION**: `1000`
+• `Const` **CONTRACT\_PRECISION**: ``1000``
 
 The precision of Energy & Silver stored in the Dark Forest smart contracts.
 
@@ -73,189 +72,189 @@ Energy and Silver are not stored as floats in the smart contracts,
 so any of those values coming from the contracts need to be divided by `CONTRACT_PRECISION`
 and any values being sent to the contract need to be multiplied by `CONTRACT_PRECISION`.
 
----
+___
 
-### DEFAULT_GAS_PRICES
+### DEFAULT\_GAS\_PRICES
 
-• `Const` **DEFAULT_GAS_PRICES**: `GasPrices`
+• `Const` **DEFAULT\_GAS\_PRICES**: `GasPrices`
 
 In case we cannot load gas prices from xDai, these are the default auto gas prices.
 
----
+___
 
-### DEFAULT_MAX_CALL_RETRIES
+### DEFAULT\_MAX\_CALL\_RETRIES
 
-• `Const` **DEFAULT_MAX_CALL_RETRIES**: `12`
+• `Const` **DEFAULT\_MAX\_CALL\_RETRIES**: ``12``
 
-By default, the various {@link ContractCaller} will retry a blockchain read this many times.
+By default, the various ContractCaller will retry a blockchain read this many times.
 
----
+___
 
-### EMPTY_ADDRESS
+### EMPTY\_ADDRESS
 
-• `Const` **EMPTY_ADDRESS**: `EthAddress`
+• `Const` **EMPTY\_ADDRESS**: `EthAddress`
 
 The 0x0 Ethereum address, which is used for unowned planets, artifacts without an owner, etc.
 
----
+___
 
-### EMPTY_ARTIFACT_ID
+### EMPTY\_ARTIFACT\_ID
 
-• `Const` **EMPTY_ARTIFACT_ID**: `ArtifactId`
+• `Const` **EMPTY\_ARTIFACT\_ID**: `ArtifactId`
 
 A blank ArtifactID (all zeros).
 
----
+___
 
-### EMPTY_LOCATION_ID
+### EMPTY\_LOCATION\_ID
 
-• `Const` **EMPTY_LOCATION_ID**: `LocationId`
+• `Const` **EMPTY\_LOCATION\_ID**: `LocationId`
 
 A blank LocationID (all zeros).
 
----
+___
 
-### GAS_PRICES_INTERVAL_MS
+### GAS\_PRICES\_INTERVAL\_MS
 
-• `Const` **GAS_PRICES_INTERVAL_MS**: `60000`
+• `Const` **GAS\_PRICES\_INTERVAL\_MS**: ``60000``
 
 The amount of time between gas price refreshes when fetching prices from the oracle.
 
----
+___
 
-### GAS_PRICE_API
+### GAS\_PRICE\_API
 
-• `Const` **GAS_PRICE_API**: `"https://blockscout.com/xdai/mainnet/api/v1/gas-price-oracle"`
+• `Const` **GAS\_PRICE\_API**: ``"https://blockscout.com/xdai/mainnet/api/v1/gas-price-oracle"``
 
 The URL for xDai's API that returns the gas prices for 35th, 60th, and 90th percentiles of gas prices in the
 previous 200 blocks. Useful for auto gas price setting.
 
 https://www.xdaichain.com/for-developers/developer-resources/gas-price-oracle
 
----
+___
 
-### HAT_SIZES
+### HAT\_SIZES
 
-• `Const` **HAT_SIZES**: `string`[]
+• `Const` **HAT\_SIZES**: `string`[]
 
----
+___
 
-### LOCATION_ID_UB
+### LOCATION\_ID\_UB
 
-• `Const` **LOCATION_ID_UB**: `BigInteger`
+• `Const` **LOCATION\_ID\_UB**: `bigint`
 
 The upper-bounds of a LocationID.
 
 Represents the maximum possible value that the MiMC hash function (used for IDing locations in the universe) can output.
 A LocationID must be less than `LOCATION_ID_UB / PLANET_RARITY` in order to be considered a valid planet.
 
----
+___
 
-### MAX_ARTIFACT_RARITY
+### MAX\_ARTIFACT\_RARITY
 
-• `Const` **MAX_ARTIFACT_RARITY**: `ArtifactRarity` = `ArtifactRarity.Mythic`
+• `Const` **MAX\_ARTIFACT\_RARITY**: `ArtifactRarity` = `ArtifactRarity.Mythic`
 
 The value of the maximum, valid artifact rarity
 
----
+___
 
-### MAX_ARTIFACT_TYPE
+### MAX\_ARTIFACT\_TYPE
 
-• `Const` **MAX_ARTIFACT_TYPE**: `ArtifactType` = `ArtifactType.ShipTitan`
+• `Const` **MAX\_ARTIFACT\_TYPE**: `ArtifactType` = `ArtifactType.ShipTitan`
 
 The value of the maximum, valid artifact type
 
----
+___
 
-### MAX_AUTO_GAS_PRICE_GWEI
+### MAX\_AUTO\_GAS\_PRICE\_GWEI
 
-• `Const` **MAX_AUTO_GAS_PRICE_GWEI**: `15`
+• `Const` **MAX\_AUTO\_GAS\_PRICE\_GWEI**: ``15``
 
 In case xDai's auto-price is something ridiculous, we don't want our players to insta run out of
 money.
 
----
+___
 
-### MAX_BIOME
+### MAX\_BIOME
 
-• `Const` **MAX_BIOME**: `Biome` = `Biome.CORRUPTED`
+• `Const` **MAX\_BIOME**: `Biome` = `Biome.CORRUPTED`
 
 The value of the maximum, valid biome
 
----
+___
 
-### MAX_PLANET_LEVEL
+### MAX\_PLANET\_LEVEL
 
-• `Const` **MAX_PLANET_LEVEL**: `PlanetLevel` = `PlanetLevel.NINE`
+• `Const` **MAX\_PLANET\_LEVEL**: `PlanetLevel` = `PlanetLevel.NINE`
 
 The value of the maximum, valid planet level
 
----
+___
 
-### MAX_SPACESHIP_TYPE
+### MAX\_SPACESHIP\_TYPE
 
-• `Const` **MAX_SPACESHIP_TYPE**: `ArtifactType` = `ArtifactType.ShipTitan`
+• `Const` **MAX\_SPACESHIP\_TYPE**: `ArtifactType` = `ArtifactType.ShipTitan`
 
 The value of the maximum, valid spaceship type
 
----
+___
 
-### MIN_ARTIFACT_RARITY
+### MIN\_ARTIFACT\_RARITY
 
-• `Const` **MIN_ARTIFACT_RARITY**: `ArtifactRarity` = `ArtifactRarity.Common`
+• `Const` **MIN\_ARTIFACT\_RARITY**: `ArtifactRarity` = `ArtifactRarity.Common`
 
 The value of the minimum, valid artifact rarity
 
----
+___
 
-### MIN_ARTIFACT_TYPE
+### MIN\_ARTIFACT\_TYPE
 
-• `Const` **MIN_ARTIFACT_TYPE**: `ArtifactType` = `ArtifactType.Monolith`
+• `Const` **MIN\_ARTIFACT\_TYPE**: `ArtifactType` = `ArtifactType.Monolith`
 
 The value of the minimum, valid artifact type
 
----
+___
 
-### MIN_BIOME
+### MIN\_BIOME
 
-• `Const` **MIN_BIOME**: `Biome` = `Biome.OCEAN`
+• `Const` **MIN\_BIOME**: `Biome` = `Biome.OCEAN`
 
 The value of the minimum, valid biome
 
----
+___
 
-### MIN_PLANET_LEVEL
+### MIN\_PLANET\_LEVEL
 
-• `Const` **MIN_PLANET_LEVEL**: `PlanetLevel` = `PlanetLevel.ZERO`
+• `Const` **MIN\_PLANET\_LEVEL**: `PlanetLevel` = `PlanetLevel.ZERO`
 
 The value of the minimum, valid planet level
 
----
+___
 
-### MIN_SPACESHIP_TYPE
+### MIN\_SPACESHIP\_TYPE
 
-• `Const` **MIN_SPACESHIP_TYPE**: `ArtifactType` = `ArtifactType.ShipMothership`
+• `Const` **MIN\_SPACESHIP\_TYPE**: `ArtifactType` = `ArtifactType.ShipMothership`
 
 The value of the minimum, valid spaceship type
 
----
+___
 
-### PLANET_CLAIM_MIN_LEVEL
+### PLANET\_CLAIM\_MIN\_LEVEL
 
-• `Const` **PLANET_CLAIM_MIN_LEVEL**: `3`
+• `Const` **PLANET\_CLAIM\_MIN\_LEVEL**: ``3``
 
 The minimum level required for claiming a planet.
 
----
+___
 
-### RECOMMENDED_MODAL_WIDTH
+### RECOMMENDED\_MODAL\_WIDTH
 
-• `Const` **RECOMMENDED_MODAL_WIDTH**: `"400px"`
+• `Const` **RECOMMENDED\_MODAL\_WIDTH**: ``"400px"``
 
-{@link PlanetContextPane} is this wide, and all the subpanes of that modal also try to stay this
+PlanetContextPane is this wide, and all the subpanes of that modal also try to stay this
 size as well.
 
----
+___
 
 ### SpecialKey
 
@@ -265,18 +264,18 @@ Keys to handle in a special fashion when dealing with key presses
 
 #### Type declaration
 
-| Name      | Type        |
-| :-------- | :---------- |
-| `Control` | `"Control"` |
-| `Escape`  | `"Escape"`  |
-| `Shift`   | `"Shift"`   |
-| `Space`   | `" "`       |
-| `Tab`     | `"Tab"`     |
+| Name | Type |
+| :------ | :------ |
+| `Control` | ``"Control"`` |
+| `Escape` | ``"Escape"`` |
+| `Shift` | ``"Shift"`` |
+| `Space` | ``" "`` |
+| `Tab` | ``"Tab"`` |
 
----
+___
 
-### THEGRAPH_API_URL
+### THEGRAPH\_API\_URL
 
-• `Const` **THEGRAPH_API_URL**: `"https://api.thegraph.com/subgraphs/name/darkforest-eth/dark-forest-v06-round-5"`
+• `Const` **THEGRAPH\_API\_URL**: ``"https://api.thegraph.com/subgraphs/name/darkforest-eth/dark-forest-v06-round-5"``
 
 This should be updated every round.

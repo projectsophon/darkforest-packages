@@ -16,7 +16,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -30,7 +30,7 @@ Draws all discovered space
 
 `void`
 
----
+___
 
 ### queueChunk
 
@@ -43,15 +43,15 @@ Called by the game to draw a chunk of the background. A chunk is a square sectio
 
 #### Parameters
 
-| Name    | Type                | Description                                                                                                   |
-| :------ | :------------------ | :------------------------------------------------------------------------------------------------------------ |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `chunk` | [`Chunk`](Chunk.md) | a variable that contains information on the chunk being drawn. A chunk is rectangle section of the background |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setColorConfiguration
 
@@ -61,13 +61,13 @@ In the Darkforest settings players can choose to set their own color configurati
 
 #### Parameters
 
-| Name               | Type     |
-| :----------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `innerNebulaColor` | `string` |
-| `nebulaColor`      | `string` |
-| `spaceColor`       | `string` |
-| `deepSpaceColor`   | `string` |
-| `deadSpaceColor`   | `string` |
+| `nebulaColor` | `string` |
+| `spaceColor` | `string` |
+| `deepSpaceColor` | `string` |
+| `deadSpaceColor` | `string` |
 
 #### Returns
 

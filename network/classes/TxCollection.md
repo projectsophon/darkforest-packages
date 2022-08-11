@@ -46,8 +46,8 @@ Internally records the given transaction.
 
 #### Parameters
 
-| Name | Type                       |
-| :--- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `tx` | `Transaction`<`TxIntent`\> |
 
 #### Returns
@@ -58,7 +58,7 @@ Internally records the given transaction.
 
 TransactionCollection.addTransaction
 
----
+___
 
 ### getTransactions
 
@@ -68,14 +68,14 @@ Gets all transactions which are filtered to a particular type given a predicate.
 
 #### Type parameters
 
-| Name | Type               |
-| :--- | :----------------- |
-| `T`  | extends `TxIntent` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `TxIntent` |
 
 #### Parameters
 
-| Name                   | Type                                                      |
-| :--------------------- | :-------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `transactionPredicate` | (`u`: `Transaction`<`TxIntent`\>) => u is Transaction<T\> |
 
 #### Returns
@@ -86,7 +86,7 @@ Gets all transactions which are filtered to a particular type given a predicate.
 
 TransactionCollection.getTransactions
 
----
+___
 
 ### hasTransaction
 
@@ -97,14 +97,14 @@ predicate.
 
 #### Type parameters
 
-| Name | Type               |
-| :--- | :----------------- |
-| `T`  | extends `TxIntent` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `TxIntent` |
 
 #### Parameters
 
-| Name                   | Type                                                      |
-| :--------------------- | :-------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `transactionPredicate` | (`u`: `Transaction`<`TxIntent`\>) => u is Transaction<T\> |
 
 #### Returns
@@ -115,7 +115,7 @@ predicate.
 
 TransactionCollection.hasTransaction
 
----
+___
 
 ### removeTransaction
 
@@ -125,8 +125,8 @@ Removes the internal record of the given transaction.
 
 #### Parameters
 
-| Name | Type                       |
-| :--- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `tx` | `Transaction`<`TxIntent`\> |
 
 #### Returns

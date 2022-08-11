@@ -1,4 +1,4 @@
-import type { WorldCoords } from './world';
+import type { WorldCoords } from "./world";
 
 export type CaptureZone = {
   coords: WorldCoords;

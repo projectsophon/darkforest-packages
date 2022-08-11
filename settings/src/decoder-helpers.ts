@@ -1,4 +1,4 @@
-import * as decoders from 'decoders';
+import * as decoders from "decoders";
 
 // Decoder helpers that will probably be refactored into a package
 export function withDefault<A>(decoder: decoders.Decoder<A>, def: A) {

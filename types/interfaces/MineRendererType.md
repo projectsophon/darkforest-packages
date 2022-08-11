@@ -15,7 +15,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Draws all queued Asteroid Fields.
 
 `void`
 
----
+___
 
 ### queueMine
 
@@ -41,11 +41,11 @@ The implementing renderer should contains its own back buffer.
 
 #### Parameters
 
-| Name      | Type                                      | Description                                                                       |
-| :-------- | :---------------------------------------- | :-------------------------------------------------------------------------------- |
-| `planet`  | [`Planet`](../README.md#planet)           | an object that contains info about the the Mine/Asteroid Field planet to be drawn |
-| `centerW` | [`WorldCoords`](../README.md#worldcoords) | represents the coordinates of the asteroid field relative to the game world.      |
-| `radiusW` | `number`                                  | represents the radius of the asteroid field relative to the game world            |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `planet` | [`Planet`](../README.md#planet) | an object that contains info about the the Mine/Asteroid Field planet to be drawn |
+| `centerW` | [`WorldCoords`](../README.md#worldcoords) | represents the coordinates of the asteroid field relative to the game world. |
+| `radiusW` | `number` | represents the radius of the asteroid field relative to the game world |
 
 #### Returns
 

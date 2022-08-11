@@ -14,24 +14,24 @@
 
 ### Other Properties
 
-- [ATTRIBUTE_NODE](DarkForestNumberInput.md#attribute_node)
-- [CDATA_SECTION_NODE](DarkForestNumberInput.md#cdata_section_node)
-- [COMMENT_NODE](DarkForestNumberInput.md#comment_node)
-- [DOCUMENT_FRAGMENT_NODE](DarkForestNumberInput.md#document_fragment_node)
-- [DOCUMENT_NODE](DarkForestNumberInput.md#document_node)
-- [DOCUMENT_POSITION_CONTAINED_BY](DarkForestNumberInput.md#document_position_contained_by)
-- [DOCUMENT_POSITION_CONTAINS](DarkForestNumberInput.md#document_position_contains)
-- [DOCUMENT_POSITION_DISCONNECTED](DarkForestNumberInput.md#document_position_disconnected)
-- [DOCUMENT_POSITION_FOLLOWING](DarkForestNumberInput.md#document_position_following)
-- [DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC](DarkForestNumberInput.md#document_position_implementation_specific)
-- [DOCUMENT_POSITION_PRECEDING](DarkForestNumberInput.md#document_position_preceding)
-- [DOCUMENT_TYPE_NODE](DarkForestNumberInput.md#document_type_node)
-- [ELEMENT_NODE](DarkForestNumberInput.md#element_node)
-- [ENTITY_NODE](DarkForestNumberInput.md#entity_node)
-- [ENTITY_REFERENCE_NODE](DarkForestNumberInput.md#entity_reference_node)
-- [NOTATION_NODE](DarkForestNumberInput.md#notation_node)
-- [PROCESSING_INSTRUCTION_NODE](DarkForestNumberInput.md#processing_instruction_node)
-- [TEXT_NODE](DarkForestNumberInput.md#text_node)
+- [ATTRIBUTE\_NODE](DarkForestNumberInput.md#attribute_node)
+- [CDATA\_SECTION\_NODE](DarkForestNumberInput.md#cdata_section_node)
+- [COMMENT\_NODE](DarkForestNumberInput.md#comment_node)
+- [DOCUMENT\_FRAGMENT\_NODE](DarkForestNumberInput.md#document_fragment_node)
+- [DOCUMENT\_NODE](DarkForestNumberInput.md#document_node)
+- [DOCUMENT\_POSITION\_CONTAINED\_BY](DarkForestNumberInput.md#document_position_contained_by)
+- [DOCUMENT\_POSITION\_CONTAINS](DarkForestNumberInput.md#document_position_contains)
+- [DOCUMENT\_POSITION\_DISCONNECTED](DarkForestNumberInput.md#document_position_disconnected)
+- [DOCUMENT\_POSITION\_FOLLOWING](DarkForestNumberInput.md#document_position_following)
+- [DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC](DarkForestNumberInput.md#document_position_implementation_specific)
+- [DOCUMENT\_POSITION\_PRECEDING](DarkForestNumberInput.md#document_position_preceding)
+- [DOCUMENT\_TYPE\_NODE](DarkForestNumberInput.md#document_type_node)
+- [ELEMENT\_NODE](DarkForestNumberInput.md#element_node)
+- [ENTITY\_NODE](DarkForestNumberInput.md#entity_node)
+- [ENTITY\_REFERENCE\_NODE](DarkForestNumberInput.md#entity_reference_node)
+- [NOTATION\_NODE](DarkForestNumberInput.md#notation_node)
+- [PROCESSING\_INSTRUCTION\_NODE](DarkForestNumberInput.md#processing_instruction_node)
+- [TEXT\_NODE](DarkForestNumberInput.md#text_node)
 - [\_inputRef](DarkForestNumberInput.md#_inputref)
 - [\_value](DarkForestNumberInput.md#_value)
 - [accessKey](DarkForestNumberInput.md#accesskey)
@@ -185,11 +185,13 @@
 - [onreset](DarkForestNumberInput.md#onreset)
 - [onresize](DarkForestNumberInput.md#onresize)
 - [onscroll](DarkForestNumberInput.md#onscroll)
+- [onsecuritypolicyviolation](DarkForestNumberInput.md#onsecuritypolicyviolation)
 - [onseeked](DarkForestNumberInput.md#onseeked)
 - [onseeking](DarkForestNumberInput.md#onseeking)
 - [onselect](DarkForestNumberInput.md#onselect)
 - [onselectionchange](DarkForestNumberInput.md#onselectionchange)
 - [onselectstart](DarkForestNumberInput.md#onselectstart)
+- [onslotchange](DarkForestNumberInput.md#onslotchange)
 - [onstalled](DarkForestNumberInput.md#onstalled)
 - [onsubmit](DarkForestNumberInput.md#onsubmit)
 - [onsuspend](DarkForestNumberInput.md#onsuspend)
@@ -239,7 +241,7 @@
 - [finalized](DarkForestNumberInput.md#finalized)
 - [properties](DarkForestNumberInput.md#properties)
 - [styles](DarkForestNumberInput.md#styles)
-- [tagName](DarkForestNumberInput.md#tagname)
+- [tagName](DarkForestNumberInput.md#tagname-1)
 
 ### dev-mode Properties
 
@@ -412,223 +414,223 @@ LitElement.constructor
 
 ## Other Properties
 
-### ATTRIBUTE_NODE
+### ATTRIBUTE\_NODE
 
-• `Readonly` **ATTRIBUTE_NODE**: `number`
+• `Readonly` **ATTRIBUTE\_NODE**: `number`
 
 #### Inherited from
 
-LitElement.ATTRIBUTE_NODE
+LitElement.ATTRIBUTE\_NODE
 
----
+___
 
-### CDATA_SECTION_NODE
+### CDATA\_SECTION\_NODE
 
-• `Readonly` **CDATA_SECTION_NODE**: `number`
+• `Readonly` **CDATA\_SECTION\_NODE**: `number`
 
 node is a CDATASection node.
 
 #### Inherited from
 
-LitElement.CDATA_SECTION_NODE
+LitElement.CDATA\_SECTION\_NODE
 
----
+___
 
-### COMMENT_NODE
+### COMMENT\_NODE
 
-• `Readonly` **COMMENT_NODE**: `number`
+• `Readonly` **COMMENT\_NODE**: `number`
 
 node is a Comment node.
 
 #### Inherited from
 
-LitElement.COMMENT_NODE
+LitElement.COMMENT\_NODE
 
----
+___
 
-### DOCUMENT_FRAGMENT_NODE
+### DOCUMENT\_FRAGMENT\_NODE
 
-• `Readonly` **DOCUMENT_FRAGMENT_NODE**: `number`
+• `Readonly` **DOCUMENT\_FRAGMENT\_NODE**: `number`
 
 node is a DocumentFragment node.
 
 #### Inherited from
 
-LitElement.DOCUMENT_FRAGMENT_NODE
+LitElement.DOCUMENT\_FRAGMENT\_NODE
 
----
+___
 
-### DOCUMENT_NODE
+### DOCUMENT\_NODE
 
-• `Readonly` **DOCUMENT_NODE**: `number`
+• `Readonly` **DOCUMENT\_NODE**: `number`
 
 node is a document.
 
 #### Inherited from
 
-LitElement.DOCUMENT_NODE
+LitElement.DOCUMENT\_NODE
 
----
+___
 
-### DOCUMENT_POSITION_CONTAINED_BY
+### DOCUMENT\_POSITION\_CONTAINED\_BY
 
-• `Readonly` **DOCUMENT_POSITION_CONTAINED_BY**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_CONTAINED\_BY**: `number`
 
 Set when other is a descendant of node.
 
 #### Inherited from
 
-LitElement.DOCUMENT_POSITION_CONTAINED_BY
+LitElement.DOCUMENT\_POSITION\_CONTAINED\_BY
 
----
+___
 
-### DOCUMENT_POSITION_CONTAINS
+### DOCUMENT\_POSITION\_CONTAINS
 
-• `Readonly` **DOCUMENT_POSITION_CONTAINS**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_CONTAINS**: `number`
 
 Set when other is an ancestor of node.
 
 #### Inherited from
 
-LitElement.DOCUMENT_POSITION_CONTAINS
+LitElement.DOCUMENT\_POSITION\_CONTAINS
 
----
+___
 
-### DOCUMENT_POSITION_DISCONNECTED
+### DOCUMENT\_POSITION\_DISCONNECTED
 
-• `Readonly` **DOCUMENT_POSITION_DISCONNECTED**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_DISCONNECTED**: `number`
 
 Set when node and other are not in the same tree.
 
 #### Inherited from
 
-LitElement.DOCUMENT_POSITION_DISCONNECTED
+LitElement.DOCUMENT\_POSITION\_DISCONNECTED
 
----
+___
 
-### DOCUMENT_POSITION_FOLLOWING
+### DOCUMENT\_POSITION\_FOLLOWING
 
-• `Readonly` **DOCUMENT_POSITION_FOLLOWING**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_FOLLOWING**: `number`
 
 Set when other is following node.
 
 #### Inherited from
 
-LitElement.DOCUMENT_POSITION_FOLLOWING
+LitElement.DOCUMENT\_POSITION\_FOLLOWING
 
----
+___
 
-### DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC
+### DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC
 
-• `Readonly` **DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC**: `number`
 
 #### Inherited from
 
-LitElement.DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC
+LitElement.DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC
 
----
+___
 
-### DOCUMENT_POSITION_PRECEDING
+### DOCUMENT\_POSITION\_PRECEDING
 
-• `Readonly` **DOCUMENT_POSITION_PRECEDING**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_PRECEDING**: `number`
 
 Set when other is preceding node.
 
 #### Inherited from
 
-LitElement.DOCUMENT_POSITION_PRECEDING
+LitElement.DOCUMENT\_POSITION\_PRECEDING
 
----
+___
 
-### DOCUMENT_TYPE_NODE
+### DOCUMENT\_TYPE\_NODE
 
-• `Readonly` **DOCUMENT_TYPE_NODE**: `number`
+• `Readonly` **DOCUMENT\_TYPE\_NODE**: `number`
 
 node is a doctype.
 
 #### Inherited from
 
-LitElement.DOCUMENT_TYPE_NODE
+LitElement.DOCUMENT\_TYPE\_NODE
 
----
+___
 
-### ELEMENT_NODE
+### ELEMENT\_NODE
 
-• `Readonly` **ELEMENT_NODE**: `number`
+• `Readonly` **ELEMENT\_NODE**: `number`
 
 node is an element.
 
 #### Inherited from
 
-LitElement.ELEMENT_NODE
+LitElement.ELEMENT\_NODE
 
----
+___
 
-### ENTITY_NODE
+### ENTITY\_NODE
 
-• `Readonly` **ENTITY_NODE**: `number`
-
-#### Inherited from
-
-LitElement.ENTITY_NODE
-
----
-
-### ENTITY_REFERENCE_NODE
-
-• `Readonly` **ENTITY_REFERENCE_NODE**: `number`
+• `Readonly` **ENTITY\_NODE**: `number`
 
 #### Inherited from
 
-LitElement.ENTITY_REFERENCE_NODE
+LitElement.ENTITY\_NODE
 
----
+___
 
-### NOTATION_NODE
+### ENTITY\_REFERENCE\_NODE
 
-• `Readonly` **NOTATION_NODE**: `number`
+• `Readonly` **ENTITY\_REFERENCE\_NODE**: `number`
 
 #### Inherited from
 
-LitElement.NOTATION_NODE
+LitElement.ENTITY\_REFERENCE\_NODE
 
----
+___
 
-### PROCESSING_INSTRUCTION_NODE
+### NOTATION\_NODE
 
-• `Readonly` **PROCESSING_INSTRUCTION_NODE**: `number`
+• `Readonly` **NOTATION\_NODE**: `number`
+
+#### Inherited from
+
+LitElement.NOTATION\_NODE
+
+___
+
+### PROCESSING\_INSTRUCTION\_NODE
+
+• `Readonly` **PROCESSING\_INSTRUCTION\_NODE**: `number`
 
 node is a ProcessingInstruction node.
 
 #### Inherited from
 
-LitElement.PROCESSING_INSTRUCTION_NODE
+LitElement.PROCESSING\_INSTRUCTION\_NODE
 
----
+___
 
-### TEXT_NODE
+### TEXT\_NODE
 
-• `Readonly` **TEXT_NODE**: `number`
+• `Readonly` **TEXT\_NODE**: `number`
 
 node is a Text node.
 
 #### Inherited from
 
-LitElement.TEXT_NODE
+LitElement.TEXT\_NODE
 
----
+___
 
 ### \_inputRef
 
 • `Private` **\_inputRef**: `Ref`<`HTMLInputElement`\>
 
----
+___
 
 ### \_value
 
-• `Private` **\_value**: `string` = `''`
+• `Private` **\_value**: `string` = `""`
 
----
+___
 
 ### accessKey
 
@@ -638,7 +640,7 @@ LitElement.TEXT_NODE
 
 LitElement.accessKey
 
----
+___
 
 ### accessKeyLabel
 
@@ -648,377 +650,377 @@ LitElement.accessKey
 
 LitElement.accessKeyLabel
 
----
+___
 
 ### ariaAtomic
 
-• **ariaAtomic**: `string`
+• **ariaAtomic**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaAtomic
 
----
+___
 
 ### ariaAutoComplete
 
-• **ariaAutoComplete**: `string`
+• **ariaAutoComplete**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaAutoComplete
 
----
+___
 
 ### ariaBusy
 
-• **ariaBusy**: `string`
+• **ariaBusy**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaBusy
 
----
+___
 
 ### ariaChecked
 
-• **ariaChecked**: `string`
+• **ariaChecked**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaChecked
 
----
+___
 
 ### ariaColCount
 
-• **ariaColCount**: `string`
+• **ariaColCount**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaColCount
 
----
+___
 
 ### ariaColIndex
 
-• **ariaColIndex**: `string`
+• **ariaColIndex**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaColIndex
 
----
+___
 
 ### ariaColSpan
 
-• **ariaColSpan**: `string`
+• **ariaColSpan**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaColSpan
 
----
+___
 
 ### ariaCurrent
 
-• **ariaCurrent**: `string`
+• **ariaCurrent**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaCurrent
 
----
+___
 
 ### ariaDisabled
 
-• **ariaDisabled**: `string`
+• **ariaDisabled**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaDisabled
 
----
+___
 
 ### ariaExpanded
 
-• **ariaExpanded**: `string`
+• **ariaExpanded**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaExpanded
 
----
+___
 
 ### ariaHasPopup
 
-• **ariaHasPopup**: `string`
+• **ariaHasPopup**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaHasPopup
 
----
+___
 
 ### ariaHidden
 
-• **ariaHidden**: `string`
+• **ariaHidden**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaHidden
 
----
+___
 
 ### ariaKeyShortcuts
 
-• **ariaKeyShortcuts**: `string`
+• **ariaKeyShortcuts**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaKeyShortcuts
 
----
+___
 
 ### ariaLabel
 
-• **ariaLabel**: `string`
+• **ariaLabel**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaLabel
 
----
+___
 
 ### ariaLevel
 
-• **ariaLevel**: `string`
+• **ariaLevel**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaLevel
 
----
+___
 
 ### ariaLive
 
-• **ariaLive**: `string`
+• **ariaLive**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaLive
 
----
+___
 
 ### ariaModal
 
-• **ariaModal**: `string`
+• **ariaModal**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaModal
 
----
+___
 
 ### ariaMultiLine
 
-• **ariaMultiLine**: `string`
+• **ariaMultiLine**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaMultiLine
 
----
+___
 
 ### ariaMultiSelectable
 
-• **ariaMultiSelectable**: `string`
+• **ariaMultiSelectable**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaMultiSelectable
 
----
+___
 
 ### ariaOrientation
 
-• **ariaOrientation**: `string`
+• **ariaOrientation**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaOrientation
 
----
+___
 
 ### ariaPlaceholder
 
-• **ariaPlaceholder**: `string`
+• **ariaPlaceholder**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaPlaceholder
 
----
+___
 
 ### ariaPosInSet
 
-• **ariaPosInSet**: `string`
+• **ariaPosInSet**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaPosInSet
 
----
+___
 
 ### ariaPressed
 
-• **ariaPressed**: `string`
+• **ariaPressed**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaPressed
 
----
+___
 
 ### ariaReadOnly
 
-• **ariaReadOnly**: `string`
+• **ariaReadOnly**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaReadOnly
 
----
+___
 
 ### ariaRequired
 
-• **ariaRequired**: `string`
+• **ariaRequired**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaRequired
 
----
+___
 
 ### ariaRoleDescription
 
-• **ariaRoleDescription**: `string`
+• **ariaRoleDescription**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaRoleDescription
 
----
+___
 
 ### ariaRowCount
 
-• **ariaRowCount**: `string`
+• **ariaRowCount**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaRowCount
 
----
+___
 
 ### ariaRowIndex
 
-• **ariaRowIndex**: `string`
+• **ariaRowIndex**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaRowIndex
 
----
+___
 
 ### ariaRowSpan
 
-• **ariaRowSpan**: `string`
+• **ariaRowSpan**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaRowSpan
 
----
+___
 
 ### ariaSelected
 
-• **ariaSelected**: `string`
+• **ariaSelected**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaSelected
 
----
+___
 
 ### ariaSetSize
 
-• **ariaSetSize**: `string`
+• **ariaSetSize**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaSetSize
 
----
+___
 
 ### ariaSort
 
-• **ariaSort**: `string`
+• **ariaSort**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaSort
 
----
+___
 
 ### ariaValueMax
 
-• **ariaValueMax**: `string`
+• **ariaValueMax**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaValueMax
 
----
+___
 
 ### ariaValueMin
 
-• **ariaValueMin**: `string`
+• **ariaValueMin**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaValueMin
 
----
+___
 
 ### ariaValueNow
 
-• **ariaValueNow**: `string`
+• **ariaValueNow**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaValueNow
 
----
+___
 
 ### ariaValueText
 
-• **ariaValueText**: `string`
+• **ariaValueText**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.ariaValueText
 
----
+___
 
 ### assignedSlot
 
-• `Readonly` **assignedSlot**: `null` \| `HTMLSlotElement`
+• `Readonly` **assignedSlot**: ``null`` \| `HTMLSlotElement`
 
 #### Inherited from
 
 LitElement.assignedSlot
 
----
+___
 
 ### attributes
 
@@ -1028,7 +1030,7 @@ LitElement.assignedSlot
 
 LitElement.attributes
 
----
+___
 
 ### autocapitalize
 
@@ -1038,7 +1040,7 @@ LitElement.attributes
 
 LitElement.autocapitalize
 
----
+___
 
 ### autofocus
 
@@ -1048,7 +1050,7 @@ LitElement.autocapitalize
 
 LitElement.autofocus
 
----
+___
 
 ### baseURI
 
@@ -1060,7 +1062,7 @@ Returns node's node document's document base URL.
 
 LitElement.baseURI
 
----
+___
 
 ### childElementCount
 
@@ -1070,7 +1072,7 @@ LitElement.baseURI
 
 LitElement.childElementCount
 
----
+___
 
 ### childNodes
 
@@ -1082,7 +1084,7 @@ Returns the children.
 
 LitElement.childNodes
 
----
+___
 
 ### children
 
@@ -1094,7 +1096,7 @@ Returns the child elements.
 
 LitElement.children
 
----
+___
 
 ### classList
 
@@ -1106,7 +1108,7 @@ Allows for manipulation of element's class content attribute as a set of whitesp
 
 LitElement.classList
 
----
+___
 
 ### className
 
@@ -1118,7 +1120,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 LitElement.className
 
----
+___
 
 ### clientHeight
 
@@ -1128,7 +1130,7 @@ LitElement.className
 
 LitElement.clientHeight
 
----
+___
 
 ### clientLeft
 
@@ -1138,7 +1140,7 @@ LitElement.clientHeight
 
 LitElement.clientLeft
 
----
+___
 
 ### clientTop
 
@@ -1148,7 +1150,7 @@ LitElement.clientLeft
 
 LitElement.clientTop
 
----
+___
 
 ### clientWidth
 
@@ -1158,7 +1160,7 @@ LitElement.clientTop
 
 LitElement.clientWidth
 
----
+___
 
 ### contentEditable
 
@@ -1168,7 +1170,7 @@ LitElement.clientWidth
 
 LitElement.contentEditable
 
----
+___
 
 ### dataset
 
@@ -1178,7 +1180,7 @@ LitElement.contentEditable
 
 LitElement.dataset
 
----
+___
 
 ### dir
 
@@ -1188,13 +1190,13 @@ LitElement.dataset
 
 LitElement.dir
 
----
+___
 
 ### disabled
 
 • `Optional` **disabled**: `boolean`
 
----
+___
 
 ### draggable
 
@@ -1204,7 +1206,7 @@ LitElement.dir
 
 LitElement.draggable
 
----
+___
 
 ### enterKeyHint
 
@@ -1214,11 +1216,11 @@ LitElement.draggable
 
 LitElement.enterKeyHint
 
----
+___
 
 ### firstChild
 
-• `Readonly` **firstChild**: `null` \| `ChildNode`
+• `Readonly` **firstChild**: ``null`` \| `ChildNode`
 
 Returns the first child.
 
@@ -1226,11 +1228,11 @@ Returns the first child.
 
 LitElement.firstChild
 
----
+___
 
 ### firstElementChild
 
-• `Readonly` **firstElementChild**: `null` \| `Element`
+• `Readonly` **firstElementChild**: ``null`` \| `Element`
 
 Returns the first child that is an element, and null otherwise.
 
@@ -1238,13 +1240,13 @@ Returns the first child that is an element, and null otherwise.
 
 LitElement.firstElementChild
 
----
+___
 
 ### format
 
-• **format**: `"integer"` \| `"float"` = `'integer'`
+• **format**: ``"integer"`` \| ``"float"`` = `"integer"`
 
----
+___
 
 ### hidden
 
@@ -1254,7 +1256,7 @@ LitElement.firstElementChild
 
 LitElement.hidden
 
----
+___
 
 ### id
 
@@ -1266,7 +1268,7 @@ Returns the value of element's id content attribute. Can be set to change it.
 
 LitElement.id
 
----
+___
 
 ### innerHTML
 
@@ -1276,7 +1278,7 @@ LitElement.id
 
 LitElement.innerHTML
 
----
+___
 
 ### innerText
 
@@ -1286,7 +1288,7 @@ LitElement.innerHTML
 
 LitElement.innerText
 
----
+___
 
 ### inputMode
 
@@ -1296,7 +1298,7 @@ LitElement.innerText
 
 LitElement.inputMode
 
----
+___
 
 ### isConnected
 
@@ -1308,7 +1310,7 @@ Returns true if node is connected and false otherwise.
 
 LitElement.isConnected
 
----
+___
 
 ### isContentEditable
 
@@ -1318,7 +1320,7 @@ LitElement.isConnected
 
 LitElement.isContentEditable
 
----
+___
 
 ### lang
 
@@ -1328,11 +1330,11 @@ LitElement.isContentEditable
 
 LitElement.lang
 
----
+___
 
 ### lastChild
 
-• `Readonly` **lastChild**: `null` \| `ChildNode`
+• `Readonly` **lastChild**: ``null`` \| `ChildNode`
 
 Returns the last child.
 
@@ -1340,11 +1342,11 @@ Returns the last child.
 
 LitElement.lastChild
 
----
+___
 
 ### lastElementChild
 
-• `Readonly` **lastElementChild**: `null` \| `Element`
+• `Readonly` **lastElementChild**: ``null`` \| `Element`
 
 Returns the last child that is an element, and null otherwise.
 
@@ -1352,7 +1354,7 @@ Returns the last child that is an element, and null otherwise.
 
 LitElement.lastElementChild
 
----
+___
 
 ### localName
 
@@ -1364,11 +1366,11 @@ Returns the local name.
 
 LitElement.localName
 
----
+___
 
 ### namespaceURI
 
-• `Readonly` **namespaceURI**: `null` \| `string`
+• `Readonly` **namespaceURI**: ``null`` \| `string`
 
 Returns the namespace.
 
@@ -1376,11 +1378,11 @@ Returns the namespace.
 
 LitElement.namespaceURI
 
----
+___
 
 ### nextElementSibling
 
-• `Readonly` **nextElementSibling**: `null` \| `Element`
+• `Readonly` **nextElementSibling**: ``null`` \| `Element`
 
 Returns the first following sibling that is an element, and null otherwise.
 
@@ -1388,11 +1390,11 @@ Returns the first following sibling that is an element, and null otherwise.
 
 LitElement.nextElementSibling
 
----
+___
 
 ### nextSibling
 
-• `Readonly` **nextSibling**: `null` \| `ChildNode`
+• `Readonly` **nextSibling**: ``null`` \| `ChildNode`
 
 Returns the next sibling.
 
@@ -1400,7 +1402,7 @@ Returns the next sibling.
 
 LitElement.nextSibling
 
----
+___
 
 ### nodeName
 
@@ -1412,7 +1414,7 @@ Returns a string appropriate for the type of node.
 
 LitElement.nodeName
 
----
+___
 
 ### nodeType
 
@@ -1424,17 +1426,17 @@ Returns the type of node.
 
 LitElement.nodeType
 
----
+___
 
 ### nodeValue
 
-• **nodeValue**: `null` \| `string`
+• **nodeValue**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.nodeValue
 
----
+___
 
 ### nonce
 
@@ -1444,7 +1446,7 @@ LitElement.nodeValue
 
 LitElement.nonce
 
----
+___
 
 ### offsetHeight
 
@@ -1454,7 +1456,7 @@ LitElement.nonce
 
 LitElement.offsetHeight
 
----
+___
 
 ### offsetLeft
 
@@ -1464,17 +1466,17 @@ LitElement.offsetHeight
 
 LitElement.offsetLeft
 
----
+___
 
 ### offsetParent
 
-• `Readonly` **offsetParent**: `null` \| `Element`
+• `Readonly` **offsetParent**: ``null`` \| `Element`
 
 #### Inherited from
 
 LitElement.offsetParent
 
----
+___
 
 ### offsetTop
 
@@ -1484,7 +1486,7 @@ LitElement.offsetParent
 
 LitElement.offsetTop
 
----
+___
 
 ### offsetWidth
 
@@ -1494,341 +1496,373 @@ LitElement.offsetTop
 
 LitElement.offsetWidth
 
----
+___
 
 ### onabort
 
-• **onabort**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
+• **onabort**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
 
 Fires when the user aborts the download.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onabort
 
----
+___
 
 ### onanimationcancel
 
-• **onanimationcancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationcancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onanimationcancel
 
----
+___
 
 ### onanimationend
 
-• **onanimationend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onanimationend
 
----
+___
 
 ### onanimationiteration
 
-• **onanimationiteration**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationiteration**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onanimationiteration
 
----
+___
 
 ### onanimationstart
 
-• **onanimationstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onanimationstart
 
----
+___
 
 ### onauxclick
 
-• **onauxclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onauxclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onauxclick
 
----
+___
 
 ### onblur
 
-• **onblur**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
+• **onblur**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
 
 Fires when the object loses the input focus.
 
-**`param`** The focus event.
+**`Param`**
+
+The focus event.
 
 #### Inherited from
 
 LitElement.onblur
 
----
+___
 
 ### oncanplay
 
-• **oncanplay**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncanplay**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback is possible, but would require further buffering.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.oncanplay
 
----
+___
 
 ### oncanplaythrough
 
-• **oncanplaythrough**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncanplaythrough**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 LitElement.oncanplaythrough
 
----
+___
 
 ### onchange
 
-• **onchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the contents of the object or selection have changed.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onchange
 
----
+___
 
 ### onclick
 
-• **onclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the left mouse button on the object
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 LitElement.onclick
 
----
+___
 
 ### onclose
 
-• **onclose**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onclose**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 LitElement.onclose
 
----
+___
 
 ### oncontextmenu
 
-• **oncontextmenu**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **oncontextmenu**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the right mouse button in the client area, opening the context menu.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 LitElement.oncontextmenu
 
----
+___
 
 ### oncopy
 
-• **oncopy**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **oncopy**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 LitElement.oncopy
 
----
+___
 
 ### oncuechange
 
-• **oncuechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncuechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 LitElement.oncuechange
 
----
+___
 
 ### oncut
 
-• **oncut**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **oncut**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 LitElement.oncut
 
----
+___
 
 ### ondblclick
 
-• **ondblclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **ondblclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user double-clicks the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 LitElement.ondblclick
 
----
+___
 
 ### ondrag
 
-• **ondrag**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondrag**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object continuously during a drag operation.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.ondrag
 
----
+___
 
 ### ondragend
 
-• **ondragend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object when the user releases the mouse at the close of a drag operation.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.ondragend
 
----
+___
 
 ### ondragenter
 
-• **ondragenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target element when the user drags the object to a valid drop target.
 
-**`param`** The drag event.
+**`Param`**
+
+The drag event.
 
 #### Inherited from
 
 LitElement.ondragenter
 
----
+___
 
 ### ondragleave
 
-• **ondragleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
 
-**`param`** The drag event.
+**`Param`**
+
+The drag event.
 
 #### Inherited from
 
 LitElement.ondragleave
 
----
+___
 
 ### ondragover
 
-• **ondragover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target element continuously while the user drags the object over a valid drop target.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.ondragover
 
----
+___
 
 ### ondragstart
 
-• **ondragstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object when the user starts to drag a text selection or selected object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.ondragstart
 
----
+___
 
 ### ondrop
 
-• **ondrop**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondrop**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 #### Inherited from
 
 LitElement.ondrop
 
----
+___
 
 ### ondurationchange
 
-• **ondurationchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ondurationchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the duration attribute is updated.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.ondurationchange
 
----
+___
 
 ### onemptied
 
-• **onemptied**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onemptied**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the media element is reset to its initial state.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onemptied
 
----
+___
 
 ### onended
 
-• **onended**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onended**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the end of playback is reached.
 
-**`param`** The event
+**`Param`**
+
+The event
 
 #### Inherited from
 
 LitElement.onended
 
----
+___
 
 ### onerror
 
@@ -1836,775 +1870,861 @@ LitElement.onended
 
 Fires when an error occurs during object loading.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onerror
 
----
+___
 
 ### onfocus
 
-• **onfocus**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
+• **onfocus**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
 
 Fires when the object receives focus.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onfocus
 
----
+___
 
 ### onformdata
 
-• **onformdata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FormDataEvent`) => `any`
+• **onformdata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FormDataEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onformdata
 
----
+___
 
 ### onfullscreenchange
 
-• **onfullscreenchange**: `null` \| (`this`: `Element`, `ev`: `Event`) => `any`
+• **onfullscreenchange**: ``null`` \| (`this`: `Element`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 LitElement.onfullscreenchange
 
----
+___
 
 ### onfullscreenerror
 
-• **onfullscreenerror**: `null` \| (`this`: `Element`, `ev`: `Event`) => `any`
+• **onfullscreenerror**: ``null`` \| (`this`: `Element`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 LitElement.onfullscreenerror
 
----
+___
 
 ### ongotpointercapture
 
-• **ongotpointercapture**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **ongotpointercapture**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 LitElement.ongotpointercapture
 
----
+___
 
 ### oninput
 
-• **oninput**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oninput**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 LitElement.oninput
 
----
+___
 
 ### oninvalid
 
-• **oninvalid**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oninvalid**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 LitElement.oninvalid
 
----
+___
 
 ### onkeydown
 
-• **onkeydown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeydown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user presses a key.
 
-**`param`** The keyboard event
+**`Param`**
+
+The keyboard event
 
 #### Inherited from
 
 LitElement.onkeydown
 
----
+___
 
 ### onkeypress
 
-• **onkeypress**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeypress**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user presses an alphanumeric key.
 
-**`param`** The event.
+**`Param`**
 
-**`deprecated`**
+The event.
+
+**`Deprecated`**
 
 #### Inherited from
 
 LitElement.onkeypress
 
----
+___
 
 ### onkeyup
 
-• **onkeyup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeyup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user releases a key.
 
-**`param`** The keyboard event
+**`Param`**
+
+The keyboard event
 
 #### Inherited from
 
 LitElement.onkeyup
 
----
+___
 
 ### onload
 
-• **onload**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onload**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires immediately after the browser loads the object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onload
 
----
+___
 
 ### onloadeddata
 
-• **onloadeddata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadeddata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when media data is loaded at the current playback position.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onloadeddata
 
----
+___
 
 ### onloadedmetadata
 
-• **onloadedmetadata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadedmetadata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the duration and dimensions of the media have been determined.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onloadedmetadata
 
----
+___
 
 ### onloadstart
 
-• **onloadstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when Internet Explorer begins looking for media data.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onloadstart
 
----
+___
 
 ### onlostpointercapture
 
-• **onlostpointercapture**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onlostpointercapture**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onlostpointercapture
 
----
+___
 
 ### onmousedown
 
-• **onmousedown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmousedown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the object with either mouse button.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 LitElement.onmousedown
 
----
+___
 
 ### onmouseenter
 
-• **onmouseenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onmouseenter
 
----
+___
 
 ### onmouseleave
 
-• **onmouseleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onmouseleave
 
----
+___
 
 ### onmousemove
 
-• **onmousemove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmousemove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse over the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 LitElement.onmousemove
 
----
+___
 
 ### onmouseout
 
-• **onmouseout**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseout**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse pointer outside the boundaries of the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 LitElement.onmouseout
 
----
+___
 
 ### onmouseover
 
-• **onmouseover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse pointer into the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 LitElement.onmouseover
 
----
+___
 
 ### onmouseup
 
-• **onmouseup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user releases a mouse button while the mouse is over the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 LitElement.onmouseup
 
----
+___
 
 ### onpaste
 
-• **onpaste**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **onpaste**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onpaste
 
----
+___
 
 ### onpause
 
-• **onpause**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onpause**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback is paused.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onpause
 
----
+___
 
 ### onplay
 
-• **onplay**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onplay**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the play method is requested.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onplay
 
----
+___
 
 ### onplaying
 
-• **onplaying**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onplaying**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the audio or video has started playing.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onplaying
 
----
+___
 
 ### onpointercancel
 
-• **onpointercancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointercancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onpointercancel
 
----
+___
 
 ### onpointerdown
 
-• **onpointerdown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerdown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onpointerdown
 
----
+___
 
 ### onpointerenter
 
-• **onpointerenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onpointerenter
 
----
+___
 
 ### onpointerleave
 
-• **onpointerleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onpointerleave
 
----
+___
 
 ### onpointermove
 
-• **onpointermove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointermove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onpointermove
 
----
+___
 
 ### onpointerout
 
-• **onpointerout**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerout**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onpointerout
 
----
+___
 
 ### onpointerover
 
-• **onpointerover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onpointerover
 
----
+___
 
 ### onpointerup
 
-• **onpointerup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onpointerup
 
----
+___
 
 ### onprogress
 
-• **onprogress**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `ProgressEvent`<`EventTarget`\>) => `any`
+• **onprogress**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `ProgressEvent`<`EventTarget`\>) => `any`
 
 Occurs to indicate progress while downloading media data.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onprogress
 
----
+___
 
 ### onratechange
 
-• **onratechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onratechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the playback rate is increased or decreased.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onratechange
 
----
+___
 
 ### onreset
 
-• **onreset**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onreset**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the user resets a form.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onreset
 
----
+___
 
 ### onresize
 
-• **onresize**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
+• **onresize**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onresize
 
----
+___
 
 ### onscroll
 
-• **onscroll**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onscroll**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the user repositions the scroll box in the scroll bar on the object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onscroll
 
----
+___
+
+### onsecuritypolicyviolation
+
+• **onsecuritypolicyviolation**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `SecurityPolicyViolationEvent`) => `any`
+
+#### Inherited from
+
+LitElement.onsecuritypolicyviolation
+
+___
 
 ### onseeked
 
-• **onseeked**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onseeked**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the seek operation ends.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onseeked
 
----
+___
 
 ### onseeking
 
-• **onseeking**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onseeking**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the current playback position is moved.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onseeking
 
----
+___
 
 ### onselect
 
-• **onselect**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselect**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the current selection changes.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onselect
 
----
+___
 
 ### onselectionchange
 
-• **onselectionchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselectionchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 LitElement.onselectionchange
 
----
+___
 
 ### onselectstart
 
-• **onselectstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselectstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 LitElement.onselectstart
 
----
+___
+
+### onslotchange
+
+• **onslotchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+
+#### Inherited from
+
+LitElement.onslotchange
+
+___
 
 ### onstalled
 
-• **onstalled**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onstalled**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the download has stopped.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onstalled
 
----
+___
 
 ### onsubmit
 
-• **onsubmit**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `SubmitEvent`) => `any`
+• **onsubmit**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `SubmitEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onsubmit
 
----
+___
 
 ### onsuspend
 
-• **onsuspend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onsuspend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs if the load operation has been intentionally halted.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onsuspend
 
----
+___
 
 ### ontimeupdate
 
-• **ontimeupdate**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ontimeupdate**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs to indicate the current playback position.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.ontimeupdate
 
----
+___
 
 ### ontoggle
 
-• **ontoggle**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ontoggle**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 LitElement.ontoggle
 
----
+___
 
 ### ontouchcancel
 
-• `Optional` **ontouchcancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchcancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 LitElement.ontouchcancel
 
----
+___
 
 ### ontouchend
 
-• `Optional` **ontouchend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 LitElement.ontouchend
 
----
+___
 
 ### ontouchmove
 
-• `Optional` **ontouchmove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchmove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 LitElement.ontouchmove
 
----
+___
 
 ### ontouchstart
 
-• `Optional` **ontouchstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 LitElement.ontouchstart
 
----
+___
 
 ### ontransitioncancel
 
-• **ontransitioncancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitioncancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 LitElement.ontransitioncancel
 
----
+___
 
 ### ontransitionend
 
-• **ontransitionend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 LitElement.ontransitionend
 
----
+___
 
 ### ontransitionrun
 
-• **ontransitionrun**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionrun**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 LitElement.ontransitionrun
 
----
+___
 
 ### ontransitionstart
 
-• **ontransitionstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 LitElement.ontransitionstart
 
----
+___
 
 ### onvolumechange
 
-• **onvolumechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onvolumechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the volume is changed, or playback is muted or unmuted.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onvolumechange
 
----
+___
 
 ### onwaiting
 
-• **onwaiting**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwaiting**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback stops because the next frame of a video resource is not available.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 LitElement.onwaiting
 
----
+___
 
 ### onwebkitanimationend
 
-• **onwebkitanimationend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationend`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationend`.
 
 #### Inherited from
 
 LitElement.onwebkitanimationend
 
----
+___
 
 ### onwebkitanimationiteration
 
-• **onwebkitanimationiteration**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationiteration**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationiteration`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationiteration`.
 
 #### Inherited from
 
 LitElement.onwebkitanimationiteration
 
----
+___
 
 ### onwebkitanimationstart
 
-• **onwebkitanimationstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationstart`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationstart`.
 
 #### Inherited from
 
 LitElement.onwebkitanimationstart
 
----
+___
 
 ### onwebkittransitionend
 
-• **onwebkittransitionend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkittransitionend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `ontransitionend`.
+**`Deprecated`**
+
+This is a legacy alias of `ontransitionend`.
 
 #### Inherited from
 
 LitElement.onwebkittransitionend
 
----
+___
 
 ### onwheel
 
-• **onwheel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `WheelEvent`) => `any`
+• **onwheel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `WheelEvent`) => `any`
 
 #### Inherited from
 
 LitElement.onwheel
 
----
+___
 
 ### outerHTML
 
@@ -2614,7 +2734,7 @@ LitElement.onwheel
 
 LitElement.outerHTML
 
----
+___
 
 ### outerText
 
@@ -2624,7 +2744,7 @@ LitElement.outerHTML
 
 LitElement.outerText
 
----
+___
 
 ### ownerDocument
 
@@ -2634,11 +2754,11 @@ LitElement.outerText
 
 LitElement.ownerDocument
 
----
+___
 
 ### parentElement
 
-• `Readonly` **parentElement**: `null` \| `HTMLElement`
+• `Readonly` **parentElement**: ``null`` \| `HTMLElement`
 
 Returns the parent element.
 
@@ -2646,11 +2766,11 @@ Returns the parent element.
 
 LitElement.parentElement
 
----
+___
 
 ### parentNode
 
-• `Readonly` **parentNode**: `null` \| `ParentNode`
+• `Readonly` **parentNode**: ``null`` \| `ParentNode`
 
 Returns the parent.
 
@@ -2658,7 +2778,7 @@ Returns the parent.
 
 LitElement.parentNode
 
----
+___
 
 ### part
 
@@ -2668,11 +2788,11 @@ LitElement.parentNode
 
 LitElement.part
 
----
+___
 
 ### prefix
 
-• `Readonly` **prefix**: `null` \| `string`
+• `Readonly` **prefix**: ``null`` \| `string`
 
 Returns the namespace prefix.
 
@@ -2680,11 +2800,11 @@ Returns the namespace prefix.
 
 LitElement.prefix
 
----
+___
 
 ### previousElementSibling
 
-• `Readonly` **previousElementSibling**: `null` \| `Element`
+• `Readonly` **previousElementSibling**: ``null`` \| `Element`
 
 Returns the first preceding sibling that is an element, and null otherwise.
 
@@ -2692,11 +2812,11 @@ Returns the first preceding sibling that is an element, and null otherwise.
 
 LitElement.previousElementSibling
 
----
+___
 
 ### previousSibling
 
-• `Readonly` **previousSibling**: `null` \| `ChildNode`
+• `Readonly` **previousSibling**: ``null`` \| `ChildNode`
 
 Returns the previous sibling.
 
@@ -2704,13 +2824,13 @@ Returns the previous sibling.
 
 LitElement.previousSibling
 
----
+___
 
 ### readonly
 
 • **readonly**: `boolean` = `false`
 
----
+___
 
 ### scrollHeight
 
@@ -2720,7 +2840,7 @@ LitElement.previousSibling
 
 LitElement.scrollHeight
 
----
+___
 
 ### scrollLeft
 
@@ -2730,7 +2850,7 @@ LitElement.scrollHeight
 
 LitElement.scrollLeft
 
----
+___
 
 ### scrollTop
 
@@ -2740,7 +2860,7 @@ LitElement.scrollLeft
 
 LitElement.scrollTop
 
----
+___
 
 ### scrollWidth
 
@@ -2750,17 +2870,17 @@ LitElement.scrollTop
 
 LitElement.scrollWidth
 
----
+___
 
 ### selected
 
 • **selected**: `boolean` = `false`
 
----
+___
 
 ### shadowRoot
 
-• `Readonly` **shadowRoot**: `null` \| `ShadowRoot`
+• `Readonly` **shadowRoot**: ``null`` \| `ShadowRoot`
 
 Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
 
@@ -2768,7 +2888,7 @@ Returns element's shadow root, if any, and if shadow root's mode is "open", and 
 
 LitElement.shadowRoot
 
----
+___
 
 ### slot
 
@@ -2780,7 +2900,7 @@ Returns the value of element's slot content attribute. Can be set to change it.
 
 LitElement.slot
 
----
+___
 
 ### spellcheck
 
@@ -2790,7 +2910,7 @@ LitElement.slot
 
 LitElement.spellcheck
 
----
+___
 
 ### style
 
@@ -2800,7 +2920,7 @@ LitElement.spellcheck
 
 LitElement.style
 
----
+___
 
 ### tabIndex
 
@@ -2810,7 +2930,7 @@ LitElement.style
 
 LitElement.tabIndex
 
----
+___
 
 ### tagName
 
@@ -2822,17 +2942,17 @@ Returns the HTML-uppercased qualified name.
 
 LitElement.tagName
 
----
+___
 
 ### textContent
 
-• **textContent**: `null` \| `string`
+• **textContent**: ``null`` \| `string`
 
 #### Inherited from
 
 LitElement.textContent
 
----
+___
 
 ### title
 
@@ -2842,7 +2962,7 @@ LitElement.textContent
 
 LitElement.title
 
----
+___
 
 ### translate
 
@@ -2852,7 +2972,7 @@ LitElement.title
 
 LitElement.translate
 
----
+___
 
 ### \_$litElement$
 
@@ -2862,7 +2982,7 @@ LitElement.translate
 
 LitElement.\_$litElement$
 
----
+___
 
 ### \_initializers
 
@@ -2872,7 +2992,7 @@ LitElement.\_$litElement$
 
 LitElement.\_initializers
 
----
+___
 
 ### finalized
 
@@ -2888,7 +3008,7 @@ optimizations. See @lit/reactive-element for more information.
 
 LitElement.finalized
 
----
+___
 
 ### properties
 
@@ -2896,26 +3016,26 @@ LitElement.finalized
 
 #### Type declaration
 
-| Name            | Type                                       |
-| :-------------- | :----------------------------------------- |
-| `_value`        | { `state`: `boolean` = true }              |
-| `_value.state`  | `boolean`                                  |
-| `disabled`      | { `type`: `BooleanConstructor` = Boolean } |
-| `disabled.type` | `BooleanConstructor`                       |
-| `format`        | { `type`: `StringConstructor` = String }   |
-| `format.type`   | `StringConstructor`                        |
-| `readonly`      | { `type`: `BooleanConstructor` = Boolean } |
-| `readonly.type` | `BooleanConstructor`                       |
-| `selected`      | { `type`: `BooleanConstructor` = Boolean } |
-| `selected.type` | `BooleanConstructor`                       |
-| `value`         | { `type`: `NumberConstructor` = Number }   |
-| `value.type`    | `NumberConstructor`                        |
+| Name | Type |
+| :------ | :------ |
+| `_value` | { `state`: `boolean` = true } |
+| `_value.state` | `boolean` |
+| `disabled` | { `type`: `BooleanConstructor` = Boolean } |
+| `disabled.type` | `BooleanConstructor` |
+| `format` | { `type`: `StringConstructor` = String } |
+| `format.type` | `StringConstructor` |
+| `readonly` | { `type`: `BooleanConstructor` = Boolean } |
+| `readonly.type` | `BooleanConstructor` |
+| `selected` | { `type`: `BooleanConstructor` = Boolean } |
+| `selected.type` | `BooleanConstructor` |
+| `value` | { `type`: `NumberConstructor` = Number } |
+| `value.type` | `NumberConstructor` |
 
 #### Overrides
 
 LitElement.properties
 
----
+___
 
 ### styles
 
@@ -2925,13 +3045,13 @@ LitElement.properties
 
 LitElement.styles
 
----
+___
 
 ### tagName
 
-▪ `Static` **tagName**: `string` = `'df-number-input'`
+▪ `Static` **tagName**: `string` = `"df-number-input"`
 
----
+___
 
 ## dev-mode Properties
 
@@ -2956,12 +3076,12 @@ ReactiveElement.disableWarning.?('migration');
 MyElement.disableWarning.?('migration');
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 ##### Parameters
 
-| Name          | Type          |
-| :------------ | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `warningKind` | `WarningKind` |
 
 ##### Returns
@@ -2972,7 +3092,7 @@ MyElement.disableWarning.?('migration');
 
 LitElement.disableWarning
 
----
+___
 
 ### enableWarning
 
@@ -2995,12 +3115,12 @@ ReactiveElement.enableWarning.?('migration');
 MyElement.enableWarning.?('migration');
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 ##### Parameters
 
-| Name          | Type          |
-| :------------ | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `warningKind` | `WarningKind` |
 
 ##### Returns
@@ -3011,7 +3131,7 @@ MyElement.enableWarning.?('migration');
 
 LitElement.enableWarning
 
----
+___
 
 ### enabledWarnings
 
@@ -3021,13 +3141,13 @@ Read or set all the enabled warning categories for this class.
 
 This property is only used in development builds.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 LitElement.enabledWarnings
 
----
+___
 
 ## properties Properties
 
@@ -3038,13 +3158,13 @@ LitElement.enabledWarnings
 Memoized list of all element properties, including any superclass properties.
 Created lazily on user subclasses when finalizing the class.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 LitElement.elementProperties
 
----
+___
 
 ## rendering Properties
 
@@ -3056,7 +3176,7 @@ LitElement.elementProperties
 
 LitElement.renderOptions
 
----
+___
 
 ### renderRoot
 
@@ -3069,7 +3189,7 @@ to an open shadowRoot.
 
 LitElement.renderRoot
 
----
+___
 
 ### shadowRootOptions
 
@@ -3082,13 +3202,13 @@ shadowRoot: `{mode: 'closed'}`.
 Note, these options are used in `createRenderRoot`. If this method
 is customized, options should be respected if possible.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 LitElement.shadowRootOptions
 
----
+___
 
 ## styles Properties
 
@@ -3099,13 +3219,13 @@ LitElement.shadowRootOptions
 Memoized list of all element styles.
 Created lazily on user subclasses when finalizing the class.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 LitElement.elementStyles
 
----
+___
 
 ## updates Properties
 
@@ -3120,7 +3240,7 @@ that `renderRoot` exists before the element `hasUpdated`.
 
 LitElement.hasUpdated
 
----
+___
 
 ### isUpdatePending
 
@@ -3147,15 +3267,15 @@ LitElement.isUpdatePending
 
 #### Parameters
 
-| Name       | Type                    |
-| :--------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `newValue` | `undefined` \| `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ## attributes Accessors
 
@@ -3165,9 +3285,7 @@ LitElement.isUpdatePending
 
 Returns a list of attributes corresponding to the registered properties.
 
-**`nocollapse`**
-
-**`category`** attributes
+**`Nocollapse`**
 
 #### Returns
 
@@ -3177,7 +3295,7 @@ Returns a list of attributes corresponding to the registered properties.
 
 LitElement.observedAttributes
 
----
+___
 
 ## updates Accessors
 
@@ -3196,14 +3314,12 @@ method. For example, it is sometimes useful to await a rendered element
 before fulfilling this Promise. To do this, first await
 `super.getUpdateComplete()`, then any subsequent state.
 
-**`category`** updates
-
 #### Returns
 
 `Promise`<`boolean`\>
 
 A promise of a boolean that resolves to true if the update completed
-without triggering another update.
+    without triggering another update.
 
 #### Inherited from
 
@@ -3213,67 +3329,67 @@ LitElement.updateComplete
 
 ### \_handleInput
 
-▸ `Private` **\_handleInput**(`evt`): `void`
+▸ `Private` **_handleInput**(`evt`): `void`
 
 #### Parameters
 
-| Name  | Type         |
-| :---- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `evt` | `InputEvent` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### \_handleKeyDown
 
-▸ `Private` **\_handleKeyDown**(`evt`): `void`
+▸ `Private` **_handleKeyDown**(`evt`): `void`
 
 #### Parameters
 
-| Name  | Type    |
-| :---- | :------ |
+| Name | Type |
+| :------ | :------ |
 | `evt` | `Event` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### \_handleKeyUp
 
-▸ `Private` **\_handleKeyUp**(`evt`): `void`
+▸ `Private` **_handleKeyUp**(`evt`): `void`
 
 #### Parameters
 
-| Name  | Type    |
-| :---- | :------ |
+| Name | Type |
+| :------ | :------ |
 | `evt` | `Event` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### \_handleWheel
 
-▸ `Private` **\_handleWheel**(`evt`): `void`
+▸ `Private` **_handleWheel**(`evt`): `void`
 
 #### Parameters
 
-| Name  | Type    |
-| :---- | :------ |
+| Name | Type |
+| :------ | :------ |
 | `evt` | `Event` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### addEventListener
 
@@ -3281,17 +3397,17 @@ LitElement.updateComplete
 
 #### Type parameters
 
-| Name | Type                                |
-| :--- | :---------------------------------- |
-| `K`  | extends keyof `HTMLElementEventMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementEventMap` |
 
 #### Parameters
 
-| Name       | Type                                                               |
-| :--------- | :----------------------------------------------------------------- |
-| `type`     | `K`                                                                |
+| Name | Type |
+| :------ | :------ |
+| `type` | `K` |
 | `listener` | (`this`: `HTMLElement`, `ev`: `HTMLElementEventMap`[`K`]) => `any` |
-| `options?` | `boolean` \| `AddEventListenerOptions`                             |
+| `options?` | `boolean` \| `AddEventListenerOptions` |
 
 #### Returns
 
@@ -3305,10 +3421,10 @@ LitElement.addEventListener
 
 #### Parameters
 
-| Name       | Type                                   |
-| :--------- | :------------------------------------- |
-| `type`     | `string`                               |
-| `listener` | `EventListenerOrEventListenerObject`   |
+| Name | Type |
+| :------ | :------ |
+| `type` | `string` |
+| `listener` | `EventListenerOrEventListenerObject` |
 | `options?` | `boolean` \| `AddEventListenerOptions` |
 
 #### Returns
@@ -3319,7 +3435,7 @@ LitElement.addEventListener
 
 LitElement.addEventListener
 
----
+___
 
 ### after
 
@@ -3331,8 +3447,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3343,7 +3459,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 LitElement.after
 
----
+___
 
 ### animate
 
@@ -3351,10 +3467,10 @@ LitElement.after
 
 #### Parameters
 
-| Name        | Type                                                 |
-| :---------- | :--------------------------------------------------- |
-| `keyframes` | `null` \| `Keyframe`[] \| `PropertyIndexedKeyframes` |
-| `options?`  | `number` \| `KeyframeAnimationOptions`               |
+| Name | Type |
+| :------ | :------ |
+| `keyframes` | ``null`` \| `Keyframe`[] \| `PropertyIndexedKeyframes` |
+| `options?` | `number` \| `KeyframeAnimationOptions` |
 
 #### Returns
 
@@ -3364,7 +3480,7 @@ LitElement.after
 
 LitElement.animate
 
----
+___
 
 ### append
 
@@ -3376,8 +3492,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3388,7 +3504,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 LitElement.append
 
----
+___
 
 ### appendChild
 
@@ -3396,15 +3512,15 @@ LitElement.append
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name   | Type |
-| :----- | :--- |
-| `node` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `node` | `T` |
 
 #### Returns
 
@@ -3414,7 +3530,7 @@ LitElement.append
 
 LitElement.appendChild
 
----
+___
 
 ### attachInternals
 
@@ -3428,7 +3544,7 @@ LitElement.appendChild
 
 LitElement.attachInternals
 
----
+___
 
 ### attachShadow
 
@@ -3438,8 +3554,8 @@ Creates a shadow root for element and returns it.
 
 #### Parameters
 
-| Name   | Type             |
-| :----- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `init` | `ShadowRootInit` |
 
 #### Returns
@@ -3450,7 +3566,7 @@ Creates a shadow root for element and returns it.
 
 LitElement.attachShadow
 
----
+___
 
 ### before
 
@@ -3462,8 +3578,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3474,7 +3590,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 LitElement.before
 
----
+___
 
 ### blur
 
@@ -3488,7 +3604,7 @@ LitElement.before
 
 LitElement.blur
 
----
+___
 
 ### click
 
@@ -3502,7 +3618,7 @@ LitElement.blur
 
 LitElement.click
 
----
+___
 
 ### cloneNode
 
@@ -3512,8 +3628,8 @@ Returns a copy of node. If deep is true, the copy also includes the node's desce
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `deep?` | `boolean` |
 
 #### Returns
@@ -3524,79 +3640,79 @@ Returns a copy of node. If deep is true, the copy also includes the node's desce
 
 LitElement.cloneNode
 
----
+___
 
 ### closest
 
-▸ **closest**<`K`\>(`selector`): `null` \| `HTMLElementTagNameMap`[`K`]
+▸ **closest**<`K`\>(`selector`): ``null`` \| `HTMLElementTagNameMap`[`K`]
 
 Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `selector` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selector` | `K` |
 
 #### Returns
 
-`null` \| `HTMLElementTagNameMap`[`K`]
+``null`` \| `HTMLElementTagNameMap`[`K`]
 
 #### Inherited from
 
 LitElement.closest
 
-▸ **closest**<`K`\>(`selector`): `null` \| `SVGElementTagNameMap`[`K`]
+▸ **closest**<`K`\>(`selector`): ``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `selector` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selector` | `K` |
 
 #### Returns
 
-`null` \| `SVGElementTagNameMap`[`K`]
+``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Inherited from
 
 LitElement.closest
 
-▸ **closest**<`E`\>(`selectors`): `null` \| `E`
+▸ **closest**<`E`\>(`selectors`): ``null`` \| `E`
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
 
-`null` \| `E`
+``null`` \| `E`
 
 #### Inherited from
 
 LitElement.closest
 
----
+___
 
 ### compareDocumentPosition
 
@@ -3606,8 +3722,8 @@ Returns a bitmask indicating the position of other relative to node.
 
 #### Parameters
 
-| Name    | Type   |
-| :------ | :----- |
+| Name | Type |
+| :------ | :------ |
 | `other` | `Node` |
 
 #### Returns
@@ -3618,7 +3734,7 @@ Returns a bitmask indicating the position of other relative to node.
 
 LitElement.compareDocumentPosition
 
----
+___
 
 ### contains
 
@@ -3628,9 +3744,9 @@ Returns true if other is an inclusive descendant of node, and false otherwise.
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
-| `other` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `other` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -3640,7 +3756,7 @@ Returns true if other is an inclusive descendant of node, and false otherwise.
 
 LitElement.contains
 
----
+___
 
 ### dispatchEvent
 
@@ -3650,7 +3766,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 #### Parameters
 
-| Name    | Type    |
+| Name | Type |
 | :------ | :------ |
 | `event` | `Event` |
 
@@ -3662,7 +3778,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 LitElement.dispatchEvent
 
----
+___
 
 ### firstUpdated
 
@@ -3676,7 +3792,7 @@ LitElement.dispatchEvent
 
 LitElement.firstUpdated
 
----
+___
 
 ### focus
 
@@ -3690,7 +3806,7 @@ LitElement.firstUpdated
 
 LitElement.focus
 
----
+___
 
 ### getAnimations
 
@@ -3698,8 +3814,8 @@ LitElement.focus
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `GetAnimationsOptions` |
 
 #### Returns
@@ -3710,52 +3826,52 @@ LitElement.focus
 
 LitElement.getAnimations
 
----
+___
 
 ### getAttribute
 
-▸ **getAttribute**(`qualifiedName`): `null` \| `string`
+▸ **getAttribute**(`qualifiedName`): ``null`` \| `string`
 
 Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 LitElement.getAttribute
 
----
+___
 
 ### getAttributeNS
 
-▸ **getAttributeNS**(`namespace`, `localName`): `null` \| `string`
+▸ **getAttributeNS**(`namespace`, `localName`): ``null`` \| `string`
 
 Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 LitElement.getAttributeNS
 
----
+___
 
 ### getAttributeNames
 
@@ -3771,48 +3887,48 @@ Returns the qualified names of all element's attributes. Can contain duplicates.
 
 LitElement.getAttributeNames
 
----
+___
 
 ### getAttributeNode
 
-▸ **getAttributeNode**(`qualifiedName`): `null` \| `Attr`
+▸ **getAttributeNode**(`qualifiedName`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 LitElement.getAttributeNode
 
----
+___
 
 ### getAttributeNodeNS
 
-▸ **getAttributeNodeNS**(`namespace`, `localName`): `null` \| `Attr`
+▸ **getAttributeNodeNS**(`namespace`, `localName`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 LitElement.getAttributeNodeNS
 
----
+___
 
 ### getBoundingClientRect
 
@@ -3826,7 +3942,7 @@ LitElement.getAttributeNodeNS
 
 LitElement.getBoundingClientRect
 
----
+___
 
 ### getClientRects
 
@@ -3840,7 +3956,7 @@ LitElement.getBoundingClientRect
 
 LitElement.getClientRects
 
----
+___
 
 ### getElementsByClassName
 
@@ -3850,8 +3966,8 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `classNames` | `string` |
 
 #### Returns
@@ -3862,7 +3978,7 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 LitElement.getElementsByClassName
 
----
+___
 
 ### getElementsByTagName
 
@@ -3870,15 +3986,15 @@ LitElement.getElementsByClassName
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name            | Type |
-| :-------------- | :--- |
-| `qualifiedName` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `K` |
 
 #### Returns
 
@@ -3892,15 +4008,15 @@ LitElement.getElementsByTagName
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name            | Type |
-| :-------------- | :--- |
-| `qualifiedName` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `K` |
 
 #### Returns
 
@@ -3914,8 +4030,8 @@ LitElement.getElementsByTagName
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -3926,7 +4042,7 @@ LitElement.getElementsByTagName
 
 LitElement.getElementsByTagName
 
----
+___
 
 ### getElementsByTagNameNS
 
@@ -3934,10 +4050,10 @@ LitElement.getElementsByTagName
 
 #### Parameters
 
-| Name           | Type                             |
-| :------------- | :------------------------------- |
-| `namespaceURI` | `"http://www.w3.org/1999/xhtml"` |
-| `localName`    | `string`                         |
+| Name | Type |
+| :------ | :------ |
+| `namespaceURI` | ``"http://www.w3.org/1999/xhtml"`` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -3951,10 +4067,10 @@ LitElement.getElementsByTagNameNS
 
 #### Parameters
 
-| Name           | Type                           |
-| :------------- | :----------------------------- |
-| `namespaceURI` | `"http://www.w3.org/2000/svg"` |
-| `localName`    | `string`                       |
+| Name | Type |
+| :------ | :------ |
+| `namespaceURI` | ``"http://www.w3.org/2000/svg"`` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -3968,10 +4084,10 @@ LitElement.getElementsByTagNameNS
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -3981,7 +4097,7 @@ LitElement.getElementsByTagNameNS
 
 LitElement.getElementsByTagNameNS
 
----
+___
 
 ### getRootNode
 
@@ -3991,8 +4107,8 @@ Returns node's root.
 
 #### Parameters
 
-| Name       | Type                 |
-| :--------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `GetRootNodeOptions` |
 
 #### Returns
@@ -4003,7 +4119,7 @@ Returns node's root.
 
 LitElement.getRootNode
 
----
+___
 
 ### hasAttribute
 
@@ -4013,8 +4129,8 @@ Returns true if element has an attribute whose qualified name is qualifiedName, 
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -4025,7 +4141,7 @@ Returns true if element has an attribute whose qualified name is qualifiedName, 
 
 LitElement.hasAttribute
 
----
+___
 
 ### hasAttributeNS
 
@@ -4035,10 +4151,10 @@ Returns true if element has an attribute whose namespace is namespace and local 
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4048,7 +4164,7 @@ Returns true if element has an attribute whose namespace is namespace and local 
 
 LitElement.hasAttributeNS
 
----
+___
 
 ### hasAttributes
 
@@ -4064,7 +4180,7 @@ Returns true if element has attributes, and false otherwise.
 
 LitElement.hasAttributes
 
----
+___
 
 ### hasChildNodes
 
@@ -4080,7 +4196,7 @@ Returns whether node has children.
 
 LitElement.hasChildNodes
 
----
+___
 
 ### hasPointerCapture
 
@@ -4088,8 +4204,8 @@ LitElement.hasChildNodes
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -4100,28 +4216,28 @@ LitElement.hasChildNodes
 
 LitElement.hasPointerCapture
 
----
+___
 
 ### insertAdjacentElement
 
-▸ **insertAdjacentElement**(`where`, `element`): `null` \| `Element`
+▸ **insertAdjacentElement**(`where`, `element`): ``null`` \| `Element`
 
 #### Parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
-| `where`   | `InsertPosition` |
-| `element` | `Element`        |
+| Name | Type |
+| :------ | :------ |
+| `where` | `InsertPosition` |
+| `element` | `Element` |
 
 #### Returns
 
-`null` \| `Element`
+``null`` \| `Element`
 
 #### Inherited from
 
 LitElement.insertAdjacentElement
 
----
+___
 
 ### insertAdjacentHTML
 
@@ -4129,10 +4245,10 @@ LitElement.insertAdjacentElement
 
 #### Parameters
 
-| Name       | Type             |
-| :--------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `position` | `InsertPosition` |
-| `text`     | `string`         |
+| `text` | `string` |
 
 #### Returns
 
@@ -4142,7 +4258,7 @@ LitElement.insertAdjacentElement
 
 LitElement.insertAdjacentHTML
 
----
+___
 
 ### insertAdjacentText
 
@@ -4150,10 +4266,10 @@ LitElement.insertAdjacentHTML
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `where` | `InsertPosition` |
-| `data`  | `string`         |
+| `data` | `string` |
 
 #### Returns
 
@@ -4163,7 +4279,7 @@ LitElement.insertAdjacentHTML
 
 LitElement.insertAdjacentText
 
----
+___
 
 ### insertBefore
 
@@ -4171,16 +4287,16 @@ LitElement.insertAdjacentText
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
-| `node`  | `T`              |
-| `child` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `node` | `T` |
+| `child` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -4190,7 +4306,7 @@ LitElement.insertAdjacentText
 
 LitElement.insertBefore
 
----
+___
 
 ### isDefaultNamespace
 
@@ -4198,9 +4314,9 @@ LitElement.insertBefore
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
 
 #### Returns
 
@@ -4210,7 +4326,7 @@ LitElement.insertBefore
 
 LitElement.isDefaultNamespace
 
----
+___
 
 ### isEqualNode
 
@@ -4220,9 +4336,9 @@ Returns whether node and otherNode have the same properties.
 
 #### Parameters
 
-| Name        | Type             |
-| :---------- | :--------------- |
-| `otherNode` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `otherNode` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -4232,7 +4348,7 @@ Returns whether node and otherNode have the same properties.
 
 LitElement.isEqualNode
 
----
+___
 
 ### isSameNode
 
@@ -4240,9 +4356,9 @@ LitElement.isEqualNode
 
 #### Parameters
 
-| Name        | Type             |
-| :---------- | :--------------- |
-| `otherNode` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `otherNode` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -4252,47 +4368,47 @@ LitElement.isEqualNode
 
 LitElement.isSameNode
 
----
+___
 
 ### lookupNamespaceURI
 
-▸ **lookupNamespaceURI**(`prefix`): `null` \| `string`
+▸ **lookupNamespaceURI**(`prefix`): ``null`` \| `string`
 
 #### Parameters
 
-| Name     | Type               |
-| :------- | :----------------- |
-| `prefix` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `prefix` | ``null`` \| `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 LitElement.lookupNamespaceURI
 
----
+___
 
 ### lookupPrefix
 
-▸ **lookupPrefix**(`namespace`): `null` \| `string`
+▸ **lookupPrefix**(`namespace`): ``null`` \| `string`
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 LitElement.lookupPrefix
 
----
+___
 
 ### matches
 
@@ -4302,8 +4418,8 @@ Returns true if matching selectors against element's root yields element, and fa
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -4314,7 +4430,7 @@ Returns true if matching selectors against element's root yields element, and fa
 
 LitElement.matches
 
----
+___
 
 ### normalize
 
@@ -4330,7 +4446,7 @@ Removes empty exclusive Text nodes and concatenates the data of remaining contig
 
 LitElement.normalize
 
----
+___
 
 ### prepend
 
@@ -4342,8 +4458,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -4354,79 +4470,79 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 LitElement.prepend
 
----
+___
 
 ### querySelector
 
-▸ **querySelector**<`K`\>(`selectors`): `null` \| `HTMLElementTagNameMap`[`K`]
+▸ **querySelector**<`K`\>(`selectors`): ``null`` \| `HTMLElementTagNameMap`[`K`]
 
 Returns the first element that is a descendant of node that matches selectors.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
-`null` \| `HTMLElementTagNameMap`[`K`]
+``null`` \| `HTMLElementTagNameMap`[`K`]
 
 #### Inherited from
 
 LitElement.querySelector
 
-▸ **querySelector**<`K`\>(`selectors`): `null` \| `SVGElementTagNameMap`[`K`]
+▸ **querySelector**<`K`\>(`selectors`): ``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
-`null` \| `SVGElementTagNameMap`[`K`]
+``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Inherited from
 
 LitElement.querySelector
 
-▸ **querySelector**<`E`\>(`selectors`): `null` \| `E`
+▸ **querySelector**<`E`\>(`selectors`): ``null`` \| `E`
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
 
-`null` \| `E`
+``null`` \| `E`
 
 #### Inherited from
 
 LitElement.querySelector
 
----
+___
 
 ### querySelectorAll
 
@@ -4436,15 +4552,15 @@ Returns all element descendants of node that match selectors.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
@@ -4458,15 +4574,15 @@ LitElement.querySelectorAll
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
@@ -4480,14 +4596,14 @@ LitElement.querySelectorAll
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -4498,7 +4614,7 @@ LitElement.querySelectorAll
 
 LitElement.querySelectorAll
 
----
+___
 
 ### releasePointerCapture
 
@@ -4506,8 +4622,8 @@ LitElement.querySelectorAll
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -4518,7 +4634,7 @@ LitElement.querySelectorAll
 
 LitElement.releasePointerCapture
 
----
+___
 
 ### remove
 
@@ -4534,7 +4650,7 @@ Removes node.
 
 LitElement.remove
 
----
+___
 
 ### removeAttribute
 
@@ -4544,8 +4660,8 @@ Removes element's first attribute whose qualified name is qualifiedName.
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -4556,7 +4672,7 @@ Removes element's first attribute whose qualified name is qualifiedName.
 
 LitElement.removeAttribute
 
----
+___
 
 ### removeAttributeNS
 
@@ -4566,10 +4682,10 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4579,7 +4695,7 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 LitElement.removeAttributeNS
 
----
+___
 
 ### removeAttributeNode
 
@@ -4587,8 +4703,8 @@ LitElement.removeAttributeNS
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
@@ -4599,7 +4715,7 @@ LitElement.removeAttributeNS
 
 LitElement.removeAttributeNode
 
----
+___
 
 ### removeChild
 
@@ -4607,15 +4723,15 @@ LitElement.removeAttributeNode
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type |
-| :------ | :--- |
-| `child` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `child` | `T` |
 
 #### Returns
 
@@ -4625,7 +4741,7 @@ LitElement.removeAttributeNode
 
 LitElement.removeChild
 
----
+___
 
 ### removeEventListener
 
@@ -4633,17 +4749,17 @@ LitElement.removeChild
 
 #### Type parameters
 
-| Name | Type                                |
-| :--- | :---------------------------------- |
-| `K`  | extends keyof `HTMLElementEventMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementEventMap` |
 
 #### Parameters
 
-| Name       | Type                                                               |
-| :--------- | :----------------------------------------------------------------- |
-| `type`     | `K`                                                                |
+| Name | Type |
+| :------ | :------ |
+| `type` | `K` |
 | `listener` | (`this`: `HTMLElement`, `ev`: `HTMLElementEventMap`[`K`]) => `any` |
-| `options?` | `boolean` \| `EventListenerOptions`                                |
+| `options?` | `boolean` \| `EventListenerOptions` |
 
 #### Returns
 
@@ -4657,11 +4773,11 @@ LitElement.removeEventListener
 
 #### Parameters
 
-| Name       | Type                                 |
-| :--------- | :----------------------------------- |
-| `type`     | `string`                             |
+| Name | Type |
+| :------ | :------ |
+| `type` | `string` |
 | `listener` | `EventListenerOrEventListenerObject` |
-| `options?` | `boolean` \| `EventListenerOptions`  |
+| `options?` | `boolean` \| `EventListenerOptions` |
 
 #### Returns
 
@@ -4671,21 +4787,21 @@ LitElement.removeEventListener
 
 LitElement.removeEventListener
 
----
+___
 
 ### render
 
-▸ **render**(): `TemplateResult`<`1`\>
+▸ **render**(): `TemplateResult`<``1``\>
 
 #### Returns
 
-`TemplateResult`<`1`\>
+`TemplateResult`<``1``\>
 
 #### Overrides
 
 LitElement.render
 
----
+___
 
 ### replaceChild
 
@@ -4693,16 +4809,16 @@ LitElement.render
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type   |
-| :------ | :----- |
-| `node`  | `Node` |
-| `child` | `T`    |
+| Name | Type |
+| :------ | :------ |
+| `node` | `Node` |
+| `child` | `T` |
 
 #### Returns
 
@@ -4712,7 +4828,7 @@ LitElement.render
 
 LitElement.replaceChild
 
----
+___
 
 ### replaceChildren
 
@@ -4724,8 +4840,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -4736,7 +4852,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 LitElement.replaceChildren
 
----
+___
 
 ### replaceWith
 
@@ -4748,8 +4864,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -4760,7 +4876,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 LitElement.replaceWith
 
----
+___
 
 ### requestFullscreen
 
@@ -4772,8 +4888,8 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name       | Type                |
-| :--------- | :------------------ |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `FullscreenOptions` |
 
 #### Returns
@@ -4784,7 +4900,7 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 LitElement.requestFullscreen
 
----
+___
 
 ### requestPointerLock
 
@@ -4798,7 +4914,7 @@ LitElement.requestFullscreen
 
 LitElement.requestPointerLock
 
----
+___
 
 ### scroll
 
@@ -4806,8 +4922,8 @@ LitElement.requestPointerLock
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -4822,10 +4938,10 @@ LitElement.scroll
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -4835,7 +4951,7 @@ LitElement.scroll
 
 LitElement.scroll
 
----
+___
 
 ### scrollBy
 
@@ -4843,8 +4959,8 @@ LitElement.scroll
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -4859,10 +4975,10 @@ LitElement.scrollBy
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -4872,7 +4988,7 @@ LitElement.scrollBy
 
 LitElement.scrollBy
 
----
+___
 
 ### scrollIntoView
 
@@ -4880,8 +4996,8 @@ LitElement.scrollBy
 
 #### Parameters
 
-| Name   | Type                                 |
-| :----- | :----------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `arg?` | `boolean` \| `ScrollIntoViewOptions` |
 
 #### Returns
@@ -4892,7 +5008,7 @@ LitElement.scrollBy
 
 LitElement.scrollIntoView
 
----
+___
 
 ### scrollTo
 
@@ -4900,8 +5016,8 @@ LitElement.scrollIntoView
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -4916,10 +5032,10 @@ LitElement.scrollTo
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -4929,7 +5045,7 @@ LitElement.scrollTo
 
 LitElement.scrollTo
 
----
+___
 
 ### select
 
@@ -4939,7 +5055,7 @@ LitElement.scrollTo
 
 `void`
 
----
+___
 
 ### setAttribute
 
@@ -4949,10 +5065,10 @@ Sets the value of element's first attribute whose qualified name is qualifiedNam
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
-| `value`         | `string` |
+| `value` | `string` |
 
 #### Returns
 
@@ -4962,7 +5078,7 @@ Sets the value of element's first attribute whose qualified name is qualifiedNam
 
 LitElement.setAttribute
 
----
+___
 
 ### setAttributeNS
 
@@ -4972,11 +5088,11 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 #### Parameters
 
-| Name            | Type               |
-| :-------------- | :----------------- |
-| `namespace`     | `null` \| `string` |
-| `qualifiedName` | `string`           |
-| `value`         | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `qualifiedName` | `string` |
+| `value` | `string` |
 
 #### Returns
 
@@ -4986,47 +5102,47 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 LitElement.setAttributeNS
 
----
+___
 
 ### setAttributeNode
 
-▸ **setAttributeNode**(`attr`): `null` \| `Attr`
+▸ **setAttributeNode**(`attr`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 LitElement.setAttributeNode
 
----
+___
 
 ### setAttributeNodeNS
 
-▸ **setAttributeNodeNS**(`attr`): `null` \| `Attr`
+▸ **setAttributeNodeNS**(`attr`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 LitElement.setAttributeNodeNS
 
----
+___
 
 ### setPointerCapture
 
@@ -5034,8 +5150,8 @@ LitElement.setAttributeNodeNS
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -5046,7 +5162,7 @@ LitElement.setAttributeNodeNS
 
 LitElement.setPointerCapture
 
----
+___
 
 ### toggleAttribute
 
@@ -5058,10 +5174,10 @@ Returns true if qualifiedName is now present, and false otherwise.
 
 #### Parameters
 
-| Name            | Type      |
-| :-------------- | :-------- |
-| `qualifiedName` | `string`  |
-| `force?`        | `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `string` |
+| `force?` | `boolean` |
 
 #### Returns
 
@@ -5071,18 +5187,20 @@ Returns true if qualifiedName is now present, and false otherwise.
 
 LitElement.toggleAttribute
 
----
+___
 
 ### webkitMatchesSelector
 
 ▸ **webkitMatchesSelector**(`selectors`): `boolean`
 
-**`deprecated`** This is a legacy alias of `matches`.
+**`Deprecated`**
+
+This is a legacy alias of `matches`.
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -5093,7 +5211,7 @@ LitElement.toggleAttribute
 
 LitElement.webkitMatchesSelector
 
----
+___
 
 ### addInitializer
 
@@ -5112,7 +5230,7 @@ const myDecorator = (target: typeof ReactiveElement, key: string) => {
     // This is run during construction of the element
     new MyController(instance);
   });
-};
+}
 ```
 
 Decorating a field will then cause each instance to run an initializer
@@ -5129,12 +5247,12 @@ subclass does not add it to a superclass. Since initializers are run in
 constructors, initializers will run in order of the class hierarchy,
 starting with superclasses and progressing to the instance's class.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name          | Type          |
-| :------------ | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `initializer` | `Initializer` |
 
 #### Returns
@@ -5145,7 +5263,7 @@ starting with superclasses and progressing to the instance's class.
 
 LitElement.addInitializer
 
----
+___
 
 ### finalize
 
@@ -5155,7 +5273,7 @@ Creates property accessors for registered properties, sets up element
 styling, and ensures any superclasses are also finalized. Returns true if
 the element was finalized.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Returns
 
@@ -5165,7 +5283,7 @@ the element was finalized.
 
 LitElement.finalize
 
----
+___
 
 ## attributes Methods
 
@@ -5177,11 +5295,11 @@ Synchronizes property values when attributes change.
 
 #### Parameters
 
-| Name    | Type               |
-| :------ | :----------------- |
-| `name`  | `string`           |
-| `_old`  | `null` \| `string` |
-| `value` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `name` | `string` |
+| `_old` | ``null`` \| `string` |
+| `value` | ``null`` \| `string` |
 
 #### Returns
 
@@ -5191,7 +5309,7 @@ Synchronizes property values when attributes change.
 
 LitElement.attributeChangedCallback
 
----
+___
 
 ## controllers Methods
 
@@ -5208,8 +5326,8 @@ controller's `hostConnected()` callback will be immediately called.
 
 #### Parameters
 
-| Name         | Type                 |
-| :----------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `controller` | `ReactiveController` |
 
 #### Returns
@@ -5220,7 +5338,7 @@ controller's `hostConnected()` callback will be immediately called.
 
 LitElement.addController
 
----
+___
 
 ### removeController
 
@@ -5230,8 +5348,8 @@ Removes a `ReactiveController` from the element.
 
 #### Parameters
 
-| Name         | Type                 |
-| :----------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `controller` | `ReactiveController` |
 
 #### Returns
@@ -5242,7 +5360,7 @@ Removes a `ReactiveController` from the element.
 
 LitElement.removeController
 
----
+___
 
 ## lifecycle Methods
 
@@ -5275,7 +5393,7 @@ element is disconnected, in `disconnectedCallback()`.
 
 LitElement.connectedCallback
 
----
+___
 
 ### disconnectedCallback
 
@@ -5305,7 +5423,7 @@ An element may be re-connected after being disconnected.
 
 LitElement.disconnectedCallback
 
----
+___
 
 ## properties Methods
 
@@ -5314,7 +5432,7 @@ LitElement.disconnectedCallback
 ▸ `Static` **createProperty**(`name`, `options?`): `void`
 
 Creates a property accessor on the element prototype if one does not exist
-and stores a {@linkcode PropertyDeclaration} for the property with the
+and stores a PropertyDeclaration for the property with the
 given options. The property setter calls the property's `hasChanged`
 property option or uses a strict identity check to determine whether or not
 to request an update.
@@ -5334,13 +5452,13 @@ static createProperty(name, options) {
 }
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name       | Type                                         |
-| :--------- | :------------------------------------------- |
-| `name`     | `PropertyKey`                                |
+| Name | Type |
+| :------ | :------ |
+| `name` | `PropertyKey` |
 | `options?` | `PropertyDeclaration`<`unknown`, `unknown`\> |
 
 #### Returns
@@ -5351,7 +5469,7 @@ static createProperty(name, options) {
 
 LitElement.createProperty
 
----
+___
 
 ### getPropertyDescriptor
 
@@ -5364,7 +5482,8 @@ For example,
 ```ts
 class MyElement extends LitElement {
   static getPropertyDescriptor(name, key, options) {
-    const defaultDescriptor = super.getPropertyDescriptor(name, key, options);
+    const defaultDescriptor =
+        super.getPropertyDescriptor(name, key, options);
     const setter = defaultDescriptor.set;
     return {
       get: defaultDescriptor.get,
@@ -5373,20 +5492,20 @@ class MyElement extends LitElement {
         // custom action.
       },
       configurable: true,
-      enumerable: true,
-    };
+      enumerable: true
+    }
   }
 }
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name      | Type                                         |
-| :-------- | :------------------------------------------- |
-| `name`    | `PropertyKey`                                |
-| `key`     | `string` \| `symbol`                         |
+| Name | Type |
+| :------ | :------ |
+| `name` | `PropertyKey` |
+| `key` | `string` \| `symbol` |
 | `options` | `PropertyDeclaration`<`unknown`, `unknown`\> |
 
 #### Returns
@@ -5397,7 +5516,7 @@ class MyElement extends LitElement {
 
 LitElement.getPropertyDescriptor
 
----
+___
 
 ### getPropertyOptions
 
@@ -5412,14 +5531,14 @@ Note, this method should be considered "final" and not overridden. To
 customize the options for a given property, override
 [`createProperty`](DarkForestNumberInput.md#createproperty).
 
-**`nocollapse`**
+**`Nocollapse`**
 
-**`final`**
+**`Final`**
 
 #### Parameters
 
-| Name   | Type          |
-| :----- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `name` | `PropertyKey` |
 
 #### Returns
@@ -5430,7 +5549,7 @@ customize the options for a given property, override
 
 LitElement.getPropertyOptions
 
----
+___
 
 ## rendering Methods
 
@@ -5446,7 +5565,7 @@ LitElement.getPropertyOptions
 
 LitElement.createRenderRoot
 
----
+___
 
 ## styles Methods
 
@@ -5464,12 +5583,12 @@ especially when composing via subclassing. The last item is kept to try
 to preserve the cascade order with the assumption that it's most important
 that last added styles override previous styles.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `styles?` | `CSSResultGroup` |
 
 #### Returns
@@ -5480,7 +5599,7 @@ that last added styles override previous styles.
 
 LitElement.finalizeStyles
 
----
+___
 
 ## updates Methods
 
@@ -5494,8 +5613,8 @@ update.
 
 #### Parameters
 
-| Name               | Type      |
-| :----------------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `_requestedUpdate` | `boolean` |
 
 #### Returns
@@ -5506,7 +5625,7 @@ update.
 
 LitElement.enableUpdating
 
----
+___
 
 ### getUpdateComplete
 
@@ -5535,13 +5654,13 @@ class MyElement extends LitElement {
 `Promise`<`boolean`\>
 
 A promise of a boolean that resolves to true if the update completed
-without triggering another update.
+    without triggering another update.
 
 #### Inherited from
 
 LitElement.getUpdateComplete
 
----
+___
 
 ### performUpdate
 
@@ -5569,7 +5688,7 @@ also calling `performUpdate()` to synchronously process updates difficult.
 
 LitElement.performUpdate
 
----
+___
 
 ### requestUpdate
 
@@ -5584,11 +5703,11 @@ options are honored.
 
 #### Parameters
 
-| Name        | Type                                         | Description                                                          |
-| :---------- | :------------------------------------------- | :------------------------------------------------------------------- |
-| `name?`     | `PropertyKey`                                | name of requesting property                                          |
-| `oldValue?` | `unknown`                                    | old value of requesting property                                     |
-| `options?`  | `PropertyDeclaration`<`unknown`, `unknown`\> | property options to use instead of the previously configured options |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name?` | `PropertyKey` | name of requesting property |
+| `oldValue?` | `unknown` | old value of requesting property |
+| `options?` | `PropertyDeclaration`<`unknown`, `unknown`\> | property options to use instead of the previously     configured options |
 
 #### Returns
 
@@ -5598,7 +5717,7 @@ options are honored.
 
 LitElement.requestUpdate
 
----
+___
 
 ### scheduleUpdate
 
@@ -5627,7 +5746,7 @@ override protected async scheduleUpdate(): Promise<unknown> {
 
 LitElement.scheduleUpdate
 
----
+___
 
 ### shouldUpdate
 
@@ -5639,8 +5758,8 @@ customized to control when to update.
 
 #### Parameters
 
-| Name                 | Type                                                | Description                               |
-| :------------------- | :-------------------------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `_changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> | Map of changed properties with old values |
 
 #### Returns
@@ -5651,7 +5770,7 @@ customized to control when to update.
 
 LitElement.shouldUpdate
 
----
+___
 
 ### update
 
@@ -5659,12 +5778,12 @@ LitElement.shouldUpdate
 
 Updates the element. This method reflects property values to attributes
 and calls `render` to render DOM via lit-html. Setting properties inside
-this method will _not_ trigger another update.
+this method will *not* trigger another update.
 
 #### Parameters
 
-| Name                | Type                                                | Description                               |
-| :------------------ | :-------------------------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> | Map of changed properties with old values |
 
 #### Returns
@@ -5675,7 +5794,7 @@ this method will _not_ trigger another update.
 
 LitElement.update
 
----
+___
 
 ### updated
 
@@ -5689,8 +5808,8 @@ again after this update cycle completes.
 
 #### Parameters
 
-| Name                 | Type                                                | Description                               |
-| :------------------- | :-------------------------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `_changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> | Map of changed properties with old values |
 
 #### Returns
@@ -5701,7 +5820,7 @@ again after this update cycle completes.
 
 LitElement.updated
 
----
+___
 
 ### willUpdate
 
@@ -5709,8 +5828,8 @@ LitElement.updated
 
 #### Parameters
 
-| Name                 | Type                                                |
-| :------------------- | :-------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> |
 
 #### Returns

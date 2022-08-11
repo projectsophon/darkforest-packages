@@ -20,7 +20,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -37,7 +37,7 @@ Used to draw the Miner
 
 `void`
 
----
+___
 
 ### flush
 
@@ -49,7 +49,7 @@ Draws all queued items
 
 `void`
 
----
+___
 
 ### queueBorders
 
@@ -64,7 +64,7 @@ Used to draw the boarder of the game.
 
 `void`
 
----
+___
 
 ### queueHoveringRect
 
@@ -79,7 +79,7 @@ Used to draw a rectangle around a planet to indicate that the planet is being ho
 
 `void`
 
----
+___
 
 ### queueMousePath
 
@@ -94,7 +94,7 @@ Used to draw the path the mouse is taking when trying to transfer energy
 
 `void`
 
----
+___
 
 ### queueSelectedRangeRing
 
@@ -109,7 +109,7 @@ Used to draw the range of a planet when it is selected
 
 `void`
 
----
+___
 
 ### queueSelectedRect
 

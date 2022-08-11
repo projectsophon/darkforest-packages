@@ -1,15 +1,15 @@
-import type { Biome, SpaceType } from './game_types';
-import type { ArtifactId, EthAddress, LocationId } from './identifier';
-import type { PlanetMessage } from './planetmessage';
-import type { TransactionCollection } from './transaction';
-import type { Upgrade, UpgradeState } from './upgrade';
-import type { Abstract } from './utility';
-import type { WorldLocation } from './world';
+import type { Biome, SpaceType } from "./game_types";
+import type { ArtifactId, EthAddress, LocationId } from "./identifier";
+import type { PlanetMessage } from "./planetmessage";
+import type { TransactionCollection } from "./transaction";
+import type { Upgrade, UpgradeState } from "./upgrade";
+import type { Abstract } from "./utility";
+import type { WorldLocation } from "./world";
 
 /**
  * Abstract type representing a planet level.
  */
-export type PlanetLevel = Abstract<number, 'PlanetLevel'>;
+export type PlanetLevel = Abstract<number, "PlanetLevel">;
 
 /**
  * Enumeration of the possible planet levels.
@@ -32,22 +32,22 @@ export const PlanetLevel = {
  * Mapping from PlanetLevel to pretty-printed names.
  */
 export const PlanetLevelNames = {
-  [PlanetLevel.ZERO]: 'Level 0',
-  [PlanetLevel.ONE]: 'Level 1',
-  [PlanetLevel.TWO]: 'Level 2',
-  [PlanetLevel.THREE]: 'Level 3',
-  [PlanetLevel.FOUR]: 'Level 4',
-  [PlanetLevel.FIVE]: 'Level 5',
-  [PlanetLevel.SIX]: 'Level 6',
-  [PlanetLevel.SEVEN]: 'Level 7',
-  [PlanetLevel.EIGHT]: 'Level 8',
-  [PlanetLevel.NINE]: 'Level 9',
+  [PlanetLevel.ZERO]: "Level 0",
+  [PlanetLevel.ONE]: "Level 1",
+  [PlanetLevel.TWO]: "Level 2",
+  [PlanetLevel.THREE]: "Level 3",
+  [PlanetLevel.FOUR]: "Level 4",
+  [PlanetLevel.FIVE]: "Level 5",
+  [PlanetLevel.SIX]: "Level 6",
+  [PlanetLevel.SEVEN]: "Level 7",
+  [PlanetLevel.EIGHT]: "Level 8",
+  [PlanetLevel.NINE]: "Level 9",
 } as const;
 
 /**
  * Abstract type representing a planet type.
  */
-export type PlanetType = Abstract<number, 'PlanetType'>;
+export type PlanetType = Abstract<number, "PlanetType">;
 
 /**
  * Enumeration of the planet types. (PLANET = 0, SILVER_BANK = 4)
@@ -64,11 +64,11 @@ export const PlanetType = {
  * Mapping from PlanetType to pretty-printed names.
  */
 export const PlanetTypeNames = {
-  [PlanetType.PLANET]: 'Planet',
-  [PlanetType.SILVER_MINE]: 'Asteroid Field',
-  [PlanetType.RUINS]: 'Foundry',
-  [PlanetType.TRADING_POST]: 'Spacetime Rip',
-  [PlanetType.SILVER_BANK]: 'Quasar',
+  [PlanetType.PLANET]: "Planet",
+  [PlanetType.SILVER_MINE]: "Asteroid Field",
+  [PlanetType.RUINS]: "Foundry",
+  [PlanetType.TRADING_POST]: "Spacetime Rip",
+  [PlanetType.SILVER_BANK]: "Quasar",
 } as const;
 
 /**

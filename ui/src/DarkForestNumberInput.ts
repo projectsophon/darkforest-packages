@@ -1,10 +1,10 @@
-import { css, html, LitElement, unsafeCSS } from 'lit';
-import { createRef, ref } from 'lit/directives/ref.js';
-import * as dfstyles from './styles';
+import { css, html, LitElement, unsafeCSS } from "lit";
+import { createRef, ref } from "lit/directives/ref.js";
+import * as dfstyles from "./styles";
 
 export class DarkForestNumberInput extends LitElement {
   // Not part of LitElement but let's tack on the tagName for easier registration
-  static tagName = 'df-number-input';
+  static tagName = "df-number-input";
 
   // Defining element styles without a decorator
   // These are injected into the shadowRoot so they aren't applied globally
@@ -78,17 +78,17 @@ export class DarkForestNumberInput extends LitElement {
   // Properties defined above will have a getter/setter created on the component,
   // but we want to define their type and/or defaults on the component
   disabled?: boolean;
-  format: 'integer' | 'float' = 'integer';
+  format: "integer" | "float" = "integer";
   selected = false;
   readonly = false;
 
-  private _value = '';
+  private _value = "";
 
   set value(newValue: number | undefined) {
-    if (typeof newValue === 'number') {
+    if (typeof newValue === "number") {
       this._value = `${newValue}`;
     } else {
-      this._value = '';
+      this._value = "";
     }
   }
 
@@ -97,11 +97,11 @@ export class DarkForestNumberInput extends LitElement {
     // and that's what the parseInt/parseFloat functions return on invalid values
     let parsedValue = NaN;
     switch (this.format) {
-      case 'integer': {
+      case "integer": {
         parsedValue = parseInt(this._value, 10);
         break;
       }
-      case 'float': {
+      case "float": {
         parsedValue = parseFloat(this._value);
         break;
       }
@@ -126,8 +126,7 @@ export class DarkForestNumberInput extends LitElement {
       @keyup=${this._handleKeyUp}
       @keydown=${this._handleKeyDown}
       @wheel=${this._handleWheel}
-      .value=${this._value?.toString()}
-    />`;
+      .value=${this._value?.toString()} />`;
   }
 
   firstUpdated() {

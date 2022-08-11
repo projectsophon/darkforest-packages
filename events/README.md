@@ -11,7 +11,6 @@ You can install this package using [`npm`](https://www.npmjs.com) or
 ```bash
 npm install --save @projectsophon/events
 ```
-
 ```bash
 yarn add @projectsophon/events
 ```
@@ -19,48 +18,53 @@ yarn add @projectsophon/events
 When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
 
 ```js
-import * as events from "http://cdn.skypack.dev/@projectsophon/events";
+import * as events from 'http://cdn.skypack.dev/@projectsophon/events'
 ```
 
 ## Table of contents
 
-### Type aliases
+### Classes
+
+- [Store](classes/Store.md)
+
+### Type Aliases
 
 - [Callback](README.md#callback)
 - [Monomitter](README.md#monomitter)
 - [Subscription](README.md#subscription)
+- [Unsubscribe](README.md#unsubscribe)
 
 ### Functions
 
-- [monomitter](README.md#monomitter)
+- [monomitter](README.md#monomitter-1)
 
-## Type aliases
+## Type Aliases
 
 ### Callback
 
-Ƭ **Callback**<`T`\>: (`data`: `T`) => `void`
+Ƭ **Callback**<`T`\>: (`data`: `T`) => `Promise`<`void`\> \| `void`
 
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Type declaration
 
-▸ (`data`): `void`
+▸ (`data`): `Promise`<`void`\> \| `void`
 
 ##### Parameters
 
-| Name   | Type |
-| :----- | :--- |
-| `data` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `data` | `T` |
 
 ##### Returns
 
-`void`
+`Promise`<`void`\> \| `void`
 
----
+___
 
 ### Monomitter
 
@@ -69,48 +73,70 @@ import * as events from "http://cdn.skypack.dev/@projectsophon/events";
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Type declaration
 
-| Name        | Type                                                                                       |
-| :---------- | :----------------------------------------------------------------------------------------- |
-| `clear`     | () => `void`                                                                               |
-| `publish`   | (`data`: `T`) => `void`                                                                    |
-| `subscribe` | (`cb`: [`Callback`](README.md#callback)<`T`\>) => [`Subscription`](README.md#subscription) |
+| Name | Type |
+| :------ | :------ |
+| `clear` | () => `void` |
+| `publish` | (`data`: `T`) => `Promise`<`void`\> |
+| `subscribe` | (`cb`: [`Callback`](README.md#callback)<`T`\>) => { `unsubscribe`: () => `void`  } |
 
----
+___
 
 ### Subscription
 
-Ƭ **Subscription**: `Object`
+Ƭ **Subscription**<`T`\>: (`data`: `T`) => `Promise`<`void`\> \| `void`
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
 
 #### Type declaration
 
-| Name          | Type         |
-| :------------ | :----------- |
-| `unsubscribe` | () => `void` |
+▸ (`data`): `Promise`<`void`\> \| `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | `T` |
+
+##### Returns
+
+`Promise`<`void`\> \| `void`
+
+___
+
+### Unsubscribe
+
+Ƭ **Unsubscribe**: () => `void`
+
+#### Type declaration
+
+▸ (): `void`
+
+##### Returns
+
+`void`
 
 ## Functions
 
 ### monomitter
 
-▸ **monomitter**<`T`\>(`emitLatestOnSubscribe?`): [`Monomitter`](README.md#monomitter)<`T`\>
+▸ **monomitter**<`T`\>(): [`Monomitter`](README.md#monomitter)<`T`\>
 
 Constructs a new event emitter, whose purpose is to emit values of the given type.
 
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
-
-#### Parameters
-
-| Name                    | Type      | Default value | Description                                                                                      |
-| :---------------------- | :-------- | :------------ | :----------------------------------------------------------------------------------------------- |
-| `emitLatestOnSubscribe` | `boolean` | `false`       | if this is true, upon subscription immediately emit the most recently set value, if there is one |
+| :------ |
+| `T` |
 
 #### Returns
 

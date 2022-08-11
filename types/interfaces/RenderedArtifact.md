@@ -40,17 +40,17 @@
 
 Partial.activations
 
----
+___
 
 ### artifactType
 
-• **artifactType**: [`ArtifactType`](../README.md#artifacttype)
+• **artifactType**: [`ArtifactType`](../README.md#artifacttype-1)
 
 #### Overrides
 
 Partial.artifactType
 
----
+___
 
 ### controller
 
@@ -60,7 +60,7 @@ Partial.artifactType
 
 Partial.controller
 
----
+___
 
 ### currentOwner
 
@@ -70,7 +70,7 @@ Partial.controller
 
 Partial.currentOwner
 
----
+___
 
 ### discoverer
 
@@ -80,7 +80,7 @@ Partial.currentOwner
 
 Partial.discoverer
 
----
+___
 
 ### id
 
@@ -90,7 +90,7 @@ Partial.discoverer
 
 Partial.id
 
----
+___
 
 ### isInititalized
 
@@ -100,7 +100,7 @@ Partial.id
 
 Partial.isInititalized
 
----
+___
 
 ### lastActivated
 
@@ -110,7 +110,7 @@ Partial.isInititalized
 
 Partial.lastActivated
 
----
+___
 
 ### lastDeactivated
 
@@ -120,7 +120,7 @@ Partial.lastActivated
 
 Partial.lastDeactivated
 
----
+___
 
 ### mintedAtTimestamp
 
@@ -130,7 +130,7 @@ Partial.lastDeactivated
 
 Partial.mintedAtTimestamp
 
----
+___
 
 ### onPlanetId
 
@@ -140,7 +140,7 @@ Partial.mintedAtTimestamp
 
 Partial.onPlanetId
 
----
+___
 
 ### onVoyageId
 
@@ -150,17 +150,17 @@ Partial.onPlanetId
 
 Partial.onVoyageId
 
----
+___
 
 ### planetBiome
 
-• **planetBiome**: [`Biome`](../README.md#biome)
+• **planetBiome**: [`Biome`](../README.md#biome-1)
 
 #### Overrides
 
 Partial.planetBiome
 
----
+___
 
 ### planetDiscoveredOn
 
@@ -170,17 +170,17 @@ Partial.planetBiome
 
 Partial.planetDiscoveredOn
 
----
+___
 
 ### rarity
 
-• **rarity**: [`ArtifactRarity`](../README.md#artifactrarity)
+• **rarity**: [`ArtifactRarity`](../README.md#artifactrarity-1)
 
 #### Overrides
 
 Partial.rarity
 
----
+___
 
 ### timeDelayedUpgrade
 
@@ -190,7 +190,7 @@ Partial.rarity
 
 Partial.timeDelayedUpgrade
 
----
+___
 
 ### transactions
 
@@ -200,7 +200,7 @@ Partial.timeDelayedUpgrade
 
 Partial.transactions
 
----
+___
 
 ### upgrade
 
@@ -210,7 +210,7 @@ Partial.transactions
 
 Partial.upgrade
 
----
+___
 
 ### wormholeTo
 

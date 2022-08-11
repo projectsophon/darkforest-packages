@@ -16,7 +16,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -30,7 +30,7 @@ Draw all queued planets
 
 `void`
 
----
+___
 
 ### queuePlanets
 
@@ -43,19 +43,19 @@ Used for Drawing all types of planets
 
 #### Parameters
 
-| Name             | Type                                                                                       | Description                                                           |
-| :--------------- | :----------------------------------------------------------------------------------------- | :-------------------------------------------------------------------- |
-| `cachedPlanets`  | `Map`<[`LocationId`](../README.md#locationid), [`PlanetRenderInfo`](PlanetRenderInfo.md)\> | A Map that contains all planets that have been discovered by the user |
-| `now?`           | `number`                                                                                   | the modular of the current unix time by (2 _ pi _ 12000) in seconds   |
-| `highPerfMode?`  | `boolean`                                                                                  | if the game is in high performance mode                               |
-| `disableEmojis?` | `boolean`                                                                                  |                                                                       |
-| `disableHats?`   | `boolean`                                                                                  |                                                                       |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `cachedPlanets` | `Map`<[`LocationId`](../README.md#locationid), [`PlanetRenderInfo`](PlanetRenderInfo.md)\> | A Map that contains all planets that have been discovered by the user |
+| `now?` | `number` | the modular of the current unix time by (2 * pi  * 12000) in seconds |
+| `highPerfMode?` | `boolean` | if the game is in high performance mode |
+| `disableEmojis?` | `boolean` |  |
+| `disableHats?` | `boolean` |  |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### queueRangeRings
 
@@ -68,8 +68,8 @@ Used to draw the range of a planet when it is selected
 
 #### Parameters
 
-| Name     | Type                                              |
-| :------- | :------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `planet` | [`LocatablePlanet`](../README.md#locatableplanet) |
 
 #### Returns

@@ -14,24 +14,24 @@
 
 ### Properties
 
-- [ATTRIBUTE_NODE](DarkForestTheme.md#attribute_node)
-- [CDATA_SECTION_NODE](DarkForestTheme.md#cdata_section_node)
-- [COMMENT_NODE](DarkForestTheme.md#comment_node)
-- [DOCUMENT_FRAGMENT_NODE](DarkForestTheme.md#document_fragment_node)
-- [DOCUMENT_NODE](DarkForestTheme.md#document_node)
-- [DOCUMENT_POSITION_CONTAINED_BY](DarkForestTheme.md#document_position_contained_by)
-- [DOCUMENT_POSITION_CONTAINS](DarkForestTheme.md#document_position_contains)
-- [DOCUMENT_POSITION_DISCONNECTED](DarkForestTheme.md#document_position_disconnected)
-- [DOCUMENT_POSITION_FOLLOWING](DarkForestTheme.md#document_position_following)
-- [DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC](DarkForestTheme.md#document_position_implementation_specific)
-- [DOCUMENT_POSITION_PRECEDING](DarkForestTheme.md#document_position_preceding)
-- [DOCUMENT_TYPE_NODE](DarkForestTheme.md#document_type_node)
-- [ELEMENT_NODE](DarkForestTheme.md#element_node)
-- [ENTITY_NODE](DarkForestTheme.md#entity_node)
-- [ENTITY_REFERENCE_NODE](DarkForestTheme.md#entity_reference_node)
-- [NOTATION_NODE](DarkForestTheme.md#notation_node)
-- [PROCESSING_INSTRUCTION_NODE](DarkForestTheme.md#processing_instruction_node)
-- [TEXT_NODE](DarkForestTheme.md#text_node)
+- [ATTRIBUTE\_NODE](DarkForestTheme.md#attribute_node)
+- [CDATA\_SECTION\_NODE](DarkForestTheme.md#cdata_section_node)
+- [COMMENT\_NODE](DarkForestTheme.md#comment_node)
+- [DOCUMENT\_FRAGMENT\_NODE](DarkForestTheme.md#document_fragment_node)
+- [DOCUMENT\_NODE](DarkForestTheme.md#document_node)
+- [DOCUMENT\_POSITION\_CONTAINED\_BY](DarkForestTheme.md#document_position_contained_by)
+- [DOCUMENT\_POSITION\_CONTAINS](DarkForestTheme.md#document_position_contains)
+- [DOCUMENT\_POSITION\_DISCONNECTED](DarkForestTheme.md#document_position_disconnected)
+- [DOCUMENT\_POSITION\_FOLLOWING](DarkForestTheme.md#document_position_following)
+- [DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC](DarkForestTheme.md#document_position_implementation_specific)
+- [DOCUMENT\_POSITION\_PRECEDING](DarkForestTheme.md#document_position_preceding)
+- [DOCUMENT\_TYPE\_NODE](DarkForestTheme.md#document_type_node)
+- [ELEMENT\_NODE](DarkForestTheme.md#element_node)
+- [ENTITY\_NODE](DarkForestTheme.md#entity_node)
+- [ENTITY\_REFERENCE\_NODE](DarkForestTheme.md#entity_reference_node)
+- [NOTATION\_NODE](DarkForestTheme.md#notation_node)
+- [PROCESSING\_INSTRUCTION\_NODE](DarkForestTheme.md#processing_instruction_node)
+- [TEXT\_NODE](DarkForestTheme.md#text_node)
 - [accessKey](DarkForestTheme.md#accesskey)
 - [accessKeyLabel](DarkForestTheme.md#accesskeylabel)
 - [ariaAtomic](DarkForestTheme.md#ariaatomic)
@@ -181,11 +181,13 @@
 - [onreset](DarkForestTheme.md#onreset)
 - [onresize](DarkForestTheme.md#onresize)
 - [onscroll](DarkForestTheme.md#onscroll)
+- [onsecuritypolicyviolation](DarkForestTheme.md#onsecuritypolicyviolation)
 - [onseeked](DarkForestTheme.md#onseeked)
 - [onseeking](DarkForestTheme.md#onseeking)
 - [onselect](DarkForestTheme.md#onselect)
 - [onselectionchange](DarkForestTheme.md#onselectionchange)
 - [onselectstart](DarkForestTheme.md#onselectstart)
+- [onslotchange](DarkForestTheme.md#onslotchange)
 - [onstalled](DarkForestTheme.md#onstalled)
 - [onsubmit](DarkForestTheme.md#onsubmit)
 - [onsuspend](DarkForestTheme.md#onsuspend)
@@ -229,7 +231,7 @@
 - [title](DarkForestTheme.md#title)
 - [translate](DarkForestTheme.md#translate)
 - [updateComplete](DarkForestTheme.md#updatecomplete)
-- [tagName](DarkForestTheme.md#tagname)
+- [tagName](DarkForestTheme.md#tagname-1)
 
 ### Accessors
 
@@ -331,211 +333,211 @@ Theme.constructor
 
 ## Properties
 
-### ATTRIBUTE_NODE
+### ATTRIBUTE\_NODE
 
-• `Readonly` **ATTRIBUTE_NODE**: `number`
+• `Readonly` **ATTRIBUTE\_NODE**: `number`
 
 #### Inherited from
 
-Theme.ATTRIBUTE_NODE
+Theme.ATTRIBUTE\_NODE
 
----
+___
 
-### CDATA_SECTION_NODE
+### CDATA\_SECTION\_NODE
 
-• `Readonly` **CDATA_SECTION_NODE**: `number`
+• `Readonly` **CDATA\_SECTION\_NODE**: `number`
 
 node is a CDATASection node.
 
 #### Inherited from
 
-Theme.CDATA_SECTION_NODE
+Theme.CDATA\_SECTION\_NODE
 
----
+___
 
-### COMMENT_NODE
+### COMMENT\_NODE
 
-• `Readonly` **COMMENT_NODE**: `number`
+• `Readonly` **COMMENT\_NODE**: `number`
 
 node is a Comment node.
 
 #### Inherited from
 
-Theme.COMMENT_NODE
+Theme.COMMENT\_NODE
 
----
+___
 
-### DOCUMENT_FRAGMENT_NODE
+### DOCUMENT\_FRAGMENT\_NODE
 
-• `Readonly` **DOCUMENT_FRAGMENT_NODE**: `number`
+• `Readonly` **DOCUMENT\_FRAGMENT\_NODE**: `number`
 
 node is a DocumentFragment node.
 
 #### Inherited from
 
-Theme.DOCUMENT_FRAGMENT_NODE
+Theme.DOCUMENT\_FRAGMENT\_NODE
 
----
+___
 
-### DOCUMENT_NODE
+### DOCUMENT\_NODE
 
-• `Readonly` **DOCUMENT_NODE**: `number`
+• `Readonly` **DOCUMENT\_NODE**: `number`
 
 node is a document.
 
 #### Inherited from
 
-Theme.DOCUMENT_NODE
+Theme.DOCUMENT\_NODE
 
----
+___
 
-### DOCUMENT_POSITION_CONTAINED_BY
+### DOCUMENT\_POSITION\_CONTAINED\_BY
 
-• `Readonly` **DOCUMENT_POSITION_CONTAINED_BY**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_CONTAINED\_BY**: `number`
 
 Set when other is a descendant of node.
 
 #### Inherited from
 
-Theme.DOCUMENT_POSITION_CONTAINED_BY
+Theme.DOCUMENT\_POSITION\_CONTAINED\_BY
 
----
+___
 
-### DOCUMENT_POSITION_CONTAINS
+### DOCUMENT\_POSITION\_CONTAINS
 
-• `Readonly` **DOCUMENT_POSITION_CONTAINS**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_CONTAINS**: `number`
 
 Set when other is an ancestor of node.
 
 #### Inherited from
 
-Theme.DOCUMENT_POSITION_CONTAINS
+Theme.DOCUMENT\_POSITION\_CONTAINS
 
----
+___
 
-### DOCUMENT_POSITION_DISCONNECTED
+### DOCUMENT\_POSITION\_DISCONNECTED
 
-• `Readonly` **DOCUMENT_POSITION_DISCONNECTED**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_DISCONNECTED**: `number`
 
 Set when node and other are not in the same tree.
 
 #### Inherited from
 
-Theme.DOCUMENT_POSITION_DISCONNECTED
+Theme.DOCUMENT\_POSITION\_DISCONNECTED
 
----
+___
 
-### DOCUMENT_POSITION_FOLLOWING
+### DOCUMENT\_POSITION\_FOLLOWING
 
-• `Readonly` **DOCUMENT_POSITION_FOLLOWING**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_FOLLOWING**: `number`
 
 Set when other is following node.
 
 #### Inherited from
 
-Theme.DOCUMENT_POSITION_FOLLOWING
+Theme.DOCUMENT\_POSITION\_FOLLOWING
 
----
+___
 
-### DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC
+### DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC
 
-• `Readonly` **DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC**: `number`
 
 #### Inherited from
 
-Theme.DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC
+Theme.DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC
 
----
+___
 
-### DOCUMENT_POSITION_PRECEDING
+### DOCUMENT\_POSITION\_PRECEDING
 
-• `Readonly` **DOCUMENT_POSITION_PRECEDING**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_PRECEDING**: `number`
 
 Set when other is preceding node.
 
 #### Inherited from
 
-Theme.DOCUMENT_POSITION_PRECEDING
+Theme.DOCUMENT\_POSITION\_PRECEDING
 
----
+___
 
-### DOCUMENT_TYPE_NODE
+### DOCUMENT\_TYPE\_NODE
 
-• `Readonly` **DOCUMENT_TYPE_NODE**: `number`
+• `Readonly` **DOCUMENT\_TYPE\_NODE**: `number`
 
 node is a doctype.
 
 #### Inherited from
 
-Theme.DOCUMENT_TYPE_NODE
+Theme.DOCUMENT\_TYPE\_NODE
 
----
+___
 
-### ELEMENT_NODE
+### ELEMENT\_NODE
 
-• `Readonly` **ELEMENT_NODE**: `number`
+• `Readonly` **ELEMENT\_NODE**: `number`
 
 node is an element.
 
 #### Inherited from
 
-Theme.ELEMENT_NODE
+Theme.ELEMENT\_NODE
 
----
+___
 
-### ENTITY_NODE
+### ENTITY\_NODE
 
-• `Readonly` **ENTITY_NODE**: `number`
-
-#### Inherited from
-
-Theme.ENTITY_NODE
-
----
-
-### ENTITY_REFERENCE_NODE
-
-• `Readonly` **ENTITY_REFERENCE_NODE**: `number`
+• `Readonly` **ENTITY\_NODE**: `number`
 
 #### Inherited from
 
-Theme.ENTITY_REFERENCE_NODE
+Theme.ENTITY\_NODE
 
----
+___
 
-### NOTATION_NODE
+### ENTITY\_REFERENCE\_NODE
 
-• `Readonly` **NOTATION_NODE**: `number`
+• `Readonly` **ENTITY\_REFERENCE\_NODE**: `number`
 
 #### Inherited from
 
-Theme.NOTATION_NODE
+Theme.ENTITY\_REFERENCE\_NODE
 
----
+___
 
-### PROCESSING_INSTRUCTION_NODE
+### NOTATION\_NODE
 
-• `Readonly` **PROCESSING_INSTRUCTION_NODE**: `number`
+• `Readonly` **NOTATION\_NODE**: `number`
+
+#### Inherited from
+
+Theme.NOTATION\_NODE
+
+___
+
+### PROCESSING\_INSTRUCTION\_NODE
+
+• `Readonly` **PROCESSING\_INSTRUCTION\_NODE**: `number`
 
 node is a ProcessingInstruction node.
 
 #### Inherited from
 
-Theme.PROCESSING_INSTRUCTION_NODE
+Theme.PROCESSING\_INSTRUCTION\_NODE
 
----
+___
 
-### TEXT_NODE
+### TEXT\_NODE
 
-• `Readonly` **TEXT_NODE**: `number`
+• `Readonly` **TEXT\_NODE**: `number`
 
 node is a Text node.
 
 #### Inherited from
 
-Theme.TEXT_NODE
+Theme.TEXT\_NODE
 
----
+___
 
 ### accessKey
 
@@ -545,7 +547,7 @@ Theme.TEXT_NODE
 
 Theme.accessKey
 
----
+___
 
 ### accessKeyLabel
 
@@ -555,377 +557,377 @@ Theme.accessKey
 
 Theme.accessKeyLabel
 
----
+___
 
 ### ariaAtomic
 
-• **ariaAtomic**: `string`
+• **ariaAtomic**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaAtomic
 
----
+___
 
 ### ariaAutoComplete
 
-• **ariaAutoComplete**: `string`
+• **ariaAutoComplete**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaAutoComplete
 
----
+___
 
 ### ariaBusy
 
-• **ariaBusy**: `string`
+• **ariaBusy**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaBusy
 
----
+___
 
 ### ariaChecked
 
-• **ariaChecked**: `string`
+• **ariaChecked**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaChecked
 
----
+___
 
 ### ariaColCount
 
-• **ariaColCount**: `string`
+• **ariaColCount**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaColCount
 
----
+___
 
 ### ariaColIndex
 
-• **ariaColIndex**: `string`
+• **ariaColIndex**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaColIndex
 
----
+___
 
 ### ariaColSpan
 
-• **ariaColSpan**: `string`
+• **ariaColSpan**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaColSpan
 
----
+___
 
 ### ariaCurrent
 
-• **ariaCurrent**: `string`
+• **ariaCurrent**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaCurrent
 
----
+___
 
 ### ariaDisabled
 
-• **ariaDisabled**: `string`
+• **ariaDisabled**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaDisabled
 
----
+___
 
 ### ariaExpanded
 
-• **ariaExpanded**: `string`
+• **ariaExpanded**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaExpanded
 
----
+___
 
 ### ariaHasPopup
 
-• **ariaHasPopup**: `string`
+• **ariaHasPopup**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaHasPopup
 
----
+___
 
 ### ariaHidden
 
-• **ariaHidden**: `string`
+• **ariaHidden**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaHidden
 
----
+___
 
 ### ariaKeyShortcuts
 
-• **ariaKeyShortcuts**: `string`
+• **ariaKeyShortcuts**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaKeyShortcuts
 
----
+___
 
 ### ariaLabel
 
-• **ariaLabel**: `string`
+• **ariaLabel**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaLabel
 
----
+___
 
 ### ariaLevel
 
-• **ariaLevel**: `string`
+• **ariaLevel**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaLevel
 
----
+___
 
 ### ariaLive
 
-• **ariaLive**: `string`
+• **ariaLive**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaLive
 
----
+___
 
 ### ariaModal
 
-• **ariaModal**: `string`
+• **ariaModal**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaModal
 
----
+___
 
 ### ariaMultiLine
 
-• **ariaMultiLine**: `string`
+• **ariaMultiLine**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaMultiLine
 
----
+___
 
 ### ariaMultiSelectable
 
-• **ariaMultiSelectable**: `string`
+• **ariaMultiSelectable**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaMultiSelectable
 
----
+___
 
 ### ariaOrientation
 
-• **ariaOrientation**: `string`
+• **ariaOrientation**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaOrientation
 
----
+___
 
 ### ariaPlaceholder
 
-• **ariaPlaceholder**: `string`
+• **ariaPlaceholder**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaPlaceholder
 
----
+___
 
 ### ariaPosInSet
 
-• **ariaPosInSet**: `string`
+• **ariaPosInSet**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaPosInSet
 
----
+___
 
 ### ariaPressed
 
-• **ariaPressed**: `string`
+• **ariaPressed**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaPressed
 
----
+___
 
 ### ariaReadOnly
 
-• **ariaReadOnly**: `string`
+• **ariaReadOnly**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaReadOnly
 
----
+___
 
 ### ariaRequired
 
-• **ariaRequired**: `string`
+• **ariaRequired**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaRequired
 
----
+___
 
 ### ariaRoleDescription
 
-• **ariaRoleDescription**: `string`
+• **ariaRoleDescription**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaRoleDescription
 
----
+___
 
 ### ariaRowCount
 
-• **ariaRowCount**: `string`
+• **ariaRowCount**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaRowCount
 
----
+___
 
 ### ariaRowIndex
 
-• **ariaRowIndex**: `string`
+• **ariaRowIndex**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaRowIndex
 
----
+___
 
 ### ariaRowSpan
 
-• **ariaRowSpan**: `string`
+• **ariaRowSpan**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaRowSpan
 
----
+___
 
 ### ariaSelected
 
-• **ariaSelected**: `string`
+• **ariaSelected**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaSelected
 
----
+___
 
 ### ariaSetSize
 
-• **ariaSetSize**: `string`
+• **ariaSetSize**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaSetSize
 
----
+___
 
 ### ariaSort
 
-• **ariaSort**: `string`
+• **ariaSort**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaSort
 
----
+___
 
 ### ariaValueMax
 
-• **ariaValueMax**: `string`
+• **ariaValueMax**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaValueMax
 
----
+___
 
 ### ariaValueMin
 
-• **ariaValueMin**: `string`
+• **ariaValueMin**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaValueMin
 
----
+___
 
 ### ariaValueNow
 
-• **ariaValueNow**: `string`
+• **ariaValueNow**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaValueNow
 
----
+___
 
 ### ariaValueText
 
-• **ariaValueText**: `string`
+• **ariaValueText**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.ariaValueText
 
----
+___
 
 ### assignedSlot
 
-• `Readonly` **assignedSlot**: `null` \| `HTMLSlotElement`
+• `Readonly` **assignedSlot**: ``null`` \| `HTMLSlotElement`
 
 #### Inherited from
 
 Theme.assignedSlot
 
----
+___
 
 ### attributes
 
@@ -935,7 +937,7 @@ Theme.assignedSlot
 
 Theme.attributes
 
----
+___
 
 ### autocapitalize
 
@@ -945,7 +947,7 @@ Theme.attributes
 
 Theme.autocapitalize
 
----
+___
 
 ### autofocus
 
@@ -955,7 +957,7 @@ Theme.autocapitalize
 
 Theme.autofocus
 
----
+___
 
 ### baseURI
 
@@ -967,7 +969,7 @@ Returns node's node document's document base URL.
 
 Theme.baseURI
 
----
+___
 
 ### childElementCount
 
@@ -977,7 +979,7 @@ Theme.baseURI
 
 Theme.childElementCount
 
----
+___
 
 ### childNodes
 
@@ -989,7 +991,7 @@ Returns the children.
 
 Theme.childNodes
 
----
+___
 
 ### children
 
@@ -1001,7 +1003,7 @@ Returns the child elements.
 
 Theme.children
 
----
+___
 
 ### classList
 
@@ -1013,7 +1015,7 @@ Allows for manipulation of element's class content attribute as a set of whitesp
 
 Theme.classList
 
----
+___
 
 ### className
 
@@ -1025,7 +1027,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 Theme.className
 
----
+___
 
 ### clientHeight
 
@@ -1035,7 +1037,7 @@ Theme.className
 
 Theme.clientHeight
 
----
+___
 
 ### clientLeft
 
@@ -1045,7 +1047,7 @@ Theme.clientHeight
 
 Theme.clientLeft
 
----
+___
 
 ### clientTop
 
@@ -1055,7 +1057,7 @@ Theme.clientLeft
 
 Theme.clientTop
 
----
+___
 
 ### clientWidth
 
@@ -1065,7 +1067,7 @@ Theme.clientTop
 
 Theme.clientWidth
 
----
+___
 
 ### contentEditable
 
@@ -1075,7 +1077,7 @@ Theme.clientWidth
 
 Theme.contentEditable
 
----
+___
 
 ### dataset
 
@@ -1085,7 +1087,7 @@ Theme.contentEditable
 
 Theme.dataset
 
----
+___
 
 ### dir
 
@@ -1095,7 +1097,7 @@ Theme.dataset
 
 Theme.dir
 
----
+___
 
 ### draggable
 
@@ -1105,7 +1107,7 @@ Theme.dir
 
 Theme.draggable
 
----
+___
 
 ### enterKeyHint
 
@@ -1115,11 +1117,11 @@ Theme.draggable
 
 Theme.enterKeyHint
 
----
+___
 
 ### firstChild
 
-• `Readonly` **firstChild**: `null` \| `ChildNode`
+• `Readonly` **firstChild**: ``null`` \| `ChildNode`
 
 Returns the first child.
 
@@ -1127,11 +1129,11 @@ Returns the first child.
 
 Theme.firstChild
 
----
+___
 
 ### firstElementChild
 
-• `Readonly` **firstElementChild**: `null` \| `Element`
+• `Readonly` **firstElementChild**: ``null`` \| `Element`
 
 Returns the first child that is an element, and null otherwise.
 
@@ -1139,7 +1141,7 @@ Returns the first child that is an element, and null otherwise.
 
 Theme.firstElementChild
 
----
+___
 
 ### hidden
 
@@ -1149,7 +1151,7 @@ Theme.firstElementChild
 
 Theme.hidden
 
----
+___
 
 ### id
 
@@ -1161,7 +1163,7 @@ Returns the value of element's id content attribute. Can be set to change it.
 
 Theme.id
 
----
+___
 
 ### innerHTML
 
@@ -1171,7 +1173,7 @@ Theme.id
 
 Theme.innerHTML
 
----
+___
 
 ### innerText
 
@@ -1181,7 +1183,7 @@ Theme.innerHTML
 
 Theme.innerText
 
----
+___
 
 ### inputMode
 
@@ -1191,7 +1193,7 @@ Theme.innerText
 
 Theme.inputMode
 
----
+___
 
 ### isConnected
 
@@ -1203,7 +1205,7 @@ Returns true if node is connected and false otherwise.
 
 Theme.isConnected
 
----
+___
 
 ### isContentEditable
 
@@ -1213,7 +1215,7 @@ Theme.isConnected
 
 Theme.isContentEditable
 
----
+___
 
 ### lang
 
@@ -1223,11 +1225,11 @@ Theme.isContentEditable
 
 Theme.lang
 
----
+___
 
 ### lastChild
 
-• `Readonly` **lastChild**: `null` \| `ChildNode`
+• `Readonly` **lastChild**: ``null`` \| `ChildNode`
 
 Returns the last child.
 
@@ -1235,11 +1237,11 @@ Returns the last child.
 
 Theme.lastChild
 
----
+___
 
 ### lastElementChild
 
-• `Readonly` **lastElementChild**: `null` \| `Element`
+• `Readonly` **lastElementChild**: ``null`` \| `Element`
 
 Returns the last child that is an element, and null otherwise.
 
@@ -1247,7 +1249,7 @@ Returns the last child that is an element, and null otherwise.
 
 Theme.lastElementChild
 
----
+___
 
 ### localName
 
@@ -1259,11 +1261,11 @@ Returns the local name.
 
 Theme.localName
 
----
+___
 
 ### namespaceURI
 
-• `Readonly` **namespaceURI**: `null` \| `string`
+• `Readonly` **namespaceURI**: ``null`` \| `string`
 
 Returns the namespace.
 
@@ -1271,11 +1273,11 @@ Returns the namespace.
 
 Theme.namespaceURI
 
----
+___
 
 ### nextElementSibling
 
-• `Readonly` **nextElementSibling**: `null` \| `Element`
+• `Readonly` **nextElementSibling**: ``null`` \| `Element`
 
 Returns the first following sibling that is an element, and null otherwise.
 
@@ -1283,11 +1285,11 @@ Returns the first following sibling that is an element, and null otherwise.
 
 Theme.nextElementSibling
 
----
+___
 
 ### nextSibling
 
-• `Readonly` **nextSibling**: `null` \| `ChildNode`
+• `Readonly` **nextSibling**: ``null`` \| `ChildNode`
 
 Returns the next sibling.
 
@@ -1295,7 +1297,7 @@ Returns the next sibling.
 
 Theme.nextSibling
 
----
+___
 
 ### nodeName
 
@@ -1307,7 +1309,7 @@ Returns a string appropriate for the type of node.
 
 Theme.nodeName
 
----
+___
 
 ### nodeType
 
@@ -1319,17 +1321,17 @@ Returns the type of node.
 
 Theme.nodeType
 
----
+___
 
 ### nodeValue
 
-• **nodeValue**: `null` \| `string`
+• **nodeValue**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.nodeValue
 
----
+___
 
 ### nonce
 
@@ -1339,7 +1341,7 @@ Theme.nodeValue
 
 Theme.nonce
 
----
+___
 
 ### offsetHeight
 
@@ -1349,7 +1351,7 @@ Theme.nonce
 
 Theme.offsetHeight
 
----
+___
 
 ### offsetLeft
 
@@ -1359,17 +1361,17 @@ Theme.offsetHeight
 
 Theme.offsetLeft
 
----
+___
 
 ### offsetParent
 
-• `Readonly` **offsetParent**: `null` \| `Element`
+• `Readonly` **offsetParent**: ``null`` \| `Element`
 
 #### Inherited from
 
 Theme.offsetParent
 
----
+___
 
 ### offsetTop
 
@@ -1379,7 +1381,7 @@ Theme.offsetParent
 
 Theme.offsetTop
 
----
+___
 
 ### offsetWidth
 
@@ -1389,341 +1391,373 @@ Theme.offsetTop
 
 Theme.offsetWidth
 
----
+___
 
 ### onabort
 
-• **onabort**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
+• **onabort**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
 
 Fires when the user aborts the download.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onabort
 
----
+___
 
 ### onanimationcancel
 
-• **onanimationcancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationcancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 Theme.onanimationcancel
 
----
+___
 
 ### onanimationend
 
-• **onanimationend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 Theme.onanimationend
 
----
+___
 
 ### onanimationiteration
 
-• **onanimationiteration**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationiteration**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 Theme.onanimationiteration
 
----
+___
 
 ### onanimationstart
 
-• **onanimationstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 Theme.onanimationstart
 
----
+___
 
 ### onauxclick
 
-• **onauxclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onauxclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 Theme.onauxclick
 
----
+___
 
 ### onblur
 
-• **onblur**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
+• **onblur**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
 
 Fires when the object loses the input focus.
 
-**`param`** The focus event.
+**`Param`**
+
+The focus event.
 
 #### Inherited from
 
 Theme.onblur
 
----
+___
 
 ### oncanplay
 
-• **oncanplay**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncanplay**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback is possible, but would require further buffering.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.oncanplay
 
----
+___
 
 ### oncanplaythrough
 
-• **oncanplaythrough**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncanplaythrough**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Theme.oncanplaythrough
 
----
+___
 
 ### onchange
 
-• **onchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the contents of the object or selection have changed.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onchange
 
----
+___
 
 ### onclick
 
-• **onclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the left mouse button on the object
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Theme.onclick
 
----
+___
 
 ### onclose
 
-• **onclose**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onclose**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Theme.onclose
 
----
+___
 
 ### oncontextmenu
 
-• **oncontextmenu**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **oncontextmenu**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the right mouse button in the client area, opening the context menu.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Theme.oncontextmenu
 
----
+___
 
 ### oncopy
 
-• **oncopy**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **oncopy**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 Theme.oncopy
 
----
+___
 
 ### oncuechange
 
-• **oncuechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncuechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Theme.oncuechange
 
----
+___
 
 ### oncut
 
-• **oncut**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **oncut**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 Theme.oncut
 
----
+___
 
 ### ondblclick
 
-• **ondblclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **ondblclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user double-clicks the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Theme.ondblclick
 
----
+___
 
 ### ondrag
 
-• **ondrag**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondrag**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object continuously during a drag operation.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.ondrag
 
----
+___
 
 ### ondragend
 
-• **ondragend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object when the user releases the mouse at the close of a drag operation.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.ondragend
 
----
+___
 
 ### ondragenter
 
-• **ondragenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target element when the user drags the object to a valid drop target.
 
-**`param`** The drag event.
+**`Param`**
+
+The drag event.
 
 #### Inherited from
 
 Theme.ondragenter
 
----
+___
 
 ### ondragleave
 
-• **ondragleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
 
-**`param`** The drag event.
+**`Param`**
+
+The drag event.
 
 #### Inherited from
 
 Theme.ondragleave
 
----
+___
 
 ### ondragover
 
-• **ondragover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target element continuously while the user drags the object over a valid drop target.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.ondragover
 
----
+___
 
 ### ondragstart
 
-• **ondragstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object when the user starts to drag a text selection or selected object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.ondragstart
 
----
+___
 
 ### ondrop
 
-• **ondrop**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondrop**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 #### Inherited from
 
 Theme.ondrop
 
----
+___
 
 ### ondurationchange
 
-• **ondurationchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ondurationchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the duration attribute is updated.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.ondurationchange
 
----
+___
 
 ### onemptied
 
-• **onemptied**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onemptied**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the media element is reset to its initial state.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onemptied
 
----
+___
 
 ### onended
 
-• **onended**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onended**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the end of playback is reached.
 
-**`param`** The event
+**`Param`**
+
+The event
 
 #### Inherited from
 
 Theme.onended
 
----
+___
 
 ### onerror
 
@@ -1731,775 +1765,861 @@ Theme.onended
 
 Fires when an error occurs during object loading.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onerror
 
----
+___
 
 ### onfocus
 
-• **onfocus**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
+• **onfocus**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
 
 Fires when the object receives focus.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onfocus
 
----
+___
 
 ### onformdata
 
-• **onformdata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FormDataEvent`) => `any`
+• **onformdata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FormDataEvent`) => `any`
 
 #### Inherited from
 
 Theme.onformdata
 
----
+___
 
 ### onfullscreenchange
 
-• **onfullscreenchange**: `null` \| (`this`: `Element`, `ev`: `Event`) => `any`
+• **onfullscreenchange**: ``null`` \| (`this`: `Element`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Theme.onfullscreenchange
 
----
+___
 
 ### onfullscreenerror
 
-• **onfullscreenerror**: `null` \| (`this`: `Element`, `ev`: `Event`) => `any`
+• **onfullscreenerror**: ``null`` \| (`this`: `Element`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Theme.onfullscreenerror
 
----
+___
 
 ### ongotpointercapture
 
-• **ongotpointercapture**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **ongotpointercapture**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Theme.ongotpointercapture
 
----
+___
 
 ### oninput
 
-• **oninput**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oninput**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Theme.oninput
 
----
+___
 
 ### oninvalid
 
-• **oninvalid**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oninvalid**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Theme.oninvalid
 
----
+___
 
 ### onkeydown
 
-• **onkeydown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeydown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user presses a key.
 
-**`param`** The keyboard event
+**`Param`**
+
+The keyboard event
 
 #### Inherited from
 
 Theme.onkeydown
 
----
+___
 
 ### onkeypress
 
-• **onkeypress**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeypress**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user presses an alphanumeric key.
 
-**`param`** The event.
+**`Param`**
 
-**`deprecated`**
+The event.
+
+**`Deprecated`**
 
 #### Inherited from
 
 Theme.onkeypress
 
----
+___
 
 ### onkeyup
 
-• **onkeyup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeyup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user releases a key.
 
-**`param`** The keyboard event
+**`Param`**
+
+The keyboard event
 
 #### Inherited from
 
 Theme.onkeyup
 
----
+___
 
 ### onload
 
-• **onload**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onload**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires immediately after the browser loads the object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onload
 
----
+___
 
 ### onloadeddata
 
-• **onloadeddata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadeddata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when media data is loaded at the current playback position.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onloadeddata
 
----
+___
 
 ### onloadedmetadata
 
-• **onloadedmetadata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadedmetadata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the duration and dimensions of the media have been determined.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onloadedmetadata
 
----
+___
 
 ### onloadstart
 
-• **onloadstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when Internet Explorer begins looking for media data.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onloadstart
 
----
+___
 
 ### onlostpointercapture
 
-• **onlostpointercapture**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onlostpointercapture**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Theme.onlostpointercapture
 
----
+___
 
 ### onmousedown
 
-• **onmousedown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmousedown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the object with either mouse button.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Theme.onmousedown
 
----
+___
 
 ### onmouseenter
 
-• **onmouseenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 Theme.onmouseenter
 
----
+___
 
 ### onmouseleave
 
-• **onmouseleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 Theme.onmouseleave
 
----
+___
 
 ### onmousemove
 
-• **onmousemove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmousemove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse over the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Theme.onmousemove
 
----
+___
 
 ### onmouseout
 
-• **onmouseout**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseout**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse pointer outside the boundaries of the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Theme.onmouseout
 
----
+___
 
 ### onmouseover
 
-• **onmouseover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse pointer into the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Theme.onmouseover
 
----
+___
 
 ### onmouseup
 
-• **onmouseup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user releases a mouse button while the mouse is over the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 Theme.onmouseup
 
----
+___
 
 ### onpaste
 
-• **onpaste**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **onpaste**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 Theme.onpaste
 
----
+___
 
 ### onpause
 
-• **onpause**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onpause**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback is paused.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onpause
 
----
+___
 
 ### onplay
 
-• **onplay**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onplay**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the play method is requested.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onplay
 
----
+___
 
 ### onplaying
 
-• **onplaying**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onplaying**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the audio or video has started playing.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onplaying
 
----
+___
 
 ### onpointercancel
 
-• **onpointercancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointercancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Theme.onpointercancel
 
----
+___
 
 ### onpointerdown
 
-• **onpointerdown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerdown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Theme.onpointerdown
 
----
+___
 
 ### onpointerenter
 
-• **onpointerenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Theme.onpointerenter
 
----
+___
 
 ### onpointerleave
 
-• **onpointerleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Theme.onpointerleave
 
----
+___
 
 ### onpointermove
 
-• **onpointermove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointermove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Theme.onpointermove
 
----
+___
 
 ### onpointerout
 
-• **onpointerout**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerout**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Theme.onpointerout
 
----
+___
 
 ### onpointerover
 
-• **onpointerover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Theme.onpointerover
 
----
+___
 
 ### onpointerup
 
-• **onpointerup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 Theme.onpointerup
 
----
+___
 
 ### onprogress
 
-• **onprogress**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `ProgressEvent`<`EventTarget`\>) => `any`
+• **onprogress**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `ProgressEvent`<`EventTarget`\>) => `any`
 
 Occurs to indicate progress while downloading media data.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onprogress
 
----
+___
 
 ### onratechange
 
-• **onratechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onratechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the playback rate is increased or decreased.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onratechange
 
----
+___
 
 ### onreset
 
-• **onreset**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onreset**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the user resets a form.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onreset
 
----
+___
 
 ### onresize
 
-• **onresize**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
+• **onresize**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
 
 #### Inherited from
 
 Theme.onresize
 
----
+___
 
 ### onscroll
 
-• **onscroll**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onscroll**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the user repositions the scroll box in the scroll bar on the object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onscroll
 
----
+___
+
+### onsecuritypolicyviolation
+
+• **onsecuritypolicyviolation**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `SecurityPolicyViolationEvent`) => `any`
+
+#### Inherited from
+
+Theme.onsecuritypolicyviolation
+
+___
 
 ### onseeked
 
-• **onseeked**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onseeked**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the seek operation ends.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onseeked
 
----
+___
 
 ### onseeking
 
-• **onseeking**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onseeking**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the current playback position is moved.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onseeking
 
----
+___
 
 ### onselect
 
-• **onselect**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselect**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the current selection changes.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onselect
 
----
+___
 
 ### onselectionchange
 
-• **onselectionchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselectionchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Theme.onselectionchange
 
----
+___
 
 ### onselectstart
 
-• **onselectstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselectstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Theme.onselectstart
 
----
+___
+
+### onslotchange
+
+• **onslotchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+
+#### Inherited from
+
+Theme.onslotchange
+
+___
 
 ### onstalled
 
-• **onstalled**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onstalled**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the download has stopped.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onstalled
 
----
+___
 
 ### onsubmit
 
-• **onsubmit**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `SubmitEvent`) => `any`
+• **onsubmit**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `SubmitEvent`) => `any`
 
 #### Inherited from
 
 Theme.onsubmit
 
----
+___
 
 ### onsuspend
 
-• **onsuspend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onsuspend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs if the load operation has been intentionally halted.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onsuspend
 
----
+___
 
 ### ontimeupdate
 
-• **ontimeupdate**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ontimeupdate**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs to indicate the current playback position.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.ontimeupdate
 
----
+___
 
 ### ontoggle
 
-• **ontoggle**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ontoggle**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 Theme.ontoggle
 
----
+___
 
 ### ontouchcancel
 
-• `Optional` **ontouchcancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchcancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 Theme.ontouchcancel
 
----
+___
 
 ### ontouchend
 
-• `Optional` **ontouchend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 Theme.ontouchend
 
----
+___
 
 ### ontouchmove
 
-• `Optional` **ontouchmove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchmove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 Theme.ontouchmove
 
----
+___
 
 ### ontouchstart
 
-• `Optional` **ontouchstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 Theme.ontouchstart
 
----
+___
 
 ### ontransitioncancel
 
-• **ontransitioncancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitioncancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 Theme.ontransitioncancel
 
----
+___
 
 ### ontransitionend
 
-• **ontransitionend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 Theme.ontransitionend
 
----
+___
 
 ### ontransitionrun
 
-• **ontransitionrun**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionrun**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 Theme.ontransitionrun
 
----
+___
 
 ### ontransitionstart
 
-• **ontransitionstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 Theme.ontransitionstart
 
----
+___
 
 ### onvolumechange
 
-• **onvolumechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onvolumechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the volume is changed, or playback is muted or unmuted.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onvolumechange
 
----
+___
 
 ### onwaiting
 
-• **onwaiting**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwaiting**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback stops because the next frame of a video resource is not available.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 Theme.onwaiting
 
----
+___
 
 ### onwebkitanimationend
 
-• **onwebkitanimationend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationend`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationend`.
 
 #### Inherited from
 
 Theme.onwebkitanimationend
 
----
+___
 
 ### onwebkitanimationiteration
 
-• **onwebkitanimationiteration**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationiteration**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationiteration`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationiteration`.
 
 #### Inherited from
 
 Theme.onwebkitanimationiteration
 
----
+___
 
 ### onwebkitanimationstart
 
-• **onwebkitanimationstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationstart`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationstart`.
 
 #### Inherited from
 
 Theme.onwebkitanimationstart
 
----
+___
 
 ### onwebkittransitionend
 
-• **onwebkittransitionend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkittransitionend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `ontransitionend`.
+**`Deprecated`**
+
+This is a legacy alias of `ontransitionend`.
 
 #### Inherited from
 
 Theme.onwebkittransitionend
 
----
+___
 
 ### onwheel
 
-• **onwheel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `WheelEvent`) => `any`
+• **onwheel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `WheelEvent`) => `any`
 
 #### Inherited from
 
 Theme.onwheel
 
----
+___
 
 ### outerHTML
 
@@ -2509,7 +2629,7 @@ Theme.onwheel
 
 Theme.outerHTML
 
----
+___
 
 ### outerText
 
@@ -2519,7 +2639,7 @@ Theme.outerHTML
 
 Theme.outerText
 
----
+___
 
 ### ownerDocument
 
@@ -2529,11 +2649,11 @@ Theme.outerText
 
 Theme.ownerDocument
 
----
+___
 
 ### parentElement
 
-• `Readonly` **parentElement**: `null` \| `HTMLElement`
+• `Readonly` **parentElement**: ``null`` \| `HTMLElement`
 
 Returns the parent element.
 
@@ -2541,11 +2661,11 @@ Returns the parent element.
 
 Theme.parentElement
 
----
+___
 
 ### parentNode
 
-• `Readonly` **parentNode**: `null` \| `ParentNode`
+• `Readonly` **parentNode**: ``null`` \| `ParentNode`
 
 Returns the parent.
 
@@ -2553,7 +2673,7 @@ Returns the parent.
 
 Theme.parentNode
 
----
+___
 
 ### part
 
@@ -2563,11 +2683,11 @@ Theme.parentNode
 
 Theme.part
 
----
+___
 
 ### prefix
 
-• `Readonly` **prefix**: `null` \| `string`
+• `Readonly` **prefix**: ``null`` \| `string`
 
 Returns the namespace prefix.
 
@@ -2575,11 +2695,11 @@ Returns the namespace prefix.
 
 Theme.prefix
 
----
+___
 
 ### previousElementSibling
 
-• `Readonly` **previousElementSibling**: `null` \| `Element`
+• `Readonly` **previousElementSibling**: ``null`` \| `Element`
 
 Returns the first preceding sibling that is an element, and null otherwise.
 
@@ -2587,11 +2707,11 @@ Returns the first preceding sibling that is an element, and null otherwise.
 
 Theme.previousElementSibling
 
----
+___
 
 ### previousSibling
 
-• `Readonly` **previousSibling**: `null` \| `ChildNode`
+• `Readonly` **previousSibling**: ``null`` \| `ChildNode`
 
 Returns the previous sibling.
 
@@ -2599,7 +2719,7 @@ Returns the previous sibling.
 
 Theme.previousSibling
 
----
+___
 
 ### scrollHeight
 
@@ -2609,7 +2729,7 @@ Theme.previousSibling
 
 Theme.scrollHeight
 
----
+___
 
 ### scrollLeft
 
@@ -2619,7 +2739,7 @@ Theme.scrollHeight
 
 Theme.scrollLeft
 
----
+___
 
 ### scrollTop
 
@@ -2629,7 +2749,7 @@ Theme.scrollLeft
 
 Theme.scrollTop
 
----
+___
 
 ### scrollWidth
 
@@ -2639,17 +2759,17 @@ Theme.scrollTop
 
 Theme.scrollWidth
 
----
+___
 
 ### shadowRoot
 
-• **shadowRoot**: `ShadowRoot` & { `adoptedStyleSheets?`: `CSSStyleSheet`[] }
+• **shadowRoot**: `ShadowRoot` & { `adoptedStyleSheets?`: `CSSStyleSheet`[]  }
 
 #### Inherited from
 
 Theme.shadowRoot
 
----
+___
 
 ### slot
 
@@ -2661,7 +2781,7 @@ Returns the value of element's slot content attribute. Can be set to change it.
 
 Theme.slot
 
----
+___
 
 ### spellcheck
 
@@ -2671,7 +2791,7 @@ Theme.slot
 
 Theme.spellcheck
 
----
+___
 
 ### style
 
@@ -2681,7 +2801,7 @@ Theme.spellcheck
 
 Theme.style
 
----
+___
 
 ### tabIndex
 
@@ -2691,7 +2811,7 @@ Theme.style
 
 Theme.tabIndex
 
----
+___
 
 ### tagName
 
@@ -2703,17 +2823,17 @@ Returns the HTML-uppercased qualified name.
 
 Theme.tagName
 
----
+___
 
 ### textContent
 
-• **textContent**: `null` \| `string`
+• **textContent**: ``null`` \| `string`
 
 #### Inherited from
 
 Theme.textContent
 
----
+___
 
 ### title
 
@@ -2723,7 +2843,7 @@ Theme.textContent
 
 Theme.title
 
----
+___
 
 ### translate
 
@@ -2733,7 +2853,7 @@ Theme.title
 
 Theme.translate
 
----
+___
 
 ### updateComplete
 
@@ -2743,21 +2863,21 @@ Theme.translate
 
 Theme.updateComplete
 
----
+___
 
 ### tagName
 
-▪ `Static` **tagName**: `string` = `'df-theme'`
+▪ `Static` **tagName**: `string` = `"df-theme"`
 
 ## Accessors
 
 ### color
 
-• `get` **color**(): `""` \| `Color`
+• `get` **color**(): ``""`` \| `Color`
 
 #### Returns
 
-`""` \| `Color`
+``""`` \| `Color`
 
 #### Inherited from
 
@@ -2767,9 +2887,9 @@ Theme.color
 
 #### Parameters
 
-| Name       | Type            |
-| :--------- | :-------------- |
-| `newValue` | `""` \| `Color` |
+| Name | Type |
+| :------ | :------ |
+| `newValue` | ``""`` \| `Color` |
 
 #### Returns
 
@@ -2779,15 +2899,15 @@ Theme.color
 
 Theme.color
 
----
+___
 
 ### scale
 
-• `get` **scale**(): `""` \| `Scale`
+• `get` **scale**(): ``""`` \| `Scale`
 
 #### Returns
 
-`""` \| `Scale`
+``""`` \| `Scale`
 
 #### Inherited from
 
@@ -2797,9 +2917,9 @@ Theme.scale
 
 #### Parameters
 
-| Name       | Type            |
-| :--------- | :-------------- |
-| `newValue` | `""` \| `Scale` |
+| Name | Type |
+| :------ | :------ |
+| `newValue` | ``""`` \| `Scale` |
 
 #### Returns
 
@@ -2809,7 +2929,7 @@ Theme.scale
 
 Theme.scale
 
----
+___
 
 ### styles
 
@@ -2823,7 +2943,7 @@ Theme.scale
 
 Theme.styles
 
----
+___
 
 ### observedAttributes
 
@@ -2837,7 +2957,7 @@ Theme.styles
 
 Theme.observedAttributes
 
----
+___
 
 ### template
 
@@ -2859,17 +2979,17 @@ Theme.template
 
 #### Type parameters
 
-| Name | Type                                |
-| :--- | :---------------------------------- |
-| `K`  | extends keyof `HTMLElementEventMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementEventMap` |
 
 #### Parameters
 
-| Name       | Type                                                               |
-| :--------- | :----------------------------------------------------------------- |
-| `type`     | `K`                                                                |
+| Name | Type |
+| :------ | :------ |
+| `type` | `K` |
 | `listener` | (`this`: `HTMLElement`, `ev`: `HTMLElementEventMap`[`K`]) => `any` |
-| `options?` | `boolean` \| `AddEventListenerOptions`                             |
+| `options?` | `boolean` \| `AddEventListenerOptions` |
 
 #### Returns
 
@@ -2883,10 +3003,10 @@ Theme.addEventListener
 
 #### Parameters
 
-| Name       | Type                                   |
-| :--------- | :------------------------------------- |
-| `type`     | `string`                               |
-| `listener` | `EventListenerOrEventListenerObject`   |
+| Name | Type |
+| :------ | :------ |
+| `type` | `string` |
+| `listener` | `EventListenerOrEventListenerObject` |
 | `options?` | `boolean` \| `AddEventListenerOptions` |
 
 #### Returns
@@ -2897,7 +3017,7 @@ Theme.addEventListener
 
 Theme.addEventListener
 
----
+___
 
 ### adoptStyles
 
@@ -2911,7 +3031,7 @@ Theme.addEventListener
 
 Theme.adoptStyles
 
----
+___
 
 ### after
 
@@ -2923,8 +3043,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -2935,7 +3055,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Theme.after
 
----
+___
 
 ### animate
 
@@ -2943,10 +3063,10 @@ Theme.after
 
 #### Parameters
 
-| Name        | Type                                                 |
-| :---------- | :--------------------------------------------------- |
-| `keyframes` | `null` \| `Keyframe`[] \| `PropertyIndexedKeyframes` |
-| `options?`  | `number` \| `KeyframeAnimationOptions`               |
+| Name | Type |
+| :------ | :------ |
+| `keyframes` | ``null`` \| `Keyframe`[] \| `PropertyIndexedKeyframes` |
+| `options?` | `number` \| `KeyframeAnimationOptions` |
 
 #### Returns
 
@@ -2956,7 +3076,7 @@ Theme.after
 
 Theme.animate
 
----
+___
 
 ### append
 
@@ -2968,8 +3088,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -2980,7 +3100,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Theme.append
 
----
+___
 
 ### appendChild
 
@@ -2988,15 +3108,15 @@ Theme.append
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name   | Type |
-| :----- | :--- |
-| `node` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `node` | `T` |
 
 #### Returns
 
@@ -3006,7 +3126,7 @@ Theme.append
 
 Theme.appendChild
 
----
+___
 
 ### attachInternals
 
@@ -3020,7 +3140,7 @@ Theme.appendChild
 
 Theme.attachInternals
 
----
+___
 
 ### attachShadow
 
@@ -3030,8 +3150,8 @@ Creates a shadow root for element and returns it.
 
 #### Parameters
 
-| Name   | Type             |
-| :----- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `init` | `ShadowRootInit` |
 
 #### Returns
@@ -3042,7 +3162,7 @@ Creates a shadow root for element and returns it.
 
 Theme.attachShadow
 
----
+___
 
 ### attributeChangedCallback
 
@@ -3050,11 +3170,11 @@ Theme.attachShadow
 
 #### Parameters
 
-| Name       | Type                    |
-| :--------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `attrName` | `SettableFragmentTypes` |
-| `old`      | `null` \| `string`      |
-| `value`    | `null` \| `string`      |
+| `old` | ``null`` \| `string` |
+| `value` | ``null`` \| `string` |
 
 #### Returns
 
@@ -3064,7 +3184,7 @@ Theme.attachShadow
 
 Theme.attributeChangedCallback
 
----
+___
 
 ### before
 
@@ -3076,8 +3196,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3088,7 +3208,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Theme.before
 
----
+___
 
 ### blur
 
@@ -3102,7 +3222,7 @@ Theme.before
 
 Theme.blur
 
----
+___
 
 ### click
 
@@ -3116,7 +3236,7 @@ Theme.blur
 
 Theme.click
 
----
+___
 
 ### cloneNode
 
@@ -3126,8 +3246,8 @@ Returns a copy of node. If deep is true, the copy also includes the node's desce
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `deep?` | `boolean` |
 
 #### Returns
@@ -3138,79 +3258,79 @@ Returns a copy of node. If deep is true, the copy also includes the node's desce
 
 Theme.cloneNode
 
----
+___
 
 ### closest
 
-▸ **closest**<`K`\>(`selector`): `null` \| `HTMLElementTagNameMap`[`K`]
+▸ **closest**<`K`\>(`selector`): ``null`` \| `HTMLElementTagNameMap`[`K`]
 
 Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `selector` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selector` | `K` |
 
 #### Returns
 
-`null` \| `HTMLElementTagNameMap`[`K`]
+``null`` \| `HTMLElementTagNameMap`[`K`]
 
 #### Inherited from
 
 Theme.closest
 
-▸ **closest**<`K`\>(`selector`): `null` \| `SVGElementTagNameMap`[`K`]
+▸ **closest**<`K`\>(`selector`): ``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `selector` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selector` | `K` |
 
 #### Returns
 
-`null` \| `SVGElementTagNameMap`[`K`]
+``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Inherited from
 
 Theme.closest
 
-▸ **closest**<`E`\>(`selectors`): `null` \| `E`
+▸ **closest**<`E`\>(`selectors`): ``null`` \| `E`
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
 
-`null` \| `E`
+``null`` \| `E`
 
 #### Inherited from
 
 Theme.closest
 
----
+___
 
 ### compareDocumentPosition
 
@@ -3220,8 +3340,8 @@ Returns a bitmask indicating the position of other relative to node.
 
 #### Parameters
 
-| Name    | Type   |
-| :------ | :----- |
+| Name | Type |
+| :------ | :------ |
 | `other` | `Node` |
 
 #### Returns
@@ -3232,7 +3352,7 @@ Returns a bitmask indicating the position of other relative to node.
 
 Theme.compareDocumentPosition
 
----
+___
 
 ### connectedCallback
 
@@ -3246,7 +3366,7 @@ Theme.compareDocumentPosition
 
 Theme.connectedCallback
 
----
+___
 
 ### contains
 
@@ -3256,9 +3376,9 @@ Returns true if other is an inclusive descendant of node, and false otherwise.
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
-| `other` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `other` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -3268,7 +3388,7 @@ Returns true if other is an inclusive descendant of node, and false otherwise.
 
 Theme.contains
 
----
+___
 
 ### disconnectedCallback
 
@@ -3282,7 +3402,7 @@ Theme.contains
 
 Theme.disconnectedCallback
 
----
+___
 
 ### dispatchEvent
 
@@ -3292,7 +3412,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 #### Parameters
 
-| Name    | Type    |
+| Name | Type |
 | :------ | :------ |
 | `event` | `Event` |
 
@@ -3304,7 +3424,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 Theme.dispatchEvent
 
----
+___
 
 ### focus
 
@@ -3312,8 +3432,8 @@ Theme.dispatchEvent
 
 #### Parameters
 
-| Name       | Type           |
-| :--------- | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `FocusOptions` |
 
 #### Returns
@@ -3324,7 +3444,7 @@ Theme.dispatchEvent
 
 Theme.focus
 
----
+___
 
 ### getAnimations
 
@@ -3332,8 +3452,8 @@ Theme.focus
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `GetAnimationsOptions` |
 
 #### Returns
@@ -3344,52 +3464,52 @@ Theme.focus
 
 Theme.getAnimations
 
----
+___
 
 ### getAttribute
 
-▸ **getAttribute**(`qualifiedName`): `null` \| `string`
+▸ **getAttribute**(`qualifiedName`): ``null`` \| `string`
 
 Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 Theme.getAttribute
 
----
+___
 
 ### getAttributeNS
 
-▸ **getAttributeNS**(`namespace`, `localName`): `null` \| `string`
+▸ **getAttributeNS**(`namespace`, `localName`): ``null`` \| `string`
 
 Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 Theme.getAttributeNS
 
----
+___
 
 ### getAttributeNames
 
@@ -3405,48 +3525,48 @@ Returns the qualified names of all element's attributes. Can contain duplicates.
 
 Theme.getAttributeNames
 
----
+___
 
 ### getAttributeNode
 
-▸ **getAttributeNode**(`qualifiedName`): `null` \| `Attr`
+▸ **getAttributeNode**(`qualifiedName`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 Theme.getAttributeNode
 
----
+___
 
 ### getAttributeNodeNS
 
-▸ **getAttributeNodeNS**(`namespace`, `localName`): `null` \| `Attr`
+▸ **getAttributeNodeNS**(`namespace`, `localName`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 Theme.getAttributeNodeNS
 
----
+___
 
 ### getBoundingClientRect
 
@@ -3460,7 +3580,7 @@ Theme.getAttributeNodeNS
 
 Theme.getBoundingClientRect
 
----
+___
 
 ### getClientRects
 
@@ -3474,7 +3594,7 @@ Theme.getBoundingClientRect
 
 Theme.getClientRects
 
----
+___
 
 ### getElementsByClassName
 
@@ -3484,8 +3604,8 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `classNames` | `string` |
 
 #### Returns
@@ -3496,7 +3616,7 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 Theme.getElementsByClassName
 
----
+___
 
 ### getElementsByTagName
 
@@ -3504,15 +3624,15 @@ Theme.getElementsByClassName
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name            | Type |
-| :-------------- | :--- |
-| `qualifiedName` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `K` |
 
 #### Returns
 
@@ -3526,15 +3646,15 @@ Theme.getElementsByTagName
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name            | Type |
-| :-------------- | :--- |
-| `qualifiedName` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `K` |
 
 #### Returns
 
@@ -3548,8 +3668,8 @@ Theme.getElementsByTagName
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -3560,7 +3680,7 @@ Theme.getElementsByTagName
 
 Theme.getElementsByTagName
 
----
+___
 
 ### getElementsByTagNameNS
 
@@ -3568,10 +3688,10 @@ Theme.getElementsByTagName
 
 #### Parameters
 
-| Name           | Type                             |
-| :------------- | :------------------------------- |
-| `namespaceURI` | `"http://www.w3.org/1999/xhtml"` |
-| `localName`    | `string`                         |
+| Name | Type |
+| :------ | :------ |
+| `namespaceURI` | ``"http://www.w3.org/1999/xhtml"`` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -3585,10 +3705,10 @@ Theme.getElementsByTagNameNS
 
 #### Parameters
 
-| Name           | Type                           |
-| :------------- | :----------------------------- |
-| `namespaceURI` | `"http://www.w3.org/2000/svg"` |
-| `localName`    | `string`                       |
+| Name | Type |
+| :------ | :------ |
+| `namespaceURI` | ``"http://www.w3.org/2000/svg"`` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -3602,10 +3722,10 @@ Theme.getElementsByTagNameNS
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -3615,7 +3735,7 @@ Theme.getElementsByTagNameNS
 
 Theme.getElementsByTagNameNS
 
----
+___
 
 ### getRootNode
 
@@ -3625,8 +3745,8 @@ Returns node's root.
 
 #### Parameters
 
-| Name       | Type                 |
-| :--------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `GetRootNodeOptions` |
 
 #### Returns
@@ -3637,7 +3757,7 @@ Returns node's root.
 
 Theme.getRootNode
 
----
+___
 
 ### hasAttribute
 
@@ -3647,8 +3767,8 @@ Returns true if element has an attribute whose qualified name is qualifiedName, 
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -3659,7 +3779,7 @@ Returns true if element has an attribute whose qualified name is qualifiedName, 
 
 Theme.hasAttribute
 
----
+___
 
 ### hasAttributeNS
 
@@ -3669,10 +3789,10 @@ Returns true if element has an attribute whose namespace is namespace and local 
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -3682,7 +3802,7 @@ Returns true if element has an attribute whose namespace is namespace and local 
 
 Theme.hasAttributeNS
 
----
+___
 
 ### hasAttributes
 
@@ -3698,7 +3818,7 @@ Returns true if element has attributes, and false otherwise.
 
 Theme.hasAttributes
 
----
+___
 
 ### hasChildNodes
 
@@ -3714,7 +3834,7 @@ Returns whether node has children.
 
 Theme.hasChildNodes
 
----
+___
 
 ### hasPointerCapture
 
@@ -3722,8 +3842,8 @@ Theme.hasChildNodes
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -3734,28 +3854,28 @@ Theme.hasChildNodes
 
 Theme.hasPointerCapture
 
----
+___
 
 ### insertAdjacentElement
 
-▸ **insertAdjacentElement**(`where`, `element`): `null` \| `Element`
+▸ **insertAdjacentElement**(`where`, `element`): ``null`` \| `Element`
 
 #### Parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
-| `where`   | `InsertPosition` |
-| `element` | `Element`        |
+| Name | Type |
+| :------ | :------ |
+| `where` | `InsertPosition` |
+| `element` | `Element` |
 
 #### Returns
 
-`null` \| `Element`
+``null`` \| `Element`
 
 #### Inherited from
 
 Theme.insertAdjacentElement
 
----
+___
 
 ### insertAdjacentHTML
 
@@ -3763,10 +3883,10 @@ Theme.insertAdjacentElement
 
 #### Parameters
 
-| Name       | Type             |
-| :--------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `position` | `InsertPosition` |
-| `text`     | `string`         |
+| `text` | `string` |
 
 #### Returns
 
@@ -3776,7 +3896,7 @@ Theme.insertAdjacentElement
 
 Theme.insertAdjacentHTML
 
----
+___
 
 ### insertAdjacentText
 
@@ -3784,10 +3904,10 @@ Theme.insertAdjacentHTML
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `where` | `InsertPosition` |
-| `data`  | `string`         |
+| `data` | `string` |
 
 #### Returns
 
@@ -3797,7 +3917,7 @@ Theme.insertAdjacentHTML
 
 Theme.insertAdjacentText
 
----
+___
 
 ### insertBefore
 
@@ -3805,16 +3925,16 @@ Theme.insertAdjacentText
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
-| `node`  | `T`              |
-| `child` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `node` | `T` |
+| `child` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -3824,7 +3944,7 @@ Theme.insertAdjacentText
 
 Theme.insertBefore
 
----
+___
 
 ### isDefaultNamespace
 
@@ -3832,9 +3952,9 @@ Theme.insertBefore
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
 
 #### Returns
 
@@ -3844,7 +3964,7 @@ Theme.insertBefore
 
 Theme.isDefaultNamespace
 
----
+___
 
 ### isEqualNode
 
@@ -3854,9 +3974,9 @@ Returns whether node and otherNode have the same properties.
 
 #### Parameters
 
-| Name        | Type             |
-| :---------- | :--------------- |
-| `otherNode` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `otherNode` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -3866,7 +3986,7 @@ Returns whether node and otherNode have the same properties.
 
 Theme.isEqualNode
 
----
+___
 
 ### isSameNode
 
@@ -3874,9 +3994,9 @@ Theme.isEqualNode
 
 #### Parameters
 
-| Name        | Type             |
-| :---------- | :--------------- |
-| `otherNode` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `otherNode` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -3886,47 +4006,47 @@ Theme.isEqualNode
 
 Theme.isSameNode
 
----
+___
 
 ### lookupNamespaceURI
 
-▸ **lookupNamespaceURI**(`prefix`): `null` \| `string`
+▸ **lookupNamespaceURI**(`prefix`): ``null`` \| `string`
 
 #### Parameters
 
-| Name     | Type               |
-| :------- | :----------------- |
-| `prefix` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `prefix` | ``null`` \| `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 Theme.lookupNamespaceURI
 
----
+___
 
 ### lookupPrefix
 
-▸ **lookupPrefix**(`namespace`): `null` \| `string`
+▸ **lookupPrefix**(`namespace`): ``null`` \| `string`
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 Theme.lookupPrefix
 
----
+___
 
 ### matches
 
@@ -3936,8 +4056,8 @@ Returns true if matching selectors against element's root yields element, and fa
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -3948,7 +4068,7 @@ Returns true if matching selectors against element's root yields element, and fa
 
 Theme.matches
 
----
+___
 
 ### normalize
 
@@ -3964,7 +4084,7 @@ Removes empty exclusive Text nodes and concatenates the data of remaining contig
 
 Theme.normalize
 
----
+___
 
 ### prepend
 
@@ -3976,8 +4096,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3988,79 +4108,79 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Theme.prepend
 
----
+___
 
 ### querySelector
 
-▸ **querySelector**<`K`\>(`selectors`): `null` \| `HTMLElementTagNameMap`[`K`]
+▸ **querySelector**<`K`\>(`selectors`): ``null`` \| `HTMLElementTagNameMap`[`K`]
 
 Returns the first element that is a descendant of node that matches selectors.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
-`null` \| `HTMLElementTagNameMap`[`K`]
+``null`` \| `HTMLElementTagNameMap`[`K`]
 
 #### Inherited from
 
 Theme.querySelector
 
-▸ **querySelector**<`K`\>(`selectors`): `null` \| `SVGElementTagNameMap`[`K`]
+▸ **querySelector**<`K`\>(`selectors`): ``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
-`null` \| `SVGElementTagNameMap`[`K`]
+``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Inherited from
 
 Theme.querySelector
 
-▸ **querySelector**<`E`\>(`selectors`): `null` \| `E`
+▸ **querySelector**<`E`\>(`selectors`): ``null`` \| `E`
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
 
-`null` \| `E`
+``null`` \| `E`
 
 #### Inherited from
 
 Theme.querySelector
 
----
+___
 
 ### querySelectorAll
 
@@ -4070,15 +4190,15 @@ Returns all element descendants of node that match selectors.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
@@ -4092,15 +4212,15 @@ Theme.querySelectorAll
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
@@ -4114,14 +4234,14 @@ Theme.querySelectorAll
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -4132,7 +4252,7 @@ Theme.querySelectorAll
 
 Theme.querySelectorAll
 
----
+___
 
 ### releasePointerCapture
 
@@ -4140,8 +4260,8 @@ Theme.querySelectorAll
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -4152,7 +4272,7 @@ Theme.querySelectorAll
 
 Theme.releasePointerCapture
 
----
+___
 
 ### remove
 
@@ -4168,7 +4288,7 @@ Removes node.
 
 Theme.remove
 
----
+___
 
 ### removeAttribute
 
@@ -4178,8 +4298,8 @@ Removes element's first attribute whose qualified name is qualifiedName.
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -4190,7 +4310,7 @@ Removes element's first attribute whose qualified name is qualifiedName.
 
 Theme.removeAttribute
 
----
+___
 
 ### removeAttributeNS
 
@@ -4200,10 +4320,10 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4213,7 +4333,7 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 Theme.removeAttributeNS
 
----
+___
 
 ### removeAttributeNode
 
@@ -4221,8 +4341,8 @@ Theme.removeAttributeNS
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
@@ -4233,7 +4353,7 @@ Theme.removeAttributeNS
 
 Theme.removeAttributeNode
 
----
+___
 
 ### removeChild
 
@@ -4241,15 +4361,15 @@ Theme.removeAttributeNode
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type |
-| :------ | :--- |
-| `child` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `child` | `T` |
 
 #### Returns
 
@@ -4259,7 +4379,7 @@ Theme.removeAttributeNode
 
 Theme.removeChild
 
----
+___
 
 ### removeEventListener
 
@@ -4267,17 +4387,17 @@ Theme.removeChild
 
 #### Type parameters
 
-| Name | Type                                |
-| :--- | :---------------------------------- |
-| `K`  | extends keyof `HTMLElementEventMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementEventMap` |
 
 #### Parameters
 
-| Name       | Type                                                               |
-| :--------- | :----------------------------------------------------------------- |
-| `type`     | `K`                                                                |
+| Name | Type |
+| :------ | :------ |
+| `type` | `K` |
 | `listener` | (`this`: `HTMLElement`, `ev`: `HTMLElementEventMap`[`K`]) => `any` |
-| `options?` | `boolean` \| `EventListenerOptions`                                |
+| `options?` | `boolean` \| `EventListenerOptions` |
 
 #### Returns
 
@@ -4291,11 +4411,11 @@ Theme.removeEventListener
 
 #### Parameters
 
-| Name       | Type                                 |
-| :--------- | :----------------------------------- |
-| `type`     | `string`                             |
+| Name | Type |
+| :------ | :------ |
+| `type` | `string` |
 | `listener` | `EventListenerOrEventListenerObject` |
-| `options?` | `boolean` \| `EventListenerOptions`  |
+| `options?` | `boolean` \| `EventListenerOptions` |
 
 #### Returns
 
@@ -4305,7 +4425,7 @@ Theme.removeEventListener
 
 Theme.removeEventListener
 
----
+___
 
 ### replaceChild
 
@@ -4313,16 +4433,16 @@ Theme.removeEventListener
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type   |
-| :------ | :----- |
-| `node`  | `Node` |
-| `child` | `T`    |
+| Name | Type |
+| :------ | :------ |
+| `node` | `Node` |
+| `child` | `T` |
 
 #### Returns
 
@@ -4332,7 +4452,7 @@ Theme.removeEventListener
 
 Theme.replaceChild
 
----
+___
 
 ### replaceChildren
 
@@ -4344,8 +4464,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -4356,7 +4476,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Theme.replaceChildren
 
----
+___
 
 ### replaceWith
 
@@ -4368,8 +4488,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -4380,7 +4500,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 Theme.replaceWith
 
----
+___
 
 ### requestFullscreen
 
@@ -4392,8 +4512,8 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name       | Type                |
-| :--------- | :------------------ |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `FullscreenOptions` |
 
 #### Returns
@@ -4404,7 +4524,7 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 Theme.requestFullscreen
 
----
+___
 
 ### requestPointerLock
 
@@ -4418,7 +4538,7 @@ Theme.requestFullscreen
 
 Theme.requestPointerLock
 
----
+___
 
 ### scroll
 
@@ -4426,8 +4546,8 @@ Theme.requestPointerLock
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -4442,10 +4562,10 @@ Theme.scroll
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -4455,7 +4575,7 @@ Theme.scroll
 
 Theme.scroll
 
----
+___
 
 ### scrollBy
 
@@ -4463,8 +4583,8 @@ Theme.scroll
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -4479,10 +4599,10 @@ Theme.scrollBy
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -4492,7 +4612,7 @@ Theme.scrollBy
 
 Theme.scrollBy
 
----
+___
 
 ### scrollIntoView
 
@@ -4500,8 +4620,8 @@ Theme.scrollBy
 
 #### Parameters
 
-| Name   | Type                                 |
-| :----- | :----------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `arg?` | `boolean` \| `ScrollIntoViewOptions` |
 
 #### Returns
@@ -4512,7 +4632,7 @@ Theme.scrollBy
 
 Theme.scrollIntoView
 
----
+___
 
 ### scrollTo
 
@@ -4520,8 +4640,8 @@ Theme.scrollIntoView
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -4536,10 +4656,10 @@ Theme.scrollTo
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -4549,7 +4669,7 @@ Theme.scrollTo
 
 Theme.scrollTo
 
----
+___
 
 ### setAttribute
 
@@ -4559,10 +4679,10 @@ Sets the value of element's first attribute whose qualified name is qualifiedNam
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
-| `value`         | `string` |
+| `value` | `string` |
 
 #### Returns
 
@@ -4572,7 +4692,7 @@ Sets the value of element's first attribute whose qualified name is qualifiedNam
 
 Theme.setAttribute
 
----
+___
 
 ### setAttributeNS
 
@@ -4582,11 +4702,11 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 #### Parameters
 
-| Name            | Type               |
-| :-------------- | :----------------- |
-| `namespace`     | `null` \| `string` |
-| `qualifiedName` | `string`           |
-| `value`         | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `qualifiedName` | `string` |
+| `value` | `string` |
 
 #### Returns
 
@@ -4596,47 +4716,47 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 Theme.setAttributeNS
 
----
+___
 
 ### setAttributeNode
 
-▸ **setAttributeNode**(`attr`): `null` \| `Attr`
+▸ **setAttributeNode**(`attr`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 Theme.setAttributeNode
 
----
+___
 
 ### setAttributeNodeNS
 
-▸ **setAttributeNodeNS**(`attr`): `null` \| `Attr`
+▸ **setAttributeNodeNS**(`attr`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 Theme.setAttributeNodeNS
 
----
+___
 
 ### setPointerCapture
 
@@ -4644,8 +4764,8 @@ Theme.setAttributeNodeNS
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -4656,7 +4776,7 @@ Theme.setAttributeNodeNS
 
 Theme.setPointerCapture
 
----
+___
 
 ### startManagingContentDirection
 
@@ -4664,8 +4784,8 @@ Theme.setPointerCapture
 
 #### Parameters
 
-| Name | Type          |
-| :--- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `el` | `HTMLElement` |
 
 #### Returns
@@ -4676,7 +4796,7 @@ Theme.setPointerCapture
 
 Theme.startManagingContentDirection
 
----
+___
 
 ### stopManagingContentDirection
 
@@ -4684,8 +4804,8 @@ Theme.startManagingContentDirection
 
 #### Parameters
 
-| Name | Type          |
-| :--- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `el` | `HTMLElement` |
 
 #### Returns
@@ -4696,7 +4816,7 @@ Theme.startManagingContentDirection
 
 Theme.stopManagingContentDirection
 
----
+___
 
 ### toggleAttribute
 
@@ -4708,10 +4828,10 @@ Returns true if qualifiedName is now present, and false otherwise.
 
 #### Parameters
 
-| Name            | Type      |
-| :-------------- | :-------- |
-| `qualifiedName` | `string`  |
-| `force?`        | `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `string` |
+| `force?` | `boolean` |
 
 #### Returns
 
@@ -4721,18 +4841,20 @@ Returns true if qualifiedName is now present, and false otherwise.
 
 Theme.toggleAttribute
 
----
+___
 
 ### webkitMatchesSelector
 
 ▸ **webkitMatchesSelector**(`selectors`): `boolean`
 
-**`deprecated`** This is a legacy alias of `matches`.
+**`Deprecated`**
+
+This is a legacy alias of `matches`.
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -4743,7 +4865,7 @@ Theme.toggleAttribute
 
 Theme.webkitMatchesSelector
 
----
+___
 
 ### registerThemeFragment
 
@@ -4751,10 +4873,10 @@ Theme.webkitMatchesSelector
 
 #### Parameters
 
-| Name     | Type             |
-| :------- | :--------------- |
-| `name`   | `FragmentName`   |
-| `kind`   | `FragmentType`   |
+| Name | Type |
+| :------ | :------ |
+| `name` | `FragmentName` |
+| `kind` | `FragmentType` |
 | `styles` | `CSSResultGroup` |
 
 #### Returns

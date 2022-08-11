@@ -41,15 +41,15 @@
 
 #### Parameters
 
-| Name | Type                     |
-| :--- | :----------------------- |
+| Name | Type |
+| :------ | :------ |
 | `gl` | `WebGL2RenderingContext` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### getNow
 
@@ -61,9 +61,9 @@
 
 `number`
 
-the modular of the current unix time by (2 _ pi _ 12000) in seconds
+the modular of the current unix time by (2 * pi  * 12000) in seconds
 
----
+___
 
 ### getPlanetZIndex
 
@@ -71,15 +71,15 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `Planet` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### makeDoubleQuadBuffered
 
@@ -87,23 +87,23 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name  | Type       |
-| :---- | :--------- |
-| `b`   | `number`[] |
-| `ax1` | `number`   |
-| `ay1` | `number`   |
-| `ax2` | `number`   |
-| `ay2` | `number`   |
-| `bx1` | `number`   |
-| `by1` | `number`   |
-| `bx2` | `number`   |
-| `by2` | `number`   |
+| Name | Type |
+| :------ | :------ |
+| `b` | `number`[] |
+| `ax1` | `number` |
+| `ay1` | `number` |
+| `ax2` | `number` |
+| `ay2` | `number` |
+| `bx1` | `number` |
+| `by1` | `number` |
+| `bx2` | `number` |
+| `by2` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### makeEmptyDoubleQuad
 
@@ -113,7 +113,7 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 `number`[]
 
----
+___
 
 ### makeEmptyQuad
 
@@ -123,7 +123,7 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 `number`[]
 
----
+___
 
 ### makeEmptyQuadVec2
 
@@ -133,7 +133,7 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 `number`[]
 
----
+___
 
 ### makeQuad
 
@@ -141,19 +141,19 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `x1` | `number` |
 | `y1` | `number` |
 | `x2` | `number` |
 | `y2` | `number` |
-| `z`  | `number` |
+| `z` | `number` |
 
 #### Returns
 
 `number`[]
 
----
+___
 
 ### makeQuadBuffered
 
@@ -161,20 +161,20 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name | Type       |
-| :--- | :--------- |
-| `b`  | `number`[] |
-| `x1` | `number`   |
-| `y1` | `number`   |
-| `x2` | `number`   |
-| `y2` | `number`   |
-| `z`  | `number`   |
+| Name | Type |
+| :------ | :------ |
+| `b` | `number`[] |
+| `x1` | `number` |
+| `y1` | `number` |
+| `x2` | `number` |
+| `y2` | `number` |
+| `z` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### makeQuadVec2
 
@@ -182,8 +182,8 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `x1` | `number` |
 | `y1` | `number` |
 | `x2` | `number` |
@@ -193,7 +193,7 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 `number`[]
 
----
+___
 
 ### makeQuadVec2Buffered
 
@@ -201,19 +201,19 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name | Type       |
-| :--- | :--------- |
-| `b`  | `number`[] |
-| `x1` | `number`   |
-| `y1` | `number`   |
-| `x2` | `number`   |
-| `y2` | `number`   |
+| Name | Type |
+| :------ | :------ |
+| `b` | `number`[] |
+| `x1` | `number` |
+| `y1` | `number` |
+| `x2` | `number` |
+| `y2` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### rgbVecToHex
 
@@ -221,15 +221,15 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `rgb` | `RGBVec` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### rotateIndices
 
@@ -237,18 +237,18 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name    | Type       |
-| :------ | :--------- |
-| `b`     | `number`[] |
-| `i`     | `number`   |
-| `j`     | `number`   |
-| `angle` | `number`   |
+| Name | Type |
+| :------ | :------ |
+| `b` | `number`[] |
+| `i` | `number` |
+| `j` | `number` |
+| `angle` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### rotateQuad
 
@@ -256,16 +256,16 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name    | Type       |
-| :------ | :--------- |
-| `b`     | `number`[] |
-| `angle` | `number`   |
+| Name | Type |
+| :------ | :------ |
+| `b` | `number`[] |
+| `angle` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### rotateQuadVec2
 
@@ -273,16 +273,16 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name    | Type       |
-| :------ | :--------- |
-| `b`     | `number`[] |
-| `angle` | `number`   |
+| Name | Type |
+| :------ | :------ |
+| `b` | `number`[] |
+| `angle` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### translateIndices
 
@@ -290,18 +290,18 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name                | Type                 |
-| :------------------ | :------------------- |
-| `b`                 | `number`[]           |
-| `i`                 | `number`             |
-| `j`                 | `number`             |
+| Name | Type |
+| :------ | :------ |
+| `b` | `number`[] |
+| `i` | `number` |
+| `j` | `number` |
 | `__namedParameters` | [`number`, `number`] |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### translateQuad
 
@@ -309,16 +309,16 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name | Type                 |
-| :--- | :------------------- |
-| `b`  | `number`[]           |
-| `t`  | [`number`, `number`] |
+| Name | Type |
+| :------ | :------ |
+| `b` | `number`[] |
+| `t` | [`number`, `number`] |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### translateQuadVec2
 
@@ -326,10 +326,10 @@ the modular of the current unix time by (2 _ pi _ 12000) in seconds
 
 #### Parameters
 
-| Name | Type                 |
-| :--- | :------------------- |
-| `b`  | `number`[]           |
-| `t`  | [`number`, `number`] |
+| Name | Type |
+| :------ | :------ |
+| `b` | `number`[] |
+| `t` | [`number`, `number`] |
 
 #### Returns
 

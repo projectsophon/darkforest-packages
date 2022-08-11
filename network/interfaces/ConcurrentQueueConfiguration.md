@@ -14,13 +14,13 @@
 
 • **invocationIntervalMs**: `number`
 
----
+___
 
 ### maxConcurrency
 
 • `Optional` **maxConcurrency**: `number`
 
----
+___
 
 ### maxInvocationsPerIntervalMs
 

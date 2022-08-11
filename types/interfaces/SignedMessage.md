@@ -6,8 +6,8 @@ claims to have signed this message.
 ## Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 ## Table of contents
 
@@ -23,13 +23,13 @@ claims to have signed this message.
 
 • **message**: `T`
 
----
+___
 
 ### sender
 
 • `Optional` **sender**: [`EthAddress`](../README.md#ethaddress)
 
----
+___
 
 ### signature
 

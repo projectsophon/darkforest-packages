@@ -18,19 +18,19 @@ this program within the renderer.
 
 • **attribs**: [`AttribData`](../README.md#attribdata)
 
----
+___
 
 ### fragmentShader
 
 • **fragmentShader**: `string`
 
----
+___
 
 ### uniforms
 
 • **uniforms**: [`UniformData`](../README.md#uniformdata)
 
----
+___
 
 ### vertexShader
 

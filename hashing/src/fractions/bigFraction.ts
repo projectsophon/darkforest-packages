@@ -97,13 +97,13 @@ export interface IFraction {
 }
 
 const { Fraction, errorConstructor } = (function (root) {
-  'use strict';
+  "use strict";
 
   function errorConstructor() {
     const temp = Error.apply(this, arguments);
-    temp['name'] = this['name'] = name;
-    this['stack'] = temp['stack'];
-    this['message'] = temp['message'];
+    temp["name"] = this["name"] = name;
+    this["stack"] = temp["stack"];
+    this["message"] = temp["message"];
   }
 
   // Set Identity function to downgrade BigInt to Number if needed
@@ -143,8 +143,8 @@ const { Fraction, errorConstructor } = (function (root) {
     return errorConstructor;
   }
 
-  const DivisionByZero = (Fraction['DivisionByZero'] = createError('DivisionByZero'));
-  const InvalidParameter = (Fraction['InvalidParameter'] = createError('InvalidParameter'));
+  const DivisionByZero = (Fraction["DivisionByZero"] = createError("DivisionByZero"));
+  const InvalidParameter = (Fraction["InvalidParameter"] = createError("InvalidParameter"));
 
   function assign(n, s) {
     try {
@@ -167,11 +167,11 @@ const { Fraction, errorConstructor } = (function (root) {
       n = BigInt(p1);
       d = BigInt(p2);
       s = n * d;
-    } else if (typeof p1 === 'object') {
-      if ('d' in p1 && 'n' in p1) {
-        n = BigInt(p1['n']);
-        d = BigInt(p1['d']);
-        if ('s' in p1) n *= BigInt(p1['s']);
+    } else if (typeof p1 === "object") {
+      if ("d" in p1 && "n" in p1) {
+        n = BigInt(p1["n"]);
+        d = BigInt(p1["d"]);
+        if ("s" in p1) n *= BigInt(p1["s"]);
       } else if (0 in p1) {
         n = BigInt(p1[0]);
         if (1 in p1) d = BigInt(p1[1]);
@@ -181,7 +181,7 @@ const { Fraction, errorConstructor } = (function (root) {
         throw new InvalidParameter();
       }
       s = n * d;
-    } else if (typeof p1 === 'number') {
+    } else if (typeof p1 === "number") {
       if (isNaN(p1)) {
         throw new InvalidParameter();
       }
@@ -250,7 +250,7 @@ const { Fraction, errorConstructor } = (function (root) {
       } else if (isNaN(p1)) {
         d = n = NaN;
       }
-    } else if (typeof p1 === 'string') {
+    } else if (typeof p1 === "string") {
       let ndx = 0;
 
       let v = C_ZERO,
@@ -263,11 +263,11 @@ const { Fraction, errorConstructor } = (function (root) {
 
       if (match === null) throw new InvalidParameter();
 
-      if (match[ndx] === '-') {
+      if (match[ndx] === "-") {
         // Check for minus sign at the beginning
         s = -C_ONE;
         ndx++;
-      } else if (match[ndx] === '+') {
+      } else if (match[ndx] === "+") {
         // Check for plus sign at the beginning
         ndx++;
       }
@@ -275,10 +275,10 @@ const { Fraction, errorConstructor } = (function (root) {
       if (match.length === ndx + 1) {
         // Check if it's just a simple number "1234"
         w = assign(match[ndx++], s);
-      } else if (match[ndx + 1] === '.' || match[ndx] === '.') {
+      } else if (match[ndx + 1] === "." || match[ndx] === ".") {
         // Check if it's a decimal number
 
-        if (match[ndx] !== '.') {
+        if (match[ndx] !== ".") {
           // Handle 0.5 and .5
           v = assign(match[ndx++], s);
         }
@@ -287,7 +287,7 @@ const { Fraction, errorConstructor } = (function (root) {
         // Check for decimal places
         if (
           ndx + 1 === match.length ||
-          (match[ndx + 1] === '(' && match[ndx + 3] === ')') ||
+          (match[ndx + 1] === "(" && match[ndx + 3] === ")") ||
           (match[ndx + 1] === "'" && match[ndx + 3] === "'")
         ) {
           w = assign(match[ndx], s);
@@ -296,20 +296,17 @@ const { Fraction, errorConstructor } = (function (root) {
         }
 
         // Check for repeating places
-        if (
-          (match[ndx] === '(' && match[ndx + 2] === ')') ||
-          (match[ndx] === "'" && match[ndx + 2] === "'")
-        ) {
+        if ((match[ndx] === "(" && match[ndx + 2] === ")") || (match[ndx] === "'" && match[ndx + 2] === "'")) {
           x = assign(match[ndx + 1], s);
           z = C_TEN ** BigInt(match[ndx + 1].length) - C_ONE;
           ndx += 3;
         }
-      } else if (match[ndx + 1] === '/' || match[ndx + 1] === ':') {
+      } else if (match[ndx + 1] === "/" || match[ndx + 1] === ":") {
         // Check for a simple fraction "123/456" or "123:456"
         w = assign(match[ndx], s);
         y = assign(match[ndx + 2], C_ONE);
         ndx += 3;
-      } else if (match[ndx + 3] === '/' && match[ndx + 1] === ' ') {
+      } else if (match[ndx + 3] === "/" && match[ndx + 1] === " ") {
         // Check for a complex fraction "123 1/2"
         v = assign(match[ndx], s);
         w = assign(match[ndx + 2], s);
@@ -332,9 +329,9 @@ const { Fraction, errorConstructor } = (function (root) {
       throw new DivisionByZero();
     }
 
-    P['s'] = s < C_ZERO ? -C_ONE : C_ONE;
-    P['n'] = n < C_ZERO ? -n : n;
-    P['d'] = d < C_ZERO ? -d : d;
+    P["s"] = s < C_ZERO ? -C_ONE : C_ONE;
+    P["n"] = n < C_ZERO ? -n : n;
+    P["d"] = d < C_ZERO ? -d : d;
   };
 
   function modpow(b, e, m) {
@@ -414,11 +411,11 @@ const { Fraction, errorConstructor } = (function (root) {
 
     parse(a, b);
 
-    a = gcd(P['d'], P['n']); // Abuse a
+    a = gcd(P["d"], P["n"]); // Abuse a
 
-    this['s'] = P['s'];
-    this['n'] = (P['n'] / a) | C_ZERO;
-    this['d'] = (P['d'] / a) | C_ZERO;
+    this["s"] = P["s"];
+    this["n"] = (P["n"] / a) | C_ZERO;
+    this["d"] = (P["d"] / a) | C_ZERO;
   }
 
   Fraction.prototype = {
@@ -432,7 +429,7 @@ const { Fraction, errorConstructor } = (function (root) {
      * Ex: new Fraction(-4).abs() => 4
      **/
     abs: function () {
-      return new Fraction(this['n'], this['d']);
+      return new Fraction(this["n"], this["d"]);
     },
 
     /**
@@ -441,7 +438,7 @@ const { Fraction, errorConstructor } = (function (root) {
      * Ex: new Fraction(-4).neg() => 4
      **/
     neg: function () {
-      return new Fraction(-this['s'] * this['n'], this['d']);
+      return new Fraction(-this["s"] * this["n"], this["d"]);
     },
 
     /**
@@ -451,10 +448,7 @@ const { Fraction, errorConstructor } = (function (root) {
      **/
     add: function (a, b) {
       parse(a, b);
-      return new Fraction(
-        this['s'] * this['n'] * P['d'] + P['s'] * this['d'] * P['n'],
-        this['d'] * P['d']
-      );
+      return new Fraction(this["s"] * this["n"] * P["d"] + P["s"] * this["d"] * P["n"], this["d"] * P["d"]);
     },
 
     /**
@@ -464,10 +458,7 @@ const { Fraction, errorConstructor } = (function (root) {
      **/
     sub: function (a, b) {
       parse(a, b);
-      return new Fraction(
-        this['s'] * this['n'] * P['d'] - P['s'] * this['d'] * P['n'],
-        this['d'] * P['d']
-      );
+      return new Fraction(this["s"] * this["n"] * P["d"] - P["s"] * this["d"] * P["n"], this["d"] * P["d"]);
     },
 
     /**
@@ -477,7 +468,7 @@ const { Fraction, errorConstructor } = (function (root) {
      **/
     mul: function (a, b) {
       parse(a, b);
-      return new Fraction(this['s'] * P['s'] * this['n'] * P['n'], this['d'] * P['d']);
+      return new Fraction(this["s"] * P["s"] * this["n"] * P["n"], this["d"] * P["d"]);
     },
 
     /**
@@ -487,7 +478,7 @@ const { Fraction, errorConstructor } = (function (root) {
      **/
     div: function (a, b) {
       parse(a, b);
-      return new Fraction(this['s'] * P['s'] * this['n'] * P['d'], this['d'] * P['n']);
+      return new Fraction(this["s"] * P["s"] * this["n"] * P["d"], this["d"] * P["n"]);
     },
 
     /**
@@ -506,11 +497,11 @@ const { Fraction, errorConstructor } = (function (root) {
      **/
     mod: function (a, b) {
       if (a === undefined) {
-        return new Fraction((this['s'] * this['n']) % this['d'], 1);
+        return new Fraction((this["s"] * this["n"]) % this["d"], 1);
       }
 
       parse(a, b);
-      if (0 === P['n'] && 0 === this['d']) {
+      if (0 === P["n"] && 0 === this["d"]) {
         Fraction(0, 0); // Throw DivisionByZero
       }
 
@@ -528,10 +519,7 @@ const { Fraction, errorConstructor } = (function (root) {
        * => b2 * a1 = a2 * b1 * q + b1 * b2 * r
        * => (b2 * a1 % a2 * b1) / (b1 * b2)
        */
-      return new Fraction(
-        (this['s'] * (P['d'] * this['n'])) % (P['n'] * this['d']),
-        P['d'] * this['d']
-      );
+      return new Fraction((this["s"] * (P["d"] * this["n"])) % (P["n"] * this["d"]), P["d"] * this["d"]);
     },
 
     /**
@@ -544,7 +532,7 @@ const { Fraction, errorConstructor } = (function (root) {
 
       // gcd(a / b, c / d) = gcd(a, c) / lcm(b, d)
 
-      return new Fraction(gcd(P['n'], this['n']) * gcd(P['d'], this['d']), P['d'] * this['d']);
+      return new Fraction(gcd(P["n"], this["n"]) * gcd(P["d"], this["d"]), P["d"] * this["d"]);
     },
 
     /**
@@ -557,10 +545,10 @@ const { Fraction, errorConstructor } = (function (root) {
 
       // lcm(a / b, c / d) = lcm(a, c) / gcd(b, d)
 
-      if (P['n'] === C_ZERO && this['n'] === C_ZERO) {
+      if (P["n"] === C_ZERO && this["n"] === C_ZERO) {
         return new Fraction();
       }
-      return new Fraction(P['n'] * this['n'], gcd(P['n'], this['n']) * gcd(P['d'], this['d']));
+      return new Fraction(P["n"] * this["n"], gcd(P["n"], this["n"]) * gcd(P["d"], this["d"]));
     },
 
     /**
@@ -569,7 +557,7 @@ const { Fraction, errorConstructor } = (function (root) {
      * Ex: new Fraction([-3, 4]).inverse() => -4 / 3
      **/
     inverse: function () {
-      return new Fraction(this['s'] * this['d'], this['n']);
+      return new Fraction(this["s"] * this["d"], this["n"]);
     },
 
     /**
@@ -579,9 +567,9 @@ const { Fraction, errorConstructor } = (function (root) {
      */
     pow: function (m) {
       if (m < 0) {
-        return new Fraction((this['s'] * this['d']) ** BigInt(-m), this['n'] ** BigInt(-m));
+        return new Fraction((this["s"] * this["d"]) ** BigInt(-m), this["n"] ** BigInt(-m));
       } else {
-        return new Fraction((this['s'] * this['n']) ** BigInt(+m), this['d'] ** BigInt(+m));
+        return new Fraction((this["s"] * this["n"]) ** BigInt(+m), this["d"] ** BigInt(+m));
       }
     },
 
@@ -592,7 +580,7 @@ const { Fraction, errorConstructor } = (function (root) {
      **/
     equals: function (a, b) {
       parse(a, b);
-      return this['s'] * this['n'] * P['d'] === P['s'] * P['n'] * this['d']; // Same as compare() === 0
+      return this["s"] * this["n"] * P["d"] === P["s"] * P["n"] * this["d"]; // Same as compare() === 0
     },
 
     /**
@@ -602,7 +590,7 @@ const { Fraction, errorConstructor } = (function (root) {
      **/
     compare: function (a, b) {
       parse(a, b);
-      let t = this['s'] * this['n'] * P['d'] - P['s'] * P['n'] * this['d'];
+      let t = this["s"] * this["n"] * P["d"] - P["s"] * P["n"] * this["d"];
 
       return (C_ZERO < t) - (t < C_ZERO);
     },
@@ -615,10 +603,7 @@ const { Fraction, errorConstructor } = (function (root) {
     ceil: function (places) {
       places = 10 ** Number(places || 0);
 
-      return new Fraction(
-        Math.ceil((places * Number(this['s'] * this['n'])) / Number(this['d'])),
-        places
-      );
+      return new Fraction(Math.ceil((places * Number(this["s"] * this["n"])) / Number(this["d"])), places);
     },
 
     /**
@@ -629,10 +614,7 @@ const { Fraction, errorConstructor } = (function (root) {
     floor: function (places) {
       places = 10 ** Number(places || 0);
 
-      return new Fraction(
-        Math.floor((places * Number(this['s'] * this['n'])) / Number(this['d'])),
-        places
-      );
+      return new Fraction(Math.floor((places * Number(this["s"] * this["n"])) / Number(this["d"])), places);
     },
 
     /**
@@ -643,10 +625,7 @@ const { Fraction, errorConstructor } = (function (root) {
     round: function (places) {
       places = 10 ** Number(places || 0);
 
-      return new Fraction(
-        Math.round((places * Number(this['s'] * this['n'])) / Number(this['d'])),
-        places
-      );
+      return new Fraction(Math.round((places * Number(this["s"] * this["n"])) / Number(this["d"])), places);
     },
 
     /**
@@ -656,7 +635,7 @@ const { Fraction, errorConstructor } = (function (root) {
      */
     divisible: function (a, b) {
       parse(a, b);
-      return !(!(P['n'] * this['d']) || (this['n'] * P['d']) % (P['n'] * this['d']));
+      return !(!(P["n"] * this["d"]) || (this["n"] * P["d"]) % (P["n"] * this["d"]));
     },
 
     /**
@@ -666,7 +645,7 @@ const { Fraction, errorConstructor } = (function (root) {
      **/
     valueOf: function () {
       // Best we can do so far
-      return Number(this['s'] * this['n']) / Number(this['d']);
+      return Number(this["s"] * this["n"]) / Number(this["d"]);
     },
 
     /**
@@ -676,15 +655,15 @@ const { Fraction, errorConstructor } = (function (root) {
      **/
     toString: function (dec) {
       let g;
-      let N = this['n'];
-      let D = this['d'];
+      let N = this["n"];
+      let D = this["d"];
 
       dec = dec || 15; // 15 = decimal places when no repitation
 
       let cycLen = cycleLen(N, D); // Cycle length
       let cycOff = cycleStart(N, D, cycLen); // Cycle start
 
-      let str = this['s'] < C_ZERO ? '-' : '';
+      let str = this["s"] < C_ZERO ? "-" : "";
 
       // Append integer part
       str += (N / D) | C_ZERO;
@@ -692,7 +671,7 @@ const { Fraction, errorConstructor } = (function (root) {
       N %= D;
       N *= C_TEN;
 
-      if (N) str += '.';
+      if (N) str += ".";
 
       if (cycLen) {
         for (let i = cycOff; i--; ) {
@@ -700,13 +679,13 @@ const { Fraction, errorConstructor } = (function (root) {
           N %= D;
           N *= C_TEN;
         }
-        str += '(';
+        str += "(";
         for (let i = cycLen; i--; ) {
           str += (N / D) | C_ZERO;
           N %= D;
           N *= C_TEN;
         }
-        str += ')';
+        str += ")";
       } else {
         for (let i = dec; N && i--; ) {
           str += (N / D) | C_ZERO;
@@ -723,9 +702,9 @@ const { Fraction, errorConstructor } = (function (root) {
      * Ex: new Fraction("1.'3'").toFraction() => "4 1/3"
      **/
     toFraction: function (excludeWhole) {
-      let n = this['n'];
-      let d = this['d'];
-      let str = this['s'] < C_ZERO ? '-' : '';
+      let n = this["n"];
+      let d = this["d"];
+      let str = this["s"] < C_ZERO ? "-" : "";
 
       if (d === C_ONE) {
         str += n;
@@ -733,12 +712,12 @@ const { Fraction, errorConstructor } = (function (root) {
         let whole = (n / d) | C_ZERO;
         if (excludeWhole && whole > C_ZERO) {
           str += whole;
-          str += ' ';
+          str += " ";
           n %= d;
         }
 
         str += n;
-        str += '/';
+        str += "/";
         str += d;
       }
       return str;
@@ -750,9 +729,9 @@ const { Fraction, errorConstructor } = (function (root) {
      * Ex: new Fraction("1.'3'").toLatex() => "\frac{4}{3}"
      **/
     toLatex: function (excludeWhole) {
-      let n = this['n'];
-      let d = this['d'];
-      let str = this['s'] < C_ZERO ? '-' : '';
+      let n = this["n"];
+      let d = this["d"];
+      let str = this["s"] < C_ZERO ? "-" : "";
 
       if (d === C_ONE) {
         str += n;
@@ -763,11 +742,11 @@ const { Fraction, errorConstructor } = (function (root) {
           n %= d;
         }
 
-        str += '\\frac{';
+        str += "\\frac{";
         str += n;
-        str += '}{';
+        str += "}{";
         str += d;
-        str += '}';
+        str += "}";
       }
       return str;
     },
@@ -778,8 +757,8 @@ const { Fraction, errorConstructor } = (function (root) {
      * Ex: new Fraction("7/8").toContinued() => [0,1,7]
      */
     toContinued: function () {
-      let a = this['n'];
-      let b = this['d'];
+      let a = this["n"];
+      let b = this["d"];
       let res = [];
 
       do {
@@ -795,28 +774,28 @@ const { Fraction, errorConstructor } = (function (root) {
     simplify: function (eps) {
       // First naive implementation, needs improvement
 
-      let cont = this['abs']()['toContinued']();
+      let cont = this["abs"]()["toContinued"]();
 
       eps = eps || 0.001;
 
       function rec(a) {
         if (a.length === 1) return new Fraction(a[0]);
-        return rec(a.slice(1))['inverse']()['add'](a[0]);
+        return rec(a.slice(1))["inverse"]()["add"](a[0]);
       }
 
       for (let i = 0; i < cont.length; i++) {
         let tmp = rec(cont.slice(0, i + 1));
-        if (tmp['sub'](this['abs']())['abs']().valueOf() < eps) {
-          return tmp['mul'](this['s']);
+        if (tmp["sub"](this["abs"]())["abs"]().valueOf() < eps) {
+          return tmp["mul"](this["s"]);
         }
       }
       return this;
     },
   };
 
-  Object.defineProperty(exports, '__esModule', { value: true });
-  Fraction['default'] = Fraction;
-  Fraction['Fraction'] = Fraction;
+  Object.defineProperty(exports, "__esModule", { value: true });
+  Fraction["default"] = Fraction;
+  Fraction["Fraction"] = Fraction;
   return {
     Fraction: Fraction as IFraction,
     errorConstructor,

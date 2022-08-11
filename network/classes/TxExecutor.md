@@ -21,8 +21,8 @@
 - [nonceMutex](TxExecutor.md#noncemutex)
 - [queue](TxExecutor.md#queue)
 - [supportMultipleWallets](TxExecutor.md#supportmultiplewallets)
-- [NONCE_STALE_AFTER_MS](TxExecutor.md#nonce_stale_after_ms)
-- [TX_SUBMIT_TIMEOUT](TxExecutor.md#tx_submit_timeout)
+- [NONCE\_STALE\_AFTER\_MS](TxExecutor.md#nonce_stale_after_ms)
+- [TX\_SUBMIT\_TIMEOUT](TxExecutor.md#tx_submit_timeout)
 
 ### Methods
 
@@ -44,15 +44,15 @@
 
 #### Parameters
 
-| Name                     | Type                                                                            | Default value |
-| :----------------------- | :------------------------------------------------------------------------------ | :------------ |
-| `ethConnection`          | [`EthConnection`](EthConnection.md)                                             | `undefined`   |
-| `gasSettingProvider`     | [`GasPriceSettingProvider`](../README.md#gaspricesettingprovider)               | `undefined`   |
-| `beforeQueued?`          | [`BeforeQueued`](../README.md#beforequeued)                                     | `undefined`   |
-| `beforeTransaction?`     | [`BeforeTransaction`](../README.md#beforetransaction)                           | `undefined`   |
-| `afterTransaction?`      | [`AfterTransaction`](../README.md#aftertransaction)                             | `undefined`   |
-| `queueConfiguration?`    | [`ConcurrentQueueConfiguration`](../interfaces/ConcurrentQueueConfiguration.md) | `undefined`   |
-| `supportMultipleWallets` | `boolean`                                                                       | `true`        |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `ethConnection` | [`ConnectionManager`](ConnectionManager.md) | `undefined` |
+| `gasSettingProvider` | [`GasPriceSettingProvider`](../README.md#gaspricesettingprovider) | `undefined` |
+| `beforeQueued?` | [`BeforeQueued`](../README.md#beforequeued) | `undefined` |
+| `beforeTransaction?` | [`BeforeTransaction`](../README.md#beforetransaction) | `undefined` |
+| `afterTransaction?` | [`AfterTransaction`](../README.md#aftertransaction) | `undefined` |
+| `queueConfiguration?` | [`ConcurrentQueueConfiguration`](../interfaces/ConcurrentQueueConfiguration.md) | `undefined` |
+| `supportMultipleWallets` | `boolean` | `true` |
 
 ## Properties
 
@@ -63,7 +63,7 @@
 If present, called after every transaction with the transaction info as well as its performance
 metrics.
 
----
+___
 
 ### beforeQueued
 
@@ -72,7 +72,7 @@ metrics.
 If present, called before any transaction is queued, to give the user of [TxExecutor](TxExecutor.md) the
 opportunity to cancel the event by rejecting. Useful for interstitials.
 
----
+___
 
 ### beforeTransaction
 
@@ -81,7 +81,7 @@ opportunity to cancel the event by rejecting. Useful for interstitials.
 If present, called before every transaction, to give the user of [TxExecutor](TxExecutor.md) the
 opportunity to cancel the event by throwing an exception. Useful for interstitials.
 
----
+___
 
 ### defaultTxOptions
 
@@ -90,7 +90,7 @@ opportunity to cancel the event by throwing an exception. Useful for interstitia
 Unless overridden, these are the default transaction options each blockchain transaction will
 be sent with.
 
----
+___
 
 ### diagnosticsUpdater
 
@@ -98,15 +98,15 @@ be sent with.
 
 Allows us to record some diagnostics that appear in the DiagnosticsPane of the Dark Forest client.
 
----
+___
 
 ### ethConnection
 
-• `Private` `Readonly` **ethConnection**: [`EthConnection`](EthConnection.md)
+• `Private` `Readonly` **ethConnection**: [`ConnectionManager`](ConnectionManager.md)
 
 Our interface to the blockchain.
 
----
+___
 
 ### gasSettingProvider
 
@@ -115,7 +115,7 @@ Our interface to the blockchain.
 Communicates to the [TxExecutor](TxExecutor.md) the gas price we should be paying for each transaction,
 if there is not a manual gas price specified for that transaction.
 
----
+___
 
 ### idSequence
 
@@ -124,7 +124,7 @@ if there is not a manual gas price specified for that transaction.
 Increments every time a new transaction is created. This is separate from the nonce because
 it is used solely for ordering transactions client-side.
 
----
+___
 
 ### lastTransactionTimestamp
 
@@ -133,7 +133,7 @@ it is used solely for ordering transactions client-side.
 We record the last transaction timestamp so that we know when it's a good time to refresh the
 nonce.
 
----
+___
 
 ### nonce
 
@@ -142,7 +142,7 @@ nonce.
 All Ethereum transactions have a nonce. The nonce should strictly increase with each
 transaction.
 
----
+___
 
 ### nonceMutex
 
@@ -151,7 +151,7 @@ transaction.
 Mutex that ensures only one transaction is modifying the nonce
 at a time.
 
----
+___
 
 ### queue
 
@@ -159,7 +159,7 @@ at a time.
 
 Task queue which executes transactions in a controlled manner.
 
----
+___
 
 ### supportMultipleWallets
 
@@ -171,20 +171,20 @@ we can get the most up to date nonce even if other
 wallets/applications are sending transactions as the same
 address.
 
----
+___
 
-### NONCE_STALE_AFTER_MS
+### NONCE\_STALE\_AFTER\_MS
 
-▪ `Static` `Private` `Readonly` **NONCE_STALE_AFTER_MS**: `5000`
+▪ `Static` `Private` `Readonly` **NONCE\_STALE\_AFTER\_MS**: ``5000``
 
 If [supportMultipleWallets](TxExecutor.md#supportmultiplewallets) is true, refresh the nonce if a
 transaction has not been sent in this amount of time.
 
----
+___
 
-### TX_SUBMIT_TIMEOUT
+### TX\_SUBMIT\_TIMEOUT
 
-▪ `Static` `Private` `Readonly` **TX_SUBMIT_TIMEOUT**: `30000`
+▪ `Static` `Private` `Readonly` **TX\_SUBMIT\_TIMEOUT**: ``30000``
 
 A transaction is considered to have errored if haven't successfully submitted to mempool within
 this amount of time.
@@ -197,15 +197,15 @@ this amount of time.
 
 #### Parameters
 
-| Name | Type                       |
-| :--- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `tx` | `Transaction`<`TxIntent`\> |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### execute
 
@@ -216,15 +216,15 @@ purpose for `this` purposes.
 
 #### Parameters
 
-| Name | Type                       |
-| :--- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `tx` | `Transaction`<`TxIntent`\> |
 
 #### Returns
 
 `Promise`<`void`\>
 
----
+___
 
 ### getNonce
 
@@ -241,7 +241,7 @@ with the game at the same time.
 
 `Promise`<`undefined` \| `number`\>
 
----
+___
 
 ### nextId
 
@@ -253,7 +253,7 @@ Return current counter and increment.
 
 `number`
 
----
+___
 
 ### prioritizeTransaction
 
@@ -261,15 +261,15 @@ Return current counter and increment.
 
 #### Parameters
 
-| Name | Type                       |
-| :--- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `tx` | `Transaction`<`TxIntent`\> |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### queueTransaction
 
@@ -279,22 +279,22 @@ Schedules this transaction for execution.
 
 #### Type parameters
 
-| Name | Type               |
-| :--- | :----------------- |
-| `T`  | extends `TxIntent` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `TxIntent` |
 
 #### Parameters
 
-| Name         | Type                 |
-| :----------- | :------------------- |
-| `intent`     | `T`                  |
+| Name | Type |
+| :------ | :------ |
+| `intent` | `T` |
 | `overrides?` | `TransactionRequest` |
 
 #### Returns
 
 `Promise`<`Transaction`<`T`\>\>
 
----
+___
 
 ### resetNonce
 
@@ -308,7 +308,7 @@ execution starts.
 
 `Promise`<`undefined`\>
 
----
+___
 
 ### setDiagnosticUpdater
 
@@ -316,15 +316,15 @@ execution starts.
 
 #### Parameters
 
-| Name                 | Type                |
-| :------------------- | :------------------ |
+| Name | Type |
+| :------ | :------ |
 | `diagnosticUpdater?` | `DiagnosticUpdater` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### waitForTransaction
 
@@ -336,14 +336,14 @@ Useful for plugging these persisted transactions into our transaction system.
 
 #### Type parameters
 
-| Name | Type               |
-| :--- | :----------------- |
-| `T`  | extends `TxIntent` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `TxIntent` |
 
 #### Parameters
 
-| Name  | Type                         |
-| :---- | :--------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `ser` | `PersistedTransaction`<`T`\> |
 
 #### Returns

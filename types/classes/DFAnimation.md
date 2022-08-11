@@ -30,8 +30,8 @@
 
 #### Parameters
 
-| Name     | Type           |
-| :------- | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `update` | () => `number` |
 
 ## Properties
@@ -48,7 +48,7 @@
 
 `number`
 
----
+___
 
 ### \_value
 
@@ -64,7 +64,7 @@
 
 `void`
 
----
+___
 
 ### value
 

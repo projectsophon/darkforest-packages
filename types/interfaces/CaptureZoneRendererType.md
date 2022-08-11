@@ -15,7 +15,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Draw all Capture Zones
 
 `void`
 
----
+___
 
 ### queueCaptureZones
 

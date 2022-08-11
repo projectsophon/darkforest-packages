@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-### Type aliases
+### Type Aliases
 
 - [PixelCoords](README.md#pixelcoords)
 - [QuoteData](README.md#quotedata)
@@ -47,7 +47,7 @@
 - [rgbStr](README.md#rgbstr)
 - [titleCase](README.md#titlecase)
 
-## Type aliases
+## Type Aliases
 
 ### PixelCoords
 
@@ -55,12 +55,12 @@
 
 #### Type declaration
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
----
+___
 
 ### QuoteData
 
@@ -68,10 +68,10 @@
 
 #### Type declaration
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `author` | `string` |
-| `quote`  | `string` |
+| `quote` | `string` |
 
 ## Variables
 
@@ -79,25 +79,25 @@
 
 • `Const` **grayColors**: `PlanetCosmeticInfo`
 
----
+___
 
 ### mockCommon
 
 • `Const` **mockCommon**: `Artifact`
 
----
+___
 
 ### mockEpic
 
 • `Const` **mockEpic**: `Artifact`
 
----
+___
 
 ### mockLegendary
 
 • `Const` **mockLegendary**: `Artifact`
 
----
+___
 
 ### mockRare
 
@@ -111,15 +111,15 @@
 
 #### Parameters
 
-| Name       | Type                      |
-| :--------- | :------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `artifact` | `undefined` \| `Artifact` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### artifactRandom
 
@@ -127,8 +127,8 @@
 
 #### Parameters
 
-| Name  | Type         |
-| :---- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `loc` | `ArtifactId` |
 
 #### Returns
@@ -141,7 +141,7 @@
 
 `number`
 
----
+___
 
 ### artifactRandomInt
 
@@ -149,8 +149,8 @@
 
 #### Parameters
 
-| Name  | Type         |
-| :---- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `loc` | `ArtifactId` |
 
 #### Returns
@@ -163,7 +163,7 @@
 
 `number`
 
----
+___
 
 ### getBiomeRgbStr
 
@@ -171,7 +171,7 @@
 
 #### Parameters
 
-| Name    | Type    |
+| Name | Type |
 | :------ | :------ |
 | `biome` | `Biome` |
 
@@ -179,7 +179,7 @@
 
 `string`
 
----
+___
 
 ### getHatSizeName
 
@@ -187,15 +187,15 @@
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `Planet` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getOwnerColor
 
@@ -203,15 +203,15 @@
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `Planet` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getOwnerColorVec
 
@@ -219,15 +219,15 @@
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `Planet` |
 
 #### Returns
 
 `RGBAVec`
 
----
+___
 
 ### getPlanetBlurb
 
@@ -235,15 +235,15 @@
 
 #### Parameters
 
-| Name     | Type                    |
-| :------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `undefined` \| `Planet` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getPlanetBlurb2
 
@@ -251,15 +251,15 @@
 
 #### Parameters
 
-| Name     | Type                    |
-| :------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `undefined` \| `Planet` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getPlanetClass
 
@@ -267,15 +267,15 @@
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `Planet` |
 
 #### Returns
 
 `UpgradeBranchName`
 
----
+___
 
 ### getPlanetCosmetic
 
@@ -283,15 +283,15 @@
 
 #### Parameters
 
-| Name     | Type                    |
-| :------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `undefined` \| `Planet` |
 
 #### Returns
 
 `PlanetCosmeticInfo`
 
----
+___
 
 ### getPlanetName
 
@@ -299,15 +299,15 @@
 
 #### Parameters
 
-| Name     | Type                    |
-| :------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `undefined` \| `Planet` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getPlanetNameHash
 
@@ -315,15 +315,15 @@
 
 #### Parameters
 
-| Name    | Type         |
-| :------ | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `locId` | `LocationId` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getPlanetTagline
 
@@ -331,15 +331,15 @@
 
 #### Parameters
 
-| Name     | Type                    |
-| :------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `undefined` \| `Planet` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getPlanetTitle
 
@@ -347,15 +347,15 @@
 
 #### Parameters
 
-| Name     | Type                    |
-| :------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `planet` | `undefined` \| `Planet` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getPlayerColor
 
@@ -363,15 +363,15 @@
 
 #### Parameters
 
-| Name     | Type         |
-| :------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `player` | `EthAddress` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### getPlayerColorVec
 
@@ -379,15 +379,15 @@
 
 #### Parameters
 
-| Name     | Type         |
-| :------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `player` | `EthAddress` |
 
 #### Returns
 
 `RGBAVec`
 
----
+___
 
 ### getRuinsInfo
 
@@ -395,15 +395,15 @@
 
 #### Parameters
 
-| Name  | Type         |
-| :---- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `loc` | `LocationId` |
 
 #### Returns
 
 `RuinsInfo`
 
----
+___
 
 ### hashToHue
 
@@ -411,15 +411,15 @@
 
 #### Parameters
 
-| Name   | Type     |
-| :----- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `hash` | `string` |
 
 #### Returns
 
 `number`
 
----
+___
 
 ### hatTypeFromHash
 
@@ -427,15 +427,15 @@
 
 #### Parameters
 
-| Name   | Type         |
-| :----- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `hash` | `LocationId` |
 
 #### Returns
 
 `HatType`
 
----
+___
 
 ### hslStr
 
@@ -443,17 +443,17 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `h`  | `number` |
-| `s`  | `number` |
-| `l`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `h` | `number` |
+| `s` | `number` |
+| `l` | `number` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### hslToRgb
 
@@ -461,15 +461,15 @@
 
 #### Parameters
 
-| Name                | Type     |
-| :------------------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `__namedParameters` | `HSLVec` |
 
 #### Returns
 
 `RGBVec`
 
----
+___
 
 ### mockArtifact
 
@@ -477,17 +477,17 @@
 
 #### Parameters
 
-| Name           | Type             | Default value            |
-| :------------- | :--------------- | :----------------------- |
-| `rarity`       | `ArtifactRarity` | `undefined`              |
-| `artifactType` | `ArtifactType`   | `ArtifactType.Spaceship` |
-| `planetBiome`  | `Biome`          | `Biome.WASTELAND`        |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `rarity` | `ArtifactRarity` | `undefined` |
+| `artifactType` | `ArtifactType` | `ArtifactType.Spaceship` |
+| `planetBiome` | `Biome` | `Biome.WASTELAND` |
 
 #### Returns
 
 `Artifact`
 
----
+___
 
 ### mockArtifactWithRarity
 
@@ -495,17 +495,17 @@
 
 #### Parameters
 
-| Name           | Type             | Default value            |
-| :------------- | :--------------- | :----------------------- |
-| `rarity`       | `ArtifactRarity` | `undefined`              |
-| `artifactType` | `ArtifactType`   | `ArtifactType.Spaceship` |
-| `planetBiome`  | `Biome`          | `Biome.WASTELAND`        |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `rarity` | `ArtifactRarity` | `undefined` |
+| `artifactType` | `ArtifactType` | `ArtifactType.Spaceship` |
+| `planetBiome` | `Biome` | `Biome.WASTELAND` |
 
 #### Returns
 
 `Artifact`
 
----
+___
 
 ### planetPerlin
 
@@ -513,8 +513,8 @@
 
 #### Parameters
 
-| Name  | Type         |
-| :---- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `loc` | `LocationId` |
 
 #### Returns
@@ -525,15 +525,15 @@
 
 ##### Parameters
 
-| Name     | Type                                   |
-| :------- | :------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `coords` | [`PixelCoords`](README.md#pixelcoords) |
 
 ##### Returns
 
 `number`
 
----
+___
 
 ### planetRandom
 
@@ -541,8 +541,8 @@
 
 #### Parameters
 
-| Name  | Type         |
-| :---- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `loc` | `LocationId` |
 
 #### Returns
@@ -555,7 +555,7 @@
 
 `number`
 
----
+___
 
 ### planetRandomInt
 
@@ -563,8 +563,8 @@
 
 #### Parameters
 
-| Name  | Type         |
-| :---- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `loc` | `LocationId` |
 
 #### Returns
@@ -577,7 +577,7 @@
 
 `number`
 
----
+___
 
 ### rgbStr
 
@@ -585,15 +585,15 @@
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `rgb` | `RGBVec` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### titleCase
 
@@ -601,8 +601,8 @@
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `title` | `string` |
 
 #### Returns

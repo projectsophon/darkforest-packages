@@ -23,43 +23,43 @@ planet in nebula with no modifiers.
 
 • **barbarianPercentage**: `number`[]
 
----
+___
 
 ### defense
 
 • **defense**: `number`[]
 
----
+___
 
 ### populationCap
 
 • **populationCap**: `number`[]
 
----
+___
 
 ### populationGrowth
 
 • **populationGrowth**: `number`[]
 
----
+___
 
 ### range
 
 • **range**: `number`[]
 
----
+___
 
 ### silverCap
 
 • **silverCap**: `number`[]
 
----
+___
 
 ### silverGrowth
 
 • **silverGrowth**: `number`[]
 
----
+___
 
 ### speed
 

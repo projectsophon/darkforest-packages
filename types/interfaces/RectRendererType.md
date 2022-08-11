@@ -15,7 +15,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Draws all queued rectangles
 
 `void`
 
----
+___
 
 ### queueRectCenterWorld
 
@@ -43,14 +43,14 @@ Drawing the rectangele that shows up when you hover over a planet
 
 #### Parameters
 
-| Name      | Type                                      | Description                                          |
-| :-------- | :---------------------------------------- | :--------------------------------------------------- |
-| `center`  | [`WorldCoords`](../README.md#worldcoords) | Coordinates of the planet relative to the game world |
-| `width`   | `number`                                  | Width of planet relative to the game world           |
-| `height`  | `number`                                  | Height of planet relative to the game world          |
-| `color?`  | [`RGBVec`](../README.md#rgbvec)           |                                                      |
-| `stroke?` | `number`                                  | How thick the border of the rectangle should be      |
-| `zIdx?`   | `number`                                  | Z axis                                               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `center` | [`WorldCoords`](../README.md#worldcoords) | Coordinates of the planet relative to the game world |
+| `width` | `number` | Width of planet relative to the game world |
+| `height` | `number` | Height of planet relative to the game world |
+| `color?` | [`RGBVec`](../README.md#rgbvec) |  |
+| `stroke?` | `number` | How thick the border of the rectangle should be |
+| `zIdx?` | `number` | Z axis |
 
 #### Returns
 

@@ -14,13 +14,13 @@
 
 • **ethAddress**: [`EthAddress`](../README.md#ethaddress)
 
----
+___
 
 ### score
 
 • **score**: `undefined` \| `number`
 
----
+___
 
 ### twitter
 

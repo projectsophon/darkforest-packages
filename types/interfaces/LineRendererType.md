@@ -15,7 +15,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Draws all queued lines
 
 `void`
 
----
+___
 
 ### queueLineWorld
 
@@ -43,14 +43,14 @@ Used to draw the line that the voyager take and wormholes
 
 #### Parameters
 
-| Name      | Type                                      | Description                                                         |
-| :-------- | :---------------------------------------- | :------------------------------------------------------------------ |
-| `start`   | [`WorldCoords`](../README.md#worldcoords) | The coordinates of where the lines start relative to the game world |
-| `end`     | [`WorldCoords`](../README.md#worldcoords) | The coordinates of where the lines end relative to the game world   |
-| `color?`  | [`RGBAVec`](../README.md#rgbavec)         |                                                                     |
-| `width?`  | `number`                                  | how thick the line should be from the center                        |
-| `zIdx?`   | `number`                                  | Z axis                                                              |
-| `dashed?` | `boolean`                                 | if the line should be dashed                                        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `start` | [`WorldCoords`](../README.md#worldcoords) | The coordinates of where the lines start relative to the game world |
+| `end` | [`WorldCoords`](../README.md#worldcoords) | The coordinates of where the lines end relative to the game world |
+| `color?` | [`RGBAVec`](../README.md#rgbavec) |  |
+| `width?` | `number` | how thick the line should be from the center |
+| `zIdx?` | `number` | Z axis |
+| `dashed?` | `boolean` | if the line should be dashed |
 
 #### Returns
 

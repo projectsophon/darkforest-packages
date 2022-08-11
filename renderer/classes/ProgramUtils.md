@@ -22,52 +22,52 @@
 
 ### createProgram
 
-▸ `Static` **createProgram**(`gl`, `vertexShader`, `fragShader`): `null` \| `WebGLProgram`
+▸ `Static` **createProgram**(`gl`, `vertexShader`, `fragShader`): ``null`` \| `WebGLProgram`
 
 #### Parameters
 
-| Name           | Type                     |
-| :------------- | :----------------------- |
-| `gl`           | `WebGL2RenderingContext` |
-| `vertexShader` | `WebGLShader`            |
-| `fragShader`   | `WebGLShader`            |
+| Name | Type |
+| :------ | :------ |
+| `gl` | `WebGL2RenderingContext` |
+| `vertexShader` | `WebGLShader` |
+| `fragShader` | `WebGLShader` |
 
 #### Returns
 
-`null` \| `WebGLProgram`
+``null`` \| `WebGLProgram`
 
----
+___
 
 ### createShader
 
-▸ `Static` **createShader**(`gl`, `type`, `source`): `null` \| `WebGLShader`
+▸ `Static` **createShader**(`gl`, `type`, `source`): ``null`` \| `WebGLShader`
 
 #### Parameters
 
-| Name     | Type                     |
-| :------- | :----------------------- |
-| `gl`     | `WebGL2RenderingContext` |
-| `type`   | `number`                 |
-| `source` | `string`                 |
+| Name | Type |
+| :------ | :------ |
+| `gl` | `WebGL2RenderingContext` |
+| `type` | `number` |
+| `source` | `string` |
 
 #### Returns
 
-`null` \| `WebGLShader`
+``null`` \| `WebGLShader`
 
----
+___
 
 ### programFromSources
 
-▸ `Static` **programFromSources**(`gl`, `vertexShaderSource`, `fragShaderSource`): `null` \| `WebGLProgram`
+▸ `Static` **programFromSources**(`gl`, `vertexShaderSource`, `fragShaderSource`): ``null`` \| `WebGLProgram`
 
 #### Parameters
 
-| Name                 | Type                     |
-| :------------------- | :----------------------- |
-| `gl`                 | `WebGL2RenderingContext` |
-| `vertexShaderSource` | `string`                 |
-| `fragShaderSource`   | `string`                 |
+| Name | Type |
+| :------ | :------ |
+| `gl` | `WebGL2RenderingContext` |
+| `vertexShaderSource` | `string` |
+| `fragShaderSource` | `string` |
 
 #### Returns
 
-`null` \| `WebGLProgram`
+``null`` \| `WebGLProgram`

@@ -34,8 +34,8 @@
 
 #### Parameters
 
-| Name | Type                                |
-| :--- | :---------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `gl` | [`GameGLManager`](GameGLManager.md) |
 
 ## Properties
@@ -44,7 +44,7 @@
 
 • **renderer**: [`Renderer`](Renderer.md)
 
----
+___
 
 ### rendererType
 
@@ -68,7 +68,7 @@ UIRendererType.rendererType
 
 UIRendererType.drawMiner
 
----
+___
 
 ### flush
 
@@ -82,7 +82,7 @@ UIRendererType.drawMiner
 
 UIRendererType.flush
 
----
+___
 
 ### queueBorders
 
@@ -96,7 +96,7 @@ UIRendererType.flush
 
 UIRendererType.queueBorders
 
----
+___
 
 ### queueHoveringRect
 
@@ -110,7 +110,7 @@ UIRendererType.queueBorders
 
 UIRendererType.queueHoveringRect
 
----
+___
 
 ### queueMousePath
 
@@ -124,7 +124,7 @@ UIRendererType.queueHoveringRect
 
 UIRendererType.queueMousePath
 
----
+___
 
 ### queueRectAtPlanet
 
@@ -132,17 +132,17 @@ UIRendererType.queueMousePath
 
 #### Parameters
 
-| Name     | Type          |
-| :------- | :------------ |
-| `planet` | `Planet`      |
+| Name | Type |
+| :------ | :------ |
+| `planet` | `Planet` |
 | `coords` | `WorldCoords` |
-| `color`  | `RGBVec`      |
+| `color` | `RGBVec` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### queueSelectedRangeRing
 
@@ -156,7 +156,7 @@ UIRendererType.queueMousePath
 
 UIRendererType.queueSelectedRangeRing
 
----
+___
 
 ### queueSelectedRect
 

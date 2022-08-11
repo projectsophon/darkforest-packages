@@ -24,61 +24,61 @@ Represents a voyage.
 
 • **arrivalTime**: `number`
 
----
+___
 
 ### arrivalType
 
-• **arrivalType**: [`ArrivalType`](../README.md#arrivaltype)
+• **arrivalType**: [`ArrivalType`](../README.md#arrivaltype-1)
 
----
+___
 
 ### artifactId
 
 • `Optional` **artifactId**: [`ArtifactId`](../README.md#artifactid)
 
----
+___
 
 ### departureTime
 
 • **departureTime**: `number`
 
----
+___
 
 ### distance
 
 • **distance**: `number`
 
----
+___
 
 ### energyArriving
 
 • **energyArriving**: `number`
 
----
+___
 
 ### eventId
 
 • **eventId**: [`VoyageId`](../README.md#voyageid)
 
----
+___
 
 ### fromPlanet
 
 • **fromPlanet**: [`LocationId`](../README.md#locationid)
 
----
+___
 
 ### player
 
 • **player**: [`EthAddress`](../README.md#ethaddress)
 
----
+___
 
 ### silverMoved
 
 • **silverMoved**: `number`
 
----
+___
 
 ### toPlanet
 

@@ -34,12 +34,12 @@ For a given attribute on a program on a context, create an AttribManager.
 
 #### Parameters
 
-| Name      | Type                     | Default value | Description                                                       |
-| :-------- | :----------------------- | :------------ | :---------------------------------------------------------------- |
-| `gl`      | `WebGL2RenderingContext` | `undefined`   | The WebGL context to generate this attrib on.                     |
-| `program` | `WebGLProgram`           | `undefined`   | The program corresponding to this attrib.                         |
-| `props`   | `AttribProps`            | `undefined`   | An AttribProps object, containing the attrib name and other info. |
-| `enable`  | `boolean`                | `true`        | Should we call gl.enableVertexAttribArray? (default true)         |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `gl` | `WebGL2RenderingContext` | `undefined` | The WebGL context to generate this attrib on. |
+| `program` | `WebGLProgram` | `undefined` | The program corresponding to this attrib. |
+| `props` | `AttribProps` | `undefined` | An AttribProps object, containing the attrib name and other info. |
+| `enable` | `boolean` | `true` | Should we call gl.enableVertexAttribArray? (default true) |
 
 ## Properties
 
@@ -49,7 +49,7 @@ For a given attribute on a program on a context, create an AttribManager.
 
 An internally managed AttribArray, which is a typed mutable array.
 
----
+___
 
 ### buffer
 
@@ -57,7 +57,7 @@ An internally managed AttribArray, which is a typed mutable array.
 
 The WebGLBuffer associated with this attribute.
 
----
+___
 
 ### gl
 
@@ -65,7 +65,7 @@ The WebGLBuffer associated with this attribute.
 
 The WebGL rendering context.
 
----
+___
 
 ### loc
 
@@ -73,7 +73,7 @@ The WebGL rendering context.
 
 Attrib loc, returned by gl.getAttribLocation().
 
----
+___
 
 ### props
 
@@ -91,15 +91,15 @@ Send vertices [0, n - 1] through the buffer - bufferData(1) will send one vertex
 
 #### Parameters
 
-| Name | Type     | Description                                        |
-| :--- | :------- | :------------------------------------------------- |
-| `n`  | `number` | The number of vertices to send through the buffer. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `n` | `number` | The number of vertices to send through the buffer. |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setVertex
 
@@ -112,10 +112,10 @@ attribute at vertex 0, you will write 3 vertices at once.
 
 #### Parameters
 
-| Name  | Type       | Description                          |
-| :---- | :--------- | :----------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `els` | `number`[] | The data to write into the vertices. |
-| `idx` | `number`   | The starting vertex # to write to.   |
+| `idx` | `number` | The starting vertex # to write to. |
 
 #### Returns
 

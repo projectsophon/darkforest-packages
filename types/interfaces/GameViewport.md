@@ -22,19 +22,19 @@
 
 • **centerWorldCoords**: [`WorldCoords`](../README.md#worldcoords)
 
----
+___
 
 ### scale
 
 • **scale**: `number`
 
----
+___
 
 ### viewportHeight
 
 • **viewportHeight**: `number`
 
----
+___
 
 ### viewportWidth
 
@@ -48,15 +48,15 @@
 
 #### Parameters
 
-| Name          | Type                              |
-| :------------ | :-------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `canvasCoord` | [`CanvasCoords`](CanvasCoords.md) |
 
 #### Returns
 
 [`WorldCoords`](../README.md#worldcoords)
 
----
+___
 
 ### intersectsViewport
 
@@ -64,15 +64,15 @@
 
 #### Parameters
 
-| Name    | Type                |
-| :------ | :------------------ |
+| Name | Type |
+| :------ | :------ |
 | `chunk` | [`Chunk`](Chunk.md) |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### worldToCanvasCoords
 
@@ -80,15 +80,15 @@
 
 #### Parameters
 
-| Name          | Type                                      |
-| :------------ | :---------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `worldCoords` | [`WorldCoords`](../README.md#worldcoords) |
 
 #### Returns
 
 [`CanvasCoords`](CanvasCoords.md)
 
----
+___
 
 ### worldToCanvasDist
 
@@ -96,8 +96,8 @@
 
 #### Parameters
 
-| Name   | Type     |
-| :----- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `dist` | `number` |
 
 #### Returns

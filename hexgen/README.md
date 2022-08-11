@@ -12,7 +12,6 @@ You can install this package using [`npm`](https://www.npmjs.com) or
 ```bash
 npm install --save @projectsophon/hexgen
 ```
-
 ```bash
 yarn add @projectsophon/hexgen
 ```
@@ -20,7 +19,7 @@ yarn add @projectsophon/hexgen
 When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
 
 ```js
-import * as hexgen from "http://cdn.skypack.dev/@projectsophon/hexgen";
+import * as hexgen from 'http://cdn.skypack.dev/@projectsophon/hexgen'
 ```
 
 ## Table of contents
@@ -41,35 +40,35 @@ Extracts the bonuses of a planet given its LocationID.
 
 #### Parameters
 
-| Name  | Type         | Description             |
-| :---- | :----------- | :---------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `hex` | `LocationId` | LocationID of a planet. |
 
 #### Returns
 
 `PlanetBonus`
 
----
+___
 
 ### getBytesFromHex
 
-▸ **getBytesFromHex**(`hexStr`, `startByte`, `endByte`): `BigInteger`
+▸ **getBytesFromHex**(`hexStr`, `startByte`, `endByte`): `bigint`
 
 The core method for extracting planet details from a LocationID.
 
 #### Parameters
 
-| Name        | Type     | Description                                              |
-| :---------- | :------- | :------------------------------------------------------- |
-| `hexStr`    | `string` | LocationID of a planet.                                  |
-| `startByte` | `number` | The first byte to include in the result.                 |
-| `endByte`   | `number` | The byte _after_ the last byte to include in the result. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `hexStr` | `string` | LocationID of a planet. |
+| `startByte` | `number` | The first byte to include in the result. |
+| `endByte` | `number` | The byte _after_ the last byte to include in the result. |
 
 #### Returns
 
-`BigInteger`
+`bigint`
 
----
+___
 
 ### planetHasBonus
 
@@ -79,8 +78,8 @@ Checks if the LocationID of the planet indicates any bonuses.
 
 #### Parameters
 
-| Name      | Type     | Description                  |
-| :-------- | :------- | :--------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `planet?` | `Planet` | Planet to check for bonuses. |
 
 #### Returns

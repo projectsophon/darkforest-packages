@@ -5,9 +5,9 @@ concurrency.
 
 ## Type parameters
 
-| Name | Type      |
-| :--- | :-------- |
-| `U`  | `unknown` |
+| Name | Type |
+| :------ | :------ |
+| `U` | `unknown` |
 
 ## Implements
 
@@ -49,14 +49,14 @@ concurrency.
 
 #### Type parameters
 
-| Name | Type      |
-| :--- | :-------- |
-| `U`  | `unknown` |
+| Name | Type |
+| :------ | :------ |
+| `U` | `unknown` |
 
 #### Parameters
 
-| Name     | Type                                                                            |
-| :------- | :------------------------------------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `config` | [`ConcurrentQueueConfiguration`](../interfaces/ConcurrentQueueConfiguration.md) |
 
 ## Properties
@@ -67,7 +67,7 @@ concurrency.
 
 Amount of tasks being executed right now.
 
----
+___
 
 ### executionTimeout
 
@@ -77,7 +77,7 @@ When we schedule an attempt at executing another task in the future,
 we don't want to schedule it more than once. Therefore, we keep track
 of this scheduled attempt.
 
----
+___
 
 ### executionTimestamps
 
@@ -87,7 +87,7 @@ Each time a task is executed, record the start of its execution time.
 Execution timestamps are removed when they become outdated. Used for
 keeping the amount of executions under the throttle limit.
 
----
+___
 
 ### invocationIntervalMs
 
@@ -96,7 +96,7 @@ keeping the amount of executions under the throttle limit.
 The interval during which we only allow a certain maximum amount of tasks
 to be executed.
 
----
+___
 
 ### maxConcurrency
 
@@ -104,7 +104,7 @@ to be executed.
 
 Maximum amount of tasks that can be executing at the same time.
 
----
+___
 
 ### taskQueue
 
@@ -124,15 +124,15 @@ the task finishes successfully, and rejects when there is an error.
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name        | Type                  | Description                                             |
-| :---------- | :-------------------- | :------------------------------------------------------ |
-| `start`     | () => `Promise`<`T`\> | a function that returns a promise representing the task |
-| `metadata?` | `U`                   | optional data to be associated with the task            |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `start` | () => `Promise`<`T`\> | a function that returns a promise representing the task |
+| `metadata?` | `U` | optional data to be associated with the task |
 
 #### Returns
 
@@ -142,7 +142,7 @@ the task finishes successfully, and rejects when there is an error.
 
 [Queue](../interfaces/Queue.md).[add](../interfaces/Queue.md#add)
 
----
+___
 
 ### concurrencyQuotaRemaining
 
@@ -154,20 +154,20 @@ At this moment, how many more tasks we could execute without exceeding the concu
 
 `number`
 
----
+___
 
 ### deleteOutdatedExecutionTimestamps
 
 ▸ `Private` **deleteOutdatedExecutionTimestamps**(): `void`
 
-Removes all task execution timestamps that are older than [[this.invocationIntervalMs]],
+Removes all task execution timestamps that are older than this.invocationIntervalMs,
 because those invocations have no bearing on whether or not we can execute another task.
 
 #### Returns
 
 `void`
 
----
+___
 
 ### executeNextTasks
 
@@ -180,7 +180,7 @@ be executed after that, schedules itself to execute again at the soonest possibl
 
 `Promise`<`void`\>
 
----
+___
 
 ### next
 
@@ -194,7 +194,7 @@ limits concurrency.
 
 `Promise`<`void`\>
 
----
+___
 
 ### nextPossibleExecution
 
@@ -207,7 +207,7 @@ throttle limit.
 
 `undefined` \| `number`
 
----
+___
 
 ### prioritize
 
@@ -223,15 +223,15 @@ Throws an error if no matching task is found.
 
 #### Parameters
 
-| Name        | Type                                          | Description                                                 |
-| :---------- | :-------------------------------------------- | :---------------------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `predicate` | (`metadata`: `undefined` \| `U`) => `boolean` | Should return true for the task you would like prioritized. |
 
 #### Returns
 
 `QueuedTask`<`unknown`, `U`\>
 
----
+___
 
 ### remove
 
@@ -244,15 +244,15 @@ Throws an error if no matching task is found.
 
 #### Parameters
 
-| Name        | Type                                          | Description                                             |
-| :---------- | :-------------------------------------------- | :------------------------------------------------------ |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `predicate` | (`metadata`: `undefined` \| `U`) => `boolean` | Should return true for the task you would like removed. |
 
 #### Returns
 
 `QueuedTask`<`unknown`, `U`\>
 
----
+___
 
 ### size
 
@@ -267,9 +267,9 @@ moment.
 
 #### Implementation of
 
-[Queue](../interfaces/Queue.md).[size](../interfaces/Queue.md#size)
+Queue.size
 
----
+___
 
 ### throttleQuotaRemaining
 

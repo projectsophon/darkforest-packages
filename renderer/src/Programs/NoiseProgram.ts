@@ -1,13 +1,13 @@
-import { glsl } from '../EngineUtils';
+import { glsl } from "../EngineUtils";
 
 // noise shader
 const nA = {
-  position: 'a_position',
-  noise: 'a_noise',
+  position: "a_position",
+  noise: "a_noise",
 };
 const nV = {
-  position: 'v_position',
-  noise: 'v_noise',
+  position: "v_position",
+  noise: "v_noise",
 };
 
 const _noiseVert = glsl`

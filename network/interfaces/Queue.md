@@ -8,10 +8,27 @@ Let's keep things flexible by keeping this type small.
 
 ## Table of contents
 
+### Properties
+
+- [size](Queue.md#size)
+
 ### Methods
 
 - [add](Queue.md#add)
-- [size](Queue.md#size)
+
+## Properties
+
+### size
+
+• **size**: () => `number`
+
+#### Type declaration
+
+▸ (): `number`
+
+##### Returns
+
+`number`
 
 ## Methods
 
@@ -22,25 +39,15 @@ Let's keep things flexible by keeping this type small.
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name    | Type                  |
-| :------ | :-------------------- |
+| Name | Type |
+| :------ | :------ |
 | `start` | () => `Promise`<`T`\> |
 
 #### Returns
 
 `Promise`<`T`\>
-
----
-
-### size
-
-▸ **size**(): `number`
-
-#### Returns
-
-`number`

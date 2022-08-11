@@ -16,13 +16,13 @@ Represents a fully mined aligned square.
 
 • **chunkFootprint**: [`Rectangle`](Rectangle.md)
 
----
+___
 
 ### perlin
 
 • **perlin**: `number`
 
----
+___
 
 ### planetLocations
 

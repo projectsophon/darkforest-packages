@@ -10,7 +10,6 @@ You can install this package using [`npm`](https://www.npmjs.com) or
 ```bash
 npm install --save @projectsophon/whitelist
 ```
-
 ```bash
 yarn add @projectsophon/whitelist
 ```
@@ -18,7 +17,7 @@ yarn add @projectsophon/whitelist
 When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
 
 ```js
-import * as whitelist from "http://cdn.skypack.dev/@projectsophon/whitelist";
+import * as whitelist from 'http://cdn.skypack.dev/@projectsophon/whitelist'
 ```
 
 ## Table of contents
@@ -38,25 +37,25 @@ import * as whitelist from "http://cdn.skypack.dev/@projectsophon/whitelist";
 
 ### keysPerTx
 
-• `Const` **keysPerTx**: `400`
+• `Const` **keysPerTx**: ``400``
 
 ## Functions
 
 ### bigIntFromKey
 
-▸ **bigIntFromKey**(`key`): `BigInteger`
+▸ **bigIntFromKey**(`key`): `bigint`
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `key` | `string` |
 
 #### Returns
 
-`BigInteger`
+`bigint`
 
----
+___
 
 ### generateKey
 
@@ -66,7 +65,7 @@ import * as whitelist from "http://cdn.skypack.dev/@projectsophon/whitelist";
 
 `string`
 
----
+___
 
 ### generateKeys
 
@@ -74,15 +73,15 @@ import * as whitelist from "http://cdn.skypack.dev/@projectsophon/whitelist";
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `count` | `number` |
 
 #### Returns
 
 `string`[]
 
----
+___
 
 ### keyHash
 
@@ -90,8 +89,8 @@ import * as whitelist from "http://cdn.skypack.dev/@projectsophon/whitelist";
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `key` | `string` |
 
 #### Returns

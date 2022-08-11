@@ -15,7 +15,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Draws all queued Rings.
 
 `void`
 
----
+___
 
 ### queueRingAtIdx
 
@@ -42,14 +42,14 @@ Rings are used to show the different levels of a planet
 
 #### Parameters
 
-| Name       | Type                                      | Description                                                                |
-| :--------- | :---------------------------------------- | :------------------------------------------------------------------------- |
-| `planet`   | [`Planet`](../README.md#planet)           | an object that contains info about the current planet                      |
-| `centerW`  | [`WorldCoords`](../README.md#worldcoords) | represents the coordinates of the planet relative to the game world.       |
-| `radiusW`  | `number`                                  | represents the radius of the planet relative to the size of the game world |
-| `color?`   | [`RGBVec`](../README.md#rgbvec)           | -                                                                          |
-| `beltIdx?` | `number`                                  | -                                                                          |
-| `angle?`   | `number`                                  | -                                                                          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `planet` | [`Planet`](../README.md#planet) | an object that contains info about the current planet |
+| `centerW` | [`WorldCoords`](../README.md#worldcoords) | represents the coordinates of the planet relative to the game world. |
+| `radiusW` | `number` | represents the radius of the planet relative to the size of the game world |
+| `color?` | [`RGBVec`](../README.md#rgbvec) | - |
+| `beltIdx?` | `number` | - |
+| `angle?` | `number` | - |
 
 #### Returns
 

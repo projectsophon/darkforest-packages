@@ -1,4 +1,4 @@
-import type { LocationId } from './identifier';
+import type { LocationId } from "./identifier";
 
 // TODO we should do the &never TS thing for world / canvas coords; as this is a
 // common source of bugs

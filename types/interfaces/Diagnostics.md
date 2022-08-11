@@ -25,79 +25,79 @@
 
 • **callsInQueue**: `number`
 
----
+___
 
 ### chunkUpdates
 
 • **chunkUpdates**: `number`
 
----
+___
 
 ### fps
 
 • **fps**: `number`
 
----
+___
 
 ### gasPrices
 
 • `Optional` **gasPrices**: [`GasPrices`](GasPrices.md)
 
----
+___
 
 ### height
 
 • `Optional` **height**: `number`
 
----
+___
 
 ### rpcUrl
 
 • **rpcUrl**: `string`
 
----
+___
 
 ### totalCalls
 
 • **totalCalls**: `number`
 
----
+___
 
 ### totalChunks
 
 • **totalChunks**: `number`
 
----
+___
 
 ### totalPlanets
 
 • **totalPlanets**: `number`
 
----
+___
 
 ### totalTransactions
 
 • **totalTransactions**: `number`
 
----
+___
 
 ### transactionsInQueue
 
 • **transactionsInQueue**: `number`
 
----
+___
 
 ### visibleChunks
 
 • **visibleChunks**: `number`
 
----
+___
 
 ### visiblePlanets
 
 • **visiblePlanets**: `number`
 
----
+___
 
 ### width
 

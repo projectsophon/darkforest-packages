@@ -14,24 +14,24 @@
 
 ### Other Properties
 
-- [ATTRIBUTE_NODE](DarkForestShortcutButton.md#attribute_node)
-- [CDATA_SECTION_NODE](DarkForestShortcutButton.md#cdata_section_node)
-- [COMMENT_NODE](DarkForestShortcutButton.md#comment_node)
-- [DOCUMENT_FRAGMENT_NODE](DarkForestShortcutButton.md#document_fragment_node)
-- [DOCUMENT_NODE](DarkForestShortcutButton.md#document_node)
-- [DOCUMENT_POSITION_CONTAINED_BY](DarkForestShortcutButton.md#document_position_contained_by)
-- [DOCUMENT_POSITION_CONTAINS](DarkForestShortcutButton.md#document_position_contains)
-- [DOCUMENT_POSITION_DISCONNECTED](DarkForestShortcutButton.md#document_position_disconnected)
-- [DOCUMENT_POSITION_FOLLOWING](DarkForestShortcutButton.md#document_position_following)
-- [DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC](DarkForestShortcutButton.md#document_position_implementation_specific)
-- [DOCUMENT_POSITION_PRECEDING](DarkForestShortcutButton.md#document_position_preceding)
-- [DOCUMENT_TYPE_NODE](DarkForestShortcutButton.md#document_type_node)
-- [ELEMENT_NODE](DarkForestShortcutButton.md#element_node)
-- [ENTITY_NODE](DarkForestShortcutButton.md#entity_node)
-- [ENTITY_REFERENCE_NODE](DarkForestShortcutButton.md#entity_reference_node)
-- [NOTATION_NODE](DarkForestShortcutButton.md#notation_node)
-- [PROCESSING_INSTRUCTION_NODE](DarkForestShortcutButton.md#processing_instruction_node)
-- [TEXT_NODE](DarkForestShortcutButton.md#text_node)
+- [ATTRIBUTE\_NODE](DarkForestShortcutButton.md#attribute_node)
+- [CDATA\_SECTION\_NODE](DarkForestShortcutButton.md#cdata_section_node)
+- [COMMENT\_NODE](DarkForestShortcutButton.md#comment_node)
+- [DOCUMENT\_FRAGMENT\_NODE](DarkForestShortcutButton.md#document_fragment_node)
+- [DOCUMENT\_NODE](DarkForestShortcutButton.md#document_node)
+- [DOCUMENT\_POSITION\_CONTAINED\_BY](DarkForestShortcutButton.md#document_position_contained_by)
+- [DOCUMENT\_POSITION\_CONTAINS](DarkForestShortcutButton.md#document_position_contains)
+- [DOCUMENT\_POSITION\_DISCONNECTED](DarkForestShortcutButton.md#document_position_disconnected)
+- [DOCUMENT\_POSITION\_FOLLOWING](DarkForestShortcutButton.md#document_position_following)
+- [DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC](DarkForestShortcutButton.md#document_position_implementation_specific)
+- [DOCUMENT\_POSITION\_PRECEDING](DarkForestShortcutButton.md#document_position_preceding)
+- [DOCUMENT\_TYPE\_NODE](DarkForestShortcutButton.md#document_type_node)
+- [ELEMENT\_NODE](DarkForestShortcutButton.md#element_node)
+- [ENTITY\_NODE](DarkForestShortcutButton.md#entity_node)
+- [ENTITY\_REFERENCE\_NODE](DarkForestShortcutButton.md#entity_reference_node)
+- [NOTATION\_NODE](DarkForestShortcutButton.md#notation_node)
+- [PROCESSING\_INSTRUCTION\_NODE](DarkForestShortcutButton.md#processing_instruction_node)
+- [TEXT\_NODE](DarkForestShortcutButton.md#text_node)
 - [\_shortcutPressed](DarkForestShortcutButton.md#_shortcutpressed)
 - [accessKey](DarkForestShortcutButton.md#accesskey)
 - [accessKeyLabel](DarkForestShortcutButton.md#accesskeylabel)
@@ -184,11 +184,13 @@
 - [onreset](DarkForestShortcutButton.md#onreset)
 - [onresize](DarkForestShortcutButton.md#onresize)
 - [onscroll](DarkForestShortcutButton.md#onscroll)
+- [onsecuritypolicyviolation](DarkForestShortcutButton.md#onsecuritypolicyviolation)
 - [onseeked](DarkForestShortcutButton.md#onseeked)
 - [onseeking](DarkForestShortcutButton.md#onseeking)
 - [onselect](DarkForestShortcutButton.md#onselect)
 - [onselectionchange](DarkForestShortcutButton.md#onselectionchange)
 - [onselectstart](DarkForestShortcutButton.md#onselectstart)
+- [onslotchange](DarkForestShortcutButton.md#onslotchange)
 - [onstalled](DarkForestShortcutButton.md#onstalled)
 - [onsubmit](DarkForestShortcutButton.md#onsubmit)
 - [onsuspend](DarkForestShortcutButton.md#onsuspend)
@@ -240,7 +242,7 @@
 - [finalized](DarkForestShortcutButton.md#finalized)
 - [properties](DarkForestShortcutButton.md#properties)
 - [styles](DarkForestShortcutButton.md#styles)
-- [tagName](DarkForestShortcutButton.md#tagname)
+- [tagName](DarkForestShortcutButton.md#tagname-1)
 
 ### dev-mode Properties
 
@@ -406,19 +408,19 @@
 
 ## Other Properties
 
-### ATTRIBUTE_NODE
+### ATTRIBUTE\_NODE
 
-• `Readonly` **ATTRIBUTE_NODE**: `number`
+• `Readonly` **ATTRIBUTE\_NODE**: `number`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ATTRIBUTE_NODE](DarkForestButton.md#attribute_node)
 
----
+___
 
-### CDATA_SECTION_NODE
+### CDATA\_SECTION\_NODE
 
-• `Readonly` **CDATA_SECTION_NODE**: `number`
+• `Readonly` **CDATA\_SECTION\_NODE**: `number`
 
 node is a CDATASection node.
 
@@ -426,11 +428,11 @@ node is a CDATASection node.
 
 [DarkForestButton](DarkForestButton.md).[CDATA_SECTION_NODE](DarkForestButton.md#cdata_section_node)
 
----
+___
 
-### COMMENT_NODE
+### COMMENT\_NODE
 
-• `Readonly` **COMMENT_NODE**: `number`
+• `Readonly` **COMMENT\_NODE**: `number`
 
 node is a Comment node.
 
@@ -438,11 +440,11 @@ node is a Comment node.
 
 [DarkForestButton](DarkForestButton.md).[COMMENT_NODE](DarkForestButton.md#comment_node)
 
----
+___
 
-### DOCUMENT_FRAGMENT_NODE
+### DOCUMENT\_FRAGMENT\_NODE
 
-• `Readonly` **DOCUMENT_FRAGMENT_NODE**: `number`
+• `Readonly` **DOCUMENT\_FRAGMENT\_NODE**: `number`
 
 node is a DocumentFragment node.
 
@@ -450,11 +452,11 @@ node is a DocumentFragment node.
 
 [DarkForestButton](DarkForestButton.md).[DOCUMENT_FRAGMENT_NODE](DarkForestButton.md#document_fragment_node)
 
----
+___
 
-### DOCUMENT_NODE
+### DOCUMENT\_NODE
 
-• `Readonly` **DOCUMENT_NODE**: `number`
+• `Readonly` **DOCUMENT\_NODE**: `number`
 
 node is a document.
 
@@ -462,11 +464,11 @@ node is a document.
 
 [DarkForestButton](DarkForestButton.md).[DOCUMENT_NODE](DarkForestButton.md#document_node)
 
----
+___
 
-### DOCUMENT_POSITION_CONTAINED_BY
+### DOCUMENT\_POSITION\_CONTAINED\_BY
 
-• `Readonly` **DOCUMENT_POSITION_CONTAINED_BY**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_CONTAINED\_BY**: `number`
 
 Set when other is a descendant of node.
 
@@ -474,11 +476,11 @@ Set when other is a descendant of node.
 
 [DarkForestButton](DarkForestButton.md).[DOCUMENT_POSITION_CONTAINED_BY](DarkForestButton.md#document_position_contained_by)
 
----
+___
 
-### DOCUMENT_POSITION_CONTAINS
+### DOCUMENT\_POSITION\_CONTAINS
 
-• `Readonly` **DOCUMENT_POSITION_CONTAINS**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_CONTAINS**: `number`
 
 Set when other is an ancestor of node.
 
@@ -486,11 +488,11 @@ Set when other is an ancestor of node.
 
 [DarkForestButton](DarkForestButton.md).[DOCUMENT_POSITION_CONTAINS](DarkForestButton.md#document_position_contains)
 
----
+___
 
-### DOCUMENT_POSITION_DISCONNECTED
+### DOCUMENT\_POSITION\_DISCONNECTED
 
-• `Readonly` **DOCUMENT_POSITION_DISCONNECTED**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_DISCONNECTED**: `number`
 
 Set when node and other are not in the same tree.
 
@@ -498,11 +500,11 @@ Set when node and other are not in the same tree.
 
 [DarkForestButton](DarkForestButton.md).[DOCUMENT_POSITION_DISCONNECTED](DarkForestButton.md#document_position_disconnected)
 
----
+___
 
-### DOCUMENT_POSITION_FOLLOWING
+### DOCUMENT\_POSITION\_FOLLOWING
 
-• `Readonly` **DOCUMENT_POSITION_FOLLOWING**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_FOLLOWING**: `number`
 
 Set when other is following node.
 
@@ -510,21 +512,21 @@ Set when other is following node.
 
 [DarkForestButton](DarkForestButton.md).[DOCUMENT_POSITION_FOLLOWING](DarkForestButton.md#document_position_following)
 
----
+___
 
-### DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC
+### DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC
 
-• `Readonly` **DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC**: `number`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC](DarkForestButton.md#document_position_implementation_specific)
 
----
+___
 
-### DOCUMENT_POSITION_PRECEDING
+### DOCUMENT\_POSITION\_PRECEDING
 
-• `Readonly` **DOCUMENT_POSITION_PRECEDING**: `number`
+• `Readonly` **DOCUMENT\_POSITION\_PRECEDING**: `number`
 
 Set when other is preceding node.
 
@@ -532,11 +534,11 @@ Set when other is preceding node.
 
 [DarkForestButton](DarkForestButton.md).[DOCUMENT_POSITION_PRECEDING](DarkForestButton.md#document_position_preceding)
 
----
+___
 
-### DOCUMENT_TYPE_NODE
+### DOCUMENT\_TYPE\_NODE
 
-• `Readonly` **DOCUMENT_TYPE_NODE**: `number`
+• `Readonly` **DOCUMENT\_TYPE\_NODE**: `number`
 
 node is a doctype.
 
@@ -544,11 +546,11 @@ node is a doctype.
 
 [DarkForestButton](DarkForestButton.md).[DOCUMENT_TYPE_NODE](DarkForestButton.md#document_type_node)
 
----
+___
 
-### ELEMENT_NODE
+### ELEMENT\_NODE
 
-• `Readonly` **ELEMENT_NODE**: `number`
+• `Readonly` **ELEMENT\_NODE**: `number`
 
 node is an element.
 
@@ -556,41 +558,41 @@ node is an element.
 
 [DarkForestButton](DarkForestButton.md).[ELEMENT_NODE](DarkForestButton.md#element_node)
 
----
+___
 
-### ENTITY_NODE
+### ENTITY\_NODE
 
-• `Readonly` **ENTITY_NODE**: `number`
+• `Readonly` **ENTITY\_NODE**: `number`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ENTITY_NODE](DarkForestButton.md#entity_node)
 
----
+___
 
-### ENTITY_REFERENCE_NODE
+### ENTITY\_REFERENCE\_NODE
 
-• `Readonly` **ENTITY_REFERENCE_NODE**: `number`
+• `Readonly` **ENTITY\_REFERENCE\_NODE**: `number`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ENTITY_REFERENCE_NODE](DarkForestButton.md#entity_reference_node)
 
----
+___
 
-### NOTATION_NODE
+### NOTATION\_NODE
 
-• `Readonly` **NOTATION_NODE**: `number`
+• `Readonly` **NOTATION\_NODE**: `number`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[NOTATION_NODE](DarkForestButton.md#notation_node)
 
----
+___
 
-### PROCESSING_INSTRUCTION_NODE
+### PROCESSING\_INSTRUCTION\_NODE
 
-• `Readonly` **PROCESSING_INSTRUCTION_NODE**: `number`
+• `Readonly` **PROCESSING\_INSTRUCTION\_NODE**: `number`
 
 node is a ProcessingInstruction node.
 
@@ -598,11 +600,11 @@ node is a ProcessingInstruction node.
 
 [DarkForestButton](DarkForestButton.md).[PROCESSING_INSTRUCTION_NODE](DarkForestButton.md#processing_instruction_node)
 
----
+___
 
-### TEXT_NODE
+### TEXT\_NODE
 
-• `Readonly` **TEXT_NODE**: `number`
+• `Readonly` **TEXT\_NODE**: `number`
 
 node is a Text node.
 
@@ -610,13 +612,13 @@ node is a Text node.
 
 [DarkForestButton](DarkForestButton.md).[TEXT_NODE](DarkForestButton.md#text_node)
 
----
+___
 
 ### \_shortcutPressed
 
 • `Private` **\_shortcutPressed**: `boolean` = `false`
 
----
+___
 
 ### accessKey
 
@@ -626,7 +628,7 @@ node is a Text node.
 
 [DarkForestButton](DarkForestButton.md).[accessKey](DarkForestButton.md#accesskey)
 
----
+___
 
 ### accessKeyLabel
 
@@ -636,7 +638,7 @@ node is a Text node.
 
 [DarkForestButton](DarkForestButton.md).[accessKeyLabel](DarkForestButton.md#accesskeylabel)
 
----
+___
 
 ### active
 
@@ -646,377 +648,377 @@ node is a Text node.
 
 [DarkForestButton](DarkForestButton.md).[active](DarkForestButton.md#active)
 
----
+___
 
 ### ariaAtomic
 
-• **ariaAtomic**: `string`
+• **ariaAtomic**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaAtomic](DarkForestButton.md#ariaatomic)
 
----
+___
 
 ### ariaAutoComplete
 
-• **ariaAutoComplete**: `string`
+• **ariaAutoComplete**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaAutoComplete](DarkForestButton.md#ariaautocomplete)
 
----
+___
 
 ### ariaBusy
 
-• **ariaBusy**: `string`
+• **ariaBusy**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaBusy](DarkForestButton.md#ariabusy)
 
----
+___
 
 ### ariaChecked
 
-• **ariaChecked**: `string`
+• **ariaChecked**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaChecked](DarkForestButton.md#ariachecked)
 
----
+___
 
 ### ariaColCount
 
-• **ariaColCount**: `string`
+• **ariaColCount**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaColCount](DarkForestButton.md#ariacolcount)
 
----
+___
 
 ### ariaColIndex
 
-• **ariaColIndex**: `string`
+• **ariaColIndex**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaColIndex](DarkForestButton.md#ariacolindex)
 
----
+___
 
 ### ariaColSpan
 
-• **ariaColSpan**: `string`
+• **ariaColSpan**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaColSpan](DarkForestButton.md#ariacolspan)
 
----
+___
 
 ### ariaCurrent
 
-• **ariaCurrent**: `string`
+• **ariaCurrent**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaCurrent](DarkForestButton.md#ariacurrent)
 
----
+___
 
 ### ariaDisabled
 
-• **ariaDisabled**: `string`
+• **ariaDisabled**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaDisabled](DarkForestButton.md#ariadisabled)
 
----
+___
 
 ### ariaExpanded
 
-• **ariaExpanded**: `string`
+• **ariaExpanded**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaExpanded](DarkForestButton.md#ariaexpanded)
 
----
+___
 
 ### ariaHasPopup
 
-• **ariaHasPopup**: `string`
+• **ariaHasPopup**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaHasPopup](DarkForestButton.md#ariahaspopup)
 
----
+___
 
 ### ariaHidden
 
-• **ariaHidden**: `string`
+• **ariaHidden**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaHidden](DarkForestButton.md#ariahidden)
 
----
+___
 
 ### ariaKeyShortcuts
 
-• **ariaKeyShortcuts**: `string`
+• **ariaKeyShortcuts**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaKeyShortcuts](DarkForestButton.md#ariakeyshortcuts)
 
----
+___
 
 ### ariaLabel
 
-• **ariaLabel**: `string`
+• **ariaLabel**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaLabel](DarkForestButton.md#arialabel)
 
----
+___
 
 ### ariaLevel
 
-• **ariaLevel**: `string`
+• **ariaLevel**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaLevel](DarkForestButton.md#arialevel)
 
----
+___
 
 ### ariaLive
 
-• **ariaLive**: `string`
+• **ariaLive**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaLive](DarkForestButton.md#arialive)
 
----
+___
 
 ### ariaModal
 
-• **ariaModal**: `string`
+• **ariaModal**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaModal](DarkForestButton.md#ariamodal)
 
----
+___
 
 ### ariaMultiLine
 
-• **ariaMultiLine**: `string`
+• **ariaMultiLine**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaMultiLine](DarkForestButton.md#ariamultiline)
 
----
+___
 
 ### ariaMultiSelectable
 
-• **ariaMultiSelectable**: `string`
+• **ariaMultiSelectable**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaMultiSelectable](DarkForestButton.md#ariamultiselectable)
 
----
+___
 
 ### ariaOrientation
 
-• **ariaOrientation**: `string`
+• **ariaOrientation**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaOrientation](DarkForestButton.md#ariaorientation)
 
----
+___
 
 ### ariaPlaceholder
 
-• **ariaPlaceholder**: `string`
+• **ariaPlaceholder**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaPlaceholder](DarkForestButton.md#ariaplaceholder)
 
----
+___
 
 ### ariaPosInSet
 
-• **ariaPosInSet**: `string`
+• **ariaPosInSet**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaPosInSet](DarkForestButton.md#ariaposinset)
 
----
+___
 
 ### ariaPressed
 
-• **ariaPressed**: `string`
+• **ariaPressed**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaPressed](DarkForestButton.md#ariapressed)
 
----
+___
 
 ### ariaReadOnly
 
-• **ariaReadOnly**: `string`
+• **ariaReadOnly**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaReadOnly](DarkForestButton.md#ariareadonly)
 
----
+___
 
 ### ariaRequired
 
-• **ariaRequired**: `string`
+• **ariaRequired**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaRequired](DarkForestButton.md#ariarequired)
 
----
+___
 
 ### ariaRoleDescription
 
-• **ariaRoleDescription**: `string`
+• **ariaRoleDescription**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaRoleDescription](DarkForestButton.md#ariaroledescription)
 
----
+___
 
 ### ariaRowCount
 
-• **ariaRowCount**: `string`
+• **ariaRowCount**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaRowCount](DarkForestButton.md#ariarowcount)
 
----
+___
 
 ### ariaRowIndex
 
-• **ariaRowIndex**: `string`
+• **ariaRowIndex**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaRowIndex](DarkForestButton.md#ariarowindex)
 
----
+___
 
 ### ariaRowSpan
 
-• **ariaRowSpan**: `string`
+• **ariaRowSpan**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaRowSpan](DarkForestButton.md#ariarowspan)
 
----
+___
 
 ### ariaSelected
 
-• **ariaSelected**: `string`
+• **ariaSelected**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaSelected](DarkForestButton.md#ariaselected)
 
----
+___
 
 ### ariaSetSize
 
-• **ariaSetSize**: `string`
+• **ariaSetSize**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaSetSize](DarkForestButton.md#ariasetsize)
 
----
+___
 
 ### ariaSort
 
-• **ariaSort**: `string`
+• **ariaSort**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaSort](DarkForestButton.md#ariasort)
 
----
+___
 
 ### ariaValueMax
 
-• **ariaValueMax**: `string`
+• **ariaValueMax**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaValueMax](DarkForestButton.md#ariavaluemax)
 
----
+___
 
 ### ariaValueMin
 
-• **ariaValueMin**: `string`
+• **ariaValueMin**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaValueMin](DarkForestButton.md#ariavaluemin)
 
----
+___
 
 ### ariaValueNow
 
-• **ariaValueNow**: `string`
+• **ariaValueNow**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaValueNow](DarkForestButton.md#ariavaluenow)
 
----
+___
 
 ### ariaValueText
 
-• **ariaValueText**: `string`
+• **ariaValueText**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ariaValueText](DarkForestButton.md#ariavaluetext)
 
----
+___
 
 ### assignedSlot
 
-• `Readonly` **assignedSlot**: `null` \| `HTMLSlotElement`
+• `Readonly` **assignedSlot**: ``null`` \| `HTMLSlotElement`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[assignedSlot](DarkForestButton.md#assignedslot)
 
----
+___
 
 ### attributes
 
@@ -1026,7 +1028,7 @@ node is a Text node.
 
 [DarkForestButton](DarkForestButton.md).[attributes](DarkForestButton.md#attributes)
 
----
+___
 
 ### autocapitalize
 
@@ -1036,7 +1038,7 @@ node is a Text node.
 
 [DarkForestButton](DarkForestButton.md).[autocapitalize](DarkForestButton.md#autocapitalize)
 
----
+___
 
 ### autofocus
 
@@ -1046,7 +1048,7 @@ node is a Text node.
 
 [DarkForestButton](DarkForestButton.md).[autofocus](DarkForestButton.md#autofocus)
 
----
+___
 
 ### baseURI
 
@@ -1058,7 +1060,7 @@ Returns node's node document's document base URL.
 
 [DarkForestButton](DarkForestButton.md).[baseURI](DarkForestButton.md#baseuri)
 
----
+___
 
 ### childElementCount
 
@@ -1068,7 +1070,7 @@ Returns node's node document's document base URL.
 
 [DarkForestButton](DarkForestButton.md).[childElementCount](DarkForestButton.md#childelementcount)
 
----
+___
 
 ### childNodes
 
@@ -1080,7 +1082,7 @@ Returns the children.
 
 [DarkForestButton](DarkForestButton.md).[childNodes](DarkForestButton.md#childnodes)
 
----
+___
 
 ### children
 
@@ -1092,7 +1094,7 @@ Returns the child elements.
 
 [DarkForestButton](DarkForestButton.md).[children](DarkForestButton.md#children)
 
----
+___
 
 ### classList
 
@@ -1104,7 +1106,7 @@ Allows for manipulation of element's class content attribute as a set of whitesp
 
 [DarkForestButton](DarkForestButton.md).[classList](DarkForestButton.md#classlist)
 
----
+___
 
 ### className
 
@@ -1116,7 +1118,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[className](DarkForestButton.md#classname)
 
----
+___
 
 ### clientHeight
 
@@ -1126,7 +1128,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[clientHeight](DarkForestButton.md#clientheight)
 
----
+___
 
 ### clientLeft
 
@@ -1136,7 +1138,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[clientLeft](DarkForestButton.md#clientleft)
 
----
+___
 
 ### clientTop
 
@@ -1146,7 +1148,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[clientTop](DarkForestButton.md#clienttop)
 
----
+___
 
 ### clientWidth
 
@@ -1156,7 +1158,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[clientWidth](DarkForestButton.md#clientwidth)
 
----
+___
 
 ### contentEditable
 
@@ -1166,7 +1168,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[contentEditable](DarkForestButton.md#contenteditable)
 
----
+___
 
 ### dataset
 
@@ -1176,7 +1178,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[dataset](DarkForestButton.md#dataset)
 
----
+___
 
 ### dir
 
@@ -1186,7 +1188,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[dir](DarkForestButton.md#dir)
 
----
+___
 
 ### disabled
 
@@ -1196,7 +1198,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[disabled](DarkForestButton.md#disabled)
 
----
+___
 
 ### draggable
 
@@ -1206,7 +1208,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[draggable](DarkForestButton.md#draggable)
 
----
+___
 
 ### enterKeyHint
 
@@ -1216,11 +1218,11 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[enterKeyHint](DarkForestButton.md#enterkeyhint)
 
----
+___
 
 ### firstChild
 
-• `Readonly` **firstChild**: `null` \| `ChildNode`
+• `Readonly` **firstChild**: ``null`` \| `ChildNode`
 
 Returns the first child.
 
@@ -1228,11 +1230,11 @@ Returns the first child.
 
 [DarkForestButton](DarkForestButton.md).[firstChild](DarkForestButton.md#firstchild)
 
----
+___
 
 ### firstElementChild
 
-• `Readonly` **firstElementChild**: `null` \| `Element`
+• `Readonly` **firstElementChild**: ``null`` \| `Element`
 
 Returns the first child that is an element, and null otherwise.
 
@@ -1240,7 +1242,7 @@ Returns the first child that is an element, and null otherwise.
 
 [DarkForestButton](DarkForestButton.md).[firstElementChild](DarkForestButton.md#firstelementchild)
 
----
+___
 
 ### hidden
 
@@ -1250,7 +1252,7 @@ Returns the first child that is an element, and null otherwise.
 
 [DarkForestButton](DarkForestButton.md).[hidden](DarkForestButton.md#hidden)
 
----
+___
 
 ### id
 
@@ -1262,7 +1264,7 @@ Returns the value of element's id content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[id](DarkForestButton.md#id)
 
----
+___
 
 ### innerHTML
 
@@ -1272,7 +1274,7 @@ Returns the value of element's id content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[innerHTML](DarkForestButton.md#innerhtml)
 
----
+___
 
 ### innerText
 
@@ -1282,7 +1284,7 @@ Returns the value of element's id content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[innerText](DarkForestButton.md#innertext)
 
----
+___
 
 ### inputMode
 
@@ -1292,7 +1294,7 @@ Returns the value of element's id content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[inputMode](DarkForestButton.md#inputmode)
 
----
+___
 
 ### isConnected
 
@@ -1304,7 +1306,7 @@ Returns true if node is connected and false otherwise.
 
 [DarkForestButton](DarkForestButton.md).[isConnected](DarkForestButton.md#isconnected)
 
----
+___
 
 ### isContentEditable
 
@@ -1314,7 +1316,7 @@ Returns true if node is connected and false otherwise.
 
 [DarkForestButton](DarkForestButton.md).[isContentEditable](DarkForestButton.md#iscontenteditable)
 
----
+___
 
 ### lang
 
@@ -1324,11 +1326,11 @@ Returns true if node is connected and false otherwise.
 
 [DarkForestButton](DarkForestButton.md).[lang](DarkForestButton.md#lang)
 
----
+___
 
 ### lastChild
 
-• `Readonly` **lastChild**: `null` \| `ChildNode`
+• `Readonly` **lastChild**: ``null`` \| `ChildNode`
 
 Returns the last child.
 
@@ -1336,11 +1338,11 @@ Returns the last child.
 
 [DarkForestButton](DarkForestButton.md).[lastChild](DarkForestButton.md#lastchild)
 
----
+___
 
 ### lastElementChild
 
-• `Readonly` **lastElementChild**: `null` \| `Element`
+• `Readonly` **lastElementChild**: ``null`` \| `Element`
 
 Returns the last child that is an element, and null otherwise.
 
@@ -1348,7 +1350,7 @@ Returns the last child that is an element, and null otherwise.
 
 [DarkForestButton](DarkForestButton.md).[lastElementChild](DarkForestButton.md#lastelementchild)
 
----
+___
 
 ### localName
 
@@ -1360,11 +1362,11 @@ Returns the local name.
 
 [DarkForestButton](DarkForestButton.md).[localName](DarkForestButton.md#localname)
 
----
+___
 
 ### namespaceURI
 
-• `Readonly` **namespaceURI**: `null` \| `string`
+• `Readonly` **namespaceURI**: ``null`` \| `string`
 
 Returns the namespace.
 
@@ -1372,11 +1374,11 @@ Returns the namespace.
 
 [DarkForestButton](DarkForestButton.md).[namespaceURI](DarkForestButton.md#namespaceuri)
 
----
+___
 
 ### nextElementSibling
 
-• `Readonly` **nextElementSibling**: `null` \| `Element`
+• `Readonly` **nextElementSibling**: ``null`` \| `Element`
 
 Returns the first following sibling that is an element, and null otherwise.
 
@@ -1384,11 +1386,11 @@ Returns the first following sibling that is an element, and null otherwise.
 
 [DarkForestButton](DarkForestButton.md).[nextElementSibling](DarkForestButton.md#nextelementsibling)
 
----
+___
 
 ### nextSibling
 
-• `Readonly` **nextSibling**: `null` \| `ChildNode`
+• `Readonly` **nextSibling**: ``null`` \| `ChildNode`
 
 Returns the next sibling.
 
@@ -1396,7 +1398,7 @@ Returns the next sibling.
 
 [DarkForestButton](DarkForestButton.md).[nextSibling](DarkForestButton.md#nextsibling)
 
----
+___
 
 ### nodeName
 
@@ -1408,7 +1410,7 @@ Returns a string appropriate for the type of node.
 
 [DarkForestButton](DarkForestButton.md).[nodeName](DarkForestButton.md#nodename)
 
----
+___
 
 ### nodeType
 
@@ -1420,17 +1422,17 @@ Returns the type of node.
 
 [DarkForestButton](DarkForestButton.md).[nodeType](DarkForestButton.md#nodetype)
 
----
+___
 
 ### nodeValue
 
-• **nodeValue**: `null` \| `string`
+• **nodeValue**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[nodeValue](DarkForestButton.md#nodevalue)
 
----
+___
 
 ### nonce
 
@@ -1440,7 +1442,7 @@ Returns the type of node.
 
 [DarkForestButton](DarkForestButton.md).[nonce](DarkForestButton.md#nonce)
 
----
+___
 
 ### offsetHeight
 
@@ -1450,7 +1452,7 @@ Returns the type of node.
 
 [DarkForestButton](DarkForestButton.md).[offsetHeight](DarkForestButton.md#offsetheight)
 
----
+___
 
 ### offsetLeft
 
@@ -1460,17 +1462,17 @@ Returns the type of node.
 
 [DarkForestButton](DarkForestButton.md).[offsetLeft](DarkForestButton.md#offsetleft)
 
----
+___
 
 ### offsetParent
 
-• `Readonly` **offsetParent**: `null` \| `Element`
+• `Readonly` **offsetParent**: ``null`` \| `Element`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[offsetParent](DarkForestButton.md#offsetparent)
 
----
+___
 
 ### offsetTop
 
@@ -1480,7 +1482,7 @@ Returns the type of node.
 
 [DarkForestButton](DarkForestButton.md).[offsetTop](DarkForestButton.md#offsettop)
 
----
+___
 
 ### offsetWidth
 
@@ -1490,341 +1492,373 @@ Returns the type of node.
 
 [DarkForestButton](DarkForestButton.md).[offsetWidth](DarkForestButton.md#offsetwidth)
 
----
+___
 
 ### onabort
 
-• **onabort**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
+• **onabort**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
 
 Fires when the user aborts the download.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onabort](DarkForestButton.md#onabort)
 
----
+___
 
 ### onanimationcancel
 
-• **onanimationcancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationcancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onanimationcancel](DarkForestButton.md#onanimationcancel)
 
----
+___
 
 ### onanimationend
 
-• **onanimationend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onanimationend](DarkForestButton.md#onanimationend)
 
----
+___
 
 ### onanimationiteration
 
-• **onanimationiteration**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationiteration**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onanimationiteration](DarkForestButton.md#onanimationiteration)
 
----
+___
 
 ### onanimationstart
 
-• **onanimationstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
+• **onanimationstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `AnimationEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onanimationstart](DarkForestButton.md#onanimationstart)
 
----
+___
 
 ### onauxclick
 
-• **onauxclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onauxclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onauxclick](DarkForestButton.md#onauxclick)
 
----
+___
 
 ### onblur
 
-• **onblur**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
+• **onblur**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
 
 Fires when the object loses the input focus.
 
-**`param`** The focus event.
+**`Param`**
+
+The focus event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onblur](DarkForestButton.md#onblur)
 
----
+___
 
 ### oncanplay
 
-• **oncanplay**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncanplay**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback is possible, but would require further buffering.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[oncanplay](DarkForestButton.md#oncanplay)
 
----
+___
 
 ### oncanplaythrough
 
-• **oncanplaythrough**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncanplaythrough**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[oncanplaythrough](DarkForestButton.md#oncanplaythrough)
 
----
+___
 
 ### onchange
 
-• **onchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the contents of the object or selection have changed.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onchange](DarkForestButton.md#onchange)
 
----
+___
 
 ### onclick
 
-• **onclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the left mouse button on the object
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onclick](DarkForestButton.md#onclick)
 
----
+___
 
 ### onclose
 
-• **onclose**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onclose**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onclose](DarkForestButton.md#onclose)
 
----
+___
 
 ### oncontextmenu
 
-• **oncontextmenu**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **oncontextmenu**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the right mouse button in the client area, opening the context menu.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[oncontextmenu](DarkForestButton.md#oncontextmenu)
 
----
+___
 
 ### oncopy
 
-• **oncopy**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **oncopy**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[oncopy](DarkForestButton.md#oncopy)
 
----
+___
 
 ### oncuechange
 
-• **oncuechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oncuechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[oncuechange](DarkForestButton.md#oncuechange)
 
----
+___
 
 ### oncut
 
-• **oncut**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **oncut**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[oncut](DarkForestButton.md#oncut)
 
----
+___
 
 ### ondblclick
 
-• **ondblclick**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **ondblclick**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user double-clicks the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ondblclick](DarkForestButton.md#ondblclick)
 
----
+___
 
 ### ondrag
 
-• **ondrag**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondrag**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object continuously during a drag operation.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ondrag](DarkForestButton.md#ondrag)
 
----
+___
 
 ### ondragend
 
-• **ondragend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object when the user releases the mouse at the close of a drag operation.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ondragend](DarkForestButton.md#ondragend)
 
----
+___
 
 ### ondragenter
 
-• **ondragenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target element when the user drags the object to a valid drop target.
 
-**`param`** The drag event.
+**`Param`**
+
+The drag event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ondragenter](DarkForestButton.md#ondragenter)
 
----
+___
 
 ### ondragleave
 
-• **ondragleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
 
-**`param`** The drag event.
+**`Param`**
+
+The drag event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ondragleave](DarkForestButton.md#ondragleave)
 
----
+___
 
 ### ondragover
 
-• **ondragover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the target element continuously while the user drags the object over a valid drop target.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ondragover](DarkForestButton.md#ondragover)
 
----
+___
 
 ### ondragstart
 
-• **ondragstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondragstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 Fires on the source object when the user starts to drag a text selection or selected object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ondragstart](DarkForestButton.md#ondragstart)
 
----
+___
 
 ### ondrop
 
-• **ondrop**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
+• **ondrop**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `DragEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ondrop](DarkForestButton.md#ondrop)
 
----
+___
 
 ### ondurationchange
 
-• **ondurationchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ondurationchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the duration attribute is updated.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ondurationchange](DarkForestButton.md#ondurationchange)
 
----
+___
 
 ### onemptied
 
-• **onemptied**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onemptied**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the media element is reset to its initial state.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onemptied](DarkForestButton.md#onemptied)
 
----
+___
 
 ### onended
 
-• **onended**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onended**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the end of playback is reached.
 
-**`param`** The event
+**`Param`**
+
+The event
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onended](DarkForestButton.md#onended)
 
----
+___
 
 ### onerror
 
@@ -1832,775 +1866,861 @@ Occurs when the end of playback is reached.
 
 Fires when an error occurs during object loading.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onerror](DarkForestButton.md#onerror)
 
----
+___
 
 ### onfocus
 
-• **onfocus**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
+• **onfocus**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FocusEvent`) => `any`
 
 Fires when the object receives focus.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onfocus](DarkForestButton.md#onfocus)
 
----
+___
 
 ### onformdata
 
-• **onformdata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `FormDataEvent`) => `any`
+• **onformdata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `FormDataEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onformdata](DarkForestButton.md#onformdata)
 
----
+___
 
 ### onfullscreenchange
 
-• **onfullscreenchange**: `null` \| (`this`: `Element`, `ev`: `Event`) => `any`
+• **onfullscreenchange**: ``null`` \| (`this`: `Element`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onfullscreenchange](DarkForestButton.md#onfullscreenchange)
 
----
+___
 
 ### onfullscreenerror
 
-• **onfullscreenerror**: `null` \| (`this`: `Element`, `ev`: `Event`) => `any`
+• **onfullscreenerror**: ``null`` \| (`this`: `Element`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onfullscreenerror](DarkForestButton.md#onfullscreenerror)
 
----
+___
 
 ### ongotpointercapture
 
-• **ongotpointercapture**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **ongotpointercapture**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ongotpointercapture](DarkForestButton.md#ongotpointercapture)
 
----
+___
 
 ### oninput
 
-• **oninput**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oninput**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[oninput](DarkForestButton.md#oninput)
 
----
+___
 
 ### oninvalid
 
-• **oninvalid**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **oninvalid**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[oninvalid](DarkForestButton.md#oninvalid)
 
----
+___
 
 ### onkeydown
 
-• **onkeydown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeydown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user presses a key.
 
-**`param`** The keyboard event
+**`Param`**
+
+The keyboard event
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onkeydown](DarkForestButton.md#onkeydown)
 
----
+___
 
 ### onkeypress
 
-• **onkeypress**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeypress**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user presses an alphanumeric key.
 
-**`param`** The event.
+**`Param`**
 
-**`deprecated`**
+The event.
+
+**`Deprecated`**
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onkeypress](DarkForestButton.md#onkeypress)
 
----
+___
 
 ### onkeyup
 
-• **onkeyup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
+• **onkeyup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `KeyboardEvent`) => `any`
 
 Fires when the user releases a key.
 
-**`param`** The keyboard event
+**`Param`**
+
+The keyboard event
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onkeyup](DarkForestButton.md#onkeyup)
 
----
+___
 
 ### onload
 
-• **onload**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onload**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires immediately after the browser loads the object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onload](DarkForestButton.md#onload)
 
----
+___
 
 ### onloadeddata
 
-• **onloadeddata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadeddata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when media data is loaded at the current playback position.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onloadeddata](DarkForestButton.md#onloadeddata)
 
----
+___
 
 ### onloadedmetadata
 
-• **onloadedmetadata**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadedmetadata**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the duration and dimensions of the media have been determined.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onloadedmetadata](DarkForestButton.md#onloadedmetadata)
 
----
+___
 
 ### onloadstart
 
-• **onloadstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onloadstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when Internet Explorer begins looking for media data.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onloadstart](DarkForestButton.md#onloadstart)
 
----
+___
 
 ### onlostpointercapture
 
-• **onlostpointercapture**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onlostpointercapture**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onlostpointercapture](DarkForestButton.md#onlostpointercapture)
 
----
+___
 
 ### onmousedown
 
-• **onmousedown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmousedown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user clicks the object with either mouse button.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onmousedown](DarkForestButton.md#onmousedown)
 
----
+___
 
 ### onmouseenter
 
-• **onmouseenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onmouseenter](DarkForestButton.md#onmouseenter)
 
----
+___
 
 ### onmouseleave
 
-• **onmouseleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onmouseleave](DarkForestButton.md#onmouseleave)
 
----
+___
 
 ### onmousemove
 
-• **onmousemove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmousemove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse over the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onmousemove](DarkForestButton.md#onmousemove)
 
----
+___
 
 ### onmouseout
 
-• **onmouseout**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseout**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse pointer outside the boundaries of the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onmouseout](DarkForestButton.md#onmouseout)
 
----
+___
 
 ### onmouseover
 
-• **onmouseover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user moves the mouse pointer into the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onmouseover](DarkForestButton.md#onmouseover)
 
----
+___
 
 ### onmouseup
 
-• **onmouseup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
+• **onmouseup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `MouseEvent`) => `any`
 
 Fires when the user releases a mouse button while the mouse is over the object.
 
-**`param`** The mouse event.
+**`Param`**
+
+The mouse event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onmouseup](DarkForestButton.md#onmouseup)
 
----
+___
 
 ### onpaste
 
-• **onpaste**: `null` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
+• **onpaste**: ``null`` \| (`this`: `DocumentAndElementEventHandlers`, `ev`: `ClipboardEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onpaste](DarkForestButton.md#onpaste)
 
----
+___
 
 ### onpause
 
-• **onpause**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onpause**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback is paused.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onpause](DarkForestButton.md#onpause)
 
----
+___
 
 ### onplay
 
-• **onplay**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onplay**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the play method is requested.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onplay](DarkForestButton.md#onplay)
 
----
+___
 
 ### onplaying
 
-• **onplaying**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onplaying**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the audio or video has started playing.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onplaying](DarkForestButton.md#onplaying)
 
----
+___
 
 ### onpointercancel
 
-• **onpointercancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointercancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onpointercancel](DarkForestButton.md#onpointercancel)
 
----
+___
 
 ### onpointerdown
 
-• **onpointerdown**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerdown**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onpointerdown](DarkForestButton.md#onpointerdown)
 
----
+___
 
 ### onpointerenter
 
-• **onpointerenter**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerenter**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onpointerenter](DarkForestButton.md#onpointerenter)
 
----
+___
 
 ### onpointerleave
 
-• **onpointerleave**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerleave**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onpointerleave](DarkForestButton.md#onpointerleave)
 
----
+___
 
 ### onpointermove
 
-• **onpointermove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointermove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onpointermove](DarkForestButton.md#onpointermove)
 
----
+___
 
 ### onpointerout
 
-• **onpointerout**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerout**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onpointerout](DarkForestButton.md#onpointerout)
 
----
+___
 
 ### onpointerover
 
-• **onpointerover**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerover**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onpointerover](DarkForestButton.md#onpointerover)
 
----
+___
 
 ### onpointerup
 
-• **onpointerup**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
+• **onpointerup**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `PointerEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onpointerup](DarkForestButton.md#onpointerup)
 
----
+___
 
 ### onprogress
 
-• **onprogress**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `ProgressEvent`<`EventTarget`\>) => `any`
+• **onprogress**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `ProgressEvent`<`EventTarget`\>) => `any`
 
 Occurs to indicate progress while downloading media data.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onprogress](DarkForestButton.md#onprogress)
 
----
+___
 
 ### onratechange
 
-• **onratechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onratechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the playback rate is increased or decreased.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onratechange](DarkForestButton.md#onratechange)
 
----
+___
 
 ### onreset
 
-• **onreset**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onreset**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the user resets a form.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onreset](DarkForestButton.md#onreset)
 
----
+___
 
 ### onresize
 
-• **onresize**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
+• **onresize**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `UIEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onresize](DarkForestButton.md#onresize)
 
----
+___
 
 ### onscroll
 
-• **onscroll**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onscroll**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the user repositions the scroll box in the scroll bar on the object.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onscroll](DarkForestButton.md#onscroll)
 
----
+___
+
+### onsecuritypolicyviolation
+
+• **onsecuritypolicyviolation**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `SecurityPolicyViolationEvent`) => `any`
+
+#### Inherited from
+
+[DarkForestButton](DarkForestButton.md).[onsecuritypolicyviolation](DarkForestButton.md#onsecuritypolicyviolation)
+
+___
 
 ### onseeked
 
-• **onseeked**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onseeked**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the seek operation ends.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onseeked](DarkForestButton.md#onseeked)
 
----
+___
 
 ### onseeking
 
-• **onseeking**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onseeking**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the current playback position is moved.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onseeking](DarkForestButton.md#onseeking)
 
----
+___
 
 ### onselect
 
-• **onselect**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselect**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Fires when the current selection changes.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onselect](DarkForestButton.md#onselect)
 
----
+___
 
 ### onselectionchange
 
-• **onselectionchange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselectionchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onselectionchange](DarkForestButton.md#onselectionchange)
 
----
+___
 
 ### onselectstart
 
-• **onselectstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onselectstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onselectstart](DarkForestButton.md#onselectstart)
 
----
+___
+
+### onslotchange
+
+• **onslotchange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+
+#### Inherited from
+
+[DarkForestButton](DarkForestButton.md).[onslotchange](DarkForestButton.md#onslotchange)
+
+___
 
 ### onstalled
 
-• **onstalled**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onstalled**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the download has stopped.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onstalled](DarkForestButton.md#onstalled)
 
----
+___
 
 ### onsubmit
 
-• **onsubmit**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `SubmitEvent`) => `any`
+• **onsubmit**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `SubmitEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onsubmit](DarkForestButton.md#onsubmit)
 
----
+___
 
 ### onsuspend
 
-• **onsuspend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onsuspend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs if the load operation has been intentionally halted.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onsuspend](DarkForestButton.md#onsuspend)
 
----
+___
 
 ### ontimeupdate
 
-• **ontimeupdate**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ontimeupdate**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs to indicate the current playback position.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ontimeupdate](DarkForestButton.md#ontimeupdate)
 
----
+___
 
 ### ontoggle
 
-• **ontoggle**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **ontoggle**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ontoggle](DarkForestButton.md#ontoggle)
 
----
+___
 
 ### ontouchcancel
 
-• `Optional` **ontouchcancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchcancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ontouchcancel](DarkForestButton.md#ontouchcancel)
 
----
+___
 
 ### ontouchend
 
-• `Optional` **ontouchend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ontouchend](DarkForestButton.md#ontouchend)
 
----
+___
 
 ### ontouchmove
 
-• `Optional` **ontouchmove**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchmove**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ontouchmove](DarkForestButton.md#ontouchmove)
 
----
+___
 
 ### ontouchstart
 
-• `Optional` **ontouchstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
+• `Optional` **ontouchstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TouchEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ontouchstart](DarkForestButton.md#ontouchstart)
 
----
+___
 
 ### ontransitioncancel
 
-• **ontransitioncancel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitioncancel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ontransitioncancel](DarkForestButton.md#ontransitioncancel)
 
----
+___
 
 ### ontransitionend
 
-• **ontransitionend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ontransitionend](DarkForestButton.md#ontransitionend)
 
----
+___
 
 ### ontransitionrun
 
-• **ontransitionrun**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionrun**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ontransitionrun](DarkForestButton.md#ontransitionrun)
 
----
+___
 
 ### ontransitionstart
 
-• **ontransitionstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
+• **ontransitionstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `TransitionEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[ontransitionstart](DarkForestButton.md#ontransitionstart)
 
----
+___
 
 ### onvolumechange
 
-• **onvolumechange**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onvolumechange**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when the volume is changed, or playback is muted or unmuted.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onvolumechange](DarkForestButton.md#onvolumechange)
 
----
+___
 
 ### onwaiting
 
-• **onwaiting**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwaiting**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
 Occurs when playback stops because the next frame of a video resource is not available.
 
-**`param`** The event.
+**`Param`**
+
+The event.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onwaiting](DarkForestButton.md#onwaiting)
 
----
+___
 
 ### onwebkitanimationend
 
-• **onwebkitanimationend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationend`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationend`.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onwebkitanimationend](DarkForestButton.md#onwebkitanimationend)
 
----
+___
 
 ### onwebkitanimationiteration
 
-• **onwebkitanimationiteration**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationiteration**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationiteration`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationiteration`.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onwebkitanimationiteration](DarkForestButton.md#onwebkitanimationiteration)
 
----
+___
 
 ### onwebkitanimationstart
 
-• **onwebkitanimationstart**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkitanimationstart**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `onanimationstart`.
+**`Deprecated`**
+
+This is a legacy alias of `onanimationstart`.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onwebkitanimationstart](DarkForestButton.md#onwebkitanimationstart)
 
----
+___
 
 ### onwebkittransitionend
 
-• **onwebkittransitionend**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
+• **onwebkittransitionend**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `any`
 
-**`deprecated`** This is a legacy alias of `ontransitionend`.
+**`Deprecated`**
+
+This is a legacy alias of `ontransitionend`.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onwebkittransitionend](DarkForestButton.md#onwebkittransitionend)
 
----
+___
 
 ### onwheel
 
-• **onwheel**: `null` \| (`this`: `GlobalEventHandlers`, `ev`: `WheelEvent`) => `any`
+• **onwheel**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `WheelEvent`) => `any`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[onwheel](DarkForestButton.md#onwheel)
 
----
+___
 
 ### outerHTML
 
@@ -2610,7 +2730,7 @@ Occurs when playback stops because the next frame of a video resource is not ava
 
 [DarkForestButton](DarkForestButton.md).[outerHTML](DarkForestButton.md#outerhtml)
 
----
+___
 
 ### outerText
 
@@ -2620,7 +2740,7 @@ Occurs when playback stops because the next frame of a video resource is not ava
 
 [DarkForestButton](DarkForestButton.md).[outerText](DarkForestButton.md#outertext)
 
----
+___
 
 ### ownerDocument
 
@@ -2630,11 +2750,11 @@ Occurs when playback stops because the next frame of a video resource is not ava
 
 [DarkForestButton](DarkForestButton.md).[ownerDocument](DarkForestButton.md#ownerdocument)
 
----
+___
 
 ### parentElement
 
-• `Readonly` **parentElement**: `null` \| `HTMLElement`
+• `Readonly` **parentElement**: ``null`` \| `HTMLElement`
 
 Returns the parent element.
 
@@ -2642,11 +2762,11 @@ Returns the parent element.
 
 [DarkForestButton](DarkForestButton.md).[parentElement](DarkForestButton.md#parentelement)
 
----
+___
 
 ### parentNode
 
-• `Readonly` **parentNode**: `null` \| `ParentNode`
+• `Readonly` **parentNode**: ``null`` \| `ParentNode`
 
 Returns the parent.
 
@@ -2654,7 +2774,7 @@ Returns the parent.
 
 [DarkForestButton](DarkForestButton.md).[parentNode](DarkForestButton.md#parentnode)
 
----
+___
 
 ### part
 
@@ -2664,11 +2784,11 @@ Returns the parent.
 
 [DarkForestButton](DarkForestButton.md).[part](DarkForestButton.md#part)
 
----
+___
 
 ### prefix
 
-• `Readonly` **prefix**: `null` \| `string`
+• `Readonly` **prefix**: ``null`` \| `string`
 
 Returns the namespace prefix.
 
@@ -2676,11 +2796,11 @@ Returns the namespace prefix.
 
 [DarkForestButton](DarkForestButton.md).[prefix](DarkForestButton.md#prefix)
 
----
+___
 
 ### previousElementSibling
 
-• `Readonly` **previousElementSibling**: `null` \| `Element`
+• `Readonly` **previousElementSibling**: ``null`` \| `Element`
 
 Returns the first preceding sibling that is an element, and null otherwise.
 
@@ -2688,11 +2808,11 @@ Returns the first preceding sibling that is an element, and null otherwise.
 
 [DarkForestButton](DarkForestButton.md).[previousElementSibling](DarkForestButton.md#previouselementsibling)
 
----
+___
 
 ### previousSibling
 
-• `Readonly` **previousSibling**: `null` \| `ChildNode`
+• `Readonly` **previousSibling**: ``null`` \| `ChildNode`
 
 Returns the previous sibling.
 
@@ -2700,7 +2820,7 @@ Returns the previous sibling.
 
 [DarkForestButton](DarkForestButton.md).[previousSibling](DarkForestButton.md#previoussibling)
 
----
+___
 
 ### scrollHeight
 
@@ -2710,7 +2830,7 @@ Returns the previous sibling.
 
 [DarkForestButton](DarkForestButton.md).[scrollHeight](DarkForestButton.md#scrollheight)
 
----
+___
 
 ### scrollLeft
 
@@ -2720,7 +2840,7 @@ Returns the previous sibling.
 
 [DarkForestButton](DarkForestButton.md).[scrollLeft](DarkForestButton.md#scrollleft)
 
----
+___
 
 ### scrollTop
 
@@ -2730,7 +2850,7 @@ Returns the previous sibling.
 
 [DarkForestButton](DarkForestButton.md).[scrollTop](DarkForestButton.md#scrolltop)
 
----
+___
 
 ### scrollWidth
 
@@ -2740,11 +2860,11 @@ Returns the previous sibling.
 
 [DarkForestButton](DarkForestButton.md).[scrollWidth](DarkForestButton.md#scrollwidth)
 
----
+___
 
 ### shadowRoot
 
-• `Readonly` **shadowRoot**: `null` \| `ShadowRoot`
+• `Readonly` **shadowRoot**: ``null`` \| `ShadowRoot`
 
 Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
 
@@ -2752,7 +2872,7 @@ Returns element's shadow root, if any, and if shadow root's mode is "open", and 
 
 [DarkForestButton](DarkForestButton.md).[shadowRoot](DarkForestButton.md#shadowroot)
 
----
+___
 
 ### shortcutKey
 
@@ -2760,7 +2880,7 @@ Returns element's shadow root, if any, and if shadow root's mode is "open", and 
 
 The `shortcutKey` indicates which key this component listens for while it is mounted
 
----
+___
 
 ### shortcutText
 
@@ -2768,17 +2888,17 @@ The `shortcutKey` indicates which key this component listens for while it is mou
 
 The `shortcutText` indicates the key should be displayed and with what text
 
----
+___
 
 ### size
 
-• **size**: `"small"` \| `"medium"` \| `"large"` \| `"stretch"` = `'medium'`
+• **size**: ``"small"`` \| ``"medium"`` \| ``"large"`` \| ``"stretch"`` = `"medium"`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[size](DarkForestButton.md#size)
 
----
+___
 
 ### slot
 
@@ -2790,7 +2910,7 @@ Returns the value of element's slot content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[slot](DarkForestButton.md#slot)
 
----
+___
 
 ### spellcheck
 
@@ -2800,7 +2920,7 @@ Returns the value of element's slot content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[spellcheck](DarkForestButton.md#spellcheck)
 
----
+___
 
 ### style
 
@@ -2810,7 +2930,7 @@ Returns the value of element's slot content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[style](DarkForestButton.md#style)
 
----
+___
 
 ### tabIndex
 
@@ -2820,7 +2940,7 @@ Returns the value of element's slot content attribute. Can be set to change it.
 
 [DarkForestButton](DarkForestButton.md).[tabIndex](DarkForestButton.md#tabindex)
 
----
+___
 
 ### tagName
 
@@ -2832,17 +2952,17 @@ Returns the HTML-uppercased qualified name.
 
 [DarkForestButton](DarkForestButton.md).[tagName](DarkForestButton.md#tagname)
 
----
+___
 
 ### textContent
 
-• **textContent**: `null` \| `string`
+• **textContent**: ``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[textContent](DarkForestButton.md#textcontent)
 
----
+___
 
 ### title
 
@@ -2852,7 +2972,7 @@ Returns the HTML-uppercased qualified name.
 
 [DarkForestButton](DarkForestButton.md).[title](DarkForestButton.md#title)
 
----
+___
 
 ### translate
 
@@ -2862,17 +2982,17 @@ Returns the HTML-uppercased qualified name.
 
 [DarkForestButton](DarkForestButton.md).[translate](DarkForestButton.md#translate)
 
----
+___
 
 ### variant
 
-• **variant**: `"normal"` \| `"danger"` = `'normal'`
+• **variant**: ``"normal"`` \| ``"danger"`` = `"normal"`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[variant](DarkForestButton.md#variant)
 
----
+___
 
 ### \_$litElement$
 
@@ -2880,9 +3000,9 @@ Returns the HTML-uppercased qualified name.
 
 #### Inherited from
 
-[DarkForestButton](DarkForestButton.md).[\_$litElement$](DarkForestButton.md#_$litelement$)
+[DarkForestButton](DarkForestButton.md).[_$litElement$](DarkForestButton.md#_$litelement$)
 
----
+___
 
 ### \_initializers
 
@@ -2890,9 +3010,9 @@ Returns the HTML-uppercased qualified name.
 
 #### Inherited from
 
-[DarkForestButton](DarkForestButton.md).[\_initializers](DarkForestButton.md#_initializers)
+[DarkForestButton](DarkForestButton.md).[_initializers](DarkForestButton.md#_initializers)
 
----
+___
 
 ### finalized
 
@@ -2908,7 +3028,7 @@ optimizations. See @lit/reactive-element for more information.
 
 [DarkForestButton](DarkForestButton.md).[finalized](DarkForestButton.md#finalized)
 
----
+___
 
 ### properties
 
@@ -2916,28 +3036,28 @@ optimizations. See @lit/reactive-element for more information.
 
 #### Type declaration
 
-| Name                     | Type                                       |
-| :----------------------- | :----------------------------------------- |
-| `_shortcutPressed`       | { `state`: `boolean` = true }              |
-| `_shortcutPressed.state` | `boolean`                                  |
-| `active`                 | { `type`: `BooleanConstructor` = Boolean } |
-| `active.type`            | `BooleanConstructor`                       |
-| `disabled`               | { `type`: `BooleanConstructor` = Boolean } |
-| `disabled.type`          | `BooleanConstructor`                       |
-| `shortcutKey`            | { `type`: `StringConstructor` = String }   |
-| `shortcutKey.type`       | `StringConstructor`                        |
-| `shortcutText`           | { `type`: `StringConstructor` = String }   |
-| `shortcutText.type`      | `StringConstructor`                        |
-| `size`                   | { `type`: `StringConstructor` = String }   |
-| `size.type`              | `StringConstructor`                        |
-| `variant`                | { `type`: `StringConstructor` = String }   |
-| `variant.type`           | `StringConstructor`                        |
+| Name | Type |
+| :------ | :------ |
+| `_shortcutPressed` | { `state`: `boolean` = true } |
+| `_shortcutPressed.state` | `boolean` |
+| `active` | { `type`: `BooleanConstructor` = Boolean } |
+| `active.type` | `BooleanConstructor` |
+| `disabled` | { `type`: `BooleanConstructor` = Boolean } |
+| `disabled.type` | `BooleanConstructor` |
+| `shortcutKey` | { `type`: `StringConstructor` = String } |
+| `shortcutKey.type` | `StringConstructor` |
+| `shortcutText` | { `type`: `StringConstructor` = String } |
+| `shortcutText.type` | `StringConstructor` |
+| `size` | { `type`: `StringConstructor` = String } |
+| `size.type` | `StringConstructor` |
+| `variant` | { `type`: `StringConstructor` = String } |
+| `variant.type` | `StringConstructor` |
 
 #### Overrides
 
 [DarkForestButton](DarkForestButton.md).[properties](DarkForestButton.md#properties)
 
----
+___
 
 ### styles
 
@@ -2947,17 +3067,17 @@ optimizations. See @lit/reactive-element for more information.
 
 [DarkForestButton](DarkForestButton.md).[styles](DarkForestButton.md#styles)
 
----
+___
 
 ### tagName
 
-▪ `Static` **tagName**: `string` = `'df-shortcut-button'`
+▪ `Static` **tagName**: `string` = `"df-shortcut-button"`
 
 #### Overrides
 
-[DarkForestButton](DarkForestButton.md).[tagName](DarkForestButton.md#tagname)
+[DarkForestButton](DarkForestButton.md).[tagName](DarkForestButton.md#tagname-1)
 
----
+___
 
 ## dev-mode Properties
 
@@ -2982,12 +3102,12 @@ ReactiveElement.disableWarning.?('migration');
 MyElement.disableWarning.?('migration');
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 ##### Parameters
 
-| Name          | Type          |
-| :------------ | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `warningKind` | `WarningKind` |
 
 ##### Returns
@@ -2998,7 +3118,7 @@ MyElement.disableWarning.?('migration');
 
 [DarkForestButton](DarkForestButton.md).[disableWarning](DarkForestButton.md#disablewarning)
 
----
+___
 
 ### enableWarning
 
@@ -3021,12 +3141,12 @@ ReactiveElement.enableWarning.?('migration');
 MyElement.enableWarning.?('migration');
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 ##### Parameters
 
-| Name          | Type          |
-| :------------ | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `warningKind` | `WarningKind` |
 
 ##### Returns
@@ -3037,7 +3157,7 @@ MyElement.enableWarning.?('migration');
 
 [DarkForestButton](DarkForestButton.md).[enableWarning](DarkForestButton.md#enablewarning)
 
----
+___
 
 ### enabledWarnings
 
@@ -3047,13 +3167,13 @@ Read or set all the enabled warning categories for this class.
 
 This property is only used in development builds.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[enabledWarnings](DarkForestButton.md#enabledwarnings)
 
----
+___
 
 ## properties Properties
 
@@ -3064,13 +3184,13 @@ This property is only used in development builds.
 Memoized list of all element properties, including any superclass properties.
 Created lazily on user subclasses when finalizing the class.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[elementProperties](DarkForestButton.md#elementproperties)
 
----
+___
 
 ## rendering Properties
 
@@ -3082,7 +3202,7 @@ Created lazily on user subclasses when finalizing the class.
 
 [DarkForestButton](DarkForestButton.md).[renderOptions](DarkForestButton.md#renderoptions)
 
----
+___
 
 ### renderRoot
 
@@ -3095,7 +3215,7 @@ to an open shadowRoot.
 
 [DarkForestButton](DarkForestButton.md).[renderRoot](DarkForestButton.md#renderroot)
 
----
+___
 
 ### shadowRootOptions
 
@@ -3108,13 +3228,13 @@ shadowRoot: `{mode: 'closed'}`.
 Note, these options are used in `createRenderRoot`. If this method
 is customized, options should be respected if possible.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[shadowRootOptions](DarkForestButton.md#shadowrootoptions)
 
----
+___
 
 ## styles Properties
 
@@ -3125,13 +3245,13 @@ is customized, options should be respected if possible.
 Memoized list of all element styles.
 Created lazily on user subclasses when finalizing the class.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[elementStyles](DarkForestButton.md#elementstyles)
 
----
+___
 
 ## updates Properties
 
@@ -3146,7 +3266,7 @@ that `renderRoot` exists before the element `hasUpdated`.
 
 [DarkForestButton](DarkForestButton.md).[hasUpdated](DarkForestButton.md#hasupdated)
 
----
+___
 
 ### isUpdatePending
 
@@ -3167,9 +3287,7 @@ Should only be read.
 
 Returns a list of attributes corresponding to the registered properties.
 
-**`nocollapse`**
-
-**`category`** attributes
+**`Nocollapse`**
 
 #### Returns
 
@@ -3179,7 +3297,7 @@ Returns a list of attributes corresponding to the registered properties.
 
 DarkForestButton.observedAttributes
 
----
+___
 
 ## updates Accessors
 
@@ -3198,14 +3316,12 @@ method. For example, it is sometimes useful to await a rendered element
 before fulfilling this Promise. To do this, first await
 `super.getUpdateComplete()`, then any subsequent state.
 
-**`category`** updates
-
 #### Returns
 
 `Promise`<`boolean`\>
 
 A promise of a boolean that resolves to true if the update completed
-without triggering another update.
+    without triggering another update.
 
 #### Inherited from
 
@@ -3215,28 +3331,28 @@ DarkForestButton.updateComplete
 
 ### \_getKeyFromEvent
 
-▸ `Private` **\_getKeyFromEvent**(`evt`): `string`
+▸ `Private` **_getKeyFromEvent**(`evt`): `string`
 
 #### Parameters
 
-| Name  | Type            |
-| :---- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `evt` | `KeyboardEvent` |
 
 #### Returns
 
 `string`
 
----
+___
 
 ### \_handleClick
 
-▸ `Protected` **\_handleClick**(`evt`): `void`
+▸ `Protected` **_handleClick**(`evt`): `void`
 
 #### Parameters
 
-| Name  | Type         |
-| :---- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `evt` | `MouseEvent` |
 
 #### Returns
@@ -3245,51 +3361,51 @@ DarkForestButton.updateComplete
 
 #### Inherited from
 
-[DarkForestButton](DarkForestButton.md).[\_handleClick](DarkForestButton.md#_handleclick)
+[DarkForestButton](DarkForestButton.md).[_handleClick](DarkForestButton.md#_handleclick)
 
----
+___
 
 ### \_handleKeyDown
 
-▸ `Private` **\_handleKeyDown**(`evt`): `void`
+▸ `Private` **_handleKeyDown**(`evt`): `void`
 
 #### Parameters
 
-| Name  | Type            |
-| :---- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `evt` | `KeyboardEvent` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### \_handleKeyUp
 
-▸ `Private` **\_handleKeyUp**(`evt`): `void`
+▸ `Private` **_handleKeyUp**(`evt`): `void`
 
 #### Parameters
 
-| Name  | Type            |
-| :---- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `evt` | `KeyboardEvent` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### \_renderKbd
 
-▸ `Private` **\_renderKbd**(): `TemplateResult`<`1`\> \| typeof `nothing`
+▸ `Private` **_renderKbd**(): `TemplateResult`<``1``\> \| typeof `nothing`
 
 #### Returns
 
-`TemplateResult`<`1`\> \| typeof `nothing`
+`TemplateResult`<``1``\> \| typeof `nothing`
 
----
+___
 
 ### addEventListener
 
@@ -3297,17 +3413,17 @@ DarkForestButton.updateComplete
 
 #### Type parameters
 
-| Name | Type                                |
-| :--- | :---------------------------------- |
-| `K`  | extends keyof `HTMLElementEventMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementEventMap` |
 
 #### Parameters
 
-| Name       | Type                                                               |
-| :--------- | :----------------------------------------------------------------- |
-| `type`     | `K`                                                                |
+| Name | Type |
+| :------ | :------ |
+| `type` | `K` |
 | `listener` | (`this`: `HTMLElement`, `ev`: `HTMLElementEventMap`[`K`]) => `any` |
-| `options?` | `boolean` \| `AddEventListenerOptions`                             |
+| `options?` | `boolean` \| `AddEventListenerOptions` |
 
 #### Returns
 
@@ -3321,10 +3437,10 @@ DarkForestButton.updateComplete
 
 #### Parameters
 
-| Name       | Type                                   |
-| :--------- | :------------------------------------- |
-| `type`     | `string`                               |
-| `listener` | `EventListenerOrEventListenerObject`   |
+| Name | Type |
+| :------ | :------ |
+| `type` | `string` |
+| `listener` | `EventListenerOrEventListenerObject` |
 | `options?` | `boolean` \| `AddEventListenerOptions` |
 
 #### Returns
@@ -3335,7 +3451,7 @@ DarkForestButton.updateComplete
 
 [DarkForestButton](DarkForestButton.md).[addEventListener](DarkForestButton.md#addeventlistener)
 
----
+___
 
 ### after
 
@@ -3347,8 +3463,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3359,7 +3475,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[after](DarkForestButton.md#after)
 
----
+___
 
 ### animate
 
@@ -3367,10 +3483,10 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name        | Type                                                 |
-| :---------- | :--------------------------------------------------- |
-| `keyframes` | `null` \| `Keyframe`[] \| `PropertyIndexedKeyframes` |
-| `options?`  | `number` \| `KeyframeAnimationOptions`               |
+| Name | Type |
+| :------ | :------ |
+| `keyframes` | ``null`` \| `Keyframe`[] \| `PropertyIndexedKeyframes` |
+| `options?` | `number` \| `KeyframeAnimationOptions` |
 
 #### Returns
 
@@ -3380,7 +3496,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[animate](DarkForestButton.md#animate)
 
----
+___
 
 ### append
 
@@ -3392,8 +3508,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3404,7 +3520,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[append](DarkForestButton.md#append)
 
----
+___
 
 ### appendChild
 
@@ -3412,15 +3528,15 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name   | Type |
-| :----- | :--- |
-| `node` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `node` | `T` |
 
 #### Returns
 
@@ -3430,7 +3546,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[appendChild](DarkForestButton.md#appendchild)
 
----
+___
 
 ### attachInternals
 
@@ -3444,7 +3560,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[attachInternals](DarkForestButton.md#attachinternals)
 
----
+___
 
 ### attachShadow
 
@@ -3454,8 +3570,8 @@ Creates a shadow root for element and returns it.
 
 #### Parameters
 
-| Name   | Type             |
-| :----- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `init` | `ShadowRootInit` |
 
 #### Returns
@@ -3466,7 +3582,7 @@ Creates a shadow root for element and returns it.
 
 [DarkForestButton](DarkForestButton.md).[attachShadow](DarkForestButton.md#attachshadow)
 
----
+___
 
 ### before
 
@@ -3478,8 +3594,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -3490,7 +3606,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[before](DarkForestButton.md#before)
 
----
+___
 
 ### blur
 
@@ -3504,7 +3620,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[blur](DarkForestButton.md#blur)
 
----
+___
 
 ### click
 
@@ -3518,7 +3634,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[click](DarkForestButton.md#click)
 
----
+___
 
 ### cloneNode
 
@@ -3528,8 +3644,8 @@ Returns a copy of node. If deep is true, the copy also includes the node's desce
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `deep?` | `boolean` |
 
 #### Returns
@@ -3540,79 +3656,79 @@ Returns a copy of node. If deep is true, the copy also includes the node's desce
 
 [DarkForestButton](DarkForestButton.md).[cloneNode](DarkForestButton.md#clonenode)
 
----
+___
 
 ### closest
 
-▸ **closest**<`K`\>(`selector`): `null` \| `HTMLElementTagNameMap`[`K`]
+▸ **closest**<`K`\>(`selector`): ``null`` \| `HTMLElementTagNameMap`[`K`]
 
 Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `selector` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selector` | `K` |
 
 #### Returns
 
-`null` \| `HTMLElementTagNameMap`[`K`]
+``null`` \| `HTMLElementTagNameMap`[`K`]
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[closest](DarkForestButton.md#closest)
 
-▸ **closest**<`K`\>(`selector`): `null` \| `SVGElementTagNameMap`[`K`]
+▸ **closest**<`K`\>(`selector`): ``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `selector` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selector` | `K` |
 
 #### Returns
 
-`null` \| `SVGElementTagNameMap`[`K`]
+``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[closest](DarkForestButton.md#closest)
 
-▸ **closest**<`E`\>(`selectors`): `null` \| `E`
+▸ **closest**<`E`\>(`selectors`): ``null`` \| `E`
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
 
-`null` \| `E`
+``null`` \| `E`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[closest](DarkForestButton.md#closest)
 
----
+___
 
 ### compareDocumentPosition
 
@@ -3622,8 +3738,8 @@ Returns a bitmask indicating the position of other relative to node.
 
 #### Parameters
 
-| Name    | Type   |
-| :------ | :----- |
+| Name | Type |
+| :------ | :------ |
 | `other` | `Node` |
 
 #### Returns
@@ -3634,7 +3750,7 @@ Returns a bitmask indicating the position of other relative to node.
 
 [DarkForestButton](DarkForestButton.md).[compareDocumentPosition](DarkForestButton.md#comparedocumentposition)
 
----
+___
 
 ### connectedCallback
 
@@ -3665,7 +3781,7 @@ element is disconnected, in `disconnectedCallback()`.
 
 [DarkForestButton](DarkForestButton.md).[connectedCallback](DarkForestButton.md#connectedcallback)
 
----
+___
 
 ### contains
 
@@ -3675,9 +3791,9 @@ Returns true if other is an inclusive descendant of node, and false otherwise.
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
-| `other` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `other` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -3687,7 +3803,7 @@ Returns true if other is an inclusive descendant of node, and false otherwise.
 
 [DarkForestButton](DarkForestButton.md).[contains](DarkForestButton.md#contains)
 
----
+___
 
 ### disconnectedCallback
 
@@ -3717,7 +3833,7 @@ An element may be re-connected after being disconnected.
 
 [DarkForestButton](DarkForestButton.md).[disconnectedCallback](DarkForestButton.md#disconnectedcallback)
 
----
+___
 
 ### dispatchEvent
 
@@ -3727,7 +3843,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 #### Parameters
 
-| Name    | Type    |
+| Name | Type |
 | :------ | :------ |
 | `event` | `Event` |
 
@@ -3739,7 +3855,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 [DarkForestButton](DarkForestButton.md).[dispatchEvent](DarkForestButton.md#dispatchevent)
 
----
+___
 
 ### focus
 
@@ -3747,8 +3863,8 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 #### Parameters
 
-| Name       | Type           |
-| :--------- | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `FocusOptions` |
 
 #### Returns
@@ -3759,7 +3875,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 [DarkForestButton](DarkForestButton.md).[focus](DarkForestButton.md#focus)
 
----
+___
 
 ### getAnimations
 
@@ -3767,8 +3883,8 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `GetAnimationsOptions` |
 
 #### Returns
@@ -3779,52 +3895,52 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 [DarkForestButton](DarkForestButton.md).[getAnimations](DarkForestButton.md#getanimations)
 
----
+___
 
 ### getAttribute
 
-▸ **getAttribute**(`qualifiedName`): `null` \| `string`
+▸ **getAttribute**(`qualifiedName`): ``null`` \| `string`
 
 Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[getAttribute](DarkForestButton.md#getattribute)
 
----
+___
 
 ### getAttributeNS
 
-▸ **getAttributeNS**(`namespace`, `localName`): `null` \| `string`
+▸ **getAttributeNS**(`namespace`, `localName`): ``null`` \| `string`
 
 Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[getAttributeNS](DarkForestButton.md#getattributens)
 
----
+___
 
 ### getAttributeNames
 
@@ -3840,48 +3956,48 @@ Returns the qualified names of all element's attributes. Can contain duplicates.
 
 [DarkForestButton](DarkForestButton.md).[getAttributeNames](DarkForestButton.md#getattributenames)
 
----
+___
 
 ### getAttributeNode
 
-▸ **getAttributeNode**(`qualifiedName`): `null` \| `Attr`
+▸ **getAttributeNode**(`qualifiedName`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[getAttributeNode](DarkForestButton.md#getattributenode)
 
----
+___
 
 ### getAttributeNodeNS
 
-▸ **getAttributeNodeNS**(`namespace`, `localName`): `null` \| `Attr`
+▸ **getAttributeNodeNS**(`namespace`, `localName`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[getAttributeNodeNS](DarkForestButton.md#getattributenodens)
 
----
+___
 
 ### getBoundingClientRect
 
@@ -3895,7 +4011,7 @@ Returns the qualified names of all element's attributes. Can contain duplicates.
 
 [DarkForestButton](DarkForestButton.md).[getBoundingClientRect](DarkForestButton.md#getboundingclientrect)
 
----
+___
 
 ### getClientRects
 
@@ -3909,7 +4025,7 @@ Returns the qualified names of all element's attributes. Can contain duplicates.
 
 [DarkForestButton](DarkForestButton.md).[getClientRects](DarkForestButton.md#getclientrects)
 
----
+___
 
 ### getElementsByClassName
 
@@ -3919,8 +4035,8 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `classNames` | `string` |
 
 #### Returns
@@ -3931,7 +4047,7 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 [DarkForestButton](DarkForestButton.md).[getElementsByClassName](DarkForestButton.md#getelementsbyclassname)
 
----
+___
 
 ### getElementsByTagName
 
@@ -3939,15 +4055,15 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name            | Type |
-| :-------------- | :--- |
-| `qualifiedName` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `K` |
 
 #### Returns
 
@@ -3961,15 +4077,15 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name            | Type |
-| :-------------- | :--- |
-| `qualifiedName` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `K` |
 
 #### Returns
 
@@ -3983,8 +4099,8 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -3995,7 +4111,7 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 [DarkForestButton](DarkForestButton.md).[getElementsByTagName](DarkForestButton.md#getelementsbytagname)
 
----
+___
 
 ### getElementsByTagNameNS
 
@@ -4003,10 +4119,10 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 #### Parameters
 
-| Name           | Type                             |
-| :------------- | :------------------------------- |
-| `namespaceURI` | `"http://www.w3.org/1999/xhtml"` |
-| `localName`    | `string`                         |
+| Name | Type |
+| :------ | :------ |
+| `namespaceURI` | ``"http://www.w3.org/1999/xhtml"`` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4020,10 +4136,10 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 #### Parameters
 
-| Name           | Type                           |
-| :------------- | :----------------------------- |
-| `namespaceURI` | `"http://www.w3.org/2000/svg"` |
-| `localName`    | `string`                       |
+| Name | Type |
+| :------ | :------ |
+| `namespaceURI` | ``"http://www.w3.org/2000/svg"`` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4037,10 +4153,10 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4050,7 +4166,7 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 [DarkForestButton](DarkForestButton.md).[getElementsByTagNameNS](DarkForestButton.md#getelementsbytagnamens)
 
----
+___
 
 ### getRootNode
 
@@ -4060,8 +4176,8 @@ Returns node's root.
 
 #### Parameters
 
-| Name       | Type                 |
-| :--------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `GetRootNodeOptions` |
 
 #### Returns
@@ -4072,7 +4188,7 @@ Returns node's root.
 
 [DarkForestButton](DarkForestButton.md).[getRootNode](DarkForestButton.md#getrootnode)
 
----
+___
 
 ### hasAttribute
 
@@ -4082,8 +4198,8 @@ Returns true if element has an attribute whose qualified name is qualifiedName, 
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -4094,7 +4210,7 @@ Returns true if element has an attribute whose qualified name is qualifiedName, 
 
 [DarkForestButton](DarkForestButton.md).[hasAttribute](DarkForestButton.md#hasattribute)
 
----
+___
 
 ### hasAttributeNS
 
@@ -4104,10 +4220,10 @@ Returns true if element has an attribute whose namespace is namespace and local 
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4117,7 +4233,7 @@ Returns true if element has an attribute whose namespace is namespace and local 
 
 [DarkForestButton](DarkForestButton.md).[hasAttributeNS](DarkForestButton.md#hasattributens)
 
----
+___
 
 ### hasAttributes
 
@@ -4133,7 +4249,7 @@ Returns true if element has attributes, and false otherwise.
 
 [DarkForestButton](DarkForestButton.md).[hasAttributes](DarkForestButton.md#hasattributes)
 
----
+___
 
 ### hasChildNodes
 
@@ -4149,7 +4265,7 @@ Returns whether node has children.
 
 [DarkForestButton](DarkForestButton.md).[hasChildNodes](DarkForestButton.md#haschildnodes)
 
----
+___
 
 ### hasPointerCapture
 
@@ -4157,8 +4273,8 @@ Returns whether node has children.
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -4169,28 +4285,28 @@ Returns whether node has children.
 
 [DarkForestButton](DarkForestButton.md).[hasPointerCapture](DarkForestButton.md#haspointercapture)
 
----
+___
 
 ### insertAdjacentElement
 
-▸ **insertAdjacentElement**(`where`, `element`): `null` \| `Element`
+▸ **insertAdjacentElement**(`where`, `element`): ``null`` \| `Element`
 
 #### Parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
-| `where`   | `InsertPosition` |
-| `element` | `Element`        |
+| Name | Type |
+| :------ | :------ |
+| `where` | `InsertPosition` |
+| `element` | `Element` |
 
 #### Returns
 
-`null` \| `Element`
+``null`` \| `Element`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[insertAdjacentElement](DarkForestButton.md#insertadjacentelement)
 
----
+___
 
 ### insertAdjacentHTML
 
@@ -4198,10 +4314,10 @@ Returns whether node has children.
 
 #### Parameters
 
-| Name       | Type             |
-| :--------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `position` | `InsertPosition` |
-| `text`     | `string`         |
+| `text` | `string` |
 
 #### Returns
 
@@ -4211,7 +4327,7 @@ Returns whether node has children.
 
 [DarkForestButton](DarkForestButton.md).[insertAdjacentHTML](DarkForestButton.md#insertadjacenthtml)
 
----
+___
 
 ### insertAdjacentText
 
@@ -4219,10 +4335,10 @@ Returns whether node has children.
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `where` | `InsertPosition` |
-| `data`  | `string`         |
+| `data` | `string` |
 
 #### Returns
 
@@ -4232,7 +4348,7 @@ Returns whether node has children.
 
 [DarkForestButton](DarkForestButton.md).[insertAdjacentText](DarkForestButton.md#insertadjacenttext)
 
----
+___
 
 ### insertBefore
 
@@ -4240,16 +4356,16 @@ Returns whether node has children.
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type             |
-| :------ | :--------------- |
-| `node`  | `T`              |
-| `child` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `node` | `T` |
+| `child` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -4259,7 +4375,7 @@ Returns whether node has children.
 
 [DarkForestButton](DarkForestButton.md).[insertBefore](DarkForestButton.md#insertbefore)
 
----
+___
 
 ### isDefaultNamespace
 
@@ -4267,9 +4383,9 @@ Returns whether node has children.
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
 
 #### Returns
 
@@ -4279,7 +4395,7 @@ Returns whether node has children.
 
 [DarkForestButton](DarkForestButton.md).[isDefaultNamespace](DarkForestButton.md#isdefaultnamespace)
 
----
+___
 
 ### isEqualNode
 
@@ -4289,9 +4405,9 @@ Returns whether node and otherNode have the same properties.
 
 #### Parameters
 
-| Name        | Type             |
-| :---------- | :--------------- |
-| `otherNode` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `otherNode` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -4301,7 +4417,7 @@ Returns whether node and otherNode have the same properties.
 
 [DarkForestButton](DarkForestButton.md).[isEqualNode](DarkForestButton.md#isequalnode)
 
----
+___
 
 ### isSameNode
 
@@ -4309,9 +4425,9 @@ Returns whether node and otherNode have the same properties.
 
 #### Parameters
 
-| Name        | Type             |
-| :---------- | :--------------- |
-| `otherNode` | `null` \| `Node` |
+| Name | Type |
+| :------ | :------ |
+| `otherNode` | ``null`` \| `Node` |
 
 #### Returns
 
@@ -4321,47 +4437,47 @@ Returns whether node and otherNode have the same properties.
 
 [DarkForestButton](DarkForestButton.md).[isSameNode](DarkForestButton.md#issamenode)
 
----
+___
 
 ### lookupNamespaceURI
 
-▸ **lookupNamespaceURI**(`prefix`): `null` \| `string`
+▸ **lookupNamespaceURI**(`prefix`): ``null`` \| `string`
 
 #### Parameters
 
-| Name     | Type               |
-| :------- | :----------------- |
-| `prefix` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `prefix` | ``null`` \| `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[lookupNamespaceURI](DarkForestButton.md#lookupnamespaceuri)
 
----
+___
 
 ### lookupPrefix
 
-▸ **lookupPrefix**(`namespace`): `null` \| `string`
+▸ **lookupPrefix**(`namespace`): ``null`` \| `string`
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
 
 #### Returns
 
-`null` \| `string`
+``null`` \| `string`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[lookupPrefix](DarkForestButton.md#lookupprefix)
 
----
+___
 
 ### matches
 
@@ -4371,8 +4487,8 @@ Returns true if matching selectors against element's root yields element, and fa
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -4383,7 +4499,7 @@ Returns true if matching selectors against element's root yields element, and fa
 
 [DarkForestButton](DarkForestButton.md).[matches](DarkForestButton.md#matches)
 
----
+___
 
 ### normalize
 
@@ -4399,7 +4515,7 @@ Removes empty exclusive Text nodes and concatenates the data of remaining contig
 
 [DarkForestButton](DarkForestButton.md).[normalize](DarkForestButton.md#normalize)
 
----
+___
 
 ### prepend
 
@@ -4411,8 +4527,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -4423,79 +4539,79 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[prepend](DarkForestButton.md#prepend)
 
----
+___
 
 ### querySelector
 
-▸ **querySelector**<`K`\>(`selectors`): `null` \| `HTMLElementTagNameMap`[`K`]
+▸ **querySelector**<`K`\>(`selectors`): ``null`` \| `HTMLElementTagNameMap`[`K`]
 
 Returns the first element that is a descendant of node that matches selectors.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
-`null` \| `HTMLElementTagNameMap`[`K`]
+``null`` \| `HTMLElementTagNameMap`[`K`]
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[querySelector](DarkForestButton.md#queryselector)
 
-▸ **querySelector**<`K`\>(`selectors`): `null` \| `SVGElementTagNameMap`[`K`]
+▸ **querySelector**<`K`\>(`selectors`): ``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
-`null` \| `SVGElementTagNameMap`[`K`]
+``null`` \| `SVGElementTagNameMap`[`K`]
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[querySelector](DarkForestButton.md#queryselector)
 
-▸ **querySelector**<`E`\>(`selectors`): `null` \| `E`
+▸ **querySelector**<`E`\>(`selectors`): ``null`` \| `E`
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
 
-`null` \| `E`
+``null`` \| `E`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[querySelector](DarkForestButton.md#queryselector)
 
----
+___
 
 ### querySelectorAll
 
@@ -4505,15 +4621,15 @@ Returns all element descendants of node that match selectors.
 
 #### Type parameters
 
-| Name | Type                                  |
-| :--- | :------------------------------------ |
-| `K`  | extends keyof `HTMLElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
@@ -4527,15 +4643,15 @@ Returns all element descendants of node that match selectors.
 
 #### Type parameters
 
-| Name | Type                                 |
-| :--- | :----------------------------------- |
-| `K`  | extends keyof `SVGElementTagNameMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `SVGElementTagNameMap` |
 
 #### Parameters
 
-| Name        | Type |
-| :---------- | :--- |
-| `selectors` | `K`  |
+| Name | Type |
+| :------ | :------ |
+| `selectors` | `K` |
 
 #### Returns
 
@@ -4549,14 +4665,14 @@ Returns all element descendants of node that match selectors.
 
 #### Type parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `E`  | extends `Element` = `Element` |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `Element` = `Element` |
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -4567,7 +4683,7 @@ Returns all element descendants of node that match selectors.
 
 [DarkForestButton](DarkForestButton.md).[querySelectorAll](DarkForestButton.md#queryselectorall)
 
----
+___
 
 ### releasePointerCapture
 
@@ -4575,8 +4691,8 @@ Returns all element descendants of node that match selectors.
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -4587,7 +4703,7 @@ Returns all element descendants of node that match selectors.
 
 [DarkForestButton](DarkForestButton.md).[releasePointerCapture](DarkForestButton.md#releasepointercapture)
 
----
+___
 
 ### remove
 
@@ -4603,7 +4719,7 @@ Removes node.
 
 [DarkForestButton](DarkForestButton.md).[remove](DarkForestButton.md#remove)
 
----
+___
 
 ### removeAttribute
 
@@ -4613,8 +4729,8 @@ Removes element's first attribute whose qualified name is qualifiedName.
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
 
 #### Returns
@@ -4625,7 +4741,7 @@ Removes element's first attribute whose qualified name is qualifiedName.
 
 [DarkForestButton](DarkForestButton.md).[removeAttribute](DarkForestButton.md#removeattribute)
 
----
+___
 
 ### removeAttributeNS
 
@@ -4635,10 +4751,10 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 #### Parameters
 
-| Name        | Type               |
-| :---------- | :----------------- |
-| `namespace` | `null` \| `string` |
-| `localName` | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `localName` | `string` |
 
 #### Returns
 
@@ -4648,7 +4764,7 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 [DarkForestButton](DarkForestButton.md).[removeAttributeNS](DarkForestButton.md#removeattributens)
 
----
+___
 
 ### removeAttributeNode
 
@@ -4656,8 +4772,8 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
@@ -4668,7 +4784,7 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 [DarkForestButton](DarkForestButton.md).[removeAttributeNode](DarkForestButton.md#removeattributenode)
 
----
+___
 
 ### removeChild
 
@@ -4676,15 +4792,15 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type |
-| :------ | :--- |
-| `child` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `child` | `T` |
 
 #### Returns
 
@@ -4694,7 +4810,7 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 [DarkForestButton](DarkForestButton.md).[removeChild](DarkForestButton.md#removechild)
 
----
+___
 
 ### removeEventListener
 
@@ -4702,17 +4818,17 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 #### Type parameters
 
-| Name | Type                                |
-| :--- | :---------------------------------- |
-| `K`  | extends keyof `HTMLElementEventMap` |
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof `HTMLElementEventMap` |
 
 #### Parameters
 
-| Name       | Type                                                               |
-| :--------- | :----------------------------------------------------------------- |
-| `type`     | `K`                                                                |
+| Name | Type |
+| :------ | :------ |
+| `type` | `K` |
 | `listener` | (`this`: `HTMLElement`, `ev`: `HTMLElementEventMap`[`K`]) => `any` |
-| `options?` | `boolean` \| `EventListenerOptions`                                |
+| `options?` | `boolean` \| `EventListenerOptions` |
 
 #### Returns
 
@@ -4726,11 +4842,11 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 #### Parameters
 
-| Name       | Type                                 |
-| :--------- | :----------------------------------- |
-| `type`     | `string`                             |
+| Name | Type |
+| :------ | :------ |
+| `type` | `string` |
 | `listener` | `EventListenerOrEventListenerObject` |
-| `options?` | `boolean` \| `EventListenerOptions`  |
+| `options?` | `boolean` \| `EventListenerOptions` |
 
 #### Returns
 
@@ -4740,21 +4856,21 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 [DarkForestButton](DarkForestButton.md).[removeEventListener](DarkForestButton.md#removeeventlistener)
 
----
+___
 
 ### render
 
-▸ **render**(): `TemplateResult`<`1`\>
+▸ **render**(): `TemplateResult`<``1``\>
 
 #### Returns
 
-`TemplateResult`<`1`\>
+`TemplateResult`<``1``\>
 
 #### Overrides
 
 [DarkForestButton](DarkForestButton.md).[render](DarkForestButton.md#render)
 
----
+___
 
 ### replaceChild
 
@@ -4762,16 +4878,16 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 #### Type parameters
 
-| Name | Type           |
-| :--- | :------------- |
-| `T`  | extends `Node` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Node` |
 
 #### Parameters
 
-| Name    | Type   |
-| :------ | :----- |
-| `node`  | `Node` |
-| `child` | `T`    |
+| Name | Type |
+| :------ | :------ |
+| `node` | `Node` |
+| `child` | `T` |
 
 #### Returns
 
@@ -4781,7 +4897,7 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 [DarkForestButton](DarkForestButton.md).[replaceChild](DarkForestButton.md#replacechild)
 
----
+___
 
 ### replaceChildren
 
@@ -4793,8 +4909,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -4805,7 +4921,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[replaceChildren](DarkForestButton.md#replacechildren)
 
----
+___
 
 ### replaceWith
 
@@ -4817,8 +4933,8 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
+| Name | Type |
+| :------ | :------ |
 | `...nodes` | (`string` \| `Node`)[] |
 
 #### Returns
@@ -4829,7 +4945,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 [DarkForestButton](DarkForestButton.md).[replaceWith](DarkForestButton.md#replacewith)
 
----
+___
 
 ### requestFullscreen
 
@@ -4841,8 +4957,8 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name       | Type                |
-| :--------- | :------------------ |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `FullscreenOptions` |
 
 #### Returns
@@ -4853,7 +4969,7 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 [DarkForestButton](DarkForestButton.md).[requestFullscreen](DarkForestButton.md#requestfullscreen)
 
----
+___
 
 ### requestPointerLock
 
@@ -4867,7 +4983,7 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 [DarkForestButton](DarkForestButton.md).[requestPointerLock](DarkForestButton.md#requestpointerlock)
 
----
+___
 
 ### scroll
 
@@ -4875,8 +4991,8 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -4891,10 +5007,10 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -4904,7 +5020,7 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 [DarkForestButton](DarkForestButton.md).[scroll](DarkForestButton.md#scroll)
 
----
+___
 
 ### scrollBy
 
@@ -4912,8 +5028,8 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -4928,10 +5044,10 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -4941,7 +5057,7 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 [DarkForestButton](DarkForestButton.md).[scrollBy](DarkForestButton.md#scrollby)
 
----
+___
 
 ### scrollIntoView
 
@@ -4949,8 +5065,8 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name   | Type                                 |
-| :----- | :----------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `arg?` | `boolean` \| `ScrollIntoViewOptions` |
 
 #### Returns
@@ -4961,7 +5077,7 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 [DarkForestButton](DarkForestButton.md).[scrollIntoView](DarkForestButton.md#scrollintoview)
 
----
+___
 
 ### scrollTo
 
@@ -4969,8 +5085,8 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name       | Type              |
-| :--------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ScrollToOptions` |
 
 #### Returns
@@ -4985,10 +5101,10 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `x`  | `number` |
-| `y`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
@@ -4998,7 +5114,7 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 [DarkForestButton](DarkForestButton.md).[scrollTo](DarkForestButton.md#scrollto)
 
----
+___
 
 ### setAttribute
 
@@ -5008,10 +5124,10 @@ Sets the value of element's first attribute whose qualified name is qualifiedNam
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `qualifiedName` | `string` |
-| `value`         | `string` |
+| `value` | `string` |
 
 #### Returns
 
@@ -5021,7 +5137,7 @@ Sets the value of element's first attribute whose qualified name is qualifiedNam
 
 [DarkForestButton](DarkForestButton.md).[setAttribute](DarkForestButton.md#setattribute)
 
----
+___
 
 ### setAttributeNS
 
@@ -5031,11 +5147,11 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 #### Parameters
 
-| Name            | Type               |
-| :-------------- | :----------------- |
-| `namespace`     | `null` \| `string` |
-| `qualifiedName` | `string`           |
-| `value`         | `string`           |
+| Name | Type |
+| :------ | :------ |
+| `namespace` | ``null`` \| `string` |
+| `qualifiedName` | `string` |
+| `value` | `string` |
 
 #### Returns
 
@@ -5045,47 +5161,47 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 [DarkForestButton](DarkForestButton.md).[setAttributeNS](DarkForestButton.md#setattributens)
 
----
+___
 
 ### setAttributeNode
 
-▸ **setAttributeNode**(`attr`): `null` \| `Attr`
+▸ **setAttributeNode**(`attr`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[setAttributeNode](DarkForestButton.md#setattributenode)
 
----
+___
 
 ### setAttributeNodeNS
 
-▸ **setAttributeNodeNS**(`attr`): `null` \| `Attr`
+▸ **setAttributeNodeNS**(`attr`): ``null`` \| `Attr`
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `attr` | `Attr` |
 
 #### Returns
 
-`null` \| `Attr`
+``null`` \| `Attr`
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[setAttributeNodeNS](DarkForestButton.md#setattributenodens)
 
----
+___
 
 ### setPointerCapture
 
@@ -5093,8 +5209,8 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `pointerId` | `number` |
 
 #### Returns
@@ -5105,7 +5221,7 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 [DarkForestButton](DarkForestButton.md).[setPointerCapture](DarkForestButton.md#setpointercapture)
 
----
+___
 
 ### toggleAttribute
 
@@ -5117,10 +5233,10 @@ Returns true if qualifiedName is now present, and false otherwise.
 
 #### Parameters
 
-| Name            | Type      |
-| :-------------- | :-------- |
-| `qualifiedName` | `string`  |
-| `force?`        | `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `qualifiedName` | `string` |
+| `force?` | `boolean` |
 
 #### Returns
 
@@ -5130,18 +5246,20 @@ Returns true if qualifiedName is now present, and false otherwise.
 
 [DarkForestButton](DarkForestButton.md).[toggleAttribute](DarkForestButton.md#toggleattribute)
 
----
+___
 
 ### webkitMatchesSelector
 
 ▸ **webkitMatchesSelector**(`selectors`): `boolean`
 
-**`deprecated`** This is a legacy alias of `matches`.
+**`Deprecated`**
+
+This is a legacy alias of `matches`.
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `selectors` | `string` |
 
 #### Returns
@@ -5152,7 +5270,7 @@ Returns true if qualifiedName is now present, and false otherwise.
 
 [DarkForestButton](DarkForestButton.md).[webkitMatchesSelector](DarkForestButton.md#webkitmatchesselector)
 
----
+___
 
 ### addInitializer
 
@@ -5171,7 +5289,7 @@ const myDecorator = (target: typeof ReactiveElement, key: string) => {
     // This is run during construction of the element
     new MyController(instance);
   });
-};
+}
 ```
 
 Decorating a field will then cause each instance to run an initializer
@@ -5188,12 +5306,12 @@ subclass does not add it to a superclass. Since initializers are run in
 constructors, initializers will run in order of the class hierarchy,
 starting with superclasses and progressing to the instance's class.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name          | Type          |
-| :------------ | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `initializer` | `Initializer` |
 
 #### Returns
@@ -5204,7 +5322,7 @@ starting with superclasses and progressing to the instance's class.
 
 [DarkForestButton](DarkForestButton.md).[addInitializer](DarkForestButton.md#addinitializer)
 
----
+___
 
 ### finalize
 
@@ -5214,7 +5332,7 @@ Creates property accessors for registered properties, sets up element
 styling, and ensures any superclasses are also finalized. Returns true if
 the element was finalized.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Returns
 
@@ -5224,7 +5342,7 @@ the element was finalized.
 
 [DarkForestButton](DarkForestButton.md).[finalize](DarkForestButton.md#finalize)
 
----
+___
 
 ## attributes Methods
 
@@ -5236,11 +5354,11 @@ Synchronizes property values when attributes change.
 
 #### Parameters
 
-| Name    | Type               |
-| :------ | :----------------- |
-| `name`  | `string`           |
-| `_old`  | `null` \| `string` |
-| `value` | `null` \| `string` |
+| Name | Type |
+| :------ | :------ |
+| `name` | `string` |
+| `_old` | ``null`` \| `string` |
+| `value` | ``null`` \| `string` |
 
 #### Returns
 
@@ -5250,7 +5368,7 @@ Synchronizes property values when attributes change.
 
 [DarkForestButton](DarkForestButton.md).[attributeChangedCallback](DarkForestButton.md#attributechangedcallback)
 
----
+___
 
 ## controllers Methods
 
@@ -5267,8 +5385,8 @@ controller's `hostConnected()` callback will be immediately called.
 
 #### Parameters
 
-| Name         | Type                 |
-| :----------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `controller` | `ReactiveController` |
 
 #### Returns
@@ -5279,7 +5397,7 @@ controller's `hostConnected()` callback will be immediately called.
 
 [DarkForestButton](DarkForestButton.md).[addController](DarkForestButton.md#addcontroller)
 
----
+___
 
 ### removeController
 
@@ -5289,8 +5407,8 @@ Removes a `ReactiveController` from the element.
 
 #### Parameters
 
-| Name         | Type                 |
-| :----------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `controller` | `ReactiveController` |
 
 #### Returns
@@ -5301,7 +5419,7 @@ Removes a `ReactiveController` from the element.
 
 [DarkForestButton](DarkForestButton.md).[removeController](DarkForestButton.md#removecontroller)
 
----
+___
 
 ## properties Methods
 
@@ -5310,7 +5428,7 @@ Removes a `ReactiveController` from the element.
 ▸ `Static` **createProperty**(`name`, `options?`): `void`
 
 Creates a property accessor on the element prototype if one does not exist
-and stores a {@linkcode PropertyDeclaration} for the property with the
+and stores a PropertyDeclaration for the property with the
 given options. The property setter calls the property's `hasChanged`
 property option or uses a strict identity check to determine whether or not
 to request an update.
@@ -5330,13 +5448,13 @@ static createProperty(name, options) {
 }
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name       | Type                                         |
-| :--------- | :------------------------------------------- |
-| `name`     | `PropertyKey`                                |
+| Name | Type |
+| :------ | :------ |
+| `name` | `PropertyKey` |
 | `options?` | `PropertyDeclaration`<`unknown`, `unknown`\> |
 
 #### Returns
@@ -5347,7 +5465,7 @@ static createProperty(name, options) {
 
 [DarkForestButton](DarkForestButton.md).[createProperty](DarkForestButton.md#createproperty)
 
----
+___
 
 ### getPropertyDescriptor
 
@@ -5360,7 +5478,8 @@ For example,
 ```ts
 class MyElement extends LitElement {
   static getPropertyDescriptor(name, key, options) {
-    const defaultDescriptor = super.getPropertyDescriptor(name, key, options);
+    const defaultDescriptor =
+        super.getPropertyDescriptor(name, key, options);
     const setter = defaultDescriptor.set;
     return {
       get: defaultDescriptor.get,
@@ -5369,20 +5488,20 @@ class MyElement extends LitElement {
         // custom action.
       },
       configurable: true,
-      enumerable: true,
-    };
+      enumerable: true
+    }
   }
 }
 ```
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name      | Type                                         |
-| :-------- | :------------------------------------------- |
-| `name`    | `PropertyKey`                                |
-| `key`     | `string` \| `symbol`                         |
+| Name | Type |
+| :------ | :------ |
+| `name` | `PropertyKey` |
+| `key` | `string` \| `symbol` |
 | `options` | `PropertyDeclaration`<`unknown`, `unknown`\> |
 
 #### Returns
@@ -5393,7 +5512,7 @@ class MyElement extends LitElement {
 
 [DarkForestButton](DarkForestButton.md).[getPropertyDescriptor](DarkForestButton.md#getpropertydescriptor)
 
----
+___
 
 ### getPropertyOptions
 
@@ -5408,14 +5527,14 @@ Note, this method should be considered "final" and not overridden. To
 customize the options for a given property, override
 [`createProperty`](DarkForestShortcutButton.md#createproperty).
 
-**`nocollapse`**
+**`Nocollapse`**
 
-**`final`**
+**`Final`**
 
 #### Parameters
 
-| Name   | Type          |
-| :----- | :------------ |
+| Name | Type |
+| :------ | :------ |
 | `name` | `PropertyKey` |
 
 #### Returns
@@ -5426,7 +5545,7 @@ customize the options for a given property, override
 
 [DarkForestButton](DarkForestButton.md).[getPropertyOptions](DarkForestButton.md#getpropertyoptions)
 
----
+___
 
 ## rendering Methods
 
@@ -5442,7 +5561,7 @@ customize the options for a given property, override
 
 [DarkForestButton](DarkForestButton.md).[createRenderRoot](DarkForestButton.md#createrenderroot)
 
----
+___
 
 ## styles Methods
 
@@ -5460,12 +5579,12 @@ especially when composing via subclassing. The last item is kept to try
 to preserve the cascade order with the assumption that it's most important
 that last added styles override previous styles.
 
-**`nocollapse`**
+**`Nocollapse`**
 
 #### Parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `styles?` | `CSSResultGroup` |
 
 #### Returns
@@ -5476,7 +5595,7 @@ that last added styles override previous styles.
 
 [DarkForestButton](DarkForestButton.md).[finalizeStyles](DarkForestButton.md#finalizestyles)
 
----
+___
 
 ## updates Methods
 
@@ -5490,8 +5609,8 @@ update.
 
 #### Parameters
 
-| Name               | Type      |
-| :----------------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `_requestedUpdate` | `boolean` |
 
 #### Returns
@@ -5502,7 +5621,7 @@ update.
 
 [DarkForestButton](DarkForestButton.md).[enableUpdating](DarkForestButton.md#enableupdating)
 
----
+___
 
 ### firstUpdated
 
@@ -5516,8 +5635,8 @@ again after this update cycle completes.
 
 #### Parameters
 
-| Name                 | Type                                                | Description                               |
-| :------------------- | :-------------------------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `_changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> | Map of changed properties with old values |
 
 #### Returns
@@ -5528,7 +5647,7 @@ again after this update cycle completes.
 
 [DarkForestButton](DarkForestButton.md).[firstUpdated](DarkForestButton.md#firstupdated)
 
----
+___
 
 ### getUpdateComplete
 
@@ -5557,13 +5676,13 @@ class MyElement extends LitElement {
 `Promise`<`boolean`\>
 
 A promise of a boolean that resolves to true if the update completed
-without triggering another update.
+    without triggering another update.
 
 #### Inherited from
 
 [DarkForestButton](DarkForestButton.md).[getUpdateComplete](DarkForestButton.md#getupdatecomplete)
 
----
+___
 
 ### performUpdate
 
@@ -5591,7 +5710,7 @@ also calling `performUpdate()` to synchronously process updates difficult.
 
 [DarkForestButton](DarkForestButton.md).[performUpdate](DarkForestButton.md#performupdate)
 
----
+___
 
 ### requestUpdate
 
@@ -5606,11 +5725,11 @@ options are honored.
 
 #### Parameters
 
-| Name        | Type                                         | Description                                                          |
-| :---------- | :------------------------------------------- | :------------------------------------------------------------------- |
-| `name?`     | `PropertyKey`                                | name of requesting property                                          |
-| `oldValue?` | `unknown`                                    | old value of requesting property                                     |
-| `options?`  | `PropertyDeclaration`<`unknown`, `unknown`\> | property options to use instead of the previously configured options |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name?` | `PropertyKey` | name of requesting property |
+| `oldValue?` | `unknown` | old value of requesting property |
+| `options?` | `PropertyDeclaration`<`unknown`, `unknown`\> | property options to use instead of the previously     configured options |
 
 #### Returns
 
@@ -5620,7 +5739,7 @@ options are honored.
 
 [DarkForestButton](DarkForestButton.md).[requestUpdate](DarkForestButton.md#requestupdate)
 
----
+___
 
 ### scheduleUpdate
 
@@ -5649,7 +5768,7 @@ override protected async scheduleUpdate(): Promise<unknown> {
 
 [DarkForestButton](DarkForestButton.md).[scheduleUpdate](DarkForestButton.md#scheduleupdate)
 
----
+___
 
 ### shouldUpdate
 
@@ -5661,8 +5780,8 @@ customized to control when to update.
 
 #### Parameters
 
-| Name                 | Type                                                | Description                               |
-| :------------------- | :-------------------------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `_changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> | Map of changed properties with old values |
 
 #### Returns
@@ -5673,7 +5792,7 @@ customized to control when to update.
 
 [DarkForestButton](DarkForestButton.md).[shouldUpdate](DarkForestButton.md#shouldupdate)
 
----
+___
 
 ### update
 
@@ -5681,12 +5800,12 @@ customized to control when to update.
 
 Updates the element. This method reflects property values to attributes
 and calls `render` to render DOM via lit-html. Setting properties inside
-this method will _not_ trigger another update.
+this method will *not* trigger another update.
 
 #### Parameters
 
-| Name                | Type                                                | Description                               |
-| :------------------ | :-------------------------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> | Map of changed properties with old values |
 
 #### Returns
@@ -5697,7 +5816,7 @@ this method will _not_ trigger another update.
 
 [DarkForestButton](DarkForestButton.md).[update](DarkForestButton.md#update)
 
----
+___
 
 ### updated
 
@@ -5711,8 +5830,8 @@ again after this update cycle completes.
 
 #### Parameters
 
-| Name                 | Type                                                | Description                               |
-| :------------------- | :-------------------------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `_changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> | Map of changed properties with old values |
 
 #### Returns
@@ -5723,7 +5842,7 @@ again after this update cycle completes.
 
 [DarkForestButton](DarkForestButton.md).[updated](DarkForestButton.md#updated)
 
----
+___
 
 ### willUpdate
 
@@ -5731,8 +5850,8 @@ again after this update cycle completes.
 
 #### Parameters
 
-| Name                 | Type                                                |
-| :------------------- | :-------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_changedProperties` | `Map`<`string` \| `number` \| `symbol`, `unknown`\> |
 
 #### Returns

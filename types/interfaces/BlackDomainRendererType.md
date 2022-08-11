@@ -15,7 +15,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Draws all queued planets with black domain effect.
 
 `void`
 
----
+___
 
 ### queueBlackDomain
 
@@ -42,11 +42,11 @@ Queue the planet that has been dystroyed to be drawn
 
 #### Parameters
 
-| Name      | Type                                      | Description                                           |
-| :-------- | :---------------------------------------- | :---------------------------------------------------- |
-| `planet`  | [`Planet`](../README.md#planet)           | an object that contains info about the current planet |
-| `centerW` | [`WorldCoords`](../README.md#worldcoords) | Location of the planet relative to the game world     |
-| `radiusW` | `number`                                  | Radius of the planet relative to the game world       |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `planet` | [`Planet`](../README.md#planet) | an object that contains info about the current planet |
+| `centerW` | [`WorldCoords`](../README.md#worldcoords) | Location of the planet relative to the game world |
+| `radiusW` | `number` | Radius of the planet relative to the game world |
 
 #### Returns
 

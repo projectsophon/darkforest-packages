@@ -1,13 +1,6 @@
-import * as decoders from 'decoders';
-import type { ExactArray10, ExactArray4, ExactArray5, Tuple6 } from './decoder-helpers';
-import {
-  array6,
-  between,
-  exactArray10,
-  exactArray4,
-  exactArray5,
-  withDefault,
-} from './decoder-helpers';
+import * as decoders from "decoders";
+import type { ExactArray10, ExactArray4, ExactArray5, Tuple6 } from "./decoder-helpers";
+import { array6, between, exactArray10, exactArray4, exactArray5, withDefault } from "./decoder-helpers";
 
 type PlanetTypeWeights = ExactArray4<ExactArray10<ExactArray5<number>>>;
 
@@ -147,5 +140,5 @@ export const decodeInitializers = decoders.guard(
     CAPTURE_ZONE_HOLD_BLOCKS_REQUIRED: withDefault(decoders.number, 16),
     CAPTURE_ZONES_PER_5000_WORLD_RADIUS: withDefault(decoders.number, 1),
   }),
-  { style: 'simple' }
+  { style: "simple" }
 );

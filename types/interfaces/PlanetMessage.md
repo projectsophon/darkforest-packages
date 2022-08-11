@@ -4,9 +4,9 @@ We can save these to and retrieve these from the database.
 
 ## Type parameters
 
-| Name | Type                                                          |
-| :--- | :------------------------------------------------------------ |
-| `T`  | extends [`PlanetMessageBody`](../README.md#planetmessagebody) |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`PlanetMessageBody`](../README.md#planetmessagebody) |
 
 ## Table of contents
 
@@ -25,32 +25,32 @@ We can save these to and retrieve these from the database.
 
 • **body**: `T`
 
----
+___
 
 ### id
 
 • **id**: `string`
 
----
+___
 
 ### planetId
 
 • **planetId**: [`LocationId`](../README.md#locationid)
 
----
+___
 
 ### sender
 
 • **sender**: [`EthAddress`](../README.md#ethaddress)
 
----
+___
 
 ### timeCreated
 
 • **timeCreated**: `number`
 
----
+___
 
 ### type
 
-• **type**: [`PlanetMessageType`](../README.md#planetmessagetype)
+• **type**: [`PlanetMessageType`](../README.md#planetmessagetype-1)

@@ -17,15 +17,15 @@
 
 #### Parameters
 
-| Name | Type                                         |
-| :--- | :------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `tx` | [`Transaction`](Transaction.md)<`TxIntent`\> |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### getTransactions
 
@@ -33,21 +33,21 @@
 
 #### Type parameters
 
-| Name | Type               |
-| :--- | :----------------- |
-| `T`  | extends `TxIntent` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `TxIntent` |
 
 #### Parameters
 
-| Name                   | Type                                                                        |
-| :--------------------- | :-------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `transactionPredicate` | (`u`: [`Transaction`](Transaction.md)<`TxIntent`\>) => u is Transaction<T\> |
 
 #### Returns
 
 [`Transaction`](Transaction.md)<`T`\>[]
 
----
+___
 
 ### hasTransaction
 
@@ -55,21 +55,21 @@
 
 #### Type parameters
 
-| Name | Type               |
-| :--- | :----------------- |
-| `T`  | extends `TxIntent` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `TxIntent` |
 
 #### Parameters
 
-| Name                   | Type                                                                        |
-| :--------------------- | :-------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `transactionPredicate` | (`u`: [`Transaction`](Transaction.md)<`TxIntent`\>) => u is Transaction<T\> |
 
 #### Returns
 
 `boolean`
 
----
+___
 
 ### removeTransaction
 
@@ -77,8 +77,8 @@
 
 #### Parameters
 
-| Name | Type                                         |
-| :--- | :------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `tx` | [`Transaction`](Transaction.md)<`TxIntent`\> |
 
 #### Returns

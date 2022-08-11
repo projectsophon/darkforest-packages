@@ -1,8 +1,8 @@
 # Interface: Rectangle
 
 Ok, this is gonna sound weird, but all rectangles are squares. Also, we only permit side lengths
-that are powers of two, and ALSO!! The side lengths must be between {@link MIN_CHUNK_SIZE} and
-{@link MAX_CHUNK_SIZE}.
+that are powers of two, and ALSO!! The side lengths must be between MIN_CHUNK_SIZE and
+MAX_CHUNK_SIZE.
 
 ## Table of contents
 
@@ -17,7 +17,7 @@ that are powers of two, and ALSO!! The side lengths must be between {@link MIN_C
 
 • **bottomLeft**: [`WorldCoords`](../README.md#worldcoords)
 
----
+___
 
 ### sideLength
 

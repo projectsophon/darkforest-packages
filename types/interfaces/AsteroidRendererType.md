@@ -15,7 +15,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Draws all queued Asteroids.
 
 `void`
 
----
+___
 
 ### queueAsteroid
 
@@ -41,12 +41,12 @@ The implementing renderer should contains its own back buffer.
 
 #### Parameters
 
-| Name      | Type                              | Description                                                                     |
-| :-------- | :-------------------------------- | :------------------------------------------------------------------------------ |
-| `planet`  | [`Planet`](../README.md#planet)   | an object that contains info about the current planet the Asteroid is revolving |
-| `centerW` | [`CanvasCoords`](CanvasCoords.md) | represents the coordinates of the planet relative to the game world.            |
-| `radiusW` | `number`                          | represents the radius of the planet relative to the size of the game world      |
-| `color?`  | [`RGBVec`](../README.md#rgbvec)   | -                                                                               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `planet` | [`Planet`](../README.md#planet) | an object that contains info about the current planet the Asteroid is revolving |
+| `centerW` | [`CanvasCoords`](CanvasCoords.md) | represents the coordinates of the planet relative to the game world. |
+| `radiusW` | `number` | represents the radius of the planet relative to the size of the game world |
+| `color?` | [`RGBVec`](../README.md#rgbvec) | - |
 
 #### Returns
 

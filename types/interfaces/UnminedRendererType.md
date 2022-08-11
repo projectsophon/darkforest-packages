@@ -15,7 +15,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Draws all undiscovered space
 
 `void`
 
----
+___
 
 ### queueRect
 
@@ -42,13 +42,13 @@ Called to queue up a chunk of unmined space to be drawn
 
 #### Parameters
 
-| Name      | Type                              | Description                                               |
-| :-------- | :-------------------------------- | :-------------------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `-param0` | [`CanvasCoords`](CanvasCoords.md) | the x and y positon on the canvas. The bottom left corner |
-| `width`   | `number`                          | the width of the chunk                                    |
-| `height`  | `number`                          | the height of the chunk                                   |
-| `color?`  | [`RGBVec`](../README.md#rgbvec)   | optional the color of the chunk                           |
-| `zIdx?`   | `number`                          | Z axis                                                    |
+| `width` | `number` | the width of the chunk |
+| `height` | `number` | the height of the chunk |
+| `color?` | [`RGBVec`](../README.md#rgbvec) | optional the color of the chunk |
+| `zIdx?` | `number` | Z axis |
 
 #### Returns
 

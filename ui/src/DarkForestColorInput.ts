@@ -1,10 +1,10 @@
-import { css, html, LitElement, unsafeCSS } from 'lit';
-import { createRef, ref } from 'lit/directives/ref.js';
-import * as dfstyles from './styles';
+import { css, html, LitElement, unsafeCSS } from "lit";
+import { createRef, ref } from "lit/directives/ref.js";
+import * as dfstyles from "./styles";
 
 export class DarkForestColorInput extends LitElement {
   // Not part of LitElement but let's tack on the tagName for easier registration
-  static tagName = 'df-color-input';
+  static tagName = "df-color-input";
 
   // Defining element styles without a decorator
   // These are injected into the shadowRoot so they aren't applied globally
@@ -65,7 +65,7 @@ export class DarkForestColorInput extends LitElement {
   // Properties defined above will have a getter/setter created on the component,
   // but we want to define their type and/or defaults on the component
   disabled?: boolean;
-  value = '';
+  value = "";
   selected = false;
   readonly = false;
 
@@ -80,8 +80,7 @@ export class DarkForestColorInput extends LitElement {
       @input=${this._handleInput}
       @keyup=${this._handleKeyUp}
       @keydown=${this._handleKeyDown}
-      .value=${this.value}
-    />`;
+      .value=${this.value} />`;
   }
 
   firstUpdated() {

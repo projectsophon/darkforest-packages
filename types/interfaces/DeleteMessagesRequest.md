@@ -15,7 +15,7 @@ Asks the webserver to delete some messages.
 
 • **ids**: `string`[]
 
----
+___
 
 ### locationId
 

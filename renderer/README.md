@@ -23,7 +23,7 @@
 - [RendererGameContext](interfaces/RendererGameContext.md)
 - [Uniforms](interfaces/Uniforms.md)
 
-### Type aliases
+### Type Aliases
 
 - [AttribData](README.md#attribdata)
 - [AttribManagers](README.md#attribmanagers)
@@ -44,7 +44,7 @@
 - [getUniformSetter](README.md#getuniformsetter)
 - [glsl](README.md#glsl)
 
-## Type aliases
+## Type Aliases
 
 ### AttribData
 
@@ -54,7 +54,7 @@
 
 ▪ [key: `string`]: `AttribProps`
 
----
+___
 
 ### AttribManagers
 
@@ -62,11 +62,11 @@
 
 #### Type parameters
 
-| Name | Type                                                                       |
-| :--- | :------------------------------------------------------------------------- |
-| `T`  | extends [`EngineProgramDefinition`](interfaces/EngineProgramDefinition.md) |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`EngineProgramDefinition`](interfaces/EngineProgramDefinition.md) |
 
----
+___
 
 ### AttributeSetters
 
@@ -74,17 +74,17 @@
 
 #### Type parameters
 
-| Name | Type                                             |
-| :--- | :----------------------------------------------- |
-| `U`  | extends [`Attributes`](interfaces/Attributes.md) |
+| Name | Type |
+| :------ | :------ |
+| `U` | extends [`Attributes`](interfaces/Attributes.md) |
 
----
+___
 
 ### GLArray
 
 Ƭ **GLArray**: `Float32Array` \| `Uint8Array`
 
----
+___
 
 ### ProgramInfo
 
@@ -92,13 +92,13 @@
 
 #### Type declaration
 
-| Name           | Type                                 |
-| :------------- | :----------------------------------- |
-| `fragShader`   | `string`                             |
-| `uniforms`     | [`Uniforms`](interfaces/Uniforms.md) |
-| `vertexShader` | `string`                             |
+| Name | Type |
+| :------ | :------ |
+| `fragShader` | `string` |
+| `uniforms` | [`Uniforms`](interfaces/Uniforms.md) |
+| `vertexShader` | `string` |
 
----
+___
 
 ### UniformData
 
@@ -108,7 +108,7 @@
 
 ▪ [key: `string`]: `UniformProps`
 
----
+___
 
 ### UniformLocs
 
@@ -116,11 +116,11 @@
 
 #### Type parameters
 
-| Name | Type                                                                       |
-| :--- | :------------------------------------------------------------------------- |
-| `T`  | extends [`EngineProgramDefinition`](interfaces/EngineProgramDefinition.md) |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`EngineProgramDefinition`](interfaces/EngineProgramDefinition.md) |
 
----
+___
 
 ### UniformSetter
 
@@ -132,15 +132,15 @@
 
 ##### Parameters
 
-| Name | Type  |
-| :--- | :---- |
+| Name | Type |
+| :------ | :------ |
 | `el` | `any` |
 
 ##### Returns
 
 `void`
 
----
+___
 
 ### UniformSetters
 
@@ -148,9 +148,9 @@
 
 #### Type parameters
 
-| Name | Type                                                                       |
-| :--- | :------------------------------------------------------------------------- |
-| `T`  | extends [`EngineProgramDefinition`](interfaces/EngineProgramDefinition.md) |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`EngineProgramDefinition`](interfaces/EngineProgramDefinition.md) |
 
 ## Variables
 
@@ -160,54 +160,54 @@
 
 #### Type declaration
 
-| Name                     | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `colors`                 | { `artifacts`: { `shine`: `RGBVec` ; `trim`: `RGBVec` } ; `barbs`: `RGBVec` ; `barbsA`: `RGBAVec` ; `belt`: { `defense`: `RGBVec` ; `range`: `RGBVec` ; `silver`: `RGBVec` ; `speed`: `RGBVec` } ; `bonus`: { `defense`: `RGBVec` ; `energyCap`: `RGBVec` ; `energyGro`: `RGBVec` ; `range`: `RGBVec` ; `spaceJunk`: `RGBVec` ; `speed`: `RGBVec` } ; `gold`: `RGBVec` ; `orange`: `RGBVec` ; `orangeA`: `RGBAVec` ; `purple`: `RGBVec` ; `purpleA`: `RGBAVec` ; `range`: { `dash`: `RGBVec` ; `energy`: `RGBVec` } ; `red`: `RGBVec` ; `redA`: `RGBAVec` ; `voyage`: { `enemy`: `RGBVec` ; `enemyA`: `RGBAVec` ; `mine`: `RGBVec` ; `mineA`: `RGBAVec` ; `shipA`: `RGBAVec` } ; `white`: `RGBVec` ; `whiteA`: `RGBAVec` } |
-| `colors.artifacts`       | { `shine`: `RGBVec` ; `trim`: `RGBVec` }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.artifacts.shine` | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.artifacts.trim`  | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.barbs`           | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.barbsA`          | `RGBAVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `colors.belt`            | { `defense`: `RGBVec` ; `range`: `RGBVec` ; `silver`: `RGBVec` ; `speed`: `RGBVec` }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| `colors.belt.defense`    | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.belt.range`      | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.belt.silver`     | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.belt.speed`      | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.bonus`           | { `defense`: `RGBVec` ; `energyCap`: `RGBVec` ; `energyGro`: `RGBVec` ; `range`: `RGBVec` ; `spaceJunk`: `RGBVec` ; `speed`: `RGBVec` }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| `colors.bonus.defense`   | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.bonus.energyCap` | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.bonus.energyGro` | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.bonus.range`     | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.bonus.spaceJunk` | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.bonus.speed`     | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.gold`            | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.orange`          | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.orangeA`         | `RGBAVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `colors.purple`          | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.purpleA`         | `RGBAVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `colors.range`           | { `dash`: `RGBVec` ; `energy`: `RGBVec` }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `colors.range.dash`      | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.range.energy`    | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.red`             | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.redA`            | `RGBAVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `colors.voyage`          | { `enemy`: `RGBVec` ; `enemyA`: `RGBAVec` ; `mine`: `RGBVec` ; `mineA`: `RGBAVec` ; `shipA`: `RGBAVec` }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.voyage.enemy`    | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.voyage.enemyA`   | `RGBAVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `colors.voyage.mine`     | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.voyage.mineA`    | `RGBAVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `colors.voyage.shipA`    | `RGBAVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `colors.white`           | `RGBVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `colors.whiteA`          | `RGBAVec`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `dashLength`             | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `fontStyle`              | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `glyphs`                 | { `canvasDim`: `number` = 1024; `glyphH`: `number` = 64; `glyphW`: `number` = 40; `rowL`: `number` = 13; `scale`: `number` = 4 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `glyphs.canvasDim`       | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `glyphs.glyphH`          | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `glyphs.glyphW`          | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `glyphs.rowL`            | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `glyphs.scale`           | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `planet`                 | { `maxRadius`: `number` = 4 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| `planet.maxRadius`       | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Name | Type |
+| :------ | :------ |
+| `colors` | { `artifacts`: { `shine`: `RGBVec` ; `trim`: `RGBVec`  } ; `barbs`: `RGBVec` ; `barbsA`: `RGBAVec` ; `belt`: { `defense`: `RGBVec` ; `range`: `RGBVec` ; `silver`: `RGBVec` ; `speed`: `RGBVec`  } ; `bonus`: { `defense`: `RGBVec` ; `energyCap`: `RGBVec` ; `energyGro`: `RGBVec` ; `range`: `RGBVec` ; `spaceJunk`: `RGBVec` ; `speed`: `RGBVec`  } ; `gold`: `RGBVec` ; `orange`: `RGBVec` ; `orangeA`: `RGBAVec` ; `purple`: `RGBVec` ; `purpleA`: `RGBAVec` ; `range`: { `dash`: `RGBVec` ; `energy`: `RGBVec`  } ; `red`: `RGBVec` ; `redA`: `RGBAVec` ; `voyage`: { `enemy`: `RGBVec` ; `enemyA`: `RGBAVec` ; `mine`: `RGBVec` ; `mineA`: `RGBAVec` ; `shipA`: `RGBAVec`  } ; `white`: `RGBVec` ; `whiteA`: `RGBAVec`  } |
+| `colors.artifacts` | { `shine`: `RGBVec` ; `trim`: `RGBVec`  } |
+| `colors.artifacts.shine` | `RGBVec` |
+| `colors.artifacts.trim` | `RGBVec` |
+| `colors.barbs` | `RGBVec` |
+| `colors.barbsA` | `RGBAVec` |
+| `colors.belt` | { `defense`: `RGBVec` ; `range`: `RGBVec` ; `silver`: `RGBVec` ; `speed`: `RGBVec`  } |
+| `colors.belt.defense` | `RGBVec` |
+| `colors.belt.range` | `RGBVec` |
+| `colors.belt.silver` | `RGBVec` |
+| `colors.belt.speed` | `RGBVec` |
+| `colors.bonus` | { `defense`: `RGBVec` ; `energyCap`: `RGBVec` ; `energyGro`: `RGBVec` ; `range`: `RGBVec` ; `spaceJunk`: `RGBVec` ; `speed`: `RGBVec`  } |
+| `colors.bonus.defense` | `RGBVec` |
+| `colors.bonus.energyCap` | `RGBVec` |
+| `colors.bonus.energyGro` | `RGBVec` |
+| `colors.bonus.range` | `RGBVec` |
+| `colors.bonus.spaceJunk` | `RGBVec` |
+| `colors.bonus.speed` | `RGBVec` |
+| `colors.gold` | `RGBVec` |
+| `colors.orange` | `RGBVec` |
+| `colors.orangeA` | `RGBAVec` |
+| `colors.purple` | `RGBVec` |
+| `colors.purpleA` | `RGBAVec` |
+| `colors.range` | { `dash`: `RGBVec` ; `energy`: `RGBVec`  } |
+| `colors.range.dash` | `RGBVec` |
+| `colors.range.energy` | `RGBVec` |
+| `colors.red` | `RGBVec` |
+| `colors.redA` | `RGBAVec` |
+| `colors.voyage` | { `enemy`: `RGBVec` ; `enemyA`: `RGBAVec` ; `mine`: `RGBVec` ; `mineA`: `RGBAVec` ; `shipA`: `RGBAVec`  } |
+| `colors.voyage.enemy` | `RGBVec` |
+| `colors.voyage.enemyA` | `RGBAVec` |
+| `colors.voyage.mine` | `RGBVec` |
+| `colors.voyage.mineA` | `RGBAVec` |
+| `colors.voyage.shipA` | `RGBAVec` |
+| `colors.white` | `RGBVec` |
+| `colors.whiteA` | `RGBAVec` |
+| `dashLength` | `number` |
+| `fontStyle` | `string` |
+| `glyphs` | { `canvasDim`: `number` = 1024; `glyphH`: `number` = 64; `glyphW`: `number` = 40; `rowL`: `number` = 13; `scale`: `number` = 4 } |
+| `glyphs.canvasDim` | `number` |
+| `glyphs.glyphH` | `number` |
+| `glyphs.glyphW` | `number` |
+| `glyphs.rowL` | `number` |
+| `glyphs.scale` | `number` |
+| `planet` | { `maxRadius`: `number` = 4 } |
+| `planet.maxRadius` | `number` |
 
 ## Functions
 
@@ -220,17 +220,17 @@ Note that this function does not call gl.useProgram().
 
 #### Parameters
 
-| Name    | Type                     | Description                                     |
-| :------ | :----------------------- | :---------------------------------------------- |
-| `gl`    | `WebGL2RenderingContext` | The WebGL rendering context this uniform is in. |
-| `loc`   | `WebGLUniformLocation`   | The uniform location to write to.               |
-| `props` | `UniformProps`           | UniformProps for this uniform.                  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gl` | `WebGL2RenderingContext` | The WebGL rendering context this uniform is in. |
+| `loc` | `WebGLUniformLocation` | The uniform location to write to. |
+| `props` | `UniformProps` | UniformProps for this uniform. |
 
 #### Returns
 
 [`UniformSetter`](README.md#uniformsetter)
 
----
+___
 
 ### glsl
 
@@ -238,10 +238,10 @@ Note that this function does not call gl.useProgram().
 
 #### Parameters
 
-| Name      | Type                   |
-| :-------- | :--------------------- |
-| `arr`     | `TemplateStringsArray` |
-| `...args` | `any`[]                |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `TemplateStringsArray` |
+| `...args` | `any`[] |
 
 #### Returns
 

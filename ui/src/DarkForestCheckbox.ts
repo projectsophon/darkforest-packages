@@ -1,10 +1,10 @@
-import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
-import { createRef, ref } from 'lit/directives/ref.js';
-import * as dfstyles from './styles';
+import { css, html, LitElement, nothing, unsafeCSS } from "lit";
+import { createRef, ref } from "lit/directives/ref.js";
+import * as dfstyles from "./styles";
 
 export class DarkForestCheckbox extends LitElement {
   // Not part of LitElement but let's tack on the tagName for easier registration
-  static tagName = 'df-checkbox';
+  static tagName = "df-checkbox";
 
   // Defining element styles without a decorator
   // These are injected into the shadowRoot so they aren't applied globally
@@ -89,8 +89,7 @@ export class DarkForestCheckbox extends LitElement {
         @input=${this._handleInput}
         @keyup=${this._handleKeyUp}
         @keydown=${this._handleKeyDown}
-        .checked=${this.checked}
-      />${this.label ? html`<span class="labelContent">${this.label}</span>` : nothing}
+        .checked=${this.checked} />${this.label ? html`<span class="labelContent">${this.label}</span>` : nothing}
     </label>`;
   }
 

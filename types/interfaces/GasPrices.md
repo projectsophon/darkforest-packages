@@ -16,13 +16,13 @@ These are measured in gwei.
 
 • **average**: `number`
 
----
+___
 
 ### fast
 
 • **fast**: `number`
 
----
+___
 
 ### slow
 

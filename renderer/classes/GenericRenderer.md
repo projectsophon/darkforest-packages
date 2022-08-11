@@ -2,17 +2,16 @@
 
 Takes in a gl context, program sources (frag and vert shader),
 and data about attribs / uniforms and provides:
-
 - attrib managers
 - uniform setters
 - skeleton code for rendering in our engine via `flush()`
 
 ## Type parameters
 
-| Name | Type                                                                          |
-| :--- | :---------------------------------------------------------------------------- |
-| `T`  | extends [`EngineProgramDefinition`](../interfaces/EngineProgramDefinition.md) |
-| `U`  | extends [`WebGLManager`](WebGLManager.md) = [`WebGLManager`](WebGLManager.md) |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`EngineProgramDefinition`](../interfaces/EngineProgramDefinition.md) |
+| `U` | extends [`WebGLManager`](WebGLManager.md) = [`WebGLManager`](WebGLManager.md) |
 
 ## Hierarchy
 
@@ -52,17 +51,17 @@ Create a renderer from a GameGLManager and program data.
 
 #### Type parameters
 
-| Name | Type                                                                                |
-| :--- | :---------------------------------------------------------------------------------- |
-| `T`  | extends [`EngineProgramDefinition`](../interfaces/EngineProgramDefinition.md)       |
-| `U`  | extends [`WebGLManager`](WebGLManager.md)<`U`\> = [`WebGLManager`](WebGLManager.md) |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`EngineProgramDefinition`](../interfaces/EngineProgramDefinition.md) |
+| `U` | extends [`WebGLManager`](WebGLManager.md)<`U`\> = [`WebGLManager`](WebGLManager.md) |
 
 #### Parameters
 
-| Name          | Type | Description                                                   |
-| :------------ | :--- | :------------------------------------------------------------ |
-| `glManager`   | `U`  | GameGLManager which holds context for rendering this program. |
-| `programData` | `T`  | ProgramData describing this program.                          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `glManager` | `U` | GameGLManager which holds context for rendering this program. |
+| `programData` | `T` | ProgramData describing this program. |
 
 ## Properties
 
@@ -73,7 +72,7 @@ Create a renderer from a GameGLManager and program data.
 Uniform data for this program. Typically not used after construction.
 Kept for use in inherited classes.
 
----
+___
 
 ### attribManagers
 
@@ -81,7 +80,7 @@ Kept for use in inherited classes.
 
 A dictionary of attrib managers, keyed by attrib name.
 
----
+___
 
 ### manager
 
@@ -89,7 +88,7 @@ A dictionary of attrib managers, keyed by attrib name.
 
 GameGLManager corresponding to this program.
 
----
+___
 
 ### program
 
@@ -97,7 +96,7 @@ GameGLManager corresponding to this program.
 
 The program corresponding to this renderer.
 
----
+___
 
 ### uniformData
 
@@ -106,7 +105,7 @@ The program corresponding to this renderer.
 Uniform data for this program. Typically not used after construction.
 Kept for use in inherited classes.
 
----
+___
 
 ### uniformLocs
 
@@ -115,7 +114,7 @@ Kept for use in inherited classes.
 Uniform locs for this program. Typically not referenced directly,
 but rather through generated uniformSetters. Kept for use in inherited classes.
 
----
+___
 
 ### uniformSetters
 
@@ -123,7 +122,7 @@ but rather through generated uniformSetters. Kept for use in inherited classes.
 
 A dictionary of uniform setters, keyed by uniform name.
 
----
+___
 
 ### verts
 
@@ -141,15 +140,15 @@ Draw all buffered vertices to the screen.
 
 #### Parameters
 
-| Name       | Type       | Default value        | Description                                                     |
-| :--------- | :--------- | :------------------- | :-------------------------------------------------------------- |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
 | `drawMode` | `DrawMode` | `DrawMode.Triangles` | The drawing mode for the buffered vertices. Default: Triangles. |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setUniforms
 

@@ -13,8 +13,8 @@ var tracery = (function () {
 
     // No input? Add an error, but continue anyways
     if (settings.raw === undefined) {
-      this.errors.push('Empty input for node');
-      settings.raw = '';
+      this.errors.push("Empty input for node");
+      settings.raw = "";
     }
 
     // If the root node of an expansion, it will have the grammar passed as the 'parent'
@@ -36,19 +36,19 @@ var tracery = (function () {
     this.isExpanded = false;
 
     if (!this.grammar) {
-      console.warn('No grammar specified for this node', this);
+      console.warn("No grammar specified for this node", this);
     }
   };
 
   TraceryNode.prototype.toString = function () {
-    return "Node('" + this.raw + "' " + this.type + ' d:' + this.depth + ')';
+    return "Node('" + this.raw + "' " + this.type + " d:" + this.depth + ")";
   };
 
   // Expand the node (with the given child rule)
   //  Make children if the node has any
   TraceryNode.prototype.expandChildren = function (childRule, preventRecursion) {
     this.children = [];
-    this.finishedText = '';
+    this.finishedText = "";
 
     // Set the rule for making children,
     // and expand it into section
@@ -121,8 +121,7 @@ var tracery = (function () {
 
           // Make undo actions for all preactions (pops for each push)
           for (var i = 0; i < this.preactions.length; i++) {
-            if (this.preactions[i].type === 0)
-              this.postactions.push(this.preactions[i].createUndo());
+            if (this.preactions[i].type === 0) this.postactions.push(this.preactions[i].createUndo());
           }
 
           // Activate all the preactions
@@ -144,15 +143,15 @@ var tracery = (function () {
           for (var i = 0; i < this.modifiers.length; i++) {
             var modName = this.modifiers[i];
             var modParams = [];
-            if (modName.indexOf('(') > 0) {
+            if (modName.indexOf("(") > 0) {
               var regExp = /\(([^)]+)\)/;
 
               // Todo: ignore any escaped commas.  For now, commas always split
               var results = regExp.exec(this.modifiers[i]);
               if (!results || results.length < 2) {
               } else {
-                var modParams = results[1].split(',');
-                modName = this.modifiers[i].substring(0, modName.indexOf('('));
+                var modParams = results[1].split(",");
+                modName = this.modifiers[i].substring(0, modName.indexOf("("));
               }
             }
 
@@ -160,8 +159,8 @@ var tracery = (function () {
 
             // Missing modifier?
             if (!mod) {
-              this.errors.push('Missing modifier ' + modName);
-              this.finishedText += '((.' + modName + '))';
+              this.errors.push("Missing modifier " + modName);
+              this.finishedText += "((." + modName + "))";
             } else {
               this.finishedText = mod(this.finishedText, modParams);
             }
@@ -179,7 +178,7 @@ var tracery = (function () {
 
           // No visible text for an action
           // TODO: some visible text for if there is a failure to perform the action?
-          this.finishedText = '';
+          this.finishedText = "";
           break;
       }
     } else {
@@ -189,9 +188,9 @@ var tracery = (function () {
 
   TraceryNode.prototype.clearEscapeChars = function () {
     this.finishedText = this.finishedText
-      .replace(/\\\\/g, 'DOUBLEBACKSLASH')
-      .replace(/\\/g, '')
-      .replace(/DOUBLEBACKSLASH/g, '\\');
+      .replace(/\\\\/g, "DOUBLEBACKSLASH")
+      .replace(/\\/g, "")
+      .replace(/DOUBLEBACKSLASH/g, "\\");
   };
 
   // An action that occurs when a node is expanded
@@ -209,7 +208,7 @@ var tracery = (function () {
 
     this.node = node;
 
-    var sections = raw.split(':');
+    var sections = raw.split(":");
     this.target = sections[0];
 
     // No colon? A function!
@@ -220,7 +219,7 @@ var tracery = (function () {
     // Colon? It's either a push or a pop
     else {
       this.rule = sections[1];
-      if (this.rule === 'POP') {
+      if (this.rule === "POP") {
         this.type = 1;
       } else {
         this.type = 0;
@@ -230,7 +229,7 @@ var tracery = (function () {
 
   NodeAction.prototype.createUndo = function () {
     if (this.type === 0) {
-      return new NodeAction(this.node, this.target + ':POP');
+      return new NodeAction(this.node, this.target + ":POP");
     }
     // TODO Not sure how to make Undo actions for functions or POPs
     return null;
@@ -241,7 +240,7 @@ var tracery = (function () {
     switch (this.type) {
       case 0:
         // split into sections (the way to denote an array of rules)
-        this.ruleSections = this.rule.split(',');
+        this.ruleSections = this.rule.split(",");
         this.finishedRules = [];
         this.ruleNodes = [];
         for (var i = 0; i < this.ruleSections.length; i++) {
@@ -270,13 +269,13 @@ var tracery = (function () {
   NodeAction.prototype.toText = function () {
     switch (this.type) {
       case 0:
-        return this.target + ':' + this.rule;
+        return this.target + ":" + this.rule;
       case 1:
-        return this.target + ':POP';
+        return this.target + ":POP";
       case 2:
-        return '((some function))';
+        return "((some function))";
       default:
-        return '((Unknown Action))';
+        return "((Unknown Action))";
     }
   };
 
@@ -289,9 +288,9 @@ var tracery = (function () {
 
     if (Array.isArray(raw)) {
       this.defaultRules = raw;
-    } else if (typeof raw === 'string' || raw instanceof String) {
+    } else if (typeof raw === "string" || raw instanceof String) {
       this.defaultRules = [raw];
-    } else if (raw === 'object') {
+    } else if (raw === "object") {
       // TODO: support for conditional and hierarchical rule sets
     }
   }
@@ -328,7 +327,7 @@ var tracery = (function () {
       if (!distribution) distribution = this.grammar.distribution;
 
       switch (distribution) {
-        case 'shuffle':
+        case "shuffle":
           // create a shuffle desk
           if (!this.shuffledDeck || this.shuffledDeck.length === 0) {
             // make an array
@@ -343,11 +342,11 @@ var tracery = (function () {
           index = this.shuffledDeck.pop();
 
           break;
-        case 'weighted':
-          errors.push('Weighted distribution not yet implemented');
+        case "weighted":
+          errors.push("Weighted distribution not yet implemented");
           break;
-        case 'falloff':
-          errors.push('Falloff distribution not yet implemented');
+        case "falloff":
+          errors.push("Falloff distribution not yet implemented");
           break;
         default:
           index = Math.floor(Math.pow(rng(), this.falloff) * this.defaultRules.length);
@@ -359,7 +358,7 @@ var tracery = (function () {
       return this.defaultRules[index];
     }
 
-    errors.push('No default rules defined for ' + this);
+    errors.push("No default rules defined for " + this);
     return null;
   };
 
@@ -423,7 +422,7 @@ var tracery = (function () {
 
     if (this.stack.length === 0) {
       errors.push("The rule stack for '" + this.key + "' is empty, too many pops?");
-      return '((' + this.key + '))';
+      return "((" + this.key + "))";
     }
 
     return this.stack[this.stack.length - 1].selectRule();
@@ -507,7 +506,7 @@ var tracery = (function () {
       var key = keys[i];
       symbolJSON.push(' "' + key + '" : ' + this.symbols[key].rulesToJSON());
     }
-    return '{\n' + symbolJSON.join(',\n') + '\n}';
+    return "{\n" + symbolJSON.join(",\n") + "\n}";
   };
 
   // Create or push rules
@@ -539,7 +538,7 @@ var tracery = (function () {
 
     // No symbol?
     errors.push("No symbol for '" + key + "'");
-    return '((' + key + '))';
+    return "((" + key + "))";
   };
 
   // Parses a plaintext rule in the tracery syntax
@@ -563,7 +562,7 @@ var tracery = (function () {
           if (symbolSection === undefined) {
             symbolSection = sections[i].raw;
           } else {
-            throw 'multiple main sections in ' + tagContents;
+            throw "multiple main sections in " + tagContents;
           }
         } else {
           parsed.preactions.push(sections[i]);
@@ -573,7 +572,7 @@ var tracery = (function () {
       if (symbolSection === undefined) {
         //   throw ("no main section in " + tagContents);
       } else {
-        var components = symbolSection.split('.');
+        var components = symbolSection.split(".");
         parsed.symbol = components[0];
         parsed.modifiers = components.slice(1);
       }
@@ -589,7 +588,7 @@ var tracery = (function () {
       var errors = [];
       var start = 0;
 
-      var escapedSubstring = '';
+      var escapedSubstring = "";
       var lastEscapedChar = undefined;
 
       if (rule === null) {
@@ -601,12 +600,12 @@ var tracery = (function () {
 
       function createSection(start, end, type) {
         if (end - start < 1) {
-          if (type === 1) errors.push(start + ': empty tag');
-          if (type === 2) errors.push(start + ': empty action');
+          if (type === 1) errors.push(start + ": empty tag");
+          if (type === 2) errors.push(start + ": empty action");
         }
         var rawSubstring;
         if (lastEscapedChar !== undefined) {
-          rawSubstring = escapedSubstring + '\\' + rule.substring(lastEscapedChar + 1, end);
+          rawSubstring = escapedSubstring + "\\" + rule.substring(lastEscapedChar + 1, end);
         } else {
           rawSubstring = rule.substring(start, end);
         }
@@ -615,7 +614,7 @@ var tracery = (function () {
           raw: rawSubstring,
         });
         lastEscapedChar = undefined;
-        escapedSubstring = '';
+        escapedSubstring = "";
       }
 
       for (var i = 0; i < rule.length; i++) {
@@ -624,7 +623,7 @@ var tracery = (function () {
 
           switch (c) {
             // Enter a deeper bracketed section
-            case '[':
+            case "[":
               if (depth === 0 && !inTag) {
                 if (start < i) createSection(start, i, 0);
                 start = i + 1;
@@ -632,7 +631,7 @@ var tracery = (function () {
               depth++;
               break;
 
-            case ']':
+            case "]":
               depth--;
 
               // End a bracketed section
@@ -644,7 +643,7 @@ var tracery = (function () {
 
             // Hashtag
             //   ignore if not at depth 0, that means we are in a bracket
-            case '#':
+            case "#":
               if (depth === 0) {
                 if (inTag) {
                   createSection(start, i, 1);
@@ -657,7 +656,7 @@ var tracery = (function () {
               }
               break;
 
-            case '\\':
+            case "\\":
               escaped = true;
               escapedSubstring = escapedSubstring + rule.substring(start, i);
               start = i + 1;
@@ -671,13 +670,13 @@ var tracery = (function () {
       if (start < rule.length) createSection(start, rule.length, 0);
 
       if (inTag) {
-        errors.push('Unclosed tag');
+        errors.push("Unclosed tag");
       }
       if (depth > 0) {
-        errors.push('Too many [');
+        errors.push("Too many [");
       }
       if (depth < 0) {
-        errors.push('Too many ]');
+        errors.push("Too many ]");
       }
 
       // Strip out empty plaintext sections

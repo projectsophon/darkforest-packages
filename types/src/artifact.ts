@@ -1,13 +1,13 @@
-import type { Biome } from './game_types';
-import type { ArtifactId, EthAddress, LocationId, VoyageId } from './identifier';
-import type { TransactionCollection } from './transaction';
-import type { Upgrade } from './upgrade';
-import type { Abstract } from './utility';
+import type { Biome } from "./game_types";
+import type { ArtifactId, EthAddress, LocationId, VoyageId } from "./identifier";
+import type { TransactionCollection } from "./transaction";
+import type { Upgrade } from "./upgrade";
+import type { Abstract } from "./utility";
 
 /**
  * Abstract type representing an artifact type.
  */
-export type ArtifactType = Abstract<number, 'ArtifactType'>;
+export type ArtifactType = Abstract<number, "ArtifactType">;
 
 /**
  * Enumeration of artifact types.
@@ -36,27 +36,27 @@ export const ArtifactType = {
  * Mapping from ArtifactType to pretty-printed names.
  */
 export const ArtifactTypeNames = {
-  [ArtifactType.Unknown]: 'Unknown',
-  [ArtifactType.Monolith]: 'Monolith',
-  [ArtifactType.Colossus]: 'Colossus',
-  [ArtifactType.Spaceship]: 'Spaceship',
-  [ArtifactType.Pyramid]: 'Pyramid',
-  [ArtifactType.Wormhole]: 'Wormhole',
-  [ArtifactType.PlanetaryShield]: 'Planetary Shield',
-  [ArtifactType.BlackDomain]: 'Black Domain',
-  [ArtifactType.PhotoidCannon]: 'Photoid Cannon',
-  [ArtifactType.BloomFilter]: 'Bloom Filter',
-  [ArtifactType.ShipMothership]: 'Mothership',
-  [ArtifactType.ShipCrescent]: 'Crescent',
-  [ArtifactType.ShipWhale]: 'Whale',
-  [ArtifactType.ShipGear]: 'Gear',
-  [ArtifactType.ShipTitan]: 'Titan',
+  [ArtifactType.Unknown]: "Unknown",
+  [ArtifactType.Monolith]: "Monolith",
+  [ArtifactType.Colossus]: "Colossus",
+  [ArtifactType.Spaceship]: "Spaceship",
+  [ArtifactType.Pyramid]: "Pyramid",
+  [ArtifactType.Wormhole]: "Wormhole",
+  [ArtifactType.PlanetaryShield]: "Planetary Shield",
+  [ArtifactType.BlackDomain]: "Black Domain",
+  [ArtifactType.PhotoidCannon]: "Photoid Cannon",
+  [ArtifactType.BloomFilter]: "Bloom Filter",
+  [ArtifactType.ShipMothership]: "Mothership",
+  [ArtifactType.ShipCrescent]: "Crescent",
+  [ArtifactType.ShipWhale]: "Whale",
+  [ArtifactType.ShipGear]: "Gear",
+  [ArtifactType.ShipTitan]: "Titan",
 } as const;
 
 /**
  * Abstract type representing an artifact rarity level.
  */
-export type ArtifactRarity = Abstract<number, 'ArtifactRarity'>;
+export type ArtifactRarity = Abstract<number, "ArtifactRarity">;
 
 /**
  * Enumeration of artifact rarity levels. Common = 1, Mythic = 5
@@ -75,12 +75,12 @@ export const ArtifactRarity = {
  * Mapping from ArtifactRarity to pretty-printed names.
  */
 export const ArtifactRarityNames = {
-  [ArtifactRarity.Unknown]: 'Unknown',
-  [ArtifactRarity.Common]: 'Common',
-  [ArtifactRarity.Rare]: 'Rare',
-  [ArtifactRarity.Epic]: 'Epic',
-  [ArtifactRarity.Legendary]: 'Legendary',
-  [ArtifactRarity.Mythic]: 'Mythic',
+  [ArtifactRarity.Unknown]: "Unknown",
+  [ArtifactRarity.Common]: "Common",
+  [ArtifactRarity.Rare]: "Rare",
+  [ArtifactRarity.Epic]: "Epic",
+  [ArtifactRarity.Legendary]: "Legendary",
+  [ArtifactRarity.Mythic]: "Mythic",
 } as const;
 
 /**
@@ -122,38 +122,23 @@ export type Artifact = {
 // TODO: get this out of here
 
 const godGrammar = {
-  god1: [
-    "c'",
-    'za',
-    "ry'",
-    "ab'",
-    "bak'",
-    "dt'",
-    "ek'",
-    "fah'",
-    "q'",
-    'qo',
-    'van',
-    'bow',
-    'gui',
-    'si',
-  ],
+  god1: ["c'", "za", "ry'", "ab'", "bak'", "dt'", "ek'", "fah'", "q'", "qo", "van", "bow", "gui", "si"],
   god2: [
-    'thun',
-    'tchalla',
-    'thovo',
-    'saron',
-    'zoth',
-    'sharrj',
-    'thulu',
-    'ra',
-    'wer',
-    'doin',
-    'renstad',
-    'nevere',
-    'goth',
-    'anton',
-    'layton',
+    "thun",
+    "tchalla",
+    "thovo",
+    "saron",
+    "zoth",
+    "sharrj",
+    "thulu",
+    "ra",
+    "wer",
+    "doin",
+    "renstad",
+    "nevere",
+    "goth",
+    "anton",
+    "layton",
   ],
 };
 

@@ -1,5 +1,5 @@
-import type { EthAddress, LocationId } from './identifier';
-import type { WorldCoords, WorldLocation } from './world';
+import type { EthAddress, LocationId } from "./identifier";
+import type { WorldCoords, WorldLocation } from "./world";
 
 /**
  * Represents a planet location that has been broadcast on-chain

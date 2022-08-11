@@ -16,7 +16,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -30,7 +30,7 @@ Draws all queued mine bodies.
 
 `void`
 
----
+___
 
 ### queueMineScreen
 
@@ -43,18 +43,18 @@ Draw the body of the Mine/Asteroid Field
 
 #### Parameters
 
-| Name     | Type                                      | Description                                                                  |
-| :------- | :---------------------------------------- | :--------------------------------------------------------------------------- |
-| `planet` | [`Planet`](../README.md#planet)           | Planet class that contains information on the current Mine/Asteroid Field    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `planet` | [`Planet`](../README.md#planet) | Planet class that contains information on the current Mine/Asteroid Field |
 | `center` | [`WorldCoords`](../README.md#worldcoords) | The location of the center of the Asteroid Field relative to the game world. |
-| `radius` | `number`                                  | Radius of the Asteroid Field relative to the game world                      |
-| `z`      | `number`                                  | The amount of Asteroids in the Asteroid field                                |
+| `radius` | `number` | Radius of the Asteroid Field relative to the game world |
+| `z` | `number` | The amount of Asteroids in the Asteroid field |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setUniforms
 

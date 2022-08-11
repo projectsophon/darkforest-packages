@@ -1,10 +1,10 @@
-import { css, html, LitElement, unsafeCSS } from 'lit';
-import { classMap } from 'lit/directives/class-map.js';
-import * as dfstyles from './styles';
+import { css, html, LitElement, unsafeCSS } from "lit";
+import { classMap } from "lit/directives/class-map.js";
+import * as dfstyles from "./styles";
 
 export class DarkForestButton extends LitElement {
   // Not part of LitElement but let's tack on the tagName for easier registration
-  static tagName = 'df-button';
+  static tagName = "df-button";
 
   // Defining element styles without a decorator
   // These are injected into the shadowRoot so they aren't applied globally
@@ -111,21 +111,21 @@ export class DarkForestButton extends LitElement {
 
   // Properties defined above will have a getter/setter created on the component,
   // but we want to define their type and/or defaults on the component
-  size: 'small' | 'medium' | 'large' | 'stretch' = 'medium';
-  variant: 'normal' | 'danger' = 'normal';
+  size: "small" | "medium" | "large" | "stretch" = "medium";
+  variant: "normal" | "danger" = "normal";
   disabled = false;
   active = false;
 
   render() {
     const classes = {
       button: true,
-      small: this.size === 'small',
-      medium: this.size === 'medium',
-      large: this.size === 'large',
-      stretch: this.size === 'stretch',
+      small: this.size === "small",
+      medium: this.size === "medium",
+      large: this.size === "large",
+      stretch: this.size === "stretch",
       disabled: this.disabled,
       forceActive: this.active,
-      danger: this.variant === 'danger',
+      danger: this.variant === "danger",
     };
     return html`<button class=${classMap(classes)} @click=${this._handleClick}>
       <slot></slot>

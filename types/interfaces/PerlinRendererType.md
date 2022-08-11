@@ -17,7 +17,7 @@ Perlin Renderer is only used when disable fancy space effects is true
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -31,7 +31,7 @@ Draws all discovered space
 
 `void`
 
----
+___
 
 ### queueChunk
 
@@ -43,8 +43,8 @@ The implementing renderer should contains its own back buffer.
 
 #### Parameters
 
-| Name    | Type                | Description                                                                                                    |
-| :------ | :------------------ | :------------------------------------------------------------------------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `chunk` | [`Chunk`](Chunk.md) | a variable that contains information on the chunk being drawn. A chunk is rectangle section of the background. |
 
 #### Returns

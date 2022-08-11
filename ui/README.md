@@ -19,22 +19,22 @@
 - [PositionChangedEvent](classes/PositionChangedEvent.md)
 - [ShortcutPressedEvent](classes/ShortcutPressedEvent.md)
 
-### Type aliases
+### Type Aliases
 
 - [IconType](README.md#icontype)
 
 ### Variables
 
-- [IconType](README.md#icontype)
+- [IconType](README.md#icontype-1)
 - [borderRadius](README.md#borderradius)
 - [colors](README.md#colors)
 - [zIndex](README.md#zindex)
 
-## Type aliases
+## Type Aliases
 
 ### IconType
 
-Ƭ **IconType**: `Abstract`<`string`, `"IconType"`\>
+Ƭ **IconType**: `Abstract`<`string`, ``"IconType"``\>
 
 ## Variables
 
@@ -44,62 +44,62 @@
 
 #### Type declaration
 
-| Name           | Type                             |
-| :------------- | :------------------------------- |
-| `Activate`     | [`IconType`](README.md#icontype) |
-| `Artifact`     | [`IconType`](README.md#icontype) |
-| `Broadcast`    | [`IconType`](README.md#icontype) |
-| `Capturable`   | [`IconType`](README.md#icontype) |
-| `Check`        | [`IconType`](README.md#icontype) |
-| `Deactivate`   | [`IconType`](README.md#icontype) |
-| `Defense`      | [`IconType`](README.md#icontype) |
-| `Deposit`      | [`IconType`](README.md#icontype) |
-| `Destroyed`    | [`IconType`](README.md#icontype) |
-| `DoubleArrows` | [`IconType`](README.md#icontype) |
-| `Energy`       | [`IconType`](README.md#icontype) |
-| `EnergyGrowth` | [`IconType`](README.md#icontype) |
-| `FastForward`  | [`IconType`](README.md#icontype) |
-| `Hat`          | [`IconType`](README.md#icontype) |
-| `Help`         | [`IconType`](README.md#icontype) |
-| `Invadable`    | [`IconType`](README.md#icontype) |
-| `Leaderboard`  | [`IconType`](README.md#icontype) |
-| `Lock`         | [`IconType`](README.md#icontype) |
-| `MaxLevel`     | [`IconType`](README.md#icontype) |
-| `Pause`        | [`IconType`](README.md#icontype) |
-| `Pirates`      | [`IconType`](README.md#icontype) |
-| `Planet`       | [`IconType`](README.md#icontype) |
-| `PlanetDex`    | [`IconType`](README.md#icontype) |
-| `Play`         | [`IconType`](README.md#icontype) |
-| `Plugin`       | [`IconType`](README.md#icontype) |
-| `Range`        | [`IconType`](README.md#icontype) |
-| `RankFour`     | [`IconType`](README.md#icontype) |
-| `RankMax`      | [`IconType`](README.md#icontype) |
-| `RankOne`      | [`IconType`](README.md#icontype) |
-| `RankThree`    | [`IconType`](README.md#icontype) |
-| `RankTwo`      | [`IconType`](README.md#icontype) |
-| `Refresh`      | [`IconType`](README.md#icontype) |
-| `RightArrow`   | [`IconType`](README.md#icontype) |
-| `Settings`     | [`IconType`](README.md#icontype) |
-| `Share`        | [`IconType`](README.md#icontype) |
-| `Silver`       | [`IconType`](README.md#icontype) |
-| `SilverGrowth` | [`IconType`](README.md#icontype) |
-| `SilverProd`   | [`IconType`](README.md#icontype) |
-| `Sparkles`     | [`IconType`](README.md#icontype) |
-| `Speed`        | [`IconType`](README.md#icontype) |
-| `Target`       | [`IconType`](README.md#icontype) |
-| `TrashCan`     | [`IconType`](README.md#icontype) |
-| `Twitter`      | [`IconType`](README.md#icontype) |
-| `Upgrade`      | [`IconType`](README.md#icontype) |
-| `Withdraw`     | [`IconType`](README.md#icontype) |
-| `X`            | [`IconType`](README.md#icontype) |
+| Name | Type |
+| :------ | :------ |
+| `Activate` | [`IconType`](README.md#icontype-1) |
+| `Artifact` | [`IconType`](README.md#icontype-1) |
+| `Broadcast` | [`IconType`](README.md#icontype-1) |
+| `Capturable` | [`IconType`](README.md#icontype-1) |
+| `Check` | [`IconType`](README.md#icontype-1) |
+| `Deactivate` | [`IconType`](README.md#icontype-1) |
+| `Defense` | [`IconType`](README.md#icontype-1) |
+| `Deposit` | [`IconType`](README.md#icontype-1) |
+| `Destroyed` | [`IconType`](README.md#icontype-1) |
+| `DoubleArrows` | [`IconType`](README.md#icontype-1) |
+| `Energy` | [`IconType`](README.md#icontype-1) |
+| `EnergyGrowth` | [`IconType`](README.md#icontype-1) |
+| `FastForward` | [`IconType`](README.md#icontype-1) |
+| `Hat` | [`IconType`](README.md#icontype-1) |
+| `Help` | [`IconType`](README.md#icontype-1) |
+| `Invadable` | [`IconType`](README.md#icontype-1) |
+| `Leaderboard` | [`IconType`](README.md#icontype-1) |
+| `Lock` | [`IconType`](README.md#icontype-1) |
+| `MaxLevel` | [`IconType`](README.md#icontype-1) |
+| `Pause` | [`IconType`](README.md#icontype-1) |
+| `Pirates` | [`IconType`](README.md#icontype-1) |
+| `Planet` | [`IconType`](README.md#icontype-1) |
+| `PlanetDex` | [`IconType`](README.md#icontype-1) |
+| `Play` | [`IconType`](README.md#icontype-1) |
+| `Plugin` | [`IconType`](README.md#icontype-1) |
+| `Range` | [`IconType`](README.md#icontype-1) |
+| `RankFour` | [`IconType`](README.md#icontype-1) |
+| `RankMax` | [`IconType`](README.md#icontype-1) |
+| `RankOne` | [`IconType`](README.md#icontype-1) |
+| `RankThree` | [`IconType`](README.md#icontype-1) |
+| `RankTwo` | [`IconType`](README.md#icontype-1) |
+| `Refresh` | [`IconType`](README.md#icontype-1) |
+| `RightArrow` | [`IconType`](README.md#icontype-1) |
+| `Settings` | [`IconType`](README.md#icontype-1) |
+| `Share` | [`IconType`](README.md#icontype-1) |
+| `Silver` | [`IconType`](README.md#icontype-1) |
+| `SilverGrowth` | [`IconType`](README.md#icontype-1) |
+| `SilverProd` | [`IconType`](README.md#icontype-1) |
+| `Sparkles` | [`IconType`](README.md#icontype-1) |
+| `Speed` | [`IconType`](README.md#icontype-1) |
+| `Target` | [`IconType`](README.md#icontype-1) |
+| `TrashCan` | [`IconType`](README.md#icontype-1) |
+| `Twitter` | [`IconType`](README.md#icontype-1) |
+| `Upgrade` | [`IconType`](README.md#icontype-1) |
+| `Withdraw` | [`IconType`](README.md#icontype-1) |
+| `X` | [`IconType`](README.md#icontype-1) |
 
----
+___
 
 ### borderRadius
 
-• `Const` **borderRadius**: `"3px"`
+• `Const` **borderRadius**: ``"3px"``
 
----
+___
 
 ### colors
 
@@ -107,20 +107,20 @@
 
 #### Type declaration
 
-| Name              | Type     |
-| :---------------- | :------- |
-| `background`      | `string` |
-| `backgroundDark`  | `string` |
-| `backgroundLight` | `string` |
-| `border`          | `string` |
-| `borderDark`      | `string` |
-| `borderDarker`    | `string` |
-| `dfgreen`         | `string` |
-| `dfred`           | `string` |
-| `subtext`         | `string` |
-| `text`            | `string` |
+| Name | Type |
+| :------ | :------ |
+| `background` | `string` |
+| `backgroundDark` | `string` |
+| `backgroundLight` | `any` |
+| `border` | `string` |
+| `borderDark` | `any` |
+| `borderDarker` | `any` |
+| `dfgreen` | `string` |
+| `dfred` | `string` |
+| `subtext` | `any` |
+| `text` | `any` |
 
----
+___
 
 ### zIndex
 
@@ -128,10 +128,10 @@
 
 #### Type declaration
 
-| Name           | Type     |
-| :------------- | :------- |
-| `HoverPlanet`  | `string` |
-| `MenuBar`      | `string` |
-| `Modal`        | `string` |
+| Name | Type |
+| :------ | :------ |
+| `HoverPlanet` | `string` |
+| `MenuBar` | `string` |
+| `Modal` | `string` |
 | `Notification` | `string` |
-| `Tooltip`      | `string` |
+| `Tooltip` | `string` |

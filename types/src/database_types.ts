@@ -1,4 +1,4 @@
-import type { EthAddress } from './identifier';
+import type { EthAddress } from "./identifier";
 
 /**
  * Map from game version -> leaderboard.

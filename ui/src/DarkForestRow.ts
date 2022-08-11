@@ -1,8 +1,8 @@
-import { css, html, LitElement } from 'lit';
+import { css, html, LitElement } from "lit";
 
 export class DarkForestRow extends LitElement {
   // Not part of LitElement but let's tack on the tagName for easier registration
-  static tagName = 'df-row';
+  static tagName = "df-row";
 
   // Defining element styles without a decorator
   // These are injected into the shadowRoot so they aren't applied globally

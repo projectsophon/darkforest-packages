@@ -8,30 +8,30 @@ aggregate across our player-base.
 
 ### Properties
 
-- [auto_gas_price_setting](NetworkEvent.md#auto_gas_price_setting)
+- [auto\_gas\_price\_setting](NetworkEvent.md#auto_gas_price_setting)
 - [error](NetworkEvent.md#error)
-- [parsed_error](NetworkEvent.md#parsed_error)
-- [rpc_endpoint](NetworkEvent.md#rpc_endpoint)
-- [time_exec_called](NetworkEvent.md#time_exec_called)
-- [tx_hash](NetworkEvent.md#tx_hash)
-- [tx_to](NetworkEvent.md#tx_to)
-- [tx_type](NetworkEvent.md#tx_type)
-- [user_address](NetworkEvent.md#user_address)
-- [wait_confirm](NetworkEvent.md#wait_confirm)
-- [wait_error](NetworkEvent.md#wait_error)
-- [wait_submit](NetworkEvent.md#wait_submit)
+- [parsed\_error](NetworkEvent.md#parsed_error)
+- [rpc\_endpoint](NetworkEvent.md#rpc_endpoint)
+- [time\_exec\_called](NetworkEvent.md#time_exec_called)
+- [tx\_hash](NetworkEvent.md#tx_hash)
+- [tx\_to](NetworkEvent.md#tx_to)
+- [tx\_type](NetworkEvent.md#tx_type)
+- [user\_address](NetworkEvent.md#user_address)
+- [wait\_confirm](NetworkEvent.md#wait_confirm)
+- [wait\_error](NetworkEvent.md#wait_error)
+- [wait\_submit](NetworkEvent.md#wait_submit)
 
 ## Properties
 
-### auto_gas_price_setting
+### auto\_gas\_price\_setting
 
-• `Optional` **auto_gas_price_setting**: `string` \| [`AutoGasSetting`](../README.md#autogassetting)
+• `Optional` **auto\_gas\_price\_setting**: `string` \| [`AutoGasSetting`](../README.md#autogassetting-1)
 
 If the user has specified that they want to use an auto gas setting (which is the case by
 default in our client), then this value contains the string representation of that setting. In
 certain cases this can also be a string number.
 
----
+___
 
 ### error
 
@@ -39,84 +39,84 @@ certain cases this can also be a string number.
 
 If there was an error executing this transaction, contains a stringified version of that error.
 
----
+___
 
-### parsed_error
+### parsed\_error
 
-• `Optional` **parsed_error**: `string`
+• `Optional` **parsed\_error**: `string`
 
 If the error was returned as a byte string, contains a parsed version of that error.
 
----
+___
 
-### rpc_endpoint
+### rpc\_endpoint
 
-• `Optional` **rpc_endpoint**: `string`
+• `Optional` **rpc\_endpoint**: `string`
 
 The url of the node fleet this transaction was sent to.
 
----
+___
 
-### time_exec_called
+### time\_exec\_called
 
-• **time_exec_called**: `number`
+• **time\_exec\_called**: `number`
 
 Timestamp of when the transaction was first uploaded to the network.
 
----
+___
 
-### tx_hash
+### tx\_hash
 
-• `Optional` **tx_hash**: `string`
+• `Optional` **tx\_hash**: `string`
 
 If the transaction was confirmed, this is the transaction hash.
 
----
+___
 
-### tx_to
+### tx\_to
 
-• **tx_to**: `string`
+• **tx\_to**: `string`
 
 Contract address to which the transaction was sent.
 
----
+___
 
-### tx_type
+### tx\_type
 
-• **tx_type**: `string`
+• **tx\_type**: `string`
 
 Function name that the transaction is calling on the contract.
 
----
+___
 
-### user_address
+### user\_address
 
-• `Optional` **user_address**: `string`
+• `Optional` **user\_address**: `string`
 
 The address on behalf of which this transaction was sent.
 
----
+___
 
-### wait_confirm
+### wait\_confirm
 
-• `Optional` **wait_confirm**: `number`
-
-If the transaction confirmed, the amount of time the client had to wait before it became aware
-of the confirmation.
-
----
-
-### wait_error
-
-• `Optional` **wait_error**: `number`
+• `Optional` **wait\_confirm**: `number`
 
 If the transaction confirmed, the amount of time the client had to wait before it became aware
 of the confirmation.
 
----
+___
 
-### wait_submit
+### wait\_error
 
-• `Optional` **wait_submit**: `number`
+• `Optional` **wait\_error**: `number`
+
+If the transaction confirmed, the amount of time the client had to wait before it became aware
+of the confirmation.
+
+___
+
+### wait\_submit
+
+• `Optional` **wait\_submit**: `number`
 
 The amount of time the client had to wait until the transaction was submitted to the pool.

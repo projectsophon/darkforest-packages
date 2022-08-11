@@ -16,7 +16,7 @@
 
 ### rendererType
 
-• **rendererType**: [`RendererType`](../README.md#renderertype)
+• **rendererType**: [`RendererType`](../README.md#renderertype-1)
 
 ## Methods
 
@@ -30,7 +30,7 @@ Draws all queued Artifacts.
 
 `void`
 
----
+___
 
 ### queueArtifact
 
@@ -43,21 +43,21 @@ Used to draw artifacts when traveling with the voyager
 
 #### Parameters
 
-| Name       | Type                                      | Description                                      |
-| :--------- | :---------------------------------------- | :----------------------------------------------- |
-| `artifact` | [`RenderedArtifact`](RenderedArtifact.md) | information on the type of artifact              |
-| `pos`      | [`CanvasCoords`](CanvasCoords.md)         | the position relative to the canvas              |
-| `width?`   | `number`                                  | the width of the artifact relative to the canvas |
-| `alpha?`   | `number`                                  | The opacity of the image of the artifact         |
-| `atFrame?` | `number`                                  |                                                  |
-| `color?`   | [`RGBVec`](../README.md#rgbvec)           |                                                  |
-| `theta?`   | `number`                                  | The angle the artifact should be rotated         |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `artifact` | [`RenderedArtifact`](RenderedArtifact.md) | information on the type of artifact |
+| `pos` | [`CanvasCoords`](CanvasCoords.md) | the position relative to the canvas |
+| `width?` | `number` | the width of the artifact relative to the canvas |
+| `alpha?` | `number` | The opacity of the image of the artifact |
+| `atFrame?` | `number` |  |
+| `color?` | [`RGBVec`](../README.md#rgbvec) |  |
+| `theta?` | `number` | The angle the artifact should be rotated |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### queueArtifactWorld
 
@@ -70,16 +70,16 @@ Used to draw Artifacts onto the screen when around hovering around a planet
 
 #### Parameters
 
-| Name        | Type                                      | Description                                                 |
-| :---------- | :---------------------------------------- | :---------------------------------------------------------- |
-| `artifact`  | [`RenderedArtifact`](RenderedArtifact.md) | an object that contains information on the current Artifact |
-| `posW`      | [`CanvasCoords`](CanvasCoords.md)         | The position of the artifact relative to the game world     |
-| `widthW`    | `number`                                  | The size of the artifact relative to then game world        |
-| `alpha?`    | `number`                                  | The opacity of the image of the artifact                    |
-| `atFrame?`  | `number`                                  |                                                             |
-| `color?`    | [`RGBVec`](../README.md#rgbvec)           |                                                             |
-| `theta?`    | `number`                                  | The angle the artifact should be rotated                    |
-| `viewport?` | [`GameViewport`](GameViewport.md)         | a GameViewport class                                        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `artifact` | [`RenderedArtifact`](RenderedArtifact.md) | an object that contains information on the current Artifact |
+| `posW` | [`CanvasCoords`](CanvasCoords.md) | The position of the artifact relative to the game world |
+| `widthW` | `number` | The size of the artifact relative to then game world |
+| `alpha?` | `number` | The opacity of the image of the artifact |
+| `atFrame?` | `number` |  |
+| `color?` | [`RGBVec`](../README.md#rgbvec) |  |
+| `theta?` | `number` | The angle the artifact should be rotated |
+| `viewport?` | [`GameViewport`](GameViewport.md) | a GameViewport class |
 
 #### Returns
 

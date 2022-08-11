@@ -8,7 +8,7 @@ export const formatNumber = (num: number, smallDec = 0): string => {
     }
   }
 
-  const suffixes = ['', 'K', 'M', 'B', 'T', 'q', 'Q'];
+  const suffixes = ["", "K", "M", "B", "T", "q", "Q"];
   let log000 = 0;
   let rem = num;
   while (rem / 1000 >= 1) {
