@@ -8,9 +8,6 @@
       "path": "../constants/tsconfig.ref.json"
     },
     {
-      "path": "../contracts/tsconfig.ref.json"
-    },
-    {
       "path": "../events/tsconfig.ref.json"
     },
     {

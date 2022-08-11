@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "@projectsophon/constants": "0.0.0",
-    "@projectsophon/contracts": "0.0.0",
     "@projectsophon/events": "0.0.0",
     "@projectsophon/serde": "0.0.0",
     "@projectsophon/types": "0.0.0",
