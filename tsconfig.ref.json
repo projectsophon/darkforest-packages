@@ -1,0 +1,53 @@
+{
+  "extends": "@projectsophon/tsconfig",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "references": [
+    {
+      "path": "constants/tsconfig.ref.json"
+    },
+    {
+      "path": "contracts/tsconfig.ref.json"
+    },
+    {
+      "path": "events/tsconfig.ref.json"
+    },
+    {
+      "path": "gamelogic/tsconfig.ref.json"
+    },
+    {
+      "path": "hashing/tsconfig.ref.json"
+    },
+    {
+      "path": "hexgen/tsconfig.ref.json"
+    },
+    {
+      "path": "network/tsconfig.ref.json"
+    },
+    {
+      "path": "procedural/tsconfig.ref.json"
+    },
+    {
+      "path": "renderer/tsconfig.ref.json"
+    },
+    {
+      "path": "serde/tsconfig.ref.json"
+    },
+    {
+      "path": "settings/tsconfig.ref.json"
+    },
+    {
+      "path": "snarks/tsconfig.ref.json"
+    },
+    {
+      "path": "types/tsconfig.ref.json"
+    },
+    {
+      "path": "ui/tsconfig.ref.json"
+    },
+    {
+      "path": "whitelist/tsconfig.ref.json"
+    }
+  ]
+}
