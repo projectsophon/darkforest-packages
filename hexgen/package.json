@@ -1,6 +1,6 @@
 {
   "name": "@projectsophon/hexgen",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
@@ -27,7 +27,7 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@projectsophon/types": "0.0.0"
+    "@projectsophon/types": "^1.0.0"
   },
   "devDependencies": {
     "@projectsophon/eslint-config": "^0.2.2",

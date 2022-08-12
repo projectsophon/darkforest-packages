@@ -1,6 +1,6 @@
 {
   "name": "@projectsophon/ui",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
@@ -27,8 +27,8 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@projectsophon/constants": "0.0.0",
-    "@projectsophon/types": "0.0.0",
+    "@projectsophon/constants": "^1.0.0",
+    "@projectsophon/types": "^1.0.0",
     "@spectrum-web-components/slider": "^0.12.3",
     "@spectrum-web-components/theme": "^0.9.3",
     "color": "^4.2.3",
