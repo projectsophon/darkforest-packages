@@ -1,8 +1,12 @@
 {
   "extends": "@projectsophon/tsconfig",
-  "include": ["index.ts"],
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
   "typedocOptions": {
-    "entryPoints": ["index.ts"],
+    "entryPoints": ["src/index.ts"],
     "out": ".",
     "hideBreadcrumbs": true,
     "readme": "none",

@@ -8,16 +8,16 @@
  * [`yarn`](https://classic.yarnpkg.com/lang/en/) by running:
  *
  * ```bash
- * npm install --save @projectsophon/snarks
+ * npm install --save @projectsophon/snarkjs-helpers
  * ```
  * ```bash
- * yarn add @projectsophon/snarks
+ * yarn add @projectsophon/snarkjs-helpers
  * ```
  *
  * When using this in a plugin, you might want to load it with [skypack](https://www.skypack.dev)
  *
  * ```js
- * import * as snarks from 'http://cdn.skypack.dev/@projectsophon/snarks'
+ * import * as snarkjsHelpers from 'http://cdn.skypack.dev/@projectsophon/snarkjs-helpers'
  * ```
  *
  * @packageDocumentation

@@ -1,5 +1,5 @@
 {
-  "name": "@projectsophon/snarks",
+  "name": "@projectsophon/snarkjs-helpers",
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
@@ -7,17 +7,10 @@
   "engines": {
     "node": ">=16"
   },
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "index.js",
-    "index.js.map",
-    "index.d.ts",
-    "index.ts",
-    "*.wasm",
-    "*.zkey",
-    "*.r1cs",
-    "interfaces/"
+    "dist/"
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -26,7 +19,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "docs": "typedoc",
-    "clean": "del-cli node_modules index.js index.js.map index.d.ts index.d.ts.map tsconfig.ref.tsbuildinfo"
+    "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "peerDependencies": {
     "snarkjs": "0.4.x"

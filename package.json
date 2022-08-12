@@ -20,7 +20,7 @@
     "renderer",
     "serde",
     "settings",
-    "snarks",
+    "snarkjs-helpers",
     "types",
     "ui",
     "whitelist"

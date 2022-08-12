@@ -35,7 +35,7 @@
       "path": "settings/tsconfig.ref.json"
     },
     {
-      "path": "snarks/tsconfig.ref.json"
+      "path": "snarkjs-helpers/tsconfig.ref.json"
     },
     {
       "path": "types/tsconfig.ref.json"
