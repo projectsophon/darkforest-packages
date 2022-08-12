@@ -1,4 +1,4 @@
-import { hslToRgb } from "@projectsophon/procedural";
+import { hslToRgb } from "@projectsophon/procgen";
 import type { RGBAVec, RGBVec } from "@projectsophon/types";
 
 export const engineConsts = {

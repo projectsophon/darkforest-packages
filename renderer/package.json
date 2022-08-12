@@ -30,7 +30,7 @@
     "@projectsophon/constants": "0.0.0",
     "@projectsophon/gamelogic": "0.0.0",
     "@projectsophon/hashing": "0.0.0",
-    "@projectsophon/procedural": "0.0.0",
+    "@projectsophon/procgen": "0.0.0",
     "@projectsophon/serde": "0.0.0",
     "@projectsophon/types": "0.0.0",
     "@types/gl-matrix": "^3.2.0",

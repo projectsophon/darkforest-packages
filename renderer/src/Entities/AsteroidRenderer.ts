@@ -1,4 +1,4 @@
-import { getPlanetCosmetic } from "@projectsophon/procedural";
+import { getPlanetCosmetic } from "@projectsophon/procgen";
 import { DrawMode, RendererType } from "@projectsophon/types";
 import type { AsteroidRendererType, CanvasCoords, GameViewport, Planet, RGBVec } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";

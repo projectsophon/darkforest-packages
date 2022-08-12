@@ -1,6 +1,6 @@
 import { EMPTY_ADDRESS } from "@projectsophon/constants";
 import { formatNumber, getRange, hasOwner, isLocatable, isSpaceShip } from "@projectsophon/gamelogic";
-import { getOwnerColorVec, getPlanetCosmetic } from "@projectsophon/procedural";
+import { getOwnerColorVec, getPlanetCosmetic } from "@projectsophon/procgen";
 import { isUnconfirmedMoveTx } from "@projectsophon/serde";
 import type {
   Artifact,

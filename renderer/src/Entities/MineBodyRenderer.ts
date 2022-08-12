@@ -1,4 +1,4 @@
-import { getPlanetCosmetic, hslToRgb } from "@projectsophon/procedural";
+import { getPlanetCosmetic, hslToRgb } from "@projectsophon/procgen";
 import type { CanvasCoords, MineBodyRendererType, Planet, RGBVec, WorldCoords } from "@projectsophon/types";
 import { DrawMode, RendererType } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";

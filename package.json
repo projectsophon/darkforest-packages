@@ -16,7 +16,7 @@
     "hashing",
     "hexgen",
     "network",
-    "procedural",
+    "procgen",
     "renderer",
     "serde",
     "settings",

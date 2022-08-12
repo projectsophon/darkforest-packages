@@ -1,6 +1,6 @@
 import { EMPTY_ADDRESS } from "@projectsophon/constants";
 import { formatNumber, hasOwner } from "@projectsophon/gamelogic";
-import { getOwnerColorVec } from "@projectsophon/procedural";
+import { getOwnerColorVec } from "@projectsophon/procgen";
 import { RendererType, RenderZIndex, TextAlign, TextAnchor } from "@projectsophon/types";
 import type { LocationId, Planet, Player, QueuedArrival, VoyageRendererType } from "@projectsophon/types";
 import { engineConsts } from "../EngineConsts";

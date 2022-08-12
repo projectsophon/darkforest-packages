@@ -1,4 +1,4 @@
-# @projectsophon/procedural
+# @projectsophon/procgen
 
 ## Table of contents
 

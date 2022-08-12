@@ -1,4 +1,4 @@
-import { getPlanetCosmetic } from "@projectsophon/procedural";
+import { getPlanetCosmetic } from "@projectsophon/procgen";
 import { RendererType } from "@projectsophon/types";
 import type { Planet, PlanetRendererType, WorldCoords } from "@projectsophon/types";
 import { mat4 } from "gl-matrix";

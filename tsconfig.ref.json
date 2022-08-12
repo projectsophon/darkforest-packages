@@ -23,7 +23,7 @@
       "path": "network/tsconfig.ref.json"
     },
     {
-      "path": "procedural/tsconfig.ref.json"
+      "path": "procgen/tsconfig.ref.json"
     },
     {
       "path": "renderer/tsconfig.ref.json"

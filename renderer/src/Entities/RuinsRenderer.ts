@@ -1,4 +1,4 @@
-import { getPlanetCosmetic } from "@projectsophon/procedural";
+import { getPlanetCosmetic } from "@projectsophon/procgen";
 import { PlanetLevel, RendererType } from "@projectsophon/types";
 import type { CanvasCoords, Planet, RGBVec, RuinsRendererType, WorldCoords } from "@projectsophon/types";
 import { EngineUtils } from "../EngineUtils";
