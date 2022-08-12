@@ -4,10 +4,6 @@
   "bump-patch-for-minor-pre-major": true,
   "plugins": [
     {
-      "type": "node-workspace",
-      "merge": false
-    },
-    {
       "type": "linked-versions",
       "groupName": "zkgame-primitives",
       "components": [
@@ -27,6 +23,10 @@
         "ui",
         "whitelist"
       ]
+    },
+    {
+      "type": "node-workspace",
+      "merge": false
     }
   ],
   "release-type": "node",
