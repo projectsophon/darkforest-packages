@@ -4,10 +4,18 @@
   "type": "module",
   "license": "MIT",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/projectsophon/zkgame-primitives.git",
+    "directory": "hashing"
+  },
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist/",
-    "interfaces/"
+    "dist/"
   ],
   "scripts": {
     "prepublishOnly": "npm run build",

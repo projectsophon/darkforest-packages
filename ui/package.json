@@ -7,6 +7,11 @@
   "engines": {
     "node": ">=16"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/projectsophon/zkgame-primitives.git",
+    "directory": "ui"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
