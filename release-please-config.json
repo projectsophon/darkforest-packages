@@ -1,0 +1,80 @@
+{
+  "bootstrap-sha": "daaa068772049d8a57cc44e7a0869f92f275ec56",
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": true,
+  "plugins": [
+    {
+      "type": "node-workspace",
+      "merge": false
+    },
+    {
+      "type": "linked-versions",
+      "groupName": "zkgame-primitives",
+      "components": [
+        "root",
+        "constants",
+        "events",
+        "gamelogic",
+        "hashing",
+        "hexgen",
+        "network",
+        "procgen",
+        "renderer",
+        "serde",
+        "settings",
+        "snarkjs-helpers",
+        "types",
+        "ui",
+        "whitelist"
+      ]
+    }
+  ],
+  "release-type": "node",
+  "packages": {
+    ".": {
+      "component": "root"
+    },
+    "constants": {
+      "component": "constants"
+    },
+    "events": {
+      "component": "events"
+    },
+    "gamelogic": {
+      "component": "gamelogic"
+    },
+    "hashing": {
+      "component": "hashing"
+    },
+    "hexgen": {
+      "component": "hexgen"
+    },
+    "network": {
+      "component": "network"
+    },
+    "procgen": {
+      "component": "procgen"
+    },
+    "renderer": {
+      "component": "renderer"
+    },
+    "serde": {
+      "component": "serde"
+    },
+    "settings": {
+      "component": "settings"
+    },
+    "snarkjs-helpers": {
+      "component": "snarkjs-helpers"
+    },
+    "types": {
+      "component": "types"
+    },
+    "ui": {
+      "component": "ui"
+    },
+    "whitelist": {
+      "component": "whitelist"
+    }
+  }
+}
