@@ -1,7 +1,7 @@
 {
   "name": "@projectsophon/zkgame-primitives",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
   "engines": {
