@@ -4,29 +4,7 @@
   "bump-patch-for-minor-pre-major": true,
   "plugins": [
     {
-      "type": "linked-versions",
-      "groupName": "zkgame-primitives",
-      "components": [
-        "root",
-        "constants",
-        "events",
-        "gamelogic",
-        "hashing",
-        "hexgen",
-        "network",
-        "procgen",
-        "renderer",
-        "serde",
-        "settings",
-        "snarkjs-helpers",
-        "types",
-        "ui",
-        "whitelist"
-      ]
-    },
-    {
-      "type": "node-workspace",
-      "merge": false
+      "type": "node-workspace"
     }
   ],
   "release-type": "node",
