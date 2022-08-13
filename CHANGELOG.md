@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/projectsophon/zkgame-primitives/compare/root-v0.1.0...root-v0.1.1) (2022-08-13)
+
+
+### Bug Fixes
+
+* **network:** Export the ContractManager from the root ([8bf5fd7](https://github.com/projectsophon/zkgame-primitives/commit/8bf5fd70ebcdef378c8c7a2739e9667d910f1c35))
+
 ## 0.1.0 (2022-08-12)
 
 
