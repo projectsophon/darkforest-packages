@@ -1,6 +1,6 @@
 {
   "name": "@projectsophon/whitelist",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "license": "MIT",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
@@ -27,7 +27,7 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@projectsophon/hashing": "^0.1.0",
+    "@projectsophon/hashing": "^0.1.1",
     "ethers": "^5.5.1",
     "lodash": "^4.17.15"
   },

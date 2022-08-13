@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.1](https://github.com/projectsophon/zkgame-primitives/compare/hexgen-v0.1.0...hexgen-v0.1.1) (2022-08-13)
+
+
+### Miscellaneous Chores
+
+* **hexgen:** Synchronize zkgame-primitives versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @projectsophon/types bumped from ^0.1.0 to ^0.1.1
+
 ## 0.1.0 (2022-08-12)
 
 

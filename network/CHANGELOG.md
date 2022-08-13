@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.1.1](https://github.com/projectsophon/zkgame-primitives/compare/network-v0.1.0...network-v0.1.1) (2022-08-13)
+
+
+### Bug Fixes
+
+* **network:** Export the ContractManager from the root ([8bf5fd7](https://github.com/projectsophon/zkgame-primitives/commit/8bf5fd70ebcdef378c8c7a2739e9667d910f1c35))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @projectsophon/constants bumped from ^0.1.0 to ^0.1.1
+    * @projectsophon/events bumped from ^0.1.0 to ^0.1.1
+    * @projectsophon/serde bumped from ^0.1.0 to ^0.1.1
+    * @projectsophon/types bumped from ^0.1.0 to ^0.1.1
+
 ## 0.1.0 (2022-08-12)
 
 

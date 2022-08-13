@@ -1,6 +1,6 @@
 {
   "name": "@projectsophon/events",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "license": "MIT",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",

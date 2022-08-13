@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.1](https://github.com/projectsophon/zkgame-primitives/compare/ui-v0.1.0...ui-v0.1.1) (2022-08-13)
+
+
+### Miscellaneous Chores
+
+* **ui:** Synchronize zkgame-primitives versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @projectsophon/constants bumped from ^0.1.0 to ^0.1.1
+    * @projectsophon/types bumped from ^0.1.0 to ^0.1.1
+
 ## 0.1.0 (2022-08-12)
 
 
