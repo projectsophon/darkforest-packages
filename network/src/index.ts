@@ -22,8 +22,9 @@
  * @packageDocumentation
  */
 
-export * from "./ContractCaller";
 export * from "./ConnectionManager";
+export * from "./ContractCaller";
+export * from "./ContractManager";
 export * from "./Network";
 export * from "./ThrottledConcurrentQueue";
 export * from "./TransactionCollection";
