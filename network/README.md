@@ -26,6 +26,7 @@ import * as network from 'http://cdn.skypack.dev/@projectsophon/network'
 
 - [ConnectionManager](classes/ConnectionManager.md)
 - [ContractCaller](classes/ContractCaller.md)
+- [ContractManager](classes/ContractManager.md)
 - [ThrottledConcurrentQueue](classes/ThrottledConcurrentQueue.md)
 - [TxCollection](classes/TxCollection.md)
 - [TxExecutor](classes/TxExecutor.md)
@@ -40,6 +41,7 @@ import * as network from 'http://cdn.skypack.dev/@projectsophon/network'
 - [AfterTransaction](README.md#aftertransaction)
 - [BeforeQueued](README.md#beforequeued)
 - [BeforeTransaction](README.md#beforetransaction)
+- [ContractLoader](README.md#contractloader)
 - [GasPriceSettingProvider](README.md#gaspricesettingprovider)
 - [RetryErrorHandler](README.md#retryerrorhandler)
 
@@ -130,6 +132,34 @@ function should execute. If this function rejects, the transaction is cancelled.
 ##### Returns
 
 `Promise`<`void`\>
+
+___
+
+### ContractLoader
+
+Ƭ **ContractLoader**<`C`\>: (`address`: `string`, `provider`: `providers.JsonRpcProvider`, `signer`: `Wallet` \| `undefined`) => `Promise`<`C`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `C` | extends `BaseContract` |
+
+#### Type declaration
+
+▸ (`address`, `provider`, `signer`): `Promise`<`C`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `address` | `string` |
+| `provider` | `providers.JsonRpcProvider` |
+| `signer` | `Wallet` \| `undefined` |
+
+##### Returns
+
+`Promise`<`C`\>
 
 ___
 
