@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.1.3](https://github.com/projectsophon/zkgame-primitives/compare/procgen-v0.1.2...procgen-v0.1.3) (2022-08-15)
+
+
+### Miscellaneous Chores
+
+* **procgen:** Synchronize zkgame-primitives versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @projectsophon/constants bumped from ^0.1.2 to ^0.1.3
+    * @projectsophon/gamelogic bumped from ^0.1.2 to ^0.1.3
+    * @projectsophon/hashing bumped from ^0.1.2 to ^0.1.3
+    * @projectsophon/serde bumped from ^0.1.2 to ^0.1.3
+    * @projectsophon/types bumped from ^0.1.2 to ^0.1.3
+
 ## [0.1.2](https://github.com/projectsophon/zkgame-primitives/compare/procgen-v0.1.1...procgen-v0.1.2) (2022-08-15)
 
 

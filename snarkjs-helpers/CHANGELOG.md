@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/projectsophon/zkgame-primitives/compare/snarkjs-helpers-v0.1.2...snarkjs-helpers-v0.1.3) (2022-08-15)
+
+
+### Miscellaneous Chores
+
+* **snarkjs-helpers:** Synchronize zkgame-primitives versions
+
 ## [0.1.2](https://github.com/projectsophon/zkgame-primitives/compare/snarkjs-helpers-v0.1.1...snarkjs-helpers-v0.1.2) (2022-08-15)
 
 

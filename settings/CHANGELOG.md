@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/projectsophon/zkgame-primitives/compare/settings-v0.1.2...settings-v0.1.3) (2022-08-15)
+
+
+### Miscellaneous Chores
+
+* **settings:** Synchronize zkgame-primitives versions
+
 ## [0.1.2](https://github.com/projectsophon/zkgame-primitives/compare/settings-v0.1.1...settings-v0.1.2) (2022-08-15)
 
 
