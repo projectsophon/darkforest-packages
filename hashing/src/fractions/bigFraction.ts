@@ -793,9 +793,6 @@ const { Fraction, errorConstructor } = (function (root) {
     },
   };
 
-  Object.defineProperty(exports, "__esModule", { value: true });
-  Fraction["default"] = Fraction;
-  Fraction["Fraction"] = Fraction;
   return {
     Fraction: Fraction as IFraction,
     errorConstructor,
