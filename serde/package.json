@@ -1,6 +1,6 @@
 {
   "name": "@projectsophon/serde",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "license": "MIT",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
@@ -27,9 +27,9 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@projectsophon/constants": "^0.1.2",
-    "@projectsophon/hexgen": "^0.1.2",
-    "@projectsophon/types": "^0.1.2",
+    "@projectsophon/constants": "^0.1.3",
+    "@projectsophon/hexgen": "^0.1.3",
+    "@projectsophon/types": "^0.1.3",
     "ethers": "^5.5.1"
   },
   "devDependencies": {

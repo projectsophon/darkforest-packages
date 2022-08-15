@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.3](https://github.com/projectsophon/zkgame-primitives/compare/hashing-v0.1.2...hashing-v0.1.3) (2022-08-15)
+
+
+### Bug Fixes
+
+* **hashing:** Ensure bigFraction works as ESM ([91be4ce](https://github.com/projectsophon/zkgame-primitives/commit/91be4ce7425a3ffbb997dafd9e32a89b7dc07e4a))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @projectsophon/types bumped from ^0.1.2 to ^0.1.3
+
 ## [0.1.2](https://github.com/projectsophon/zkgame-primitives/compare/hashing-v0.1.1...hashing-v0.1.2) (2022-08-15)
 
 

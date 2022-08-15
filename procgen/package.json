@@ -1,6 +1,6 @@
 {
   "name": "@projectsophon/procgen",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "license": "MIT",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
@@ -27,11 +27,11 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@projectsophon/constants": "^0.1.2",
-    "@projectsophon/gamelogic": "^0.1.2",
-    "@projectsophon/hashing": "^0.1.2",
-    "@projectsophon/serde": "^0.1.2",
-    "@projectsophon/types": "^0.1.2"
+    "@projectsophon/constants": "^0.1.3",
+    "@projectsophon/gamelogic": "^0.1.3",
+    "@projectsophon/hashing": "^0.1.3",
+    "@projectsophon/serde": "^0.1.3",
+    "@projectsophon/types": "^0.1.3"
   },
   "devDependencies": {
     "@projectsophon/eslint-config": "^0.2.2",
