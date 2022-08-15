@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2](https://github.com/projectsophon/zkgame-primitives/compare/root-v0.1.1...root-v0.1.2) (2022-08-15)
+
+
+### Bug Fixes
+
+* **network:** Ensure cached contract is used if available ([28c2261](https://github.com/projectsophon/zkgame-primitives/commit/28c226171e489c9c4595b1ce6414d0cb24499d6b))
+* **network:** Set RPC polling interval to 1 second ([46ec6f4](https://github.com/projectsophon/zkgame-primitives/commit/46ec6f45735a1dba3988b410a2622c0e1294e253))
+
 ## [0.1.1](https://github.com/projectsophon/zkgame-primitives/compare/root-v0.1.0...root-v0.1.1) (2022-08-13)
 
 

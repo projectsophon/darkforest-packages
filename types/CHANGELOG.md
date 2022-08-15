@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/projectsophon/zkgame-primitives/compare/types-v0.1.1...types-v0.1.2) (2022-08-15)
+
+
+### Miscellaneous Chores
+
+* **types:** Synchronize zkgame-primitives versions
+
 ## [0.1.1](https://github.com/projectsophon/zkgame-primitives/compare/types-v0.1.0...types-v0.1.1) (2022-08-13)
 
 
