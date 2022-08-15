@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.1.2](https://github.com/projectsophon/zkgame-primitives/compare/renderer-v0.1.1...renderer-v0.1.2) (2022-08-15)
+
+
+### Miscellaneous Chores
+
+* **renderer:** Synchronize zkgame-primitives versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @projectsophon/constants bumped from ^0.1.1 to ^0.1.2
+    * @projectsophon/gamelogic bumped from ^0.1.1 to ^0.1.2
+    * @projectsophon/hashing bumped from ^0.1.1 to ^0.1.2
+    * @projectsophon/procgen bumped from ^0.1.1 to ^0.1.2
+    * @projectsophon/serde bumped from ^0.1.1 to ^0.1.2
+    * @projectsophon/types bumped from ^0.1.1 to ^0.1.2
+
 ## [0.1.1](https://github.com/projectsophon/zkgame-primitives/compare/renderer-v0.1.0...renderer-v0.1.1) (2022-08-13)
 
 

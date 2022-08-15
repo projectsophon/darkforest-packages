@@ -1,6 +1,6 @@
 {
   "name": "@projectsophon/renderer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "license": "MIT",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
@@ -27,12 +27,12 @@
     "clean": "del-cli dist node_modules tsconfig.ref.tsbuildinfo"
   },
   "dependencies": {
-    "@projectsophon/constants": "^0.1.1",
-    "@projectsophon/gamelogic": "^0.1.1",
-    "@projectsophon/hashing": "^0.1.1",
-    "@projectsophon/procgen": "^0.1.1",
-    "@projectsophon/serde": "^0.1.1",
-    "@projectsophon/types": "^0.1.1",
+    "@projectsophon/constants": "^0.1.2",
+    "@projectsophon/gamelogic": "^0.1.2",
+    "@projectsophon/hashing": "^0.1.2",
+    "@projectsophon/procgen": "^0.1.2",
+    "@projectsophon/serde": "^0.1.2",
+    "@projectsophon/types": "^0.1.2",
     "@types/gl-matrix": "^3.2.0",
     "@types/webgl2": "^0.0.5",
     "auto-bind": "^4.0.0",

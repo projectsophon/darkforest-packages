@@ -1,1 +1,1 @@
-{".":"0.1.1","constants":"0.1.1","events":"0.1.1","gamelogic":"0.1.1","hashing":"0.1.1","hexgen":"0.1.1","network":"0.1.1","procgen":"0.1.1","renderer":"0.1.1","serde":"0.1.1","settings":"0.1.1","snarkjs-helpers":"0.1.1","types":"0.1.1","ui":"0.1.1","whitelist":"0.1.1"}
+{".":"0.1.2","constants":"0.1.2","events":"0.1.2","gamelogic":"0.1.2","hashing":"0.1.2","hexgen":"0.1.2","network":"0.1.2","procgen":"0.1.2","renderer":"0.1.2","serde":"0.1.2","settings":"0.1.2","snarkjs-helpers":"0.1.2","types":"0.1.2","ui":"0.1.2","whitelist":"0.1.2"}
