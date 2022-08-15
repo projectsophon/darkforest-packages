@@ -67,17 +67,18 @@ export class ContractManager extends Store {
    * @param loader The loader used to load (or reload) the contract.
    */
   async loadContract<C extends BaseContract>(address: string, loader?: ContractLoader<C>): Promise<C> {
-    if (!loader) {
-      const contract = this.#contracts.get(address);
-      if (!contract) {
-        throw new Error(`Contract never loaded. Address: ${address}`);
-      }
+    const contract = this.#contracts.get(address);
+    if (contract) {
       return contract as C;
     } else {
-      this.#loaders.set(address, loader);
-      const contract = await loader(address, this.#connection.provider, this.#connection.signer);
-      this.#contracts.set(address, contract);
-      return contract;
+      if (loader) {
+        this.#loaders.set(address, loader);
+        const contract = await loader(address, this.#connection.provider, this.#connection.signer);
+        this.#contracts.set(address, contract);
+        return contract as C;
+      } else {
+        throw new Error(`Contract never loaded. Address: ${address}`);
+      }
     }
   }
 }
